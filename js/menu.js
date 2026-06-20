@@ -70,7 +70,7 @@
 
       const details = document.createElement("details");
       details.className = "menu-type";
-      details.open = true;
+      // default collapsed
 
       const summary = document.createElement("summary");
       summary.className = "menu-type-title";
@@ -79,19 +79,26 @@
 
       for (const category of orderedCategories(group)) {
         const inCat = group.filter((e) => (e.category || "") === category);
-        if (category) {
-          const h = document.createElement("h4");
-          h.className = "menu-cat-title";
-          h.textContent = category;
-          details.appendChild(h);
-        }
         const ul = document.createElement("ul");
         for (const e of inCat) {
           const li = document.createElement("li");
           li.appendChild(makeItem(e));
           ul.appendChild(li);
         }
-        details.appendChild(ul);
+
+        if (category) {
+          // Collapsible sub-category, also default collapsed
+          const catDetails = document.createElement("details");
+          catDetails.className = "menu-cat";
+          const catSummary = document.createElement("summary");
+          catSummary.className = "menu-cat-title";
+          catSummary.innerHTML = `<span>${category}</span><span class="menu-count">${inCat.length}</span>`;
+          catDetails.appendChild(catSummary);
+          catDetails.appendChild(ul);
+          details.appendChild(catDetails);
+        } else {
+          details.appendChild(ul);
+        }
       }
       listEl.appendChild(details);
     }
