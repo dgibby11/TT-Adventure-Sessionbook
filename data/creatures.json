@@ -34,8 +34,8 @@
     ],
     "links": [
       {
-        "label": "Owlbear - D&D Beyond",
-        "url": "https://www.dndbeyond.com/monsters/16975-owlbear"
+        "label": "Owlbear — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/owlbear"
       }
     ]
   },
@@ -77,5 +77,49 @@
         "url": "https://www.dndbeyond.com/monsters/27186-triceratops"
       }
     ]
+  },
+  {
+    "id": "wolves",
+    "name": "Wolves & Dire Wolves",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/wolves.html",
+    "visibility": "player",
+    "related": ["river_rauvin", "high_forest"],
+    "links": [
+      { "label": "Wolf — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/wolf" },
+      { "label": "Dire Wolf — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/dire-wolf" }
+    ],
+    "tags": ["wilderness", "wolf", "pack", "common"]
+  },
+  {
+    "id": "displacer_beast",
+    "name": "Displacer Beast",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/displacer_beast.html",
+    "visibility": "dm-only",
+    "related": ["high_forest", "owlbear_cave"],
+    "links": [
+      { "label": "Displacer Beast — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/displacer-beast" }
+    ],
+    "tags": ["wilderness", "magical-beast", "aberration", "threat"]
+  },
+  {
+    "id": "orc_warband",
+    "name": "Orc Warband",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/orc_warband.html",
+    "visibility": "player",
+    "related": ["nether_mountains", "silverymoon", "everlund"],
+    "links": [
+      { "label": "Orc — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/orc" },
+      { "label": "Orc War Chief — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/orc-war-chief" }
+    ],
+    "tags": ["wilderness", "humanoid", "orc", "raiding"]
   }
 ]

@@ -140,6 +140,13 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 0 12px rgba(211,154,62,0.25), 0 0 0 1px rgba(211,154,62,0.3) inset;
 }
 
+/* Player-view mode indicator on the file-tag badge */
+.file-tag-player {
+  border-color: #2a7040;
+  color: #5aaa6a;
+  background: rgba(42,112,64,0.12);
+}
+
 /* ---------- Load error banner ---------- */
 #load-error {
   margin: 0;

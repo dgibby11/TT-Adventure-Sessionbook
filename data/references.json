@@ -1,5 +1,19 @@
 [
   {
+    "id": "party_overview",
+    "name": "The Party — Overview",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/party_overview.html",
+    "visibility": "player",
+    "related": [
+      "lugeiros_serise", "gunnar", "caelum_rivenstone", "bloodraven",
+      "session_1", "session_2", "session_3", "session_4"
+    ],
+    "tags": ["party", "players", "characters"]
+  },
+  {
     "id": "campaign_overview",
     "name": "Campaign Overview",
     "type": "reference",
@@ -37,6 +51,34 @@
       "lenny_goldvein"
     ],
     "tags": ["credits", "economy", "store", "potions"]
+  },
+  {
+    "id": "academy_traditions",
+    "name": "Academy Traditions & Calendar",
+    "type": "reference",
+    "category": "Campus Life",
+    "contentType": "html",
+    "contentFile": "content/academy_traditions.html",
+    "visibility": "player",
+    "related": [
+      "headmistress_dowe", "founders_statue", "dueling_society",
+      "expedition_club", "food_court", "memorial_garden"
+    ],
+    "tags": ["traditions", "calendar", "events", "school"]
+  },
+  {
+    "id": "academy_legends",
+    "name": "Legends of the Academy",
+    "type": "reference",
+    "category": "Campus Life",
+    "contentType": "html",
+    "contentFile": "content/academy_legends.html",
+    "visibility": "player",
+    "related": [
+      "founders_statue", "old_library", "ninth_thesis",
+      "memorial_garden", "underground_storage"
+    ],
+    "tags": ["legends", "myths", "history", "lore"]
   },
   {
     "id": "dnd_resources",

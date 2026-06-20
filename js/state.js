@@ -48,4 +48,12 @@
       save();
     },
   });
+
+  // Override the basic isVisible (defined in data.js) with a revealed-aware version.
+  // DM view: everything visible.
+  // Player view: only player-visibility entities that have been revealed.
+  window.App.isVisible = function(entity) {
+    if (this.isDM()) return true;
+    return entity.visibility === 'player' && this.isRevealed(entity.id);
+  };
 })();

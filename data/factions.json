@@ -1,5 +1,38 @@
 [
   {
+    "id": "dueling_society",
+    "name": "The Arcane Dueling Society",
+    "type": "faction",
+    "category": "Student Clubs",
+    "contentType": "html",
+    "contentFile": "content/dueling_society.html",
+    "visibility": "player",
+    "related": ["prof_thalia_varn", "fighters", "wizards"],
+    "tags": ["club", "combat", "students", "competition"]
+  },
+  {
+    "id": "expedition_club",
+    "name": "The Expedition Volunteers",
+    "type": "faction",
+    "category": "Student Clubs",
+    "contentType": "html",
+    "contentFile": "content/expedition_club.html",
+    "visibility": "player",
+    "related": ["jungle_site", "nether_mountains", "fail_chamber"],
+    "tags": ["club", "fieldwork", "students", "dangerous"]
+  },
+  {
+    "id": "dead_hours",
+    "name": "The Dead Hours",
+    "type": "faction",
+    "category": "Student Clubs",
+    "contentType": "html",
+    "contentFile": "content/dead_hours.html",
+    "visibility": "dm-only",
+    "related": ["the_upperclassmen", "underground_storage", "academy_credits", "food_court"],
+    "tags": ["club", "underground", "gambling", "secret"]
+  },
+  {
     "id": "secret_society",
     "name": "The Secret Society",
     "type": "faction",

@@ -111,12 +111,14 @@
       }
     });
 
-    document.addEventListener('dm:changed', () => {
+    function refilter() {
       if (input.value.trim()) {
         matches = buildMatches(input.value);
         renderResults();
       }
-    });
+    }
+    document.addEventListener('dm:changed', refilter);
+    document.addEventListener('campaign:changed', refilter);
   }
 
   if (document.readyState === 'loading') {

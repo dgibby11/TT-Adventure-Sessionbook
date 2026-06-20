@@ -38,14 +38,12 @@ Then open <http://localhost:8000/>.
 - [x] Menu stays open when a modal is open
 - [x] Coordinate picker tool (`tools/coordinate-picker.html`)
 - [x] **Campus store + credits system** — The Provisions Office ("The Prov"), run by Silas Morne; full credits economy (100 AC/year; 50 AC potions, cap 2/year; black market at 100 gp; Special Acquisitions magical inventory)
-
-### In Progress / Next Up
-- [ ] **Player vs DM view** — screen-safe player mode: only revealed, player-visible entities shown; all DM chrome hidden
-- [ ] **Party overview page** — side-by-side summary of all four PCs linking to their individual entries and D&D Beyond sheets
+- [x] **Player vs DM view** — screen-safe player mode: only revealed + player-visible entities shown in menu/map/search; all DM chrome hidden; green "Player View" badge; toggle re-labels to "◆ DM View / ◯ Player View"
+- [x] **Party overview page** — side-by-side PC cards with stats, key features, D&D Beyond links, party capability summary, DM tactical notes
+- [x] **More lore content** — Headmistress Dowe, Prof. Thalia Varn (beloved), Prof. Aldous Fenwick (worst); Arcane Dueling Society, Expedition Volunteers, The Dead Hours (underground fight club, dm-only); Academy Traditions & Calendar; Legends of the Academy (Whispering Archive, the Lost Year, Golden Cohort, Last Student, the Room That Moves)
+- [x] **Nearby world content** — Silverymoon, River Rauvin, High Forest, Everlund; all cross-linked with Thornwick Consortium hooks
+- [x] **More D&D Beyond creature links** — fixed Owlbear URL (was duplicate of Bodak ID); added Wolves/Dire Wolves, Displacer Beast, Orc Warband with tactical profiles and D&D Beyond links
 
 ### Backlog
 - [ ] **Richer PC popups** — full saving throws, complete equipment lists, better spell layout
-- [ ] **More lore** — legends & myths, extended faculty roster (best/worst professors), student clubs, academic calendar and traditions
-- [ ] **Nearby world content** — Silverymoon, River Rauvin, High Forest, regional settlements, roads and ruins; D&D Beyond sourcebook links where available
-- [ ] **More D&D Beyond creature links** — audit and fill in correct monster URLs for existing creatures (Owlbear URL flagged as likely wrong); add wilderness encounter creatures
 - [ ] **Random generator** — generate NPCs and magic items on the fly; persist via localStorage + File System Access API write + export fallback

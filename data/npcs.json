@@ -72,6 +72,39 @@
     "tags": ["staff", "store", "provisions"]
   },
   {
+    "id": "headmistress_dowe",
+    "name": "Headmistress Seranthia Dowe",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/headmistress_dowe.html",
+    "visibility": "player",
+    "related": ["lenny_goldvein", "ellery_voss", "secret_society", "academy_traditions"],
+    "tags": ["faculty", "headmistress", "administration"]
+  },
+  {
+    "id": "prof_thalia_varn",
+    "name": "Professor Thalia Varn",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/prof_thalia_varn.html",
+    "visibility": "player",
+    "related": ["fighters", "dueling_society"],
+    "tags": ["faculty", "combat", "beloved"]
+  },
+  {
+    "id": "prof_aldous_fenwick",
+    "name": "Professor Aldous Fenwick",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/prof_aldous_fenwick.html",
+    "visibility": "player",
+    "related": ["wizards", "old_library"],
+    "tags": ["faculty", "arcane", "worst-professor"]
+  },
+  {
     "id": "ellery_voss",
     "name": "Dr. Ellery Voss",
     "type": "npc",

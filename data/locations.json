@@ -337,5 +337,58 @@
       "potion_of_healing"
     ],
     "tags": ["store", "credits", "supplies", "provisions"]
+  },
+  {
+    "id": "silverymoon",
+    "name": "Silverymoon",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/silverymoon.html",
+    "visibility": "player",
+    "related": ["river_rauvin", "high_forest", "nether_mountains"],
+    "links": [
+      { "label": "Silverymoon — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Silverymoon" }
+    ],
+    "tags": ["city", "nearby", "north"]
+  },
+  {
+    "id": "river_rauvin",
+    "name": "The River Rauvin",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/river_rauvin.html",
+    "visibility": "player",
+    "related": ["silverymoon", "high_forest"],
+    "tags": ["river", "nearby", "wilderness"]
+  },
+  {
+    "id": "high_forest",
+    "name": "The High Forest",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/high_forest.html",
+    "visibility": "player",
+    "related": ["river_rauvin", "silverymoon"],
+    "links": [
+      { "label": "High Forest — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/High_Forest" }
+    ],
+    "tags": ["forest", "nearby", "wilderness", "elves"]
+  },
+  {
+    "id": "everlund",
+    "name": "Everlund",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/everlund.html",
+    "visibility": "player",
+    "related": ["silverymoon", "river_rauvin"],
+    "links": [
+      { "label": "Everlund — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Everlund" }
+    ],
+    "tags": ["city", "nearby", "trade", "north"]
   }
 ]

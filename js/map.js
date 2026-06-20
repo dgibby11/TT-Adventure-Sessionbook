@@ -49,4 +49,5 @@
 
   document.addEventListener("entities:ready", render);
   document.addEventListener("dm:changed", render);
+  document.addEventListener("campaign:changed", render);
 })();

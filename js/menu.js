@@ -114,9 +114,14 @@
   function updateToggleLabel() {
     if (!toggleBtn) return;
     const on = window.App.isDM();
-    toggleBtn.textContent = on ? "DM Mode: ON" : "DM Mode: OFF";
+    toggleBtn.textContent = on ? "◆ DM View" : "◯ Player View";
     toggleBtn.classList.toggle("dm-active", on);
     toggleBtn.setAttribute("aria-pressed", String(on));
+    const fileTag = document.querySelector('.file-tag');
+    if (fileTag) {
+      fileTag.textContent = on ? 'Campaign Dossier' : 'Player View';
+      fileTag.classList.toggle('file-tag-player', !on);
+    }
   }
 
   function wire() {
@@ -141,6 +146,8 @@
       renderList();
       updateToggleLabel();
     });
+    // Re-render when revealed status changes (matters in player view).
+    document.addEventListener("campaign:changed", renderList);
 
     updateToggleLabel();
     if (window.ENTITIES.length) renderList();
