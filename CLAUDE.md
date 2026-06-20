@@ -20,6 +20,10 @@ image, or PDF). No backend, no build step — runs from a trivial static server.
 - Runs via a trivial static server (bundled `start-map.bat` → Python http.server).
   NOTE: double-clicking index.html does NOT work — browsers block fetch() of local
   files over file://, and the app fetches JSON + content fragments.
+- Typography: default to compact sizing everywhere. No large fonts unless
+  explicitly requested. Body text ≤ 0.9rem, section headings ≤ 0.85rem,
+  labels/badges ≤ 0.7rem. Prefer tighter padding over generous whitespace.
+  This applies to both the app chrome (menu, topbar) and modal content.
 
 ## Repo Structure
 /
