@@ -4,43 +4,71 @@
     "name": "Fighters Department",
     "type": "location",
     "category": "Departments",
-    "x": 35.0,
-    "y": 11.0,
-    "w": 11.0,
-    "h": 5.0,
+    "x": 35.0, "y": 11.0, "w": 11.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/fighters.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["prof_thalia_varn", "dueling_society", "main_complex"],
+    "tags": ["department", "martial", "combat", "weapons", "training"],
+    "environment": {
+      "architecture": "A fortified hall with thick stone walls, weapon racks along every corridor, and a central practice yard ringed by tiered observation benches. Small towers at each corner of the yard are used for archery and thrown-weapon drills. Entry is through the main gate, staffed at all hours by a guard who conducts a short choreographed duel with each person entering — sequence unique to each enrolled student.",
+      "activity": "Constant — sparring pairs rotate through the yard at all hours. Formation drills happen at dawn before other departments are awake. Instructors critique loudly and without mercy.",
+      "sensory": "Sawdust, iron, and sweat. The crack of training weapons and the steady rhythm of someone working a dummy in the corner.",
+      "lighting": "Bright and intentional. No shadows to hide poor form."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "One of the weapon racks holds a longsword that doesn't match the training inventory — no academy marking, faint dried blood on the crossguard, handle wrapped in old leather that's seen real use." },
+      { "roll": "Athletics DC 13", "detail": "The practice yard stone is worn into a pattern of shallow depressions — feet have been placed in the exact same spots ten thousand times. Whoever drilled here first knew exactly what they were doing." },
+      { "detail": "Before first light, the yard is already in use. The formation drills run in near-silence — only the instructor's quiet count and the sound of boots on stone.", "time": ["dawn"] },
+      { "detail": "The practice yard is empty and cold. A single student works the far dummy in the dark, not needing light after this many repetitions.", "time": ["night"] }
+    ]
   },
   {
     "id": "barbarians",
     "name": "Barbarians Department",
     "type": "location",
     "category": "Departments",
-    "x": 21.0,
-    "y": 30.2,
-    "w": 14.0,
-    "h": 5.0,
+    "x": 21.0, "y": 30.2, "w": 14.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/barbarians.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["main_complex", "campus_wildlife"],
+    "tags": ["department", "martial", "primal", "rage", "unarmored"],
+    "environment": {
+      "architecture": "A low-ceilinged great hall with exposed timber beams, hide tapestries along the walls, and open fire channels running down the center. An outdoor sparring ring of packed earth and river stones sits adjacent, open to the sky.",
+      "activity": "Loud. Always loud. Competitions are constant and informal — who can lift what, who can hit hardest, who stays upright longest after taking a hit the others agreed on beforehand.",
+      "sensory": "Smoke, sweat, and roasting meat. The damp smell of students who ran through the river on a dare and are still dripping.",
+      "lighting": "Fire and torchlight. The Barbarians Department has collectively decided lamp oil is 'too civilized.'"
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "A handprint, too large to be human, is burned into the side beam of the main hall. Below it, scratched in Common: 'Grun, Year 14.' The wood around it is newer — the beam was replaced, but the mark was preserved." },
+      { "roll": "Nature DC 12", "detail": "The hide tapestries along the walls are trophies — each labeled with a name and a year. The oldest one, near the back wall, shows a creature that doesn't have a common name. Someone who knows their beasts will recognize it as nothing from this region." },
+      { "detail": "The fires are still lit and will be until morning. Three students are asleep on the hall floor, apparently by choice. Two more are arm-wrestling in the corner without apparent urgency.", "time": ["night"] }
+    ]
   },
   {
     "id": "rangers",
     "name": "Rangers Department",
     "type": "location",
     "category": "Departments",
-    "x": 11.3,
-    "y": 61.9,
-    "w": 11.0,
-    "h": 5.0,
+    "x": 11.3, "y": 61.9, "w": 11.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/rangers.html",
     "visibility": "player",
-    "related": [
-      "owlbear_cave",
-      "kass",
-      "maren_duskhollow"
+    "related": ["owlbear_cave", "kass", "maren_duskhollow", "high_forest", "torvald_thatch"],
+    "tags": ["department", "ranged", "wilderness", "survival", "tracking", "nature"],
+    "environment": {
+      "architecture": "A low timber longhouse that blends into the treeline at the campus edge, with lean-to shelters for equipment and a covered tracking range running west into the forest. The path to Kass's cave starts here.",
+      "activity": "Quiet by design. Students move through single file and learn to do so before they're invited inside. The department prizes stillness — it is the one place on campus where you will not hear shouting.",
+      "sensory": "Pine resin, leather, wet grass, and whatever Kass had for breakfast drifting from the southwest.",
+      "flora": "Dense. The department maintains its own herb garden and tracking blind. The brush immediately around the longhouse has been left deliberately wild.",
+      "lighting": "Natural only. Students learn by it, including at night."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "Fresh tracks circle the longhouse — large, three-toed, not from Kass's direction. No ranger has mentioned seeing anything." },
+      { "roll": "Survival DC 13", "detail": "The trap markers along the western training path use a notation system not taught in current curriculum. Someone set them long before the department's current faculty arrived — and they're still active." },
+      { "detail": "At first light, students are already moving through the forest — single file, quiet, tracking something or practicing being untraceable. The longhouse itself is at its emptiest of the day.", "time": ["dawn"] },
+      { "detail": "The forest beyond the perimeter wall is louder at night than it was during the day — a different set of animals, a different layer of the ecosystem, active in the dark. Something in the treeline is watching the building. This is probably normal.", "time": ["night"] }
     ]
   },
   {
@@ -48,106 +76,194 @@
     "name": "Clerics Department",
     "type": "location",
     "category": "Departments",
-    "x": 16.3,
-    "y": 81.4,
-    "w": 11.0,
-    "h": 5.0,
+    "x": 16.3, "y": 81.4, "w": 11.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/clerics.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["memorial_garden", "academy_traditions", "main_complex"],
+    "tags": ["department", "divine", "healing", "radiant", "clergy", "sacred"],
+    "environment": {
+      "architecture": "A tall vaulted sanctuary hall with smaller chapels branching from the nave, each consecrated to a different divine patron. Stone floors worn smooth by decades of ritual kneeling. Main entry is a wrought iron gate that opens to a whispered prayer — any sincere one. A separate east-side entrance serves the healing ward and has no such requirement.",
+      "activity": "Liturgical quiet during class hours. Morning and evening chants echo from the main hall. The occasional flash of divine light from examination rooms.",
+      "sensory": "Incense — not decorative, but functional. The air feels slightly heavier here and noticeably cleaner.",
+      "flora": "Potted sacred herbs line the windowsills. Dried memorial wreaths above each door, replaced at the seasonal calendar points.",
+      "lighting": "Candles, always. Faculty believe electric lanterns are disrespectful to the divine. The chapel alcoves stay lit through the night."
+    },
+    "curiosities": [
+      { "roll": "Insight DC 12", "detail": "Three of the nine chapel alcoves have been sealed. The doors are there, the dedication plaques are there — but the plaques have been removed and the doors mortared shut. No one on current faculty answers questions about it." },
+      { "roll": "Religion DC 14", "detail": "One of the unsealed chapels contains a prayer text in a script that predates the Academy by at least two centuries. It is not in any divine tradition currently taught here. The faculty call it 'archival material.'" },
+      { "detail": "The morning chant has been running for twenty minutes. The sound is richer than a student choir should be able to produce in this room — the acoustics are doing something. Or the acoustics are responding to something.", "time": ["dawn"] },
+      { "detail": "The candles are still lit. They are always lit. Standing here at night, that distinction matters more than it does during the day.", "time": ["night"] }
+    ]
   },
   {
     "id": "monks",
     "name": "Monks Department",
     "type": "location",
     "category": "Departments",
-    "x": 87.2,
-    "y": 65.9,
-    "w": 9.5,
-    "h": 5.0,
+    "x": 87.2, "y": 65.9, "w": 9.5, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/monks.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["main_complex", "fail_chamber"],
+    "tags": ["department", "unarmed", "ki", "discipline", "meditation", "speed"],
+    "environment": {
+      "architecture": "Spare and deliberate. Stone floors, paper screens, a single enclosed meditation garden. Impossibly clean — students maintain it as part of curriculum, not as a punishment.",
+      "activity": "Movement or stillness — nothing between. Students are either performing precise forms or sitting motionless. Visitors who arrive making noise are asked to leave by a student who doesn't raise their voice.",
+      "sensory": "Cedar oil and clean stone. The soft rhythmic sound of bare feet. An absence of ambient noise that takes a moment to notice.",
+      "flora": "A single cherry tree in the meditation garden, carefully maintained. Nothing else.",
+      "lighting": "Dawn and dusk preferred. Afternoon practice takes place in controlled dimness."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 13", "detail": "The meditation garden has a stone at its center that doesn't match the surrounding material. When you step onto it, you can feel a very faint vibration that stops the moment you pay attention to it." },
+      { "roll": "Insight DC 15", "detail": "The senior monks students move through the forms without watching each other. They are not mirroring — they are synchronized. The timing is too precise for students who have only been here a few years." },
+      { "detail": "The department begins at dawn. The first forms start before sunrise. By the time light reaches the meditation garden, the students have already been moving for an hour.", "time": ["dawn"] },
+      { "detail": "Late. The building is not empty — it is never empty when it looks empty. The forms continue in the dark. The sound of breathing is measurably slower than it should be.", "time": ["night"] }
+    ]
   },
   {
     "id": "paladins",
     "name": "Paladins Department",
     "type": "location",
     "category": "Departments",
-    "x": 66.7,
-    "y": 82.0,
-    "w": 11.5,
-    "h": 5.0,
+    "x": 66.7, "y": 82.0, "w": 11.5, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/paladins.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["clerics", "main_complex", "dueling_society", "academy_traditions"],
+    "tags": ["department", "divine", "oath", "melee", "aura", "protection", "justice"],
+    "environment": {
+      "architecture": "Chapel-adjacent training hall with vaulted ceilings and heraldic banners along the upper walls representing every oath tradition taught here. An armory kept in immaculate order, inspected weekly.",
+      "activity": "Formation drills, oath recitations, and a surprising amount of rigorous debate about the precise wording of vows. Argument here is considered part of training, not a distraction from it.",
+      "sensory": "Polished steel and incense from the attached chapel. The sharp smell of armor-polish is constant.",
+      "flora": "White lilies in the chapel alcoves, changed every seven days on the dot.",
+      "lighting": "Strong and even. The department holds that clarity of vision is a moral virtue."
+    },
+    "curiosities": [
+      { "roll": "History DC 13", "detail": "One of the heraldic banners — third from the east wall — bears an oath tradition that isn't in any current curriculum. The crest has been partially defaced. A student who asks about it gets a very short answer from faculty." },
+      { "roll": "Religion DC 15", "detail": "The chapel's altar is positioned twelve degrees off true north. For a faith-based institution, this is not an accident. It aligns with something in the Founder's Memorial Garden." }
+    ]
   },
   {
     "id": "rogues",
     "name": "Rogues Department",
     "type": "location",
     "category": "Departments",
-    "x": 89.0,
-    "y": 45.8,
-    "w": 9.5,
-    "h": 5.0,
+    "x": 89.0, "y": 45.8, "w": 9.5, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/rogues.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["dead_hours", "main_complex", "underground_storage"],
+    "tags": ["department", "stealth", "precision", "cunning", "deception", "lockpicking"],
+    "environment": {
+      "architecture": "An old iron mine in the eastern cliff face, abandoned a century before the Academy was founded. Rough-cut stone tunnels of inconsistent height and width, chambers that served ore-sorting and tool operations and now serve their equivalents. The entrance is unmarked; the path to it is unmaintained. The mine door has no handle — only a small hole on the exterior face where a lockpick fits. The mechanism changes on an undisclosed schedule.",
+      "activity": "Quiet that is not the same as empty. The mine absorbs sound — footsteps, voices, even the tap of lockpicks carry strangely. You never quite know how many students are in the tunnels.",
+      "sensory": "Cold stone, iron dust in the older passages, and nothing else. Students are trained to eliminate personal scent early in the first term. The mine helps — there's nothing for scent to cling to.",
+      "lighting": "Torch brackets at intervals, maintained by students rather than facilities staff. Sections without torches are deliberate."
+    },
+    "curiosities": [
+      { "roll": "Investigation DC 13", "detail": "Three of the tunnel junctions have scratch marks at knee height — a navigation notation system that doesn't match any mapping convention taught here. Someone developed it independently. It's consistent, and it goes deeper than the department officially acknowledges." },
+      { "roll": "Perception DC 15", "detail": "A shaft that was supposedly sealed in the first year of the department's use has fresh scratches around the planking. The planking is loose. There is no sound on the other side, but there is a draft." },
+      { "roll": "Insight DC 13", "detail": "The student who guided you in was not the same student who showed you out. You only noticed on reflection." },
+      { "detail": "At night the mine is its own world. No ambient sound from campus reaches this far east. Whatever is in the deeper shafts sounds closer in the dark than it does during the day.", "time": ["night"] }
+    ]
   },
   {
     "id": "artificers",
     "name": "Artificers Department",
     "type": "location",
     "category": "Departments",
-    "x": 43.3,
-    "y": 80.2,
-    "w": 14.0,
-    "h": 5.0,
+    "x": 43.3, "y": 80.2, "w": 14.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/artificers.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["main_complex", "academy_provisions", "dueling_society"],
+    "tags": ["department", "crafting", "invention", "engineering", "alchemy", "infusion"],
+    "environment": {
+      "architecture": "A maze of workshops, forges, and cluttered lab-rooms connected by passageways strewn with half-finished contraptions. The smell reaches you before you reach the building.",
+      "activity": "Constant tinkering, occasional controlled explosion, someone always either crying or celebrating. Remarkably hard to tell which from the next room.",
+      "sensory": "Burning metal, machine oil, soldering smoke, and the faint chemical-sweet smell of failed alchemical experiments gone cold.",
+      "lighting": "Workshop lamps rigged by the students themselves — variable quality and coverage."
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 12", "detail": "One of the lab benches has magical residue that isn't consistent with the work visible on it — the infusion signatures are much older than the equipment currently in use. Someone with more skill than any current student has been working at this bench." },
+      { "roll": "Investigation DC 13", "detail": "A locked cabinet in the northeast workshop has a manufacturer's mark from a Thornwick Arcane Consortium supplier. None of the faculty have an explanation for it." },
+      { "detail": "Someone has been working through the night — a bench lit by a single focused lamp, tools laid out with unusual precision. The project on the bench is not a student assignment.", "time": ["night"] }
+    ]
   },
   {
     "id": "bards",
     "name": "Bards Department",
     "type": "location",
     "category": "Departments",
-    "x": 67.5,
-    "y": 28.1,
-    "w": 10.0,
-    "h": 5.0,
+    "x": 67.5, "y": 28.1, "w": 10.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/bards.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["main_complex", "food_court", "dueling_society"],
+    "tags": ["department", "performance", "enchantment", "music", "inspiration", "illusion"],
+    "environment": {
+      "architecture": "A converted amphitheatre with practice rooms, a rehearsal hall, a small performance stage, and walls that seem to redirect sound in ways that shouldn't be architecturally possible. Visiting the wrong room at the wrong time means hearing someone else's private performance.",
+      "activity": "Music, creative argument, and dramatic personal crisis — often simultaneously and at volume. The emotional temperature is always either very high or mysteriously subdued.",
+      "sensory": "Instrument resin, chalk on the rehearsal floor, perfume, and at the end of term, definitely spilled wine.",
+      "flora": "Flowering vines over the main archway. Maintained with unusual care.",
+      "lighting": "Theatrical. The department knows what a spotlight does to a person and uses that knowledge deliberately."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "The acoustic properties of the main rehearsal hall include a spot near the northeast wall where a whisper can be heard clearly anywhere else in the room. Students know about it. Faculty pretend not to." },
+      { "roll": "Arcana DC 14", "detail": "A low harmonic in the building's resonance chamber doesn't match any natural acoustic phenomenon — it's a maintained enchantment, old, and not something in the current Bards curriculum. Someone built this building knowing more than they taught." },
+      { "detail": "The stage is dark but not empty. A student is running the same eight bars over and over, alone, working out something that isn't quite right yet. They've been here for hours.", "time": ["night"] },
+      { "detail": "The rehearsal hall empties abruptly at dusk — something about the light change breaks the mood and everyone decides to stop at once. For twenty minutes, the building is quiet. Then the late-night cohort arrives.", "time": ["dusk"] }
+    ]
   },
   {
     "id": "druids",
     "name": "Druids Department",
     "type": "location",
     "category": "Departments",
-    "x": 53.3,
-    "y": 14.8,
-    "w": 11.0,
-    "h": 5.0,
+    "x": 53.3, "y": 14.8, "w": 11.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/druids.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["rangers", "main_complex", "high_forest", "campus_wildlife"],
+    "tags": ["department", "nature", "primal", "wildshape", "druidic-circle", "plants", "moon"],
+    "environment": {
+      "architecture": "The least architectural of the departments — a cluster of structures that seem to have grown rather than been built. Stone-and-timber halls with living root systems integrated into the walls.",
+      "activity": "Follows natural rhythms. Active at dawn and dusk; quiet midday; a second burst of activity at midnight during moon work. Students who keep normal hours find the place half-empty most of the time.",
+      "sensory": "Earth, pollen, productive decay, and rain regardless of the weather outside. The air is noticeably wetter here than the rest of campus.",
+      "flora": "Extraordinary and everywhere. Rare plants maintained for academic use and ones that have simply decided to move in. The department stopped removing uninvited specimens in Year 4.",
+      "lighting": "Natural only. Moondials mark the time instead of clocktowers.",
+      "weather": "The area immediately around the Druids Department has slightly better weather than the surrounding campus. Students claim they're making it happen. Faculty don't confirm or deny this."
+    },
+    "curiosities": [
+      { "roll": "Nature DC 11", "detail": "One of the trees in the department's interior courtyard has a face — not carved, but grown. Eyes closed. No one planted it. It has been here at least thirty years by the ring count." },
+      { "roll": "Perception DC 13", "detail": "At dusk, something leaves the druids courtyard heading north. Not a student — the movement is too low and too quiet. The duty roster shows no one signed out." },
+      { "detail": "The midnight activity is real and the building knows it. The root systems in the walls are warmer to the touch. The plants in the courtyard are open. This is their working hour.", "time": ["night"] },
+      { "detail": "The department is most alive at first light — students emerging from whatever the midnight work required, tending the garden, eating in the courtyard in silence that is comfortable rather than disciplined.", "time": ["dawn"] }
+    ]
   },
   {
     "id": "wizards",
     "name": "Wizards Department",
     "type": "location",
     "category": "Departments",
-    "x": 85.3,
-    "y": 26.9,
-    "w": 11.5,
-    "h": 5.0,
+    "x": 85.3, "y": 26.9, "w": 11.5, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/wizards.html",
     "visibility": "player",
-    "related": [
-      "oswald_crumb"
+    "related": ["oswald_crumb", "prof_aldous_fenwick", "sorcerers", "main_complex", "old_library", "nether_mountains"],
+    "tags": ["department", "arcane", "transmutation", "spells", "theory", "research"],
+    "environment": {
+      "architecture": "A tower complex — the primary spire reaches seven stories. Lower floors contain classrooms and reference libraries. Upper floors are restricted research laboratories. The top floor has no windows and no official purpose listed in any campus document.",
+      "activity": "Intense and nervy. Students speak in precisely correct sentences. The sound of something going wrong happens on a regular schedule that faculty pretend is not a schedule.",
+      "sensory": "Ozone and hot copper — the smell of active arcane workings. A faint burning smell from the upper floors that no one acknowledges aloud.",
+      "lighting": "Magically maintained at all hours — the Wizards Department never goes fully dark."
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 12", "detail": "The second floor library contains a sealed alcove — not locked, but wards redirect attention away from it. Someone who resists the effect will find a shelf of texts with no author listed and no acquisition date." },
+      { "roll": "Perception DC 15", "detail": "Plants are growing on the exterior of the upper tower that have no business being there — seven stories up, no soil, in full shade, apparently healthy. Students have noticed. No one asks." },
+      { "roll": "Arcana DC 13", "detail": "The burning smell from the upper floors is stronger tonight. The windows on the sixth floor are lit. The schedule shows no authorized research running at this hour.", "time": ["night"] },
+      { "detail": "The tower's magical lights never go out. At night this is more noticeable — every window lit, a specific rhythm of activity and stillness visible from the courtyard.", "time": ["night"] }
     ]
   },
   {
@@ -155,24 +271,46 @@
     "name": "Sorcerers Department",
     "type": "location",
     "category": "Departments",
-    "x": 66.8,
-    "y": 10.8,
-    "w": 11.0,
-    "h": 5.0,
+    "x": 66.8, "y": 10.8, "w": 11.0, "h": 5.0,
     "contentType": "html",
     "contentFile": "content/sorcerers.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["wizards", "main_complex", "fail_chamber"],
+    "tags": ["department", "arcane", "bloodline", "wild-magic", "innate", "sorcery"],
+    "environment": {
+      "architecture": "Curved walls and high arched ceilings engineered to absorb power fluctuations without structural damage. No sharp corners — the architect knew what happens when an unstable bloodline spikes in a corner room. The building has been rebuilt three times. The current version is the most durable.",
+      "activity": "Controlled but charged — there is a constant low-level sense of something being kept in check. Students with unstable bloodlines are issued proximity monitors that chirp when their ambient field exceeds acceptable levels.",
+      "sensory": "Ionized air. A static crackle when passing near certain students. The smell of things about to happen.",
+      "flora": "Fire-resistant decorative plants only, by standing policy.",
+      "lighting": "Ambient magical lighting that responds to the emotional states of nearby students — an unintentional design feature that has never been fixed because no one agrees on the solution."
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 13", "detail": "The ambient magical field in the Sorcerers Department is higher than any individual student's output would explain. Something in the building itself is contributing — old, foundational, and not mapped in any campus schematic." },
+      { "roll": "Perception DC 12", "detail": "Twice now, a specific student's proximity monitor has chirped in a regular rhythm rather than randomly — exactly seven chirps, then silence, then seven chirps again. The student insists they're not doing anything." }
+    ]
   },
   {
     "id": "main_complex",
     "name": "The Main Academy Complex",
     "type": "location",
     "category": "Central Campus Facilities",
-    "x": 50.0,
-    "y": 44.4,
+    "x": 50.0, "y": 44.4,
     "contentType": "html",
     "contentFile": "content/main_complex.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["headmistress_dowe", "old_library", "food_court", "academy_provisions", "torvald_thatch"],
+    "tags": ["administration", "tower", "faculty", "offices", "central"],
+    "environment": {
+      "architecture": "Central administrative tower flanked by two academic wings and a formal courtyard. Gothic stonework on the original sections; newer administrative additions in a more severe style that announces itself as more recent without meaning to.",
+      "activity": "Faculty crossing between offices, students waiting outside department heads' doors, the occasionally audible tense meeting through the ground-floor windows.",
+      "sensory": "Paper, lamp oil, and the dry institutional smell of offices maintained by people who don't open windows much.",
+      "lighting": "Official and sufficient. Not warm."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "The administrative wing has a door on the second floor with no nameplate, no handle on the outside, and no gap at the bottom for light to show. Someone occasionally brings documents to it and slips them through a mail slot that wasn't there the last time you looked." },
+      { "roll": "History DC 14", "detail": "The cornerstone of the original tower is dated Year 1. The administrative wing cornerstone is dated Year 7. The eastern annex — the oldest-looking part of the building — has no date at all." },
+      { "detail": "The administrative wing at night: corridors lit, doors closed, no voices. The no-name door on the second floor has light under it — thin, yellow, steady. Someone is in there.", "time": ["night"] }
+    ]
   },
   {
     "id": "founders_statue",
@@ -182,11 +320,19 @@
     "contentType": "html",
     "contentFile": "content/founders_statue.html",
     "visibility": "player",
-    "related": [
-      "secret_society",
-      "ninth_thesis",
-      "aldric_voss",
-      "session_2"
+    "related": ["secret_society", "ninth_thesis", "aldric_voss", "session_2", "memorial_garden", "occult_systems"],
+    "tags": ["landmark", "founders", "mystery", "ritual-site", "lore"],
+    "environment": {
+      "architecture": "A tall stone figure on a raised plinth at the junction of three campus paths. Older than everything immediately around it — stone worn smooth, features slightly indistinct.",
+      "activity": "Students pass through without stopping. The ones who do stop tend to do so at odd hours.",
+      "sensory": "Wind channels strangely around the plinth. Cold stone even in summer. The smell of old pigment from the base markings that students keep adding and maintenance keeps removing."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "Three sets of initials are carved into the back of the plinth — A.V., I.O., B.A. — in a hand that predates the official dedication plaque by the look of the weathering." },
+      { "roll": "Arcana DC 14", "detail": "A faint abjuration aura — not a ward against magic, but a marker. Something was recorded here. Whatever it was has not decayed the way a normal spell impression would." },
+      { "roll": "History DC 16", "detail": "The plinth's dedication text dates to Year 7. The statue itself is older than that by at least a decade. It was not built for this plinth — it was moved here from somewhere else." },
+      { "detail": "Alone with it at night: the campus noise is gone and the statue is what's left. The worn stone face has an expression that changes depending on the angle. You weren't sure of that during the day.", "time": ["night"] },
+      { "roll": "Arcana DC 12", "detail": "At dusk the recording aura is marginally more active — a slight warmth at the edges of detection that fades as full dark comes on. Whatever the anchor is tracking, it is more alert at the transition.", "time": ["dusk"] }
     ]
   },
   {
@@ -197,8 +343,20 @@
     "contentType": "html",
     "contentFile": "content/food_court.html",
     "visibility": "player",
-    "related": [
-      "underground_storage"
+    "related": ["underground_storage", "lenny_goldvein", "academy_credits", "dead_hours"],
+    "tags": ["dining", "social", "campus", "students", "meals"],
+    "environment": {
+      "architecture": "A wide, low-ceilinged hall with long communal tables and kitchen alcoves along two walls. Newer renovation — the floor is slightly uneven where old stone meets the new build, particularly near the rear service area.",
+      "activity": "Three mealtimes with a predictable peak crowd. Between meals, students use the tables for studying, arguing, and social performance that everyone pretends not to be doing.",
+      "sensory": "Cooking smells that shift with the meal: morning bread and porridge, midday stew, evening roast. Underneath it all, old wood and grease.",
+      "flora": "Herb boxes along the kitchen windows. Functional.",
+      "lighting": "Large windows by day, oil lamps in the evening. One of the better-lit social spaces."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 13", "detail": "The floor near the rear service hatch is slightly warmer than the rest of the room, even in the depths of winter." },
+      { "roll": "Investigation DC 15", "detail": "The service hatch locks from below. From the food court side, there is no visible locking mechanism and no visible handle." },
+      { "detail": "Early — the kitchen staff are in before anyone else. The smell of bread reaches the courtyard. Students who arrive before first meal is served sit at the tables with books open, pretending not to be waiting for the food.", "time": ["dawn"] },
+      { "detail": "Empty tables. The kitchen staff gone. The warmth near the service hatch is more noticeable now that the cooking fires are out and the hall is cold. Something below is generating heat.", "time": ["night"] }
     ]
   },
   {
@@ -209,10 +367,19 @@
     "contentType": "html",
     "contentFile": "content/old_library.html",
     "visibility": "player",
-    "related": [
-      "orath_charter",
-      "secret_society",
-      "isolde_orath"
+    "related": ["orath_charter", "secret_society", "isolde_orath", "prof_aldous_fenwick", "memorial_garden", "hidden_knowledge"],
+    "tags": ["library", "archive", "history", "restricted", "founding", "lore"],
+    "environment": {
+      "architecture": "Three-story stone building predating the current complex. Narrow windows, wooden reading alcoves, iron rail galleries. The restricted section occupies the entire third floor behind a locked iron door. The door's hinges haven't moved in years — visible dust on both sides.",
+      "activity": "Quiet academic use — students researching assignments, the occasional senior faculty scholar. The restricted floor shows no visible traffic.",
+      "sensory": "Old paper, binding glue, and the dry-rot smell of books that haven't been opened in a long time. Cooler than the rest of campus year-round.",
+      "lighting": "Insufficient by any reasonable standard. Students bring their own lanterns. The third-floor door is the only space on this floor with no lamp bracket at all."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "Several books on the eastern shelf have been replaced with professional-quality fakes — identical covers, blank pages. Someone with resources and patience created these substitutes." },
+      { "roll": "Investigation DC 14", "detail": "The card catalogue for the restricted floor references material from Years 18 through 47. Nothing after Year 47 is catalogued. Whatever happened in Year 47, the library stopped recording it." },
+      { "roll": "Arcana DC 16", "detail": "The restricted floor door radiates a divination ward — not an alarm or lock, but a monitoring spell. Someone has been tracking who approaches it, and how often." },
+      { "detail": "After closing the building goes completely dark — no maintained lights on any floor. Access to the restricted floor is only truly unobserved now. The monitoring ward is still active in the dark.", "time": ["night"] }
     ]
   },
   {
@@ -223,8 +390,21 @@
     "contentType": "html",
     "contentFile": "content/memorial_garden.html",
     "visibility": "player",
-    "related": [
-      "aldric_voss"
+    "related": ["aldric_voss", "founders_statue", "old_library", "academy_traditions", "torvald_thatch"],
+    "tags": ["memorial", "founders", "garden", "lore", "tomb", "mystery"],
+    "environment": {
+      "architecture": "A formal garden enclosed by low stone walls, with a central path leading to three memorial stones. The stones are tall, unadorned, and demonstrably older than everything around them.",
+      "activity": "Almost never visited outside of the Founder's Remembrance ceremony. Grounds staff maintain it weekly. The maintenance log shows someone visits every Wednesday at dusk — listed only as 'authorized grounds access.'",
+      "sensory": "Flowers in season, cold stone, the river wind off the Rauvin. Ambient sound doesn't carry into the garden the way it should given its location.",
+      "flora": "White and silver planting throughout, formally maintained. One rosebush along the north wall that no one planted has been here longer than any living groundskeeper can remember.",
+      "lighting": "Open sky; no artificial lights. At night, the memorial stones seem to hold moonlight longer than stone does."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "Aldric Voss's stone has an additional inscription at the base, below the official dedication text. Worn to near-illegibility — requires light and close inspection to read." },
+      { "roll": "Arcana DC 15", "detail": "The three memorial stones form a subtle triangular abjuration pattern. It is not protective of the garden — it is protective of something under it." },
+      { "roll": "History DC 18", "detail": "The founding year on Brennan Ashcroft's stone is three years earlier than the official founding date used in all current Academy records." },
+      { "detail": "At night the memorial stones hold what little moonlight there is longer than they should. The light lingers after clouds pass. This is not a recognized enchantment — it is simply what the stones do.", "time": ["night"] },
+      { "roll": "Perception DC 10", "detail": "On Wednesday evenings, the ravens who roost in the old library eaves cross the courtyard and settle in the memorial garden. They stay until full dark, then leave. This happens without exception, regardless of weather.", "time": ["dusk"] }
     ]
   },
   {
@@ -235,11 +415,18 @@
     "contentType": "html",
     "contentFile": "content/underground_storage.html",
     "visibility": "dm-only",
-    "related": [
-      "bodak",
-      "mimics",
-      "magical_gauntlet",
-      "session_1"
+    "related": ["bodak", "mimics", "magical_gauntlet", "session_1", "food_court", "occult_systems", "secret_society"],
+    "tags": ["underground", "dangerous", "secret", "bodak", "founding", "dm-only"],
+    "environment": {
+      "architecture": "Rough-cut stone chambers extending beneath the food court and east under the main courtyard. Not a single construction — something older lies below, with something newer grafted on top in a later era.",
+      "activity": "None official. No maintenance staff enters. Food deliveries are lowered via a mechanical lift rather than walked through.",
+      "sensory": "Cold, damp, old stone, and something organic beneath the mineral smell — not rot, something older and harder to place. The Bodak's presence registers as a wrongness at the threshold before it registers as anything else.",
+      "lighting": "None. The walls have old torch brackets, empty for decades."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "The door at the base of the stair is secured with three independent locks of three visibly different ages. The oldest predates the food court above it by at least a century." },
+      { "roll": "Arcana DC 13", "detail": "The deeper chambers show evidence of ritual use — the floor was cleared and relaid in geometric patterns. Old enough that the stone has settled back into a natural grade. But not old enough to be the original construction." },
+      { "roll": "Perception DC 11", "detail": "The Bodak is more active after dark — its circuit is wider, its attention more acute. The sounds from the deeper chambers are different at night. More frequent. More deliberate.", "time": ["night"] }
     ]
   },
   {
@@ -250,11 +437,19 @@
     "contentType": "html",
     "contentFile": "content/fail_chamber.html",
     "visibility": "player",
-    "related": [
-      "ellery_voss",
-      "jungle_site",
-      "teleportation_network",
-      "session_3"
+    "related": ["ellery_voss", "jungle_site", "teleportation_network", "session_3", "expedition_club"],
+    "tags": ["examination", "teleportation", "secret", "sigil", "dr-voss", "fieldwork"],
+    "environment": {
+      "architecture": "A high-ceilinged stone chamber with a permanent magical sigil inlaid in the floor. Observation balconies on three sides. The sigil is presented to students as testing infrastructure.",
+      "activity": "Tightly scheduled — examination groups rotate through under faculty supervision. No unauthorized access permitted.",
+      "sensory": "The chamber smells like weather: open air, ozone, and on certain days a green tropical wetness that has no business being this far north.",
+      "lighting": "Bright and even, magically maintained for 'consistent examination conditions.'"
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 14", "detail": "The floor sigil is not a standard examination array. The notation is teleportation infrastructure — permanent, anchored, and far more complex than any midterm would require." },
+      { "roll": "Perception DC 16", "detail": "Scorch marks on the observation balcony above the sigil have been painted over — multiple times, by the layer count. Whatever scorched it came from inside the chamber, moving upward." },
+      { "roll": "History DC 13", "detail": "The FAIL Chamber was installed in the Academy's third year of operation — not by the founders, but by the first graduating class. No contractor is named in any surviving record." },
+      { "roll": "Arcana DC 10", "detail": "At night, with no observers on the balconies and no ambient light, the floor sigil is faintly self-luminous. Not brightly — barely perceptible. But it is on. It is always on.", "time": ["night"] }
     ]
   },
   {
@@ -265,11 +460,16 @@
     "contentType": "html",
     "contentFile": "content/owlbear_cave.html",
     "visibility": "player",
-    "related": [
-      "kass",
-      "rangers",
-      "maren_duskhollow",
-      "session_4"
+    "related": ["kass", "rangers", "maren_duskhollow", "session_4", "the_upperclassmen"],
+    "tags": ["creature", "cave", "containment", "owlbear", "kass", "rangers"],
+    "environment": {
+      "architecture": "A natural cave system expanded with timber framing and iron reinforcement. Outer entrance area open to the air; main holding chamber deep enough that the temperature stays constant year-round. A feeding apparatus on a pulley system at the entrance.",
+      "activity": "Quiet when Kass is calm. A recognizable subsonic rumble and feather-ruffling when she isn't. Rangers students run the care rotation.",
+      "sensory": "Feathers, animal warmth, the clean smell of hay and raw meat on feeding days. A faint musk that rangers say you stop noticing after a week. Visitors do not stop noticing after a week."
+    },
+    "curiosities": [
+      { "roll": "Animal Handling DC 11", "detail": "Kass is calm with some students and unsettled by others in ways that don't map to volume or approach style. She knows something about certain people." },
+      { "roll": "Perception DC 13", "detail": "A carving in the gate timber — partially obscured by later reinforcement — reads 'K.3, Year [worn].' The number is too worn to make out. The carving is old. Kass may not be the first." }
     ]
   },
   {
@@ -280,11 +480,20 @@
     "contentType": "html",
     "contentFile": "content/jungle_site.html",
     "visibility": "player",
-    "related": [
-      "sunken_fang_spear",
-      "dinosaurs",
-      "fail_chamber",
-      "session_3"
+    "related": ["sunken_fang_spear", "dinosaurs", "fail_chamber", "session_3", "expedition_club"],
+    "tags": ["remote", "jungle", "fieldwork", "teleportation", "dinosaurs", "artifact"],
+    "environment": {
+      "architecture": "No permanent structures. The site is a remote jungle clearing reached only through the FAIL Chamber. Previous expedition markers are visible — stakes, rope guides, a collapsed shelter from a prior cohort that no one has cleared.",
+      "activity": "Hostile outside designated safe zones. The local fauna does not distinguish between academy students and prey, and the canopy prevents line-of-sight at range.",
+      "sensory": "Heat, humidity, insect noise at a constant overwhelming level. The smell of living jungle — productive, dense, everything eating everything else.",
+      "flora": "Dense canopy; undergrowth too thick to move through without cutting a path. Rare specimens visible but not safely collectible.",
+      "lighting": "Dappled canopy light by day. Impenetrable darkness at night.",
+      "weather": "Tropical — nothing like the Silverymoon climate. This site is not nearby. The Academy does not publish its coordinates."
+    },
+    "curiosities": [
+      { "roll": "Survival DC 12", "detail": "The site shows signs of visits more recent than the last official expedition. Something cut the undergrowth along a path the Academy didn't make." },
+      { "roll": "Nature DC 15", "detail": "The predator-prey ratios here are wrong — something large is missing from the food chain, or was recently added. The local animals are behaving like the hierarchy just changed." },
+      { "roll": "Arcana DC 14", "detail": "The flooded pit where the Sunken Fang Spear was recovered still has a residual aura. Whatever the spear was doing there, it was not dropped accidentally." }
     ]
   },
   {
@@ -295,9 +504,18 @@
     "contentType": "html",
     "contentFile": "content/nether_mountains.html",
     "visibility": "player",
-    "related": [
-      "oswald_crumb",
-      "thornwick_consortium"
+    "related": ["oswald_crumb", "thornwick_consortium", "silverymoon", "river_rauvin", "orc_warband"],
+    "tags": ["remote", "mountains", "expedition", "mining", "cold", "dangerous"],
+    "environment": {
+      "architecture": "A decommissioned excavation site — previous seasons' dig frames still standing, partially collapsed. A base camp of weathered tents and a stone equipment cache that hasn't been restocked in at least two seasons.",
+      "activity": "Officially inactive: 'on extended hiatus pending faculty review.' Two prior expedition cohorts abandoned it mid-season without completing their stated objectives.",
+      "sensory": "Cold, thin air, the mineral smell of disturbed rock. Wind off the northern face that has nothing to break it between here and the high range.",
+      "lighting": "Clear mountain light that flattens everything and leaves no shadows to hide in."
+    },
+    "curiosities": [
+      { "roll": "Investigation DC 13", "detail": "The excavation log stops mid-sentence in the second-to-last entry. The final entry has been removed — page torn cleanly, not worn away." },
+      { "roll": "Arcana DC 15", "detail": "The northern dig face has residual abjuration traces — the kind placed over something to contain it, not to protect researchers. Something was dug up and the seal was placed afterward." },
+      { "roll": "Perception DC 11", "detail": "Fresh boot tracks in the mountain dust. Not from anyone in the party. Made recently — the dust hasn't settled." }
     ]
   },
   {
@@ -308,8 +526,14 @@
     "contentType": "html",
     "contentFile": "content/voss_imprint.html",
     "visibility": "dm-only",
-    "related": [
-      "aldric_voss"
+    "related": ["aldric_voss", "founders_statue", "memorial_garden", "secret_society", "teleportation_network"],
+    "tags": ["dm-only", "founding", "voss", "architecture", "lore", "hidden"],
+    "environment": {
+      "architecture": "Not a single location but a pattern distributed across the campus — building alignments, substructure orientations, and underground connections that only become visible when mapped at a large scale.",
+      "activity": "None. This is infrastructure, not a room. Students walk through it daily without knowing it exists."
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 18", "detail": "The alignment pattern, when charted, forms a sigil that matches nothing in published arcane literature — but resembles the floor marking in the FAIL Chamber, scaled up by a factor of roughly forty." }
     ]
   },
   {
@@ -319,7 +543,16 @@
     "category": "Founding-Era & Lore",
     "contentType": "html",
     "contentFile": "content/eastern_wing.html",
-    "visibility": "dm-only"
+    "visibility": "dm-only",
+    "related": ["main_complex", "aldric_voss", "secret_society", "hidden_knowledge"],
+    "tags": ["dm-only", "founding", "sealed", "hidden", "administration"],
+    "environment": {
+      "architecture": "The oldest section of the main complex — sealed behind the administrative wing in Year 12 of the Academy's operation. Access corridors have been walled over. The official record describes it as 'structurally unsafe.' The structure is sound.",
+      "activity": "None official. Based on dust patterns and air circulation, someone enters it periodically from a direction that isn't the walled-over main corridor."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 17", "detail": "One of the walled-over entries has mortar that is a slightly different color from the surrounding wall — newer, in a pattern suggesting it has been opened and resealed more than once." }
+    ]
   },
   {
     "id": "academy_provisions",
@@ -329,14 +562,17 @@
     "contentType": "html",
     "contentFile": "content/academy_provisions.html",
     "visibility": "player",
-    "related": [
-      "silas_morne",
-      "academy_credits",
-      "lenny_goldvein",
-      "food_court",
-      "potion_of_healing"
-    ],
-    "tags": ["store", "credits", "supplies", "provisions"]
+    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night"],
+    "tags": ["store", "credits", "supplies", "provisions", "magic-items", "economy"],
+    "environment": {
+      "architecture": "A narrow shopfront inside the main complex ground floor. Shelves behind a counter, a locked cabinet on the back wall, and a ledger stand that Silas Morne faces away from customers with impressive consistency.",
+      "activity": "Open prescribed hours; Morne is always there before opening and still there after close. Students come for supplies, healing potions, and occasionally to ask about the Special Acquisitions cabinet.",
+      "sensory": "Clean, organized, faintly herbaceous from the potion stock."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "Silas Morne keeps a second ledger under the counter. The pages visible through the reflection in the polished display case include sums significantly larger than anything on the public price list." },
+      { "roll": "Insight DC 14", "detail": "Morne is professionally warm — but pauses, almost imperceptibly, before answering questions about supply sources or lead times. The pause is always the same length." }
+    ]
   },
   {
     "id": "silverymoon",
@@ -346,11 +582,11 @@
     "contentType": "html",
     "contentFile": "content/silverymoon.html",
     "visibility": "player",
-    "related": ["river_rauvin", "high_forest", "nether_mountains"],
+    "related": ["river_rauvin", "high_forest", "nether_mountains", "orc_warband", "thornwick_consortium"],
     "links": [
       { "label": "Silverymoon — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Silverymoon" }
     ],
-    "tags": ["city", "nearby", "north"]
+    "tags": ["city", "nearby", "north", "trade", "magic", "civilization"]
   },
   {
     "id": "river_rauvin",
@@ -360,8 +596,8 @@
     "contentType": "html",
     "contentFile": "content/river_rauvin.html",
     "visibility": "player",
-    "related": ["silverymoon", "high_forest"],
-    "tags": ["river", "nearby", "wilderness"]
+    "related": ["silverymoon", "high_forest", "wolves", "nether_mountains"],
+    "tags": ["river", "nearby", "wilderness", "travel", "border"]
   },
   {
     "id": "high_forest",
@@ -371,11 +607,11 @@
     "contentType": "html",
     "contentFile": "content/high_forest.html",
     "visibility": "player",
-    "related": ["river_rauvin", "silverymoon"],
+    "related": ["river_rauvin", "silverymoon", "wolves", "displacer_beast"],
     "links": [
       { "label": "High Forest — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/High_Forest" }
     ],
-    "tags": ["forest", "nearby", "wilderness", "elves"]
+    "tags": ["forest", "nearby", "wilderness", "elves", "ancient", "fey"]
   },
   {
     "id": "everlund",
@@ -385,10 +621,49 @@
     "contentType": "html",
     "contentFile": "content/everlund.html",
     "visibility": "player",
-    "related": ["silverymoon", "river_rauvin"],
+    "related": ["silverymoon", "river_rauvin", "thornwick_consortium"],
     "links": [
       { "label": "Everlund — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Everlund" }
     ],
-    "tags": ["city", "nearby", "trade", "north"]
+    "tags": ["city", "nearby", "trade", "north", "merchant"]
+  },
+  {
+    "id": "campus_root",
+    "name": "FAIL Academy Grounds",
+    "type": "location",
+    "category": "Central Campus Facilities",
+    "contentType": "html",
+    "contentFile": "content/campus_root.html",
+    "visibility": "player",
+    "related": [
+      "fighters", "barbarians", "rangers", "clerics", "monks", "paladins",
+      "rogues", "artificers", "bards", "druids", "wizards", "sorcerers",
+      "main_complex", "founders_statue", "food_court", "old_library",
+      "memorial_garden", "academy_provisions",
+      "underground_storage", "fail_chamber",
+      "owlbear_cave", "jungle_site", "nether_mountains",
+      "voss_imprint", "eastern_wing",
+      "silverymoon", "river_rauvin", "high_forest", "everlund",
+      "torvald_thatch", "campus_ravens"
+    ],
+    "tags": ["campus", "grounds", "root", "academy"],
+    "environment": {
+      "architecture": "A dispersed campus of freestanding buildings spread across the northern fringe of Silverymoon, connected by maintained paths through wooded terrain. The central facilities — main complex, food court, library, memorial garden — occupy a core area. The twelve department buildings stand separately, each reached by traveling through the grounds. No two departments share a wall.",
+      "activity": "Students crossing between locations on foot at all hours. The sounds of sparring, debate, and occasional arcane mishap carry across the open grounds. After the Evening Bell, foot traffic thins and the paths belong mostly to Torvald and whoever is out there for reasons they don't want documented.",
+      "sensory": "Steel and chalk, wood smoke from the smithing yards, ozone from the Wizards' tower, and whatever the Food Court is doing to a leg of something.",
+      "flora": "Overgrown ivy on the older stone walls. A line of ancient oaks along the east path. Moss in the shaded alcoves between buildings. The Druids Department's influence leaks north in summer.",
+      "lighting": "Lantern-posts cover the central facilities and main courtyard. The paths from the central complex out to the department buildings are unlit after dark — no posts, no torches, nothing. Students who make the walk regularly stop noticing. Students who don't make it regularly find it more disorienting than they expect.",
+      "weather": "Exposed to the river wind off the Rauvin; winters bite hard and early; summers are mild but humid near the water. The Druids Department seems to have marginally better weather than the rest, but this is not official."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "The lantern at the northeast corner of the main courtyard has been dark for three weeks. It is not on the maintenance log." },
+      { "roll": "Insight DC 12", "detail": "Students move between departments in clusters. Most clusters break apart at the same three points on the main path. Something about those spots makes people change direction without seeming to notice." },
+      { "roll": "History DC 14", "detail": "The campus wall has a sealed gate in the north face, bricked over from the outside. No current map acknowledges it." },
+      { "roll": "History DC 12", "detail": "The Academy once had a Warlocks Department. It was closed in Year 23 after three consecutive cohorts had their benefactor relationships turn out to be adversarial to the institution. The third incident involved a devil. No department has been opened since without a review of the enrollment model." },
+      { "detail": "After the Evening Bell: the central campus lanterns are lit and the courtyard is quiet. Step past the last lantern-post toward any department and the light drops out almost immediately. The paths between here and the buildings are dark.", "time": ["night"] },
+      { "roll": "Perception DC 11", "detail": "After curfew, small lights are still moving in the upper floors of the Wizards' tower and the Rogues ridge. Different rhythms — the wizards are working, the rogues are harder to read.", "time": ["night"] },
+      { "roll": "Perception DC 10", "detail": "Torvald makes his rounds at dawn — south wall first, then the memorial garden, then the east path by the oaks. He nods if you're out early. He doesn't ask what you're doing.", "time": ["dawn"] },
+      { "detail": "Before breakfast: the campus is quiet enough to hear the ravens. They're already active — calling to each other between the old library eaves and the oaks. The day has started for them before it starts for anyone else.", "time": ["dawn"] }
+    ]
   }
 ]

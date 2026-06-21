@@ -7,12 +7,8 @@
     "contentType": "html",
     "contentFile": "content/sunken_fang_spear.html",
     "visibility": "player",
-    "related": [
-      "jungle_site",
-      "dinosaurs",
-      "fail_chamber",
-      "session_3"
-    ]
+    "related": ["jungle_site", "dinosaurs", "fail_chamber", "session_3", "bloodraven"],
+    "tags": ["artifact", "weapon", "spear", "jungle", "creature-influence", "pc-item", "mysterious"]
   },
   {
     "id": "magical_gauntlet",
@@ -22,10 +18,8 @@
     "contentType": "html",
     "contentFile": "content/magical_gauntlet.html",
     "visibility": "player",
-    "related": [
-      "underground_storage",
-      "session_1"
-    ]
+    "related": ["underground_storage", "session_1"],
+    "tags": ["artifact", "armor", "gauntlet", "underground", "mysterious", "recovered"]
   },
   {
     "id": "potion_of_healing",
@@ -36,7 +30,7 @@
     "contentFile": "content/potion_of_healing.html",
     "visibility": "player",
     "related": ["academy_provisions", "academy_credits"],
-    "tags": ["potion", "healing", "store", "consumable"]
+    "tags": ["potion", "healing", "store", "consumable", "2d4+2"]
   },
   {
     "id": "eyes_of_minute_seeing",
@@ -50,7 +44,7 @@
     "links": [
       { "label": "Eyes of Minute Seeing — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/4642-eyes-of-minute-seeing" }
     ],
-    "tags": ["magic-item", "store", "special-acquisition", "wondrous"]
+    "tags": ["magic-item", "store", "special-acquisition", "wondrous", "perception", "investigation"]
   },
   {
     "id": "bag_of_tricks",
@@ -64,7 +58,7 @@
     "links": [
       { "label": "Bag of Tricks — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/9228-bag-of-tricks" }
     ],
-    "tags": ["magic-item", "store", "special-acquisition", "wondrous"]
+    "tags": ["magic-item", "store", "special-acquisition", "wondrous", "summon", "creature"]
   },
   {
     "id": "goggles_of_night",
@@ -78,7 +72,7 @@
     "links": [
       { "label": "Goggles of Night — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/4659-goggles-of-night" }
     ],
-    "tags": ["magic-item", "store", "special-acquisition", "wondrous"]
+    "tags": ["magic-item", "store", "special-acquisition", "wondrous", "darkvision"]
   },
   {
     "id": "orath_charter",
@@ -88,10 +82,7 @@
     "contentType": "html",
     "contentFile": "content/orath_charter.html",
     "visibility": "dm-only",
-    "related": [
-      "isolde_orath",
-      "old_library",
-      "secret_society"
-    ]
+    "related": ["isolde_orath", "old_library", "secret_society", "aldric_voss"],
+    "tags": ["document", "founding", "dm-only", "charter", "secrets", "orath", "restricted"]
   }
 ]

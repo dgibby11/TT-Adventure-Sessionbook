@@ -1,13 +1,16 @@
 // state.js — persistent campaign state via localStorage.
 //
 // Shape (key "fucks.campaign.v1"):
-//   { revealed: { "<id>": true }, notes: { "<id>": "..." } }
+//   { revealed: { "<id>": true }, notes: { "<id>": "..." },
+//     currentLocationId: string|null, timeOfDay: "dawn"|"day"|"dusk"|"night" }
 //
 // Extends window.App (already created by data.js) with:
 //   App.isRevealed(id)        → boolean
 //   App.setRevealed(id, bool) → persist + fire campaign:changed
 //   App.getNote(id)           → string (empty string if none)
 //   App.setNote(id, text)     → persist (no event — notes are DM-private)
+//   App.getTimeOfDay()        → "dawn"|"day"|"dusk"|"night"
+//   App.setTimeOfDay(t)       → persist + fire time:changed
 
 (function () {
   const KEY = 'fucks.campaign.v1';
@@ -26,6 +29,7 @@
   if (!_state.revealed)           _state.revealed           = {};
   if (!_state.notes)              _state.notes              = {};
   if (!('currentLocationId' in _state)) _state.currentLocationId = null;
+  if (!_state.timeOfDay)          _state.timeOfDay          = 'day';
 
   Object.assign(window.App, {
     isRevealed(id) {
@@ -59,6 +63,15 @@
     },
     clearLocation() {
       this.setCurrentLocation(null);
+    },
+
+    getTimeOfDay() {
+      return _state.timeOfDay || 'day';
+    },
+    setTimeOfDay(t) {
+      _state.timeOfDay = t;
+      save();
+      document.dispatchEvent(new CustomEvent('time:changed', { detail: { time: t } }));
     },
   });
 

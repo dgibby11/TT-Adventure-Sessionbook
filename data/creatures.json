@@ -7,16 +7,11 @@
     "contentType": "html",
     "contentFile": "content/bodak.html",
     "visibility": "dm-only",
-    "related": [
-      "underground_storage",
-      "session_1"
-    ],
+    "related": ["underground_storage", "session_1", "occult_systems"],
     "links": [
-      {
-        "label": "Bodak - D&D Beyond",
-        "url": "https://www.dndbeyond.com/monsters/16975-bodak"
-      }
-    ]
+      { "label": "Bodak — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16975-bodak" }
+    ],
+    "tags": ["undead", "dm-only", "underground", "contained", "dangerous", "death-gaze"]
   },
   {
     "id": "kass",
@@ -26,17 +21,25 @@
     "contentType": "html",
     "contentFile": "content/kass.html",
     "visibility": "player",
-    "related": [
-      "owlbear_cave",
-      "rangers",
-      "maren_duskhollow",
-      "session_4"
-    ],
+    "related": ["owlbear_cave", "rangers", "maren_duskhollow", "session_4"],
     "links": [
-      {
-        "label": "Owlbear — D&D Beyond",
-        "url": "https://www.dndbeyond.com/monsters/owlbear"
-      }
+      { "label": "Owlbear — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/owlbear" }
+    ],
+    "tags": ["owlbear", "campus", "contained", "mascot", "founding-era", "docile"]
+  },
+  {
+    "id": "campus_ravens",
+    "name": "The Campus Ravens",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/campus_ravens.html",
+    "visibility": "player",
+    "related": ["campus_root", "old_library", "torvald_thatch", "druids", "rangers"],
+    "tags": ["ravens", "campus", "birds", "intelligent", "messengers", "unsettling"],
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "At dusk, several of the larger ravens reposition themselves from the eaves to the courtyard-facing ledges and stay there until full dark — a consistent sentry arrangement no one trained them to hold.", "time": ["dusk", "night"] },
+      { "detail": "At night the campus ravens don't sleep in the usual sense — occasional movement, low calls between the library roof and the memorial oak. They are tracking something.", "time": ["night"] }
     ]
   },
   {
@@ -47,16 +50,11 @@
     "contentType": "html",
     "contentFile": "content/mimics.html",
     "visibility": "dm-only",
-    "related": [
-      "underground_storage",
-      "session_1"
-    ],
+    "related": ["underground_storage", "session_1"],
     "links": [
-      {
-        "label": "Mimic - D&D Beyond",
-        "url": "https://www.dndbeyond.com/monsters/27127-mimic"
-      }
-    ]
+      { "label": "Mimic — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/27127-mimic" }
+    ],
+    "tags": ["shapeshifter", "dm-only", "underground", "contained", "ambush"]
   },
   {
     "id": "dinosaurs",
@@ -66,17 +64,11 @@
     "contentType": "html",
     "contentFile": "content/dinosaurs.html",
     "visibility": "player",
-    "related": [
-      "jungle_site",
-      "sunken_fang_spear",
-      "session_3"
-    ],
+    "related": ["jungle_site", "sunken_fang_spear", "session_3"],
     "links": [
-      {
-        "label": "Triceratops - D&D Beyond",
-        "url": "https://www.dndbeyond.com/monsters/27186-triceratops"
-      }
-    ]
+      { "label": "Triceratops — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/27186-triceratops" }
+    ],
+    "tags": ["dinosaur", "jungle", "field-threat", "large", "pack"]
   },
   {
     "id": "wolves",
@@ -86,12 +78,12 @@
     "contentType": "html",
     "contentFile": "content/wolves.html",
     "visibility": "player",
-    "related": ["river_rauvin", "high_forest"],
+    "related": ["river_rauvin", "high_forest", "campus_root"],
     "links": [
       { "label": "Wolf — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/wolf" },
       { "label": "Dire Wolf — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/dire-wolf" }
     ],
-    "tags": ["wilderness", "wolf", "pack", "common"]
+    "tags": ["wilderness", "wolf", "pack", "common", "river", "forest"]
   },
   {
     "id": "displacer_beast",
@@ -105,7 +97,7 @@
     "links": [
       { "label": "Displacer Beast — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/displacer-beast" }
     ],
-    "tags": ["wilderness", "magical-beast", "aberration", "threat"]
+    "tags": ["wilderness", "magical-beast", "aberration", "threat", "dm-only", "hunt"]
   },
   {
     "id": "orc_warband",
@@ -120,6 +112,6 @@
       { "label": "Orc — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/orc" },
       { "label": "Orc War Chief — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/orc-war-chief" }
     ],
-    "tags": ["wilderness", "humanoid", "orc", "raiding"]
+    "tags": ["wilderness", "humanoid", "orc", "raiding", "mountains", "warband"]
   }
 ]

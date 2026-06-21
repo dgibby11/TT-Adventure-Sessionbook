@@ -1,313 +1,352 @@
-// dashboard.js — Location-centric dashboard.
+// dashboard.js — Location-centric 4-quadrant dashboard.
 //
-// Renders the main content area (#dashboard) based on where the party
-// currently is. Two states:
-//   • Campus root (no location set) — grid of all campus locations plus
-//     quick-access sections for the party, active mysteries, and sessions.
-//   • Location view (currentLocationId set) — surfaces all entities
-//     related to that location via forward lookup (location.related[]) and
-//     reverse lookup (entities whose related[] points back to this location).
+// Layout (always 2×2):
+//   TL: Locations   — campus locations (root) or related locations
+//   TR: People      — NPCs by category, Creatures, Factions
+//   BL: Environment — atmosphere text from entity.environment + related items
+//   BR: Curiosities — entity.curiosities roll-entries + Mysteries + DM Notes
 //
-// Entering a location: click a location card on the root dashboard, or
-// click "Enter →" on any location card in a widget.
-// Leaving: click "← Campus" in the location bar.
+// Data hooks on location entities (all optional):
+//   environment: { architecture, activity, sensory, flora, lighting, weather }
+//   curiosities: [{ roll: "Perception DC 14", detail: "…" }, …]
+//
+// Forward + reverse relationship lookup populates People/Environment/Curiosities
+// from the entity graph automatically — no duplication needed.
 
 (function () {
-  // Widget display labels and render order.
-  const TYPE_META = {
-    npc:       { label: 'People'            },
-    creature:  { label: 'Creatures'         },
-    item:      { label: 'Items & Equipment' },
-    faction:   { label: 'Factions'          },
-    mystery:   { label: 'Plot Threads'      },
-    session:   { label: 'Sessions'          },
-    location:  { label: 'Nearby Locations'  },
-    reference: { label: 'References'        },
-  };
-  const WIDGET_ORDER = ['npc', 'creature', 'item', 'faction', 'mystery', 'session', 'location', 'reference'];
 
-  // ── Data helpers ────────────────────────────────────────────────────────────
+  // ── Data helpers ──────────────────────────────────────────────────────────
 
-  // Build the full set of entities related to a location: forward links from
-  // location.related[] plus reverse links from any entity whose related[] includes
-  // this location id. Deduped. Respects current visibility rules.
+  // Union of forward (loc.related[]) and reverse (entities that point to loc).
   function getGraph(locationId) {
     const loc = window.App.byId(locationId);
     if (!loc) return [];
-
     const forward = (loc.related || [])
       .map((id) => window.App.byId(id))
       .filter((e) => e && e.id !== locationId && window.App.isVisible(e));
-
     const seen = new Set(forward.map((e) => e.id));
-
     for (const e of window.ENTITIES) {
-      if (e.id === locationId || seen.has(e.id)) continue;
-      if (!window.App.isVisible(e)) continue;
-      if ((e.related || []).includes(locationId)) {
-        seen.add(e.id);
-        forward.push(e);
-      }
+      if (e.id === locationId || seen.has(e.id) || !window.App.isVisible(e)) continue;
+      if ((e.related || []).includes(locationId)) { seen.add(e.id); forward.push(e); }
     }
     return forward;
   }
 
-  function groupByType(entities) {
-    const groups = {};
-    for (const e of entities) {
-      (groups[e.type] = groups[e.type] || []).push(e);
-    }
-    return groups;
+  function groupBy(arr, key) {
+    const out = {};
+    for (const item of arr) { const k = item[key] || ''; (out[k] = out[k] || []).push(item); }
+    return out;
   }
 
-  // ── Card / widget builders ──────────────────────────────────────────────────
+  // ── DOM helpers ───────────────────────────────────────────────────────────
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls)            n.className   = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  // A quadrant: header title bar + scrollable body. Returns the element;
+  // content is added to .quad.body.
+  function makeQuad(title) {
+    const quad  = el('div', 'dash-quad');
+    quad.appendChild(el('div', 'dash-quad-header', title));
+    const body  = el('div', 'dash-quad-body');
+    quad.appendChild(body);
+    quad.body   = body;
+    return quad;
+  }
+
+  // A labelled sub-group within a quad body.
+  function makeSubSection(title) {
+    const sec = el('div', 'dash-subsection');
+    sec.appendChild(el('div', 'dash-subsection-title', title));
+    return sec;
+  }
+
+  function makeEmpty(msg) { return el('p', 'dash-empty', msg); }
+
+  // ── Card renderers ────────────────────────────────────────────────────────
 
   function makeEntityCard(entity) {
-    const card = document.createElement('div');
-    card.className = 'dash-entity-card';
+    const card = el('div', 'dash-entity-card');
     if (entity.visibility === 'dm-only') card.classList.add('dash-entity-dm');
-
-    const name = document.createElement('a');
-    name.className = 'dash-entity-name';
-    name.href = '#';
-    name.textContent = entity.name;
-    name.addEventListener('click', (e) => { e.preventDefault(); window.openLocationModal(entity); });
-    card.appendChild(name);
-
-    if (entity.category) {
-      const cat = document.createElement('span');
-      cat.className = 'dash-entity-cat';
-      cat.textContent = entity.category;
-      card.appendChild(cat);
-    }
-
-    if (entity.type === 'location') {
-      const btn = document.createElement('button');
-      btn.className = 'dash-enter-btn';
-      btn.textContent = 'Enter →';
-      btn.addEventListener('click', (e) => { e.stopPropagation(); window.App.setCurrentLocation(entity.id); });
-      card.appendChild(btn);
-    }
-
+    const link = el('a', 'dash-entity-name', entity.name);
+    link.href = '#';
+    link.addEventListener('click', (e) => { e.preventDefault(); window.openLocationModal(entity); });
+    card.appendChild(link);
+    if (entity.category) card.appendChild(el('span', 'dash-entity-cat', entity.category));
     return card;
   }
 
-  function makeWidget(type, entities) {
-    const meta = TYPE_META[type] || { label: type };
-    const widget = document.createElement('section');
-    widget.className = 'dash-widget';
-
-    const h = document.createElement('h3');
-    h.className = 'dash-widget-title';
-    h.textContent = meta.label;
-    widget.appendChild(h);
-
-    const list = document.createElement('div');
-    list.className = 'dash-entity-list';
-    for (const e of entities) list.appendChild(makeEntityCard(e));
-    widget.appendChild(list);
-
-    return widget;
-  }
-
-  function makeNotesWidget(loc) {
-    const widget = document.createElement('section');
-    widget.className = 'dash-widget dash-widget-notes';
-
-    const h = document.createElement('h3');
-    h.className = 'dash-widget-title';
-    h.textContent = 'DM Notes — ' + loc.name;
-    widget.appendChild(h);
-
-    const ta = document.createElement('textarea');
-    ta.className = 'dash-notes-ta';
-    ta.placeholder = 'Session notes for this location…';
-    ta.value = window.App.getNote(loc.id);
-    let timer;
-    ta.addEventListener('input', () => {
-      clearTimeout(timer);
-      timer = setTimeout(() => window.App.setNote(loc.id, ta.value), 400);
-    });
-    widget.appendChild(ta);
-
-    return widget;
-  }
-
-  // ── Location root card (campus overview grid) ───────────────────────────────
-
-  function makeRootLocationCard(loc) {
-    const card = document.createElement('div');
-    card.className = 'dash-loc-card';
+  function makeLocCard(loc) {
+    const card = el('div', 'dash-loc-card');
     card.title = 'Enter ' + loc.name;
-
-    const name = document.createElement('div');
-    name.className = 'dash-loc-card-name';
-    name.textContent = loc.name;
+    const name = el('span', 'dash-loc-card-name', loc.name);
     card.appendChild(name);
-
-    if (loc.category) {
-      const cat = document.createElement('div');
-      cat.className = 'dash-loc-card-cat';
-      cat.textContent = loc.category;
-      card.appendChild(cat);
-    }
-
-    // Count directly related entities as a hint of how much is here
-    const linkCount = (loc.related || []).length;
-    if (linkCount) {
-      const hint = document.createElement('div');
-      hint.className = 'dash-loc-card-hint';
-      hint.textContent = linkCount + ' linked';
-      card.appendChild(hint);
-    }
-
+    if (loc.category) card.appendChild(el('span', 'dash-loc-card-cat', loc.category));
+    const count = (loc.related || []).length;
+    if (count) card.appendChild(el('span', 'dash-loc-card-hint', count + ' linked'));
     card.addEventListener('click', () => window.App.setCurrentLocation(loc.id));
     return card;
   }
 
-  // ── Renderers ───────────────────────────────────────────────────────────────
+  // ── Quadrant builders ─────────────────────────────────────────────────────
 
-  function renderLocation(loc) {
-    const dash = document.getElementById('dashboard');
-    dash.innerHTML = '';
+  // Preferred category order for the campus root locations quadrant.
+  const LOC_CAT_ORDER = [
+    'Departments',
+    'Central Campus Facilities',
+    'Special Facilities',
+    'Underground Infrastructure',
+    'Remote Field Sites',
+    'Founding-Era & Lore',
+    'Nearby World',
+  ];
 
-    // Location header
-    const hdr = document.createElement('div');
-    hdr.className = 'dash-location-header';
+  function makeLocationsQuad(graphLocs) {
+    const quad   = makeQuad('Locations');
+    const groups = groupBy(graphLocs, 'category');
+    const keys   = [
+      ...LOC_CAT_ORDER.filter((k) => groups[k]),
+      ...Object.keys(groups).filter((k) => !LOC_CAT_ORDER.includes(k)).sort(),
+    ];
 
-    const title = document.createElement('h2');
-    title.className = 'dash-location-title';
-    title.textContent = loc.name;
-    hdr.appendChild(title);
+    if (!keys.length) {
+      quad.body.appendChild(makeEmpty('No locations linked. Add location ids to the related[] array on this entity.'));
+      return quad;
+    }
+    for (const cat of keys) {
+      const sec = makeSubSection(cat || 'Locations');
+      const sorted = [...groups[cat]].sort((a, b) => a.name.localeCompare(b.name));
+      for (const loc of sorted) sec.appendChild(makeLocCard(loc));
+      quad.body.appendChild(sec);
+    }
+    return quad;
+  }
 
-    const meta = document.createElement('div');
-    meta.className = 'dash-location-meta';
-    const parts = [loc.type.toUpperCase()];
-    if (loc.category) parts.push(loc.category);
-    meta.textContent = parts.join(' · ');
+  function makePeopleQuad(entities) {
+    const quad     = makeQuad('People & Creatures');
+    const npcs     = entities.filter((e) => e.type === 'npc');
+    const creatures= entities.filter((e) => e.type === 'creature');
+    const factions = entities.filter((e) => e.type === 'faction');
+    let any = false;
+
+    const byName = (a, b) => a.name.localeCompare(b.name);
+    if (npcs.length) {
+      any = true;
+      const groups = groupBy(npcs, 'category');
+      for (const cat of Object.keys(groups).sort()) {
+        const sec = makeSubSection(cat || 'People');
+        for (const e of [...groups[cat]].sort(byName)) sec.appendChild(makeEntityCard(e));
+        quad.body.appendChild(sec);
+      }
+    }
+    if (creatures.length) {
+      any = true;
+      const sec = makeSubSection('Creatures');
+      for (const e of [...creatures].sort(byName)) sec.appendChild(makeEntityCard(e));
+      quad.body.appendChild(sec);
+    }
+    if (factions.length) {
+      any = true;
+      const sec = makeSubSection('Factions');
+      for (const e of [...factions].sort(byName)) sec.appendChild(makeEntityCard(e));
+      quad.body.appendChild(sec);
+    }
+    if (!any) quad.body.appendChild(makeEmpty('No people or creatures linked to this location.'));
+    return quad;
+  }
+
+  function makeEnvironmentQuad(loc, graphItems) {
+    const quad  = makeQuad('Environment');
+    const env   = loc?.environment;
+    const items = graphItems.filter((e) => e.type === 'item');
+    let any = false;
+
+    if (env) {
+      any = true;
+      const FIELDS = [
+        ['architecture', 'Architecture'],
+        ['activity',     'Activity'    ],
+        ['sensory',      'Sensory'     ],
+        ['flora',        'Flora'       ],
+        ['lighting',     'Lighting'    ],
+        ['weather',      'Weather'     ],
+      ];
+      for (const [key, label] of FIELDS) {
+        if (!env[key]) continue;
+        const block = el('div', 'env-block');
+        block.appendChild(el('div', 'env-label', label));
+        block.appendChild(el('p',   'env-text',  env[key]));
+        quad.body.appendChild(block);
+      }
+    }
+
+    if (items.length) {
+      any = true;
+      const sec = makeSubSection('Notable Objects');
+      for (const e of items) sec.appendChild(makeEntityCard(e));
+      quad.body.appendChild(sec);
+    }
+
+    if (!any) {
+      quad.body.appendChild(makeEmpty(
+        'Add an "environment" object to this location\'s JSON to describe what the party sees, hears, and smells. ' +
+        'Keys: architecture · activity · sensory · flora · lighting · weather'
+      ));
+    }
+    return quad;
+  }
+
+  function timeVisible(entry) {
+    if (!entry.time || !entry.time.length) return true;
+    return entry.time.includes(window.App.getTimeOfDay());
+  }
+
+  function makeCuriositiesQuad(loc, graphEntities) {
+    const quad       = makeQuad('Curiosities');
+    const allCuriosities = loc?.curiosities || [];
+    const curiosities    = allCuriosities.filter(timeVisible);
+    const mysteries  = graphEntities.filter((e) => e.type === 'mystery');
+    const sessions   = graphEntities.filter((e) => e.type === 'session');
+    let any = false;
+
+    if (curiosities.length) {
+      any = true;
+      const sec = makeSubSection('Observations');
+      for (const c of curiosities) {
+        const row = el('div', 'curiosity-item');
+        if (c.roll) row.appendChild(el('span', 'curiosity-roll', c.roll));
+        row.appendChild(el('p', 'curiosity-detail', c.detail));
+        sec.appendChild(row);
+      }
+      quad.body.appendChild(sec);
+    }
+
+    const byName = (a, b) => a.name.localeCompare(b.name);
+    if (mysteries.length) {
+      any = true;
+      const sec = makeSubSection('Mysteries');
+      for (const e of [...mysteries].sort(byName)) sec.appendChild(makeEntityCard(e));
+      quad.body.appendChild(sec);
+    }
+    if (sessions.length) {
+      any = true;
+      const sec = makeSubSection('Sessions');
+      for (const e of [...sessions].sort(byName)) sec.appendChild(makeEntityCard(e));
+      quad.body.appendChild(sec);
+    }
+
+    if (!any) {
+      quad.body.appendChild(makeEmpty(
+        'Add a "curiosities" array to this location\'s JSON for perception/insight discoveries. ' +
+        'Each entry: { "roll": "Perception DC 14", "detail": "…" }'
+      ));
+    }
+
+    // DM notes appear at the bottom of Curiosities when a specific location is active.
+    if (window.App.isDM() && loc) {
+      const sec = makeSubSection('DM Notes');
+      sec.classList.add('dash-notes-section');
+      const ta = el('textarea', 'dash-notes-ta');
+      ta.placeholder = 'Session notes for this location…';
+      ta.value = window.App.getNote(loc.id);
+      let timer;
+      ta.addEventListener('input', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => window.App.setNote(loc.id, ta.value), 400);
+      });
+      sec.appendChild(ta);
+      quad.body.appendChild(sec);
+    }
+
+    return quad;
+  }
+
+  // ── Header ────────────────────────────────────────────────────────────────
+
+  function makeHeader(isRoot, loc) {
+    const hdr = el('div', 'dash-location-header');
+
+    hdr.appendChild(el('h2', 'dash-location-title', loc ? loc.name : 'FAIL Academy'));
+
+    const meta = el('div', 'dash-location-meta');
+    meta.textContent = isRoot
+      ? 'Faculty of Arms, Inquiry & Lore — select a location to enter it'
+      : (['LOCATION', loc && loc.category].filter(Boolean).join(' · '));
     hdr.appendChild(meta);
 
-    const detailBtn = document.createElement('button');
-    detailBtn.className = 'dash-detail-btn';
-    detailBtn.textContent = 'Full Entry →';
-    detailBtn.addEventListener('click', () => window.openLocationModal(loc));
-    hdr.appendChild(detailBtn);
-
-    dash.appendChild(hdr);
-
-    // Entity graph → widgets
-    const graph  = getGraph(loc.id);
-    const groups = groupByType(graph);
-
-    if (!graph.length) {
-      const empty = document.createElement('p');
-      empty.className = 'dash-empty';
-      empty.textContent = 'No linked entities yet — add related[] entries to this location to populate the dashboard.';
-      dash.appendChild(empty);
-    } else {
-      const grid = document.createElement('div');
-      grid.className = 'dash-grid';
-      for (const type of WIDGET_ORDER) {
-        if (groups[type]?.length) grid.appendChild(makeWidget(type, groups[type]));
-      }
-      if (window.App.isDM()) grid.appendChild(makeNotesWidget(loc));
-      dash.appendChild(grid);
+    if (loc && loc.contentFile) {
+      const btn = el('button', 'dash-detail-btn', 'Full Entry →');
+      btn.addEventListener('click', () => window.openLocationModal(loc));
+      hdr.appendChild(btn);
     }
+    return hdr;
   }
 
-  function renderRoot() {
-    const dash = document.getElementById('dashboard');
-    dash.innerHTML = '';
+  // ── Time of day ───────────────────────────────────────────────────────────
 
-    // Campus header
-    const hdr = document.createElement('div');
-    hdr.className = 'dash-location-header dash-root-header';
-    const title = document.createElement('h2');
-    title.className = 'dash-location-title';
-    title.textContent = 'FAIL Academy';
-    hdr.appendChild(title);
-    const sub = document.createElement('div');
-    sub.className = 'dash-location-meta';
-    sub.textContent = 'Faculty of Arms, Inquiry & Lore — Select a location to enter it';
-    hdr.appendChild(sub);
-    dash.appendChild(hdr);
+  const TIME_SLOTS = [
+    { id: 'dawn',  label: '◐ Dawn'  },
+    { id: 'day',   label: '○ Day'   },
+    { id: 'dusk',  label: '◑ Dusk'  },
+    { id: 'night', label: '● Night' },
+  ];
 
-    // Campus locations grid
-    const locs = window.ENTITIES.filter((e) => e.type === 'location' && window.App.isVisible(e));
-    if (locs.length) {
-      const sec = document.createElement('section');
-      sec.className = 'dash-root-section';
-      const h = document.createElement('h3');
-      h.className = 'dash-widget-title';
-      h.textContent = 'Campus Locations';
-      sec.appendChild(h);
-      const grid = document.createElement('div');
-      grid.className = 'dash-loc-grid';
-      // Group by category for visual order
-      const cats = {};
-      for (const loc of locs) {
-        const cat = loc.category || '';
-        (cats[cat] = cats[cat] || []).push(loc);
-      }
-      for (const cat of Object.keys(cats).sort()) {
-        for (const loc of cats[cat]) grid.appendChild(makeRootLocationCard(loc));
-      }
-      sec.appendChild(grid);
-      dash.appendChild(sec);
+  function makeTimeToggle() {
+    const wrap = el('div', 'loc-bar-time');
+    const current = window.App.getTimeOfDay();
+    for (const slot of TIME_SLOTS) {
+      const btn = el('button', 'loc-time-btn' + (slot.id === current ? ' loc-time-active' : ''), slot.label);
+      btn.dataset.time = slot.id;
+      btn.addEventListener('click', () => {
+        if (window.App.getTimeOfDay() !== slot.id) window.App.setTimeOfDay(slot.id);
+      });
+      wrap.appendChild(btn);
     }
-
-    // Party (Player Character NPCs)
-    const pcs = window.ENTITIES.filter((e) => e.type === 'npc' && e.category === 'Player Character' && window.App.isVisible(e));
-    if (pcs.length) {
-      const sec = document.createElement('section');
-      sec.className = 'dash-root-section';
-      dash.appendChild(sec);
-      sec.appendChild(makeWidget('npc', pcs).cloneNode ? makeWidget('npc', pcs) : makeWidget('npc', pcs));
-    }
-
-    // Active mysteries + sessions in a row
-    const mysteries = window.ENTITIES.filter((e) => e.type === 'mystery' && window.App.isVisible(e));
-    const sessions  = window.ENTITIES.filter((e) => e.type === 'session'  && window.App.isVisible(e));
-    if (mysteries.length || sessions.length) {
-      const row = document.createElement('div');
-      row.className = 'dash-grid';
-      if (mysteries.length) row.appendChild(makeWidget('mystery', mysteries));
-      if (sessions.length)  row.appendChild(makeWidget('session',  sessions));
-      dash.appendChild(row);
-    }
+    return wrap;
   }
 
-  // ── Location bar (below topbar) ─────────────────────────────────────────────
+  // ── Location bar ──────────────────────────────────────────────────────────
 
   function updateLocationBar() {
     const bar = document.getElementById('location-bar');
     if (!bar) return;
     bar.innerHTML = '';
-
     const id  = window.App.getCurrentLocationId();
     const loc = id ? window.App.byId(id) : null;
-
-    const indicator = document.createElement('span');
-    indicator.className = 'loc-bar-indicator';
-    indicator.textContent = loc ? '◎ ' + loc.name : '◎ Campus Root';
-    bar.appendChild(indicator);
-
+    bar.appendChild(el('span', 'loc-bar-indicator', loc ? '◎ ' + loc.name : '◎ Campus Root'));
     if (loc) {
-      const back = document.createElement('button');
-      back.className = 'loc-bar-back';
-      back.textContent = '← Campus';
+      const back = el('button', 'loc-bar-back', '← Campus');
       back.addEventListener('click', () => window.App.clearLocation());
       bar.appendChild(back);
     }
+    bar.appendChild(makeTimeToggle());
   }
 
-  // ── Main render ─────────────────────────────────────────────────────────────
+  // ── Main render ───────────────────────────────────────────────────────────
 
   function render() {
-    const id  = window.App.getCurrentLocationId();
-    const loc = id ? window.App.byId(id) : null;
-    if (loc && loc.type === 'location') renderLocation(loc);
-    else renderRoot();
+    const dash = document.getElementById('dashboard');
+    if (!dash) return;
+
+    const currentId = window.App.getCurrentLocationId() || 'campus_root';
+    const loc       = window.App.byId(currentId);
+    const isRoot    = currentId === 'campus_root';
+    const graph     = getGraph(currentId);
+
+    dash.innerHTML = '';
+    dash.appendChild(makeHeader(isRoot, loc));
+
+    const quads = el('div', 'dash-quadrants');
+    quads.appendChild(makeLocationsQuad(graph.filter((e) => e.type === 'location')));
+    quads.appendChild(makePeopleQuad(graph));
+    quads.appendChild(makeEnvironmentQuad(loc, graph));
+    quads.appendChild(makeCuriositiesQuad(loc, graph));
+    dash.appendChild(quads);
+
     updateLocationBar();
   }
 
@@ -315,4 +354,5 @@
   document.addEventListener('location:changed', render);
   document.addEventListener('dm:changed',       render);
   document.addEventListener('campaign:changed', render);
+  document.addEventListener('time:changed',     render);
 })();

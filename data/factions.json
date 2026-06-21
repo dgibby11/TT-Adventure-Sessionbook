@@ -7,8 +7,8 @@
     "contentType": "html",
     "contentFile": "content/dueling_society.html",
     "visibility": "player",
-    "related": ["prof_thalia_varn", "fighters", "wizards"],
-    "tags": ["club", "combat", "students", "competition"]
+    "related": ["prof_thalia_varn", "fighters", "wizards", "bards", "fail_chamber"],
+    "tags": ["club", "combat", "students", "competition", "dueling", "spectacle"]
   },
   {
     "id": "expedition_club",
@@ -18,8 +18,8 @@
     "contentType": "html",
     "contentFile": "content/expedition_club.html",
     "visibility": "player",
-    "related": ["jungle_site", "nether_mountains", "fail_chamber"],
-    "tags": ["club", "fieldwork", "students", "dangerous"]
+    "related": ["jungle_site", "nether_mountains", "fail_chamber", "oswald_crumb"],
+    "tags": ["club", "fieldwork", "students", "dangerous", "expedition", "wilderness"]
   },
   {
     "id": "dead_hours",
@@ -29,8 +29,8 @@
     "contentType": "html",
     "contentFile": "content/dead_hours.html",
     "visibility": "dm-only",
-    "related": ["the_upperclassmen", "underground_storage", "academy_credits", "food_court"],
-    "tags": ["club", "underground", "gambling", "secret"]
+    "related": ["the_upperclassmen", "underground_storage", "academy_credits", "food_court", "rogues"],
+    "tags": ["club", "underground", "gambling", "secret", "dm-only", "night", "illicit"]
   },
   {
     "id": "secret_society",
@@ -40,13 +40,8 @@
     "contentType": "html",
     "contentFile": "content/secret_society.html",
     "visibility": "dm-only",
-    "related": [
-      "founders_statue",
-      "ninth_thesis",
-      "brennan_ashcroft",
-      "old_library",
-      "occult_systems"
-    ]
+    "related": ["founders_statue", "ninth_thesis", "brennan_ashcroft", "old_library", "occult_systems", "aldric_voss"],
+    "tags": ["dm-only", "secret", "ritual", "conspiracy", "founding", "society"]
   },
   {
     "id": "thornwick_consortium",
@@ -56,9 +51,7 @@
     "contentType": "html",
     "contentFile": "content/thornwick_consortium.html",
     "visibility": "dm-only",
-    "related": [
-      "oswald_crumb",
-      "nether_mountains"
-    ]
+    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund"],
+    "tags": ["dm-only", "external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
   }
 ]

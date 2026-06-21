@@ -11,7 +11,7 @@
       "lugeiros_serise", "gunnar", "caelum_rivenstone", "bloodraven",
       "session_1", "session_2", "session_3", "session_4"
     ],
-    "tags": ["party", "players", "characters"]
+    "tags": ["party", "players", "characters", "overview"]
   },
   {
     "id": "campaign_overview",
@@ -21,12 +21,8 @@
     "contentType": "html",
     "contentFile": "content/campaign_overview.html",
     "visibility": "player",
-    "related": [
-      "session_1",
-      "session_2",
-      "session_3",
-      "session_4"
-    ]
+    "related": ["session_1", "session_2", "session_3", "session_4", "headmistress_dowe", "campus_root"],
+    "tags": ["campaign", "overview", "summary", "reference"]
   },
   {
     "id": "campus_overview",
@@ -35,7 +31,9 @@
     "category": "Campaign",
     "contentType": "html",
     "contentFile": "content/campus_overview.html",
-    "visibility": "player"
+    "visibility": "player",
+    "related": ["campus_root", "main_complex", "headmistress_dowe", "academy_traditions"],
+    "tags": ["academy", "overview", "campus", "reference"]
   },
   {
     "id": "academy_credits",
@@ -45,12 +43,8 @@
     "contentType": "html",
     "contentFile": "content/academy_credits.html",
     "visibility": "player",
-    "related": [
-      "academy_provisions",
-      "silas_morne",
-      "lenny_goldvein"
-    ],
-    "tags": ["credits", "economy", "store", "potions"]
+    "related": ["academy_provisions", "silas_morne", "lenny_goldvein", "food_court", "dead_hours"],
+    "tags": ["credits", "economy", "store", "potions", "currency"]
   },
   {
     "id": "academy_traditions",
@@ -62,9 +56,9 @@
     "visibility": "player",
     "related": [
       "headmistress_dowe", "founders_statue", "dueling_society",
-      "expedition_club", "food_court", "memorial_garden"
+      "expedition_club", "food_court", "memorial_garden", "campus_root"
     ],
-    "tags": ["traditions", "calendar", "events", "school"]
+    "tags": ["traditions", "calendar", "events", "school", "ceremonies", "seasons"]
   },
   {
     "id": "academy_legends",
@@ -76,9 +70,9 @@
     "visibility": "player",
     "related": [
       "founders_statue", "old_library", "ninth_thesis",
-      "memorial_garden", "underground_storage"
+      "memorial_garden", "underground_storage", "torvald_thatch"
     ],
-    "tags": ["legends", "myths", "history", "lore"]
+    "tags": ["legends", "myths", "history", "lore", "founding", "ghost-stories"]
   },
   {
     "id": "dnd_resources",
@@ -87,6 +81,7 @@
     "category": "Campaign",
     "contentType": "html",
     "contentFile": "content/dnd_resources.html",
-    "visibility": "player"
+    "visibility": "player",
+    "tags": ["reference", "rules", "5e", "resources", "external"]
   }
 ]

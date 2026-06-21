@@ -160,26 +160,25 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------- Dashboard ---------- */
 
-/* Location bar — thin strip between topbar and dashboard */
+/* Location bar — thin chrome strip between topbar and dashboard */
 #location-bar {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  padding: 0.3rem 1.4rem;
+  padding: 0.28rem 1rem;
   background: var(--panel);
   border-bottom: 1px solid var(--line);
-  min-height: 1.9rem;
   flex-shrink: 0;
 }
 .loc-bar-indicator {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold-soft);
   font-family: var(--display);
 }
 .loc-bar-back {
-  font-size: 0.63rem;
+  font-size: 0.66rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: var(--display);
@@ -187,38 +186,60 @@ button { font-family: inherit; cursor: pointer; }
   border: 1px solid var(--line-soft);
   border-radius: 3px;
   color: var(--muted);
-  padding: 0.15rem 0.5rem;
+  padding: 0.13rem 0.45rem;
   transition: color 0.12s, border-color 0.12s;
 }
 .loc-bar-back:hover { color: var(--ink); border-color: var(--line); }
 
-/* Dashboard main area */
+/* Time-of-day toggle — right side of location bar */
+.loc-bar-time {
+  margin-left: auto;
+  display: flex;
+  gap: 0.2rem;
+}
+.loc-time-btn {
+  font-size: 0.6rem;
+  font-family: var(--display);
+  letter-spacing: 0.08em;
+  background: none;
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  color: var(--muted);
+  padding: 0.13rem 0.42rem;
+  transition: color 0.1s, border-color 0.1s, background 0.1s;
+  white-space: nowrap;
+}
+.loc-time-btn:hover { color: var(--ink); border-color: var(--line); }
+.loc-time-active {
+  color: var(--gold-soft) !important;
+  border-color: var(--gold-soft) !important;
+  background: rgba(201,162,39,0.08);
+}
+
+/* Dashboard container: flex column, header + quadrant grid */
 #dashboard {
   flex: 1 1 auto;
   min-height: 0;
-  overflow-y: auto;
-  padding: 1.2rem 1.4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.7rem 0.65rem;
+  gap: 0.5rem;
 }
 
-/* Location header (both root and location views) */
+/* Compact header strip above the quadrants */
 .dash-location-header {
   display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 1.1rem;
-  padding-bottom: 0.6rem;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--line-soft);
-}
-.dash-location-header::after {
-  content: "";
-  display: block;
-  flex: 1;
-  height: 1px;
 }
 .dash-location-title {
   margin: 0;
   font-family: var(--display);
-  font-size: 1rem;
+  font-size: 0.92rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
@@ -228,9 +249,9 @@ button { font-family: inherit; cursor: pointer; }
 .dash-location-meta {
   font-size: 0.68rem;
   color: var(--muted);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  white-space: nowrap;
+  flex: 1;
 }
 .dash-detail-btn {
   margin-left: auto;
@@ -239,61 +260,78 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 3px;
   color: var(--muted);
   font-family: var(--display);
-  font-size: 0.62rem;
+  font-size: 0.64rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.2rem 0.55rem;
+  padding: 0.17rem 0.48rem;
   white-space: nowrap;
   transition: color 0.12s, border-color 0.12s;
 }
 .dash-detail-btn:hover { color: var(--gold-soft); border-color: var(--gold-soft); }
 
-/* Widget grid */
-.dash-grid {
+/* 2×2 quadrant grid — fills all remaining height */
+.dash-quadrants {
+  flex: 1;
+  min-height: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.85rem;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.55rem;
 }
 
-/* Individual widget */
-.dash-widget {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.dash-widget-notes {
-  grid-column: 1 / -1;
-}
-.dash-widget-title {
-  margin: 0;
-  padding: 0.35rem 0.65rem;
-  font-family: var(--display);
-  font-size: 0.62rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--oxblood);
-  border-bottom: 1px solid var(--line);
-  background: rgba(0,0,0,0.15);
-  font-weight: normal;
-}
-
-/* Entity cards within widgets */
-.dash-entity-list {
+/* Each quadrant */
+.dash-quad {
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.018);
+  overflow: hidden;
+  min-height: 0;
 }
+.dash-quad-header {
+  flex-shrink: 0;
+  padding: 0.3rem 0.65rem;
+  background: rgba(0,0,0,0.22);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--display);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: normal;
+}
+.dash-quad-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Sub-section within a quad body */
+.dash-subsection { border-bottom: 1px solid var(--line-soft); }
+.dash-subsection:last-child { border-bottom: none; }
+.dash-subsection-title {
+  padding: 0.22rem 0.6rem;
+  font-family: var(--display);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  background: rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(58,53,48,0.28);
+}
+
+/* Entity link cards */
 .dash-entity-card {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.28rem 0.65rem;
-  border-bottom: 1px solid rgba(58,53,48,0.35);
-  font-size: 0.82rem;
+  padding: 0.28rem 0.6rem;
+  border-bottom: 1px solid rgba(58,53,48,0.25);
+  font-size: 0.88rem;
 }
 .dash-entity-card:last-child { border-bottom: none; }
-.dash-entity-dm { opacity: 0.75; }
+.dash-entity-dm { opacity: 0.7; }
 .dash-entity-name {
   color: var(--ink);
   text-decoration: none;
@@ -302,88 +340,86 @@ button { font-family: inherit; cursor: pointer; }
 }
 .dash-entity-name:hover { color: var(--gold-soft); }
 .dash-entity-cat {
-  font-size: 0.62rem;
+  font-size: 0.66rem;
   color: var(--muted);
-  letter-spacing: 0.06em;
   font-style: italic;
   white-space: nowrap;
 }
-.dash-enter-btn {
-  background: none;
-  border: 1px solid var(--line-soft);
-  border-radius: 3px;
-  color: var(--muted);
-  font-family: var(--display);
-  font-size: 0.58rem;
-  letter-spacing: 0.08em;
-  padding: 0.12rem 0.38rem;
-  white-space: nowrap;
-  transition: color 0.12s, border-color 0.12s;
-}
-.dash-enter-btn:hover { color: var(--gold-soft); border-color: var(--gold-soft); }
 
-/* DM notes textarea in dashboard */
-.dash-notes-ta {
+/* Location cards (Locations quadrant) */
+.dash-loc-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.28rem 0.6rem;
+  border-bottom: 1px solid rgba(58,53,48,0.25);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.dash-loc-card:last-child { border-bottom: none; }
+.dash-loc-card:hover { background: rgba(201,162,39,0.07); }
+.dash-loc-card-name { font-size: 0.88rem; color: var(--ink); flex: 1; }
+.dash-loc-card-cat  { font-size: 0.66rem; color: var(--muted); font-style: italic; white-space: nowrap; }
+.dash-loc-card-hint { font-size: 0.63rem; color: var(--gold-soft); white-space: nowrap; }
+
+/* Environment quadrant blocks */
+.env-block {
+  padding: 0.36rem 0.55rem;
+  border-bottom: 1px solid rgba(58,53,48,0.25);
+}
+.env-block:last-child { border-bottom: none; }
+.env-label {
+  font-size: 0.62rem;
+  font-family: var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.12rem;
+}
+.env-text { margin: 0; font-size: 0.88rem; color: var(--ink); line-height: 1.5; }
+
+/* Curiosities quadrant */
+.curiosity-item {
+  padding: 0.36rem 0.55rem;
+  border-bottom: 1px solid rgba(58,53,48,0.25);
+}
+.curiosity-item:last-child { border-bottom: none; }
+.curiosity-roll {
+  display: inline-block;
+  font-size: 0.63rem;
+  font-family: var(--display);
+  letter-spacing: 0.07em;
+  color: var(--oxblood-2);
+  background: rgba(139,30,30,0.12);
+  border: 1px solid rgba(139,30,30,0.28);
+  border-radius: 2px;
+  padding: 0.08rem 0.3rem;
+  margin-bottom: 0.15rem;
+}
+.curiosity-detail { margin: 0; font-size: 0.88rem; color: var(--ink); line-height: 1.5; }
+
+/* DM Notes inside Curiosities */
+.dash-notes-section .dash-notes-ta {
   width: 100%;
-  min-height: 5rem;
-  background: rgba(0,0,0,0.2);
+  min-height: 4rem;
+  background: rgba(0,0,0,0.18);
   border: none;
   color: var(--ink);
   font-family: var(--body);
   font-size: 0.82rem;
-  line-height: 1.5;
-  padding: 0.5rem 0.65rem;
+  line-height: 1.45;
+  padding: 0.4rem 0.55rem;
   resize: vertical;
 }
-.dash-notes-ta:focus { outline: 1px solid var(--line); }
+.dash-notes-section .dash-notes-ta:focus { outline: 1px solid var(--line); }
 
-/* Root dashboard — campus location cards */
-.dash-root-section {
-  margin-bottom: 1.2rem;
-}
-.dash-loc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 0.55rem;
-  margin-top: 0.5rem;
-}
-.dash-loc-card {
-  background: rgba(255,255,255,0.025);
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 0.55rem 0.7rem;
-  cursor: pointer;
-  transition: border-color 0.12s, background 0.12s;
-}
-.dash-loc-card:hover {
-  border-color: var(--gold-soft);
-  background: rgba(201,162,39,0.06);
-}
-.dash-loc-card-name {
-  font-family: var(--display);
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  color: var(--ink);
-  margin-bottom: 0.2rem;
-}
-.dash-loc-card-cat {
-  font-size: 0.62rem;
-  color: var(--muted);
-  font-style: italic;
-}
-.dash-loc-card-hint {
-  font-size: 0.58rem;
-  color: var(--gold-soft);
-  letter-spacing: 0.06em;
-  margin-top: 0.25rem;
-}
-
-/* Empty state */
+/* Empty / hint states */
 .dash-empty {
   color: var(--muted);
   font-style: italic;
   font-size: 0.82rem;
-  padding: 1rem 0;
+  padding: 0.7rem 0.6rem;
+  line-height: 1.55;
 }
 
 /* ---------- Map ---------- */
