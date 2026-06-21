@@ -23,13 +23,13 @@
     // d8: diamond
     8:   (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="25,2 48,25 25,48 2,25"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
     // d10: wide pentagon — centroid y ≈ 26
-    10:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="25,2 44,18 38,46 12,46 6,18"/><text x="25" y="26" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
-    // d12: regular pentagon — centroid y ≈ 25
-    12:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="25,1 47,17 39,43 11,43 3,17"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
-    // d20: circle (icosahedron approximated as circle)
-    20:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><circle cx="25" cy="25" r="22"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
-    // d100: octagon — distinct from the d20 circle
-    100: (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="15,2 35,2 48,15 48,35 35,48 15,48 2,35 2,15"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
+    10:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="25,1 47,17 39,43 11,43 3,17"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
+    // d12: regular hexagon — centroid y = 25
+    12:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="25,2 45,14 45,36 25,48 5,36 5,14"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
+    // d20: octagon
+    20:  (v) => `<svg viewBox="0 0 50 50" class="die-svg"><polygon points="15,2 35,2 48,15 48,35 35,48 15,48 2,35 2,15"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
+    // d100: circle
+    100: (v) => `<svg viewBox="0 0 50 50" class="die-svg"><circle cx="25" cy="25" r="22"/><text x="25" y="25" font-size="${fsize(v)}" dominant-baseline="central">${v}</text></svg>`,
   };
 
   const DICE = [4, 6, 8, 10, 12, 20, 100];
