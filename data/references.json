@@ -104,5 +104,49 @@
     "contentFile": "content/references/open_questions.html",
     "visibility": "dm-only",
     "tags": ["dm-only", "mystery", "threads", "planning", "questions", "unresolved"]
+  },
+  {
+    "id": "academy_grounds_map",
+    "name": "Official Campus Grounds Map",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/academy_grounds_map.html",
+    "visibility": "dm-only",
+    "related": ["campus_root", "underground_storage", "rogues", "eastern_wing", "torvald_thatch"],
+    "tags": ["dm-only", "map", "omissions", "grounds", "administration", "evidence"]
+  },
+  {
+    "id": "founders_charter",
+    "name": "The Founders' Charter",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/founders_charter.html",
+    "visibility": "dm-only",
+    "related": ["restricted_floor", "old_library", "aldric_voss", "isolde_orath", "brennan_ashcroft", "ritual_floor", "secret_society"],
+    "tags": ["dm-only", "founding", "charter", "obligations", "ritual", "three-founders", "lore"]
+  },
+  {
+    "id": "contraband_log",
+    "name": "Campus Security Contraband Log",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/contraband_log.html",
+    "visibility": "dm-only",
+    "related": ["captain_hadra", "main_complex", "founders_compass", "secret_society"],
+    "tags": ["dm-only", "security", "contraband", "redacted", "hadra", "evidence"]
+  },
+  {
+    "id": "department_incident_log",
+    "name": "Department Incident Log",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/department_incident_log.html",
+    "visibility": "dm-only",
+    "related": ["expedition_club", "old_longsword", "rogues_deep_shafts", "sorcerers", "prof_ysera"],
+    "tags": ["dm-only", "incidents", "unofficial", "year-38", "year-23", "year-51", "history"]
   }
 ]

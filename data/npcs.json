@@ -197,5 +197,181 @@
     "visibility": "dm-only",
     "related": ["owlbear_cave", "session_4", "dead_hours"],
     "tags": ["students", "dm-only", "antagonist", "prank", "upperclassmen"]
+  },
+  {
+    "id": "prof_bram_holdar",
+    "name": "Professor Bram Holdar",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/prof_bram_holdar.html",
+    "visibility": "player",
+    "related": ["barbarians", "fail_chamber", "secret_society"],
+    "tags": ["faculty", "barbarians", "half-orc", "department-head", "martial"]
+  },
+  {
+    "id": "archcleric_senna",
+    "name": "Archcleric Senna",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/archcleric_senna.html",
+    "visibility": "player",
+    "related": ["clerics", "memorial_garden", "headmistress_dowe", "commander_orvyn", "archival_prayer_text"],
+    "tags": ["faculty", "clerics", "human", "department-head", "divine", "sealed-chapels"]
+  },
+  {
+    "id": "master_jin",
+    "name": "Master Jin",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/master_jin.html",
+    "visibility": "player",
+    "related": ["monks", "fail_chamber"],
+    "tags": ["faculty", "monks", "dragonborn", "department-head", "enigmatic"]
+  },
+  {
+    "id": "commander_orvyn",
+    "name": "Commander Orvyn",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/commander_orvyn.html",
+    "visibility": "player",
+    "related": ["paladins", "clerics", "memorial_garden", "archcleric_senna"],
+    "tags": ["faculty", "paladins", "tiefling", "department-head", "oath-of-glory", "institutional"]
+  },
+  {
+    "id": "maestro_lira",
+    "name": "Maestro Lira",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/maestro_lira.html",
+    "visibility": "player",
+    "related": ["bards", "food_court", "dueling_society", "bards_stage", "resonance_tuning_fork"],
+    "tags": ["faculty", "bards", "half-elf", "department-head", "resonance", "mysterious"]
+  },
+  {
+    "id": "archdruid_sevra",
+    "name": "Archdruid Sevra",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/archdruid_sevra.html",
+    "visibility": "player",
+    "related": ["druids", "high_forest", "campus_ravens", "memorial_garden", "druids_grove", "grove_spirit", "campus_cats", "high_forest_elk"],
+    "tags": ["faculty", "druids", "wood-elf", "department-head", "nature", "ancient"]
+  },
+  {
+    "id": "tinkerer_dunn",
+    "name": "Tinkerer Dunn",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/tinkerer_dunn.html",
+    "visibility": "player",
+    "related": ["artificers", "academy_provisions", "alchemy_notebook", "thornwick_consortium"],
+    "tags": ["faculty", "artificers", "gnome", "department-head", "forge", "projects"]
+  },
+  {
+    "id": "master_veris",
+    "name": "Master Veris",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/master_veris.html",
+    "visibility": "player",
+    "related": ["rogues", "dead_hours", "tavin_crestfall"],
+    "tags": ["faculty", "rogues", "human", "department-head", "mysterious", "unverifiable"]
+  },
+  {
+    "id": "prof_ysera",
+    "name": "Professor Ysera",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/prof_ysera.html",
+    "visibility": "player",
+    "related": ["sorcerers", "fail_chamber"],
+    "tags": ["faculty", "sorcerers", "half-elf", "department-head", "wild-magic", "documentation"]
+  },
+  {
+    "id": "reva_kettner",
+    "name": "Reva Kettner",
+    "type": "npc",
+    "category": "Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/reva_kettner.html",
+    "visibility": "player",
+    "related": ["food_court", "underground_storage", "lenny_goldvein"],
+    "tags": ["staff", "food-court", "gnome", "kitchen", "knows-something"]
+  },
+  {
+    "id": "fennick_mosswood",
+    "name": "Fennick Mosswood",
+    "type": "npc",
+    "category": "Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/fennick_mosswood.html",
+    "visibility": "player",
+    "related": ["old_library", "restricted_floor", "prof_aldous_fenwick"],
+    "tags": ["staff", "librarian", "half-elf", "library", "jurisdiction"]
+  },
+  {
+    "id": "captain_hadra",
+    "name": "Captain Hadra",
+    "type": "npc",
+    "category": "Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/captain_hadra.html",
+    "visibility": "player",
+    "related": ["campus_root", "headmistress_dowe", "main_complex", "contraband_log"],
+    "tags": ["staff", "security", "human", "watch", "institutional", "trustworthy"]
+  },
+  {
+    "id": "ambrose_quill",
+    "name": "Ambrose Quill",
+    "type": "npc",
+    "category": "Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/ambrose_quill.html",
+    "visibility": "player",
+    "related": ["main_complex", "headmistress_dowe"],
+    "tags": ["staff", "administration", "human", "secretary", "institutional-memory"]
+  },
+  {
+    "id": "tavin_crestfall",
+    "name": "Tavin Crestfall",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/tavin_crestfall.html",
+    "visibility": "player",
+    "related": ["rogues", "dead_hours", "the_upperclassmen", "rogues_deep_shafts", "crestfall_journal", "mine_crawlers"],
+    "tags": ["student", "rogues", "senior", "dead-hours", "logistics", "deep-shafts"]
+  },
+  {
+    "id": "thessa_rann",
+    "name": "Thessa Rann",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/thessa_rann.html",
+    "visibility": "player",
+    "related": ["fighters", "dueling_society", "prof_thalia_varn"],
+    "tags": ["student", "fighters", "senior", "top-of-cohort", "plans"]
+  },
+  {
+    "id": "petra_vance",
+    "name": "Petra Vance",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/petra_vance.html",
+    "visibility": "player",
+    "related": ["clerics", "old_library", "archcleric_senna"],
+    "tags": ["student", "clerics", "second-year", "researcher", "sealed-chapels", "investigator"]
   }
 ]

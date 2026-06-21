@@ -113,5 +113,71 @@
       { "label": "Orc War Chief — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/orc-war-chief" }
     ],
     "tags": ["wilderness", "humanoid", "orc", "raiding", "mountains", "warband"]
+  },
+  {
+    "id": "campus_cats",
+    "name": "Campus Cats",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/campus_cats.html",
+    "visibility": "player",
+    "related": ["campus_root", "archdruid_sevra", "druids_grove", "memorial_garden", "old_library"],
+    "tags": ["cats", "campus", "familiars", "mysterious", "everywhere", "long-lived"]
+  },
+  {
+    "id": "mine_crawlers",
+    "name": "Mine Crawlers",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/mine_crawlers.html",
+    "visibility": "dm-only",
+    "related": ["rogues", "rogues_deep_shafts", "tavin_crestfall"],
+    "tags": ["rogues", "mine", "dm-only", "unknown-creature", "deep-shafts", "permanent-tenant"]
+  },
+  {
+    "id": "grove_spirit",
+    "name": "The Grove Spirit",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/grove_spirit.html",
+    "visibility": "dm-only",
+    "related": ["druids_grove", "druids", "archdruid_sevra", "botanical_specimen"],
+    "tags": ["nature-spirit", "druids", "grove", "dm-only", "ancient", "pre-academy"]
+  },
+  {
+    "id": "messenger_falcons",
+    "name": "Rangers Messenger Falcons",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/messenger_falcons.html",
+    "visibility": "player",
+    "related": ["rangers", "maren_duskhollow"],
+    "tags": ["falcons", "rangers", "communication", "missing", "interception"]
+  },
+  {
+    "id": "tunnel_rats",
+    "name": "Tunnel Rats",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/tunnel_rats.html",
+    "visibility": "dm-only",
+    "related": ["rogues", "underground_storage", "ritual_floor"],
+    "tags": ["rats", "underground", "organized", "dm-only", "ritual-enchantment", "sorting"]
+  },
+  {
+    "id": "high_forest_elk",
+    "name": "High Forest Elk Herd",
+    "type": "creature",
+    "category": "Campus Creatures",
+    "contentType": "html",
+    "contentFile": "content/creatures/high_forest_elk.html",
+    "visibility": "player",
+    "related": ["rangers", "druids", "high_forest", "druids_grove"],
+    "tags": ["elk", "herd", "seasonal", "campus", "autumn", "migratory", "grove-spirit"]
   }
 ]

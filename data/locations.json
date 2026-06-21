@@ -665,5 +665,250 @@
       { "roll": "Perception DC 10", "detail": "Torvald makes his rounds at dawn — south wall first, then the memorial garden, then the east path by the oaks. He nods if you're out early. He doesn't ask what you're doing.", "time": ["dawn"] },
       { "detail": "Before breakfast: the campus is quiet enough to hear the ravens. They're already active — calling to each other between the old library eaves and the oaks. The day has started for them before it starts for anyone else.", "time": ["dawn"] }
     ]
+  },
+  {
+    "id": "headmistress_office",
+    "name": "Headmistress's Office",
+    "type": "location",
+    "category": "Main Complex",
+    "contentType": "html",
+    "contentFile": "content/locations/headmistress_office.html",
+    "visibility": "player",
+    "related": ["main_complex", "headmistress_dowe", "ambrose_quill"],
+    "tags": ["main-complex", "administration", "office", "restricted"],
+    "environment": {
+      "architecture": "Second floor of the Main Complex. Outer reception area managed by Quill. Inner office accessed by invitation. Large windows face the main courtyard. Bookshelves, clear desk, one locked drawer.",
+      "activity": "Meetings, academic council sessions, disciplinary hearings. Administrative review appointments on an irregular schedule.",
+      "sensory": "Quiet. The outer office smells of ink and old parchment. The inner office smells of nothing in particular, which is its own quality."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "The locked drawer in the lower right of the desk is a different wood from the rest — replaced, not original. The lock is newer than the desk." },
+      { "roll": "Investigation DC 14", "detail": "The appointment log on Quill's desk has several entries marked 'administrative review' with no name attached. The times cluster in the late afternoon of the last week of each month." }
+    ]
+  },
+  {
+    "id": "healing_ward",
+    "name": "Healing Ward",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/healing_ward.html",
+    "visibility": "player",
+    "related": ["clerics", "archcleric_senna", "barbarians"],
+    "tags": ["clerics", "healing", "medical", "open-access", "sub-location"],
+    "environment": {
+      "architecture": "East wing of the Clerics Department, accessible through a dedicated east-side entrance with a simple latch. Twelve treatment beds with curtain dividers along the south wall. Clean stone floor.",
+      "activity": "Variable — quiet between crises, busy after sparring sessions and field exercises. Student staff rotate on a posted schedule.",
+      "sensory": "Clean and slightly too quiet. The air is noticeably calmer than in the rest of the building.",
+      "lighting": "Good natural light from south-facing windows. Candles at night."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "The room is quieter than it should be given foot traffic. Not supernaturally so, just... settled." },
+      { "roll": "History DC 13", "detail": "The ward records go back to Year 12. They include treatment notes for incidents that don't appear in any departmental incident log." }
+    ]
+  },
+  {
+    "id": "paladin_chapel",
+    "name": "Paladin Chapel",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/paladin_chapel.html",
+    "visibility": "player",
+    "related": ["paladins", "commander_orvyn", "memorial_garden"],
+    "tags": ["paladins", "chapel", "oaths", "sub-location", "alignment"],
+    "environment": {
+      "architecture": "Attached to the Paladins Department building. Stone floor, central dais, twelve carved alcoves with votive lamps. Twelve degrees off true north — oriented toward the Memorial Garden.",
+      "activity": "Oath ceremonies, oath renewals, private observance. Formal use by appointment; department members may enter freely.",
+      "sensory": "Incense, polished stone, and something faintly metallic with no clear source.",
+      "lighting": "Votive lamps in each alcove, always lit."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "A memorial plaque on the west wall has been defaced — scored across the center name, leaving the department label and partial year legible." },
+      { "roll": "History DC 13", "detail": "The building is twelve degrees off true north. The alignment faces the Memorial Garden precisely." }
+    ]
+  },
+  {
+    "id": "fighters_armory",
+    "name": "Fighters Armory",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/fighters_armory.html",
+    "visibility": "player",
+    "related": ["fighters", "prof_thalia_varn", "old_longsword", "drill_notes"],
+    "tags": ["fighters", "armory", "weapons", "locked", "sub-location"],
+    "environment": {
+      "architecture": "Behind the main training yard, reinforced door. Weapon racks, protective equipment, storage cases. Larger than it looks from the training yard side.",
+      "activity": "Low foot traffic. Accessed for assessments, field prep, and senior student training. Prof. Varn enters regularly for inventory and equipment management.",
+      "sensory": "Oil, metal, and old leather. The smell of equipment that has been maintained for decades."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "One rack holds a longsword with no Academy stamp, old leather wrap, and dried blood on the crossguard. It has been there a long time." },
+      { "roll": "Investigation DC 14", "detail": "Several items on the upper shelves have acquisition codes that don't match any current cataloguing system and have no acquisition dates." }
+    ]
+  },
+  {
+    "id": "dormitory_wings",
+    "name": "Dormitory Wings",
+    "type": "location",
+    "category": "Main Complex",
+    "contentType": "html",
+    "contentFile": "content/locations/dormitory_wings.html",
+    "visibility": "player",
+    "related": ["main_complex", "campus_root"],
+    "tags": ["main-complex", "dormitory", "student-housing", "east-wing", "sub-location"],
+    "environment": {
+      "architecture": "Three wings off the north face of the Main Complex. Standard dormitory layout — corridors, shared facilities, student rooms. Each wing has its own character and reputation.",
+      "activity": "Constant at all hours. The east wing third floor is quieter than it should be after midnight.",
+      "sensory": "The west wing is warmer. The east wing third floor runs cooler than the rest. The center wing has neither distinction and is most sought after."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "The east wing third-floor corridor is a few degrees cooler than the rest of the building — not dramatically, but consistently.", "time": ["night"] },
+      { "detail": "Several students on the east wing third floor have mentioned waking at approximately the same time on multiple nights, without identifying a common cause.", "time": ["night"] }
+    ]
+  },
+  {
+    "id": "restricted_floor",
+    "name": "Restricted Floor",
+    "type": "location",
+    "category": "Old Library",
+    "contentType": "html",
+    "contentFile": "content/locations/restricted_floor.html",
+    "visibility": "dm-only",
+    "related": ["old_library", "fennick_mosswood", "secret_society", "founders_charter"],
+    "tags": ["library", "restricted", "dm-only", "founding-documents", "cold-section", "sub-location"],
+    "environment": {
+      "architecture": "Third floor of the Old Library, behind an iron door with a monitoring ward. Standard library shelving layout. Card catalogue that stopped being updated in Year 47. Northeast corner is consistently colder.",
+      "activity": "No current maintenance staff enters. The monitoring ward logs approaches but nobody reads the log.",
+      "sensory": "Cold paper and settled dust. The northeast section is noticeably colder — breath visible in winter, noticeable in autumn."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "The northeast corner runs ten degrees colder than the rest of the floor." },
+      { "roll": "Investigation DC 15", "detail": "Several volumes in the Founding Documents section have been replaced with blank-page placeholders. The replacements use paper that is noticeably newer than the surrounding collection." }
+    ]
+  },
+  {
+    "id": "artificers_forge",
+    "name": "Artificers Forge",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/artificers_forge.html",
+    "visibility": "player",
+    "related": ["artificers", "tinkerer_dunn", "alchemy_notebook"],
+    "tags": ["artificers", "forge", "fabrication", "loud", "sub-location"],
+    "environment": {
+      "architecture": "Ground floor of the Artificers building. Main forge, cooling tanks, integration bench, enclosed testing space off the southeast corner with blast-resistant walls. Several items bolted to the floor with no clear purpose.",
+      "activity": "Near-continuous. Schedule posted by senior students; approximate at best.",
+      "sensory": "Hot, loud, and smells of hot metal, flux, and occasionally scorched cloth."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "Several items bolted to the floor appear to predate the department's occupancy — different metalwork style, different fastener type." },
+      { "roll": "Arcana DC 14", "detail": "Magical detection in this space is less accurate than expected — something is dampening ambient detection. The effect is consistent across the forge floor." }
+    ]
+  },
+  {
+    "id": "bards_stage",
+    "name": "Bards Performance Stage",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/bards_stage.html",
+    "visibility": "player",
+    "related": ["bards", "maestro_lira", "resonance_tuning_fork"],
+    "tags": ["bards", "stage", "resonance", "acoustics", "enchantment", "sub-location"],
+    "environment": {
+      "architecture": "Main performance hall of the Bards building. Full stage with wing space, tiered seating for audiences, alcoves along the side walls with notable reverb properties.",
+      "activity": "Assessments during class hours; informal use at other times. Maestro Lira present during formal sessions.",
+      "sensory": "Sound arrives wrong. A whisper from the back of the stage reaches the front wall before it should. Experienced musicians identify this immediately."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "A whisper at the back of the stage is audible at the front wall slightly before it should be — the timing is off in a way that contradicts the room's physical dimensions." },
+      { "roll": "Arcana DC 13", "detail": "The resonance enchantment in this building is most concentrated here. It extends the acoustic range of the space under specific conditions." }
+    ]
+  },
+  {
+    "id": "druids_grove",
+    "name": "Druids Grove",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/druids_grove.html",
+    "visibility": "player",
+    "related": ["druids", "archdruid_sevra", "grove_spirit", "high_forest_elk", "campus_cats"],
+    "tags": ["druids", "grove", "courtyard", "nature-spirit", "sub-location", "open-sky"],
+    "environment": {
+      "architecture": "Interior courtyard of the Druids building, open to the sky. The central tree predates the building and was built around. Root systems from outside the building penetrate the courtyard walls. Planters and cultivated areas throughout.",
+      "activity": "Sevra works here more than her office. Students practice here. The space is attentive in a way that takes time to identify.",
+      "sensory": "Living green smell, soil, something older underneath that isn't quite any of those things.",
+      "flora": "Dense and varied. The tree with the face. Plants that entered through the walls. Growth patterns that don't match the light source.",
+      "lighting": "Natural, open sky. At night the root systems in the walls are measurably warmer."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 11", "detail": "Plants at the edge of the courtyard lean toward whoever Archdruid Sevra is looking at." },
+      { "roll": "Nature DC 13", "detail": "The root systems entering through the courtyard walls avoided the load-bearing sections. They navigated the structural elements of the building with precision." },
+      { "detail": "At night the root systems in the surrounding walls are warm to the touch — not body-warm, but warmer than stone at this hour should be.", "time": ["night"] }
+    ]
+  },
+  {
+    "id": "wizards_tower_top",
+    "name": "Wizards Tower — Seventh Floor",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/wizards_tower_top.html",
+    "visibility": "dm-only",
+    "related": ["wizards", "ellery_voss", "voss_keycard", "aldric_voss"],
+    "tags": ["wizards", "tower", "seventh-floor", "sealed", "dm-only", "observation-node", "sub-location"],
+    "environment": {
+      "architecture": "Seventh floor of the Wizards Tower; not listed in the campus directory. No windows. No listed purpose. Door sealed with a ward not on the maintenance register.",
+      "activity": "Three senior faculty visits logged in the last year. No current regular use.",
+      "sensory": "The burning smell that runs through the tower is strongest here. Burn marks on floor and one wall, residue of a Year 51 incident."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 12", "detail": "Counting the tower's exterior windows produces a number inconsistent with six floors. The seventh floor is visible from outside." },
+      { "roll": "Arcana DC 15", "detail": "The ward on the stair door is not on the campus maintenance register and does not match any current ward pattern in use at the Academy." }
+    ]
+  },
+  {
+    "id": "rogues_deep_shafts",
+    "name": "Rogues Deep Shafts",
+    "type": "location",
+    "category": "Departments",
+    "contentType": "html",
+    "contentFile": "content/locations/rogues_deep_shafts.html",
+    "visibility": "dm-only",
+    "related": ["rogues", "tavin_crestfall", "crestfall_journal", "mine_crawlers", "ritual_floor"],
+    "tags": ["rogues", "mine", "deep-shafts", "dm-only", "permanent-tenant", "unmapped", "sub-location"],
+    "environment": {
+      "architecture": "Below the charted mine sections. Unmapped. Original mine workings extending well below the depth students typically reach. Navigation notation in student records becomes inconsistent at a certain depth, then absent.",
+      "activity": "Occasional student presence. Mine crawlers active. Permanent tenant present at depth.",
+      "sensory": "Cool, mineral smell that changes at certain junctions. Sound carries differently here than in the upper shafts. Movement in the dark that is not wind."
+    },
+    "curiosities": [
+      { "roll": "Survival DC 14", "detail": "The navigation marks carved into the walls of the charted section end abruptly. Below that point there are marks, but in a notation system that doesn't match anything in current use." },
+      { "roll": "Perception DC 13", "detail": "Something is moving in the dark at a distance that makes size estimation unreliable. It has not moved toward you." }
+    ]
+  },
+  {
+    "id": "ritual_floor",
+    "name": "Ritual Floor",
+    "type": "location",
+    "category": "Underground",
+    "contentType": "html",
+    "contentFile": "content/locations/ritual_floor.html",
+    "visibility": "dm-only",
+    "related": ["underground_storage", "bodak", "sealed_urn", "founders_charter", "occult_systems", "voss_keycard"],
+    "tags": ["underground", "ritual", "founding", "dm-only", "geometric-pattern", "anchor", "sub-location"],
+    "environment": {
+      "architecture": "Deepest chamber of the underground storage system. Stone walls, low ceiling. The floor is cleared and relaid in interlocking angular stone cut to a geometric pattern, approximately thirty feet across, converging on a central point.",
+      "activity": "The Bodak circles the perimeter. Otherwise still. The sealed urn is against the north wall.",
+      "sensory": "Cooler than the upper levels. A faint smell that is not mineral and not decay and has not been successfully characterized."
+    },
+    "curiosities": [
+      { "roll": "Arcana DC 13", "detail": "The pattern on the floor radiates faint residual enchantment. It is dormant but not inert — the difference between a mechanism that has stopped and one that has been paused." },
+      { "roll": "Perception DC 14", "detail": "The sealed urn against the north wall is faintly warm to the touch — slightly warmer than an object in this cool room should be." }
+    ]
   }
 ]

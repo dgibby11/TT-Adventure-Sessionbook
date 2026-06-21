@@ -95,5 +95,137 @@
     "visibility": "dm-only",
     "related": ["fail_chamber", "jungle_site", "ellery_voss", "session_3", "voss_imprint"],
     "tags": ["dm-only", "mystery", "teleportation", "infrastructure", "founding", "fail-chamber", "hidden"]
+  },
+  {
+    "id": "old_longsword",
+    "name": "The Unregistered Longsword",
+    "type": "item",
+    "category": "Weapons",
+    "contentType": "html",
+    "contentFile": "content/items/old_longsword.html",
+    "visibility": "player",
+    "related": ["fighters_armory", "fighters", "expedition_club"],
+    "tags": ["weapon", "longsword", "unregistered", "year-38", "armory", "evidence"]
+  },
+  {
+    "id": "archival_prayer_text",
+    "name": "Archival Prayer Text",
+    "type": "item",
+    "category": "Documents",
+    "contentType": "html",
+    "contentFile": "content/items/archival_prayer_text.html",
+    "visibility": "player",
+    "related": ["clerics", "archcleric_senna", "petra_vance"],
+    "tags": ["document", "clerics", "ancient", "prayer", "pre-academy", "sealed-chapels", "entity"]
+  },
+  {
+    "id": "founders_compass",
+    "name": "Founders' Nine-Pointed Compass",
+    "type": "item",
+    "category": "Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/founders_compass.html",
+    "visibility": "dm-only",
+    "related": ["secret_society", "ritual_floor", "underground_storage", "voss_keycard"],
+    "tags": ["artifact", "compass", "founding", "nine-sites", "dm-only", "secret-society"]
+  },
+  {
+    "id": "alchemy_notebook",
+    "name": "The Calibration Notebook",
+    "type": "item",
+    "category": "Documents",
+    "contentType": "html",
+    "contentFile": "content/items/alchemy_notebook.html",
+    "visibility": "player",
+    "related": ["artificers_forge", "artificers", "tinkerer_dunn", "thornwick_consortium"],
+    "tags": ["document", "artificers", "student", "notebook", "calibration", "suspicious"]
+  },
+  {
+    "id": "resonance_tuning_fork",
+    "name": "Resonance Tuning Fork",
+    "type": "item",
+    "category": "Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/resonance_tuning_fork.html",
+    "visibility": "player",
+    "related": ["bards", "bards_stage", "maestro_lira"],
+    "tags": ["artifact", "bards", "resonance", "acoustic", "enchantment", "unusual-frequency"]
+  },
+  {
+    "id": "crestfall_journal",
+    "name": "Crestfall's Field Journal",
+    "type": "item",
+    "category": "Documents",
+    "contentType": "html",
+    "contentFile": "content/items/crestfall_journal.html",
+    "visibility": "dm-only",
+    "related": ["rogues_deep_shafts", "tavin_crestfall", "mine_crawlers"],
+    "tags": ["document", "rogues", "journal", "deep-shafts", "dm-only", "permanent-tenant", "missing"]
+  },
+  {
+    "id": "sealed_alcove_books",
+    "name": "Sealed Alcove Texts",
+    "type": "item",
+    "category": "Documents",
+    "contentType": "html",
+    "contentFile": "content/items/sealed_alcove_books.html",
+    "visibility": "dm-only",
+    "related": ["wizards", "wizards_tower_top", "prof_aldous_fenwick", "ritual_floor", "archival_prayer_text"],
+    "tags": ["document", "wizards", "founding", "dm-only", "three-hands", "unknown-taxonomy"]
+  },
+  {
+    "id": "botanical_specimen",
+    "name": "Druids Grove Cutting",
+    "type": "item",
+    "category": "Specimens",
+    "contentType": "html",
+    "contentFile": "content/items/botanical_specimen.html",
+    "visibility": "player",
+    "related": ["druids_grove", "archdruid_sevra", "grove_spirit"],
+    "tags": ["plant", "druids", "grove", "living", "spirit-connection", "removed-without-clearance"]
+  },
+  {
+    "id": "drill_notes",
+    "name": "Pre-Faculty Drill Notes",
+    "type": "item",
+    "category": "Documents",
+    "contentType": "html",
+    "contentFile": "content/items/drill_notes.html",
+    "visibility": "dm-only",
+    "related": ["fighters_armory", "fighters", "prof_thalia_varn"],
+    "tags": ["document", "fighters", "armory", "dm-only", "old", "illegal-methods", "conditioning"]
+  },
+  {
+    "id": "spare_campus_key",
+    "name": "Thatch's Spare Key",
+    "type": "item",
+    "category": "Keys & Credentials",
+    "contentType": "html",
+    "contentFile": "content/items/spare_campus_key.html",
+    "visibility": "player",
+    "related": ["torvald_thatch", "rogues", "campus_root"],
+    "tags": ["key", "maintenance", "north-gate", "rogues-east-entrance", "missing"]
+  },
+  {
+    "id": "sealed_urn",
+    "name": "The Sealed Urn",
+    "type": "item",
+    "category": "Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/sealed_urn.html",
+    "visibility": "dm-only",
+    "related": ["ritual_floor", "underground_storage", "occult_systems"],
+    "tags": ["artifact", "urn", "ritual", "founding", "dm-only", "binding-components", "wax-seal"]
+  },
+  {
+    "id": "voss_keycard",
+    "name": "Voss Keycard",
+    "type": "item",
+    "category": "Keys & Credentials",
+    "contentType": "html",
+    "contentFile": "content/items/voss_keycard.html",
+    "visibility": "dm-only",
+    "related": ["eastern_wing", "ellery_voss", "aldric_voss", "wizards_tower_top", "ritual_floor"],
+    "tags": ["key", "credential", "founding-era", "dm-only", "voss-family", "east-annex", "access"]
   }
 ]
