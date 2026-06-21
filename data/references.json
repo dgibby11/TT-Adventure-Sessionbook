@@ -5,7 +5,7 @@
     "type": "reference",
     "category": "Campaign",
     "contentType": "html",
-    "contentFile": "content/party_overview.html",
+    "contentFile": "content/references/party_overview.html",
     "visibility": "player",
     "related": [
       "lugeiros_serise", "gunnar", "caelum_rivenstone", "bloodraven",
@@ -19,7 +19,7 @@
     "type": "reference",
     "category": "Campaign",
     "contentType": "html",
-    "contentFile": "content/campaign_overview.html",
+    "contentFile": "content/references/campaign_overview.html",
     "visibility": "player",
     "related": ["session_1", "session_2", "session_3", "session_4", "headmistress_dowe", "campus_root"],
     "tags": ["campaign", "overview", "summary", "reference"]
@@ -30,7 +30,7 @@
     "type": "reference",
     "category": "Campaign",
     "contentType": "html",
-    "contentFile": "content/campus_overview.html",
+    "contentFile": "content/references/campus_overview.html",
     "visibility": "player",
     "related": ["campus_root", "main_complex", "headmistress_dowe", "academy_traditions"],
     "tags": ["academy", "overview", "campus", "reference"]
@@ -41,7 +41,7 @@
     "type": "reference",
     "category": "Campus Life",
     "contentType": "html",
-    "contentFile": "content/academy_credits.html",
+    "contentFile": "content/references/academy_credits.html",
     "visibility": "player",
     "related": ["academy_provisions", "silas_morne", "lenny_goldvein", "food_court", "dead_hours"],
     "tags": ["credits", "economy", "store", "potions", "currency"]
@@ -52,7 +52,7 @@
     "type": "reference",
     "category": "Campus Life",
     "contentType": "html",
-    "contentFile": "content/academy_traditions.html",
+    "contentFile": "content/references/academy_traditions.html",
     "visibility": "player",
     "related": [
       "headmistress_dowe", "founders_statue", "dueling_society",
@@ -66,7 +66,7 @@
     "type": "reference",
     "category": "Campus Life",
     "contentType": "html",
-    "contentFile": "content/academy_legends.html",
+    "contentFile": "content/references/academy_legends.html",
     "visibility": "player",
     "related": [
       "founders_statue", "old_library", "ninth_thesis",
@@ -80,7 +80,7 @@
     "type": "reference",
     "category": "Campaign",
     "contentType": "html",
-    "contentFile": "content/dnd_resources.html",
+    "contentFile": "content/references/dnd_resources.html",
     "visibility": "player",
     "tags": ["reference", "rules", "5e", "resources", "external"]
   }

@@ -5,7 +5,7 @@
     "type": "npc",
     "category": "Player Characters",
     "contentType": "html",
-    "contentFile": "content/lugeiros_serise.html",
+    "contentFile": "content/players/lugeiros_serise.html",
     "visibility": "player",
     "related": ["session_1", "session_2", "session_3"],
     "links": [
@@ -19,7 +19,7 @@
     "type": "npc",
     "category": "Player Characters",
     "contentType": "html",
-    "contentFile": "content/gunnar.html",
+    "contentFile": "content/players/gunnar.html",
     "visibility": "player",
     "related": ["session_1", "session_2", "session_3"],
     "links": [
@@ -33,7 +33,7 @@
     "type": "npc",
     "category": "Player Characters",
     "contentType": "html",
-    "contentFile": "content/caelum_rivenstone.html",
+    "contentFile": "content/players/caelum_rivenstone.html",
     "visibility": "player",
     "related": ["session_1", "session_2", "session_3", "bards"],
     "links": [
@@ -47,7 +47,7 @@
     "type": "npc",
     "category": "Player Characters",
     "contentType": "html",
-    "contentFile": "content/bloodraven.html",
+    "contentFile": "content/players/bloodraven.html",
     "visibility": "player",
     "related": ["sunken_fang_spear", "session_1", "session_2", "session_3", "fighters"],
     "links": [
@@ -61,7 +61,7 @@
     "type": "npc",
     "category": "Staff",
     "contentType": "html",
-    "contentFile": "content/silas_morne.html",
+    "contentFile": "content/npcs/silas_morne.html",
     "visibility": "player",
     "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium"],
     "tags": ["staff", "store", "provisions", "suspicious", "merchant"]
@@ -72,7 +72,7 @@
     "type": "npc",
     "category": "Staff",
     "contentType": "html",
-    "contentFile": "content/torvald_thatch.html",
+    "contentFile": "content/npcs/torvald_thatch.html",
     "visibility": "player",
     "related": ["campus_root", "memorial_garden", "underground_storage", "eastern_wing", "campus_ravens"],
     "tags": ["staff", "groundskeeper", "night-watch", "half-orc", "veteran", "grounds"]
@@ -83,7 +83,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/headmistress_dowe.html",
+    "contentFile": "content/npcs/headmistress_dowe.html",
     "visibility": "player",
     "related": ["lenny_goldvein", "ellery_voss", "secret_society", "academy_traditions", "main_complex"],
     "tags": ["faculty", "headmistress", "administration", "tiefling", "authority", "dangerous"]
@@ -94,7 +94,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/prof_thalia_varn.html",
+    "contentFile": "content/npcs/prof_thalia_varn.html",
     "visibility": "player",
     "related": ["fighters", "dueling_society", "main_complex"],
     "tags": ["faculty", "combat", "beloved", "martial", "instructor"]
@@ -105,7 +105,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/prof_aldous_fenwick.html",
+    "contentFile": "content/npcs/prof_aldous_fenwick.html",
     "visibility": "player",
     "related": ["wizards", "old_library", "main_complex"],
     "tags": ["faculty", "arcane", "worst-professor", "tenured", "wizards"]
@@ -116,7 +116,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/ellery_voss.html",
+    "contentFile": "content/npcs/ellery_voss.html",
     "visibility": "player",
     "related": ["fail_chamber", "jungle_site", "aldric_voss", "teleportation_network", "session_3", "main_complex"],
     "tags": ["faculty", "voss-family", "fail-chamber", "secrets", "independent", "founder-descendant"]
@@ -127,7 +127,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/lenny_goldvein.html",
+    "contentFile": "content/npcs/lenny_goldvein.html",
     "visibility": "player",
     "related": ["underground_storage", "session_1", "academy_provisions", "academy_credits", "food_court"],
     "tags": ["faculty", "administration", "credits", "economy", "cutting-corners"]
@@ -138,7 +138,7 @@
     "type": "npc",
     "category": "Faculty",
     "contentType": "html",
-    "contentFile": "content/oswald_crumb.html",
+    "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
     "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
@@ -149,7 +149,7 @@
     "type": "npc",
     "category": "Founders",
     "contentType": "html",
-    "contentFile": "content/aldric_voss.html",
+    "contentFile": "content/npcs/aldric_voss.html",
     "visibility": "dm-only",
     "related": ["memorial_garden", "voss_imprint", "ellery_voss", "secret_society", "founders_statue"],
     "tags": ["founder", "dm-only", "voss-family", "architect", "mystery", "lore"]
@@ -160,7 +160,7 @@
     "type": "npc",
     "category": "Founders",
     "contentType": "html",
-    "contentFile": "content/isolde_orath.html",
+    "contentFile": "content/npcs/isolde_orath.html",
     "visibility": "dm-only",
     "related": ["orath_charter", "old_library", "secret_society", "memorial_garden"],
     "tags": ["founder", "dm-only", "charter", "library", "lore"]
@@ -171,7 +171,7 @@
     "type": "npc",
     "category": "Founders",
     "contentType": "html",
-    "contentFile": "content/brennan_ashcroft.html",
+    "contentFile": "content/npcs/brennan_ashcroft.html",
     "visibility": "dm-only",
     "related": ["secret_society", "old_library", "memorial_garden"],
     "tags": ["founder", "dm-only", "lore", "society"]
@@ -182,7 +182,7 @@
     "type": "npc",
     "category": "Founders",
     "contentType": "html",
-    "contentFile": "content/maren_duskhollow.html",
+    "contentFile": "content/npcs/maren_duskhollow.html",
     "visibility": "dm-only",
     "related": ["owlbear_cave", "kass", "rangers", "campus_wildlife"],
     "tags": ["founder", "dm-only", "rangers", "owlbear", "nature", "companion"]
@@ -193,7 +193,7 @@
     "type": "npc",
     "category": "Students",
     "contentType": "html",
-    "contentFile": "content/the_upperclassmen.html",
+    "contentFile": "content/npcs/the_upperclassmen.html",
     "visibility": "dm-only",
     "related": ["owlbear_cave", "session_4", "dead_hours"],
     "tags": ["students", "dm-only", "antagonist", "prank", "upperclassmen"]

@@ -5,7 +5,7 @@
     "type": "session",
     "category": "Completed",
     "contentType": "html",
-    "contentFile": "content/session_1.html",
+    "contentFile": "content/sessions/session_1.html",
     "visibility": "player",
     "related": ["underground_storage", "bodak", "mimics", "magical_gauntlet", "lenny_goldvein"],
     "tags": ["session", "completed", "underground", "combat", "bodak", "gauntlet"]
@@ -16,7 +16,7 @@
     "type": "session",
     "category": "Completed",
     "contentType": "html",
-    "contentFile": "content/session_2.html",
+    "contentFile": "content/sessions/session_2.html",
     "visibility": "player",
     "related": ["founders_statue", "secret_society", "ninth_thesis"],
     "tags": ["session", "completed", "founders-statue", "secret-society", "mystery"]
@@ -27,7 +27,7 @@
     "type": "session",
     "category": "Completed",
     "contentType": "html",
-    "contentFile": "content/session_3.html",
+    "contentFile": "content/sessions/session_3.html",
     "visibility": "player",
     "related": ["fail_chamber", "jungle_site", "sunken_fang_spear", "dinosaurs", "ellery_voss"],
     "tags": ["session", "completed", "fail-chamber", "jungle", "dinosaurs", "teleportation"]
@@ -38,7 +38,7 @@
     "type": "session",
     "category": "Planning",
     "contentType": "html",
-    "contentFile": "content/session_4.html",
+    "contentFile": "content/sessions/session_4.html",
     "visibility": "dm-only",
     "related": ["owlbear_cave", "kass", "rangers", "the_upperclassmen"],
     "tags": ["session", "planning", "dm-only", "owlbear", "prank", "upperclassmen"]

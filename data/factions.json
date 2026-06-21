@@ -5,7 +5,7 @@
     "type": "faction",
     "category": "Student Clubs",
     "contentType": "html",
-    "contentFile": "content/dueling_society.html",
+    "contentFile": "content/factions/dueling_society.html",
     "visibility": "player",
     "related": ["prof_thalia_varn", "fighters", "wizards", "bards", "fail_chamber"],
     "tags": ["club", "combat", "students", "competition", "dueling", "spectacle"]
@@ -16,7 +16,7 @@
     "type": "faction",
     "category": "Student Clubs",
     "contentType": "html",
-    "contentFile": "content/expedition_club.html",
+    "contentFile": "content/factions/expedition_club.html",
     "visibility": "player",
     "related": ["jungle_site", "nether_mountains", "fail_chamber", "oswald_crumb"],
     "tags": ["club", "fieldwork", "students", "dangerous", "expedition", "wilderness"]
@@ -27,7 +27,7 @@
     "type": "faction",
     "category": "Student Clubs",
     "contentType": "html",
-    "contentFile": "content/dead_hours.html",
+    "contentFile": "content/factions/dead_hours.html",
     "visibility": "dm-only",
     "related": ["the_upperclassmen", "underground_storage", "academy_credits", "food_court", "rogues"],
     "tags": ["club", "underground", "gambling", "secret", "dm-only", "night", "illicit"]
@@ -38,7 +38,7 @@
     "type": "faction",
     "category": "Societies",
     "contentType": "html",
-    "contentFile": "content/secret_society.html",
+    "contentFile": "content/factions/secret_society.html",
     "visibility": "dm-only",
     "related": ["founders_statue", "ninth_thesis", "brennan_ashcroft", "old_library", "occult_systems", "aldric_voss"],
     "tags": ["dm-only", "secret", "ritual", "conspiracy", "founding", "society"]
@@ -49,7 +49,7 @@
     "type": "faction",
     "category": "External Powers",
     "contentType": "html",
-    "contentFile": "content/thornwick_consortium.html",
+    "contentFile": "content/factions/thornwick_consortium.html",
     "visibility": "dm-only",
     "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund"],
     "tags": ["dm-only", "external", "arcane", "merchant", "supply-chain", "consortium", "threat"]

@@ -5,7 +5,7 @@
     "type": "creature",
     "category": "Contained Threats",
     "contentType": "html",
-    "contentFile": "content/bodak.html",
+    "contentFile": "content/creatures/bodak.html",
     "visibility": "dm-only",
     "related": ["underground_storage", "session_1", "occult_systems"],
     "links": [
@@ -19,7 +19,7 @@
     "type": "creature",
     "category": "Campus Creatures",
     "contentType": "html",
-    "contentFile": "content/kass.html",
+    "contentFile": "content/creatures/kass.html",
     "visibility": "player",
     "related": ["owlbear_cave", "rangers", "maren_duskhollow", "session_4"],
     "links": [
@@ -33,7 +33,7 @@
     "type": "creature",
     "category": "Campus Creatures",
     "contentType": "html",
-    "contentFile": "content/campus_ravens.html",
+    "contentFile": "content/creatures/campus_ravens.html",
     "visibility": "player",
     "related": ["campus_root", "old_library", "torvald_thatch", "druids", "rangers"],
     "tags": ["ravens", "campus", "birds", "intelligent", "messengers", "unsettling"],
@@ -48,7 +48,7 @@
     "type": "creature",
     "category": "Contained Threats",
     "contentType": "html",
-    "contentFile": "content/mimics.html",
+    "contentFile": "content/creatures/mimics.html",
     "visibility": "dm-only",
     "related": ["underground_storage", "session_1"],
     "links": [
@@ -62,7 +62,7 @@
     "type": "creature",
     "category": "Field Threats",
     "contentType": "html",
-    "contentFile": "content/dinosaurs.html",
+    "contentFile": "content/creatures/dinosaurs.html",
     "visibility": "player",
     "related": ["jungle_site", "sunken_fang_spear", "session_3"],
     "links": [
@@ -76,7 +76,7 @@
     "type": "creature",
     "category": "Wilderness Threats",
     "contentType": "html",
-    "contentFile": "content/wolves.html",
+    "contentFile": "content/creatures/wolves.html",
     "visibility": "player",
     "related": ["river_rauvin", "high_forest", "campus_root"],
     "links": [
@@ -91,7 +91,7 @@
     "type": "creature",
     "category": "Wilderness Threats",
     "contentType": "html",
-    "contentFile": "content/displacer_beast.html",
+    "contentFile": "content/creatures/displacer_beast.html",
     "visibility": "dm-only",
     "related": ["high_forest", "owlbear_cave"],
     "links": [
@@ -105,7 +105,7 @@
     "type": "creature",
     "category": "Wilderness Threats",
     "contentType": "html",
-    "contentFile": "content/orc_warband.html",
+    "contentFile": "content/creatures/orc_warband.html",
     "visibility": "player",
     "related": ["nether_mountains", "silverymoon", "everlund"],
     "links": [

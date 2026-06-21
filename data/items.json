@@ -5,7 +5,7 @@
     "type": "item",
     "category": "Artifacts",
     "contentType": "html",
-    "contentFile": "content/sunken_fang_spear.html",
+    "contentFile": "content/items/sunken_fang_spear.html",
     "visibility": "player",
     "related": ["jungle_site", "dinosaurs", "fail_chamber", "session_3", "bloodraven"],
     "tags": ["artifact", "weapon", "spear", "jungle", "creature-influence", "pc-item", "mysterious"]
@@ -16,7 +16,7 @@
     "type": "item",
     "category": "Artifacts",
     "contentType": "html",
-    "contentFile": "content/magical_gauntlet.html",
+    "contentFile": "content/items/magical_gauntlet.html",
     "visibility": "player",
     "related": ["underground_storage", "session_1"],
     "tags": ["artifact", "armor", "gauntlet", "underground", "mysterious", "recovered"]
@@ -27,7 +27,7 @@
     "type": "item",
     "category": "Consumables",
     "contentType": "html",
-    "contentFile": "content/potion_of_healing.html",
+    "contentFile": "content/items/potion_of_healing.html",
     "visibility": "player",
     "related": ["academy_provisions", "academy_credits"],
     "tags": ["potion", "healing", "store", "consumable", "2d4+2"]
@@ -38,7 +38,7 @@
     "type": "item",
     "category": "Special Acquisitions",
     "contentType": "html",
-    "contentFile": "content/eyes_of_minute_seeing.html",
+    "contentFile": "content/items/eyes_of_minute_seeing.html",
     "visibility": "player",
     "related": ["academy_provisions"],
     "links": [
@@ -52,7 +52,7 @@
     "type": "item",
     "category": "Special Acquisitions",
     "contentType": "html",
-    "contentFile": "content/bag_of_tricks.html",
+    "contentFile": "content/items/bag_of_tricks.html",
     "visibility": "player",
     "related": ["academy_provisions"],
     "links": [
@@ -66,7 +66,7 @@
     "type": "item",
     "category": "Special Acquisitions",
     "contentType": "html",
-    "contentFile": "content/goggles_of_night.html",
+    "contentFile": "content/items/goggles_of_night.html",
     "visibility": "player",
     "related": ["academy_provisions"],
     "links": [
@@ -80,7 +80,7 @@
     "type": "item",
     "category": "Documents",
     "contentType": "html",
-    "contentFile": "content/orath_charter.html",
+    "contentFile": "content/items/orath_charter.html",
     "visibility": "dm-only",
     "related": ["isolde_orath", "old_library", "secret_society", "aldric_voss"],
     "tags": ["document", "founding", "dm-only", "charter", "secrets", "orath", "restricted"]
