@@ -84,5 +84,16 @@
     "visibility": "dm-only",
     "related": ["isolde_orath", "old_library", "secret_society", "aldric_voss"],
     "tags": ["document", "founding", "dm-only", "charter", "secrets", "orath", "restricted"]
+  },
+  {
+    "id": "teleportation_network",
+    "name": "Teleportation Infrastructure",
+    "type": "item",
+    "category": "Infrastructure",
+    "contentType": "html",
+    "contentFile": "content/items/teleportation_network.html",
+    "visibility": "dm-only",
+    "related": ["fail_chamber", "jungle_site", "ellery_voss", "session_3", "voss_imprint"],
+    "tags": ["dm-only", "mystery", "teleportation", "infrastructure", "founding", "fail-chamber", "hidden"]
   }
 ]

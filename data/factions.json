@@ -53,5 +53,27 @@
     "visibility": "dm-only",
     "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund"],
     "tags": ["dm-only", "external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
+  },
+  {
+    "id": "ninth_thesis",
+    "name": "The Ninth Thesis",
+    "type": "faction",
+    "category": "Conspiracies",
+    "contentType": "html",
+    "contentFile": "content/factions/ninth_thesis.html",
+    "visibility": "player",
+    "related": ["secret_society", "founders_statue", "session_2", "aldric_voss"],
+    "tags": ["mystery", "conspiracy", "founding", "secret-society", "ritual", "lore"]
+  },
+  {
+    "id": "occult_systems",
+    "name": "Sacrificial / Occult Systems",
+    "type": "faction",
+    "category": "Underground",
+    "contentType": "html",
+    "contentFile": "content/factions/occult_systems.html",
+    "visibility": "dm-only",
+    "related": ["underground_storage", "secret_society", "founders_statue", "bodak"],
+    "tags": ["dm-only", "mystery", "occult", "ritual", "underground", "dark", "founding"]
   }
 ]

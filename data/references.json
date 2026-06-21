@@ -83,5 +83,26 @@
     "contentFile": "content/references/dnd_resources.html",
     "visibility": "player",
     "tags": ["reference", "rules", "5e", "resources", "external"]
+  },
+  {
+    "id": "hidden_knowledge",
+    "name": "Hidden Knowledge & Bargains",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/hidden_knowledge.html",
+    "visibility": "dm-only",
+    "related": ["founders_statue", "secret_society", "old_library", "eastern_wing"],
+    "tags": ["dm-only", "mystery", "secrets", "bargains", "library", "lore", "founding"]
+  },
+  {
+    "id": "open_questions",
+    "name": "Loose Threads & Open Questions",
+    "type": "reference",
+    "category": "DM Reference",
+    "contentType": "html",
+    "contentFile": "content/references/open_questions.html",
+    "visibility": "dm-only",
+    "tags": ["dm-only", "mystery", "threads", "planning", "questions", "unresolved"]
   }
 ]
