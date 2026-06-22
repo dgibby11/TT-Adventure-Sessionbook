@@ -1,8 +1,8 @@
 {
-  "id": "fucks-academy",
+  "id": "fail-academy",
   "name": "FAIL Academy",
   "subtitle": "Faculty of Arms, Inquiry & Lore",
   "mapImage": "assets/FUCKS_map.png",
   "rootLocation": "campus_root",
-  "storageKey": "fucks-academy.v1"
+  "storageKey": "fail-academy.v1"
 }

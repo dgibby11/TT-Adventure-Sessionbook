@@ -24,12 +24,12 @@
   // Synchronous defaults — scripts that load immediately after data.js (state.js,
   // dashboard.js) can read window.CAMPAIGN without waiting for a fetch.
   window.CAMPAIGN = {
-    id:           'fucks-academy',
+    id:           'fail-academy',
     name:         'FAIL Academy',
     subtitle:     'Faculty of Arms, Inquiry & Lore',
     mapImage:     'assets/FUCKS_map.png',
     rootLocation: 'campus_root',
-    storageKey:   'fucks.campaign.v1',
+    storageKey:   'fail-academy.v1',
   };
 
   function applyConfig(cfg) {
