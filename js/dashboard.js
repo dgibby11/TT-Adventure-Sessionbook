@@ -332,9 +332,10 @@
     const dash = document.getElementById('dashboard');
     if (!dash) return;
 
-    const currentId = window.App.getCurrentLocationId() || 'campus_root';
+    const ROOT      = window.CAMPAIGN.rootLocation;
+    const currentId = window.App.getCurrentLocationId() || ROOT;
     const loc       = window.App.byId(currentId);
-    const isRoot    = currentId === 'campus_root';
+    const isRoot    = currentId === ROOT;
     const graph     = getGraph(currentId);
 
     dash.innerHTML = '';

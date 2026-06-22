@@ -1,0 +1,8 @@
+{
+  "id": "fucks-academy",
+  "name": "FAIL Academy",
+  "subtitle": "Faculty of Arms, Inquiry & Lore",
+  "mapImage": "assets/FUCKS_map.png",
+  "rootLocation": "campus_root",
+  "storageKey": "fucks.campaign.v1"
+}

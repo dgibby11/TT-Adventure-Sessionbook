@@ -13,7 +13,9 @@
 //   App.setTimeOfDay(t)       → persist + fire time:changed
 
 (function () {
-  const KEY = 'fucks.campaign.v1';
+  // Reads from window.CAMPAIGN (set synchronously by data.js before this runs).
+  // To use a different key for a new campaign, update campaign.json's storageKey.
+  const KEY = window.CAMPAIGN.storageKey;
 
   function load() {
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
