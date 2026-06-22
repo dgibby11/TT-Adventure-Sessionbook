@@ -25,6 +25,7 @@
   function save() {
     try { localStorage.setItem(KEY, JSON.stringify(_state)); }
     catch (e) { console.warn('[state] localStorage write failed:', e); }
+    if (window.GitHubState) window.GitHubState.sync(_state);
   }
 
   const _state = load();

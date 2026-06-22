@@ -139,6 +139,10 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(180deg, #2c2415, #211a10);
   box-shadow: 0 0 12px rgba(211,154,62,0.25), 0 0 0 1px rgba(211,154,62,0.3) inset;
 }
+#github-sync-btn { font-size: 0.65rem; letter-spacing: 0.06em; }
+#github-sync-btn[data-status="synced"]  { color: #6aaf6a; border-color: #4a7a4a; }
+#github-sync-btn[data-status="syncing"] { color: var(--muted); border-color: var(--line); }
+#github-sync-btn[data-status="error"]   { color: var(--oxblood-2); border-color: var(--oxblood); }
 
 /* Player-view mode indicator on the file-tag badge */
 .file-tag-player {

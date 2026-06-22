@@ -4,5 +4,10 @@
   "subtitle": "Faculty of Arms, Inquiry & Lore",
   "mapImage": "assets/FUCKS_map.png",
   "rootLocation": "campus_root",
-  "storageKey": "fail-academy.v1"
+  "storageKey": "fail-academy.v1",
+  "github": {
+    "owner": "dgibby11",
+    "repo": "DnDAcademy",
+    "stateFile": "campaign-state.json"
+  }
 }
