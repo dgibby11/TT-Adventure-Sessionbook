@@ -138,7 +138,27 @@
     if (openBtn) openBtn.addEventListener("click", openPanel);
     if (closeBtn) closeBtn.addEventListener("click", closePanel);
     if (backdrop) backdrop.addEventListener("click", closePanel);
-    if (toggleBtn) toggleBtn.addEventListener("click", () => window.App.toggleDM());
+    if (toggleBtn) toggleBtn.addEventListener("click", () => {
+      // Turning DM mode OFF requires no auth.
+      if (window.App.isDM()) { window.App.toggleDM(); return; }
+      // Turning DM mode ON: check passphrase if one is configured.
+      const hash = window.CAMPAIGN?.dmPassHash;
+      if (!hash) { window.App.toggleDM(); return; }
+      // Session already unlocked this tab — no re-prompt needed.
+      if (sessionStorage.getItem('dm-unlocked') === hash) { window.App.toggleDM(); return; }
+      const pass = prompt('DM passphrase:');
+      if (pass === null) return;
+      crypto.subtle.digest('SHA-256', new TextEncoder().encode(pass))
+        .then(buf => {
+          const hex = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+          if (hex === hash) {
+            sessionStorage.setItem('dm-unlocked', hash);
+            window.App.toggleDM();
+          } else {
+            alert('Incorrect passphrase.');
+          }
+        });
+    });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && panel.classList.contains("open")) closePanel();
     });

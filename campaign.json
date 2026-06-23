@@ -5,6 +5,7 @@
   "mapImage": "assets/FUCKS_map.png",
   "rootLocation": "campus_root",
   "storageKey": "fail-academy.v1",
+  "dmPassHash": "00afe2303c7382f4c9d96401f5bce99c027c75ba993fada538e039e7c048823f",
   "github": {
     "owner": "dgibby11",
     "repo": "DnDAcademy",

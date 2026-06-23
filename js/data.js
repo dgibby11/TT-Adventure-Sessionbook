@@ -30,6 +30,7 @@
     mapImage:     'assets/FUCKS_map.png',
     rootLocation: 'campus_root',
     storageKey:   'fail-academy.v1',
+    dmPassHash:   '',
     github: { owner: '', repo: '', stateFile: 'campaign-state.json' },
   };
 
