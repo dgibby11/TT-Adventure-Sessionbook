@@ -504,18 +504,53 @@
     "contentType": "html",
     "contentFile": "content/locations/nether_mountains.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "thornwick_consortium", "silverymoon", "river_rauvin", "orc_warband"],
+    "related": ["oswald_crumb", "thornwick_consortium", "silverymoon", "river_rauvin", "orc_warband", "mountain_base"],
     "tags": ["remote", "mountains", "expedition", "mining", "cold", "dangerous"],
     "environment": {
-      "architecture": "A decommissioned excavation site — previous seasons' dig frames still standing, partially collapsed. A base camp of weathered tents and a stone equipment cache that hasn't been restocked in at least two seasons.",
-      "activity": "Officially inactive: 'on extended hiatus pending faculty review.' Two prior expedition cohorts abandoned it mid-season without completing their stated objectives.",
-      "sensory": "Cold, thin air, the mineral smell of disturbed rock. Wind off the northern face that has nothing to break it between here and the high range.",
-      "lighting": "Clear mountain light that flattens everything and leaves no shadows to hide in."
+      "architecture": "A decommissioned excavation site at high altitude — dig frames from previous seasons still standing, partially collapsed. A stone equipment cache that hasn't been restocked in two seasons. Above the dig site, exposed granite ridges and loose scree fields.",
+      "activity": "Officially inactive: 'on extended hiatus pending faculty review.' Two prior expedition cohorts abandoned mid-season without completing their stated objectives.",
+      "sensory": "Cold, thin air, the mineral smell of disturbed rock. Wind off the northern face with nothing to break it between here and the high range. At altitude, sound carries further than it should.",
+      "flora": "Nothing above the dig site but lichen — orange, black, and grey patches on the boulder faces. The grey patches are actively growing; the orange ones have been here for centuries. In sheltered cracks: a stunted juniper twisted by decades of wind.",
+      "fauna": "Alpine choughs — black, crow-like birds — follow the party at a distance. Scavengers; they know expeditions mean discarded food. High up, raptors ride thermals. Cave bats in the rock overhangs above the dig site emerge at dusk.",
+      "lighting": "Clear mountain light that flattens everything and leaves no shadows. At altitude, the sky is a shade darker blue than it looks from the valley."
     },
     "curiosities": [
       { "roll": "Investigation DC 13", "detail": "The excavation log stops mid-sentence in the second-to-last entry. The final entry has been removed — page torn cleanly, not worn away." },
       { "roll": "Arcana DC 15", "detail": "The northern dig face has residual abjuration traces — the kind placed over something to contain it, not to protect researchers. Something was dug up and the seal was placed afterward." },
-      { "roll": "Perception DC 11", "detail": "Fresh boot tracks in the mountain dust. Not from anyone in the party. Made recently — the dust hasn't settled." }
+      { "roll": "Perception DC 11", "detail": "Fresh boot tracks in the mountain dust. Not from anyone in the party. Made recently — the dust hasn't settled." },
+      { "roll": "Perception DC 10", "detail": "Cup marks carved into a flat outcropping near the dig site — rows of shallow round depressions, too deliberate to be natural, too weathered to be recent. Someone has tried to map them; there's a faded sketch in the margin of the site log." },
+      { "roll": "History DC 14", "detail": "Foundation stones in a rough circle, mostly buried by scree, about thirty meters east of the dig site. Whatever stood here predates the Academy's excavation activity by centuries. It wasn't large — maybe a watchtower, or a shrine." },
+      { "roll": "Perception DC 13", "detail": "A vein of dark mineral runs through the granite face at the dig site in a pattern that is almost too regular — straight lines branching at consistent angles. It wasn't in the site survey documents. Crumb photographs it immediately and says nothing." },
+      { "roll": "Nature DC 10", "detail": "The alpine choughs following the party shift their perches whenever the party stops moving. They're not just scavenging — they're tracking. Something else in this area uses their behaviour as a signal." },
+      { "roll": "Perception DC 12", "detail": "Wind carries sound strangely at this altitude. A voice — distant, directionless — that resolves into wind before you can identify it. Happens twice. The second time, it almost has consonants.", "time": ["night"] }
+    ]
+  },
+  {
+    "id": "mountain_base",
+    "name": "Mountain Foothills & Base Camp",
+    "type": "location",
+    "category": "Remote Field Sites",
+    "contentType": "html",
+    "contentFile": "content/locations/mountain_base.html",
+    "visibility": "player",
+    "related": ["nether_mountains", "river_rauvin", "orc_warband"],
+    "tags": ["remote", "mountains", "foothills", "camp", "approach", "expedition"],
+    "environment": {
+      "architecture": "Rough foothills terrain — wooded lower slopes giving way to open boulder fields. The campsite from previous expeditions is marked: a fire ring of large stones, tent stake holes in the softer ground near a snowmelt stream, a rope still strung between two boulders. Someone scratched the expedition year into a flat rock near the fire ring. Two years. Both crossed out.",
+      "activity": "Quiet during the day. The boulder fields create overlapping sight lines that make it hard to be certain of movement at range. At dusk, visibility drops faster than expected and the temperature follows it.",
+      "sensory": "Cold and clean — pine and frost from the treeline below, bare rock above. At night the temperature drops sharply and wind carries sound from unexpected directions.",
+      "flora": "Mountain heather and scrubby juniper at the lower elevations. The treeline is a hard line — above it, only lichen and cold-hardy moss on shadowed boulder faces. In sheltered hollows, hardy wildflowers in season; they close at dusk.",
+      "fauna": "Marmots in the boulder fields — their alarm whistles carry far and signal movement to anything else listening. Mountain goat tracks cross the loose scree but the animals keep their distance. Bats emerge from the overhangs at dusk.",
+      "weather": "Temperature swings of 20+ degrees between midday and midnight. Afternoon wind picks up reliably from the north and drops to near-nothing around midnight. Cloud cover from the north arrives fast and without much warning."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "A marmot alarm whistle — one sharp note, then silence. Something is moving in the boulder field to the northeast. By the time you locate the direction, the marmot has gone quiet." },
+      { "roll": "Perception DC 11", "detail": "The fire ring ash is too recent for the last official expedition. Someone used this campsite within the past few months and left it clean — no refuse, no equipment, no record." },
+      { "roll": "Survival DC 12", "detail": "Goat tracks in the softer ground near the snowmelt stream, and something else moving on the same path — larger, pressing deeper, no hoof marks. The second set of tracks is more recent." },
+      { "roll": "Nature DC 11", "detail": "The wildflowers in the hollow below the camp are closed. They should be open at this hour. Something passed through recently and disturbed them — the stems are bent in one direction." },
+      { "detail": "Frost on everything. The rocks steam faintly as the sun hits them. The mountain is loudest at dawn — bird calls, wind through rock faces, snowmelt beginning to run. The day announces itself here before it does in the valley.", "time": ["dawn"] },
+      { "roll": "Perception DC 10", "detail": "A small cairn of three stones sits on a boulder overlooking the camp. You don't remember it being there when you arrived.", "time": ["night"] },
+      { "roll": "Perception DC 12", "detail": "A light on the ridge above — brief, stationary, then gone. No one should be up there at this hour.", "time": ["night"] }
     ]
   },
   {
@@ -596,8 +631,22 @@
     "contentType": "html",
     "contentFile": "content/locations/river_rauvin.html",
     "visibility": "player",
-    "related": ["silverymoon", "high_forest", "wolves", "nether_mountains"],
-    "tags": ["river", "nearby", "wilderness", "travel", "border"]
+    "related": ["silverymoon", "high_forest", "wolves", "nether_mountains", "mountain_base"],
+    "tags": ["river", "nearby", "wilderness", "travel", "border", "crossing", "ferry"],
+    "environment": {
+      "architecture": "A wide, fast-moving river. The crossing point has a flat-bottomed rope ferry — wide enough for a cart, well-maintained, run by an old ferryman named Brec who has operated this crossing for thirty years. The dock is solid timber; the approach road from campus shows regular use. A half-mile upstream, the remains of a stone bridge pier stand in the current — old work, pre-Academy, with nothing connecting to either bank.",
+      "activity": "Ferry runs dawn to dusk on demand. Traffic is light but regular: Academy expeditions, Silverymoon traders, the occasional courier. Brec knows most repeat travelers by face.",
+      "sensory": "Cold spray. The sound of fast water over rounded stones. River mud and the green-wet smell of bank vegetation. The ferry rope hums under tension when the current is running hard.",
+      "flora": "Willows and alder along both banks. Tall river grasses. Kingfisher territory — you'll hear them before you see the water.",
+      "lighting": "Open sky above the river — the only fully exposed point on the journey north. No canopy, no ridge. In clear weather, you can see the Nether Mountains from the dock."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "The dock post has cargo tally marks carved into it going back decades — different hands, different notation systems layered over each other. Brec added his own system about fifteen years ago and it's the most legible by far." },
+      { "roll": "History DC 12", "detail": "The bridge pier upstream is old stonework — well-cut, good mortar, a style that predates the Academy by at least two centuries. No record of the bridge in any Academy document. Brec says it was already a ruin when he arrived." },
+      { "roll": "Nature DC 10", "detail": "Fish in the clear shallows, some unnaturally large for a river this size. Brec notes it without drama: 'Been like that as long as I've been here. Stopped wondering about it.' He seems entirely sincere." },
+      { "roll": "Insight DC 11", "detail": "Brec tracks who goes north. He doesn't write it down — it's in his head. If asked carefully, he'll mention the last few parties that crossed toward the mountains, and which ones came back." },
+      { "detail": "The ferry closes at full dark, no exceptions. Brec is polite about it and immovable. The ford a half-mile downstream is passable but adds two feet of cold fast water and a slippery bottom. He'll tell you this without recommending it.", "time": ["night"] }
+    ]
   },
   {
     "id": "high_forest",
@@ -673,7 +722,7 @@
     "category": "Main Complex",
     "contentType": "html",
     "contentFile": "content/locations/headmistress_office.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["main_complex", "headmistress_dowe", "ambrose_quill"],
     "tags": ["main-complex", "administration", "office", "restricted"],
     "environment": {
@@ -735,7 +784,7 @@
     "category": "Departments",
     "contentType": "html",
     "contentFile": "content/locations/fighters_armory.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["fighters", "prof_thalia_varn", "old_longsword", "drill_notes"],
     "tags": ["fighters", "armory", "weapons", "locked", "sub-location"],
     "environment": {

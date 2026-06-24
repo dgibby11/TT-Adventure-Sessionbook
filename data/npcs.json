@@ -348,7 +348,7 @@
     "category": "Students",
     "contentType": "html",
     "contentFile": "content/npcs/tavin_crestfall.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["rogues", "dead_hours", "the_upperclassmen", "rogues_deep_shafts", "crestfall_journal", "mine_crawlers"],
     "tags": ["student", "rogues", "senior", "dead-hours", "logistics", "deep-shafts"]
   },

@@ -103,7 +103,7 @@
     "category": "Weapons",
     "contentType": "html",
     "contentFile": "content/items/old_longsword.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["fighters_armory", "fighters", "expedition_club"],
     "tags": ["weapon", "longsword", "unregistered", "year-38", "armory", "evidence"]
   },
@@ -114,7 +114,7 @@
     "category": "Documents",
     "contentType": "html",
     "contentFile": "content/items/archival_prayer_text.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["clerics", "archcleric_senna", "petra_vance"],
     "tags": ["document", "clerics", "ancient", "prayer", "pre-academy", "sealed-chapels", "entity"]
   },
@@ -136,7 +136,7 @@
     "category": "Documents",
     "contentType": "html",
     "contentFile": "content/items/alchemy_notebook.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["artificers_forge", "artificers", "tinkerer_dunn", "thornwick_consortium"],
     "tags": ["document", "artificers", "student", "notebook", "calibration", "suspicious"]
   },
@@ -147,7 +147,7 @@
     "category": "Artifacts",
     "contentType": "html",
     "contentFile": "content/items/resonance_tuning_fork.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["bards", "bards_stage", "maestro_lira"],
     "tags": ["artifact", "bards", "resonance", "acoustic", "enchantment", "unusual-frequency"]
   },
@@ -180,7 +180,7 @@
     "category": "Specimens",
     "contentType": "html",
     "contentFile": "content/items/botanical_specimen.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["druids_grove", "archdruid_sevra", "grove_spirit"],
     "tags": ["plant", "druids", "grove", "living", "spirit-connection", "removed-without-clearance"]
   },
@@ -202,7 +202,7 @@
     "category": "Keys & Credentials",
     "contentType": "html",
     "contentFile": "content/items/spare_campus_key.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["torvald_thatch", "rogues", "campus_root"],
     "tags": ["key", "maintenance", "north-gate", "rogues-east-entrance", "missing"]
   },

@@ -36,11 +36,23 @@
     "id": "session_4",
     "name": "Session 4 — The Owlbear Prank",
     "type": "session",
-    "category": "Planning",
+    "category": "Completed",
     "contentType": "html",
     "contentFile": "content/sessions/session_4.html",
-    "visibility": "dm-only",
+    "visibility": "player",
     "related": ["owlbear_cave", "kass", "rangers", "the_upperclassmen"],
-    "tags": ["session", "planning", "dm-only", "owlbear", "prank", "upperclassmen"]
+    "tags": ["session", "completed", "owlbear", "prank", "upperclassmen", "intervention"]
+  },
+  {
+    "id": "session_5",
+    "name": "Session 5 — The Nether Mountains Expedition",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_5.html",
+    "visibility": "dm-only",
+    "startLocation": "main_complex",
+    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club"],
+    "tags": ["session", "planning", "dm-only", "mountains", "crumb", "elemental", "thornwick", "expedition"]
   }
 ]

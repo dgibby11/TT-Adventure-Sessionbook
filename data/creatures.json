@@ -154,7 +154,7 @@
     "category": "Campus Creatures",
     "contentType": "html",
     "contentFile": "content/creatures/messenger_falcons.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["rangers", "maren_duskhollow"],
     "tags": ["falcons", "rangers", "communication", "missing", "interception"]
   },
