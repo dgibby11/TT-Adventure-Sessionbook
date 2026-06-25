@@ -1,5 +1,19 @@
 [
   {
+    "id": "shield_of_missile_attraction",
+    "name": "Shield of Missile Attraction",
+    "type": "item",
+    "category": "Magic Items",
+    "contentType": "html",
+    "contentFile": "content/items/shield_of_missile_attraction.html",
+    "visibility": "dm-only",
+    "links": [
+      { "label": "Shield of Missile Attraction — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/4754-shield-of-missile-attraction" }
+    ],
+    "related": ["nether_mountains", "mountain_base", "session_5"],
+    "tags": ["magic-item", "shield", "cursed", "mountains", "undiscovered"]
+  },
+  {
     "id": "sunken_fang_spear",
     "name": "Sunken Fang Spear",
     "type": "item",

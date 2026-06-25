@@ -1,5 +1,16 @@
 [
   {
+    "id": "ozzy",
+    "name": "Ozzy",
+    "type": "npc",
+    "category": "Player Characters",
+    "contentType": "html",
+    "contentFile": "content/players/ozzy.html",
+    "visibility": "player",
+    "related": ["session_5", "oswald_crumb", "nether_mountains"],
+    "tags": ["player-character", "sorcerer", "goblin", "draconic"]
+  },
+  {
     "id": "lugeiros_serise",
     "name": "Lugeiros Serise",
     "type": "npc",
