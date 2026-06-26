@@ -1,10 +1,13 @@
 // data.js — loads campaign config + entity data.
 //
-// Reads ?campaign=<id> from the URL (defaults to 'fail-academy') and sets:
+// Reads ?campaign=<id> from the URL and sets:
 //   window.CAMPAIGN_BASE  'campaigns/<id>'  — prefix for all asset/data fetches
 //   window.CAMPAIGN       campaign configuration object (sync defaults, then overridden
 //                         by campaigns/<id>/campaign.json)
 //   window.ENTITIES       merged array of all entity objects
+//
+// If no ?campaign= param is present, or the id is not listed in campaigns/index.json,
+// the user is redirected to launcher.html.
 //
 // window.App methods:
 //   isDM()               is DM mode currently on?
@@ -20,7 +23,24 @@
 (function () {
   // ── Campaign selection ─────────────────────────────────────────────────────
   const urlParams  = new URLSearchParams(window.location.search);
-  const campaignId = urlParams.get('campaign') || 'fail-academy';
+  const campaignId = urlParams.get('campaign');
+
+  // No campaign specified — send to launcher.
+  if (!campaignId) {
+    window.location.replace('launcher.html');
+    return;
+  }
+
+  // Validate against the launcher registry; unlisted campaigns redirect to launcher.
+  fetch('campaigns/index.json')
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (list) {
+      if (!list.some(function (c) { return c.id === campaignId; })) {
+        window.location.replace('launcher.html');
+      }
+    })
+    .catch(function () {}); // non-fatal — proceed if index.json is unreachable
+
   const CAMPAIGN_BASE = 'campaigns/' + campaignId;
   window.CAMPAIGN_BASE = CAMPAIGN_BASE;
 
