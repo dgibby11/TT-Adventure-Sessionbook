@@ -1,0 +1,94 @@
+[
+  {
+    "id": "dia_campaign_overview",
+    "name": "Descent into Avernus — Campaign Overview",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/references/dia_campaign_overview.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "elturel",
+      "baldurs_gate",
+      "avernus"
+    ],
+    "tags": [
+      "overview"
+    ]
+  },
+  {
+    "id": "avernus_lore",
+    "name": "Avernus — The First Layer of the Nine Hells",
+    "type": "reference",
+    "category": "Lore",
+    "contentType": "html",
+    "contentFile": "content/references/avernus_lore.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "zariel",
+      "river_styx",
+      "blood_war_demons"
+    ],
+    "tags": [
+      "lore",
+      "avernus"
+    ]
+  },
+  {
+    "id": "blood_war_primer",
+    "name": "The Blood War",
+    "type": "reference",
+    "category": "Lore",
+    "contentType": "html",
+    "contentFile": "content/references/blood_war_primer.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "blood_war_demons",
+      "zariel_legion"
+    ],
+    "tags": [
+      "lore",
+      "blood-war"
+    ]
+  },
+  {
+    "id": "soul_coins_guide",
+    "name": "Soul Coins — Rules and Lore",
+    "type": "reference",
+    "category": "Rules",
+    "contentType": "html",
+    "contentFile": "content/references/soul_coins_guide.html",
+    "visibility": "dm-only",
+    "related": [
+      "soul_coin",
+      "avernus",
+      "mahadi"
+    ],
+    "tags": [
+      "rules",
+      "avernus"
+    ]
+  },
+  {
+    "id": "infernal_war_machines_guide",
+    "name": "Infernal War Machines — Rules",
+    "type": "reference",
+    "category": "Rules",
+    "contentType": "html",
+    "contentFile": "content/references/infernal_war_machines_guide.html",
+    "visibility": "dm-only",
+    "related": [
+      "infernal_war_machine",
+      "avernus",
+      "bels_forge"
+    ],
+    "tags": [
+      "rules",
+      "avernus",
+      "vehicles"
+    ]
+  }
+]

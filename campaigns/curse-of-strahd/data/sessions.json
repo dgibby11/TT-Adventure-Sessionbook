@@ -1,0 +1,307 @@
+[
+  {
+    "id": "session_01_into_the_mists",
+    "name": "Session 1: Into the Mists",
+    "type": "session",
+    "category": "Chapter 1",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_01_into_the_mists.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "ireena_kolyana",
+      "ismark_kolyanovich",
+      "tser_pool_encampment"
+    ],
+    "tags": [
+      "session",
+      "intro",
+      "hook",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_02_lands_of_barovia",
+    "name": "Session 2: The Lands of Barovia",
+    "type": "session",
+    "category": "Chapter 2",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_02_lands_of_barovia.html",
+    "visibility": "dm-only",
+    "related": [
+      "old_svalich_road",
+      "gates_of_barovia",
+      "tser_pool_encampment",
+      "madam_eva"
+    ],
+    "tags": [
+      "session",
+      "barovia",
+      "exploration",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_03_village_of_barovia",
+    "name": "Session 3: The Village of Barovia",
+    "type": "session",
+    "category": "Chapter 3",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_03_village_of_barovia.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "ireena_kolyana",
+      "father_donavich",
+      "blood_of_the_vine_tavern"
+    ],
+    "tags": [
+      "session",
+      "village",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_04_castle_ravenloft",
+    "name": "Session 4: Castle Ravenloft",
+    "type": "session",
+    "category": "Chapter 4",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_04_castle_ravenloft.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "strahd_von_zarovich",
+      "heart_of_sorrow"
+    ],
+    "tags": [
+      "session",
+      "castle",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_05_town_of_vallaki",
+    "name": "Session 5: The Town of Vallaki",
+    "type": "session",
+    "category": "Chapter 5",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_05_town_of_vallaki.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "baron_vargas_vallakovich",
+      "blue_water_inn",
+      "lady_wachter"
+    ],
+    "tags": [
+      "session",
+      "vallaki",
+      "politics",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_06_old_bonegrinder",
+    "name": "Session 6: Old Bonegrinder",
+    "type": "session",
+    "category": "Chapter 6",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_06_old_bonegrinder.html",
+    "visibility": "dm-only",
+    "related": [
+      "old_bonegrinder"
+    ],
+    "tags": [
+      "session",
+      "bonegrinder",
+      "hags",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_07_argynvostholt",
+    "name": "Session 7: Argynvostholt",
+    "type": "session",
+    "category": "Chapter 7",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_07_argynvostholt.html",
+    "visibility": "dm-only",
+    "related": [
+      "argynvostholt",
+      "vladimir_horngaard",
+      "phantom_warrior",
+      "argynvost_skull_mystery"
+    ],
+    "tags": [
+      "session",
+      "argynvostholt",
+      "knights",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_08_village_of_krezk",
+    "name": "Session 8: The Village of Krezk",
+    "type": "session",
+    "category": "Chapter 8",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_08_village_of_krezk.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "the_abbot",
+      "dmitri_krezkov",
+      "abbey_of_saint_markovia"
+    ],
+    "tags": [
+      "session",
+      "krezk",
+      "abbey",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_09_tser_pool_western_barovia",
+    "name": "Session 9: Tser Pool & Western Barovia",
+    "type": "session",
+    "category": "Chapter 9",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_09_tser_pool_western_barovia.html",
+    "visibility": "dm-only",
+    "related": [
+      "tser_pool_encampment",
+      "tser_falls",
+      "lake_zarovich"
+    ],
+    "tags": [
+      "session",
+      "tser-pool",
+      "western",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_10_ruins_of_berez",
+    "name": "Session 10: The Ruins of Berez",
+    "type": "session",
+    "category": "Chapter 10",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_10_ruins_of_berez.html",
+    "visibility": "dm-only",
+    "related": [
+      "ruins_of_berez",
+      "baba_lysaga",
+      "ulrich_mansion",
+      "marinas_monument"
+    ],
+    "tags": [
+      "session",
+      "berez",
+      "ruins",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_11_van_richtens_tower",
+    "name": "Session 11: Van Richten's Tower",
+    "type": "session",
+    "category": "Chapter 11",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_11_van_richtens_tower.html",
+    "visibility": "dm-only",
+    "related": [
+      "van_richtens_tower",
+      "rictavio",
+      "ezmerelda_davenir"
+    ],
+    "tags": [
+      "session",
+      "tower",
+      "van-richten",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_12_wizard_of_wines",
+    "name": "Session 12: The Wizard of Wines",
+    "type": "session",
+    "category": "Chapter 12",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_12_wizard_of_wines.html",
+    "visibility": "dm-only",
+    "related": [
+      "wizard_of_wines",
+      "keepers_of_the_feather",
+      "tree_blight",
+      "gulthias_staff"
+    ],
+    "tags": [
+      "session",
+      "winery",
+      "wereravens",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_13_amber_temple",
+    "name": "Session 13: The Amber Temple",
+    "type": "session",
+    "category": "Chapter 13",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_13_amber_temple.html",
+    "visibility": "dm-only",
+    "related": [
+      "amber_temple",
+      "amber_sarcophagi",
+      "kasimir_velikov",
+      "strahd_backstory_mystery"
+    ],
+    "tags": [
+      "session",
+      "amber-temple",
+      "dark-gifts",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_14_yester_hill",
+    "name": "Session 14: Yester Hill",
+    "type": "session",
+    "category": "Chapter 14",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_14_yester_hill.html",
+    "visibility": "dm-only",
+    "related": [
+      "yester_hill",
+      "druids_circle",
+      "gulthias_tree",
+      "barovian_witch"
+    ],
+    "tags": [
+      "session",
+      "yester-hill",
+      "druids",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "session_15_werewolf_den",
+    "name": "Session 15: The Werewolf Den",
+    "type": "session",
+    "category": "Chapter 15",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_15_werewolf_den.html",
+    "visibility": "dm-only",
+    "related": [
+      "werewolf_den",
+      "werewolf",
+      "kiril_stoyanovich"
+    ],
+    "tags": [
+      "session",
+      "werewolves",
+      "dm-only"
+    ]
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "id": "sword_of_zariel",
+    "name": "Sword of Zariel",
+    "type": "item",
+    "category": "Major Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/sword_of_zariel.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "lulu",
+      "bleeding_citadel",
+      "yael",
+      "how_to_free_elturel",
+      "zariel_redemption_mystery",
+      "bleeding_citadel_location",
+      "session_04_sword_of_zariel",
+      "session_05_escape_from_avernus"
+    ],
+    "tags": [
+      "artifact",
+      "sword",
+      "chapter-4"
+    ]
+  },
+  {
+    "id": "shield_of_the_hidden_lord",
+    "name": "Shield of the Hidden Lord",
+    "type": "item",
+    "category": "Major Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/shield_of_the_hidden_lord.html",
+    "visibility": "dm-only",
+    "related": [
+      "gargauth",
+      "vanthampur_villa",
+      "v36_vanthampur_vault",
+      "vanthampur_conspiracy",
+      "gargauths_agenda",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "artifact",
+      "shield",
+      "cursed",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "puzzle_box",
+    "name": "Thavius Kreeg's Puzzle Box",
+    "type": "item",
+    "category": "Key Items",
+    "contentType": "html",
+    "contentFile": "content/items/puzzle_box.html",
+    "visibility": "dm-only",
+    "related": [
+      "thavius_kreeg",
+      "candlekeep",
+      "sylvira_savikas",
+      "falaster_fisk",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "key-item",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "soul_coin",
+    "name": "Soul Coin",
+    "type": "item",
+    "category": "Avernus Currency",
+    "contentType": "html",
+    "contentFile": "content/items/soul_coin.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "mahadi",
+      "mad_maggie",
+      "soul_coin_undead",
+      "session_03_avernus",
+      "soul_coins_guide"
+    ],
+    "tags": [
+      "avernus",
+      "currency",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "infernal_tack",
+    "name": "Infernal Tack",
+    "type": "item",
+    "category": "Avernus Equipment",
+    "contentType": "html",
+    "contentFile": "content/items/infernal_tack.html",
+    "visibility": "dm-only",
+    "related": [
+      "narzugon",
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "battle_standard_of_infernal_power",
+    "name": "Battle Standard of Infernal Power",
+    "type": "item",
+    "category": "Avernus Equipment",
+    "contentType": "html",
+    "contentFile": "content/items/battle_standard_of_infernal_power.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "gauntlets_of_flaming_fury",
+    "name": "Gauntlets of Flaming Fury",
+    "type": "item",
+    "category": "Magic Items",
+    "contentType": "html",
+    "contentFile": "content/items/gauntlets_of_flaming_fury.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "magic-item"
+    ]
+  },
+  {
+    "id": "obsidian_flint_dragon_plate",
+    "name": "Obsidian Flint Dragon Plate",
+    "type": "item",
+    "category": "Magic Items",
+    "contentType": "html",
+    "contentFile": "content/items/obsidian_flint_dragon_plate.html",
+    "visibility": "dm-only",
+    "related": [
+      "tiamats_lair",
+      "tiamat"
+    ],
+    "tags": [
+      "armor",
+      "magic-item",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "helm_of_devil_command",
+    "name": "Helm of Devil Command",
+    "type": "item",
+    "category": "Avernus Equipment",
+    "contentType": "html",
+    "contentFile": "content/items/helm_of_devil_command.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "the_companion",
+    "name": "The Companion",
+    "type": "item",
+    "category": "Key Items",
+    "contentType": "html",
+    "contentFile": "content/items/the_companion.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "thavius_kreeg",
+      "zariel",
+      "order_of_the_companion",
+      "how_to_free_elturel",
+      "who_condemned_elturel",
+      "companions_true_nature",
+      "session_05_escape_from_avernus"
+    ],
+    "tags": [
+      "key-item",
+      "chapter-2",
+      "infernal-machine"
+    ]
+  },
+  {
+    "id": "lulus_golden_canary",
+    "name": "Lulu's Golden Canary (Token)",
+    "type": "item",
+    "category": "Key Items",
+    "contentType": "html",
+    "contentFile": "content/items/lulus_golden_canary.html",
+    "visibility": "dm-only",
+    "related": [
+      "lulu",
+      "idyllglen",
+      "bleeding_citadel"
+    ],
+    "tags": [
+      "key-item",
+      "chapter-4"
+    ]
+  }
+]

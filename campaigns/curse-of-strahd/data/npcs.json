@@ -1,0 +1,703 @@
+[
+  {
+    "id": "strahd_von_zarovich",
+    "name": "Strahd von Zarovich",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/strahd_von_zarovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "ireena_kolyana",
+      "rahadin",
+      "tome_of_strahd",
+      "strahd_defeat",
+      "anastrasya_karelova",
+      "ireena_tatyana_mystery",
+      "session_04_castle_ravenloft",
+      "baba_lysaga",
+      "lady_wachter",
+      "arrigal",
+      "sergei_von_zarovich",
+      "strahd_von_zarovich_stat",
+      "vampire_spawn",
+      "tome_location_mystery",
+      "strahd_backstory_mystery",
+      "death_of_strahd_mystery",
+      "patrina_mystery",
+      "cos_campaign_overview",
+      "barovia_lore"
+    ],
+    "tags": [
+      "villain",
+      "vampire",
+      "dark-lord",
+      "bbeg",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "rahadin",
+    "name": "Rahadin",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/rahadin.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "castle_ravenloft",
+      "rahadin_stat"
+    ],
+    "tags": [
+      "villain",
+      "dusk-elf",
+      "chamberlain",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "baba_lysaga",
+    "name": "Baba Lysaga",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/baba_lysaga.html",
+    "visibility": "dm-only",
+    "related": [
+      "ruins_of_berez",
+      "strahd_von_zarovich",
+      "baba_lysaga_creeping_hut",
+      "baba_lysaga_stat",
+      "baba_lysaga_creeping_hut",
+      "session_10_ruins_of_berez"
+    ],
+    "tags": [
+      "villain",
+      "witch",
+      "hag",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "izek_strazni",
+    "name": "Izek Strazni",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/izek_strazni.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "baron_vargas_vallakovich",
+      "ireena_kolyana",
+      "izek_strazni_stat",
+      "st_andrals_bones_mystery"
+    ],
+    "tags": [
+      "villain",
+      "enforcer",
+      "dm-only",
+      "vallaki"
+    ]
+  },
+  {
+    "id": "baron_vargas_vallakovich",
+    "name": "Baron Vargas Vallakovich",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/baron_vargas_vallakovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "burgomasters_mansion_vallaki",
+      "izek_strazni",
+      "burgomasters_mansion",
+      "session_05_town_of_vallaki"
+    ],
+    "tags": [
+      "villain",
+      "burgomaster",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "lady_wachter",
+    "name": "Lady Fiona Wachter",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/lady_wachter.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "wachterhaus",
+      "strahd_von_zarovich",
+      "ernst_larnak",
+      "session_05_town_of_vallaki"
+    ],
+    "tags": [
+      "villain",
+      "noble",
+      "vallaki",
+      "cult",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_abbot",
+    "name": "The Abbot (Ithuriel)",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/the_abbot.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "abbey_of_saint_markovia",
+      "mongrelfolk",
+      "session_08_village_of_krezk"
+    ],
+    "tags": [
+      "villain",
+      "deva",
+      "abbey",
+      "dm-only",
+      "krezk"
+    ]
+  },
+  {
+    "id": "vladimir_horngaard",
+    "name": "Vladimir Horngaard",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/vladimir_horngaard.html",
+    "visibility": "dm-only",
+    "related": [
+      "argynvostholt",
+      "phantom_warrior",
+      "argynvost_skull_mystery",
+      "order_of_the_silver_dragon",
+      "session_07_argynvostholt"
+    ],
+    "tags": [
+      "villain",
+      "revenant",
+      "knight",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "kiril_stoyanovich",
+    "name": "Kiril Stoyanovich",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/kiril_stoyanovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "werewolf_den",
+      "werewolf",
+      "castle_ravenloft",
+      "session_15_werewolf_den"
+    ],
+    "tags": [
+      "villain",
+      "werewolf",
+      "alpha",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ireena_kolyana",
+    "name": "Ireena Kolyana",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/ireena_kolyana.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "ismark_kolyanovich",
+      "strahd_von_zarovich",
+      "ireena_tatyana_mystery",
+      "izek_strazni",
+      "kolyan_indirovich",
+      "session_01_into_the_mists",
+      "session_03_village_of_barovia"
+    ],
+    "tags": [
+      "ally",
+      "key-npc",
+      "tatyana",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ismark_kolyanovich",
+    "name": "Ismark Kolyanovich",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/ismark_kolyanovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "ireena_kolyana",
+      "burgomasters_mansion",
+      "session_01_into_the_mists"
+    ],
+    "tags": [
+      "ally",
+      "burgomaster-son",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "madam_eva",
+    "name": "Madam Eva",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/madam_eva.html",
+    "visibility": "dm-only",
+    "related": [
+      "tser_pool_encampment",
+      "vistani",
+      "tarokka_deck",
+      "fortunes_of_ravenloft_mystery",
+      "who_is_the_ally_mystery",
+      "session_02_lands_of_barovia",
+      "tarokka_guide"
+    ],
+    "tags": [
+      "ally",
+      "seer",
+      "vistani",
+      "tarokka",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "rictavio",
+    "name": "Rictavio (Rudolf van Richten)",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/rictavio.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "blue_water_inn",
+      "van_richtens_tower",
+      "ezmerelda_davenir",
+      "session_11_van_richtens_tower"
+    ],
+    "tags": [
+      "ally",
+      "monster-hunter",
+      "disguise",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ezmerelda_davenir",
+    "name": "Ezmerelda d'Avenir",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/ezmerelda_davenir.html",
+    "visibility": "dm-only",
+    "related": [
+      "van_richtens_tower",
+      "rictavio",
+      "vistani",
+      "session_11_van_richtens_tower"
+    ],
+    "tags": [
+      "ally",
+      "monster-hunter",
+      "vistani",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "kasimir_velikov",
+    "name": "Kasimir Velikov",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/kasimir_velikov.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "amber_temple",
+      "patrina_mystery",
+      "castle_ravenloft",
+      "session_13_amber_temple"
+    ],
+    "tags": [
+      "ally",
+      "dusk-elf",
+      "wizard",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "father_donavich",
+    "name": "Father Donavich",
+    "type": "npc",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/npcs/father_donavich.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "church",
+      "session_03_village_of_barovia"
+    ],
+    "tags": [
+      "townsperson",
+      "cleric",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "kolyan_indirovich",
+    "name": "Kolyan Indirovich",
+    "type": "npc",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/npcs/kolyan_indirovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "burgomasters_mansion",
+      "ireena_kolyana",
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "burgomaster",
+      "deceased",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "bildrath",
+    "name": "Bildrath Cantemir",
+    "type": "npc",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/npcs/bildrath.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "parriwimple"
+    ],
+    "tags": [
+      "merchant",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "parriwimple",
+    "name": "Parriwimple",
+    "type": "npc",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/npcs/parriwimple.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "bildrath"
+    ],
+    "tags": [
+      "townsperson",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "mad_mary",
+    "name": "Mad Mary",
+    "type": "npc",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/npcs/mad_mary.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia",
+      "mad_marys_townhouse"
+    ],
+    "tags": [
+      "townsperson",
+      "grieving",
+      "barovia",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "urwin_martikov",
+    "name": "Urwin Martikov",
+    "type": "npc",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/npcs/urwin_martikov.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "blue_water_inn",
+      "keepers_of_the_feather",
+      "danika_dorakova"
+    ],
+    "tags": [
+      "innkeeper",
+      "wereraven",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "danika_dorakova",
+    "name": "Danika Dorakova",
+    "type": "npc",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/npcs/danika_dorakova.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "blue_water_inn",
+      "urwin_martikov",
+      "keepers_of_the_feather"
+    ],
+    "tags": [
+      "innkeeper",
+      "wereraven",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "blinsky",
+    "name": "Gadof Blinsky",
+    "type": "npc",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/npcs/blinsky.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "blinsky_toys"
+    ],
+    "tags": [
+      "toymaker",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "father_lucian",
+    "name": "Father Lucian Petrovich",
+    "type": "npc",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/npcs/father_lucian.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "st_andral_feast",
+      "st_andrals_bones_mystery"
+    ],
+    "tags": [
+      "priest",
+      "cleric",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ernst_larnak",
+    "name": "Ernst Larnak",
+    "type": "npc",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/npcs/ernst_larnak.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "wachterhaus",
+      "lady_wachter"
+    ],
+    "tags": [
+      "spy",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "arrigal",
+    "name": "Arrigal",
+    "type": "npc",
+    "category": "Vistani",
+    "contentType": "html",
+    "contentFile": "content/npcs/arrigal.html",
+    "visibility": "dm-only",
+    "related": [
+      "tser_pool_encampment",
+      "vistani",
+      "strahd_von_zarovich"
+    ],
+    "tags": [
+      "vistani",
+      "spy",
+      "assassin",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "luvash",
+    "name": "Luvash",
+    "type": "npc",
+    "category": "Vistani",
+    "contentType": "html",
+    "contentFile": "content/npcs/luvash.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "vistani_camp",
+      "arabelle",
+      "vistani"
+    ],
+    "tags": [
+      "vistani",
+      "leader",
+      "vallaki",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "arabelle",
+    "name": "Arabelle",
+    "type": "npc",
+    "category": "Vistani",
+    "contentType": "html",
+    "contentFile": "content/npcs/arabelle.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "vistani_camp",
+      "luvash"
+    ],
+    "tags": [
+      "vistani",
+      "child",
+      "seer",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "cyrus_belview",
+    "name": "Cyrus Belview",
+    "type": "npc",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/npcs/cyrus_belview.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "servants_hall"
+    ],
+    "tags": [
+      "mongrelfolk",
+      "castle",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "lief_lipsiege",
+    "name": "Lief Lipsiege",
+    "type": "npc",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/npcs/lief_lipsiege.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "kings_accountant"
+    ],
+    "tags": [
+      "accountant",
+      "castle",
+      "prisoner",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "anastrasya_karelova",
+    "name": "Anastrasya Karelova",
+    "type": "npc",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/npcs/anastrasya_karelova.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "strahd_von_zarovich"
+    ],
+    "tags": [
+      "vampire-spawn",
+      "bride",
+      "castle",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "sergei_von_zarovich",
+    "name": "Sergei von Zarovich",
+    "type": "npc",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/npcs/sergei_von_zarovich.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "strahd_von_zarovich",
+      "ireena_tatyana_mystery",
+      "sergeis_tomb"
+    ],
+    "tags": [
+      "deceased",
+      "paladin",
+      "brother",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "dmitri_krezkov",
+    "name": "Dmitri Krezkov",
+    "type": "npc",
+    "category": "Village of Krezk",
+    "contentType": "html",
+    "contentFile": "content/npcs/dmitri_krezkov.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "pool_and_shrine",
+      "session_08_village_of_krezk"
+    ],
+    "tags": [
+      "burgomaster",
+      "krezk",
+      "dm-only"
+    ]
+  }
+]

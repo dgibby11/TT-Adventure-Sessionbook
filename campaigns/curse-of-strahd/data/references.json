@@ -1,0 +1,89 @@
+[
+  {
+    "id": "cos_campaign_overview",
+    "name": "Curse of Strahd — Campaign Overview",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/references/cos_campaign_overview.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "strahd_defeat"
+    ],
+    "tags": [
+      "overview",
+      "campaign",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "cos_dm_notes",
+    "name": "DM Notes & Running the Adventure",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/references/cos_dm_notes.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "dm-notes",
+      "running",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "barovia_lore",
+    "name": "Barovia — Lore and History",
+    "type": "reference",
+    "category": "Lore",
+    "contentType": "html",
+    "contentFile": "content/references/barovia_lore.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "strahd_backstory_mystery"
+    ],
+    "tags": [
+      "lore",
+      "barovia",
+      "history",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tarokka_guide",
+    "name": "Tarokka Deck Guide",
+    "type": "reference",
+    "category": "Rules",
+    "contentType": "html",
+    "contentFile": "content/references/tarokka_guide.html",
+    "visibility": "dm-only",
+    "related": [
+      "tarokka_deck",
+      "madam_eva",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "tarokka",
+      "rules",
+      "divination",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "random_encounters",
+    "name": "Random Encounters in Barovia",
+    "type": "reference",
+    "category": "Rules",
+    "contentType": "html",
+    "contentFile": "content/references/random_encounters.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "encounters",
+      "random",
+      "dm-only"
+    ]
+  }
+]

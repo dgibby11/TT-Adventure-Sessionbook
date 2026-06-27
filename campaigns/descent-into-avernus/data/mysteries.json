@@ -1,0 +1,199 @@
+[
+  {
+    "id": "how_to_free_elturel",
+    "name": "How Can Elturel Be Freed?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/how_to_free_elturel.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "zariel",
+      "sword_of_zariel",
+      "the_companion",
+      "bleeding_citadel",
+      "session_05_escape_from_avernus"
+    ],
+    "tags": [
+      "main-quest"
+    ]
+  },
+  {
+    "id": "who_condemned_elturel",
+    "name": "Who Condemned Elturel — and How?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/who_condemned_elturel.html",
+    "visibility": "dm-only",
+    "related": [
+      "thavius_kreeg",
+      "zariel",
+      "the_companion",
+      "elturel",
+      "vanthampur_villa"
+    ],
+    "tags": [
+      "main-quest",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "zariel_redemption_mystery",
+    "name": "Can Zariel Be Redeemed?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/zariel_redemption_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "lulu",
+      "yael",
+      "sword_of_zariel",
+      "bleeding_citadel",
+      "session_05_escape_from_avernus"
+    ],
+    "tags": [
+      "main-quest",
+      "chapter-4",
+      "chapter-5"
+    ]
+  },
+  {
+    "id": "lulus_memories",
+    "name": "What Are Lulu's Lost Memories?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/lulus_memories.html",
+    "visibility": "dm-only",
+    "related": [
+      "lulu",
+      "zariel",
+      "idyllglen",
+      "bleeding_citadel",
+      "yael",
+      "session_04_sword_of_zariel"
+    ],
+    "tags": [
+      "chapter-2",
+      "chapter-3",
+      "chapter-4"
+    ]
+  },
+  {
+    "id": "bleeding_citadel_location",
+    "name": "Where Is the Bleeding Citadel?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/bleeding_citadel_location.html",
+    "visibility": "dm-only",
+    "related": [
+      "bleeding_citadel",
+      "lulu",
+      "avernus",
+      "sword_of_zariel"
+    ],
+    "tags": [
+      "chapter-3",
+      "chapter-4"
+    ]
+  },
+  {
+    "id": "companions_true_nature",
+    "name": "What Is the Companion?",
+    "type": "mystery",
+    "category": "Lore",
+    "contentType": "html",
+    "contentFile": "content/mysteries/companions_true_nature.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_companion",
+      "elturel",
+      "thavius_kreeg",
+      "zariel"
+    ],
+    "tags": [
+      "lore",
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "vanthampur_conspiracy",
+    "name": "The Vanthampur Conspiracy",
+    "type": "mystery",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/mysteries/vanthampur_conspiracy.html",
+    "visibility": "dm-only",
+    "related": [
+      "duke_thalamra_vanthampur",
+      "dead_three_cultists",
+      "zariel",
+      "shield_of_the_hidden_lord",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "chapter-1",
+      "intrigue"
+    ]
+  },
+  {
+    "id": "where_is_ravengard",
+    "name": "Where Is Duke Ravengard?",
+    "type": "mystery",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/mysteries/where_is_ravengard.html",
+    "visibility": "dm-only",
+    "related": [
+      "duke_ulder_ravengard",
+      "elturel",
+      "avernus"
+    ],
+    "tags": [
+      "chapter-2",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "gargauths_agenda",
+    "name": "What Does Gargauth Want?",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/gargauths_agenda.html",
+    "visibility": "dm-only",
+    "related": [
+      "gargauth",
+      "shield_of_the_hidden_lord",
+      "zariel"
+    ],
+    "tags": [
+      "side-quest",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "olanthius_choice",
+    "name": "Will Olanthius Betray Zariel?",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/olanthius_choice.html",
+    "visibility": "dm-only",
+    "related": [
+      "olanthius",
+      "zariel",
+      "hellriders",
+      "harumanns_hill"
+    ],
+    "tags": [
+      "side-quest",
+      "chapter-3"
+    ]
+  }
+]

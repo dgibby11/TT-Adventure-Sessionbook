@@ -658,6 +658,36 @@ details[open] > .menu-cat-title::before { content: "▾"; }
 }
 .ext-link::after { content: " ↗"; font-size: 0.85em; }
 
+/* Session completion button */
+.modal-session-complete {
+  margin-top: 1.4rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--paper-edge);
+}
+.session-complete-btn {
+  width: 100%;
+  padding: 0.45rem 1rem;
+  font-family: var(--display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(201,162,39,0.08);
+  border: 1px solid var(--gold-soft);
+  color: var(--gold);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.session-complete-btn:hover:not(:disabled) {
+  background: rgba(201,162,39,0.18);
+}
+.session-complete-btn-done {
+  background: rgba(80,140,80,0.08);
+  border-color: #3a6a3a;
+  color: #5a9a5a;
+  cursor: default;
+  letter-spacing: 0.06em;
+}
+
 /* generated Related / References footers */
 .modal-related,
 .modal-references {
@@ -1152,6 +1182,210 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   font-weight: 600;
 }
 
+/* ── Throw stage ── */
+#dice-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 116px;
+  border-bottom: 1px solid var(--line-soft);
+  background:
+    radial-gradient(ellipse 60% 55% at 50% 50%, rgba(201,162,39,0.05), transparent 70%),
+    rgba(10,8,5,0.4);
+}
+
+/* Large die SVG — same viewBox as selector, just bigger via CSS */
+.die-svg-stage {
+  display: block;
+  width: 88px;
+  height: 88px;
+  overflow: visible;
+}
+.die-svg-stage polygon,
+.die-svg-stage rect,
+.die-svg-stage circle {
+  stroke: var(--gold-soft);
+  fill: rgba(201,162,39,0.07);
+  stroke-width: 1.6;
+}
+.die-svg-stage text {
+  fill: var(--gold);
+  font-family: var(--display);
+  text-anchor: middle;
+}
+
+/* The wrapper div that holds the die or total — this is what animates */
+.dice-throw-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+}
+
+/* Rolling: shake + tumble */
+.dice-throw-wrap.dice-throwing {
+  animation: diceThrow 0.68s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Single-die landing: drop-shadow glow pulse */
+.dice-throw-wrap.dice-landed .die-svg-stage {
+  animation: diceLandGlow 0.55s ease-out forwards;
+}
+
+/* Multi-die landing: total number bounces in */
+.dice-throw-wrap.dice-landed-multi .dice-stage-total {
+  animation: diceNumReveal 0.38s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Large total for multi-die rolls */
+.dice-stage-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+.dice-stage-total-num {
+  font-family: var(--display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 18px rgba(201,162,39,0.6);
+}
+.dice-stage-total-label {
+  font-family: var(--display);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* d20 multi-roll (advantage/disadvantage): individual dice in stage */
+.dice-stage-multi {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dice-stage-multi .die-svg-stage {
+  width: 58px;
+  height: 58px;
+}
+.dice-stage-multi-label {
+  font-family: var(--display);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* History: new entries stamp in */
+.dice-result-row.new-entry {
+  animation: diceStampIn 0.22s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+
+/* ── Keyframes ── */
+@keyframes diceThrow {
+  0%   { transform: translate(0, -18px) rotate(0deg)   scale(0.75); opacity: 0; }
+  12%  { transform: translate(-14px, 2px) rotate(-32deg) scale(1.14); opacity: 1; }
+  26%  { transform: translate(11px, -9px) rotate(24deg)  scale(1.11); }
+  40%  { transform: translate(-8px, 5px)  rotate(-16deg) scale(1.05); }
+  55%  { transform: translate(5px, -3px)  rotate(9deg)   scale(1.02); }
+  68%  { transform: translate(-3px, 2px)  rotate(-4deg)  scale(1.005);}
+  82%  { transform: translate(1px, -1px)  rotate(2deg)   scale(1);    }
+  100% { transform: translate(0, 0)       rotate(0deg)   scale(1);  opacity: 1; }
+}
+
+@keyframes diceLandGlow {
+  0%   { filter: drop-shadow(0 0 0px  rgba(201,162,39,0.1)); }
+  35%  { filter: drop-shadow(0 0 14px rgba(201,162,39,0.95)) drop-shadow(0 0 5px rgba(139,30,30,0.55)); }
+  100% { filter: drop-shadow(0 0 5px  rgba(201,162,39,0.35)); }
+}
+
+@keyframes diceNumReveal {
+  from { transform: scale(1.5); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes diceStampIn {
+  from { transform: scale(1.06); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+/* ---------- Quick NPC panel ---------- */
+#quick-npc-wrap {
+  position: relative;
+}
+#quick-npc-panel {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  width: 300px;
+  background: #1a1510;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.65);
+  z-index: 95;
+  padding: 0.75rem;
+}
+#quick-npc-panel[hidden] { display: none; }
+.qnpc-name-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.qnpc-name {
+  font-family: var(--display);
+  font-size: 0.88rem;
+  color: var(--gold);
+  line-height: 1.3;
+}
+.qnpc-close {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.1rem;
+  flex-shrink: 0;
+}
+.qnpc-close:hover { color: var(--ink); }
+.qnpc-headline {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+.qnpc-appearance {
+  font-size: 0.8rem;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+.qnpc-trait {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 0.65rem;
+  line-height: 1.4;
+}
+.qnpc-actions {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+.qnpc-actions button {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+}
+
 /* ---------- Generator panel ---------- */
 
 #generator-overlay {
@@ -1167,7 +1401,7 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
 #generator-overlay[hidden] { display: none; }
 
 #generator-panel {
-  width: 420px;
+  width: 520px;
   max-width: 100%;
   max-height: 90vh;
   background: #16110c;
@@ -1367,6 +1601,110 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   font-style: italic;
   padding: 0.2rem 0;
 }
+
+/* ── NPC seed form ── */
+#gen-npc-form {
+  background: rgba(40,32,22,0.5);
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  padding: 0.55rem 0.65rem 0.6rem;
+}
+.gen-form-hint {
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+.gen-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 0.55rem;
+}
+.gen-form-full {
+  margin-bottom: 0.4rem;
+}
+.gen-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+.gen-form-label {
+  font-family: var(--display);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.gen-form-input,
+.gen-form-select {
+  background: rgba(16,12,8,0.6);
+  border: 1px solid var(--line-soft);
+  border-radius: 2px;
+  color: var(--ink);
+  font-size: 0.8rem;
+  padding: 0.28rem 0.45rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.12s;
+}
+.gen-form-input::placeholder { color: var(--muted); font-style: italic; }
+.gen-form-input:focus,
+.gen-form-select:focus {
+  outline: none;
+  border-color: var(--gold-soft);
+}
+.gen-form-select option { background: #1a1410; }
+
+/* preview meta pill */
+.gen-meta {
+  font-size: 0.65rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* preview article styles (mirrors entity modal) */
+.gen-preview-body article h4 {
+  font-family: var(--display);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0.65rem 0 0.2rem;
+  border-bottom: 1px solid var(--line-soft);
+  padding-bottom: 0.12rem;
+}
+.gen-preview-body article p {
+  margin: 0.22rem 0 0.35rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.gen-preview-body article dl.facts {
+  margin: 0.15rem 0 0.4rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+}
+.gen-preview-body article dl.facts dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--display);
+  padding-top: 0.1rem;
+}
+.gen-preview-body article dl.facts dd { margin: 0; color: var(--sepia); }
+.gen-preview-body .tag {
+  font-size: 0.6rem;
+  color: var(--muted);
+  border: 1px solid var(--line-soft);
+  border-radius: 2px;
+  padding: 0.05rem 0.3rem;
+  vertical-align: middle;
+}
+#gen-roll-area { display: flex; flex-direction: column; gap: 0.5rem; }
 
 
 /* ========== Session Runner ========== */

@@ -1,0 +1,190 @@
+[
+  {
+    "id": "flaming_fist",
+    "name": "The Flaming Fist",
+    "type": "faction",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/factions/flaming_fist.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "zodge",
+      "liara_portyr",
+      "duke_ulder_ravengard"
+    ],
+    "tags": [
+      "mercenary",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "dead_three_cultists",
+    "name": "Cult of the Dead Three",
+    "type": "faction",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/factions/dead_three_cultists.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "shrine_of_the_suffering",
+      "vanthampur_villa",
+      "duke_thalamra_vanthampur",
+      "d7_bhaals_altar",
+      "d24_myrkuls_rest",
+      "d25_banes_rest",
+      "d26_bhaals_rest",
+      "d33_covenant",
+      "v26_temple_of_zariel",
+      "v33_cultists_quarters",
+      "v34_ritual_chamber",
+      "vanthampur_conspiracy",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "cult",
+      "bane",
+      "bhaal",
+      "myrkul",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "vanthampur_household",
+    "name": "House Vanthampur",
+    "type": "faction",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/factions/vanthampur_household.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "duke_thalamra_vanthampur",
+      "amrik_vanthampur",
+      "mortlock_vanthampur",
+      "zariel"
+    ],
+    "tags": [
+      "noble",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "hellriders",
+    "name": "Elturel's Hellriders",
+    "type": "faction",
+    "category": "Elturel",
+    "contentType": "html",
+    "contentFile": "content/factions/hellriders.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "reya_mantlemorn",
+      "yael",
+      "haruman",
+      "olanthius",
+      "zariel",
+      "olanthius_choice"
+    ],
+    "tags": [
+      "paladin",
+      "chapter-2",
+      "fallen"
+    ]
+  },
+  {
+    "id": "order_of_the_companion",
+    "name": "Order of the Companion",
+    "type": "faction",
+    "category": "Elturel",
+    "contentType": "html",
+    "contentFile": "content/factions/order_of_the_companion.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "the_companion"
+    ],
+    "tags": [
+      "paladin",
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "zariel_legion",
+    "name": "Zariel's Legion",
+    "type": "faction",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/factions/zariel_legion.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "avernus",
+      "haruman",
+      "narzugon",
+      "blood_war_primer"
+    ],
+    "tags": [
+      "devil",
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "blood_war_demons",
+    "name": "Blood War Demons",
+    "type": "faction",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/factions/blood_war_demons.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "bitter_breath",
+      "raggadragga",
+      "avernus_lore",
+      "blood_war_primer"
+    ],
+    "tags": [
+      "demon",
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "mahadi_emporium",
+    "name": "Mahadi's Wandering Emporium",
+    "type": "faction",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/factions/mahadi_emporium.html",
+    "visibility": "dm-only",
+    "related": [
+      "wandering_emporium",
+      "mahadi"
+    ],
+    "tags": [
+      "merchant",
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "asmodeus_servants",
+    "name": "Servants of Asmodeus",
+    "type": "faction",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/factions/asmodeus_servants.html",
+    "visibility": "dm-only",
+    "related": [
+      "mahadi",
+      "avernus"
+    ],
+    "tags": [
+      "devil",
+      "avernus"
+    ]
+  }
+]

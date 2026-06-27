@@ -1,0 +1,621 @@
+[
+  {
+    "id": "zariel",
+    "name": "Zariel",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/zariel.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "avernus",
+      "sword_of_zariel",
+      "lulu",
+      "yael",
+      "bleeding_citadel",
+      "thavius_kreeg",
+      "v26_temple_of_zariel",
+      "idyllglen",
+      "duke_thalamra_vanthampur",
+      "haruman",
+      "olanthius",
+      "archduke_bel",
+      "zariel_stat_block",
+      "the_companion",
+      "vanthampur_household",
+      "hellriders",
+      "zariel_legion",
+      "how_to_free_elturel",
+      "who_condemned_elturel",
+      "zariel_redemption_mystery",
+      "lulus_memories",
+      "companions_true_nature",
+      "vanthampur_conspiracy",
+      "gargauths_agenda",
+      "olanthius_choice",
+      "session_04_sword_of_zariel",
+      "session_05_escape_from_avernus",
+      "dia_campaign_overview",
+      "avernus_lore",
+      "asmodeus"
+    ],
+    "tags": [
+      "archdevil",
+      "fallen-angel",
+      "villain",
+      "redemption"
+    ]
+  },
+  {
+    "id": "thavius_kreeg",
+    "name": "Thavius Kreeg",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/thavius_kreeg.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "baldurs_gate",
+      "zariel",
+      "high_hall_elturel",
+      "vanthampur_villa",
+      "dungeon_of_the_dead_three",
+      "puzzle_box",
+      "the_companion",
+      "who_condemned_elturel",
+      "companions_true_nature",
+      "session_01_tale_of_two_cities",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "traitor",
+      "devil",
+      "chapter-1",
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "duke_thalamra_vanthampur",
+    "name": "Duke Thalamra Vanthampur",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/duke_thalamra_vanthampur.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "amrik_vanthampur",
+      "mortlock_vanthampur",
+      "dead_three_cultists",
+      "zariel",
+      "high_hall_bg",
+      "satiir_thione_hhune",
+      "vanthampur_household",
+      "vanthampur_conspiracy",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "noble",
+      "villain",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "amrik_vanthampur",
+    "name": "Amrik Vanthampur",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/amrik_vanthampur.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "duke_thalamra_vanthampur",
+      "mortlock_vanthampur",
+      "counting_house",
+      "vanthampur_household"
+    ],
+    "tags": [
+      "noble",
+      "villain",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "mortlock_vanthampur",
+    "name": "Mortlock Vanthampur",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/mortlock_vanthampur.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "duke_thalamra_vanthampur",
+      "amrik_vanthampur",
+      "dungeon_of_the_dead_three",
+      "vanthampur_household"
+    ],
+    "tags": [
+      "noble",
+      "villain",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "haruman",
+    "name": "Haruman",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/haruman.html",
+    "visibility": "dm-only",
+    "related": [
+      "harumanns_hill",
+      "zariel",
+      "hellriders",
+      "olanthius",
+      "zariel_legion",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "devil",
+      "hellrider",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "bitter_breath",
+    "name": "Bitter Breath",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/bitter_breath.html",
+    "visibility": "dm-only",
+    "related": [
+      "bone_brambles",
+      "avernus",
+      "blood_war_demons"
+    ],
+    "tags": [
+      "demon",
+      "warlord",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "princeps_kovik",
+    "name": "Princeps Kovik",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/princeps_kovik.html",
+    "visibility": "dm-only",
+    "related": [
+      "bloody_crescent",
+      "avernus"
+    ],
+    "tags": [
+      "devil",
+      "warlord",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "raggadragga",
+    "name": "Raggadragga",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/raggadragga.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "blood_war_demons"
+    ],
+    "tags": [
+      "demon",
+      "werewolf",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "gargauth",
+    "name": "Gargauth",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/gargauth.html",
+    "visibility": "dm-only",
+    "related": [
+      "shield_of_the_hidden_lord",
+      "vanthampur_villa",
+      "gargauths_agenda"
+    ],
+    "tags": [
+      "devil",
+      "trapped",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "tiamat",
+    "name": "Tiamat",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/tiamat.html",
+    "visibility": "dm-only",
+    "related": [
+      "tiamats_lair",
+      "avernus",
+      "obsidian_flint_dragon_plate"
+    ],
+    "tags": [
+      "dragon",
+      "deity",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "red_ruth",
+    "name": "Red Ruth",
+    "type": "npc",
+    "category": "Villains",
+    "contentType": "html",
+    "contentFile": "content/npcs/red_ruth.html",
+    "visibility": "dm-only",
+    "related": [
+      "b3_red_ruths_lair",
+      "candlekeep",
+      "fort_knucklebone"
+    ],
+    "tags": [
+      "hag",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "lulu",
+    "name": "Lulu",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/lulu.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "elturel",
+      "idyllglen",
+      "bleeding_citadel",
+      "yael",
+      "avernus",
+      "elfsong_tavern",
+      "reya_mantlemorn",
+      "hollyphant",
+      "sword_of_zariel",
+      "lulus_golden_canary",
+      "zariel_redemption_mystery",
+      "lulus_memories",
+      "bleeding_citadel_location",
+      "session_02_elturel_has_fallen",
+      "session_03_avernus",
+      "session_04_sword_of_zariel"
+    ],
+    "tags": [
+      "hollyphant",
+      "companion",
+      "chapter-2",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "reya_mantlemorn",
+    "name": "Reya Mantlemorn",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/reya_mantlemorn.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "lulu",
+      "hellriders",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "hellrider",
+      "paladin",
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "duke_ulder_ravengard",
+    "name": "Duke Ulder Ravengard",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/duke_ulder_ravengard.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "elturel",
+      "high_hall_elturel",
+      "zodge",
+      "liara_portyr",
+      "flaming_fist",
+      "where_is_ravengard",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "noble",
+      "chapter-1",
+      "chapter-2",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "yael",
+    "name": "Yael",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/yael.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "lulu",
+      "bleeding_citadel",
+      "idyllglen",
+      "hellriders",
+      "sword_of_zariel",
+      "zariel_redemption_mystery",
+      "lulus_memories",
+      "session_04_sword_of_zariel"
+    ],
+    "tags": [
+      "hellrider",
+      "ghost",
+      "chapter-4"
+    ]
+  },
+  {
+    "id": "olanthius",
+    "name": "Olanthius",
+    "type": "npc",
+    "category": "Key NPCs",
+    "contentType": "html",
+    "contentFile": "content/npcs/olanthius.html",
+    "visibility": "dm-only",
+    "related": [
+      "harumanns_hill",
+      "zariel",
+      "hellriders",
+      "haruman",
+      "death_knight",
+      "olanthius_choice",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "death-knight",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "zodge",
+    "name": "Captain Zodge",
+    "type": "npc",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/npcs/zodge.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "basilisk_gate",
+      "flaming_fist",
+      "duke_ulder_ravengard",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "chapter-1",
+      "flaming-fist"
+    ]
+  },
+  {
+    "id": "falaster_fisk",
+    "name": "Falaster Fisk",
+    "type": "npc",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/npcs/falaster_fisk.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "v29_prison",
+      "candlekeep",
+      "sylvira_savikas",
+      "little_calimshan",
+      "puzzle_box"
+    ],
+    "tags": [
+      "chapter-1",
+      "prisoner"
+    ]
+  },
+  {
+    "id": "liara_portyr",
+    "name": "Liara Portyr",
+    "type": "npc",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/npcs/liara_portyr.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "flaming_fist",
+      "duke_ulder_ravengard"
+    ],
+    "tags": [
+      "chapter-1",
+      "flaming-fist"
+    ]
+  },
+  {
+    "id": "satiir_thione_hhune",
+    "name": "Satiir Thione-Hhune",
+    "type": "npc",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/npcs/satiir_thione_hhune.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "duke_thalamra_vanthampur"
+    ],
+    "tags": [
+      "chapter-1",
+      "noble"
+    ]
+  },
+  {
+    "id": "mahadi",
+    "name": "Mahadi",
+    "type": "npc",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/npcs/mahadi.html",
+    "visibility": "dm-only",
+    "related": [
+      "wandering_emporium",
+      "avernus",
+      "asmodeus",
+      "soul_coin",
+      "mahadi_emporium",
+      "asmodeus_servants",
+      "session_03_avernus",
+      "soul_coins_guide"
+    ],
+    "tags": [
+      "rakshasa",
+      "merchant",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "archduke_bel",
+    "name": "Archduke Bel",
+    "type": "npc",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/npcs/archduke_bel.html",
+    "visibility": "dm-only",
+    "related": [
+      "bels_forge",
+      "zariel",
+      "avernus",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "archduke",
+      "devil",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "uldrak",
+    "name": "Uldrak",
+    "type": "npc",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/npcs/uldrak.html",
+    "visibility": "dm-only",
+    "related": [
+      "uldraks_grave",
+      "avernus"
+    ],
+    "tags": [
+      "devil",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "mad_maggie",
+    "name": "Mad Maggie",
+    "type": "npc",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/npcs/mad_maggie.html",
+    "visibility": "dm-only",
+    "related": [
+      "fort_knucklebone",
+      "avernus",
+      "kenku_scavengers",
+      "soul_coin",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "hag",
+      "warlord",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "sylvira_savikas",
+    "name": "Sylvira Savikas",
+    "type": "npc",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/npcs/sylvira_savikas.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep",
+      "traxigor",
+      "puzzle_box",
+      "falaster_fisk"
+    ],
+    "tags": [
+      "tiefling",
+      "wizard",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "traxigor",
+    "name": "Traxigor",
+    "type": "npc",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/npcs/traxigor.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep",
+      "sylvira_savikas"
+    ],
+    "tags": [
+      "wizard",
+      "otter",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "asmodeus",
+    "name": "Asmodeus",
+    "type": "npc",
+    "category": "Archdevils",
+    "contentType": "html",
+    "contentFile": "content/npcs/asmodeus.html",
+    "visibility": "dm-only",
+    "related": [
+      "mahadi",
+      "zariel",
+      "avernus"
+    ],
+    "tags": [
+      "archdevil",
+      "lord-of-nessus",
+      "lore"
+    ]
+  }
+]

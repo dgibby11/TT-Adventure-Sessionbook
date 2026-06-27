@@ -1,0 +1,1998 @@
+[
+  {
+    "id": "baldurs_gate",
+    "name": "Baldur's Gate",
+    "type": "location",
+    "category": "Cities",
+    "contentType": "html",
+    "contentFile": "content/locations/baldurs_gate.html",
+    "visibility": "dm-only",
+    "related": [
+      "outer_city",
+      "lower_city",
+      "upper_city",
+      "elfsong_tavern",
+      "dungeon_of_the_dead_three",
+      "vanthampur_villa",
+      "basilisk_gate",
+      "wyrms_crossing",
+      "high_hall_bg",
+      "shrine_of_the_suffering",
+      "graveyard_of_bg",
+      "candlekeep",
+      "elturel",
+      "thavius_kreeg",
+      "duke_ulder_ravengard",
+      "zodge",
+      "liara_portyr",
+      "satiir_thione_hhune",
+      "flaming_fist",
+      "session_01_tale_of_two_cities",
+      "dia_campaign_overview"
+    ],
+    "tags": [
+      "city",
+      "sword-coast"
+    ]
+  },
+  {
+    "id": "outer_city",
+    "name": "Outer City",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/outer_city.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "little_calimshan",
+      "wyrms_crossing"
+    ]
+  },
+  {
+    "id": "lower_city",
+    "name": "Lower City",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/lower_city.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "elfsong_tavern",
+      "counting_house"
+    ]
+  },
+  {
+    "id": "upper_city",
+    "name": "Upper City",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/upper_city.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "high_hall_bg"
+    ]
+  },
+  {
+    "id": "basilisk_gate",
+    "name": "Basilisk Gate",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/basilisk_gate.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "zodge"
+    ],
+    "tags": [
+      "gate",
+      "flaming-fist"
+    ]
+  },
+  {
+    "id": "wyrms_crossing",
+    "name": "Wyrm's Crossing",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/wyrms_crossing.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "outer_city"
+    ]
+  },
+  {
+    "id": "little_calimshan",
+    "name": "Little Calimshan",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/little_calimshan.html",
+    "visibility": "dm-only",
+    "related": [
+      "outer_city",
+      "falaster_fisk"
+    ]
+  },
+  {
+    "id": "high_hall_bg",
+    "name": "High Hall (Baldur's Gate)",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/high_hall_bg.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "duke_thalamra_vanthampur",
+      "upper_city"
+    ],
+    "tags": [
+      "government"
+    ]
+  },
+  {
+    "id": "counting_house",
+    "name": "Counting House",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/counting_house.html",
+    "visibility": "dm-only",
+    "related": [
+      "lower_city",
+      "amrik_vanthampur"
+    ]
+  },
+  {
+    "id": "elfsong_tavern",
+    "name": "Elfsong Tavern",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/elfsong_tavern.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "lower_city",
+      "lulu",
+      "e2_lounge",
+      "e3_private_dining",
+      "e4_storage_alcove",
+      "e5_store_room",
+      "e6_kitchen",
+      "e8_private_dining_2",
+      "e9_guest_suite",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "tavern",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "e2_lounge",
+    "name": "Lounge (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e2_lounge.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e3_private_dining",
+    "name": "Private Dining Room (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e3_private_dining.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e4_storage_alcove",
+    "name": "Storage Alcove (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e4_storage_alcove.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e5_store_room",
+    "name": "Store Room (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e5_store_room.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e6_kitchen",
+    "name": "Kitchen (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e6_kitchen.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e8_private_dining_2",
+    "name": "Second Private Dining Room (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e8_private_dining_2.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "e9_guest_suite",
+    "name": "Fancy Guest Suite (Elfsong)",
+    "type": "location",
+    "category": "Elfsong Tavern",
+    "contentType": "html",
+    "contentFile": "content/locations/e9_guest_suite.html",
+    "visibility": "dm-only",
+    "related": [
+      "elfsong_tavern"
+    ]
+  },
+  {
+    "id": "dungeon_of_the_dead_three",
+    "name": "Dungeon of the Dead Three",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/dungeon_of_the_dead_three.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "dead_three_cultists",
+      "thavius_kreeg",
+      "d2_baths",
+      "d6_bloated_corpse",
+      "d7_bhaals_altar",
+      "d9_dead_three_doors",
+      "d14_hungry_rat",
+      "d19_collapsed_crypt",
+      "d20_plundered_crypt",
+      "d21_zombie_crypt",
+      "d22_torture_chamber",
+      "d23_secret_door",
+      "d24_myrkuls_rest",
+      "d25_banes_rest",
+      "d26_bhaals_rest",
+      "d28_old_cellar",
+      "d31_torches",
+      "d32_stolen_goods",
+      "d33_covenant",
+      "mortlock_vanthampur",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "dungeon",
+      "chapter-1",
+      "dead-three"
+    ]
+  },
+  {
+    "id": "d2_baths",
+    "name": "Baths (Dead Three)",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d2_baths.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d6_bloated_corpse",
+    "name": "Bloated Corpse Room",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d6_bloated_corpse.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d7_bhaals_altar",
+    "name": "Bhaal's Altar",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d7_bhaals_altar.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "d9_dead_three_doors",
+    "name": "The Dead Three Doors",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d9_dead_three_doors.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d14_hungry_rat",
+    "name": "Hungry Rat",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d14_hungry_rat.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d19_collapsed_crypt",
+    "name": "Partially Collapsed Crypt",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d19_collapsed_crypt.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d20_plundered_crypt",
+    "name": "Half-Plundered Crypt",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d20_plundered_crypt.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d21_zombie_crypt",
+    "name": "Zombie Crypt",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d21_zombie_crypt.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d22_torture_chamber",
+    "name": "Torture Chamber",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d22_torture_chamber.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d23_secret_door",
+    "name": "Secret Door and Sentry",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d23_secret_door.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d24_myrkuls_rest",
+    "name": "Myrkul's Rest",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d24_myrkuls_rest.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "d25_banes_rest",
+    "name": "Bane's Rest",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d25_banes_rest.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "d26_bhaals_rest",
+    "name": "Bhaal's Rest",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d26_bhaals_rest.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "d28_old_cellar",
+    "name": "Old Cellar",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d28_old_cellar.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d31_torches",
+    "name": "Torches Room",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d31_torches.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d32_stolen_goods",
+    "name": "Stolen Goods",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d32_stolen_goods.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three"
+    ]
+  },
+  {
+    "id": "d33_covenant",
+    "name": "Covenant of the Dead Three",
+    "type": "location",
+    "category": "Dead Three Dungeon",
+    "contentType": "html",
+    "contentFile": "content/locations/d33_covenant.html",
+    "visibility": "dm-only",
+    "related": [
+      "dungeon_of_the_dead_three",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "vanthampur_villa",
+    "name": "Vanthampur Villa",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/vanthampur_villa.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "duke_thalamra_vanthampur",
+      "amrik_vanthampur",
+      "mortlock_vanthampur",
+      "v2_stable_house",
+      "v3_foyer",
+      "v4_servants_quarters",
+      "v5_kitchen",
+      "v6_pantry",
+      "v8_parlor",
+      "v9_dining_room",
+      "v12_balcony",
+      "v20_cellar",
+      "v21_wine_cellar",
+      "v22_sewer_tunnels",
+      "v23_cold_storage",
+      "v24_lower_dining",
+      "v26_temple_of_zariel",
+      "v27_escape_tunnel",
+      "v28_secret_shrine",
+      "v29_prison",
+      "v30_iron_bars",
+      "v31_vestry",
+      "v33_cultists_quarters",
+      "v34_ritual_chamber",
+      "v36_vanthampur_vault",
+      "thavius_kreeg",
+      "gargauth",
+      "falaster_fisk",
+      "shield_of_the_hidden_lord",
+      "dead_three_cultists",
+      "vanthampur_household",
+      "who_condemned_elturel",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "manor",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "v2_stable_house",
+    "name": "Stable House (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v2_stable_house.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v3_foyer",
+    "name": "Foyer (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v3_foyer.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v4_servants_quarters",
+    "name": "Servants' Quarters (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v4_servants_quarters.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v5_kitchen",
+    "name": "Kitchen (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v5_kitchen.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v6_pantry",
+    "name": "Pantry (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v6_pantry.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v8_parlor",
+    "name": "Parlor (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v8_parlor.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v9_dining_room",
+    "name": "Dining Room (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v9_dining_room.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v12_balcony",
+    "name": "Balcony (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v12_balcony.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v20_cellar",
+    "name": "Cellar (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v20_cellar.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v21_wine_cellar",
+    "name": "Wine Cellar (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v21_wine_cellar.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v22_sewer_tunnels",
+    "name": "Sewer Tunnels (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v22_sewer_tunnels.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v23_cold_storage",
+    "name": "Cold Storage (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v23_cold_storage.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v24_lower_dining",
+    "name": "Lower Dining Room (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v24_lower_dining.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v26_temple_of_zariel",
+    "name": "Temple of Zariel (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v26_temple_of_zariel.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "zariel",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "v27_escape_tunnel",
+    "name": "Escape Tunnel (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v27_escape_tunnel.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v28_secret_shrine",
+    "name": "Secret Shrine (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v28_secret_shrine.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v29_prison",
+    "name": "Prison (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v29_prison.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "falaster_fisk"
+    ]
+  },
+  {
+    "id": "v30_iron_bars",
+    "name": "Barrier of Iron Bars (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v30_iron_bars.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v31_vestry",
+    "name": "Vestry (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v31_vestry.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa"
+    ]
+  },
+  {
+    "id": "v33_cultists_quarters",
+    "name": "Cultists' Quarters (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v33_cultists_quarters.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "v34_ritual_chamber",
+    "name": "Ritual Chamber (Villa)",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v34_ritual_chamber.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "dead_three_cultists"
+    ]
+  },
+  {
+    "id": "v36_vanthampur_vault",
+    "name": "Vanthampur Vault",
+    "type": "location",
+    "category": "Vanthampur Villa",
+    "contentType": "html",
+    "contentFile": "content/locations/v36_vanthampur_vault.html",
+    "visibility": "dm-only",
+    "related": [
+      "vanthampur_villa",
+      "shield_of_the_hidden_lord"
+    ]
+  },
+  {
+    "id": "shrine_of_the_suffering",
+    "name": "Shrine of the Suffering",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/shrine_of_the_suffering.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "dead_three_cultists",
+      "h3_central_altar",
+      "h4_private_chapels",
+      "h5_stairs",
+      "h6_desecrated_altar",
+      "h7_pipe_organ",
+      "h8_defenses",
+      "h9_balcony",
+      "h17_escape_tunnel"
+    ],
+    "tags": [
+      "temple",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "h3_central_altar",
+    "name": "Central Altar (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h3_central_altar.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h4_private_chapels",
+    "name": "Private Chapels (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h4_private_chapels.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h5_stairs",
+    "name": "Stairs to Residences (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h5_stairs.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h6_desecrated_altar",
+    "name": "Desecrated Altar of Torm",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h6_desecrated_altar.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h7_pipe_organ",
+    "name": "Pipe Organ Room",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h7_pipe_organ.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h8_defenses",
+    "name": "Defenses (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h8_defenses.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h9_balcony",
+    "name": "Balcony (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h9_balcony.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "h17_escape_tunnel",
+    "name": "Escape Tunnel (Shrine)",
+    "type": "location",
+    "category": "Shrine of the Suffering",
+    "contentType": "html",
+    "contentFile": "content/locations/h17_escape_tunnel.html",
+    "visibility": "dm-only",
+    "related": [
+      "shrine_of_the_suffering"
+    ]
+  },
+  {
+    "id": "graveyard_of_bg",
+    "name": "Graveyard (Baldur's Gate)",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/graveyard_of_bg.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "g2_chapel_of_light",
+      "g3_chapel_of_mourning",
+      "g6_undead_pit",
+      "g7_workshop",
+      "g9_main_ossuary"
+    ]
+  },
+  {
+    "id": "g2_chapel_of_light",
+    "name": "Chapel of Light (Graveyard)",
+    "type": "location",
+    "category": "Baldur's Gate Graveyard",
+    "contentType": "html",
+    "contentFile": "content/locations/g2_chapel_of_light.html",
+    "visibility": "dm-only",
+    "related": [
+      "graveyard_of_bg"
+    ]
+  },
+  {
+    "id": "g3_chapel_of_mourning",
+    "name": "Chapel of Mourning (Graveyard)",
+    "type": "location",
+    "category": "Baldur's Gate Graveyard",
+    "contentType": "html",
+    "contentFile": "content/locations/g3_chapel_of_mourning.html",
+    "visibility": "dm-only",
+    "related": [
+      "graveyard_of_bg"
+    ]
+  },
+  {
+    "id": "g6_undead_pit",
+    "name": "Undead Pit (Graveyard)",
+    "type": "location",
+    "category": "Baldur's Gate Graveyard",
+    "contentType": "html",
+    "contentFile": "content/locations/g6_undead_pit.html",
+    "visibility": "dm-only",
+    "related": [
+      "graveyard_of_bg"
+    ]
+  },
+  {
+    "id": "g7_workshop",
+    "name": "Workshop (Graveyard)",
+    "type": "location",
+    "category": "Baldur's Gate Graveyard",
+    "contentType": "html",
+    "contentFile": "content/locations/g7_workshop.html",
+    "visibility": "dm-only",
+    "related": [
+      "graveyard_of_bg"
+    ]
+  },
+  {
+    "id": "g9_main_ossuary",
+    "name": "Main Ossuary",
+    "type": "location",
+    "category": "Baldur's Gate Graveyard",
+    "contentType": "html",
+    "contentFile": "content/locations/g9_main_ossuary.html",
+    "visibility": "dm-only",
+    "related": [
+      "graveyard_of_bg"
+    ]
+  },
+  {
+    "id": "candlekeep",
+    "name": "Candlekeep",
+    "type": "location",
+    "category": "Baldur's Gate",
+    "contentType": "html",
+    "contentFile": "content/locations/candlekeep.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "sylvira_savikas",
+      "traxigor",
+      "puzzle_box",
+      "b2_dead_ends",
+      "b3_red_ruths_lair",
+      "c3_knights_caskets",
+      "c4_warlocks_tomb",
+      "c5_memorial_steles",
+      "c6_ritual_rooms",
+      "red_ruth",
+      "falaster_fisk",
+      "session_01_tale_of_two_cities"
+    ],
+    "tags": [
+      "library",
+      "chapter-1"
+    ]
+  },
+  {
+    "id": "b2_dead_ends",
+    "name": "Dead Ends (Candlekeep Catacombs)",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/b2_dead_ends.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep"
+    ]
+  },
+  {
+    "id": "b3_red_ruths_lair",
+    "name": "Red Ruth's Lair",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/b3_red_ruths_lair.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep",
+      "red_ruth"
+    ]
+  },
+  {
+    "id": "c3_knights_caskets",
+    "name": "Knights' Caskets (Candlekeep)",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/c3_knights_caskets.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep"
+    ]
+  },
+  {
+    "id": "c4_warlocks_tomb",
+    "name": "Warlock's Tomb (Candlekeep)",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/c4_warlocks_tomb.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep"
+    ]
+  },
+  {
+    "id": "c5_memorial_steles",
+    "name": "Memorial Steles (Candlekeep)",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/c5_memorial_steles.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep"
+    ]
+  },
+  {
+    "id": "c6_ritual_rooms",
+    "name": "Ritual Rooms (Candlekeep)",
+    "type": "location",
+    "category": "Candlekeep",
+    "contentType": "html",
+    "contentFile": "content/locations/c6_ritual_rooms.html",
+    "visibility": "dm-only",
+    "related": [
+      "candlekeep"
+    ]
+  },
+  {
+    "id": "elturel",
+    "name": "Elturel",
+    "type": "location",
+    "category": "Cities",
+    "contentType": "html",
+    "contentFile": "content/locations/elturel.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "duke_ulder_ravengard",
+      "reya_mantlemorn",
+      "lulu",
+      "high_hall_elturel",
+      "docking_pontoon",
+      "chain_of_avernus",
+      "avernus",
+      "river_styx",
+      "zariel",
+      "thavius_kreeg",
+      "the_companion",
+      "hellriders",
+      "order_of_the_companion",
+      "how_to_free_elturel",
+      "who_condemned_elturel",
+      "companions_true_nature",
+      "where_is_ravengard",
+      "session_02_elturel_has_fallen",
+      "session_05_escape_from_avernus",
+      "dia_campaign_overview"
+    ],
+    "tags": [
+      "city",
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "high_hall_elturel",
+    "name": "High Hall (Elturel)",
+    "type": "location",
+    "category": "Elturel",
+    "contentType": "html",
+    "contentFile": "content/locations/high_hall_elturel.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "duke_ulder_ravengard",
+      "thavius_kreeg",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "docking_pontoon",
+    "name": "Docking Pontoon (River Styx)",
+    "type": "location",
+    "category": "Elturel",
+    "contentType": "html",
+    "contentFile": "content/locations/docking_pontoon.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "river_styx",
+      "l2_forecastle",
+      "l3_aftcastle",
+      "l4_laraelras_cabin",
+      "l5_taproom",
+      "l6_tavern_lounge",
+      "l7_guest_cabin",
+      "l8_sleeping_quarters",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "chapter-2"
+    ]
+  },
+  {
+    "id": "l2_forecastle",
+    "name": "Forecastle (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l2_forecastle.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l3_aftcastle",
+    "name": "Aftcastle (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l3_aftcastle.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l4_laraelras_cabin",
+    "name": "Laraelra's Cabin",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l4_laraelras_cabin.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l5_taproom",
+    "name": "Taproom and Gambling Hall (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l5_taproom.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l6_tavern_lounge",
+    "name": "Tavern Lounge (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l6_tavern_lounge.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l7_guest_cabin",
+    "name": "Guest Cabin (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l7_guest_cabin.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "l8_sleeping_quarters",
+    "name": "Sleeping Quarters (Pontoon)",
+    "type": "location",
+    "category": "Docking Pontoon",
+    "contentType": "html",
+    "contentFile": "content/locations/l8_sleeping_quarters.html",
+    "visibility": "dm-only",
+    "related": [
+      "docking_pontoon"
+    ]
+  },
+  {
+    "id": "chain_of_avernus",
+    "name": "Elturel's Chain Anchors",
+    "type": "location",
+    "category": "Elturel",
+    "contentType": "html",
+    "contentFile": "content/locations/chain_of_avernus.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "river_styx",
+      "session_02_elturel_has_fallen"
+    ],
+    "tags": [
+      "chapter-2",
+      "chain"
+    ]
+  },
+  {
+    "id": "avernus",
+    "name": "Avernus",
+    "type": "location",
+    "category": "The Nine Hells",
+    "contentType": "html",
+    "contentFile": "content/locations/avernus.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "river_styx",
+      "fort_knucklebone",
+      "wandering_emporium",
+      "harumanns_hill",
+      "bels_forge",
+      "uldraks_grave",
+      "bone_brambles",
+      "bleeding_citadel",
+      "idyllglen",
+      "crokektooth",
+      "styx_watchtower",
+      "hellwasp_nest",
+      "tiamat",
+      "tiamats_lair",
+      "abriymoch",
+      "bloody_crescent",
+      "tower_of_urm",
+      "sundered_chains",
+      "janders_trickle_inn",
+      "troglodyte_caves",
+      "s2_angelic_window",
+      "s3_drowned_hag",
+      "s4_bloody_downpour",
+      "s5_food_fight",
+      "s7_trantoloxs_larder",
+      "s8_hags_lair",
+      "s9_digging_demons",
+      "zariel",
+      "bitter_breath",
+      "princeps_kovik",
+      "raggadragga",
+      "lulu",
+      "mahadi",
+      "archduke_bel",
+      "uldrak",
+      "mad_maggie",
+      "infernal_war_machine",
+      "soul_coin",
+      "infernal_tack",
+      "battle_standard_of_infernal_power",
+      "gauntlets_of_flaming_fury",
+      "helm_of_devil_command",
+      "zariel_legion",
+      "blood_war_demons",
+      "asmodeus_servants",
+      "bleeding_citadel_location",
+      "where_is_ravengard",
+      "session_03_avernus",
+      "session_05_escape_from_avernus",
+      "dia_campaign_overview",
+      "avernus_lore",
+      "blood_war_primer",
+      "soul_coins_guide",
+      "infernal_war_machines_guide",
+      "asmodeus"
+    ],
+    "tags": [
+      "hell",
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "fort_knucklebone",
+    "name": "Fort Knucklebone",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/fort_knucklebone.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "mad_maggie",
+      "red_ruth",
+      "kenku_scavengers",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "wandering_emporium",
+    "name": "Mahadi's Wandering Emporium",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/wandering_emporium.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "mahadi",
+      "mahadi_emporium",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "merchant"
+    ]
+  },
+  {
+    "id": "harumanns_hill",
+    "name": "Haruman's Hill",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/harumanns_hill.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "haruman",
+      "olanthius",
+      "ghost_hellrider",
+      "olanthius_choice",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "bels_forge",
+    "name": "Bel's Forge",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/bels_forge.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "archduke_bel",
+      "f2_fire_giant_blacksmiths",
+      "f3_weapons_rack",
+      "f4_pool_of_magma",
+      "infernal_war_machine",
+      "session_03_avernus",
+      "infernal_war_machines_guide"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "f2_fire_giant_blacksmiths",
+    "name": "Fire Giant Blacksmiths (Forge)",
+    "type": "location",
+    "category": "Bel's Forge",
+    "contentType": "html",
+    "contentFile": "content/locations/f2_fire_giant_blacksmiths.html",
+    "visibility": "dm-only",
+    "related": [
+      "bels_forge"
+    ]
+  },
+  {
+    "id": "f3_weapons_rack",
+    "name": "Weapons Rack (Forge)",
+    "type": "location",
+    "category": "Bel's Forge",
+    "contentType": "html",
+    "contentFile": "content/locations/f3_weapons_rack.html",
+    "visibility": "dm-only",
+    "related": [
+      "bels_forge"
+    ]
+  },
+  {
+    "id": "f4_pool_of_magma",
+    "name": "Pool of Magma (Forge)",
+    "type": "location",
+    "category": "Bel's Forge",
+    "contentType": "html",
+    "contentFile": "content/locations/f4_pool_of_magma.html",
+    "visibility": "dm-only",
+    "related": [
+      "bels_forge"
+    ]
+  },
+  {
+    "id": "uldraks_grave",
+    "name": "Uldrak's Grave",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/uldraks_grave.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "uldrak",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "bone_brambles",
+    "name": "Bone Brambles",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/bone_brambles.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "bitter_breath",
+      "session_03_avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "river_styx",
+    "name": "River Styx",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/river_styx.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "elturel",
+      "chain_of_avernus",
+      "docking_pontoon",
+      "crokektooth",
+      "styx_watchtower",
+      "sundered_chains",
+      "crokektooth_creature",
+      "session_02_elturel_has_fallen",
+      "session_03_avernus",
+      "avernus_lore"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "river"
+    ]
+  },
+  {
+    "id": "crokektooth",
+    "name": "Crokek'toeck (Demon on the Styx)",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/crokektooth.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "river_styx",
+      "crokektooth_creature"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "demon"
+    ]
+  },
+  {
+    "id": "styx_watchtower",
+    "name": "Styx Watchtower",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/styx_watchtower.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "river_styx",
+      "w2_alarm_console",
+      "w4_records_room",
+      "w6_black_bell",
+      "w7_stirge_nest",
+      "w8_signal_desks"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "w2_alarm_console",
+    "name": "Alarm Console (Watchtower)",
+    "type": "location",
+    "category": "Styx Watchtower",
+    "contentType": "html",
+    "contentFile": "content/locations/w2_alarm_console.html",
+    "visibility": "dm-only",
+    "related": [
+      "styx_watchtower"
+    ]
+  },
+  {
+    "id": "w4_records_room",
+    "name": "Records Room (Watchtower)",
+    "type": "location",
+    "category": "Styx Watchtower",
+    "contentType": "html",
+    "contentFile": "content/locations/w4_records_room.html",
+    "visibility": "dm-only",
+    "related": [
+      "styx_watchtower"
+    ]
+  },
+  {
+    "id": "w6_black_bell",
+    "name": "Black Bell (Watchtower)",
+    "type": "location",
+    "category": "Styx Watchtower",
+    "contentType": "html",
+    "contentFile": "content/locations/w6_black_bell.html",
+    "visibility": "dm-only",
+    "related": [
+      "styx_watchtower"
+    ]
+  },
+  {
+    "id": "w7_stirge_nest",
+    "name": "Stirge Nest (Watchtower)",
+    "type": "location",
+    "category": "Styx Watchtower",
+    "contentType": "html",
+    "contentFile": "content/locations/w7_stirge_nest.html",
+    "visibility": "dm-only",
+    "related": [
+      "styx_watchtower"
+    ]
+  },
+  {
+    "id": "w8_signal_desks",
+    "name": "Signal Desks (Watchtower)",
+    "type": "location",
+    "category": "Styx Watchtower",
+    "contentType": "html",
+    "contentFile": "content/locations/w8_signal_desks.html",
+    "visibility": "dm-only",
+    "related": [
+      "styx_watchtower"
+    ]
+  },
+  {
+    "id": "hellwasp_nest",
+    "name": "Hellwasp Nest",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/hellwasp_nest.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "hellwasp",
+      "n2_drone_cells",
+      "n3_hellwasp_larvae",
+      "n4_larder"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "n2_drone_cells",
+    "name": "Drone Cells (Hellwasp Nest)",
+    "type": "location",
+    "category": "Hellwasp Nest",
+    "contentType": "html",
+    "contentFile": "content/locations/n2_drone_cells.html",
+    "visibility": "dm-only",
+    "related": [
+      "hellwasp_nest"
+    ]
+  },
+  {
+    "id": "n3_hellwasp_larvae",
+    "name": "Hellwasp Larvae Chamber",
+    "type": "location",
+    "category": "Hellwasp Nest",
+    "contentType": "html",
+    "contentFile": "content/locations/n3_hellwasp_larvae.html",
+    "visibility": "dm-only",
+    "related": [
+      "hellwasp_nest"
+    ]
+  },
+  {
+    "id": "n4_larder",
+    "name": "Larder (Hellwasp Nest)",
+    "type": "location",
+    "category": "Hellwasp Nest",
+    "contentType": "html",
+    "contentFile": "content/locations/n4_larder.html",
+    "visibility": "dm-only",
+    "related": [
+      "hellwasp_nest"
+    ]
+  },
+  {
+    "id": "tiamats_lair",
+    "name": "Tiamat's Lair",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/tiamats_lair.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "tiamat",
+      "obsidian_flint_dragon_plate"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "dragon"
+    ]
+  },
+  {
+    "id": "abriymoch",
+    "name": "Abriymoch (City of Avernus)",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/abriymoch.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "city"
+    ]
+  },
+  {
+    "id": "bloody_crescent",
+    "name": "Bloody Crescent",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/bloody_crescent.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "princeps_kovik"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "tower_of_urm",
+    "name": "Tower of Urm",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_of_urm.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "t2_second_floor",
+      "t3_roof"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "t2_second_floor",
+    "name": "Second Floor (Tower of Urm)",
+    "type": "location",
+    "category": "Tower of Urm",
+    "contentType": "html",
+    "contentFile": "content/locations/t2_second_floor.html",
+    "visibility": "dm-only",
+    "related": [
+      "tower_of_urm"
+    ]
+  },
+  {
+    "id": "t3_roof",
+    "name": "Roof (Tower of Urm)",
+    "type": "location",
+    "category": "Tower of Urm",
+    "contentType": "html",
+    "contentFile": "content/locations/t3_roof.html",
+    "visibility": "dm-only",
+    "related": [
+      "tower_of_urm"
+    ]
+  },
+  {
+    "id": "sundered_chains",
+    "name": "Sundered Chains (Styx Encounter)",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/sundered_chains.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "river_styx"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "janders_trickle_inn",
+    "name": "Jandar's Trickle Inn (destroyed)",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/janders_trickle_inn.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3",
+      "ruins"
+    ]
+  },
+  {
+    "id": "troglodyte_caves",
+    "name": "Troglodyte Caves",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/troglodyte_caves.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "s2_angelic_window",
+    "name": "Angelic Window",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s2_angelic_window.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s3_drowned_hag",
+    "name": "Drowned Hag",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s3_drowned_hag.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s4_bloody_downpour",
+    "name": "Bloody Downpour Room",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s4_bloody_downpour.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s5_food_fight",
+    "name": "Food Fight Room",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s5_food_fight.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s7_trantoloxs_larder",
+    "name": "Trantolox's Larder",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s7_trantoloxs_larder.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s8_hags_lair",
+    "name": "Hag's Lair",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s8_hags_lair.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "s9_digging_demons",
+    "name": "Digging Demons",
+    "type": "location",
+    "category": "Avernus Site",
+    "contentType": "html",
+    "contentFile": "content/locations/s9_digging_demons.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus"
+    ]
+  },
+  {
+    "id": "idyllglen",
+    "name": "Idyllglen",
+    "type": "location",
+    "category": "Memories of Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/idyllglen.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel",
+      "lulu",
+      "yael",
+      "avernus",
+      "lulus_golden_canary",
+      "lulus_memories",
+      "session_04_sword_of_zariel"
+    ],
+    "tags": [
+      "chapter-4",
+      "memory",
+      "flashback"
+    ]
+  },
+  {
+    "id": "bleeding_citadel",
+    "name": "The Bleeding Citadel",
+    "type": "location",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/locations/bleeding_citadel.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "zariel",
+      "sword_of_zariel",
+      "lulu",
+      "yael",
+      "lulus_golden_canary",
+      "how_to_free_elturel",
+      "zariel_redemption_mystery",
+      "lulus_memories",
+      "bleeding_citadel_location",
+      "session_04_sword_of_zariel"
+    ],
+    "tags": [
+      "avernus",
+      "chapter-4",
+      "dungeon"
+    ]
+  }
+]

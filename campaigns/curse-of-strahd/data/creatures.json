@@ -1,0 +1,316 @@
+[
+  {
+    "id": "strahd_von_zarovich_stat",
+    "name": "Strahd von Zarovich (Stat Block)",
+    "type": "creature",
+    "category": "Vampires",
+    "contentType": "html",
+    "contentFile": "content/creatures/strahd_von_zarovich_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "vampire",
+      "legendary",
+      "boss",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "strahd_zombie",
+    "name": "Strahd Zombie",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/strahd_zombie.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "undead",
+      "zombie",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "vampire_spawn",
+    "name": "Vampire Spawn",
+    "type": "creature",
+    "category": "Vampires",
+    "contentType": "html",
+    "contentFile": "content/creatures/vampire_spawn.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "strahd_von_zarovich"
+    ],
+    "tags": [
+      "undead",
+      "vampire",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "phantom_warrior",
+    "name": "Phantom Warrior",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/phantom_warrior.html",
+    "visibility": "dm-only",
+    "related": [
+      "argynvostholt",
+      "vladimir_horngaard",
+      "session_07_argynvostholt"
+    ],
+    "tags": [
+      "undead",
+      "revenant",
+      "knight",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "wereraven",
+    "name": "Wereraven",
+    "type": "creature",
+    "category": "Lycanthropes",
+    "contentType": "html",
+    "contentFile": "content/creatures/wereraven.html",
+    "visibility": "dm-only",
+    "related": [
+      "keepers_of_the_feather",
+      "wizard_of_wines"
+    ],
+    "tags": [
+      "lycanthrope",
+      "raven",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "werewolf",
+    "name": "Werewolf",
+    "type": "creature",
+    "category": "Lycanthropes",
+    "contentType": "html",
+    "contentFile": "content/creatures/werewolf.html",
+    "visibility": "dm-only",
+    "related": [
+      "werewolf_den",
+      "kiril_stoyanovich",
+      "session_15_werewolf_den"
+    ],
+    "tags": [
+      "lycanthrope",
+      "wolf",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "dire_wolf",
+    "name": "Dire Wolf",
+    "type": "creature",
+    "category": "Beasts",
+    "contentType": "html",
+    "contentFile": "content/creatures/dire_wolf.html",
+    "visibility": "dm-only",
+    "related": [
+      "werewolf_den",
+      "svalich_woods"
+    ],
+    "tags": [
+      "beast",
+      "wolf",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "baba_lysaga_stat",
+    "name": "Baba Lysaga (Stat Block)",
+    "type": "creature",
+    "category": "Hags",
+    "contentType": "html",
+    "contentFile": "content/creatures/baba_lysaga_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "baba_lysaga",
+      "ruins_of_berez"
+    ],
+    "tags": [
+      "hag",
+      "witch",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "baba_lysaga_creeping_hut",
+    "name": "Baba Lysaga's Creeping Hut",
+    "type": "creature",
+    "category": "Constructs",
+    "contentType": "html",
+    "contentFile": "content/creatures/baba_lysaga_creeping_hut.html",
+    "visibility": "dm-only",
+    "related": [
+      "baba_lysaga",
+      "ruins_of_berez"
+    ],
+    "tags": [
+      "construct",
+      "hut",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "mongrelfolk",
+    "name": "Mongrelfolk",
+    "type": "creature",
+    "category": "Humanoids",
+    "contentType": "html",
+    "contentFile": "content/creatures/mongrelfolk.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "abbey_of_saint_markovia",
+      "the_abbot"
+    ],
+    "tags": [
+      "humanoid",
+      "mongrelfolk",
+      "abbey",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "barovian_witch",
+    "name": "Barovian Witch",
+    "type": "creature",
+    "category": "Humanoids",
+    "contentType": "html",
+    "contentFile": "content/creatures/barovian_witch.html",
+    "visibility": "dm-only",
+    "related": [
+      "svalich_woods",
+      "yester_hill",
+      "session_14_yester_hill"
+    ],
+    "tags": [
+      "humanoid",
+      "witch",
+      "druid",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tree_blight",
+    "name": "Tree Blight",
+    "type": "creature",
+    "category": "Plants",
+    "contentType": "html",
+    "contentFile": "content/creatures/tree_blight.html",
+    "visibility": "dm-only",
+    "related": [
+      "wizard_of_wines",
+      "yester_hill",
+      "gulthias_tree",
+      "session_12_wizard_of_wines"
+    ],
+    "tags": [
+      "plant",
+      "blight",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "guardian_portrait",
+    "name": "Guardian Portrait",
+    "type": "creature",
+    "category": "Constructs",
+    "contentType": "html",
+    "contentFile": "content/creatures/guardian_portrait.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "construct",
+      "portrait",
+      "castle",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "broom_of_animated_attack",
+    "name": "Broom of Animated Attack",
+    "type": "creature",
+    "category": "Constructs",
+    "contentType": "html",
+    "contentFile": "content/creatures/broom_of_animated_attack.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "construct",
+      "broom",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "rahadin_stat",
+    "name": "Rahadin (Stat Block)",
+    "type": "creature",
+    "category": "Humanoids",
+    "contentType": "html",
+    "contentFile": "content/creatures/rahadin_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "rahadin",
+      "castle_ravenloft"
+    ],
+    "tags": [
+      "humanoid",
+      "dusk-elf",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "izek_strazni_stat",
+    "name": "Izek Strazni (Stat Block)",
+    "type": "creature",
+    "category": "Humanoids",
+    "contentType": "html",
+    "contentFile": "content/creatures/izek_strazni_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "izek_strazni",
+      "town_of_vallaki"
+    ],
+    "tags": [
+      "humanoid",
+      "devil-arm",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ghoul",
+    "name": "Ghoul",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/ghoul.html",
+    "visibility": "dm-only",
+    "related": [
+      "castle_ravenloft",
+      "svalich_woods"
+    ],
+    "tags": [
+      "undead",
+      "ghoul",
+      "dm-only"
+    ]
+  }
+]

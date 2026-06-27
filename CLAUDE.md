@@ -134,6 +134,15 @@ Planned (in priority order, agreed with the DM):
 - No mobile-specific design (desktop/laptop use during sessions; don't break
   basic responsiveness).
 
+## Campaign Setup Requirements
+Every campaign.json MUST have `dmPassHash` set to protect DM View from players.
+Never leave `dmPassHash` as an empty string in a campaign.json.
+
+Passphrases by campaign:
+- **fail-academy**: `Smuckers` → `00afe2303c7382f4c9d96401f5bce99c027c75ba993fada538e039e7c048823f`
+- **All other / new campaigns**: `Demo` → `8a2cc0673b1c428315fe84c0138d95c3ddda30baf81e7d9aa821f1ca47098193`
+  (placeholder until the DM decides to run it; update to Smuckers when active)
+
 ## Content Pipeline (handled outside this repo's runtime)
 Lore originates as Google Docs, exported and converted into local files. When a
 new entity is added, add BOTH (a) an object in the appropriate /data type file

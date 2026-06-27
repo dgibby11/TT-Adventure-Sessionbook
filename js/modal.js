@@ -176,6 +176,31 @@
       bodyEl.appendChild(sec);
     }
 
+    // Session completion button (DM mode only)
+    if (loc.type === 'session' && window.App.isDM() && Array.isArray(loc.reveals) && loc.reveals.length) {
+      const completedKey = loc.id + ':complete';
+      const done = window.App.isRevealed(completedKey);
+      const sec = document.createElement('section');
+      sec.className = 'modal-session-complete';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'session-complete-btn' + (done ? ' session-complete-btn-done' : '');
+      btn.disabled = done;
+      btn.textContent = done
+        ? 'Session complete — players updated'
+        : `Complete session → reveal ${loc.reveals.length} entities to players`;
+      if (!done) {
+        btn.addEventListener('click', () => {
+          window.App.setRevealed(completedKey, true);
+          for (const id of loc.reveals) window.App.setRevealed(id, true);
+          btn.textContent = 'Session complete — players updated';
+          btn.disabled = true;
+          btn.classList.add('session-complete-btn-done');
+        });
+      }
+      sec.appendChild(btn);
+      bodyEl.appendChild(sec);
+    }
   }
 
   function open(loc) {
@@ -246,4 +271,7 @@
   }
 
   window.openLocationModal = open;
+
+  // Test hook — exposes cross-link helpers for tools/tests.html.
+  window._modalTest = { resolveCrossLinks, makeLink };
 })();

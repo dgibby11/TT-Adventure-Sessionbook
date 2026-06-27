@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DnDAcademy JS Tests</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: monospace; background: #0e0c09; color: #c8b89a; padding: 2rem; }
+    h1 { font-size: 0.95rem; color: #c9a227; margin-bottom: 1.5rem;
+         letter-spacing: 0.12em; text-transform: uppercase; }
+    .section { margin-top: 1.2rem; margin-bottom: 0.4rem; color: #6a5c4a;
+               font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .result { font-size: 0.82rem; line-height: 1.6; white-space: pre; }
+    .pass  { color: #5a9a5a; }
+    .fail  { color: #c04040; }
+    .summary { margin-top: 1.5rem; padding-top: 1rem;
+               border-top: 1px solid #2a2520; font-size: 0.88rem; }
+    .clean { color: #5a9a5a; }
+    .dirty { color: #c04040; }
+  </style>
+</head>
+<body>
+  <h1>DnDAcademy &mdash; JS Unit Tests</h1>
+  <div id="output"></div>
+
+  <!-- Mocks must be set before the modules load -->
+  <script>
+    window.CAMPAIGN  = { id: 'test', storageKey: 'test.generated.v1' };
+    window.ENTITIES  = [];
+    window.App = {
+      byId:        (id) => _mockEntities[id] || undefined,
+      isDM:        () => false,
+      isVisible:   () => true,
+      getNote:     () => '',
+      setNote:     () => {},
+      isRevealed:  () => false,
+      setRevealed: () => {},
+    };
+
+    // Mock entity registry for modal cross-link tests
+    const _mockEntities = {
+      known_npc: { id: 'known_npc', name: 'Tara Brightstone', type: 'npc', visibility: 'player' },
+    };
+  </script>
+  <script src="/js/generator.js"></script>
+  <script src="/js/modal.js"></script>
+
+  <script>
+    // ── Framework ─────────────────────────────────────────────────────────────
+    const out = document.getElementById('output');
+    let passes = 0, failures = 0;
+
+    function section(label) {
+      const el = document.createElement('div');
+      el.className = 'section';
+      el.textContent = label;
+      out.appendChild(el);
+    }
+
+    function log(ok, name, detail) {
+      const el = document.createElement('div');
+      el.className = 'result ' + (ok ? 'pass' : 'fail');
+      const prefix = ok ? 'PASS  ' : 'FAIL  ';
+      el.textContent = prefix + name + (detail ? '  (' + detail + ')' : '');
+      out.appendChild(el);
+    }
+
+    function test(name, fn) {
+      try {
+        fn();
+        passes++;
+        log(true, name);
+      } catch (e) {
+        failures++;
+        log(false, name, e.message);
+      }
+    }
+
+    function assert(cond, msg)       { if (!cond) throw new Error(msg || 'assertion failed'); }
+    function assertEqual(a, b, msg)  { if (a !== b) throw new Error(msg || `expected ${JSON.stringify(b)}, got ${JSON.stringify(a)}`); }
+
+    // ── generator.js tests ────────────────────────────────────────────────────
+    const G = window._genTest;
+
+    if (!G) {
+      failures++;
+      log(false, 'window._genTest export', 'not found — check generator.js for errors');
+    } else {
+
+      section('generateNPC() — structure');
+
+      test('returns object with all required entity fields', () => {
+        const npc = G.generateNPC();
+        assert(npc.id.startsWith('gen_npc_'), `id "${npc.id}" should start with gen_npc_`);
+        assertEqual(npc.type, 'npc');
+        assertEqual(npc.contentType, 'inline');
+        assertEqual(npc.visibility, 'dm-only');
+        assert(typeof npc.name === 'string' && npc.name.length > 0, 'name must be non-empty string');
+        assert(typeof npc.content === 'string' && npc.content.includes('<article'), 'content must contain <article>');
+        assert(Array.isArray(npc.tags) && npc.tags.includes('generated'), 'tags must include "generated"');
+      });
+
+      test('_meta contains race, gender, alignment', () => {
+        const npc = G.generateNPC();
+        assert(npc._meta && typeof npc._meta.race === 'string', '_meta.race missing');
+        assert(typeof npc._meta.gender === 'string', '_meta.gender missing');
+        assert(typeof npc._meta.alignment === 'string', '_meta.alignment missing');
+      });
+
+      test('generates unique ids on 20 repeated calls', () => {
+        const ids = new Set(Array.from({ length: 20 }, () => G.generateNPC().id));
+        assertEqual(ids.size, 20, 'all 20 NPCs must have distinct ids');
+      });
+
+      section('generateNPC() — seeding');
+
+      test('name seed overrides random name', () => {
+        const npc = G.generateNPC({ name: 'Alice Testwood' });
+        assertEqual(npc.name, 'Alice Testwood');
+      });
+
+      test('seeded name appears in content HTML', () => {
+        const npc = G.generateNPC({ name: 'Zephyr Coldmere' });
+        assert(npc.content.includes('Zephyr Coldmere'), 'seeded name should appear in content');
+      });
+
+      test('gender seed Male → he/him pronouns', () => {
+        const npc = G.generateNPC({ gender: 'Male' });
+        assertEqual(npc._meta.gender, 'Male');
+        assert(/\bHe\b/.test(npc.content), 'content should contain "He"');
+      });
+
+      test('gender seed Female → she/her pronouns', () => {
+        const npc = G.generateNPC({ gender: 'Female' });
+        assertEqual(npc._meta.gender, 'Female');
+        assert(/\bShe\b/.test(npc.content), 'content should contain "She"');
+      });
+
+      test('race seed Human recorded in _meta', () => {
+        const npc = G.generateNPC({ race: 'Human' });
+        assertEqual(npc._meta.race, 'Human');
+      });
+
+      section('generateNPC() — probabilistic');
+
+      test('secrets appear occasionally (25% chance) over 200 rolls', () => {
+        const results = Array.from({ length: 200 }, () => G.generateNPC());
+        const withSecret = results.filter(n => n.content.includes('Secret (DM Only)')).length;
+        assert(withSecret > 0,   'secret should appear at least once in 200 rolls');
+        assert(withSecret < 200, 'secret should sometimes be absent');
+      });
+
+      section('rollOccupation()');
+
+      test('returns object with non-empty category and role', () => {
+        const occ = G.rollOccupation();
+        assert(typeof occ.category === 'string' && occ.category.length > 0, 'category must be non-empty');
+        assert(typeof occ.role === 'string' && occ.role.length > 0, 'role must be non-empty');
+      });
+
+      test('category always exists in T.occupations (50 rolls)', () => {
+        const cats = Object.keys(G.T.occupations);
+        for (let i = 0; i < 50; i++) {
+          const occ = G.rollOccupation();
+          assert(cats.includes(occ.category), `"${occ.category}" not in T.occupations`);
+        }
+      });
+
+      test('role always exists in its category array (50 rolls)', () => {
+        for (let i = 0; i < 50; i++) {
+          const occ = G.rollOccupation();
+          const roles = G.T.occupations[occ.category];
+          assert(roles.includes(occ.role), `"${occ.role}" not in category "${occ.category}"`);
+        }
+      });
+
+      test('service/laborer/artisan outnumber noble/arcane over 500 rolls', () => {
+        const counts = {};
+        for (let i = 0; i < 500; i++) {
+          const { category } = G.rollOccupation();
+          counts[category] = (counts[category] || 0) + 1;
+        }
+        const common = (counts['Service'] || 0) + (counts['Laborer'] || 0) + (counts['Artisan'] || 0);
+        const rare   = (counts['Noble']   || 0) + (counts['Arcane']  || 0);
+        assert(common > rare * 3, `common (${common}) should greatly outnumber rare (${rare})`);
+      });
+
+      section('generateItem()');
+
+      test('returns object with required entity fields', () => {
+        const item = G.generateItem();
+        assert(item.id.startsWith('gen_item_'), `id "${item.id}" should start with gen_item_`);
+        assertEqual(item.type, 'item');
+        assertEqual(item.contentType, 'inline');
+        assert(typeof item.name === 'string' && item.name.length > 0, 'name must be non-empty');
+        assert(item.content.includes('<article'), 'content must contain <article>');
+      });
+
+      test('rarity always one of the four tiers (20 rolls)', () => {
+        const valid = new Set(['Common', 'Uncommon', 'Rare', 'Very Rare']);
+        for (let i = 0; i < 20; i++) {
+          const item = G.generateItem();
+          assert(valid.has(item._meta.rarity), `"${item._meta.rarity}" is not a valid rarity`);
+        }
+      });
+
+      // mergeExt tests come last — they mutate G.T
+      section('mergeExt() — run last (mutates T)');
+
+      test('_merge:true appends to existing arrays', () => {
+        const before = G.T.traits.length;
+        G.mergeExt({ _merge: true, traits: ['__test_trait__'] });
+        assert(G.T.traits.length > before, 'traits array should have grown');
+        assert(G.T.traits.includes('__test_trait__'), '__test_trait__ should be present');
+      });
+
+      test('_merge:false replaces arrays entirely', () => {
+        G.mergeExt({ _merge: false, traits: ['__only_trait__'] });
+        assertEqual(G.T.traits.length, 1, 'array should be fully replaced');
+        assertEqual(G.T.traits[0], '__only_trait__');
+      });
+
+      test('_-prefixed keys are never written to T', () => {
+        G.mergeExt({ _merge: true, _comment: 'should be ignored', traits: ['__extra__'] });
+        assert(!('_comment' in G.T), 'T must not have a _comment key');
+      });
+
+      test('adds new occupation categories with _merge:true', () => {
+        G.mergeExt({ _merge: true, occupations: { '__TestCat__': ['__TestRole__'] } });
+        assert('__TestCat__' in G.T.occupations, '__TestCat__ should be added');
+        assert(G.T.occupations['__TestCat__'].includes('__TestRole__'), '__TestRole__ should be in category');
+      });
+
+    } // end G tests
+
+    // ── modal.js tests ────────────────────────────────────────────────────────
+    const M = window._modalTest;
+
+    if (!M) {
+      failures++;
+      log(false, 'window._modalTest export', 'not found — check modal.js for errors');
+    } else {
+
+      section('cross-links — makeLink()');
+
+      test('known id → <a> element with entity name', () => {
+        const el = M.makeLink('known_npc', null);
+        assertEqual(el.tagName, 'A', 'should be an anchor element');
+        assertEqual(el.textContent, 'Tara Brightstone', 'text should be entity name');
+      });
+
+      test('known id with custom label → <a> showing label text', () => {
+        const el = M.makeLink('known_npc', 'Dr. Tara');
+        assertEqual(el.tagName, 'A', 'should be an anchor element');
+        assertEqual(el.textContent, 'Dr. Tara', 'custom label should override entity name');
+      });
+
+      test('unknown id → <span class="xlink-broken">', () => {
+        const el = M.makeLink('no_such_entity', null);
+        assertEqual(el.tagName, 'SPAN', 'broken link should be a span');
+        assert(el.className.includes('xlink-broken'), `class "${el.className}" should include xlink-broken`);
+      });
+
+      test('unknown id with label → broken span shows label text, not id', () => {
+        const el = M.makeLink('no_such_entity', 'The Hidden One');
+        assertEqual(el.textContent, 'The Hidden One', 'label should be shown even for broken links');
+      });
+
+      section('cross-links — resolveCrossLinks()');
+
+      test('[[id]] token replaced by link with entity name', () => {
+        const div = document.createElement('div');
+        div.textContent = 'She spoke to [[known_npc]] yesterday.';
+        M.resolveCrossLinks(div);
+        const a = div.querySelector('a');
+        assert(a !== null, 'should contain an <a> element');
+        assertEqual(a.textContent, 'Tara Brightstone');
+      });
+
+      test('[[id|label]] token replaced by link with custom label', () => {
+        const div = document.createElement('div');
+        div.textContent = 'She is known as [[known_npc|the Scholar]].';
+        M.resolveCrossLinks(div);
+        const a = div.querySelector('a');
+        assert(a !== null, 'should contain an <a> element');
+        assertEqual(a.textContent, 'the Scholar');
+      });
+
+      test('[[broken_id]] token replaced by broken-link span (not omitted)', () => {
+        const div = document.createElement('div');
+        div.textContent = 'She visited [[ghost_tower]].';
+        M.resolveCrossLinks(div);
+        const span = div.querySelector('.xlink-broken');
+        assert(span !== null, 'broken link span must be present — not silently dropped');
+      });
+
+      test('surrounding text preserved after cross-link replacement', () => {
+        const div = document.createElement('div');
+        div.textContent = 'Before [[known_npc]] after.';
+        M.resolveCrossLinks(div);
+        assert(div.textContent.includes('Before'), 'text before link should be preserved');
+        assert(div.textContent.includes('after.'), 'text after link should be preserved');
+      });
+
+    } // end M tests
+
+    // ── Summary ───────────────────────────────────────────────────────────────
+    const total = passes + failures;
+    const sumEl = document.createElement('div');
+    sumEl.className = 'summary ' + (failures ? 'dirty' : 'clean');
+    sumEl.textContent = failures
+      ? `${passes}/${total} passed   ${failures} FAILED`
+      : `All ${total} tests passed.`;
+    out.appendChild(sumEl);
+  </script>
+</body>
+</html>

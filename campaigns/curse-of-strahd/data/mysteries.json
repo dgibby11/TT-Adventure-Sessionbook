@@ -1,0 +1,252 @@
+[
+  {
+    "id": "strahd_defeat",
+    "name": "How to Defeat Strahd",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/strahd_defeat.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "sunsword",
+      "holy_symbol_of_ravenkind",
+      "tome_of_strahd",
+      "fortunes_of_ravenloft_mystery",
+      "castle_ravenloft",
+      "death_of_strahd_mystery",
+      "cos_campaign_overview"
+    ],
+    "tags": [
+      "main-quest",
+      "strahd",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "fortunes_of_ravenloft_mystery",
+    "name": "Fortunes of Ravenloft (Tarokka Reading)",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/fortunes_of_ravenloft_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "madam_eva",
+      "tarokka_deck",
+      "sunsword",
+      "holy_symbol_of_ravenkind",
+      "tome_of_strahd",
+      "strahd_defeat",
+      "sunsword_location_mystery",
+      "holy_symbol_location_mystery",
+      "tome_location_mystery",
+      "who_is_the_ally_mystery",
+      "tarokka_guide"
+    ],
+    "tags": [
+      "tarokka",
+      "divination",
+      "placement",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "sunsword_location_mystery",
+    "name": "Location of the Sunsword",
+    "type": "mystery",
+    "category": "Treasure Hunts",
+    "contentType": "html",
+    "contentFile": "content/mysteries/sunsword_location_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "sunsword",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "sunsword",
+      "treasure",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "holy_symbol_location_mystery",
+    "name": "Location of the Holy Symbol of Ravenkind",
+    "type": "mystery",
+    "category": "Treasure Hunts",
+    "contentType": "html",
+    "contentFile": "content/mysteries/holy_symbol_location_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "holy_symbol_of_ravenkind",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "holy-symbol",
+      "treasure",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tome_location_mystery",
+    "name": "Location of the Tome of Strahd",
+    "type": "mystery",
+    "category": "Treasure Hunts",
+    "contentType": "html",
+    "contentFile": "content/mysteries/tome_location_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "tome_of_strahd",
+      "fortunes_of_ravenloft_mystery",
+      "strahd_von_zarovich"
+    ],
+    "tags": [
+      "tome",
+      "treasure",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "ireena_tatyana_mystery",
+    "name": "Ireena's True Identity (Tatyana's Soul)",
+    "type": "mystery",
+    "category": "Character Secrets",
+    "contentType": "html",
+    "contentFile": "content/mysteries/ireena_tatyana_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "ireena_kolyana",
+      "strahd_von_zarovich",
+      "sergei_von_zarovich"
+    ],
+    "tags": [
+      "ireena",
+      "tatyana",
+      "reincarnation",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "strahd_backstory_mystery",
+    "name": "Strahd's Backstory and Dark Pact",
+    "type": "mystery",
+    "category": "Lore",
+    "contentType": "html",
+    "contentFile": "content/mysteries/strahd_backstory_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "tome_of_strahd",
+      "amber_sarcophagi",
+      "amber_temple",
+      "session_13_amber_temple",
+      "barovia_lore"
+    ],
+    "tags": [
+      "strahd",
+      "backstory",
+      "dark-powers",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "argynvost_skull_mystery",
+    "name": "Argynvost's Skull (The Beacon of Hope)",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/argynvost_skull_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "argynvostholt",
+      "vladimir_horngaard",
+      "order_of_the_silver_dragon",
+      "session_07_argynvostholt"
+    ],
+    "tags": [
+      "argynvost",
+      "skull",
+      "beacon",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "who_is_the_ally_mystery",
+    "name": "Who is the Powerful Ally?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/who_is_the_ally_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "fortunes_of_ravenloft_mystery",
+      "tarokka_deck",
+      "madam_eva"
+    ],
+    "tags": [
+      "ally",
+      "tarokka",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "death_of_strahd_mystery",
+    "name": "Can Strahd Truly Die?",
+    "type": "mystery",
+    "category": "Main Quest",
+    "contentType": "html",
+    "contentFile": "content/mysteries/death_of_strahd_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "strahd_defeat",
+      "heart_of_sorrow"
+    ],
+    "tags": [
+      "strahd",
+      "death",
+      "boss-mechanics",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "patrina_mystery",
+    "name": "Patrina Velikovna and Kasimir's Quest",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/patrina_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "kasimir_velikov",
+      "amber_temple",
+      "strahd_von_zarovich"
+    ],
+    "tags": [
+      "kasimir",
+      "elf",
+      "sister",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "st_andrals_bones_mystery",
+    "name": "The Bones of St. Andral",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/st_andrals_bones_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "father_lucian",
+      "town_of_vallaki",
+      "izek_strazni"
+    ],
+    "tags": [
+      "bones",
+      "church",
+      "protection",
+      "dm-only"
+    ]
+  }
+]

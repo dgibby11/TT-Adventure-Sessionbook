@@ -1,0 +1,129 @@
+[
+  {
+    "id": "session_01_tale_of_two_cities",
+    "name": "Chapter 1: A Tale of Two Cities",
+    "type": "session",
+    "category": "Sessions",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_01_tale_of_two_cities.html",
+    "visibility": "dm-only",
+    "related": [
+      "baldurs_gate",
+      "elfsong_tavern",
+      "dungeon_of_the_dead_three",
+      "vanthampur_villa",
+      "candlekeep",
+      "zodge",
+      "duke_thalamra_vanthampur",
+      "dead_three_cultists",
+      "thavius_kreeg",
+      "puzzle_box",
+      "shield_of_the_hidden_lord",
+      "vanthampur_conspiracy"
+    ],
+    "tags": [
+      "chapter-1",
+      "levels-1-4"
+    ]
+  },
+  {
+    "id": "session_02_elturel_has_fallen",
+    "name": "Chapter 2: Elturel Has Fallen",
+    "type": "session",
+    "category": "Sessions",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_02_elturel_has_fallen.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "high_hall_elturel",
+      "docking_pontoon",
+      "lulu",
+      "reya_mantlemorn",
+      "duke_ulder_ravengard",
+      "thavius_kreeg",
+      "chain_of_avernus",
+      "river_styx"
+    ],
+    "tags": [
+      "chapter-2",
+      "levels-5-6"
+    ]
+  },
+  {
+    "id": "session_03_avernus",
+    "name": "Chapter 3: Avernus",
+    "type": "session",
+    "category": "Sessions",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_03_avernus.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "fort_knucklebone",
+      "wandering_emporium",
+      "harumanns_hill",
+      "bels_forge",
+      "uldraks_grave",
+      "bone_brambles",
+      "river_styx",
+      "mad_maggie",
+      "mahadi",
+      "archduke_bel",
+      "haruman",
+      "olanthius",
+      "lulu",
+      "infernal_war_machine",
+      "soul_coin"
+    ],
+    "tags": [
+      "chapter-3",
+      "levels-7-10",
+      "hexcrawl"
+    ]
+  },
+  {
+    "id": "session_04_sword_of_zariel",
+    "name": "Chapter 4: Sword of Zariel",
+    "type": "session",
+    "category": "Sessions",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_04_sword_of_zariel.html",
+    "visibility": "dm-only",
+    "related": [
+      "bleeding_citadel",
+      "idyllglen",
+      "lulu",
+      "zariel",
+      "yael",
+      "sword_of_zariel",
+      "lulus_memories"
+    ],
+    "tags": [
+      "chapter-4",
+      "levels-11-12"
+    ]
+  },
+  {
+    "id": "session_05_escape_from_avernus",
+    "name": "Chapter 5: Escape from Avernus",
+    "type": "session",
+    "category": "Sessions",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_05_escape_from_avernus.html",
+    "visibility": "dm-only",
+    "related": [
+      "elturel",
+      "zariel",
+      "sword_of_zariel",
+      "zariel_redemption_mystery",
+      "avernus",
+      "the_companion",
+      "how_to_free_elturel"
+    ],
+    "tags": [
+      "chapter-5",
+      "levels-13"
+    ]
+  }
+]

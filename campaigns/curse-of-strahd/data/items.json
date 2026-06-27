@@ -1,0 +1,179 @@
+[
+  {
+    "id": "sunsword",
+    "name": "Sunsword",
+    "type": "item",
+    "category": "Legendary Weapons",
+    "contentType": "html",
+    "contentFile": "content/items/sunsword.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_defeat",
+      "sunsword_location_mystery",
+      "castle_ravenloft",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "weapon",
+      "legendary",
+      "anti-undead",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "holy_symbol_of_ravenkind",
+    "name": "Holy Symbol of Ravenkind",
+    "type": "item",
+    "category": "Holy Relics",
+    "contentType": "html",
+    "contentFile": "content/items/holy_symbol_of_ravenkind.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_defeat",
+      "holy_symbol_location_mystery",
+      "castle_ravenloft",
+      "icon_of_ravenkind",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "holy-symbol",
+      "relic",
+      "anti-vampire",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tome_of_strahd",
+    "name": "Tome of Strahd",
+    "type": "item",
+    "category": "Books & Relics",
+    "contentType": "html",
+    "contentFile": "content/items/tome_of_strahd.html",
+    "visibility": "dm-only",
+    "related": [
+      "strahd_von_zarovich",
+      "strahd_backstory_mystery",
+      "tome_location_mystery",
+      "castle_ravenloft",
+      "strahd_defeat",
+      "fortunes_of_ravenloft_mystery"
+    ],
+    "tags": [
+      "book",
+      "lore",
+      "strahd",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tarokka_deck",
+    "name": "Tarokka Deck",
+    "type": "item",
+    "category": "Books & Relics",
+    "contentType": "html",
+    "contentFile": "content/items/tarokka_deck.html",
+    "visibility": "dm-only",
+    "related": [
+      "madam_eva",
+      "tser_pool_encampment",
+      "fortunes_of_ravenloft_mystery",
+      "who_is_the_ally_mystery",
+      "tarokka_guide"
+    ],
+    "tags": [
+      "divination",
+      "cards",
+      "tarokka",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "icon_of_ravenkind",
+    "name": "Icon of Ravenkind",
+    "type": "item",
+    "category": "Holy Relics",
+    "contentType": "html",
+    "contentFile": "content/items/icon_of_ravenkind.html",
+    "visibility": "dm-only",
+    "related": [
+      "holy_symbol_of_ravenkind"
+    ],
+    "tags": [
+      "holy",
+      "relic",
+      "raven",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "robe_of_useful_items",
+    "name": "Robe of Useful Items",
+    "type": "item",
+    "category": "Wondrous Items",
+    "contentType": "html",
+    "contentFile": "content/items/robe_of_useful_items.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "wondrous",
+      "utility",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "alchemy_jug",
+    "name": "Alchemy Jug",
+    "type": "item",
+    "category": "Wondrous Items",
+    "contentType": "html",
+    "contentFile": "content/items/alchemy_jug.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "wondrous",
+      "utility",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "gulthias_staff",
+    "name": "Gulthias Staff",
+    "type": "item",
+    "category": "Staves",
+    "contentType": "html",
+    "contentFile": "content/items/gulthias_staff.html",
+    "visibility": "dm-only",
+    "related": [
+      "wizard_of_wines",
+      "yester_hill",
+      "gulthias_tree",
+      "session_12_wizard_of_wines"
+    ],
+    "tags": [
+      "staff",
+      "cursed",
+      "blight",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "amber_sarcophagi",
+    "name": "Amber Sarcophagi (Dark Gifts)",
+    "type": "item",
+    "category": "Cursed Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/amber_sarcophagi.html",
+    "visibility": "dm-only",
+    "related": [
+      "amber_temple",
+      "strahd_backstory_mystery",
+      "session_13_amber_temple"
+    ],
+    "tags": [
+      "cursed",
+      "dark-gift",
+      "amber-temple",
+      "dm-only"
+    ]
+  }
+]

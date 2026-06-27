@@ -11,6 +11,14 @@
     "related": [
       "cragmaw_hideout", "klarg", "yeemik", "sildar_hallwinter",
       "cragmaw_tribe", "gundren_rockseeker", "phandalin"
+    ],
+    "reveals": [
+      "triboar_trail",
+      "cragmaw_hideout",
+      "cragmaw_tribe",
+      "sildar_hallwinter",
+      "gundren_rockseeker",
+      "phandalin"
     ]
   },
   {
@@ -27,6 +35,18 @@
       "toblen_stonehill", "elmar_barthen", "linene_graywind", "halia_thornton",
       "sister_garaele", "daran_edermath", "qelline_alderleaf", "harbin_wester",
       "sildar_hallwinter"
+    ],
+    "reveals": [
+      "stonehill_inn", "barthens_provisions", "lionshield_coster",
+      "phandalin_miners_exchange", "shrine_of_luck", "townmasters_hall",
+      "sleeping_giant", "alderleaf_farm", "edermath_orchard", "tresendar_manor",
+      "redbrand_hideout",
+      "toblen_stonehill", "elmar_barthen", "linene_graywind", "halia_thornton",
+      "sister_garaele", "daran_edermath", "qelline_alderleaf", "harbin_wester",
+      "iarno_albrek",
+      "redbrands",
+      "lords_alliance",
+      "glasstaff_identity", "mirnas_heirloom", "fate_of_phandelver_pact"
     ]
   },
   {
@@ -43,6 +63,16 @@
       "cragmaw_castle", "king_grol", "gundren_rockseeker",
       "old_owl_well", "hamun_kost", "wyvern_tor",
       "conyberry", "agatha", "bowgentles_spellbook"
+    ],
+    "reveals": [
+      "ruins_of_thundertree", "reidoth",
+      "cragmaw_castle", "king_grol",
+      "old_owl_well", "hamun_kost",
+      "wyvern_tor",
+      "conyberry", "agatha",
+      "bowgentles_spellbook",
+      "black_spider_identity", "wave_echo_cave_location",
+      "harpers", "emerald_enclave", "order_of_the_gauntlet", "zhentarim"
     ]
   },
   {
@@ -58,6 +88,13 @@
       "wave_echo_cave", "nezznar_black_spider", "mormesk", "flameskull", "spectator",
       "nundro_rockseeker", "tharden_rockseeker", "forge_of_spells",
       "lightbringer", "dragonguard", "hew", "spider_staff"
+    ],
+    "reveals": [
+      "wave_echo_cave",
+      "nezznar_black_spider",
+      "tharden_rockseeker", "nundro_rockseeker",
+      "lightbringer", "dragonguard", "hew", "spider_staff",
+      "fate_of_phandelver_pact"
     ]
   }
 ]

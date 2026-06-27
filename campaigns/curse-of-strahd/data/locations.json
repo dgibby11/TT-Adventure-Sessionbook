@@ -1,0 +1,4451 @@
+[
+  {
+    "id": "old_svalich_road",
+    "area_code": "A",
+    "name": "Old Svalich Road",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/old_svalich_road.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "session_02_lands_of_barovia"
+    ]
+  },
+  {
+    "id": "gates_of_barovia",
+    "area_code": "B",
+    "name": "Gates of Barovia",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/gates_of_barovia.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "session_02_lands_of_barovia"
+    ]
+  },
+  {
+    "id": "svalich_woods",
+    "area_code": "C",
+    "name": "Svalich Woods",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/svalich_woods.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "dire_wolf",
+      "barovian_witch",
+      "ghoul"
+    ]
+  },
+  {
+    "id": "river_ivlis",
+    "area_code": "D",
+    "name": "River Ivlis",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/river_ivlis.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "village_of_barovia",
+    "area_code": "E",
+    "name": "Village of Barovia",
+    "type": "location",
+    "category": "Settlements",
+    "contentType": "html",
+    "contentFile": "content/locations/village_of_barovia.html",
+    "visibility": "dm-only",
+    "tags": [
+      "settlements",
+      "location"
+    ],
+    "related": [
+      "blood_of_the_vine_tavern",
+      "mad_marys_townhouse",
+      "burgomasters_mansion",
+      "church",
+      "cemetery",
+      "ireena_kolyana",
+      "ismark_kolyanovich",
+      "father_donavich",
+      "kolyan_indirovich",
+      "bildrath",
+      "parriwimple",
+      "mad_mary",
+      "session_01_into_the_mists",
+      "session_03_village_of_barovia"
+    ]
+  },
+  {
+    "id": "blood_of_the_vine_tavern",
+    "area_code": "E2",
+    "name": "Blood Of The Vine Tavern",
+    "type": "location",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/locations/blood_of_the_vine_tavern.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_barovia",
+      "location"
+    ],
+    "related": [
+      "village_of_barovia",
+      "session_03_village_of_barovia"
+    ]
+  },
+  {
+    "id": "mad_marys_townhouse",
+    "area_code": "E3",
+    "name": "Mad Mary'S Townhouse",
+    "type": "location",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/locations/mad_marys_townhouse.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_barovia",
+      "location"
+    ],
+    "related": [
+      "village_of_barovia",
+      "mad_mary"
+    ]
+  },
+  {
+    "id": "burgomasters_mansion",
+    "area_code": "E4",
+    "name": "Burgomaster'S Mansion",
+    "type": "location",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/locations/burgomasters_mansion.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_barovia",
+      "location"
+    ],
+    "related": [
+      "village_of_barovia",
+      "baron_vargas_vallakovich",
+      "ismark_kolyanovich",
+      "kolyan_indirovich"
+    ]
+  },
+  {
+    "id": "church",
+    "area_code": "E5",
+    "name": "Church",
+    "type": "location",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/locations/church.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_barovia",
+      "location"
+    ],
+    "related": [
+      "village_of_barovia",
+      "father_donavich"
+    ]
+  },
+  {
+    "id": "cemetery",
+    "area_code": "E6",
+    "name": "Cemetery",
+    "type": "location",
+    "category": "Village of Barovia",
+    "contentType": "html",
+    "contentFile": "content/locations/cemetery.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_barovia",
+      "location"
+    ],
+    "related": [
+      "village_of_barovia"
+    ]
+  },
+  {
+    "id": "river_ivlis_crossroads",
+    "area_code": "F",
+    "name": "River Ivlis Crossroads",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/river_ivlis_crossroads.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "tser_pool_encampment",
+    "area_code": "G",
+    "name": "Tser Pool Encampment",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/tser_pool_encampment.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "madam_eva",
+      "arrigal",
+      "session_01_into_the_mists",
+      "tarokka_deck",
+      "vistani",
+      "session_02_lands_of_barovia",
+      "session_09_tser_pool_western_barovia"
+    ]
+  },
+  {
+    "id": "tser_falls",
+    "area_code": "H",
+    "name": "Tser Falls",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/tser_falls.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "session_09_tser_pool_western_barovia"
+    ]
+  },
+  {
+    "id": "the_black_carriage",
+    "area_code": "I",
+    "name": "The Black Carriage",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/the_black_carriage.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "gates_of_ravenloft",
+    "area_code": "J",
+    "name": "Gates of Ravenloft",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/gates_of_ravenloft.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "castle_ravenloft",
+    "area_code": "K",
+    "name": "Castle Ravenloft",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/castle_ravenloft.html",
+    "visibility": "dm-only",
+    "tags": [
+      "dungeons",
+      "location"
+    ],
+    "related": [
+      "kings_hall",
+      "kings_balcony",
+      "kings_accountant",
+      "kings_apartment_stair",
+      "kings_bedchamber",
+      "k51_closet",
+      "kitchen",
+      "kingsmen_hall",
+      "kingsmen_quarters",
+      "kirils_cave",
+      "kiril_stoyanovich",
+      "kasimir_velikov",
+      "kolyan_indirovich",
+      "keepers_of_the_feather",
+      "strahd_von_zarovich",
+      "sunsword",
+      "tome_of_strahd",
+      "holy_symbol_of_ravenkind",
+      "strahd_defeat",
+      "center_court_gate",
+      "servants_courtyard",
+      "carriage_house",
+      "chapel_garden",
+      "overlook",
+      "entry",
+      "great_entry",
+      "guests_hall",
+      "heart_of_sorrow",
+      "south_tower_stair",
+      "north_archers_post",
+      "servants_entrance",
+      "servants_quarters",
+      "audience_hall",
+      "guards_post",
+      "creaky_landing",
+      "trapworks",
+      "maid_in_hell",
+      "servants_upper_floor",
+      "guardian_vermin",
+      "dining_hall_of_the_count",
+      "study",
+      "false_treasury",
+      "hall_of_webs",
+      "belfry",
+      "treasury",
+      "bath_chamber",
+      "closet",
+      "hall_of_heroes",
+      "parapets",
+      "portrait_of_strahd",
+      "lounge",
+      "guest_room",
+      "smokestack",
+      "rooftop",
+      "familiar_room",
+      "element_room",
+      "cauldron",
+      "tower_roof",
+      "bridge",
+      "high_tower_peak",
+      "north_tower_peak",
+      "elevator_trap",
+      "servants_hall",
+      "wine_cellar",
+      "guards_stair",
+      "butlers_quarters",
+      "hall_of_bones",
+      "guards_run",
+      "guards_quarters",
+      "chamberlains_office",
+      "dungeon_hall",
+      "north_dungeon",
+      "south_dungeon",
+      "torture_chamber",
+      "observation_balcony",
+      "brazier_room",
+      "western_stair",
+      "center_stair",
+      "tunnel",
+      "marble_slide",
+      "spiral_stair",
+      "catacombs",
+      "sergeis_tomb",
+      "strahds_tomb",
+      "guardians",
+      "tomb_of_king_barov_and_queen_ravenovia",
+      "rahadin",
+      "cyrus_belview",
+      "lief_lipsiege",
+      "anastrasya_karelova",
+      "sergei_von_zarovich",
+      "strahd_von_zarovich_stat",
+      "strahd_zombie",
+      "vampire_spawn",
+      "guardian_portrait",
+      "broom_of_animated_attack",
+      "rahadin_stat",
+      "ghoul",
+      "session_04_castle_ravenloft"
+    ]
+  },
+  {
+    "id": "center_court_gate",
+    "area_code": "K2",
+    "name": "Center Court Gate",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/center_court_gate.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "servants_courtyard",
+    "area_code": "K3",
+    "name": "Servants' Courtyard",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/servants_courtyard.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "carriage_house",
+    "area_code": "K4",
+    "name": "Carriage House",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/carriage_house.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "chapel_garden",
+    "area_code": "K5",
+    "name": "Chapel Garden.",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/chapel_garden.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "overlook",
+    "area_code": "K6",
+    "name": "Overlook",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/overlook.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "entry",
+    "area_code": "K7",
+    "name": "Entry",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/entry.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "great_entry",
+    "area_code": "K8",
+    "name": "Great Entry",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/great_entry.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guests_hall",
+    "area_code": "K9",
+    "name": "Guests' Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guests_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "heart_of_sorrow",
+    "area_code": "K20",
+    "name": "Heart Of Sorrow",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/heart_of_sorrow.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft",
+      "death_of_strahd_mystery",
+      "session_04_castle_ravenloft"
+    ]
+  },
+  {
+    "id": "south_tower_stair",
+    "area_code": "K21",
+    "name": "South Tower Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/south_tower_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "north_archers_post",
+    "area_code": "K22",
+    "name": "North Archers' Post",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/north_archers_post.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "servants_entrance",
+    "area_code": "K23",
+    "name": "Servants' Entrance",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/servants_entrance.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "servants_quarters",
+    "area_code": "K24",
+    "name": "Servants' Quarters",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/servants_quarters.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "audience_hall",
+    "area_code": "K25",
+    "name": "Audience Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/audience_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guards_post",
+    "area_code": "K26",
+    "name": "Guards' Post",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guards_post.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kings_hall",
+    "area_code": "K27",
+    "name": "King'S Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kings_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kings_balcony",
+    "area_code": "K28",
+    "name": "King'S Balcony",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kings_balcony.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "creaky_landing",
+    "area_code": "K29",
+    "name": "Creaky Landing",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/creaky_landing.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kings_accountant",
+    "area_code": "K30",
+    "name": "King'S Accountant",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kings_accountant.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft",
+      "lief_lipsiege"
+    ]
+  },
+  {
+    "id": "trapworks",
+    "area_code": "K31",
+    "name": "Trapworks",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/trapworks.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "maid_in_hell",
+    "area_code": "K32",
+    "name": "Maid In Hell",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/maid_in_hell.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kings_apartment_stair",
+    "area_code": "K33",
+    "name": "King'S Apartment Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kings_apartment_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "servants_upper_floor",
+    "area_code": "K34",
+    "name": "Servants' Upper Floor",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/servants_upper_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guardian_vermin",
+    "area_code": "K35",
+    "name": "Guardian Vermin",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guardian_vermin.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "dining_hall_of_the_count",
+    "area_code": "K36",
+    "name": "Dining Hall Of The Count",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/dining_hall_of_the_count.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "study",
+    "area_code": "K37",
+    "name": "Study",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/study.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "false_treasury",
+    "area_code": "K38",
+    "name": "False Treasury",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/false_treasury.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "hall_of_webs",
+    "area_code": "K39",
+    "name": "Hall Of Webs",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/hall_of_webs.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "belfry",
+    "area_code": "K40",
+    "name": "Belfry",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/belfry.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "treasury",
+    "area_code": "K41",
+    "name": "Treasury",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/treasury.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kings_bedchamber",
+    "area_code": "K42",
+    "name": "King'S Bedchamber",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kings_bedchamber.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "bath_chamber",
+    "area_code": "K43",
+    "name": "Bath Chamber",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/bath_chamber.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "closet",
+    "area_code": "K44",
+    "name": "Closet",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/closet.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "hall_of_heroes",
+    "area_code": "K45",
+    "name": "Hall Of Heroes",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/hall_of_heroes.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "parapets",
+    "area_code": "K46",
+    "name": "Parapets",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/parapets.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "portrait_of_strahd",
+    "area_code": "K47",
+    "name": "Portrait of Strahd",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/portrait_of_strahd.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "lounge",
+    "area_code": "K49",
+    "name": "Lounge",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/lounge.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guest_room",
+    "area_code": "K50",
+    "name": "Guest Room",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guest_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "k51_closet",
+    "area_code": "K51",
+    "name": "Closet",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/k51_closet.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "smokestack",
+    "area_code": "K52",
+    "name": "Smokestack",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/smokestack.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "rooftop",
+    "area_code": "K53",
+    "name": "Rooftop",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/rooftop.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "familiar_room",
+    "area_code": "K54",
+    "name": "Familiar Room",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/familiar_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "element_room",
+    "area_code": "K55",
+    "name": "Element Room",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/element_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "cauldron",
+    "area_code": "K56",
+    "name": "Cauldron",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/cauldron.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "tower_roof",
+    "area_code": "K57",
+    "name": "Tower Roof",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_roof.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "bridge",
+    "area_code": "K58",
+    "name": "Bridge",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/bridge.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "high_tower_peak",
+    "area_code": "K59",
+    "name": "High Tower Peak",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/high_tower_peak.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "north_tower_peak",
+    "area_code": "K60",
+    "name": "North Tower Peak",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/north_tower_peak.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "elevator_trap",
+    "area_code": "K61",
+    "name": "Elevator Trap",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/elevator_trap.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "servants_hall",
+    "area_code": "K62",
+    "name": "Servants' Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/servants_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft",
+      "cyrus_belview"
+    ]
+  },
+  {
+    "id": "wine_cellar",
+    "area_code": "K63",
+    "name": "Wine Cellar",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/wine_cellar.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guards_stair",
+    "area_code": "K64",
+    "name": "Guards' Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guards_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kitchen",
+    "area_code": "K65",
+    "name": "Kitchen",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kitchen.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "butlers_quarters",
+    "area_code": "K66",
+    "name": "Butler's Quarters",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/butlers_quarters.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "hall_of_bones",
+    "area_code": "K67",
+    "name": "Hall Of Bones",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/hall_of_bones.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guards_run",
+    "area_code": "K68",
+    "name": "Guards' Run",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guards_run.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guards_quarters",
+    "area_code": "K69",
+    "name": "Guards' Quarters",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guards_quarters.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kingsmen_hall",
+    "area_code": "K70",
+    "name": "Kingsmen Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kingsmen_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "kingsmen_quarters",
+    "area_code": "K71",
+    "name": "Kingsmen Quarters",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/kingsmen_quarters.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "chamberlains_office",
+    "area_code": "K72",
+    "name": "Chamberlain'S Office",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/chamberlains_office.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "dungeon_hall",
+    "area_code": "K73",
+    "name": "Dungeon Hall",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/dungeon_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "north_dungeon",
+    "area_code": "K74",
+    "name": "North Dungeon",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/north_dungeon.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "south_dungeon",
+    "area_code": "K75",
+    "name": "South Dungeon",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/south_dungeon.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "torture_chamber",
+    "area_code": "K76",
+    "name": "Torture Chamber",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/torture_chamber.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "observation_balcony",
+    "area_code": "K77",
+    "name": "Observation Balcony",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/observation_balcony.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "brazier_room",
+    "area_code": "K78",
+    "name": "Brazier Room",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/brazier_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "western_stair",
+    "area_code": "K79",
+    "name": "Western Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/western_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "center_stair",
+    "area_code": "K80",
+    "name": "Center Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/center_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "tunnel",
+    "area_code": "K81",
+    "name": "Tunnel",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/tunnel.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "marble_slide",
+    "area_code": "K82",
+    "name": "Marble Slide",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/marble_slide.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "spiral_stair",
+    "area_code": "K83",
+    "name": "Spiral Stair",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/spiral_stair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "catacombs",
+    "area_code": "K84",
+    "name": "Catacombs",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/catacombs.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "sergeis_tomb",
+    "area_code": "K85",
+    "name": "Sergei'S Tomb",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/sergeis_tomb.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft",
+      "sergei_von_zarovich"
+    ]
+  },
+  {
+    "id": "strahds_tomb",
+    "area_code": "K86",
+    "name": "Strahd'S Tomb",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/strahds_tomb.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "guardians",
+    "area_code": "K87",
+    "name": "Guardians",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/guardians.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "tomb_of_king_barov_and_queen_ravenovia",
+    "area_code": "K88",
+    "name": "Tomb of King Barov and Queen Ravenovia",
+    "type": "location",
+    "category": "Castle Ravenloft",
+    "contentType": "html",
+    "contentFile": "content/locations/tomb_of_king_barov_and_queen_ravenovia.html",
+    "visibility": "dm-only",
+    "tags": [
+      "castle_ravenloft",
+      "location"
+    ],
+    "related": [
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "lake_zarovich",
+    "area_code": "L",
+    "name": "Lake Zarovich",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/lake_zarovich.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "session_09_tser_pool_western_barovia"
+    ]
+  },
+  {
+    "id": "mad_mage_of_mount_baratok",
+    "area_code": "M",
+    "name": "Mad Mage of Mount Baratok",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/mad_mage_of_mount_baratok.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "town_of_vallaki",
+    "area_code": "N",
+    "name": "Town of Vallaki",
+    "type": "location",
+    "category": "Settlements",
+    "contentType": "html",
+    "contentFile": "content/locations/town_of_vallaki.html",
+    "visibility": "dm-only",
+    "tags": [
+      "settlements",
+      "location"
+    ],
+    "related": [
+      "blue_water_inn",
+      "wachterhaus",
+      "arasek_stockyard",
+      "coffin_makers_shop",
+      "blinsky_toys",
+      "vistani_camp",
+      "town_square",
+      "izek_strazni",
+      "n3_burgomasters_mansion",
+      "secret_stairs_and_hall",
+      "st_andrals_feast_special_event",
+      "baron_vargas_vallakovich",
+      "lady_wachter",
+      "rictavio",
+      "kasimir_velikov",
+      "urwin_martikov",
+      "danika_dorakova",
+      "blinsky",
+      "father_lucian",
+      "ernst_larnak",
+      "luvash",
+      "arabelle",
+      "izek_strazni_stat",
+      "st_andrals_bones_mystery",
+      "session_05_town_of_vallaki"
+    ]
+  },
+  {
+    "id": "blue_water_inn",
+    "area_code": "N2",
+    "name": "Blue Water Inn",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/blue_water_inn.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki",
+      "urwin_martikov",
+      "danika_dorakova",
+      "rictavio",
+      "keepers_of_the_feather",
+      "session_05_town_of_vallaki"
+    ]
+  },
+  {
+    "id": "n3_burgomasters_mansion",
+    "area_code": "N3",
+    "name": "Burgomaster'S Mansion",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/n3_burgomasters_mansion.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "wachterhaus",
+    "area_code": "N4",
+    "name": "Wachterhaus",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/wachterhaus.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki",
+      "lady_wachter",
+      "ernst_larnak"
+    ]
+  },
+  {
+    "id": "arasek_stockyard",
+    "area_code": "N5",
+    "name": "Arasek Stockyard",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/arasek_stockyard.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "coffin_makers_shop",
+    "area_code": "N6",
+    "name": "Coffin Maker'S Shop'",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/coffin_makers_shop.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "blinsky_toys",
+    "area_code": "N7",
+    "name": "Blinsky Toys",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/blinsky_toys.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki",
+      "blinsky"
+    ]
+  },
+  {
+    "id": "vistani_camp",
+    "area_code": "N9",
+    "name": "Vistani Camp",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/vistani_camp.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki",
+      "luvash",
+      "arabelle"
+    ]
+  },
+  {
+    "id": "secret_stairs_and_hall",
+    "area_code": "N21",
+    "name": "Secret Stairs and Hall",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/secret_stairs_and_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "town_square",
+    "area_code": "NB",
+    "name": "Town Square",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/town_square.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "old_bonegrinder",
+    "area_code": "O",
+    "name": "Old Bonegrinder",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/old_bonegrinder.html",
+    "visibility": "dm-only",
+    "tags": [
+      "dungeon",
+      "location",
+      "mill"
+    ],
+    "related": [
+      "session_06_old_bonegrinder"
+    ]
+  },
+  {
+    "id": "luna_river_crossroads",
+    "area_code": "P",
+    "name": "Luna River Crossroads",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/luna_river_crossroads.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "argynvostholt",
+    "area_code": "Q",
+    "name": "Argynvostholt",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/argynvostholt.html",
+    "visibility": "dm-only",
+    "tags": [
+      "dungeon",
+      "location",
+      "argynvostholt"
+    ],
+    "related": [
+      "q9_servants_quarters",
+      "vladimir_horngaard",
+      "argynvost_skull_mystery",
+      "dragons_foyer",
+      "the_spiders_crawl_up_into_the_room_and_attack_the",
+      "ruined_stable",
+      "dragons_den",
+      "parlor",
+      "iron_gate",
+      "south_alcove",
+      "north_alcove",
+      "bathroom",
+      "storage_room",
+      "chapel_balcony",
+      "trapped_hallway",
+      "east_staircases",
+      "ruined_bed_chambers",
+      "collapsed_ceiling",
+      "ruined_bathroom",
+      "upstairs_gallery",
+      "dragons_audience_hall",
+      "vladimirs_bedroom",
+      "argynvosts_study",
+      "dragons_vault",
+      "argynvosts_bedroom",
+      "dragon_gargoyle",
+      "ancient_ballista",
+      "destroyed_ballista",
+      "roof_turrets",
+      "roofs_edge",
+      "beacon_tower_door",
+      "beacon_lower_landing",
+      "beacon_upper_landing",
+      "beacon_turrets",
+      "dragon_statue",
+      "phantom_warrior",
+      "order_of_the_silver_dragon",
+      "session_07_argynvostholt"
+    ]
+  },
+  {
+    "id": "dragons_foyer",
+    "area_code": "Q3",
+    "name": "Dragon'S Foyer",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragons_foyer.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "the_spiders_crawl_up_into_the_room_and_attack_the",
+    "area_code": "Q4",
+    "name": "The spiders crawl up into the room and attack. The",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/the_spiders_crawl_up_into_the_room_and_attack_the.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "ruined_stable",
+    "area_code": "Q5",
+    "name": "Ruined Stable",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/ruined_stable.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "dragons_den",
+    "area_code": "Q6",
+    "name": "Dragon'S Den",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragons_den.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "parlor",
+    "area_code": "Q7",
+    "name": "Parlor",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/parlor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "iron_gate",
+    "area_code": "Q8",
+    "name": "Iron Gate",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/iron_gate.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "q9_servants_quarters",
+    "area_code": "Q9",
+    "name": "Servants' Quarters",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/q9_servants_quarters.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "south_alcove",
+    "area_code": "Q20",
+    "name": "South Alcove",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/south_alcove.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "north_alcove",
+    "area_code": "Q21",
+    "name": "North Alcove",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/north_alcove.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "bathroom",
+    "area_code": "Q22",
+    "name": "Bathroom",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/bathroom.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "storage_room",
+    "area_code": "Q23",
+    "name": "Storage Room",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/storage_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "chapel_balcony",
+    "area_code": "Q24",
+    "name": "Chapel Balcony",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/chapel_balcony.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "trapped_hallway",
+    "area_code": "Q25",
+    "name": "Trapped Hallway",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/trapped_hallway.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "east_staircases",
+    "area_code": "Q31",
+    "name": "East Staircases",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/east_staircases.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "ruined_bed_chambers",
+    "area_code": "Q32",
+    "name": "Ruined Bed Chambers",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/ruined_bed_chambers.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "collapsed_ceiling",
+    "area_code": "Q33",
+    "name": "Collapsed Ceiling",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/collapsed_ceiling.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "ruined_bathroom",
+    "area_code": "Q34",
+    "name": "Ruined Bathroom",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/ruined_bathroom.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "upstairs_gallery",
+    "area_code": "Q35",
+    "name": "Upstairs Gallery",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/upstairs_gallery.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "dragons_audience_hall",
+    "area_code": "Q36",
+    "name": "Dragon'S Audience Hall",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragons_audience_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "vladimirs_bedroom",
+    "area_code": "Q39",
+    "name": "Vladimir's Bedroom",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/vladimirs_bedroom.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "argynvosts_study",
+    "area_code": "Q40",
+    "name": "Argynvost'S Study",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/argynvosts_study.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "dragons_vault",
+    "area_code": "Q41",
+    "name": "Dragon'S Vault",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragons_vault.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "argynvosts_bedroom",
+    "area_code": "Q42",
+    "name": "Argynvost'S Bedroom",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/argynvosts_bedroom.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "dragon_gargoyle",
+    "area_code": "Q44",
+    "name": "Dragon Gargoyle",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragon_gargoyle.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "ancient_ballista",
+    "area_code": "Q45",
+    "name": "Ancient Ballista",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/ancient_ballista.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "destroyed_ballista",
+    "area_code": "Q46",
+    "name": "Destroyed Ballista",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/destroyed_ballista.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "roof_turrets",
+    "area_code": "Q47",
+    "name": "Roof Turrets",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/roof_turrets.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "roofs_edge",
+    "area_code": "Q48",
+    "name": "Roof'S Edge",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/roofs_edge.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "beacon_tower_door",
+    "area_code": "Q49",
+    "name": "Beacon Tower Door",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/beacon_tower_door.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "beacon_lower_landing",
+    "area_code": "Q50",
+    "name": "Beacon, Lower Landing",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/beacon_lower_landing.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "beacon_upper_landing",
+    "area_code": "Q51",
+    "name": "Beacon, Upper Landing",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/beacon_upper_landing.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "beacon_turrets",
+    "area_code": "Q52",
+    "name": "BEACON TuRRETS",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/beacon_turrets.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "dragon_statue",
+    "area_code": "QJ",
+    "name": "Dragon Statue",
+    "type": "location",
+    "category": "Argynvostholt",
+    "contentType": "html",
+    "contentFile": "content/locations/dragon_statue.html",
+    "visibility": "dm-only",
+    "tags": [
+      "argynvostholt",
+      "location"
+    ],
+    "related": [
+      "argynvostholt"
+    ]
+  },
+  {
+    "id": "raven_river_crossroads",
+    "area_code": "R",
+    "name": "Raven River Crossroads",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/raven_river_crossroads.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "village_of_krezk",
+    "area_code": "S",
+    "name": "Village of Krezk",
+    "type": "location",
+    "category": "Settlements",
+    "contentType": "html",
+    "contentFile": "content/locations/village_of_krezk.html",
+    "visibility": "dm-only",
+    "tags": [
+      "settlements",
+      "location"
+    ],
+    "related": [
+      "gatehouse",
+      "s3_village_of_krezk",
+      "pool_and_shrine",
+      "winding_road",
+      "north_gate",
+      "graveyard",
+      "garden_gate",
+      "gardens",
+      "abbey_entrance",
+      "foyer",
+      "madhouse",
+      "s16_wine_cellar",
+      "loft_and_bell_tower",
+      "curtain_wall",
+      "barracks",
+      "upstairs_office",
+      "haunted_hospital",
+      "operating_room",
+      "nursery",
+      "morgue",
+      "the_abbot",
+      "dmitri_krezkov",
+      "mongrelfolk",
+      "abbey_of_saint_markovia",
+      "session_08_village_of_krezk"
+    ]
+  },
+  {
+    "id": "gatehouse",
+    "area_code": "S2",
+    "name": "Gatehouse",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/gatehouse.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "s3_village_of_krezk",
+    "area_code": "S3",
+    "name": "Village Of Krezk",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/s3_village_of_krezk.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "pool_and_shrine",
+    "area_code": "S4",
+    "name": "Pool And Shrine",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/pool_and_shrine.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk",
+      "dmitri_krezkov"
+    ]
+  },
+  {
+    "id": "winding_road",
+    "area_code": "S5",
+    "name": "Winding Road",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/winding_road.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "north_gate",
+    "area_code": "S6",
+    "name": "North Gate",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/north_gate.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "graveyard",
+    "area_code": "S7",
+    "name": "Graveyard",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/graveyard.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "garden_gate",
+    "area_code": "S8",
+    "name": "Garden Gate",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/garden_gate.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "gardens",
+    "area_code": "S9",
+    "name": "Gardens",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/gardens.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "abbey_entrance",
+    "area_code": "S10",
+    "name": "Abbey Entrance",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/abbey_entrance.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "foyer",
+    "area_code": "S14",
+    "name": "Foyer",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/foyer.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "madhouse",
+    "area_code": "S15",
+    "name": "Madhouse",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/madhouse.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "s16_wine_cellar",
+    "area_code": "S16",
+    "name": "Wine Cellar",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/s16_wine_cellar.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "loft_and_bell_tower",
+    "area_code": "S17",
+    "name": "Loft and Bell Tower",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/loft_and_bell_tower.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "curtain_wall",
+    "area_code": "S18",
+    "name": "Curtain Wall",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/curtain_wall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "barracks",
+    "area_code": "S19",
+    "name": "Barracks",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/barracks.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "upstairs_office",
+    "area_code": "S20",
+    "name": "Upstairs Office",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/upstairs_office.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "haunted_hospital",
+    "area_code": "S21",
+    "name": "Haunted Hospital",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/haunted_hospital.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "operating_room",
+    "area_code": "S22",
+    "name": "Operating Room",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/operating_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "nursery",
+    "area_code": "S23",
+    "name": "Nursery",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/nursery.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "morgue",
+    "area_code": "S24",
+    "name": "Morgue",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/morgue.html",
+    "visibility": "dm-only",
+    "tags": [
+      "village_of_krezk_abbey",
+      "location"
+    ],
+    "related": [
+      "village_of_krezk"
+    ]
+  },
+  {
+    "id": "st_andrals_feast_special_event",
+    "area_code": "ST",
+    "name": "St. Andral's Feast (Special Event)",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/st_andrals_feast_special_event.html",
+    "visibility": "dm-only",
+    "tags": [
+      "town_of_vallaki",
+      "location"
+    ],
+    "related": [
+      "town_of_vallaki"
+    ]
+  },
+  {
+    "id": "tsolenka_pass",
+    "area_code": "T",
+    "name": "Tsolenka Pass",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/tsolenka_pass.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "demon_statues",
+      "curtain_of_green_flame",
+      "guard_tower_ground_floor",
+      "guard_tower_upper_floor",
+      "guard_tower_rooftop",
+      "western_arch",
+      "eastern_arch",
+      "stone_bridge"
+    ]
+  },
+  {
+    "id": "demon_statues",
+    "area_code": "T2",
+    "name": "Demon Statues",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/demon_statues.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "curtain_of_green_flame",
+    "area_code": "T3",
+    "name": "Curtain Of Green Flame",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/curtain_of_green_flame.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "guard_tower_ground_floor",
+    "area_code": "T4",
+    "name": "Guard Tower, Ground Floor",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/guard_tower_ground_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "guard_tower_upper_floor",
+    "area_code": "T5",
+    "name": "Guard Tower, Upper Floor",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/guard_tower_upper_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "guard_tower_rooftop",
+    "area_code": "T6",
+    "name": "Guard Tower Rooftop",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/guard_tower_rooftop.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "western_arch",
+    "area_code": "T7",
+    "name": "Western Arch",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/western_arch.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "eastern_arch",
+    "area_code": "T9",
+    "name": "Eastern Arch",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/eastern_arch.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "stone_bridge",
+    "area_code": "TB",
+    "name": "Stone Bridge",
+    "type": "location",
+    "category": "Tsolenka Pass",
+    "contentType": "html",
+    "contentFile": "content/locations/stone_bridge.html",
+    "visibility": "dm-only",
+    "tags": [
+      "tsolenka_pass",
+      "location"
+    ],
+    "related": [
+      "tsolenka_pass"
+    ]
+  },
+  {
+    "id": "ruins_of_berez",
+    "area_code": "U",
+    "name": "Ruins of Berez",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/ruins_of_berez.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "baba_lysaga",
+      "ulrich_mansion",
+      "baba_lysagas_hut",
+      "churchyard",
+      "marinas_monument",
+      "standing_stones",
+      "baba_lysaga_stat",
+      "baba_lysaga_creeping_hut",
+      "session_10_ruins_of_berez"
+    ]
+  },
+  {
+    "id": "ulrich_mansion",
+    "area_code": "U2",
+    "name": "Ulrich Mansion",
+    "type": "location",
+    "category": "Ruins of Berez",
+    "contentType": "html",
+    "contentFile": "content/locations/ulrich_mansion.html",
+    "visibility": "dm-only",
+    "tags": [
+      "ruins_of_berez",
+      "location"
+    ],
+    "related": [
+      "ruins_of_berez",
+      "session_10_ruins_of_berez"
+    ]
+  },
+  {
+    "id": "baba_lysagas_hut",
+    "area_code": "U3",
+    "name": "BABA LYSAGA's HuT",
+    "type": "location",
+    "category": "Ruins of Berez",
+    "contentType": "html",
+    "contentFile": "content/locations/baba_lysagas_hut.html",
+    "visibility": "dm-only",
+    "tags": [
+      "ruins_of_berez",
+      "location"
+    ],
+    "related": [
+      "ruins_of_berez"
+    ]
+  },
+  {
+    "id": "churchyard",
+    "area_code": "U4",
+    "name": "Churchyard",
+    "type": "location",
+    "category": "Ruins of Berez",
+    "contentType": "html",
+    "contentFile": "content/locations/churchyard.html",
+    "visibility": "dm-only",
+    "tags": [
+      "ruins_of_berez",
+      "location"
+    ],
+    "related": [
+      "ruins_of_berez"
+    ]
+  },
+  {
+    "id": "marinas_monument",
+    "area_code": "U5",
+    "name": "Marina'S Monument",
+    "type": "location",
+    "category": "Ruins of Berez",
+    "contentType": "html",
+    "contentFile": "content/locations/marinas_monument.html",
+    "visibility": "dm-only",
+    "tags": [
+      "ruins_of_berez",
+      "location"
+    ],
+    "related": [
+      "ruins_of_berez"
+    ]
+  },
+  {
+    "id": "standing_stones",
+    "area_code": "U6",
+    "name": "Standing Stones",
+    "type": "location",
+    "category": "Ruins of Berez",
+    "contentType": "html",
+    "contentFile": "content/locations/standing_stones.html",
+    "visibility": "dm-only",
+    "tags": [
+      "ruins_of_berez",
+      "location"
+    ],
+    "related": [
+      "ruins_of_berez"
+    ]
+  },
+  {
+    "id": "van_richtens_tower",
+    "area_code": "V",
+    "name": "Van Richten's Tower",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/van_richtens_tower.html",
+    "visibility": "dm-only",
+    "tags": [
+      "dungeons",
+      "location"
+    ],
+    "related": [
+      "rictavio",
+      "tower_door",
+      "rickety_scaffolding",
+      "tower_first_floor",
+      "tower_second_floor",
+      "tower_third_floor",
+      "tower_fourth_floor",
+      "ezmerelda_davenir",
+      "session_11_van_richtens_tower"
+    ]
+  },
+  {
+    "id": "tower_door",
+    "area_code": "V2",
+    "name": "Tower Door",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_door.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "rickety_scaffolding",
+    "area_code": "V3",
+    "name": "Rickety Scaffolding",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/rickety_scaffolding.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "tower_first_floor",
+    "area_code": "V4",
+    "name": "Tower, First Floor",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_first_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "tower_second_floor",
+    "area_code": "V5",
+    "name": "Tower, Second Floor",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_second_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "tower_third_floor",
+    "area_code": "V6",
+    "name": "Tower, Third Floor",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_third_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "tower_fourth_floor",
+    "area_code": "V7",
+    "name": "Tower, Fourth Floor",
+    "type": "location",
+    "category": "Van Richten's Tower",
+    "contentType": "html",
+    "contentFile": "content/locations/tower_fourth_floor.html",
+    "visibility": "dm-only",
+    "tags": [
+      "van_richtens_tower",
+      "location"
+    ],
+    "related": [
+      "van_richtens_tower"
+    ]
+  },
+  {
+    "id": "loading_dock",
+    "area_code": "W2",
+    "name": "Loading Dock",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/loading_dock.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "barrel_makers_workshop",
+    "area_code": "W3",
+    "name": "Barrel Maker'S Workshop",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/barrel_makers_workshop.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "barrel_storage",
+    "area_code": "W4",
+    "name": "Barrel Storage",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/barrel_storage.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "veranda",
+    "area_code": "W5",
+    "name": "Veranda",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/veranda.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "well",
+    "area_code": "W6",
+    "name": "Well",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/well.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "outhouse",
+    "area_code": "W7",
+    "name": "Outhouse",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/outhouse.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "storage",
+    "area_code": "W8",
+    "name": "Storage",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/storage.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "fermentation_vats",
+    "area_code": "W9",
+    "name": "Fermentation Vats",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/fermentation_vats.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "printing_press",
+    "area_code": "W20",
+    "name": "Printing Press",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/printing_press.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "stables",
+    "area_code": "WI",
+    "name": "Stables",
+    "type": "location",
+    "category": "Wizard of Wines Winery",
+    "contentType": "html",
+    "contentFile": "content/locations/stables.html",
+    "visibility": "dm-only",
+    "tags": [
+      "wizard_of_wines_winery",
+      "location"
+    ],
+    "related": [
+      "wizard_of_wines"
+    ]
+  },
+  {
+    "id": "amber_temple",
+    "area_code": "X",
+    "name": "The Amber Temple",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/amber_temple.html",
+    "visibility": "dm-only",
+    "tags": [
+      "dungeons",
+      "location"
+    ],
+    "related": []
+  },
+  {
+    "id": "entrance",
+    "area_code": "X2",
+    "name": "Entrance",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/entrance.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "empty_barracks",
+    "area_code": "X3",
+    "name": "Empty Barracks",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/empty_barracks.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "x4_overlook",
+    "area_code": "X4",
+    "name": "Overlook",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/x4_overlook.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "temple_of_lost_secrets",
+    "area_code": "X5",
+    "name": "Temple Of Lost Secrets",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/temple_of_lost_secrets.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "southeast_annex",
+    "area_code": "X6",
+    "name": "Southeast Annex",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/southeast_annex.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "secret_scroll_repository",
+    "area_code": "X7",
+    "name": "Secret Scroll Repository",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/secret_scroll_repository.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "upper_east_hall",
+    "area_code": "X8",
+    "name": "Upper East Hall",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/upper_east_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "lecture_hall",
+    "area_code": "X9",
+    "name": "Lecture Hall",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/lecture_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "architects_room",
+    "area_code": "X20",
+    "name": "Architect'S Room",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/architects_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "west_staircase",
+    "area_code": "X21",
+    "name": "West Staircase",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/west_staircase.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "northwest_annex",
+    "area_code": "X22",
+    "name": "Northwest Annex",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/northwest_annex.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "northwest_balcony",
+    "area_code": "X23",
+    "name": "Northwest Balcony",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/northwest_balcony.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "west_shrine",
+    "area_code": "X24",
+    "name": "West Shrine",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/west_shrine.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "west_archer_post",
+    "area_code": "X25",
+    "name": "West Archer Post",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/west_archer_post.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "secret_alcove",
+    "area_code": "X26",
+    "name": "Secret Alcove",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/secret_alcove.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "lichs_lair",
+    "area_code": "X27",
+    "name": "LICH's LAIR",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/lichs_lair.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "hidden_phylactery",
+    "area_code": "X28",
+    "name": "Hidden Phylactery",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/hidden_phylactery.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "secret_room",
+    "area_code": "X29",
+    "name": "Secret Room:",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/secret_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "preserved_library",
+    "area_code": "X30",
+    "name": "Preserved Library",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/preserved_library.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "central_catacombs",
+    "area_code": "X31",
+    "name": "Central Catacombs",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/central_catacombs.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "lower_east_hall",
+    "area_code": "X32",
+    "name": "Lower East Hall",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/lower_east_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "amber_vaults",
+    "area_code": "X33",
+    "name": "Amber Vaults",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/amber_vaults.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "wizards_bedchamber",
+    "area_code": "X34",
+    "name": "Wizard'S Bedchamber",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/wizards_bedchamber.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "sleeping_guardian",
+    "area_code": "X35",
+    "name": "Sleeping Guardian",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/sleeping_guardian.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "lower_west_hall",
+    "area_code": "X36",
+    "name": "Lower West Hall",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/lower_west_hall.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "x37_wizards_bedchamber",
+    "area_code": "X37",
+    "name": "Wizard'S Bedchamber",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/x37_wizards_bedchamber.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "haunted_room",
+    "area_code": "X38",
+    "name": "Haunted Room",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/haunted_room.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "plundered_treasury",
+    "area_code": "X39",
+    "name": "Plundered Treasury",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/plundered_treasury.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "sealed_treasury",
+    "area_code": "X40",
+    "name": "Sealed Treasury",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/sealed_treasury.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "fissure",
+    "area_code": "X41",
+    "name": "Fissure",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/fissure.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "amber_vault",
+    "area_code": "X42",
+    "name": "Amber Vault",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/amber_vault.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "temple_facade",
+    "area_code": "XI",
+    "name": "Temple Facade",
+    "type": "location",
+    "category": "Amber Temple",
+    "contentType": "html",
+    "contentFile": "content/locations/temple_facade.html",
+    "visibility": "dm-only",
+    "tags": [
+      "amber_temple",
+      "location"
+    ],
+    "related": [
+      "amber_temple"
+    ]
+  },
+  {
+    "id": "yester_hill",
+    "area_code": "Y",
+    "name": "Yester Hill",
+    "type": "location",
+    "category": "Barovia Region",
+    "contentType": "html",
+    "contentFile": "content/locations/yester_hill.html",
+    "visibility": "dm-only",
+    "tags": [
+      "barovia_region",
+      "location"
+    ],
+    "related": [
+      "gulthias_staff",
+      "berserker_cairns",
+      "druids_circle",
+      "gulthias_tree",
+      "wall_of_fog",
+      "barovian_witch",
+      "tree_blight",
+      "session_14_yester_hill"
+    ]
+  },
+  {
+    "id": "berserker_cairns",
+    "area_code": "Y2",
+    "name": "Berserker Cairns",
+    "type": "location",
+    "category": "Yester Hill",
+    "contentType": "html",
+    "contentFile": "content/locations/berserker_cairns.html",
+    "visibility": "dm-only",
+    "tags": [
+      "yester_hill",
+      "location"
+    ],
+    "related": [
+      "yester_hill"
+    ]
+  },
+  {
+    "id": "druids_circle",
+    "area_code": "Y3",
+    "name": "Druids' Circle",
+    "type": "location",
+    "category": "Yester Hill",
+    "contentType": "html",
+    "contentFile": "content/locations/druids_circle.html",
+    "visibility": "dm-only",
+    "tags": [
+      "yester_hill",
+      "location"
+    ],
+    "related": [
+      "yester_hill",
+      "session_14_yester_hill"
+    ]
+  },
+  {
+    "id": "gulthias_tree",
+    "area_code": "Y4",
+    "name": "Gulthias Tree",
+    "type": "location",
+    "category": "Yester Hill",
+    "contentType": "html",
+    "contentFile": "content/locations/gulthias_tree.html",
+    "visibility": "dm-only",
+    "tags": [
+      "yester_hill",
+      "location"
+    ],
+    "related": [
+      "yester_hill",
+      "tree_blight",
+      "gulthias_staff",
+      "session_14_yester_hill"
+    ]
+  },
+  {
+    "id": "wall_of_fog",
+    "area_code": "Y5",
+    "name": "Wall Of Fog",
+    "type": "location",
+    "category": "Yester Hill",
+    "contentType": "html",
+    "contentFile": "content/locations/wall_of_fog.html",
+    "visibility": "dm-only",
+    "tags": [
+      "yester_hill",
+      "location"
+    ],
+    "related": [
+      "yester_hill"
+    ]
+  },
+  {
+    "id": "guard_post",
+    "area_code": "Z2",
+    "name": "Guard Post",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/guard_post.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "wolf_den",
+    "area_code": "Z3",
+    "name": "Wolf Den",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/wolf_den.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "underground_spring",
+    "area_code": "Z4",
+    "name": "Underground Spring",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/underground_spring.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "deep_caves",
+    "area_code": "Z5",
+    "name": "Deep Caves",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/deep_caves.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "kirils_cave",
+    "area_code": "Z6",
+    "name": "Kiril's Cave",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/kirils_cave.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den",
+      "castle_ravenloft"
+    ]
+  },
+  {
+    "id": "shrine_of_mother_night",
+    "area_code": "Z7",
+    "name": "Shrine Of Mother Night",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/shrine_of_mother_night.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "ring_of_stone",
+    "area_code": "Z8",
+    "name": "Ring Of Stone",
+    "type": "location",
+    "category": "Werewolf Den",
+    "contentType": "html",
+    "contentFile": "content/locations/ring_of_stone.html",
+    "visibility": "dm-only",
+    "tags": [
+      "werewolf_den",
+      "location"
+    ],
+    "related": [
+      "werewolf_den"
+    ]
+  },
+  {
+    "id": "wizard_of_wines",
+    "area_code": "W",
+    "name": "Wizard of Wines Winery",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/wizard_of_wines.html",
+    "visibility": "dm-only",
+    "related": [
+      "keepers_of_the_feather",
+      "tree_blight",
+      "gulthias_staff"
+    ],
+    "tags": [
+      "dungeon",
+      "winery",
+      "location"
+    ]
+  },
+  {
+    "id": "werewolf_den",
+    "area_code": "Z",
+    "name": "Werewolf Den",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/werewolf_den.html",
+    "visibility": "dm-only",
+    "related": [
+      "werewolf",
+      "kiril_stoyanovich"
+    ],
+    "tags": [
+      "dungeon",
+      "werewolf",
+      "location"
+    ]
+  },
+  {
+    "id": "death_house",
+    "area_code": "DH",
+    "name": "Death House",
+    "type": "location",
+    "category": "Dungeons",
+    "contentType": "html",
+    "contentFile": "content/locations/death_house.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_barovia"
+    ],
+    "tags": [
+      "dungeon",
+      "haunted",
+      "intro",
+      "location"
+    ]
+  },
+  {
+    "id": "abbey_of_saint_markovia",
+    "area_code": "S10",
+    "name": "Abbey of Saint Markovia",
+    "type": "location",
+    "category": "Village of Krezk / Abbey",
+    "contentType": "html",
+    "contentFile": "content/locations/abbey_of_saint_markovia.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "the_abbot",
+      "mongrelfolk"
+    ],
+    "tags": [
+      "abbey",
+      "krezk",
+      "religion",
+      "location"
+    ]
+  },
+  {
+    "id": "st_andral_feast",
+    "area_code": "ST",
+    "name": "St. Andral's Feast (Special Event)",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/st_andral_feast.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "father_lucian",
+      "st_andrals_bones_mystery"
+    ],
+    "tags": [
+      "event",
+      "vallaki",
+      "church",
+      "location"
+    ]
+  },
+  {
+    "id": "burgomasters_mansion_vallaki",
+    "area_code": "N3",
+    "name": "Burgomaster's Mansion (Vallaki)",
+    "type": "location",
+    "category": "Town of Vallaki",
+    "contentType": "html",
+    "contentFile": "content/locations/burgomasters_mansion_vallaki.html",
+    "visibility": "dm-only",
+    "related": [
+      "town_of_vallaki",
+      "baron_vargas_vallakovich",
+      "izek_strazni"
+    ],
+    "tags": [
+      "mansion",
+      "burgomaster",
+      "vallaki",
+      "location"
+    ]
+  }
+]

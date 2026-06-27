@@ -1,17 +1,29 @@
 @echo off
-REM start-map.bat — double-click to run the FAIL Academy campus map.
-REM Starts a tiny local static server (Python) and opens it in your browser.
-REM Close the "FAIL server" window to stop the server.
+REM start-map.bat — double-click to launch the DnDAcademy campaign dossier.
+REM Runs data integrity tests, starts a local static server, opens the browser.
+REM Close the server window to stop the server.
 
 cd /d "%~dp0"
 
-REM Launch the static server in its own window (try the py launcher, then python).
+REM ── Data integrity tests ───────────────────────────────────────────────────
 where py >nul 2>&1 && (
-  start "FAIL server" cmd /c "py -m http.server 8000"
+  py tools\test.py
 ) || (
-  start "FAIL server" cmd /c "python -m http.server 8000"
+  python tools\test.py
+)
+if %ERRORLEVEL% neq 0 (
+  echo.
+  echo  *** Fix the errors above when you get a chance. Starting anyway... ***
+  echo.
+  timeout /t 3 /nobreak >nul
 )
 
-REM Give the server a moment to bind, then open the browser.
+REM ── Static server ──────────────────────────────────────────────────────────
+where py >nul 2>&1 && (
+  start "DnDAcademy server" cmd /c "py -m http.server 8000"
+) || (
+  start "DnDAcademy server" cmd /c "python -m http.server 8000"
+)
+
 timeout /t 1 /nobreak >nul
 start "" "http://localhost:8000/launcher.html"

@@ -3,5 +3,15 @@
     "id": "lost-mine",
     "name": "Lost Mine of Phandelver",
     "subtitle": "Sword Coast — Characters Level 1–5"
+  },
+  {
+    "id": "curse-of-strahd",
+    "name": "Curse of Strahd",
+    "subtitle": "Barovia — Characters Level 1-10"
+  },
+  {
+    "id": "descent-into-avernus",
+    "name": "Baldur's Gate: Descent into Avernus",
+    "subtitle": "Baldur's Gate & Avernus — Characters Level 1–13"
   }
 ]

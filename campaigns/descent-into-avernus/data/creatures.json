@@ -1,0 +1,269 @@
+[
+  {
+    "id": "amnizu",
+    "name": "Amnizu",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/amnizu.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "avernus"
+    ]
+  },
+  {
+    "id": "narzugon",
+    "name": "Narzugon",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/narzugon.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "hell-knight"
+    ],
+    "related": [
+      "infernal_tack",
+      "zariel_legion"
+    ]
+  },
+  {
+    "id": "merregon",
+    "name": "Merregon",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/merregon.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "legionnaire"
+    ]
+  },
+  {
+    "id": "nupperibo",
+    "name": "Nupperibo",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/nupperibo.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "lemure"
+    ]
+  },
+  {
+    "id": "abishai",
+    "name": "Abishai",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/abishai.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "dragon-kin"
+    ]
+  },
+  {
+    "id": "erinyes",
+    "name": "Erinyes",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/erinyes.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil",
+      "angel"
+    ]
+  },
+  {
+    "id": "hellfire_engine",
+    "name": "Hellfire Engine",
+    "type": "creature",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/creatures/hellfire_engine.html",
+    "visibility": "dm-only",
+    "tags": [
+      "construct",
+      "avernus"
+    ]
+  },
+  {
+    "id": "infernal_war_machine",
+    "name": "Infernal War Machine",
+    "type": "creature",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/creatures/infernal_war_machine.html",
+    "visibility": "dm-only",
+    "related": [
+      "avernus",
+      "bels_forge",
+      "session_03_avernus",
+      "infernal_war_machines_guide"
+    ],
+    "tags": [
+      "vehicle",
+      "avernus"
+    ]
+  },
+  {
+    "id": "hollyphant",
+    "name": "Hollyphant",
+    "type": "creature",
+    "category": "Celestials",
+    "contentType": "html",
+    "contentFile": "content/creatures/hollyphant.html",
+    "visibility": "dm-only",
+    "related": [
+      "lulu"
+    ],
+    "tags": [
+      "celestial",
+      "elephant"
+    ]
+  },
+  {
+    "id": "hellwasp",
+    "name": "Hellwasp",
+    "type": "creature",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/creatures/hellwasp.html",
+    "visibility": "dm-only",
+    "related": [
+      "hellwasp_nest"
+    ],
+    "tags": [
+      "fiend",
+      "insect"
+    ]
+  },
+  {
+    "id": "death_knight",
+    "name": "Death Knight",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/death_knight.html",
+    "visibility": "dm-only",
+    "related": [
+      "olanthius"
+    ],
+    "tags": [
+      "undead"
+    ]
+  },
+  {
+    "id": "ghost_hellrider",
+    "name": "Ghost (Hellrider)",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/ghost_hellrider.html",
+    "visibility": "dm-only",
+    "related": [
+      "harumanns_hill"
+    ],
+    "tags": [
+      "undead",
+      "ghost"
+    ]
+  },
+  {
+    "id": "crokektooth_creature",
+    "name": "Crokek'toeck",
+    "type": "creature",
+    "category": "Demons",
+    "contentType": "html",
+    "contentFile": "content/creatures/crokektooth_creature.html",
+    "visibility": "dm-only",
+    "related": [
+      "crokektooth",
+      "river_styx"
+    ],
+    "tags": [
+      "demon",
+      "chapter-3"
+    ]
+  },
+  {
+    "id": "bulezau",
+    "name": "Bulezau",
+    "type": "creature",
+    "category": "Demons",
+    "contentType": "html",
+    "contentFile": "content/creatures/bulezau.html",
+    "visibility": "dm-only",
+    "tags": [
+      "demon"
+    ]
+  },
+  {
+    "id": "spined_devil",
+    "name": "Spined Devil (Spinagon)",
+    "type": "creature",
+    "category": "Devils",
+    "contentType": "html",
+    "contentFile": "content/creatures/spined_devil.html",
+    "visibility": "dm-only",
+    "tags": [
+      "devil"
+    ]
+  },
+  {
+    "id": "soul_coin_undead",
+    "name": "Soul (Soul Coin)",
+    "type": "creature",
+    "category": "Undead",
+    "contentType": "html",
+    "contentFile": "content/creatures/soul_coin_undead.html",
+    "visibility": "dm-only",
+    "related": [
+      "soul_coin"
+    ],
+    "tags": [
+      "undead",
+      "soul"
+    ]
+  },
+  {
+    "id": "zariel_stat_block",
+    "name": "Zariel (Stat Block)",
+    "type": "creature",
+    "category": "Archdevils",
+    "contentType": "html",
+    "contentFile": "content/creatures/zariel_stat_block.html",
+    "visibility": "dm-only",
+    "related": [
+      "zariel"
+    ],
+    "tags": [
+      "archdevil",
+      "fallen-angel"
+    ]
+  },
+  {
+    "id": "kenku_scavengers",
+    "name": "Kenku Scavengers",
+    "type": "creature",
+    "category": "Avernus",
+    "contentType": "html",
+    "contentFile": "content/creatures/kenku_scavengers.html",
+    "visibility": "dm-only",
+    "related": [
+      "fort_knucklebone",
+      "mad_maggie"
+    ],
+    "tags": [
+      "kenku",
+      "chapter-3"
+    ]
+  }
+]

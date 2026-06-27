@@ -6,9 +6,16 @@
     "category": "Major Factions",
     "contentType": "html",
     "contentFile": "content/factions/lords_alliance.html",
-    "visibility": "player",
-    "related": ["sildar_hallwinter", "iarno_albrek"],
-    "tags": ["political", "order", "sword-coast"]
+    "visibility": "dm-only",
+    "related": [
+      "sildar_hallwinter",
+      "iarno_albrek"
+    ],
+    "tags": [
+      "political",
+      "order",
+      "sword-coast"
+    ]
   },
   {
     "id": "harpers",
@@ -17,9 +24,15 @@
     "category": "Major Factions",
     "contentType": "html",
     "contentFile": "content/factions/harpers.html",
-    "visibility": "player",
-    "related": ["sister_garaele"],
-    "tags": ["secret", "good", "information"]
+    "visibility": "dm-only",
+    "related": [
+      "sister_garaele"
+    ],
+    "tags": [
+      "secret",
+      "good",
+      "information"
+    ]
   },
   {
     "id": "order_of_the_gauntlet",
@@ -28,9 +41,15 @@
     "category": "Major Factions",
     "contentType": "html",
     "contentFile": "content/factions/order_of_the_gauntlet.html",
-    "visibility": "player",
-    "related": ["daran_edermath"],
-    "tags": ["holy", "militant", "lawful"]
+    "visibility": "dm-only",
+    "related": [
+      "daran_edermath"
+    ],
+    "tags": [
+      "holy",
+      "militant",
+      "lawful"
+    ]
   },
   {
     "id": "emerald_enclave",
@@ -39,9 +58,15 @@
     "category": "Major Factions",
     "contentType": "html",
     "contentFile": "content/factions/emerald_enclave.html",
-    "visibility": "player",
-    "related": ["reidoth"],
-    "tags": ["nature", "druids", "rangers"]
+    "visibility": "dm-only",
+    "related": [
+      "reidoth"
+    ],
+    "tags": [
+      "nature",
+      "druids",
+      "rangers"
+    ]
   },
   {
     "id": "zhentarim",
@@ -50,9 +75,15 @@
     "category": "Major Factions",
     "contentType": "html",
     "contentFile": "content/factions/zhentarim.html",
-    "visibility": "player",
-    "related": ["halia_thornton"],
-    "tags": ["criminal", "mercenary", "shadow"]
+    "visibility": "dm-only",
+    "related": [
+      "halia_thornton"
+    ],
+    "tags": [
+      "criminal",
+      "mercenary",
+      "shadow"
+    ]
   },
   {
     "id": "cragmaw_tribe",
@@ -62,8 +93,19 @@
     "contentType": "html",
     "contentFile": "content/factions/cragmaw_tribe.html",
     "visibility": "dm-only",
-    "related": ["klarg", "king_grol", "yeemik", "cragmaw_hideout", "cragmaw_castle", "nezznar_black_spider"],
-    "tags": ["goblinoid", "enemy", "cragmaw"]
+    "related": [
+      "klarg",
+      "king_grol",
+      "yeemik",
+      "cragmaw_hideout",
+      "cragmaw_castle",
+      "nezznar_black_spider"
+    ],
+    "tags": [
+      "goblinoid",
+      "enemy",
+      "cragmaw"
+    ]
   },
   {
     "id": "redbrands",
@@ -73,7 +115,17 @@
     "contentType": "html",
     "contentFile": "content/factions/redbrands.html",
     "visibility": "dm-only",
-    "related": ["iarno_albrek", "redbrand_hideout", "tresendar_manor", "nothic", "nezznar_black_spider"],
-    "tags": ["criminal", "enemy", "phandalin"]
+    "related": [
+      "iarno_albrek",
+      "redbrand_hideout",
+      "tresendar_manor",
+      "nothic",
+      "nezznar_black_spider"
+    ],
+    "tags": [
+      "criminal",
+      "enemy",
+      "phandalin"
+    ]
   }
 ]

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "vistani",
+    "name": "Vistani",
+    "type": "faction",
+    "category": "Peoples of Barovia",
+    "contentType": "html",
+    "contentFile": "content/factions/vistani.html",
+    "visibility": "dm-only",
+    "related": [
+      "madam_eva",
+      "arrigal",
+      "luvash",
+      "tser_pool_encampment",
+      "ezmerelda_davenir"
+    ],
+    "tags": [
+      "vistani",
+      "travelers",
+      "cursed",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "keepers_of_the_feather",
+    "name": "Keepers of the Feather",
+    "type": "faction",
+    "category": "Secret Orders",
+    "contentType": "html",
+    "contentFile": "content/factions/keepers_of_the_feather.html",
+    "visibility": "dm-only",
+    "related": [
+      "urwin_martikov",
+      "danika_dorakova",
+      "wereraven",
+      "blue_water_inn",
+      "wizard_of_wines",
+      "castle_ravenloft",
+      "session_12_wizard_of_wines"
+    ],
+    "tags": [
+      "secret",
+      "wereraven",
+      "resistance",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "order_of_the_silver_dragon",
+    "name": "Order of the Silver Dragon",
+    "type": "faction",
+    "category": "Knightly Orders",
+    "contentType": "html",
+    "contentFile": "content/factions/order_of_the_silver_dragon.html",
+    "visibility": "dm-only",
+    "related": [
+      "argynvostholt",
+      "vladimir_horngaard",
+      "argynvost_skull_mystery"
+    ],
+    "tags": [
+      "knights",
+      "revenant",
+      "dragon",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "abbey_of_saint_markovia_faction",
+    "name": "Abbey of Saint Markovia",
+    "type": "faction",
+    "category": "Religious Orders",
+    "contentType": "html",
+    "contentFile": "content/factions/abbey_of_saint_markovia_faction.html",
+    "visibility": "dm-only",
+    "related": [
+      "village_of_krezk",
+      "the_abbot",
+      "mongrelfolk",
+      "session_08_village_of_krezk"
+    ],
+    "tags": [
+      "abbey",
+      "religion",
+      "krezk",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "zhentarim",
+    "name": "Zhentarim",
+    "type": "faction",
+    "category": "Adventurers League",
+    "contentType": "html",
+    "contentFile": "content/factions/zhentarim.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "adventurers-league",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "harpers",
+    "name": "Harpers",
+    "type": "faction",
+    "category": "Adventurers League",
+    "contentType": "html",
+    "contentFile": "content/factions/harpers.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "adventurers-league",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "order_of_the_gauntlet",
+    "name": "Order of the Gauntlet",
+    "type": "faction",
+    "category": "Adventurers League",
+    "contentType": "html",
+    "contentFile": "content/factions/order_of_the_gauntlet.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "adventurers-league",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "emerald_enclave",
+    "name": "Emerald Enclave",
+    "type": "faction",
+    "category": "Adventurers League",
+    "contentType": "html",
+    "contentFile": "content/factions/emerald_enclave.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "adventurers-league",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "lords_alliance",
+    "name": "Lords' Alliance",
+    "type": "faction",
+    "category": "Adventurers League",
+    "contentType": "html",
+    "contentFile": "content/factions/lords_alliance.html",
+    "visibility": "dm-only",
+    "related": [],
+    "tags": [
+      "adventurers-league",
+      "dm-only"
+    ]
+  }
+]

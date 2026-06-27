@@ -6,7 +6,7 @@
     "category": "Primary Mysteries",
     "contentType": "html",
     "contentFile": "content/mysteries/wave_echo_cave_location.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["gundren_rockseeker", "wave_echo_cave", "cragmaw_castle", "king_grol", "fate_of_phandelver_pact"]
   },
   {
@@ -16,7 +16,7 @@
     "category": "Primary Mysteries",
     "contentType": "html",
     "contentFile": "content/mysteries/black_spider_identity.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["nezznar_black_spider", "iarno_albrek", "cragmaw_tribe", "redbrand_hideout"]
   },
   {
@@ -26,7 +26,7 @@
     "category": "Primary Mysteries",
     "contentType": "html",
     "contentFile": "content/mysteries/glasstaff_identity.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["iarno_albrek", "redbrand_hideout", "sildar_hallwinter", "lords_alliance"]
   },
   {
@@ -56,7 +56,7 @@
     "category": "Side Quests",
     "contentType": "html",
     "contentFile": "content/mysteries/mirnas_heirloom.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["redbrand_hideout", "ruins_of_thundertree"]
   },
   {
@@ -66,7 +66,7 @@
     "category": "Side Quests",
     "contentType": "html",
     "contentFile": "content/mysteries/bowgentles_spellbook.html",
-    "visibility": "player",
+    "visibility": "dm-only",
     "related": ["agatha", "sister_garaele", "conyberry"]
   }
 ]
