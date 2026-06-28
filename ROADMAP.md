@@ -47,17 +47,18 @@ Auto-detect approach: any multi-roll of d20 shows individual die values side-by-
 
 ## Icebox (easiest → hardest)
 
-- ~~**Remove dashboard subtitle**~~ ✅ Done — stripped from `makeHeader()`; was a one-line fix.
-- ~~**Location bar → dashboard header**~~ ✅ Already done — `#location-bar` no longer exists; back button, time toggle, and Full Entry are all inline in `makeHeader()`.
-- **App rename** — the tool has outgrown the "FAIL Academy" concept and is now a general D&D campaign dossier. Pick a new name; mechanical find/replace across HTML/JS/CSS.
-- **5e-bits API research** — evaluate https://5e-bits.github.io/docs/ for integration opportunities: spell lookup, monster stat blocks, equipment, classes/spells by level. Pure research, no code. Any API use must be gracefully optional (DM explicitly triggers; fails silently offline).
-- **Search improvements** — tag-based filtering, fuzzy match on existing search UI.
-- **Persistent DM state** — notes, revealed flags, session log (partially done via localStorage; needs UI to expose it cleanly).
-- **Session runner image panel** — split bottom of session runner into thirds; center panel cycles images (← →) linked to the session. Entity portrait rendering via `contentType:"image"` is already done; this is the session runner layout + content pipeline. Medium effort.
-- **Random generator expansion** — extend beyond NPC/item: encounter tables, weather, rumors, names.
-- **Player vs DM view** — full screen-safe player mode; DM toggle exists but content gating is not fully built out.
-- **Import process overhaul** — CoS and DiA are sparse stubs; define content standard per entity type, richer templates, semi-automate Google Doc → JSON+HTML stub. Tackle one campaign at a time. Large effort.
-- **Party overview page** — new panel/page: track party members, HP, conditions, inventory. Needs a data model and persistent state.
+- ~~**Remove dashboard subtitle**~~ ✅ Done — one-line fix in `makeHeader()`.
+- ~~**Location bar → dashboard header**~~ ✅ Already done — `#location-bar` gone; back button, time toggle, Full Entry all inline in `makeHeader()`.
+- **App rename** — pick a new name; mechanical find/replace across HTML/JS/CSS.
+- **5e-bits API research** — evaluate https://5e-bits.github.io/docs/ for spell lookup, monster stat blocks, etc. Pure research, no code. Must be gracefully optional (DM-triggered; fails silently offline).
+- ~~**Search improvements**~~ ✅ Done — tag search, multi-word AND matching, score-based ranking.
+- ~~**Persistent DM state**~~ ✅ Already done — notes, revealed flags, session completion, location, and time all persisted via localStorage.
+- **Session runner image panel** — split bottom of session runner into thirds; center panel cycles images (← →) from related image entities. Medium effort.
+- ~~**Random generator expansion**~~ ✅ Done — added "Tables" third tab with Weather (weighted conditions + detail) and Encounter (4 environments: Road, Wilderness, Town, Dungeon) roll tables.
+- **Color scheme — contrast overhaul** — many backgrounds are too close in color; add more contrast and some lighter surfaces. Review all panel/modal/overlay backgrounds.
+- ~~**Player vs DM view**~~ ✅ Already done — `isVisible()` gates on `visibility:"player"` AND `isRevealed()`; dm-only blocks hidden in player mode; toggle + badge in topbar.
+- **Import process overhaul** — CoS and DiA are sparse stubs; define content standard per entity type, richer templates, semi-automate Google Doc → JSON+HTML stub. One campaign at a time. Large effort.
+- **Party overview page** — new panel/page: party members, HP, conditions, inventory. Needs data model + persistent state. Large effort.
 
 ---
 

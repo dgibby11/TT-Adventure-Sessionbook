@@ -1861,6 +1861,54 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   padding: 0.2rem 0;
 }
 
+/* ── Roll tables ── */
+#gen-tables-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.gen-table-section {
+  background: rgba(40,32,22,0.5);
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  padding: 0.5rem 0.65rem;
+}
+.gen-table-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.gen-table-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gold);
+  flex: 1;
+}
+.gen-table-roll-btn {
+  background: var(--panel-bg);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 3px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.gen-table-roll-btn:hover { background: rgba(180,140,60,0.12); }
+.gen-table-result { min-height: 1rem; }
+.gen-table-condition {
+  font-size: 0.82rem;
+  color: var(--ink);
+  margin: 0 0 0.15rem;
+}
+.gen-table-detail {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+#gen-enc-env { font-size: 0.75rem; padding: 0.1rem 0.3rem; }
+
 /* ── NPC seed form ── */
 #gen-npc-form {
   background: rgba(40,32,22,0.5);

@@ -781,6 +781,78 @@
     },
   };
 
+  // ── Roll tables (weather, encounter) ────────────────────────────────────────
+  T.weather = {
+    condition: [
+      { w: 3, v: 'Clear skies, good visibility.' },
+      { w: 3, v: 'Partly cloudy, light breeze.' },
+      { w: 2, v: 'Overcast and grey — feels like rain.' },
+      { w: 2, v: 'Light rain, steady drizzle.' },
+      { w: 1, v: 'Heavy rain, visibility reduced to 60 ft.' },
+      { w: 1, v: 'Thick fog, visibility 30 ft.' },
+      { w: 1, v: 'Thunderstorm — lightning, hard rain, poor visibility.' },
+      { w: 1, v: 'Biting wind and cold; exposed travel is punishing.' },
+      { w: 1, v: 'Unseasonable heat, air is still and dry.' },
+      { w: 1, v: 'Snowfall, light accumulation.' },
+    ],
+    detail: [
+      'The road is muddy and slow going.',
+      'A murder of crows wheels overhead.',
+      'The air smells of pine and cold water.',
+      'Distant thunder rolls from the north.',
+      'The wind shifts suddenly, bringing the smell of smoke.',
+      'A fog bank clings to the low ground ahead.',
+      'Sunlight breaks through briefly, illuminating the valley.',
+      'The sky turns an unusual shade of copper at the horizon.',
+      'Something howled in the distance about ten minutes ago.',
+      'Animal tracks cross the path — large, unidentified.',
+      null, null, null,
+    ],
+  };
+
+  T.encounter = {
+    Road: [
+      { who: 'A merchant wagon', doing: 'heading to the nearest town', mood: 'Friendly — willing to trade news for safe escort a mile or two.' },
+      { who: '1d4 travelers', doing: 'moving quickly', mood: 'Wary — they won\'t explain why they\'re in a hurry.' },
+      { who: '2d4 town guards on patrol', doing: 'questioning anyone on the road', mood: 'Official — searching for a named fugitive.' },
+      { who: 'A solitary rider', doing: 'pushing their horse hard', mood: 'No time to stop — clearly carrying urgent news.' },
+      { who: 'A broken-down cart', doing: 'blocking half the road', mood: 'Owner is frustrated. Needs a hand or a simple repair.' },
+      { who: '1d6 bandits', doing: 'blocking the road with a rope strung between trees', mood: 'Hostile — demanding a toll. Will back down if outnumbered.' },
+      { who: 'A peddler on foot', doing: 'hawking potions and curios', mood: 'Cheerful — knows local gossip; one item is genuinely useful.' },
+      { who: '2d4 pilgrims', doing: 'traveling to a distant shrine', mood: 'Peaceful — grateful for company.' },
+    ],
+    Wilderness: [
+      { who: '1d4 wolves', doing: 'following the party at a distance', mood: 'Curious or hungry — sizing up prey. Attack if party is small or wounded.' },
+      { who: 'A wounded deer', doing: 'limping across the path', mood: 'Something has been hunting it — the hunter may still be nearby.' },
+      { who: '1d6 goblin scouts', doing: 'watching from the treeline', mood: 'Skittish — will flee if spotted first, report back if not.' },
+      { who: 'A hermit', doing: 'gathering herbs off the trail', mood: 'Eccentric but sharp. Knows the region better than most.' },
+      { who: '1d4 bandits', doing: 'camped off the trail', mood: 'Opportunistic — attack if the party looks weak or distracted.' },
+      { who: 'A giant spider', doing: 'crossing the path between two old trees', mood: 'Territorial if approached. There are likely more nearby.' },
+      { who: 'A brown bear', doing: 'fishing in a stream just off the path', mood: 'Indifferent unless provoked or food is involved.' },
+      { who: 'An injured traveler', doing: 'unable to walk, calling for help', mood: 'Desperate — may not be what they seem.' },
+    ],
+    Town: [
+      { who: 'A pickpocket', doing: 'working the market crowd', mood: 'Friendly cover story. Eyeing the party\'s coin.' },
+      { who: 'Two locals', doing: 'arguing loudly in the street', mood: 'About a debt, a stolen animal, or a missing relative.' },
+      { who: 'A town guard', doing: 'watching the party from across the square', mood: 'Suspicious — something happened recently and outsiders are convenient.' },
+      { who: 'A street vendor', doing: 'hawking clearly questionable goods', mood: 'Pushy — but has one item that is genuinely hard to find.' },
+      { who: 'A drunk off-duty soldier', doing: 'causing a minor scene at a tavern door', mood: 'Belligerent but harmless — unless ignored, then escalates.' },
+      { who: 'A child', doing: 'following the party at a distance', mood: 'Fascinated. Will not stop asking questions.' },
+      { who: 'A cloaked figure', doing: 'watching from a doorway', mood: 'Makes eye contact, then slips into an alley.' },
+      { who: 'A messenger', doing: 'running past urgently', mood: 'Can be stopped — carries news worth intercepting.' },
+    ],
+    Dungeon: [
+      { who: '1d6 skeletons', doing: 'patrolling a corridor on a fixed route', mood: 'Hostile on sight.' },
+      { who: 'A lone survivor', doing: 'huddled in a dead end', mood: 'Terrified — hasn\'t eaten in days. May know the layout.' },
+      { who: '1d4 goblins', doing: 'looting a dead adventurer', mood: 'Flee on sight if outnumbered; attack from behind if not.' },
+      { who: 'Sounds', doing: 'movement behind a locked door', mood: 'Rhythmic, like pacing. Stops when it hears the party.' },
+      { who: '1d4 giant rats', doing: 'nesting in a pile of mouldy supplies', mood: 'Attack if disturbed or cornered.' },
+      { who: 'A rival adventuring party (2d4)', doing: 'heading the opposite direction', mood: 'Competitive, cagey about what they\'ve found — not immediately hostile.' },
+      { who: 'A stirge swarm', doing: 'roosting on the ceiling ahead', mood: 'Dormant until torchlight or noise reaches them.' },
+      { who: 'A suspiciously placed chest', doing: '— visibly unlocked, sitting in the open', mood: 'Almost certainly trapped. The floor around it is clean.' },
+    ],
+  };
+
   // ── External table loading ───────────────────────────────────────────────────
   // Fetches generator/npc-tables.json relative to the app root.
   // Array fields are appended when _merge:true (default), replaced when _merge:false.
@@ -1044,6 +1116,18 @@
     URL.revokeObjectURL(url);
   }
 
+  // ── Roll-table generators ────────────────────────────────────────────────────
+  function generateWeather() {
+    const condition = rollW(T.weather.condition);
+    const detail    = roll(T.weather.detail);
+    return { condition, detail };
+  }
+
+  function generateEncounter(env) {
+    const table = T.encounter[env] || T.encounter['Road'];
+    return roll(table);
+  }
+
   // ── UI ───────────────────────────────────────────────────────────────────────
   let overlay, previewEl, saveBtn, exportBtn, rollBtn;
   let activeTab = 'npc';
@@ -1078,6 +1162,7 @@
         <div id="generator-tabs">
           <button class="gen-tab gen-tab-active" data-type="npc">NPC</button>
           <button class="gen-tab" data-type="item">Item</button>
+          <button class="gen-tab" data-type="tables">Tables</button>
         </div>
 
         <div id="generator-body">
@@ -1132,6 +1217,30 @@
             </div>
           </div>
 
+          <!-- Roll tables (weather + encounter) -->
+          <div id="gen-tables-area" hidden>
+            <div class="gen-table-section">
+              <div class="gen-table-header">
+                <span class="gen-table-label">Weather</span>
+                <button class="gen-table-roll-btn" data-table="weather" type="button">Roll</button>
+              </div>
+              <div class="gen-table-result" id="gen-weather-result"></div>
+            </div>
+            <div class="gen-table-section">
+              <div class="gen-table-header">
+                <span class="gen-table-label">Encounter</span>
+                <select id="gen-enc-env" class="gen-form-select">
+                  <option>Road</option>
+                  <option>Wilderness</option>
+                  <option>Town</option>
+                  <option>Dungeon</option>
+                </select>
+                <button class="gen-table-roll-btn" data-table="encounter" type="button">Roll</button>
+              </div>
+              <div class="gen-table-result" id="gen-encounter-result"></div>
+            </div>
+          </div>
+
           <div id="generator-saved-area">
             <p class="gen-saved-title">Saved Entities</p>
             <ul id="gen-saved-list"></ul>
@@ -1156,11 +1265,16 @@
         overlay.querySelectorAll('.gen-tab').forEach((b) => b.classList.remove('gen-tab-active'));
         btn.classList.add('gen-tab-active');
         _current = null;
-        previewEl.innerHTML = `<p class="modal-status">Hit Generate to create ${activeTab === 'npc' ? 'an NPC' : 'an item'}.</p>`;
         saveBtn.disabled = true;
         exportBtn.disabled = true;
-        const form = overlay.querySelector('#gen-npc-form');
-        if (form) form.hidden = (activeTab !== 'npc');
+
+        const isTables = activeTab === 'tables';
+        overlay.querySelector('#gen-npc-form').hidden   = (activeTab !== 'npc');
+        overlay.querySelector('#gen-roll-area').hidden  = isTables;
+        overlay.querySelector('#gen-tables-area').hidden = !isTables;
+        if (!isTables) {
+          previewEl.innerHTML = `<p class="modal-status">Hit Generate to create ${activeTab === 'npc' ? 'an NPC' : 'an item'}.</p>`;
+        }
       });
     });
 
@@ -1170,6 +1284,25 @@
       renderPreview(_current);
       saveBtn.disabled = false;
       exportBtn.disabled = false;
+    });
+
+    // Tables tab roll buttons
+    overlay.querySelector('#gen-tables-area').addEventListener('click', (e) => {
+      const btn = e.target.closest('.gen-table-roll-btn');
+      if (!btn) return;
+      const table = btn.dataset.table;
+      if (table === 'weather') {
+        const w = generateWeather();
+        const el = overlay.querySelector('#gen-weather-result');
+        el.innerHTML = `<p class="gen-table-condition">${w.condition}</p>` +
+          (w.detail ? `<p class="gen-table-detail">${w.detail}</p>` : '');
+      } else if (table === 'encounter') {
+        const env = overlay.querySelector('#gen-enc-env').value;
+        const enc = generateEncounter(env);
+        const el  = overlay.querySelector('#gen-encounter-result');
+        el.innerHTML = `<p class="gen-table-condition"><strong>${enc.who}</strong> — ${enc.doing}.</p>` +
+          `<p class="gen-table-detail">${enc.mood}</p>`;
+      }
     });
 
     saveBtn.addEventListener('click', () => {
@@ -1316,7 +1449,7 @@
 
   // Test hook — exposes pure logic functions for tools/tests.html.
   // Not used in production; safe to leave in place.
-  window._genTest = { generateNPC, generateItem, rollOccupation, mergeExt, roll, rollW, T };
+  window._genTest = { generateNPC, generateItem, generateWeather, generateEncounter, rollOccupation, mergeExt, roll, rollW, T };
 
   function wire() {
     const btn = document.getElementById('generator-btn');
