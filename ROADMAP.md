@@ -99,16 +99,16 @@ Add visual assets for high-value entities: town maps, NPC portraits, magic item 
 
 ---
 
-## Icebox (good ideas, not yet prioritized)
+## Icebox (easiest → hardest)
 
-- **5e-bits API research** — evaluate https://5e-bits.github.io/docs/ for integration opportunities: spell lookup, monster stat blocks, equipment, classes/spells by level. Assess which endpoints are useful at the table vs. what we already author locally. Note: the app is offline-first so any API use must be gracefully optional (DM explicitly triggers a lookup; fails silently when offline).
-- **App rename** — the tool has outgrown the "FAIL Academy" concept and is now a general D&D campaign dossier. Pick a new name that reflects that.
-- **Remove dashboard subtitle** — strip `campaign.subtitle` (e.g. "Sword Coast — Characters Level 1–5") from the `dash-location-header` meta line; it's too verbose for the header strip. Replace with a simpler indicator or nothing.
-- **Persistent DM state** — notes, revealed flags, session log (partially done via localStorage)
-- **Player vs DM view** — screen-safe player mode (DM toggle exists, full gating not built)
-- **Party overview page** — track party members, HP, conditions, inventory
-- **Random generator** — expand beyond NPC/item (encounter tables, weather, rumors, names)
-- **Search improvements** — tag-based filtering, fuzzy match
+- **Remove dashboard subtitle** — strip `campaign.subtitle` (e.g. "Sword Coast — Characters Level 1–5") from the `dash-location-header` meta line; one-line change in `makeHeader()`.
+- **App rename** — the tool has outgrown the "FAIL Academy" concept and is now a general D&D campaign dossier. Pick a new name; mechanical find/replace across HTML/JS/CSS.
+- **5e-bits API research** — evaluate https://5e-bits.github.io/docs/ for integration opportunities: spell lookup, monster stat blocks, equipment, classes/spells by level. Pure research, no code. Any API use must be gracefully optional (DM explicitly triggers; fails silently offline).
+- **Search improvements** — tag-based filtering, fuzzy match on existing search UI.
+- **Persistent DM state** — notes, revealed flags, session log (partially done via localStorage; needs UI to expose it cleanly).
+- **Random generator expansion** — extend beyond NPC/item: encounter tables, weather, rumors, names.
+- **Player vs DM view** — full screen-safe player mode; DM toggle exists but content gating is not fully built out.
+- **Party overview page** — new panel/page: track party members, HP, conditions, inventory. Needs a data model and persistent state.
 
 ---
 
