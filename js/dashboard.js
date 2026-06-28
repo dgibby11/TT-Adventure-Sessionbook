@@ -320,8 +320,13 @@
 
   // ── Map widget ────────────────────────────────────────────────────────────
 
-  function makeMapWidget(entity) {
-    if (!entity || !window.App.isVisible(entity)) return null;
+  function makeMapWidget(entity, skipRevealCheck) {
+    if (!entity) return null;
+    if (skipRevealCheck) {
+      if (entity.visibility === 'dm-only' && !window.App.isDM()) return null;
+    } else {
+      if (!window.App.isVisible(entity)) return null;
+    }
     const src  = window.CAMPAIGN_BASE + '/' + entity.contentFile;
     const wrap = el('div', 'dash-region-map');
     wrap.title = 'Click to open — ' + entity.name;
@@ -336,10 +341,8 @@
 
   function makeRegionMap() {
     const entity = window.App.byId(window.CAMPAIGN.regionMapEntity);
-    if (!entity) return null;
-    // Region map is always shown at root if player-visible — no reveal required.
-    if (entity.visibility === 'dm-only' && !window.App.isDM()) return null;
-    return makeMapWidget(entity);
+    // Region map bypasses reveal — always shown if player-visible.
+    return makeMapWidget(entity, true);
   }
 
   // For non-root locations: pick the DM map if in DM mode, else player map.
