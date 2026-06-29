@@ -270,6 +270,7 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   gap: 0.55rem;
 }
+.dash-quadrants > .dash-row:first-child { min-height: 50vh; }
 .dash-row > .dash-quad,
 .dash-row > .dash-region-map { flex: 1; min-width: 0; }
 /* In player view, curiosities quad is hidden; environment expands naturally */
