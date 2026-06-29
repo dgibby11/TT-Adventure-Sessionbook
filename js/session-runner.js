@@ -165,8 +165,6 @@
   // ── Render ─────────────────────────────────────────────────────────────────
 
   function renderRunner(savedNotes) {
-    document.getElementById('dashboard').hidden = true;
-
     const mount = document.getElementById('session-runner');
     mount.innerHTML = '';
     mount.hidden    = false;
