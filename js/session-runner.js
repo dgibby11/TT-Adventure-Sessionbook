@@ -165,6 +165,7 @@
   // ── Render ─────────────────────────────────────────────────────────────────
 
   function renderRunner(savedNotes) {
+    document.body.classList.add('runner-active');
     const mount = document.getElementById('session-runner');
     mount.innerHTML = '';
     mount.hidden    = false;
@@ -425,8 +426,8 @@
     _session = null; _pins = []; _planHtml = ''; _promptEls = [];
     _detailTitle = _detailBack = _detailBody = _pinsEl = null;
 
+    document.body.classList.remove('runner-active');
     document.getElementById('session-runner').hidden = true;
-    document.getElementById('dashboard').hidden      = false;
   }
 
   // ── Helper ─────────────────────────────────────────────────────────────────

@@ -275,6 +275,9 @@ button { font-family: inherit; cursor: pointer; }
 /* In player view, curiosities quad is hidden; environment expands naturally */
 body:not(.dm-on) .quad-curiosities { display: none; }
 
+/* Runner-active: flatten quad grid into a single row of equal-width columns */
+body.runner-active .dash-quadrants { flex-direction: row; }
+
 /* Region map quad — sits in the bottom row like any other quad */
 .dash-region-map {
   display: flex;
