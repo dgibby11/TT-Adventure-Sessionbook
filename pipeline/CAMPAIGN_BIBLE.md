@@ -89,6 +89,18 @@ aristocracy's naming conventions (titled districts, old-tongue place names).
 Keep the contrast consistent — it reinforces the tonal shift as parties go
 deeper.
 
+## Authoring notes (added 2026-07-10, applies going forward only)
+Locations should work in time-of-day detail where it fits naturally —
+lighting, activity level, sounds/smells that shift through the day (a market
+quarter feels different at dawn setup vs. midday crowds vs. after-dark
+lantern-light; a dive site's crew rotations, tide timing). This is a light
+narrative-quality nudge, not a new required field or a strict checklist
+item — don't force it where it doesn't fit, and don't let it bloat entries.
+**Do not retroactively rewrite earlier entities for this** — a full backfill
+pass is planned as a deliberate later step once the campaign is otherwise
+complete, not something to chase mid-build. Audits should not flag existing
+entities as deficient for lacking this.
+
 ## Schema reference
 Do not duplicate or fork the entity schema here — it lives in root
 `CLAUDE.md` under "Data Model — Entities" and is locked. This file is for

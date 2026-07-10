@@ -61,6 +61,10 @@ doesn't exist yet) with:
   Escalation rule above or came close to it.
 - If nothing was found at all, say so explicitly ("no drift found") rather
   than omitting the section — a clean audit is a real, useful data point.
+- **Entity count summary**: a clean table/list of current totals by type
+  (locations, npcs, factions, items, creatures, mysteries, sessions,
+  references) plus a grand total, so the human can track growth at a glance
+  without opening the data files. Include this every audit, even a clean one.
 
 Then still add the normal one-line entry to `pipeline/LOG.md` (pointing to
 the AUDIT_REPORTS.md section) and follow RUN_PROTOCOL.md Step 5 as usual
