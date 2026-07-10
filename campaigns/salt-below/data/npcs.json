@@ -176,7 +176,9 @@
       "drowned_choir",
       "the_drowned_bell",
       "it_that_kept_the_kingdom",
-      "why_the_kingdom_drowned_mystery"
+      "why_the_kingdom_drowned_mystery",
+      "chancel_deep",
+      "the_long_requiem"
     ],
     "tags": [
       "drowned-choir",
@@ -195,7 +197,8 @@
     "related": [
       "drowned_choir",
       "the_drowned_bell",
-      "the_nightweigh"
+      "the_nightweigh",
+      "the_long_requiem"
     ],
     "tags": [
       "drowned-choir",
@@ -213,7 +216,8 @@
     "visibility": "player",
     "related": [
       "drowned_choir",
-      "saltbone_curios"
+      "saltbone_curios",
+      "verdigris_court"
     ],
     "tags": [
       "drowned-choir",

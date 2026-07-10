@@ -12,9 +12,17 @@
       "the_breaking_deal_mystery",
       "the_drowned_bell",
       "drowned_choir",
-      "isolt_vane"
+      "isolt_vane",
+      "chancel_deep",
+      "the_long_requiem",
+      "the_chancellors_rest"
     ],
-    "tags": ["main-quest", "central-mystery", "old-kingdom", "dm-only"]
+    "tags": [
+      "main-quest",
+      "central-mystery",
+      "old-kingdom",
+      "dm-only"
+    ]
   },
   {
     "id": "the_breaking_deal_mystery",
@@ -31,8 +39,14 @@
       "drowned_choir",
       "the_drowned_bell",
       "harbormasters_post",
-      "the_salt_choked_colonnade"
+      "the_salt_choked_colonnade",
+      "the_chancellors_rest"
     ],
-    "tags": ["main-quest", "central-mystery", "ticking-clock", "dm-only"]
+    "tags": [
+      "main-quest",
+      "central-mystery",
+      "ticking-clock",
+      "dm-only"
+    ]
   }
 ]

@@ -24,7 +24,8 @@
       "the_sunken_causeway",
       "the_salt_choked_colonnade",
       "the_bellweed_shallows",
-      "tallowmark_reach"
+      "tallowmark_reach",
+      "ashgate_wardhouse"
     ],
     "tags": [
       "guild",
@@ -48,7 +49,8 @@
       "tam_ostler",
       "brack_fennimore",
       "port_calder",
-      "the_marrow_trawler"
+      "the_marrow_trawler",
+      "ashgate_wardhouse"
     ],
     "tags": [
       "law",
@@ -77,7 +79,8 @@
       "the_foundered_bride",
       "reavers_ribs",
       "hollowmarch",
-      "farrows_grotto"
+      "farrows_grotto",
+      "the_loom_quarter"
     ],
     "tags": [
       "independent",
@@ -105,7 +108,14 @@
       "why_the_kingdom_drowned_mystery",
       "the_chime_shoal",
       "the_glass_hull",
-      "the_nightweigh"
+      "the_nightweigh",
+      "vantmoor_hall",
+      "the_suitors_approach",
+      "chancel_deep",
+      "verdigris_court",
+      "the_loom_quarter",
+      "underbell_cistern",
+      "the_long_requiem"
     ],
     "tags": [
       "cult",
