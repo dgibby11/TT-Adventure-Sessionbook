@@ -5,9 +5,9 @@
       "phase": 0,
       "title": "Generate concept pitches",
       "description": "Write 2-3 distinct concept pitches (working title, one-paragraph premise, tone, 3-5 factions with one-line motivations, central mystery, rough level arc) to pipeline/CONCEPT_PITCHES.md. Genre should balance light and dark. Scale ambition to eventually match curse-of-strahd/descent-into-avernus (100+ locations). Do not create any campaign files. After writing, mark this task done and write pipeline/STOP with reason 'awaiting concept approval'.",
-      "status": "pending",
+      "status": "done",
       "addedBy": "seed",
-      "notes": ""
+      "notes": "Wrote 3 concept pitches (The Long Autumn, The Salt Below, Wanderer's Compact) to pipeline/CONCEPT_PITCHES.md. Awaiting human approval."
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "iteration": 0,
+  "iteration": 1,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": null,
   "status": "ready",
-  "lastRun": null,
-  "lastIterationType": null,
-  "lastSummary": null
+  "lastRun": "2026-07-10T09:09:49Z",
+  "lastIterationType": "build",
+  "lastSummary": "Phase 0: wrote 3 concept pitches to CONCEPT_PITCHES.md and halted for human approval."
 }
