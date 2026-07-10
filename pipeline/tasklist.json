@@ -176,16 +176,18 @@
       "phase": 3,
       "title": "Author Drowned Districts creatures",
       "description": "Author 3-4 creature entities for the Drowned Districts (levels 4-7): Drowned Choir zealots/thralls, mid-depth horrors, tone shifting toward dread.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 dm-only creatures: choir_thrall (Drowned Choir zealot/thrall, tragic-not-monstrous, ties to chancel_deep/the_hollow_choir_yard), warden_husk (animated old-kingdom guard construct, ties to ashgate_wardhouse/wraithlock_gate and pays forward into t021's warders_hold), deep_maw_eel (genuine combat-capable predator, a Drowned Districts answer to the Shallows' wreck_crab, ties to underbell_cistern/millhollow_undercroft), silt_wraith (non-hostile Mounting Omens creature, escalates the salt_warped_grouper omen pattern, ties to thornwake_hollow/the_susurrus_deep/it_that_kept_the_kingdom). Added light DM-notes cross-references (not player-visible commitments) to all 8 related location files plus reciprocal related[] backlinks on drowned_choir and it_that_kept_the_kingdom factions. No existing location's established tone/no-combat framing was overridden."
     },
     {
       "id": "t021",
       "phase": 3,
       "title": "Author Deep Kingdom locations, batch 1",
       "description": "Author 5-6 Deep Kingdom (levels 7-10) locations: the old capital's outer districts. Cold, alien, formal naming at its most archaic.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 Deep Kingdom locations opening the region: thalmere_gate (formal capital gate, direct continuation of the_last_descent), aurewake_concourse (processional hub avenue), warders_hold (payoff site for the_warders_stair's long-burn carved-name hook, ties to warden_husk), vaelgard_terrace (aristocratic residential quarter, evacuation-not-disaster evidence, seeds a future t026 item), drowned_chancellery (capital seat of governance, centerpiece site for why_the_kingdom_drowned_mystery's full reveal), sarelles_repose (capital marketplace, human-scale companion evidence site). Updated the_last_descent's DM notes to point at thalmere_gate now that the region is open. Full validation pass (94 entities total): no duplicate ids, no missing required fields, all contentFiles resolve, zero broken [[id]]/related[] references."
     },
     {
       "id": "t022",

@@ -124,7 +124,8 @@
       "underbell_cistern",
       "the_long_requiem",
       "the_hollow_choir_yard",
-      "the_choir_almonry"
+      "the_choir_almonry",
+      "choir_thrall"
     ],
     "tags": [
       "cult",
@@ -156,7 +157,8 @@
       "vaultward_reliquary",
       "graves_end_locks",
       "thornwake_hollow",
-      "bellwrit_span"
+      "bellwrit_span",
+      "silt_wraith"
     ],
     "tags": [
       "presence",

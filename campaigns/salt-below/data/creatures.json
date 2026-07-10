@@ -7,8 +7,16 @@
     "contentType": "html",
     "contentFile": "content/creatures/reef_stalker.html",
     "visibility": "dm-only",
-    "related": ["farrows_grotto", "sawback_reef"],
-    "tags": ["predator", "reef", "ambush", "dm-only"]
+    "related": [
+      "farrows_grotto",
+      "sawback_reef"
+    ],
+    "tags": [
+      "predator",
+      "reef",
+      "ambush",
+      "dm-only"
+    ]
   },
   {
     "id": "wreck_crab",
@@ -18,8 +26,17 @@
     "contentType": "html",
     "contentFile": "content/creatures/wreck_crab.html",
     "visibility": "dm-only",
-    "related": ["anchors_grave", "reavers_ribs", "the_marrow_trawler"],
-    "tags": ["hazard", "wreck", "territorial", "dm-only"]
+    "related": [
+      "anchors_grave",
+      "reavers_ribs",
+      "the_marrow_trawler"
+    ],
+    "tags": [
+      "hazard",
+      "wreck",
+      "territorial",
+      "dm-only"
+    ]
   },
   {
     "id": "kelp_strangler",
@@ -29,8 +46,15 @@
     "contentType": "html",
     "contentFile": "content/creatures/kelp_strangler.html",
     "visibility": "dm-only",
-    "related": ["the_bellweed_shallows"],
-    "tags": ["hazard", "plant", "ambush", "dm-only"]
+    "related": [
+      "the_bellweed_shallows"
+    ],
+    "tags": [
+      "hazard",
+      "plant",
+      "ambush",
+      "dm-only"
+    ]
   },
   {
     "id": "salt_warped_grouper",
@@ -40,7 +64,97 @@
     "contentType": "html",
     "contentFile": "content/creatures/salt_warped_grouper.html",
     "visibility": "dm-only",
-    "related": ["widows_combs", "the_chime_shoal", "it_that_kept_the_kingdom"],
-    "tags": ["aberrant", "warped", "omen", "dm-only"]
+    "related": [
+      "widows_combs",
+      "the_chime_shoal",
+      "it_that_kept_the_kingdom"
+    ],
+    "tags": [
+      "aberrant",
+      "warped",
+      "omen",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "choir_thrall",
+    "name": "Choir Thrall",
+    "type": "creature",
+    "category": "Choir Thralls",
+    "contentType": "html",
+    "contentFile": "content/creatures/choir_thrall.html",
+    "visibility": "dm-only",
+    "related": [
+      "drowned_choir",
+      "chancel_deep",
+      "the_hollow_choir_yard"
+    ],
+    "tags": [
+      "cultist",
+      "thrall",
+      "drowned-choir",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "warden_husk",
+    "name": "Warden Husk",
+    "type": "creature",
+    "category": "Kingdom Remnants",
+    "contentType": "html",
+    "contentFile": "content/creatures/warden_husk.html",
+    "visibility": "dm-only",
+    "related": [
+      "ashgate_wardhouse",
+      "wraithlock_gate",
+      "the_warders_stair",
+      "warders_hold"
+    ],
+    "tags": [
+      "undead",
+      "construct",
+      "kingdom-remnant",
+      "guardian",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "deep_maw_eel",
+    "name": "Deep-Maw Eel",
+    "type": "creature",
+    "category": "Mid-Depth Horrors",
+    "contentType": "html",
+    "contentFile": "content/creatures/deep_maw_eel.html",
+    "visibility": "dm-only",
+    "related": [
+      "underbell_cistern",
+      "millhollow_undercroft"
+    ],
+    "tags": [
+      "predator",
+      "ambush",
+      "tunnel",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "silt_wraith",
+    "name": "Silt Wraith",
+    "type": "creature",
+    "category": "Mounting Omens",
+    "contentType": "html",
+    "contentFile": "content/creatures/silt_wraith.html",
+    "visibility": "dm-only",
+    "related": [
+      "thornwake_hollow",
+      "the_susurrus_deep",
+      "it_that_kept_the_kingdom"
+    ],
+    "tags": [
+      "aberrant",
+      "omen",
+      "non-hostile",
+      "dm-only"
+    ]
   }
 ]

@@ -100,7 +100,7 @@
     "curiosities": [
       {
         "roll": "Investigation DC 14",
-        "detail": "The public manifest board is missing several recent dive-site postings \u2014 quietly pulled, not officially cancelled."
+        "detail": "The public manifest board is missing several recent dive-site postings — quietly pulled, not officially cancelled."
       }
     ],
     "tags": [
@@ -131,7 +131,7 @@
     "curiosities": [
       {
         "roll": "Perception DC 12",
-        "detail": "One unmarked pier at the far end sees regular traffic at odd hours \u2014 no Concordat flag, no manifest posted."
+        "detail": "One unmarked pier at the far end sees regular traffic at odd hours — no Concordat flag, no manifest posted."
       }
     ],
     "tags": [
@@ -163,7 +163,7 @@
     "curiosities": [
       {
         "roll": "Insight DC 13",
-        "detail": "The harbormaster logs every unusual find and current shift with more care than her pay grade requires \u2014 she's tracking something."
+        "detail": "The harbormaster logs every unusual find and current shift with more care than her pay grade requires — she's tracking something."
       }
     ],
     "tags": [
@@ -199,7 +199,7 @@
     "curiosities": [
       {
         "roll": "Arcana DC 15",
-        "detail": "The bell's old-kingdom inscription isn't a maker's mark \u2014 it's a warning, in a dialect none of Port Calder's scholars fully recognize."
+        "detail": "The bell's old-kingdom inscription isn't a maker's mark — it's a warning, in a dialect none of Port Calder's scholars fully recognize."
       },
       {
         "roll": "DM only",
@@ -238,7 +238,7 @@
     "curiosities": [
       {
         "roll": "Insight DC 12",
-        "detail": "An appraiser openly low-balls anything the Concordat hasn't pre-approved \u2014 a quiet way of steering unlicensed finds out of the market."
+        "detail": "An appraiser openly low-balls anything the Concordat hasn't pre-approved — a quiet way of steering unlicensed finds out of the market."
       },
       {
         "roll": "Perception DC 14",
@@ -277,7 +277,7 @@
     "curiosities": [
       {
         "roll": "Investigation DC 13",
-        "detail": "One outfitter's gear consistently outperforms what a Concordat license should allow to be sold \u2014 she has an unlicensed supplier."
+        "detail": "One outfitter's gear consistently outperforms what a Concordat license should allow to be sold — she has an unlicensed supplier."
       }
     ],
     "tags": [
@@ -309,11 +309,11 @@
     "curiosities": [
       {
         "roll": "Perception DC 11",
-        "detail": "Part of the job-postings corkboard carries no Concordat seal at all \u2014 informal, word-of-mouth contracts."
+        "detail": "Part of the job-postings corkboard carries no Concordat seal at all — informal, word-of-mouth contracts."
       },
       {
         "roll": "DM only",
-        "detail": "Recommended default home base / rest location for the party. The innkeeper trades in quiet information as readily as ale \u2014 a strong candidate for a Freedivers-adjacent contact NPC once that faction is authored (t008)."
+        "detail": "Recommended default home base / rest location for the party. The innkeeper trades in quiet information as readily as ale — a strong candidate for a Freedivers-adjacent contact NPC once that faction is authored (t008)."
       }
     ],
     "tags": [
@@ -353,7 +353,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "A quiet fence for crews avoiding Concordat tax \u2014 the owner is a good seed for a Freedivers-aligned NPC once that faction is authored (t008)."
+        "detail": "A quiet fence for crews avoiding Concordat tax — the owner is a good seed for a Freedivers-aligned NPC once that faction is authored (t008)."
       }
     ],
     "tags": [
@@ -384,7 +384,7 @@
     "curiosities": [
       {
         "roll": "Insight DC 12",
-        "detail": "Tidewrack gossip travels faster than the guild boards \u2014 a good place to hear what's really happening below before it's official."
+        "detail": "Tidewrack gossip travels faster than the guild boards — a good place to hear what's really happening below before it's official."
       }
     ],
     "tags": [
@@ -415,7 +415,7 @@
     "curiosities": [
       {
         "roll": "Perception DC 13",
-        "detail": "A small courtyard shrine doesn't match any faith known to the ward's residents \u2014 recently added, and quietly well-tended."
+        "detail": "A small courtyard shrine doesn't match any faith known to the ward's residents — recently added, and quietly well-tended."
       }
     ],
     "tags": [
@@ -447,7 +447,7 @@
       "the_marrow_trawler"
     ],
     "environment": {
-      "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower \u2014 patched, but sturdy.",
+      "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower — patched, but sturdy.",
       "activity": "Recruit drills, incident-report processing, a duty board that's perpetually short-staffed.",
       "sensory": "Oiled steel, chalk dust, the creak of the old tower stair.",
       "lighting": "Functional, undecorated lamplight."
@@ -455,7 +455,7 @@
     "curiosities": [
       {
         "roll": "Insight DC 13",
-        "detail": "The duty board lists three \"unresolved\" incidents out of the Shallows with no follow-up logged \u2014 understaffing, or something being quietly buried."
+        "detail": "The duty board lists three \"unresolved\" incidents out of the Shallows with no follow-up logged — understaffing, or something being quietly buried."
       }
     ],
     "tags": [
@@ -486,7 +486,7 @@
     "curiosities": [
       {
         "roll": "Insight DC 12",
-        "detail": "The chapel keeps careful record of every diver who never surfaced \u2014 meant as remembrance, but it's also the closest thing Port Calder has to a casualty log."
+        "detail": "The chapel keeps careful record of every diver who never surfaced — meant as remembrance, but it's also the closest thing Port Calder has to a casualty log."
       },
       {
         "roll": "DM only",
@@ -615,7 +615,7 @@
     "curiosities": [
       {
         "roll": "Passive Perception 13",
-        "detail": "No two charts of the Combs agree \u2014 the spires shift position slightly between dives."
+        "detail": "No two charts of the Combs agree — the spires shift position slightly between dives."
       }
     ],
     "tags": [
@@ -641,14 +641,14 @@
       "salt_warped_grouper"
     ],
     "environment": {
-      "architecture": "A low reef shoal scattered with old-kingdom debris \u2014 glass, chain, bell fragments.",
+      "architecture": "A low reef shoal scattered with old-kingdom debris — glass, chain, bell fragments.",
       "activity": "Cheaply licensed, rarely worked for salvage; quiet Drowned Choir pilgrimages on certain tide-nights.",
       "sensory": "A faint hum through the water and hull on the right tide."
     },
     "curiosities": [
       {
         "roll": "Perception DC 13",
-        "detail": "Small offerings \u2014 coins, carved wood, returned relics \u2014 are left scattered across the shoal."
+        "detail": "Small offerings — coins, carved wood, returned relics — are left scattered across the shoal."
       }
     ],
     "tags": [
@@ -775,7 +775,7 @@
     "curiosities": [
       {
         "roll": "Investigation DC 15",
-        "detail": "The hull's scoring is even and deliberate, clearly tool-made \u2014 not storm damage."
+        "detail": "The hull's scoring is even and deliberate, clearly tool-made — not storm damage."
       }
     ],
     "tags": [
@@ -895,7 +895,9 @@
       "port_calder",
       "aldergate_shoal",
       "the_salt_choked_colonnade",
-      "the_last_landing"
+      "the_last_landing",
+      "warders_hold",
+      "warden_husk"
     ],
     "environment": {
       "architecture": "A wide formal stairway in even, deliberate steps, empty statuary alcoves lining the walls.",
@@ -964,13 +966,13 @@
     ],
     "environment": {
       "architecture": "Dozens of fluted pillars standing in formal ranks around a roofless processional plaza.",
-      "activity": "Licensed only for supervised survey work as a 'heritage site' \u2014 not worth the guild's trouble to loot.",
+      "activity": "Licensed only for supervised survey work as a 'heritage site' — not worth the guild's trouble to loot.",
       "sensory": "Unusually good visibility for the depth; a faint tonal hum between pillars on certain tides."
     },
     "curiosities": [
       {
         "roll": "Arcana DC 14",
-        "detail": "Faint remnant wards cling to several pillars \u2014 old-kingdom protective work, long depleted but not fully dead."
+        "detail": "Faint remnant wards cling to several pillars — old-kingdom protective work, long depleted but not fully dead."
       }
     ],
     "tags": [
@@ -998,7 +1000,7 @@
       "architecture": "A sheltered reef cave mouth opening into a chain of air-pocketed grottoes, low ceilings hung with soft coral.",
       "activity": "Freedivers use the outer chamber to train newcomers on breath control and confined-space work; the inner chambers are informally off-limits.",
       "sensory": "Trapped air pockets that smell faintly of sulfur; the cave amplifies every sound, including things that aren't quite an echo.",
-      "lighting": "Dark past the outer chamber \u2014 most crews work it by lamp only at slack tide, when the current stops fighting the entrance."
+      "lighting": "Dark past the outer chamber — most crews work it by lamp only at slack tide, when the current stops fighting the entrance."
     },
     "curiosities": [
       {
@@ -1036,7 +1038,7 @@
     "curiosities": [
       {
         "roll": "Survival DC 13",
-        "detail": "The kelp stands are subtly denser in a spiral pattern radiating from the forest's center \u2014 not natural growth."
+        "detail": "The kelp stands are subtly denser in a spiral pattern radiating from the forest's center — not natural growth."
       }
     ],
     "tags": [
@@ -1066,16 +1068,16 @@
       "architecture": "A mid-sized fishing trawler resting level on a sand shelf, sails long rotted but hull and rigging otherwise intact.",
       "activity": "Harbor Watch keeps it nominally closed pending an incident review that's gone nowhere in three years; nothing stops unlicensed crews from working it anyway.",
       "sensory": "Nets still coiled on deck, heavy with a catch that never got hauled in; unnervingly little marine growth on the hull for its age.",
-      "lighting": "Sits in open sand with good ambient light \u2014 the wreck is easy to see coming, which somehow makes it worse."
+      "lighting": "Sits in open sand with good ambient light — the wreck is easy to see coming, which somehow makes it worse."
     },
     "curiosities": [
       {
         "roll": "Investigation DC 14",
-        "detail": "The ship's log, still legible in the waterlogged cabin, ends mid-sentence \u2014 no storm noted, no distress called, just silence."
+        "detail": "The ship's log, still legible in the waterlogged cabin, ends mid-sentence — no storm noted, no distress called, just silence."
       },
       {
         "roll": "DM only",
-        "detail": "The Marrow's full crew of nine were never found, alive or dead. This is the third of harbor_watch_garrison's three unresolved duty-board incidents (see harbor_watch_garrison.html) \u2014 the only one with no bodies and no obvious cause, which is precisely why Harbor Watch keeps burying the file instead of closing it."
+        "detail": "The Marrow's full crew of nine were never found, alive or dead. This is the third of harbor_watch_garrison's three unresolved duty-board incidents (see harbor_watch_garrison.html) — the only one with no bodies and no obvious cause, which is precisely why Harbor Watch keeps burying the file instead of closing it."
       }
     ],
     "tags": [
@@ -1109,7 +1111,7 @@
     "curiosities": [
       {
         "roll": "Investigation DC 14",
-        "detail": "Fresh straw and rope-burn marks in the false-bottomed hold \u2014 it was used within the last season, not decades ago."
+        "detail": "Fresh straw and rope-burn marks in the false-bottomed hold — it was used within the last season, not decades ago."
       },
       {
         "roll": "DM only",
@@ -1139,7 +1141,7 @@
     ],
     "environment": {
       "architecture": "A long stretch of collapsed formal wall, old-kingdom boundary stones still standing at regular intervals along its length.",
-      "activity": "A second, lesser-known checkpoint to Aldergate Shoal's \u2014 Concordat surveyors mark it on charts as the outer edge of the 'licensed zone' proper.",
+      "activity": "A second, lesser-known checkpoint to Aldergate Shoal's — Concordat surveyors mark it on charts as the outer edge of the 'licensed zone' proper.",
       "sensory": "The boundary stones hum faintly underhand, each at a slightly different pitch from its neighbors.",
       "lighting": "Open, sunlit water by day; the boundary stones catch and hold a little residual glow well after dusk, which no one has satisfactorily explained."
     },
@@ -1173,19 +1175,19 @@
       "the_weeping_stair"
     ],
     "environment": {
-      "architecture": "A broad formal landing at the base of the Warders' Stair, where dressed paving gives way to open dark \u2014 the last built surface before the reef floor simply falls away.",
+      "architecture": "A broad formal landing at the base of the Warders' Stair, where dressed paving gives way to open dark — the last built surface before the reef floor simply falls away.",
       "activity": "The furthest point most licensed Shallows crews will chart; a few worn mooring rings suggest someone once meant to keep coming back to this exact spot.",
       "sensory": "Noticeably colder past the landing's edge; sound travels strangely, swallowed rather than echoed.",
-      "lighting": "The last reliable ambient light in the Shallows \u2014 lamps carried past this point are, by long habit, kept lit no matter the cost in oil."
+      "lighting": "The last reliable ambient light in the Shallows — lamps carried past this point are, by long habit, kept lit no matter the cost in oil."
     },
     "curiosities": [
       {
         "roll": "Perception DC 13",
-        "detail": "The paving stones at the landing's very edge are worn smooth in a path leading down and out \u2014 not from salvage traffic, which stops here, but from something that used to."
+        "detail": "The paving stones at the landing's very edge are worn smooth in a path leading down and out — not from salvage traffic, which stops here, but from something that used to."
       },
       {
         "roll": "DM only",
-        "detail": "Mark this as the literal transition point into the Drowned Districts once that region is authored (t016) \u2014 the Warders' Stair leads here, and the Last Landing is where a party first commits to going past the Shallows for good."
+        "detail": "Mark this as the literal transition point into the Drowned Districts once that region is authored (t016) — the Warders' Stair leads here, and the Last Landing is where a party first commits to going past the Shallows for good."
       }
     ],
     "tags": [
@@ -1215,7 +1217,7 @@
     ],
     "environment": {
       "architecture": "A formal civic assembly hall, tiered stone benches in a collapsed half-dome, the old kingdom's seal still unbroken on the dais.",
-      "activity": "The first real Choir presence a party meets past the Shallows \u2014 converts hold small vigils here and won't fight to keep outsiders out, just watch closely.",
+      "activity": "The first real Choir presence a party meets past the Shallows — converts hold small vigils here and won't fight to keep outsiders out, just watch closely.",
       "sensory": "A cold draft through the broken vault carries chant-echo from somewhere deeper in the district.",
       "lighting": "A handful of Choir lanterns strung along old rafter-lines; everything past their reach is true dark."
     },
@@ -1258,11 +1260,11 @@
     "curiosities": [
       {
         "roll": "Investigation DC 12",
-        "detail": "The plaques list unresolved petitions \u2014 some naming plaintiffs against the crown itself."
+        "detail": "The plaques list unresolved petitions — some naming plaintiffs against the crown itself."
       },
       {
         "roll": "DM only",
-        "detail": "One plaque bears a surname matching a known Port Calder founding family \u2014 a usable hook if the DM wants to tie a PC or NPC's lineage to the old kingdom."
+        "detail": "One plaque bears a surname matching a known Port Calder founding family — a usable hook if the DM wants to tie a PC or NPC's lineage to the old kingdom."
       }
     ],
     "tags": [
@@ -1287,21 +1289,22 @@
       "why_the_kingdom_drowned_mystery",
       "vaultward_reliquary",
       "graves_end_locks",
-      "the_leaning_archive"
+      "the_leaning_archive",
+      "choir_thrall"
     ],
     "environment": {
-      "architecture": "A soaring former high chapel, roof long gone, open straight up into black water \u2014 the Choir's true seat, of which the_drowned_bell above is only an echo.",
+      "architecture": "A soaring former high chapel, roof long gone, open straight up into black water — the Choir's true seat, of which the_drowned_bell above is only an echo.",
       "activity": "Choir vigil-boats moor at the altar-rail around the clock; this is where Isolt Vane herself is most often found.",
       "sensory": "Chant carries strangely through open water here, felt in the chest more than heard."
     },
     "curiosities": [
       {
         "roll": "Perception DC 14",
-        "detail": "The altar mosaic depicts the kingdom either embraced or swallowed by something vast \u2014 worn just enough that which one is deliberately unclear."
+        "detail": "The altar mosaic depicts the kingdom either embraced or swallowed by something vast — worn just enough that which one is deliberately unclear."
       },
       {
         "roll": "DM only",
-        "detail": "This is where Isolt performs the Choir's binding-adjacent rites, unknowingly reinforcing rather than loosening the deal described in why_the_kingdom_drowned_mystery \u2014 a strong scene if the party ever needs to see her sincerity up close."
+        "detail": "This is where Isolt performs the Choir's binding-adjacent rites, unknowingly reinforcing rather than loosening the deal described in why_the_kingdom_drowned_mystery — a strong scene if the party ever needs to see her sincerity up close."
       }
     ],
     "tags": [
@@ -1324,10 +1327,11 @@
       "drowned_choir",
       "port_calder",
       "the_susurrus_deep",
-      "the_last_descent"
+      "the_last_descent",
+      "deep_maw_eel"
     ],
     "environment": {
-      "architecture": "The gutted undercroft of the district's old grain-mill \u2014 stalled wheels locked in silt, machinery frozen mid-turn.",
+      "architecture": "The gutted undercroft of the district's old grain-mill — stalled wheels locked in silt, machinery frozen mid-turn.",
       "activity": "Mostly abandoned; the Choir uses the tunnels beneath it as a discreet route between sites.",
       "sensory": "Settling machinery groans occasionally, audible even through water."
     },
@@ -1338,7 +1342,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "That passage connects toward the_weeping_stair \u2014 a shortcut for a party that finds it early, worth rewarding rather than gating."
+        "detail": "That passage connects toward the_weeping_stair — a shortcut for a party that finds it early, worth rewarding rather than gating."
       }
     ],
     "tags": [
@@ -1364,13 +1368,13 @@
     ],
     "environment": {
       "architecture": "A tight switchback stairway descending in stepped terraces, water sheeting visibly down every riser.",
-      "activity": "Little traffic \u2014 colder and darker than the rest of the district discourages casual passage.",
+      "activity": "Little traffic — colder and darker than the rest of the district discourages casual passage.",
       "sensory": "Noticeably colder with every landing; the water itself seems to thicken."
     },
     "curiosities": [
       {
         "roll": "DM only",
-        "detail": "Mark this as the eventual continuation point deeper into the Drowned Districts and, later, toward the Deep Kingdom \u2014 the same threshold role the_last_landing played for the Shallows."
+        "detail": "Mark this as the eventual continuation point deeper into the Drowned Districts and, later, toward the Deep Kingdom — the same threshold role the_last_landing played for the Shallows."
       }
     ],
     "tags": [
@@ -1405,7 +1409,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "A good spot for a private party\u2013Meck scene \u2014 she prays here without an audience, which is unusual for the Choir."
+        "detail": "A good spot for a private party–Meck scene — she prays here without an audience, which is unusual for the Choir."
       }
     ],
     "tags": [
@@ -1426,21 +1430,22 @@
       "port_calder",
       "chancel_deep",
       "the_breaking_deal_mystery",
-      "the_sunken_rostrum"
+      "the_sunken_rostrum",
+      "drowned_chancellery"
     ],
     "environment": {
       "architecture": "A fortified mausoleum-house, still sealed under old-kingdom state wardwork rather than religious protection.",
-      "activity": "Undisturbed \u2014 heavier silt than anywhere else in the district, no current, no Choir presence.",
+      "activity": "Undisturbed — heavier silt than anywhere else in the district, no current, no Choir presence.",
       "sensory": "An unnatural stillness; nothing here drifts the way it should."
     },
     "curiosities": [
       {
         "roll": "Arcana DC 14",
-        "detail": "The seal wards are state magic, not religious \u2014 whoever built this expected someone to come looking, eventually."
+        "detail": "The seal wards are state magic, not religious — whoever built this expected someone to come looking, eventually."
       },
       {
         "roll": "DM only",
-        "detail": "The chancellor's private papers inside can seed a real fragment of why_the_kingdom_drowned_mystery \u2014 a strong player-found-lore location."
+        "detail": "The chancellor's private papers inside can seed a real fragment of why_the_kingdom_drowned_mystery — a strong player-found-lore location."
       }
     ],
     "tags": [
@@ -1462,7 +1467,8 @@
       "harbor_watch",
       "salvage_concordat",
       "the_chancellors_rest",
-      "wraithlock_gate"
+      "wraithlock_gate",
+      "warden_husk"
     ],
     "environment": {
       "architecture": "A barracks-like guardhouse, weapon racks rotted to iron ghosts of their shapes in the silt.",
@@ -1472,11 +1478,11 @@
     "curiosities": [
       {
         "roll": "Perception DC 12",
-        "detail": "The alarm mechanism, if triggered, still partially works \u2014 a clang carries a surprising distance underwater."
+        "detail": "The alarm mechanism, if triggered, still partially works — a clang carries a surprising distance underwater."
       },
       {
         "roll": "DM only",
-        "detail": "Usable hook for fenn_hurley or tam_ostler to quietly commission the party \u2014 Harbor Watch would rather know what's in here before the Concordat does."
+        "detail": "Usable hook for fenn_hurley or tam_ostler to quietly commission the party — Harbor Watch would rather know what's in here before the Concordat does."
       }
     ],
     "tags": [
@@ -1500,17 +1506,17 @@
     ],
     "environment": {
       "architecture": "Rows of loom-houses, threads long rotted, loom-frames still standing in eerie orderly ranks.",
-      "activity": "A handful of independent squatters and Choir converts live here \u2014 one of the district's few genuinely mundane, low-dread spots.",
+      "activity": "A handful of independent squatters and Choir converts live here — one of the district's few genuinely mundane, low-dread spots.",
       "sensory": "Quieter than most of the district; almost domestic."
     },
     "curiosities": [
       {
         "roll": "Investigation DC 11",
-        "detail": "A few looms have been recently restrung with scavenged wire and kelp-fiber \u2014 someone here is actually trying to weave again."
+        "detail": "A few looms have been recently restrung with scavenged wire and kelp-fiber — someone here is actually trying to weave again."
       },
       {
         "roll": "DM only",
-        "detail": "A good breather location between dread beats \u2014 low-stakes social encounters, minor salvage, no real danger."
+        "detail": "A good breather location between dread beats — low-stakes social encounters, minor salvage, no real danger."
       }
     ],
     "tags": [
@@ -1530,7 +1536,8 @@
     "related": [
       "millhollow_undercroft",
       "chancel_deep",
-      "drowned_choir"
+      "drowned_choir",
+      "deep_maw_eel"
     ],
     "environment": {
       "architecture": "A claustrophobic network of vaulted cisterns and narrow flooded tunnels beneath the district.",
@@ -1540,7 +1547,7 @@
     "curiosities": [
       {
         "roll": "DM only",
-        "detail": "Functions as a shortcut network connecting several Drowned Districts sites once discovered \u2014 useful for pacing a return trip, not required for the main path."
+        "detail": "Functions as a shortcut network connecting several Drowned Districts sites once discovered — useful for pacing a return trip, not required for the main path."
       }
     ],
     "tags": [
@@ -1577,7 +1584,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "A strong site for Deacon Rill's most sincere, least cult-like scene \u2014 grief rather than dogma."
+        "detail": "A strong site for Deacon Rill's most sincere, least cult-like scene — grief rather than dogma."
       }
     ],
     "tags": [
@@ -1598,11 +1605,12 @@
     "related": [
       "millhollow_undercroft",
       "the_weeping_stair",
-      "it_that_kept_the_kingdom"
+      "it_that_kept_the_kingdom",
+      "silt_wraith"
     ],
     "environment": {
       "architecture": "A long flooded avenue of collapsed row-houses, oddly free of silt drift compared to neighboring streets.",
-      "activity": "Almost none \u2014 divers who work the district avoid lingering here without saying exactly why.",
+      "activity": "Almost none — divers who work the district avoid lingering here without saying exactly why.",
       "sensory": "A constant susurrus of whispering, never louder, never quite resolving into words, with no visible source."
     },
     "curiosities": [
@@ -1612,7 +1620,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "First deliberately 'clear' omen in the Drowned Districts \u2014 no longer as deniable as the Shallows' salt_warped_grouper, but still nothing a party can act against directly. Escalate sparingly."
+        "detail": "First deliberately 'clear' omen in the Drowned Districts — no longer as deniable as the Shallows' salt_warped_grouper, but still nothing a party can act against directly. Escalate sparingly."
       }
     ],
     "tags": [
@@ -1643,11 +1651,11 @@
     "curiosities": [
       {
         "roll": "Investigation DC 13",
-        "detail": "One emptied shelf's manifest tag has been quietly altered \u2014 someone logged a find as 'lost in transit' that clearly wasn't."
+        "detail": "One emptied shelf's manifest tag has been quietly altered — someone logged a find as 'lost in transit' that clearly wasn't."
       },
       {
         "roll": "DM only",
-        "detail": "The site behind Coraline Bray's private incident ledger: a recent haul from here wasn't inert the way salvage should be. Feeds the faction's 'still-breathing salvage' hook \u2014 use as a rare, escalating incident, not a repeatable mechanic."
+        "detail": "The site behind Coraline Bray's private incident ledger: a recent haul from here wasn't inert the way salvage should be. Feeds the faction's 'still-breathing salvage' hook — use as a rare, escalating incident, not a repeatable mechanic."
       }
     ],
     "tags": [
@@ -1682,7 +1690,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "A physical, roughly-verifiable version of the omen tone \u2014 not proof of anything supernatural on its own, but a strong beat for a party starting to connect the bell to something deeper."
+        "detail": "A physical, roughly-verifiable version of the omen tone — not proof of anything supernatural on its own, but a strong beat for a party starting to connect the bell to something deeper."
       }
     ],
     "tags": [
@@ -1703,12 +1711,13 @@
     "related": [
       "freedivers",
       "ivo_marlstone",
-      "it_that_kept_the_kingdom"
+      "it_that_kept_the_kingdom",
+      "silt_wraith"
     ],
     "environment": {
       "architecture": "A sunken garden-hollow behind a collapsed manor wall, once ornamental, now a dead zone of bare stone.",
       "activity": "A Freedivers survey site; Ivo Marlstone has pushed twice to chart it further despite the crew's unease.",
-      "sensory": "Noticeably colder than the surrounding district; no fish, no growth, no scavengers \u2014 total, unnatural quiet."
+      "sensory": "Noticeably colder than the surrounding district; no fish, no growth, no scavengers — total, unnatural quiet."
     },
     "curiosities": [
       {
@@ -1717,7 +1726,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "Ivo's ambition (seeded in t008) versus Ruen/Sela's caution can come to a head here \u2014 a good site for that internal Freedivers tension to surface in play."
+        "detail": "Ivo's ambition (seeded in t008) versus Ruen/Sela's caution can come to a head here — a good site for that internal Freedivers tension to surface in play."
       }
     ],
     "tags": [
@@ -1748,11 +1757,11 @@
     "curiosities": [
       {
         "roll": "History DC 15",
-        "detail": "A surviving civic decree references sealing 'the lower wards' on the sovereign's own order, days before the water came \u2014 not an accident, an evacuation."
+        "detail": "A surviving civic decree references sealing 'the lower wards' on the sovereign's own order, days before the water came — not an accident, an evacuation."
       },
       {
         "roll": "DM only",
-        "detail": "The first non-Choir textual fragment supporting [[why_the_kingdom_drowned_mystery]]. Ties directly to Sister Meck's doubt arc (seeded t009) \u2014 this is where her private research happens."
+        "detail": "The first non-Choir textual fragment supporting [[why_the_kingdom_drowned_mystery]]. Ties directly to Sister Meck's doubt arc (seeded t009) — this is where her private research happens."
       }
     ],
     "tags": [
@@ -1778,12 +1787,12 @@
     "environment": {
       "architecture": "A processional bridge of formal old-kingdom stonework, spanning a wide flooded plaza beneath [[vantmoor_hall]].",
       "activity": "Little foot traffic; the span is structurally sound but avoided out of habit rather than danger.",
-      "sensory": "When [[the_drowned_bell]] rings topside, it isn't heard here so much as felt \u2014 a pressure change underwater ears shouldn't register."
+      "sensory": "When [[the_drowned_bell]] rings topside, it isn't heard here so much as felt — a pressure change underwater ears shouldn't register."
     },
     "curiosities": [
       {
         "roll": "DM only",
-        "detail": "A clean, repeatable way to let the party physically feel the bell's reach without any direct confirmation of what it means \u2014 good for building dread before the Deep Kingdom chapters."
+        "detail": "A clean, repeatable way to let the party physically feel the bell's reach without any direct confirmation of what it means — good for building dread before the Deep Kingdom chapters."
       }
     ],
     "tags": [
@@ -1805,12 +1814,13 @@
       "drowned_choir",
       "sister_meck",
       "deacon_rill",
-      "verdigris_court"
+      "verdigris_court",
+      "choir_thrall"
     ],
     "environment": {
       "architecture": "An open courtyard ringed with worn devotional carvings, adjoining [[verdigris_court]].",
       "activity": "The Choir gathers here for call-and-response chants at set hours; attendance has grown in recent months.",
-      "sensory": "On the last few gatherings, something has answered the chant's final response line back \u2014 faint, wrong, and not from any Choir throat."
+      "sensory": "On the last few gatherings, something has answered the chant's final response line back — faint, wrong, and not from any Choir throat."
     },
     "curiosities": [
       {
@@ -1819,7 +1829,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "A strong wedge scene for Sister Meck's arc \u2014 she can pull a sympathetic party aside here without breaking from the Choir outright."
+        "detail": "A strong wedge scene for Sister Meck's arc — she can pull a sympathetic party aside here without breaking from the Choir outright."
       }
     ],
     "tags": [
@@ -1843,17 +1853,17 @@
     ],
     "environment": {
       "architecture": "A short close of modest old-kingdom townhouses, better preserved than most of the district.",
-      "activity": "Genuinely quiet \u2014 no Choir presence, no salvage claims, just settled silt and closed doors.",
+      "activity": "Genuinely quiet — no Choir presence, no salvage claims, just settled silt and closed doors.",
       "sensory": "The closest thing the Drowned Districts offer to peaceful; even the ambient dread eases here."
     },
     "curiosities": [
       {
         "roll": "Investigation DC 12",
-        "detail": "A few homes still have undisturbed personal effects \u2014 the kind of ordinary, human detail easy to miss between omens and salvage."
+        "detail": "A few homes still have undisturbed personal effects — the kind of ordinary, human detail easy to miss between omens and salvage."
       },
       {
         "roll": "DM only",
-        "detail": "Deliberate low-dread breather site between heavier beats \u2014 use it to pace tension, not to hide anything major."
+        "detail": "Deliberate low-dread breather site between heavier beats — use it to pace tension, not to hide anything major."
       }
     ],
     "tags": [
@@ -1876,14 +1886,14 @@
       "the_hollow_choir_yard"
     ],
     "environment": {
-      "architecture": "A converted almshouse, old-kingdom bones with practical Choir repairs \u2014 nothing ornamental, all function.",
+      "architecture": "A converted almshouse, old-kingdom bones with practical Choir repairs — nothing ornamental, all function.",
       "activity": "[[deacon_rill]] runs supply and shelter here for stragglers, lapsed converts, and the occasional lost diver.",
       "sensory": "Warm lantern-light and mended nets; the most welcoming space the Choir maintains anywhere in the district."
     },
     "curiosities": [
       {
         "roll": "DM only",
-        "detail": "Deliberately humanizing site for the Choir \u2014 genuine charity, no hidden agenda here. Good place for a party to owe the Choir a real, uncomplicated debt before the campaign pushes toward opposition."
+        "detail": "Deliberately humanizing site for the Choir — genuine charity, no hidden agenda here. Good place for a party to owe the Choir a real, uncomplicated debt before the campaign pushes toward opposition."
       }
     ],
     "tags": [
@@ -1904,7 +1914,8 @@
     "related": [
       "harbor_watch",
       "ashgate_wardhouse",
-      "salvage_concordat"
+      "salvage_concordat",
+      "warden_husk"
     ],
     "environment": {
       "architecture": "A monumental formal gatehouse, once a toll checkpoint into the old kingdom's inner wards.",
@@ -1914,11 +1925,11 @@
     "curiosities": [
       {
         "roll": "Insight DC 12",
-        "detail": "Neither faction has filed a formal complaint about the other \u2014 both would rather quietly coexist than draw attention to what's really behind the gate."
+        "detail": "Neither faction has filed a formal complaint about the other — both would rather quietly coexist than draw attention to what's really behind the gate."
       },
       {
         "roll": "DM only",
-        "detail": "A low-stakes jurisdiction friction site \u2014 useful if the party ever needs a faction favor and has to pick a side, however small."
+        "detail": "A low-stakes jurisdiction friction site — useful if the party ever needs a faction favor and has to pick a side, however small."
       }
     ],
     "tags": [
@@ -1937,21 +1948,22 @@
     "visibility": "player",
     "related": [
       "why_the_kingdom_drowned_mystery",
-      "the_chancellors_rest"
+      "the_chancellors_rest",
+      "drowned_chancellery"
     ],
     "environment": {
       "architecture": "A raised formal speaking platform facing a collapsed public square, near [[the_chancellors_rest]].",
-      "activity": "Silent and empty \u2014 the old kingdom's court of public appeals, long since adjourned.",
+      "activity": "Silent and empty — the old kingdom's court of public appeals, long since adjourned.",
       "sensory": "The platform is oddly undamaged compared to the ruined square facing it, as if the water rose around it rather than through it."
     },
     "curiosities": [
       {
         "roll": "History DC 14",
-        "detail": "A weathered but legible inscription references a final address given from this rostrum \u2014 a sovereign's decree, not a plea for rescue."
+        "detail": "A weathered but legible inscription references a final address given from this rostrum — a sovereign's decree, not a plea for rescue."
       },
       {
         "roll": "DM only",
-        "detail": "Pairs with [[the_leaning_archive]]'s sealed-wards decree \u2014 together they build the picture that the drowning was ordered, not suffered, feeding [[why_the_kingdom_drowned_mystery]]."
+        "detail": "Pairs with [[the_leaning_archive]]'s sealed-wards decree — together they build the picture that the drowning was ordered, not suffered, feeding [[why_the_kingdom_drowned_mystery]]."
       }
     ],
     "tags": [
@@ -1981,7 +1993,7 @@
     "curiosities": [
       {
         "roll": "DM only",
-        "detail": "Straightforward hazard/salvage site \u2014 jammed machinery as an environmental obstacle, no supernatural weight needed here. Useful as a mechanical breather between omen-heavy sites."
+        "detail": "Straightforward hazard/salvage site — jammed machinery as an environmental obstacle, no supernatural weight needed here. Useful as a mechanical breather between omen-heavy sites."
       }
     ],
     "tags": [
@@ -2004,7 +2016,7 @@
     ],
     "environment": {
       "architecture": "A private aristocratic vault-chamber, built into a collapsed manor cellar, still sealed by a corroded formal lock.",
-      "activity": "Unclaimed by the Concordat's official manifests \u2014 [[coraline_bray]] knows it exists and hasn't logged it.",
+      "activity": "Unclaimed by the Concordat's official manifests — [[coraline_bray]] knows it exists and hasn't logged it.",
       "sensory": "Fine ash-grey silt coats everything inside, undisturbed for centuries, faintly luminous under lantern-light."
     },
     "curiosities": [
@@ -2014,7 +2026,7 @@
       },
       {
         "roll": "DM only",
-        "detail": "Seed site for a future mid-game item entity (t026) \u2014 hold the specific relic open until that task, but the hook (Coraline's undisclosed interest) is live now."
+        "detail": "Seed site for a future mid-game item entity (t026) — hold the specific relic open until that task, but the hook (Coraline's undisclosed interest) is live now."
       }
     ],
     "tags": [
@@ -2034,12 +2046,13 @@
     "visibility": "player",
     "related": [
       "the_weeping_stair",
-      "millhollow_undercroft"
+      "millhollow_undercroft",
+      "thalmere_gate"
     ],
     "environment": {
       "architecture": "A final formal stairwell, wider and colder than [[the_weeping_stair]] above it, descending past the last intact district wall.",
       "activity": "Nothing lives at this depth; even the Choir does not linger past this point.",
-      "sensory": "Absolute cold and absolute dark beyond lantern range \u2014 pressure a diver feels in their teeth, not just their ears."
+      "sensory": "Absolute cold and absolute dark beyond lantern range — pressure a diver feels in their teeth, not just their ears."
     },
     "curiosities": [
       {
@@ -2051,6 +2064,195 @@
       "drowned-districts",
       "old-kingdom",
       "transition"
+    ]
+  },
+  {
+    "id": "thalmere_gate",
+    "name": "Thalmere Gate",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/thalmere_gate.html",
+    "visibility": "player",
+    "related": [
+      "the_last_descent",
+      "aurewake_concourse"
+    ],
+    "environment": {
+      "architecture": "A monumental twin-towered gatehouse at full original height, doors long rotted from intact titanic hinges.",
+      "activity": "Nothing moves here voluntarily; this is the first Deep Kingdom site most parties reach.",
+      "sensory": "Unnerving stillness — no current, no drift, water that barely seems to move at all past the threshold."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 16",
+        "detail": "The lintel inscription is a formal title addressed to whoever approaches, in a register no living Port Calder scholar fully reads."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "gate",
+      "capital",
+      "transition"
+    ]
+  },
+  {
+    "id": "aurewake_concourse",
+    "name": "The Aurewake Concourse",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/aurewake_concourse.html",
+    "visibility": "player",
+    "related": [
+      "thalmere_gate",
+      "warders_hold",
+      "vaelgard_terrace",
+      "drowned_chancellery"
+    ],
+    "environment": {
+      "architecture": "A grand processional avenue wide enough for a twenty-abreast procession, flanked by empty statuary plinths.",
+      "activity": "The capital's hub — side avenues branch toward the Hold, the Terrace, and the Chancellery.",
+      "sensory": "Lantern light feels smaller here than anywhere above; the scale was built for a light source no diver carries."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Every plinth plaque names a title and a date, never a person — a formal honor roll, not a memorial."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "capital",
+      "hub"
+    ]
+  },
+  {
+    "id": "warders_hold",
+    "name": "The Warders' Hold",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/warders_hold.html",
+    "visibility": "player",
+    "related": [
+      "the_warders_stair",
+      "aurewake_concourse",
+      "warden_husk"
+    ],
+    "environment": {
+      "architecture": "A fortified barracks-monument, entry hall lined with intact carved-name alcoves, each now paired with a worn statuary bust.",
+      "activity": "A possible warden_husk patrol still walks a fixed route through the hall.",
+      "sensory": "Cold, formal, and very quiet — the hush of a garrison that stood its last post and was never relieved."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Several busts are deliberately defaced, not by time; the roll's gaps cluster together rather than scattering at random."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "wardens",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "vaelgard_terrace",
+    "name": "Vaelgard Terrace",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/vaelgard_terrace.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "drowned_chancellery"
+    ],
+    "environment": {
+      "architecture": "A tiered aristocratic residential quarter, town-houses stacked up a gentle rise in diminishing grandeur.",
+      "activity": "Untouched since the drowning — doors open or missing, nothing looted, nothing disturbed.",
+      "sensory": "Melancholy rather than horror — a life mid-sentence, interrupted and never resumed."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 12",
+        "detail": "Personal effects remain in nearly every house — a set table, a child's toy on a stair, a wardrobe never emptied."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "residential",
+      "aristocracy"
+    ]
+  },
+  {
+    "id": "drowned_chancellery",
+    "name": "The Drowned Chancellery",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/drowned_chancellery.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "the_chancellors_rest",
+      "the_sunken_rostrum",
+      "why_the_kingdom_drowned_mystery",
+      "sarelles_repose",
+      "vaelgard_terrace"
+    ],
+    "environment": {
+      "architecture": "A fortress-palace complex housing the old kingdom's seat of governance, its state archive hall largely intact.",
+      "activity": "Nothing moves; the archive seals remain unbroken, waiting the way an unfinished meeting waits.",
+      "sensory": "One chamber's furniture is still arranged for a session that was never adjourned."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The archive seals bear a chancellor's formal seal-mark, matching the one on the_chancellors_rest's door exactly."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "governance",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "sarelles_repose",
+    "name": "Sarelle's Repose",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/sarelles_repose.html",
+    "visibility": "player",
+    "related": [
+      "drowned_chancellery",
+      "why_the_kingdom_drowned_mystery",
+      "aurewake_concourse"
+    ],
+    "environment": {
+      "architecture": "The old capital's central marketplace, stalls standing in orderly rows.",
+      "activity": "Frozen mid-transaction — shutters drawn, stalls tidied, coin still sitting in more than one abandoned till.",
+      "sensory": "Human-scale and quiet, a normal night that was never resumed rather than a disaster scene."
+    },
+    "curiosities": [
+      {
+        "roll": "Free / no check",
+        "detail": "Coin remains untouched in stall-tills throughout the market — a fortune in old-kingdom currency, worthless to modern buyers but a curiosity to collectors."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "marketplace",
+      "central-mystery"
     ]
   }
 ]
