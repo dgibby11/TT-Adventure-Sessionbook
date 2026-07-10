@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "pressure_ward_token",
+    "name": "Pressure-Ward Token",
+    "type": "item",
+    "category": "Dive Gear",
+    "contentType": "html",
+    "contentFile": "content/items/pressure_ward_token.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row"
+    ],
+    "tags": [
+      "magic",
+      "dive-gear",
+      "wondrous-item"
+    ]
+  }
+]

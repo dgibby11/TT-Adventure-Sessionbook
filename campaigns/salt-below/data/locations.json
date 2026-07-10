@@ -12,7 +12,15 @@
       "concordat_licensing_house",
       "the_long_docks",
       "harbormasters_post",
-      "the_drowned_bell"
+      "the_drowned_bell",
+      "market_quarter",
+      "dive_outfitters_row",
+      "the_brined_anchor",
+      "saltbone_curios",
+      "tidewrack_ward",
+      "shellhome_ward",
+      "harbor_watch_garrison",
+      "the_tideward_chapel"
     ],
     "environment": {
       "architecture": "Timber-and-coral-stone buildings climbing the harbor bluffs in uneven terraces; salvaged old-kingdom masonry reused as foundation stone throughout the older quarters.",
@@ -190,6 +198,278 @@
       "port-calder",
       "surface",
       "old-kingdom"
+    ]
+  },
+  {
+    "id": "market_quarter",
+    "name": "The Market Quarter",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/market_quarter.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "dive_outfitters_row",
+      "the_brined_anchor",
+      "saltbone_curios"
+    ],
+    "environment": {
+      "architecture": "Covered stalls and permanent shopfronts climbing the bluff terraces above the harbor, in uneven tiers.",
+      "activity": "Salvage appraisers weighing hauls in the open, food carts, guild criers reading the day's dive postings.",
+      "sensory": "Fry-oil and brine, competing vendor calls, coin counted loudly to discourage shortchanging.",
+      "lighting": "Awning-shaded by day; lantern-strung food stalls after dark."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "An appraiser openly low-balls anything the Concordat hasn't pre-approved — a quiet way of steering unlicensed finds out of the market."
+      },
+      {
+        "roll": "Perception DC 14",
+        "detail": "A stall further back sells \"curios\" that look a lot more genuine than they should. See [[saltbone_curios]]."
+      }
+    ],
+    "tags": [
+      "market",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "dive_outfitters_row",
+    "name": "Dive-Outfitter Row",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/dive_outfitters_row.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "market_quarter",
+      "the_long_docks",
+      "pressure_ward_token"
+    ],
+    "environment": {
+      "architecture": "A tight row of narrow shopfronts wedged between the market and the docks, every one crammed floor to ceiling with gear.",
+      "activity": "Crews outfitting before a dive, apprentices pressure-testing helm seals, haggling over warded gear.",
+      "sensory": "Oiled leather, brass polish, the hiss of bladders under pressure-test.",
+      "lighting": "Workshop lamps; occasional sparks from a smith's stall."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "One outfitter's gear consistently outperforms what a Concordat license should allow to be sold — she has an unlicensed supplier."
+      }
+    ],
+    "tags": [
+      "shops",
+      "dive-gear",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_brined_anchor",
+    "name": "The Brined Anchor",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_brined_anchor.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "market_quarter"
+    ],
+    "environment": {
+      "architecture": "A broad, low timber tavern built from retired ship's timbers, with a second floor of let rooms.",
+      "activity": "Dive crews trading stories and contracts over ale; a corkboard of job postings by the door.",
+      "sensory": "Woodsmoke, spilled ale, brine off wet oilskins drying by the hearth.",
+      "lighting": "Hearth-fire and oil lamps; warm and smoky."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 11",
+        "detail": "Part of the job-postings corkboard carries no Concordat seal at all — informal, word-of-mouth contracts."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Recommended default home base / rest location for the party. The innkeeper trades in quiet information as readily as ale — a strong candidate for a Freedivers-adjacent contact NPC once that faction is authored (t008)."
+      }
+    ],
+    "tags": [
+      "tavern",
+      "inn",
+      "home-base",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "saltbone_curios",
+    "name": "Saltbone Curios",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/saltbone_curios.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "market_quarter"
+    ],
+    "environment": {
+      "architecture": "A cramped, cluttered shopfront wedged behind the Market Quarter's main stalls.",
+      "activity": "Quiet transactions; an owner who asks very few questions.",
+      "sensory": "Dust, old brine, a faint ozone-tang off half-charged relics.",
+      "lighting": "Deliberately dim."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 15",
+        "detail": "Several shelf items are genuine, low-grade old-kingdom relics that were never registered with the Concordat."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A quiet fence for crews avoiding Concordat tax — the owner is a good seed for a Freedivers-aligned NPC once that faction is authored (t008)."
+      }
+    ],
+    "tags": [
+      "shop",
+      "black-market",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "tidewrack_ward",
+    "name": "Tidewrack Ward",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/tidewrack_ward.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbor_watch_garrison"
+    ],
+    "environment": {
+      "architecture": "Cramped tenements built shoulder-to-shoulder along the tideline, patched with salvage timber and old-kingdom stone block.",
+      "activity": "Dockworker families, nets drying on lines, children working the tide pools at low water.",
+      "sensory": "Wet laundry, low-tide mud, cookfire smoke.",
+      "lighting": "Dim, close alleys; a handful of public lamps at corners."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "Tidewrack gossip travels faster than the guild boards — a good place to hear what's really happening below before it's official."
+      }
+    ],
+    "tags": [
+      "residential",
+      "port-calder",
+      "surface",
+      "working-class"
+    ]
+  },
+  {
+    "id": "shellhome_ward",
+    "name": "Shellhome Ward",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/shellhome_ward.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_tideward_chapel"
+    ],
+    "environment": {
+      "architecture": "Taller, denser housing built up rather than out, mixing building styles from a dozen homelands.",
+      "activity": "A rotating string of street-shrines and festivals, communal courtyards shared across households.",
+      "sensory": "Layered cooking smells, overlapping languages, wind chimes and hung charms.",
+      "lighting": "Strings of colored lanterns between buildings after dark."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "A small courtyard shrine doesn't match any faith known to the ward's residents — recently added, and quietly well-tended."
+      }
+    ],
+    "tags": [
+      "residential",
+      "port-calder",
+      "surface",
+      "multicultural"
+    ]
+  },
+  {
+    "id": "harbor_watch_garrison",
+    "name": "The Harbor Watch Garrison",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/harbor_watch_garrison.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbormasters_post",
+      "calder_harbor",
+      "tidewrack_ward"
+    ],
+    "environment": {
+      "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower — patched, but sturdy.",
+      "activity": "Recruit drills, incident-report processing, a duty board that's perpetually short-staffed.",
+      "sensory": "Oiled steel, chalk dust, the creak of the old tower stair.",
+      "lighting": "Functional, undecorated lamplight."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 13",
+        "detail": "The duty board lists three \"unresolved\" incidents out of the Shallows with no follow-up logged — understaffing, or something being quietly buried."
+      }
+    ],
+    "tags": [
+      "harbor-watch",
+      "garrison",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_tideward_chapel",
+    "name": "The Tideward Chapel",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_tideward_chapel.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "shellhome_ward"
+    ],
+    "environment": {
+      "architecture": "A modest multi-faith chapel and healer's hall, built partly from a reclaimed old-kingdom shrine's stone.",
+      "activity": "Healers tending dive injuries, an open shrine room welcoming any faith, a small ossuary for the unclaimed drowned.",
+      "sensory": "Incense, clean linen, a faint salt-damp in the older stonework.",
+      "lighting": "Candlelight; a skylight over the shrine room."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "The chapel keeps careful record of every diver who never surfaced — meant as remembrance, but it's also the closest thing Port Calder has to a casualty log."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The reused old-kingdom stone in the shrine room is subtly warm to the touch, always, regardless of weather."
+      }
+    ],
+    "tags": [
+      "temple",
+      "healer",
+      "civic",
+      "port-calder",
+      "surface"
     ]
   }
 ]

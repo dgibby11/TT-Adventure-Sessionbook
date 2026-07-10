@@ -32,16 +32,18 @@
       "phase": 3,
       "title": "Author Port Calder market quarter + dive-outfitter row",
       "description": "Author 4-5 locations: market quarter, dive-outfitter row shops, at least one tavern/inn suitable as a party home base, and one more mercantile location. Include at least one item entity for gear sold there if fitting.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 locations (market_quarter, dive_outfitters_row, the_brined_anchor as home-base tavern, saltbone_curios as black-market curio shop) + 1 item (pressure_ward_token, sold at dive_outfitters_row). Cross-linked via [[id]] and related[]; forward references to not-yet-authored factions/NPCs left as plain prose per Rule 6/8."
     },
     {
       "id": "t005",
       "phase": 3,
       "title": "Author Port Calder residential wards + Harbor Watch garrison",
       "description": "Author 4-5 locations: 2-3 residential ward locations (mixed multicultural boomtown flavor), the Harbor Watch garrison, and one more civic location (temple, healer's hall, or similar). This should bring Port Calder to the 15-20 location target from CAMPAIGN_BIBLE.md.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 locations: tidewrack_ward + shellhome_ward (residential, working-class vs. multicultural contrast), harbor_watch_garrison, the_tideward_chapel (multi-faith temple/healer's hall, civic). Port Calder now at 15 total locations, within the 15-20 bible target. Updated port_calder.html Key Locations list, related[], and DM Notes to reflect the completed surface roster."
     },
     {
       "id": "t006",
