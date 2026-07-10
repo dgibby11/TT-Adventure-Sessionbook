@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "reef_stalker",
+    "name": "Reef Stalker",
+    "type": "creature",
+    "category": "Reef Predators",
+    "contentType": "html",
+    "contentFile": "content/creatures/reef_stalker.html",
+    "visibility": "dm-only",
+    "related": ["farrows_grotto", "sawback_reef"],
+    "tags": ["predator", "reef", "ambush", "dm-only"]
+  },
+  {
+    "id": "wreck_crab",
+    "name": "Wreck-Walker Crab",
+    "type": "creature",
+    "category": "Salvage Hazards",
+    "contentType": "html",
+    "contentFile": "content/creatures/wreck_crab.html",
+    "visibility": "dm-only",
+    "related": ["anchors_grave", "reavers_ribs", "the_marrow_trawler"],
+    "tags": ["hazard", "wreck", "territorial", "dm-only"]
+  },
+  {
+    "id": "kelp_strangler",
+    "name": "Kelp Strangler",
+    "type": "creature",
+    "category": "Salvage Hazards",
+    "contentType": "html",
+    "contentFile": "content/creatures/kelp_strangler.html",
+    "visibility": "dm-only",
+    "related": ["the_bellweed_shallows"],
+    "tags": ["hazard", "plant", "ambush", "dm-only"]
+  },
+  {
+    "id": "salt_warped_grouper",
+    "name": "Salt-Warped Grouper",
+    "type": "creature",
+    "category": "Early Signs",
+    "contentType": "html",
+    "contentFile": "content/creatures/salt_warped_grouper.html",
+    "visibility": "dm-only",
+    "related": ["widows_combs", "the_chime_shoal", "it_that_kept_the_kingdom"],
+    "tags": ["aberrant", "warped", "omen", "dm-only"]
+  }
+]

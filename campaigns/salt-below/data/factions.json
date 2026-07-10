@@ -22,9 +22,17 @@
       "the_foundered_bride",
       "the_ledger_wreck",
       "the_sunken_causeway",
-      "the_salt_choked_colonnade"
+      "the_salt_choked_colonnade",
+      "the_bellweed_shallows",
+      "tallowmark_reach"
     ],
-    "tags": ["guild", "authority", "political", "cover-up", "port-calder"]
+    "tags": [
+      "guild",
+      "authority",
+      "political",
+      "cover-up",
+      "port-calder"
+    ]
   },
   {
     "id": "harbor_watch",
@@ -39,9 +47,15 @@
       "fenn_hurley",
       "tam_ostler",
       "brack_fennimore",
-      "port_calder"
+      "port_calder",
+      "the_marrow_trawler"
     ],
-    "tags": ["law", "ally", "outmatched", "port-calder"]
+    "tags": [
+      "law",
+      "ally",
+      "outmatched",
+      "port-calder"
+    ]
   },
   {
     "id": "freedivers",
@@ -62,9 +76,15 @@
       "widows_combs",
       "the_foundered_bride",
       "reavers_ribs",
-      "hollowmarch"
+      "hollowmarch",
+      "farrows_grotto"
     ],
-    "tags": ["independent", "patron", "home-faction", "port-calder"]
+    "tags": [
+      "independent",
+      "patron",
+      "home-faction",
+      "port-calder"
+    ]
   },
   {
     "id": "drowned_choir",
@@ -84,9 +104,15 @@
       "it_that_kept_the_kingdom",
       "why_the_kingdom_drowned_mystery",
       "the_chime_shoal",
-      "the_glass_hull"
+      "the_glass_hull",
+      "the_nightweigh"
     ],
-    "tags": ["cult", "ambiguous", "old-kingdom", "port-calder"]
+    "tags": [
+      "cult",
+      "ambiguous",
+      "old-kingdom",
+      "port-calder"
+    ]
   },
   {
     "id": "it_that_kept_the_kingdom",
@@ -105,8 +131,15 @@
       "why_the_kingdom_drowned_mystery",
       "the_breaking_deal_mystery",
       "port_calder",
-      "the_chime_shoal"
+      "the_chime_shoal",
+      "salt_warped_grouper"
     ],
-    "tags": ["presence", "antagonist", "old-kingdom", "cosmic-horror", "dm-only"]
+    "tags": [
+      "presence",
+      "antagonist",
+      "old-kingdom",
+      "cosmic-horror",
+      "dm-only"
+    ]
   }
 ]

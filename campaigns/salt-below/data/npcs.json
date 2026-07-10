@@ -7,8 +7,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/perrin_ashgrave.html",
     "visibility": "player",
-    "related": ["salvage_concordat", "concordat_licensing_house"],
-    "tags": ["concordat", "guildmaster", "political"]
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house"
+    ],
+    "tags": [
+      "concordat",
+      "guildmaster",
+      "political"
+    ]
   },
   {
     "id": "wick_tallow",
@@ -18,8 +25,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/wick_tallow.html",
     "visibility": "player",
-    "related": ["salvage_concordat", "concordat_licensing_house"],
-    "tags": ["concordat", "clerk", "informant"]
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house"
+    ],
+    "tags": [
+      "concordat",
+      "clerk",
+      "informant"
+    ]
   },
   {
     "id": "coraline_bray",
@@ -29,8 +43,16 @@
     "contentType": "html",
     "contentFile": "content/npcs/coraline_bray.html",
     "visibility": "player",
-    "related": ["salvage_concordat", "concordat_licensing_house", "the_ledger_wreck"],
-    "tags": ["concordat", "cover-up", "fixer"]
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house",
+      "the_ledger_wreck"
+    ],
+    "tags": [
+      "concordat",
+      "cover-up",
+      "fixer"
+    ]
   },
   {
     "id": "fenn_hurley",
@@ -40,8 +62,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/fenn_hurley.html",
     "visibility": "player",
-    "related": ["harbor_watch", "harbor_watch_garrison"],
-    "tags": ["harbor-watch", "captain", "ally"]
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison"
+    ],
+    "tags": [
+      "harbor-watch",
+      "captain",
+      "ally"
+    ]
   },
   {
     "id": "tam_ostler",
@@ -51,8 +80,16 @@
     "contentType": "html",
     "contentFile": "content/npcs/tam_ostler.html",
     "visibility": "player",
-    "related": ["harbor_watch", "harbor_watch_garrison"],
-    "tags": ["harbor-watch", "sergeant", "quest-giver"]
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison",
+      "the_marrow_trawler"
+    ],
+    "tags": [
+      "harbor-watch",
+      "sergeant",
+      "quest-giver"
+    ]
   },
   {
     "id": "brack_fennimore",
@@ -62,8 +99,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/brack_fennimore.html",
     "visibility": "player",
-    "related": ["harbor_watch", "harbor_watch_garrison"],
-    "tags": ["harbor-watch", "recruit", "gossip"]
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison"
+    ],
+    "tags": [
+      "harbor-watch",
+      "recruit",
+      "gossip"
+    ]
   },
   {
     "id": "ruen_saltmarrow",
@@ -73,8 +117,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/ruen_saltmarrow.html",
     "visibility": "player",
-    "related": ["freedivers", "dive_outfitters_row"],
-    "tags": ["freedivers", "patron", "elder"]
+    "related": [
+      "freedivers",
+      "dive_outfitters_row"
+    ],
+    "tags": [
+      "freedivers",
+      "patron",
+      "elder"
+    ]
   },
   {
     "id": "ivo_marlstone",
@@ -84,8 +135,16 @@
     "contentType": "html",
     "contentFile": "content/npcs/ivo_marlstone.html",
     "visibility": "player",
-    "related": ["freedivers", "dive_outfitters_row"],
-    "tags": ["freedivers", "rival", "ambitious"]
+    "related": [
+      "freedivers",
+      "dive_outfitters_row",
+      "farrows_grotto"
+    ],
+    "tags": [
+      "freedivers",
+      "rival",
+      "ambitious"
+    ]
   },
   {
     "id": "sela_vantry",
@@ -95,8 +154,15 @@
     "contentType": "html",
     "contentFile": "content/npcs/sela_vantry.html",
     "visibility": "player",
-    "related": ["freedivers", "market_quarter"],
-    "tags": ["freedivers", "warning", "foreshadowing"]
+    "related": [
+      "freedivers",
+      "market_quarter"
+    ],
+    "tags": [
+      "freedivers",
+      "warning",
+      "foreshadowing"
+    ]
   },
   {
     "id": "isolt_vane",
@@ -106,8 +172,17 @@
     "contentType": "html",
     "contentFile": "content/npcs/isolt_vane.html",
     "visibility": "player",
-    "related": ["drowned_choir", "the_drowned_bell", "it_that_kept_the_kingdom", "why_the_kingdom_drowned_mystery"],
-    "tags": ["drowned-choir", "leader", "ambiguous"]
+    "related": [
+      "drowned_choir",
+      "the_drowned_bell",
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "tags": [
+      "drowned-choir",
+      "leader",
+      "ambiguous"
+    ]
   },
   {
     "id": "deacon_rill",
@@ -117,8 +192,16 @@
     "contentType": "html",
     "contentFile": "content/npcs/deacon_rill.html",
     "visibility": "player",
-    "related": ["drowned_choir", "the_drowned_bell"],
-    "tags": ["drowned-choir", "recruiter", "true-believer"]
+    "related": [
+      "drowned_choir",
+      "the_drowned_bell",
+      "the_nightweigh"
+    ],
+    "tags": [
+      "drowned-choir",
+      "recruiter",
+      "true-believer"
+    ]
   },
   {
     "id": "sister_meck",
@@ -128,7 +211,14 @@
     "contentType": "html",
     "contentFile": "content/npcs/sister_meck.html",
     "visibility": "player",
-    "related": ["drowned_choir", "saltbone_curios"],
-    "tags": ["drowned-choir", "doubter", "informant"]
+    "related": [
+      "drowned_choir",
+      "saltbone_curios"
+    ],
+    "tags": [
+      "drowned-choir",
+      "doubter",
+      "informant"
+    ]
   }
 ]

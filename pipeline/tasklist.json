@@ -122,16 +122,18 @@
       "phase": 3,
       "title": "Author The Shallows locations, batch 4",
       "description": "Author 5-10 more Shallows-region locations to reach the 20-30 target from CAMPAIGN_BIBLE.md, mixing reef, wreck, and outskirts flavor as needed to round out the region.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 locations: farrows_grotto + the_bellweed_shallows (reef), the_marrow_trawler + the_nightweigh (wreck), tallowmark_reach + the_last_landing (kingdom outskirts). The Shallows now at 21 locations, within the 20-30 bible target. the_marrow_trawler resolves harbor_watch_garrison's third previously-unplaced duty-board incident (updated its DM notes accordingly). the_nightweigh seeds a Drowned Choir smuggling hook via deacon_rill and saltbone_curios. the_last_landing is explicitly marked as the literal transition point into the Drowned Districts (t016) via the_warders_stair. Reciprocal related[] backlinks added to all referenced entities (freedivers, ivo_marlstone, salvage_concordat, harbor_watch, harbor_watch_garrison, tam_ostler, drowned_choir, deacon_rill, saltbone_curios, aldergate_shoal, the_warders_stair, hollowmarch). Full [[id]]/related[] validation clean; 55 entities total in salt-below."
     },
     {
       "id": "t015",
       "phase": 3,
       "title": "Author Shallows creatures",
       "description": "Author 3-4 creature entities appropriate to the Shallows (levels 1-4): reef predators, salvage hazards, early signs of something not quite natural. Keep tone adventurous, not yet cosmic-horror.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 dm-only creature entities: reef_stalker (reef predator, ties to farrows_grotto's bone-stacking curiosity), wreck_crab (salvage hazard, general-purpose wreck-interior threat tied to anchors_grave/reavers_ribs/the_marrow_trawler), kelp_strangler (salvage hazard, ties to the_bellweed_shallows' spiral-growth curiosity), salt_warped_grouper (Early Signs category — first deniable, non-combat sign of It That Kept the Kingdom's influence, tied to widows_combs/the_chime_shoal). All reference real D&D 5e base creatures by name only (Giant Constrictor Snake, Giant Crab, Vine Blight, Quipper) for reskinning — no dndbeyond.com links fabricated, per CLAUDE.md's caution about the unverified Owlbear link elsewhere in the repo. Reciprocal related[] backlinks added. Full validation clean: 59 entities total in salt-below, no broken links/related refs, no missing content files, no duplicate ids."
     },
     {
       "id": "t016",

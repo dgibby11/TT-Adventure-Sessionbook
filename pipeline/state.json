@@ -1,11 +1,11 @@
 {
-  "iteration": 8,
+  "iteration": 9,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T15:32:23Z",
+  "lastRun": "2026-07-10T15:41:42Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t012 (5 Shallows wreck locations) and t013 (5 Shallows kingdom-outskirts locations introducing the archaic naming convention)."
+  "lastSummary": "Completed t014 (6 more Shallows locations, region now at 21/20-30 target) and t015 (4 Shallows creature entities)."
 }
