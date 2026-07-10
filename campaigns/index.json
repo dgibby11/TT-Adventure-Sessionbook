@@ -1,5 +1,10 @@
 [
   {
+    "id": "fail-academy",
+    "name": "FAIL Academy",
+    "subtitle": "Faculty of Arms, Inquiry & Lore"
+  },
+  {
     "id": "lost-mine",
     "name": "Lost Mine of Phandelver",
     "subtitle": "Sword Coast — Characters Level 1–5"
