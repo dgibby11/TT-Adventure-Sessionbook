@@ -32,23 +32,21 @@ Otherwise → this is a **BUILD** iteration. Continue below.
 
 ## Step 4 — build iteration logic
 
-### 4a. Phase 0: concept pitches (only if `pipeline/CAMPAIGN_BIBLE.md` still
-contains its placeholder `[CONCEPT PENDING]` marker)
-- Read `pipeline/tasklist.json` task `t001` (generate concept pitches).
-- Write 2-3 distinct, fully fleshed concept pitches to
-  `pipeline/CONCEPT_PITCHES.md`. Each pitch needs: working title, one-paragraph
-  premise, tone description, 3-5 factions with one-line motivations, a central
-  mystery/conflict, and a rough level arc (start level → end level). Genre
-  should land as a *balance* of light and dark — not grimdark, not comedic.
-  Scale ambition should match curse-of-strahd/descent-into-avernus (100+
-  locations eventually).
-- Do **not** create `campaigns/<slug>/` or any campaign content yet.
-- Mark task `t001` done. Do not add new tasks yet — Phase 1 tasks get added
-  once a concept is approved (see below).
-- Write `pipeline/STOP` with contents: `awaiting concept approval — see
-  pipeline/CONCEPT_PITCHES.md`.
-- Commit, push, exit. (This is the one deliberate designed halt in the whole
-  pipeline — see GROUND_RULES.md Rule 9.)
+### 4a. Phase 0: concept selection (only if `pipeline/CAMPAIGN_BIBLE.md` still
+contains its placeholder `[CONCEPT PENDING]` marker — as of the first real
+iteration this should no longer apply; a concept ("The Salt Below") is
+already approved and recorded in `pipeline/CAMPAIGN_BIBLE.md`)
+- If pitches don't already exist in `pipeline/CONCEPT_PITCHES.md`, write 2-3
+  distinct, fully fleshed ones (working title, one-paragraph premise, tone
+  description, 3-5 factions with one-line motivations, a central
+  mystery/conflict, a rough level arc). Genre should land as a *balance* of
+  light and dark — not grimdark, not comedic. Scale ambition should match
+  curse-of-strahd/descent-into-avernus (100+ locations eventually).
+- Pick the strongest pitch yourself — do not halt to ask (see GROUND_RULES.md
+  Rule 9). Write the chosen concept into `pipeline/CAMPAIGN_BIBLE.md`,
+  replacing the placeholder, with a one-line note on why it was chosen.
+- Continue directly into Phase 1 (below) in the same iteration if time
+  allows, or next iteration if not — do not write `pipeline/STOP`.
 
 ### 4b. Phase 1: bible expansion (only if `CAMPAIGN_BIBLE.md` placeholder has
 been replaced by the human with an approved concept, and `state.json.status`

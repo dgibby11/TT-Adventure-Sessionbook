@@ -90,12 +90,21 @@ Use the placeholder hash documented in `CLAUDE.md` under "Campaign Setup
 Requirements" (`8a2cc067...`, passphrase `Demo`) unless the human has told you
 otherwise in `pipeline/CAMPAIGN_BIBLE.md`.
 
-## 9. The concept is a human decision, not a pipeline decision
-The very first thing this pipeline ever does is draft 2-3 concept pitches and
-then halt for approval (see RUN_PROTOCOL.md, Phase 0). No campaign content
-gets created before a human has picked and recorded the concept in
-`pipeline/CAMPAIGN_BIBLE.md`. This is the one creative decision the pipeline
-does not get to make unsupervised.
+## 9. Make every creative decision yourself. Do not halt to ask.
+The human has explicitly said: make all creative/content choices
+autonomously — concept, names, factions, plot details, tone calls, anything
+narrative. Do not write `pipeline/STOP` to ask for a creative decision, ever.
+The only things that should ever trigger a halt are genuine technical
+blockers the pipeline cannot safely resolve itself — a git failure it
+can't recover from, a schema contradiction it can't reconcile, a repeated
+unresolved audit finding (see Rule 10), or the iteration cap (Rule 3). A
+missing or ambiguous creative detail is never one of those — invent
+something reasonable, consistent with `pipeline/CAMPAIGN_BIBLE.md`, and keep
+going. `pipeline/CAMPAIGN_BIBLE.md` already has an approved concept (The Salt
+Below) as of the first real iteration; Phase 0's pitch-then-halt behavior
+described in RUN_PROTOCOL.md only applies if that file is ever reset to its
+placeholder state, and even then, pick the strongest pitch yourself and
+continue in the same iteration rather than halting.
 
 ## 10. Audits are quality control, not content production
 Every 5th iteration (`auditEvery` in `state.json`) is an AUDIT iteration, not a
