@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "salvage_concordat",
+    "name": "The Salvage Concordat",
+    "type": "faction",
+    "category": "Guild & Authority",
+    "contentType": "html",
+    "contentFile": "content/factions/salvage_concordat.html",
+    "visibility": "player",
+    "related": [
+      "concordat_licensing_house",
+      "perrin_ashgrave",
+      "wick_tallow",
+      "coraline_bray",
+      "port_calder"
+    ],
+    "tags": ["guild", "authority", "political", "cover-up", "port-calder"]
+  },
+  {
+    "id": "harbor_watch",
+    "name": "Harbor Watch",
+    "type": "faction",
+    "category": "Guild & Authority",
+    "contentType": "html",
+    "contentFile": "content/factions/harbor_watch.html",
+    "visibility": "player",
+    "related": [
+      "harbor_watch_garrison",
+      "fenn_hurley",
+      "tam_ostler",
+      "brack_fennimore",
+      "port_calder"
+    ],
+    "tags": ["law", "ally", "outmatched", "port-calder"]
+  },
+  {
+    "id": "freedivers",
+    "name": "The Freedivers",
+    "type": "faction",
+    "category": "Independents",
+    "contentType": "html",
+    "contentFile": "content/factions/freedivers.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row",
+      "market_quarter",
+      "ruen_saltmarrow",
+      "ivo_marlstone",
+      "sela_vantry",
+      "port_calder"
+    ],
+    "tags": ["independent", "patron", "home-faction", "port-calder"]
+  },
+  {
+    "id": "drowned_choir",
+    "name": "The Drowned Choir",
+    "type": "faction",
+    "category": "Cults & Deep Powers",
+    "contentType": "html",
+    "contentFile": "content/factions/drowned_choir.html",
+    "visibility": "player",
+    "related": [
+      "the_drowned_bell",
+      "saltbone_curios",
+      "isolt_vane",
+      "deacon_rill",
+      "sister_meck",
+      "port_calder"
+    ],
+    "tags": ["cult", "ambiguous", "old-kingdom", "port-calder"]
+  }
+]

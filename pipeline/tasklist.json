@@ -50,32 +50,36 @@
       "phase": 3,
       "title": "Author The Salvage Concordat faction + key NPCs",
       "description": "Author the faction entity for The Salvage Concordat plus 2-3 key NPCs (guild leadership, a licensing officer, etc.). Tone: political antagonist, not moustache-twirling villain — protects profits, covers up bad finds.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction salvage_concordat + 3 NPCs (perrin_ashgrave, wick_tallow, coraline_bray). Cross-linked to concordat_licensing_house (reciprocal related[] added); Bray's private incident ledger seeded as a future plot hook."
     },
     {
       "id": "t007",
       "phase": 3,
       "title": "Author Harbor Watch faction + key NPCs",
       "description": "Author the faction entity for Harbor Watch plus 2-3 key NPCs (a captain, a sergeant, a rank-and-file contact). Tone: outmatched but earnest, a genuine potential ally faction.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction harbor_watch + 3 NPCs (fenn_hurley, tam_ostler, brack_fennimore). Cross-linked to harbor_watch_garrison (reciprocal related[] added)."
     },
     {
       "id": "t008",
       "phase": 3,
       "title": "Author The Freedivers faction + key NPCs",
       "description": "Author the faction entity for The Freedivers (the PCs' likely home faction) plus 2-3 key NPCs, including at least one strong patron/quest-giver NPC who can hand out early dive contracts.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction freedivers + 3 NPCs (ruen_saltmarrow as patron/quest-giver, ivo_marlstone, sela_vantry). Cross-linked to dive_outfitters_row and market_quarter (reciprocal related[] added). Internal risk-tolerance tension (Ruen/Sela caution vs. Ivo's ambition) seeded for slow-burn use."
     },
     {
       "id": "t009",
       "phase": 3,
       "title": "Author The Drowned Choir faction + key NPCs",
       "description": "Author the faction entity for The Drowned Choir plus 2-3 key NPCs. Tone: a cult that is half-right about the sunken city, goals sometimes align with the party's and sometimes don't — avoid simple 'bad guy' framing.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction drowned_choir + 3 NPCs (isolt_vane leader, deacon_rill recruiter, sister_meck doubter/wedge-in). Cross-linked to the_drowned_bell and saltbone_curios (reciprocal related[] added). Kept direct knowledge of It That Kept the Kingdom (t010) impressionistic per GROUND_RULES scope, not concrete."
     },
     {
       "id": "t010",

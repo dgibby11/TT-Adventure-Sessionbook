@@ -86,7 +86,11 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "calder_harbor"
+      "calder_harbor",
+      "salvage_concordat",
+      "perrin_ashgrave",
+      "wick_tallow",
+      "coraline_bray"
     ],
     "environment": {
       "architecture": "A blocky, well-kept stone hall facing the harbor, Concordat blue-and-gold banners over the door.",
@@ -176,7 +180,9 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "calder_harbor"
+      "calder_harbor",
+      "drowned_choir",
+      "isolt_vane"
     ],
     "environment": {
       "architecture": "A massive green-black bronze bell, old-kingdom make, raised from the reef decades ago and hung in a timber frame at the harbor mouth.",
@@ -212,7 +218,9 @@
       "port_calder",
       "dive_outfitters_row",
       "the_brined_anchor",
-      "saltbone_curios"
+      "saltbone_curios",
+      "freedivers",
+      "sela_vantry"
     ],
     "environment": {
       "architecture": "Covered stalls and permanent shopfronts climbing the bluff terraces above the harbor, in uneven tiers.",
@@ -248,7 +256,10 @@
       "port_calder",
       "market_quarter",
       "the_long_docks",
-      "pressure_ward_token"
+      "pressure_ward_token",
+      "freedivers",
+      "ruen_saltmarrow",
+      "ivo_marlstone"
     ],
     "environment": {
       "architecture": "A tight row of narrow shopfronts wedged between the market and the docks, every one crammed floor to ceiling with gear.",
@@ -316,7 +327,9 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "market_quarter"
+      "market_quarter",
+      "drowned_choir",
+      "sister_meck"
     ],
     "environment": {
       "architecture": "A cramped, cluttered shopfront wedged behind the Market Quarter's main stalls.",
@@ -415,7 +428,11 @@
       "port_calder",
       "harbormasters_post",
       "calder_harbor",
-      "tidewrack_ward"
+      "tidewrack_ward",
+      "harbor_watch",
+      "fenn_hurley",
+      "tam_ostler",
+      "brack_fennimore"
     ],
     "environment": {
       "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower — patched, but sturdy.",

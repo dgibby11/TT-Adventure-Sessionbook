@@ -1,11 +1,11 @@
 {
-  "iteration": 5,
+  "iteration": 6,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T14:48:24Z",
-  "lastIterationType": "audit",
-  "lastSummary": "Clean audit of salt-below (15 entities) — no drift found; see AUDIT_REPORTS.md."
+  "lastRun": "2026-07-10T15:52:10Z",
+  "lastIterationType": "build",
+  "lastSummary": "Completed t006-t009: authored all 4 Port Calder factions (Salvage Concordat, Harbor Watch, Freedivers, Drowned Choir) + 12 key NPCs (3 each), with reciprocal cross-links into existing locations."
 }
