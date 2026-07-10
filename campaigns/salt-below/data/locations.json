@@ -2107,6 +2107,7 @@
     "visibility": "player",
     "related": [
       "thalmere_gate",
+      "the_regnants_seat",
       "warders_hold",
       "vaelgard_terrace",
       "drowned_chancellery"
@@ -2140,7 +2141,8 @@
     "related": [
       "the_warders_stair",
       "aurewake_concourse",
-      "warden_husk"
+      "warden_husk",
+      "cindrel_vault"
     ],
     "environment": {
       "architecture": "A fortified barracks-monument, entry hall lined with intact carved-name alcoves, each now paired with a worn statuary bust.",
@@ -2170,7 +2172,8 @@
     "visibility": "player",
     "related": [
       "aurewake_concourse",
-      "drowned_chancellery"
+      "drowned_chancellery",
+      "ilyndras_sanctum"
     ],
     "environment": {
       "architecture": "A tiered aristocratic residential quarter, town-houses stacked up a gentle rise in diminishing grandeur.",
@@ -2204,7 +2207,8 @@
       "the_sunken_rostrum",
       "why_the_kingdom_drowned_mystery",
       "sarelles_repose",
-      "vaelgard_terrace"
+      "vaelgard_terrace",
+      "velmarch_spire"
     ],
     "environment": {
       "architecture": "A fortress-palace complex housing the old kingdom's seat of governance, its state archive hall largely intact.",
@@ -2252,6 +2256,241 @@
       "deep-kingdom",
       "old-kingdom",
       "marketplace",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "the_regnants_seat",
+    "name": "The Regnant's Seat",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_regnants_seat.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "hallowmere_gallery",
+      "ilyndras_sanctum",
+      "threshwater_stair"
+    ],
+    "environment": {
+      "architecture": "The processional terminus of [[aurewake_concourse]] — a domed audience hall raised on a stepped dais, built to be seen from the avenue's full length.",
+      "activity": "Utterly still; the hall's acoustics amplify even a diver's own bubbles into something like a held breath.",
+      "sensory": "A cold, clean draft that shouldn't exist this deep moves through the dome — the first sign in the Deep Kingdom that something down here still circulates on its own terms."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The dais holds no throne — an empty plinth, the seat itself removed as deliberately as the statues on [[aurewake_concourse]]."
+      },
+      {
+        "roll": "History DC 16",
+        "detail": "Wall reliefs depict a coronation rite that matches no ritual practiced anywhere in modern Port Calder, old-kingdom or Choir."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The unexplained draft is the campaign's first non-symbolic hint that [[it_that_kept_the_kingdom]] is close and active, not merely a story — keep it as atmosphere, never a direct manifestation here."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "capital",
+      "throne-hall",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "cindrel_vault",
+    "name": "The Cindrel Vault",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/cindrel_vault.html",
+    "visibility": "player",
+    "related": [
+      "warders_hold",
+      "warden_husk"
+    ],
+    "environment": {
+      "architecture": "A sealed strongroom beneath [[warders_hold]], reached by a stair the Wardens' roll marks as restricted, guarded rather than merely locked.",
+      "activity": "Sealed since the drowning — the vault door shows tool-marks from a deliberate, orderly locking, not a hasty one.",
+      "sensory": "Absolute silence inside the seal; even current and drift stop dead at the threshold, as though the room itself is holding still."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Shelving racks are three-quarters empty and neatly so — most of the treasury was deliberately removed, not looted, before the seal went up."
+      },
+      {
+        "roll": "Free / no check",
+        "detail": "What remains is modest by treasury standards: coin, minor regalia, and a handful of sealed document tubes — the valuable things clearly went somewhere else on purpose."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Good seed location for a future item entity (t026) — a minor regalia piece or a sealed document tube makes a natural, low-stakes find here. A [[warden_husk]] may still be posted at the inner seal."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "treasury",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "ilyndras_sanctum",
+    "name": "Ilyndra's Sanctum",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/ilyndras_sanctum.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "vaelgard_terrace",
+      "drowned_choir",
+      "the_breaking_deal_mystery"
+    ],
+    "environment": {
+      "architecture": "A circular sanctum off [[the_regnants_seat]], its walls carved floor-to-ceiling with a binding-rite in relief — the same iconography [[the_hollow_choir_yard]] echoes above, but whole here, and clearly the original rather than a copy.",
+      "activity": "Undisturbed by the Choir, who venerate this rite without having ever actually reached this room.",
+      "sensory": "The carvings seem to draw what little light a lantern casts, leaving the rest of the sanctum darker than the water outside should allow."
+    },
+    "curiosities": [
+      {
+        "roll": "Religion DC 15",
+        "detail": "The relief depicts the binding as a covenant struck willingly, not a spell cast in desperation — a nuance the modern Choir's teachings have lost entirely."
+      },
+      {
+        "roll": "Arcana DC 17",
+        "detail": "A working still faintly active in the stone confirms the binding is a covenant, not a one-time casting — it requires something ongoing to hold, which lines up with [[the_breaking_deal_mystery]]."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The strongest single location for a player who wants to understand the Choir sympathetically — they're not wrong that something was sacred here, only wrong about what freeing it would mean. Do not let this room resolve [[the_breaking_deal_mystery]] outright; it clarifies the nature of the deal, not its remaining lifespan."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "sanctum",
+      "drowned-choir",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "velmarch_spire",
+    "name": "Velmarch Spire",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/velmarch_spire.html",
+    "visibility": "player",
+    "related": [
+      "drowned_chancellery",
+      "why_the_kingdom_drowned_mystery",
+      "the_leaning_archive"
+    ],
+    "environment": {
+      "architecture": "A tall, narrow scholars' tower off [[drowned_chancellery]], its upper chamber ringed with brass instrument-mounts whose actual instruments are long gone.",
+      "activity": "Abandoned mid-use — star-charts and tide-tables left pinned open rather than shelved.",
+      "sensory": "The tower's height puts a diver above the worst of the ambient silt; visibility here is the best anywhere in the Deep Kingdom, which only makes the empty instrument-mounts more conspicuous."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The pinned-open charts track tidal and astronomical cycles obsessively in the final months' entries — someone here was trying to time something."
+      },
+      {
+        "roll": "Arcana DC 16",
+        "detail": "Annotations cross-reference the charts against a ritual calendar, not a navigational one — this was a working being scheduled, not weather being predicted."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Pairs directly with [[the_leaning_archive]]'s sealed decree — the scholars here were calculating the correct timing for the binding-working itself, another concrete plank in the 'evacuation, not disaster' case for [[why_the_kingdom_drowned_mystery]]."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "scholars",
+      "kingdom-remnant",
+      "mystery"
+    ]
+  },
+  {
+    "id": "hallowmere_gallery",
+    "name": "The Hallowmere Gallery",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/hallowmere_gallery.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "why_the_kingdom_drowned_mystery",
+      "vaelgard_terrace"
+    ],
+    "environment": {
+      "architecture": "A long memorial hall off [[the_regnants_seat]], lined with portrait-reliefs of the old royal line in unbroken succession, down to a final frame.",
+      "activity": "Quiet and orderly — a place kept, not abandoned in haste, in the same register as [[vaelgard_terrace]].",
+      "sensory": "Cold stone made colder by scale; the final portrait-frame is noticeably larger than the rest, as if built for a likeness that was never finished."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 15",
+        "detail": "The succession is unbroken and complete — every ruler accounted for, right up to the last, unfinished frame."
+      },
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The final frame's relief is roughed in but not carved to completion, tools left neatly beside it rather than dropped mid-work."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The unfinished final portrait is a quiet, human-scale echo of [[drowned_chancellery]]'s unfinished draft document — the same last ruler, caught mid-decision in two different rooms. Keep both discoveries available independently; a party that finds this before the Chancellery should still feel the weight without needing the other to explain it."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "gallery",
+      "kingdom-remnant",
+      "mystery"
+    ]
+  },
+  {
+    "id": "threshwater_stair",
+    "name": "The Threshwater Stair",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/threshwater_stair.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "ilyndras_sanctum",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "A final descending stair behind [[ilyndras_sanctum]], narrower and less formal than anything else in the capital core, as if it were never meant to be a public way.",
+      "activity": "The last stretch of the old kingdom built for people; past its bottom step, nothing here was built for anyone.",
+      "sensory": "Pressure and cold deepen sharply past the first few steps, and the earlier draft from [[the_regnants_seat]] resolves here into a slow, directional pull — something down there is drawing water toward itself."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 16",
+        "detail": "The pull is faint but constant, strongest at the stair's lowest visible landing — current with a clear source, in water that shouldn't have current at all."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Marks the threshold out of the capital core and toward the containment site of [[it_that_kept_the_kingdom]] (t023/t024) — the same structural role [[the_last_descent]] played entering the Deep Kingdom. Hold any direct containment-site content until those tasks; this location is dread and anticipation only."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "transition",
       "central-mystery"
     ]
   }

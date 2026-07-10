@@ -1,11 +1,11 @@
 {
-  "iteration": 13,
+  "iteration": 14,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T19:05:00Z",
+  "lastRun": "2026-07-10T16:48:38Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t020 (4 Drowned Districts creatures: choir_thrall, warden_husk, deep_maw_eel, silt_wraith) and t021 (6 Deep Kingdom locations opening the region: thalmere_gate, aurewake_concourse, warders_hold, vaelgard_terrace, drowned_chancellery, sarelles_repose), bringing salt-below to 94 entities. Deep Kingdom region now open via the_last_descent -> thalmere_gate."
+  "lastSummary": "Completed t022 (6 Deep Kingdom locations forming the old capital's core: the_regnants_seat, cindrel_vault, ilyndras_sanctum, velmarch_spire, hallowmere_gallery, threshwater_stair), bringing salt-below to 100 entities. Capital core now fully mapped from the_regnants_seat outward; threshwater_stair opens the approach to the containment site for t023."
 }
