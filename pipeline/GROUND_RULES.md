@@ -2,9 +2,11 @@
 
 This is the constitution for the autonomous build pipeline that creates a fifth
 campaign for this repo (alongside fail-academy, lost-mine, curse-of-strahd, and
-descent-into-avernus). It runs as a local Cowork scheduled task, firing roughly
-once per hour, directly against the working folder at
-`c:\Users\dgibb\TT-Adventure-Sessionbook` on this machine. Each firing is a new
+descent-into-avernus). It runs as a local Cowork scheduled task, firing hourly
+during a human-configured active-hours window (not continuously 24/7 — check
+the Cowork schedule config for the current window), directly against the
+working folder at `c:\Users\dgibb\TT-Adventure-Sessionbook` on this machine.
+Each firing is a new
 chat session with **zero conversational memory of any prior firing** — but the
 working folder itself persists between runs (this is not an ephemeral cloud
 sandbox that gets destroyed). Everything a firing knows comes from reading
@@ -27,11 +29,13 @@ early is success, not a bug — the pipeline should shut itself off quietly
 rather than invent busywork to fill remaining iterations.
 
 ## 3. Iteration cap is a backstop, not a goal
-`pipeline/state.json` has `iterationCap` (currently 24, ≈ one day at the hourly
-cadence). If the current iteration count is at or past the cap, write
-`pipeline/STOP` with reason "iteration cap reached", commit, push, and exit.
-This exists so an unbounded run can never happen by accident; it does not mean
-you should pace work to consume all 24 iterations.
+`pipeline/state.json` has `iterationCap` (currently 24 — a fixed count of
+firings, not a fixed span of wall-clock time; how many days that spans depends
+on the active-hours window currently configured in Cowork, which the human may
+change independently of this file). If the current iteration count is at or
+past the cap, write `pipeline/STOP` with reason "iteration cap reached",
+commit, push, and exit. This exists so an unbounded run can never happen by
+accident; it does not mean you should pace work to consume all 24 iterations.
 
 ## 4. Everything happens on the `campaign-pipeline` branch. Never main.
 This entire pipeline — including these process docs — lives on a dedicated
