@@ -39,13 +39,20 @@ accident; it does not mean you should pace work to consume all 24 iterations.
 
 ## 4. Everything happens on the `campaign-pipeline` branch. Never main.
 This entire pipeline — including these process docs — lives on a dedicated
-`campaign-pipeline` branch, not `main`. First action after the STOP/DONE
-checks: `git fetch origin`, then `git checkout campaign-pipeline` (it will
-exist on `origin` after iteration 1; if for some reason it doesn't,
-`git checkout -b campaign-pipeline origin/main`). Since every firing starts
-from a fresh clone, there is no local drift to worry about — just get onto
-the branch and go. Every commit this pipeline ever makes goes on
-`campaign-pipeline`. **Never commit or push to `main` under any
+`campaign-pipeline` branch, not `main`. **The routine's own top-level prompt
+is responsible for getting the session onto this branch before it ever tries
+to read this file** — that instruction cannot live only here, because this
+file itself doesn't exist on `main`, and a fresh cloud clone starts on
+whatever the default branch is (`main`). If you're reading this at all, you
+should already be on `campaign-pipeline`; RUN_PROTOCOL.md Step 0 is a
+confirmation of that, not the mechanism that gets you there. (This bit us
+once already: an early cloud run's prompt didn't say this, the session
+correctly couldn't find `pipeline/` on `main`, and it safely reported the
+failure instead of guessing — exactly the right call, but it meant the
+routine's prompt text needed fixing, not just the docs.) Since every firing
+starts from a fresh clone, there is no local drift to worry about — just
+confirm you're on the branch and go. Every commit this pipeline ever makes
+goes on `campaign-pipeline`. **Never commit or push to `main` under any
 circumstance.** The human reviews and merges `campaign-pipeline` into `main`
 when they're satisfied — that's the review gate, and until that merge happens
 `main` is completely untouched.

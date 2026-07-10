@@ -3,12 +3,22 @@
 Read `pipeline/GROUND_RULES.md` first. It governs everything below; if any
 step here seems to conflict with it, GROUND_RULES.md wins.
 
-## Step 0 — get on the right branch
-This session started from a brand-new `git clone` — nothing else has ever
-touched it, so there is no lock contention to worry about here.
-1. `git fetch origin`
-2. `git checkout campaign-pipeline` (it will exist on `origin` from
-   iteration 1 onward). If it genuinely doesn't exist yet (very first-ever
+## Step 0 — confirm you're on the right branch
+By the time you're reading this file at all, the routine's own top-level
+prompt should already have gotten you onto `campaign-pipeline` — that
+instruction has to live in the prompt itself, not here, because this file
+doesn't exist anywhere except on that branch (a bootstrapping problem: you
+can't read branch-switching instructions from a file you can only reach
+after switching branches). This step is just a confirmation, not a first
+attempt:
+1. `git branch --show-current` — if it says `campaign-pipeline`, continue.
+2. If it says anything else, something upstream (the routine prompt) failed
+   to do its job. Recover defensively: `git fetch origin campaign-pipeline`
+   (fetch this branch explicitly by name — works even on a shallow/
+   single-branch clone that doesn't otherwise have this ref) then
+   `git checkout campaign-pipeline` or, if that ref truly doesn't exist
+   remotely yet (confirm with `git ls-remote origin campaign-pipeline`
+   returning nothing — this should only be true before iteration 1 has ever
    run), `git checkout -b campaign-pipeline origin/main`.
 
 ## Step 1 — halt checks
