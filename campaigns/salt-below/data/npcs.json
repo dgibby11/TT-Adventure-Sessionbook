@@ -46,7 +46,9 @@
     "related": [
       "salvage_concordat",
       "concordat_licensing_house",
-      "the_ledger_wreck"
+      "the_ledger_wreck",
+      "vaultward_reliquary",
+      "the_ashen_wardrobe"
     ],
     "tags": [
       "concordat",
@@ -138,7 +140,8 @@
     "related": [
       "freedivers",
       "dive_outfitters_row",
-      "farrows_grotto"
+      "farrows_grotto",
+      "thornwake_hollow"
     ],
     "tags": [
       "freedivers",
@@ -198,7 +201,9 @@
       "drowned_choir",
       "the_drowned_bell",
       "the_nightweigh",
-      "the_long_requiem"
+      "the_long_requiem",
+      "the_hollow_choir_yard",
+      "the_choir_almonry"
     ],
     "tags": [
       "drowned-choir",
@@ -217,7 +222,9 @@
     "related": [
       "drowned_choir",
       "saltbone_curios",
-      "verdigris_court"
+      "verdigris_court",
+      "the_leaning_archive",
+      "the_hollow_choir_yard"
     ],
     "tags": [
       "drowned-choir",

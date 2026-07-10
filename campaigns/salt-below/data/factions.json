@@ -25,7 +25,11 @@
       "the_salt_choked_colonnade",
       "the_bellweed_shallows",
       "tallowmark_reach",
-      "ashgate_wardhouse"
+      "ashgate_wardhouse",
+      "vaultward_reliquary",
+      "wraithlock_gate",
+      "millrace_deep",
+      "the_ashen_wardrobe"
     ],
     "tags": [
       "guild",
@@ -50,7 +54,8 @@
       "brack_fennimore",
       "port_calder",
       "the_marrow_trawler",
-      "ashgate_wardhouse"
+      "ashgate_wardhouse",
+      "wraithlock_gate"
     ],
     "tags": [
       "law",
@@ -80,7 +85,9 @@
       "reavers_ribs",
       "hollowmarch",
       "farrows_grotto",
-      "the_loom_quarter"
+      "the_loom_quarter",
+      "thornwake_hollow",
+      "millrace_deep"
     ],
     "tags": [
       "independent",
@@ -115,7 +122,9 @@
       "verdigris_court",
       "the_loom_quarter",
       "underbell_cistern",
-      "the_long_requiem"
+      "the_long_requiem",
+      "the_hollow_choir_yard",
+      "the_choir_almonry"
     ],
     "tags": [
       "cult",
@@ -142,7 +151,12 @@
       "the_breaking_deal_mystery",
       "port_calder",
       "the_chime_shoal",
-      "salt_warped_grouper"
+      "salt_warped_grouper",
+      "the_susurrus_deep",
+      "vaultward_reliquary",
+      "graves_end_locks",
+      "thornwake_hollow",
+      "bellwrit_span"
     ],
     "tags": [
       "presence",

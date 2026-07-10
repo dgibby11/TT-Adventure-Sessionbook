@@ -158,16 +158,18 @@
       "phase": 3,
       "title": "Author Drowned Districts locations, batch 3",
       "description": "Author 5-6 more Drowned Districts locations, introducing the first clear (non-direct) signs of It That Kept the Kingdom's influence.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 7 locations: the_susurrus_deep (ambient whispering omen), vaultward_reliquary ('still-breathing' salvage tie to coraline_bray's ledger), graves_end_locks (locks groaning in rhythm with the_drowned_bell), thornwake_hollow (dead-zone hazard, Freedivers internal tension), the_leaning_archive (first textual hint feeding why_the_kingdom_drowned_mystery, sister_meck's research site), bellwrit_span (bell's pressure felt underwater), the_hollow_choir_yard (Choir chant answered back, sister_meck/deacon_rill wedge scene). Reciprocal related[] backlinks added across factions/npcs/mysteries/locations. Full validation clean."
     },
     {
       "id": "t019",
       "phase": 3,
       "title": "Author Drowned Districts locations, batch 4",
       "description": "Author 5-6 more Drowned Districts locations to reach the 25-35 target from CAMPAIGN_BIBLE.md.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 7 locations: aldermourn_close (low-dread breather), the_choir_almonry (Choir charity, humanizing scene), wraithlock_gate (Harbor Watch/Concordat jurisdiction friction), the_sunken_rostrum (kingdom's final public decree, pairs with the_leaning_archive for why_the_kingdom_drowned_mystery), millrace_deep (mundane hazard/salvage), the_ashen_wardrobe (seed for future t026 item), the_last_descent (transition threshold into the Deep Kingdom, parallel to the_last_landing). Drowned Districts now at 25/25-35 target from CAMPAIGN_BIBLE.md. Reciprocal related[] backlinks added. Full validation clean; 84 entities total in salt-below."
     },
     {
       "id": "t020",
