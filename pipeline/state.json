@@ -1,11 +1,11 @@
 {
-  "iteration": 2,
+  "iteration": 3,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T14:05:24Z",
+  "lastRun": "2026-07-10T14:15:38Z",
   "lastIterationType": "build",
-  "lastSummary": "Phase 1: bible was already fully expanded (concept, factions, level arc, geography, naming conventions); set campaignSlug=salt-below and appended Phase 2 scaffolding + 27 Phase 3 content tasks to tasklist.json."
+  "lastSummary": "Phase 2/3: scaffolded campaigns/salt-below (t002) and authored Port Calder root + 6 harbor-district locations (t003)."
 }

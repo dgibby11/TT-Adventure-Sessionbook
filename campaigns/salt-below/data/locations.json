@@ -1,0 +1,195 @@
+[
+  {
+    "id": "port_calder",
+    "name": "Port Calder",
+    "type": "location",
+    "category": "Settlements",
+    "contentType": "html",
+    "contentFile": "content/locations/port_calder.html",
+    "visibility": "player",
+    "related": [
+      "calder_harbor",
+      "concordat_licensing_house",
+      "the_long_docks",
+      "harbormasters_post",
+      "the_drowned_bell"
+    ],
+    "environment": {
+      "architecture": "Timber-and-coral-stone buildings climbing the harbor bluffs in uneven terraces; salvaged old-kingdom masonry reused as foundation stone throughout the older quarters.",
+      "activity": "Dive crews hauling gear to the docks at dawn, guild criers reading the day's licensed sites, a constant traffic of handcarts moving salvage from harbor to market.",
+      "sensory": "Salt, tar, and drying kelp; the clatter of winches; gulls and the distant clang of the Drowned Bell marking the tide.",
+      "lighting": "Bright and glaring at midday off the water; oil-lamp lit and rowdy after dark, especially near the harbor."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 12",
+        "detail": "Old-kingdom stonework is visible in half the building foundations, if you know to look for the archaic lettering."
+      },
+      {
+        "roll": "Insight (any local)",
+        "detail": "Everyone in Port Calder has a story about someone who dove too deep and came back wrong, or didn't come back at all."
+      }
+    ],
+    "tags": [
+      "hub",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "calder_harbor",
+    "name": "Calder Harbor",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/calder_harbor.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_long_docks",
+      "harbormasters_post",
+      "the_drowned_bell"
+    ],
+    "environment": {
+      "architecture": "A natural deepwater cove walled in by old breakwaters, half of them salvaged old-kingdom seawall stone.",
+      "activity": "Dive boats, salvage barges, and Concordat inspection skiffs crowd the water; crews load and unload from dawn to dusk.",
+      "sensory": "Rope and tar, brine, the groan of hulls against pilings.",
+      "lighting": "Open sky; lantern-strung at night along the seawall."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "A section of old breakwater stone bears worn old-kingdom carvings, half-submerged at low tide."
+      }
+    ],
+    "tags": [
+      "harbor",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "concordat_licensing_house",
+    "name": "The Licensing House",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/concordat_licensing_house.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor"
+    ],
+    "environment": {
+      "architecture": "A blocky, well-kept stone hall facing the harbor, Concordat blue-and-gold banners over the door.",
+      "activity": "Queues of divers waiting on permits; clerks stamping manifests; a guard or two watching the line.",
+      "sensory": "Ink, wax seals, the murmur of paperwork disputes."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The public manifest board is missing several recent dive-site postings — quietly pulled, not officially cancelled."
+      }
+    ],
+    "tags": [
+      "guild",
+      "concordat",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_long_docks",
+    "name": "The Long Docks",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_long_docks.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "harbormasters_post"
+    ],
+    "environment": {
+      "architecture": "A sprawl of wooden piers, some newer construction, some visibly built on older stone pilings.",
+      "activity": "Dive crews prepping gear, dockhands haggling over cargo, licensed and unlicensed boats jockeying for berths.",
+      "sensory": "Wet rope, fish, low tide mud at the pier bases."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "One unmarked pier at the far end sees regular traffic at odd hours — no Concordat flag, no manifest posted."
+      }
+    ],
+    "tags": [
+      "docks",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "harbormasters_post",
+    "name": "The Harbormaster's Post",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/harbormasters_post.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "the_long_docks"
+    ],
+    "environment": {
+      "architecture": "A weathered two-story shack on stilts at the harbor mouth, signal flags and a tide-bell strung from the roof.",
+      "activity": "Tide and weather postings, berth assignments, incident reports.",
+      "sensory": "Damp wood, lamp oil, chalk dust from the tide-board."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 13",
+        "detail": "The harbormaster logs every unusual find and current shift with more care than her pay grade requires — she's tracking something."
+      }
+    ],
+    "tags": [
+      "harbor-watch",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_drowned_bell",
+    "name": "The Drowned Bell",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_drowned_bell.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor"
+    ],
+    "environment": {
+      "architecture": "A massive green-black bronze bell, old-kingdom make, raised from the reef decades ago and hung in a timber frame at the harbor mouth.",
+      "activity": "Rung on the hour by a rotating duty-watch; a minor local landmark and meeting point.",
+      "sensory": "A low, resonant tone that carries over the whole harbor; faint verdigris smell of old bronze."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 15",
+        "detail": "The bell's old-kingdom inscription isn't a maker's mark — it's a warning, in a dialect none of Port Calder's scholars fully recognize."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The bell was cast as part of the original containment working. Ringing it in a specific pattern (unknown to the surface) can be felt below."
+      }
+    ],
+    "tags": [
+      "landmark",
+      "port-calder",
+      "surface",
+      "old-kingdom"
+    ]
+  }
+]

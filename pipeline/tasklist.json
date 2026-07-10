@@ -14,16 +14,18 @@
       "phase": 2,
       "title": "Scaffold campaigns/salt-below folder",
       "description": "Create campaigns/salt-below/campaign.json (id, name 'The Salt Below', subtitle 'Port Calder & the Drowned Kingdom — Characters Level 1–10', rootLocation, storageKey 'salt-below.v1', dmPassHash = the CLAUDE.md placeholder hash for new campaigns, github.stateFile). Create campaigns/salt-below/data/index.json listing the 8 per-type files (locations, npcs, factions, items, creatures, mysteries, sessions, references) and create each of those 8 files as empty JSON arrays. Create empty campaigns/salt-below/content/ and campaigns/salt-below/assets/ folders (a .gitkeep if needed for assets, since no map art will exist yet — the app's dashboard nav does not require mapImage/regionMapEntity, see js/data.js defaults). Append exactly one entry for salt-below to campaigns/index.json (id, name, subtitle) without touching the existing three entries.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Scaffolded campaigns/salt-below/ (campaign.json, data/index.json + 8 empty type files, content/<type>/ subfolders, assets/.gitkeep). Appended salt-below entry to campaigns/index.json."
     },
     {
       "id": "t003",
       "phase": 3,
       "title": "Author Port Calder root location + harbor district",
       "description": "Author the root location entity (id matching campaign.json rootLocation, e.g. port_calder) plus 4-5 harbor-district locations (main harbor, guild licensing house exterior, docks, harbormaster's post, a notable dockside landmark). Use working-harbor naming per CAMPAIGN_BIBLE.md naming conventions. Cross-link with [[id]] and related[].",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 location entities: port_calder (root), calder_harbor, concordat_licensing_house, the_long_docks, harbormasters_post, the_drowned_bell. Full HTML content + environment/curiosities per house style, cross-linked via [[id]] and related[]. Forward references to not-yet-authored factions/NPCs left as plain prose (no [[ ]]) per Rule 6/8 — to be linked once those entities exist (t006-t009), swept by t029."
     },
     {
       "id": "t004",
