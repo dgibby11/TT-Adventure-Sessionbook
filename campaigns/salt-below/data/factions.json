@@ -17,7 +17,12 @@
       "the_breaking_deal_mystery",
       "sawback_reef",
       "the_kettle",
-      "glasswater_shelf"
+      "glasswater_shelf",
+      "anchors_grave",
+      "the_foundered_bride",
+      "the_ledger_wreck",
+      "the_sunken_causeway",
+      "the_salt_choked_colonnade"
     ],
     "tags": ["guild", "authority", "political", "cover-up", "port-calder"]
   },
@@ -54,7 +59,10 @@
       "sela_vantry",
       "port_calder",
       "sawback_reef",
-      "widows_combs"
+      "widows_combs",
+      "the_foundered_bride",
+      "reavers_ribs",
+      "hollowmarch"
     ],
     "tags": ["independent", "patron", "home-faction", "port-calder"]
   },
@@ -75,7 +83,8 @@
       "port_calder",
       "it_that_kept_the_kingdom",
       "why_the_kingdom_drowned_mystery",
-      "the_chime_shoal"
+      "the_chime_shoal",
+      "the_glass_hull"
     ],
     "tags": ["cult", "ambiguous", "old-kingdom", "port-calder"]
   },

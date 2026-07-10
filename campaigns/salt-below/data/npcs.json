@@ -29,7 +29,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/coraline_bray.html",
     "visibility": "player",
-    "related": ["salvage_concordat", "concordat_licensing_house"],
+    "related": ["salvage_concordat", "concordat_licensing_house", "the_ledger_wreck"],
     "tags": ["concordat", "cover-up", "fixer"]
   },
   {

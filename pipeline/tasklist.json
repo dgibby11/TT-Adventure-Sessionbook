@@ -104,16 +104,18 @@
       "phase": 3,
       "title": "Author The Shallows locations, batch 2 (wrecked ships)",
       "description": "Author 5 Shallows-region locations focused on wrecked ships and salvage sites, sized for early-level exploration and contract work.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 wreck locations: anchors_grave (contested wreck-tangle, ties into harbor_watch_garrison's unresolved duty-board incidents), the_foundered_bride (legendary intact wreck, untouched dowry chest seeded for t026), reavers_ribs (hazard site, second duty-board incident), the_ledger_wreck (scuttled Concordat records-cutter, ties into coraline_bray's private ledger), the_glass_hull (Drowned Choir pilgrimage/curio-supply wreck). Reciprocal related[] backlinks added to salvage_concordat, freedivers, drowned_choir, harbor_watch_garrison, saltbone_curios, coraline_bray. Updated harbor_watch_garrison.html DM notes to name anchors_grave/reavers_ribs as 2 of its 3 unresolved incidents, leaving the third open for a future iteration."
     },
     {
       "id": "t013",
       "phase": 3,
       "title": "Author The Shallows locations, batch 3 (kingdom outskirts)",
       "description": "Author 5 Shallows-region locations at the shallow edge of the old kingdom's ruins \u2014 first hints of the archaic/formal naming convention contrasting with surface Port Calder.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 kingdom-outskirts locations introducing the archaic/formal naming convention: the_sunken_causeway (first built old-kingdom structure divers find), aldergate_shoal (first titled placename, formal boundary checkpoint), the_warders_stair (carved Warden names, long-burn Deep Kingdom hook), hollowmarch (low-stakes residential district), the_salt_choked_colonnade (first grandeur-not-ruin site, remnant wards echoing the_breaking_deal_mystery). Reciprocal related[] backlinks added to salvage_concordat and the_breaking_deal_mystery."
     },
     {
       "id": "t014",

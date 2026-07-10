@@ -334,7 +334,8 @@
       "port_calder",
       "market_quarter",
       "drowned_choir",
-      "sister_meck"
+      "sister_meck",
+      "the_glass_hull"
     ],
     "environment": {
       "architecture": "A cramped, cluttered shopfront wedged behind the Market Quarter's main stalls.",
@@ -437,7 +438,9 @@
       "harbor_watch",
       "fenn_hurley",
       "tam_ostler",
-      "brack_fennimore"
+      "brack_fennimore",
+      "anchors_grave",
+      "reavers_ribs"
     ],
     "environment": {
       "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower — patched, but sturdy.",
@@ -603,5 +606,225 @@
       }
     ],
     "tags": ["shallows", "dive-site", "reef", "drowned-choir", "old-kingdom"]
+  },
+  {
+    "id": "anchors_grave",
+    "name": "Anchor's Grave",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/anchors_grave.html",
+    "visibility": "player",
+    "related": ["port_calder", "salvage_concordat", "harbor_watch_garrison"],
+    "environment": {
+      "architecture": "Half a dozen wrecks fused into one tangled reef by decades of coral growth and shifting sand.",
+      "activity": "Loud and crowded by day with staggered licensed crews; unlicensed wreck-pickers work it unmarked after dark.",
+      "sensory": "Groaning timber, hissing shifted sand, the metallic tang of old iron fittings."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "One wreck's hull timbers are centuries older than the rest and driven into the tangle rather than sunk alongside it."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "wreck", "contested"]
+  },
+  {
+    "id": "the_foundered_bride",
+    "name": "The Foundered Bride",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_foundered_bride.html",
+    "visibility": "player",
+    "related": ["port_calder", "freedivers", "salvage_concordat"],
+    "environment": {
+      "architecture": "An intact merchant marriage-barge resting upright in a sand hollow, masts snapped but hull whole.",
+      "activity": "A perennial favorite for licensed crews; storm-shifted sand exposes new cargo each season.",
+      "sensory": "Hazy gold light through the broken upper deck by morning; arm's-length visibility by afternoon current."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "A sealed dowry chest sits untouched in the lower hold despite decades of open salvage."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "wreck", "legendary"]
+  },
+  {
+    "id": "reavers_ribs",
+    "name": "Reaver's Ribs",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/reavers_ribs.html",
+    "visibility": "player",
+    "related": ["port_calder", "freedivers", "harbor_watch_garrison"],
+    "environment": {
+      "architecture": "A raider longship's broken ribs jutting from a sand shelf, hull split nearly in two.",
+      "activity": "Rarely worked; crews that still take contracts here dive in daylight, in pairs, and don't linger.",
+      "sensory": "Unexplained cold pockets in the water; the creak of shifting wreckage."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 14",
+        "detail": "Fresh scrape marks scar the ribs' inner hull, too large and too recent to be old salvage damage."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "wreck", "hazard"]
+  },
+  {
+    "id": "the_ledger_wreck",
+    "name": "The Ledger Wreck",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_ledger_wreck.html",
+    "visibility": "player",
+    "related": ["port_calder", "salvage_concordat", "coraline_bray"],
+    "environment": {
+      "architecture": "A modest Concordat records-cutter, hull deliberately scored open along one seam.",
+      "activity": "Officially 'lost with all documents' two years back; never licensed for salvage, no exceptions.",
+      "sensory": "A sealed strongbox visible through a breached cabin window."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The hull's scoring is even and deliberate, clearly tool-made — not storm damage."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "wreck", "cover-up", "concordat"]
+  },
+  {
+    "id": "the_glass_hull",
+    "name": "The Glass Hull",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_glass_hull.html",
+    "visibility": "player",
+    "related": ["port_calder", "drowned_choir", "saltbone_curios"],
+    "environment": {
+      "architecture": "A trade galley whose cargo hold burst open on impact, scattering old-kingdom glass cargo across the sand.",
+      "activity": "A frequent source for illicit curio stock; Drowned Choir pilgrims comb it clean on certain low tides.",
+      "sensory": "Scattered glints of light through murky water even at midday; sharp shards underfoot."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Several glass fragments are etched with old-kingdom script, intact enough to translate."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "wreck", "drowned-choir", "old-kingdom"]
+  },
+  {
+    "id": "the_sunken_causeway",
+    "name": "The Sunken Causeway",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_sunken_causeway.html",
+    "visibility": "player",
+    "related": ["port_calder", "salvage_concordat", "aldergate_shoal"],
+    "environment": {
+      "architecture": "A broad, largely intact paved road sloping down from the reef flats into deeper dark.",
+      "activity": "Concordat survey crews plant a numbered marker along it each season; no formal chart of its end exists.",
+      "sensory": "A faint, steady downward current pull that strengthens with depth."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The paving stones carry formal, titled old-kingdom script, distinct from any reused surface salvage stone."
+      }
+    ],
+    "tags": ["shallows", "kingdom-outskirts", "old-kingdom", "landmark"]
+  },
+  {
+    "id": "aldergate_shoal",
+    "name": "Aldergate Shoal",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/aldergate_shoal.html",
+    "visibility": "player",
+    "related": ["port_calder", "the_sunken_causeway", "the_warders_stair", "hollowmarch"],
+    "environment": {
+      "architecture": "Two broken gate-towers flanking a collapsed formal archway, lintel stone still legibly inscribed.",
+      "activity": "A common turnaround point for licensed crews; a handful of 'beyond the gate' rumors trade like currency.",
+      "sensory": "A noticeable cold pressure change past the arch, like a doorway that isn't there anymore."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Two distinct sets of tool-marks scar the archway, one old-kingdom, one recent and not Concordat work."
+      }
+    ],
+    "tags": ["shallows", "kingdom-outskirts", "old-kingdom", "checkpoint"]
+  },
+  {
+    "id": "the_warders_stair",
+    "name": "The Warders' Stair",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_warders_stair.html",
+    "visibility": "player",
+    "related": ["port_calder", "aldergate_shoal", "the_salt_choked_colonnade"],
+    "environment": {
+      "architecture": "A wide formal stairway in even, deliberate steps, empty statuary alcoves lining the walls.",
+      "activity": "Technically off-limits without a Concordat writ; a rule enforced about as often as depth discourages visitors anyway.",
+      "sensory": "A faint, regular pulse of cold current from the alcoves, like slow breathing."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Every alcove carries a worn, carved name beneath it, none matching any figure known to Port Calder's history."
+      }
+    ],
+    "tags": ["shallows", "kingdom-outskirts", "old-kingdom"]
+  },
+  {
+    "id": "hollowmarch",
+    "name": "Hollowmarch",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/hollowmarch.html",
+    "visibility": "player",
+    "related": ["port_calder", "aldergate_shoal", "freedivers", "the_salt_choked_colonnade"],
+    "environment": {
+      "architecture": "Rows of modest, formally-built rowhouses in orderly ranks along a straight street grid.",
+      "activity": "Popular low-risk independent salvage; Freedivers use it to train new divers on room-to-room search.",
+      "sensory": "Deep-drifted sand in every lower room; kelp curtains in doorless frames."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 11",
+        "detail": "Every house still bears its formal door-name plaque, oddly undamaged for otherwise fully collapsed structures."
+      }
+    ],
+    "tags": ["shallows", "kingdom-outskirts", "old-kingdom", "training"]
+  },
+  {
+    "id": "the_salt_choked_colonnade",
+    "name": "The Salt-Choked Colonnade",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_salt_choked_colonnade.html",
+    "visibility": "player",
+    "related": ["port_calder", "the_warders_stair", "hollowmarch", "salvage_concordat", "the_breaking_deal_mystery"],
+    "environment": {
+      "architecture": "Dozens of fluted pillars standing in formal ranks around a roofless processional plaza.",
+      "activity": "Licensed only for supervised survey work as a 'heritage site' — not worth the guild's trouble to loot.",
+      "sensory": "Unusually good visibility for the depth; a faint tonal hum between pillars on certain tides."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 14",
+        "detail": "Faint remnant wards cling to several pillars — old-kingdom protective work, long depleted but not fully dead."
+      }
+    ],
+    "tags": ["shallows", "kingdom-outskirts", "old-kingdom", "wards"]
   }
 ]
