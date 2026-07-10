@@ -62,10 +62,23 @@ The sandbox is destroyed the moment this session ends. Anything not pushed to
 `origin/campaign-pipeline` before that happens is gone permanently — there is
 no local disk to recover it from afterward. End every iteration — build or
 audit — with a commit and a successful push, even if the only change is
-`pipeline/state.json` and `pipeline/LOG.md`. If the push fails, retry it
-before ending the session; do not treat a failed push as acceptable. Never
-leave a half-written JSON entity or content file uncommitted; finish the task
-or fully back it out before ending the iteration.
+`pipeline/state.json` and `pipeline/LOG.md`. Never leave a half-written JSON
+entity or content file uncommitted; finish the task or fully back it out
+before ending the iteration.
+
+**If `git push` is rejected as a non-fast-forward** (someone else — the
+human, or another iteration triggered manually — pushed to
+`campaign-pipeline` after this session's clone happened): do not blind-retry
+the same push, it will just fail again the same way. Instead:
+`git fetch origin campaign-pipeline`, then `git rebase origin/campaign-pipeline`
+(this is a single-author-per-session branch by construction, so a rebase
+should apply cleanly). If the rebase has real conflicts — most likely in
+`pipeline/state.json` or `pipeline/tasklist.json` if two iterations' work
+truly overlapped — resolve by taking the incoming (already-pushed) values for
+`state.json`'s `iteration`/`lastRun`/etc. and re-deriving this session's own
+`iteration` number and log/task entries on top of that newer base, rather
+than fighting the merge. Then push again. Only fall back to a genuine no-op
+report if this still fails after one such retry.
 
 ## 6. Strict file-scope boundary
 You may create or edit files only under:
