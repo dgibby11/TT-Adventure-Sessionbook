@@ -1,11 +1,11 @@
 {
-  "iteration": 4,
+  "iteration": 5,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T14:25:19Z",
-  "lastIterationType": "build",
-  "lastSummary": "Phase 3: completed t004 (market quarter, dive-outfitter row, home-base tavern, curio shop + 1 item) and t005 (2 residential wards, Harbor Watch garrison, chapel) — Port Calder surface roster now complete at 15 locations."
+  "lastRun": "2026-07-10T14:48:24Z",
+  "lastIterationType": "audit",
+  "lastSummary": "Clean audit of salt-below (15 entities) — no drift found; see AUDIT_REPORTS.md."
 }
