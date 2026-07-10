@@ -45,6 +45,23 @@ and halt for human review. Two consecutive audit failures on the same thing
 means the pipeline needs a human, not a third automated attempt.
 
 ## Close out
-Log every fix made and every issue flagged (not fixed) in `pipeline/LOG.md`,
-then follow RUN_PROTOCOL.md Step 5 as normal (state.json update, commit,
-push).
+Audits get a more detailed record than build iterations — the human wants to
+be able to gauge how much drift is happening, not just that an audit ran.
+Append a new dated section to `pipeline/AUDIT_REPORTS.md` (create it if it
+doesn't exist yet) with:
+- **Scope checked**: what was actually inspected this run (e.g. entity/link
+  counts, which categories from this checklist), since audits sample rather
+  than exhaustively re-check everything every time.
+- **Findings**: every issue found, however small — for each: what it is,
+  which entity/file, and whether it was fixed directly or flagged as a new
+  task (give the task id if flagged).
+- **Severity assessment**: one line — none / cosmetic / moderate / severe —
+  with a short reason. "Cosmetic" = fixed and forgettable. "Moderate" = fixed
+  or flagged but worth the human skimming. "Severe" = this triggered the
+  Escalation rule above or came close to it.
+- If nothing was found at all, say so explicitly ("no drift found") rather
+  than omitting the section — a clean audit is a real, useful data point.
+
+Then still add the normal one-line entry to `pipeline/LOG.md` (pointing to
+the AUDIT_REPORTS.md section) and follow RUN_PROTOCOL.md Step 5 as usual
+(state.json update, commit, push).
