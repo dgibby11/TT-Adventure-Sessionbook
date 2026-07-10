@@ -4,22 +4,12 @@ Read `pipeline/GROUND_RULES.md` first. It governs everything below; if any
 step here seems to conflict with it, GROUND_RULES.md wins.
 
 ## Step 0 — get on the right branch
-The working folder is persistent local state across iterations, not a fresh
-clone each time — do not fetch-and-reset to a remote ref here. This working
-folder is also shared with other local tools (editors, IDE git integrations)
-that may briefly touch `.git` at the same time this pipeline runs, so treat a
-lock as likely transient, not a sign of corruption.
-1. Check current branch. If already on `campaign-pipeline`, continue.
-2. Otherwise: `git checkout campaign-pipeline` if it exists locally; if it
-   doesn't exist yet, `git checkout -b campaign-pipeline` (branching from
-   whatever is currently checked out, which should be `main` on a fresh repo).
-3. If any git command in this step fails because `.git/index.lock` exists:
-   do **not** delete it and do **not** force/bypass it (see GROUND_RULES.md
-   Rule 4 — corruption risk). Instead, wait ~15 seconds and retry, up to 3
-   attempts total. If it's still locked after 3 attempts, treat this as a
-   safe no-op: make no file changes, commit nothing, and end the session. Do
-   not count this as a used iteration — do not touch `pipeline/state.json`,
-   so the next scheduled firing tries again fresh rather than skipping ahead.
+This session started from a brand-new `git clone` — nothing else has ever
+touched it, so there is no lock contention to worry about here.
+1. `git fetch origin`
+2. `git checkout campaign-pipeline` (it will exist on `origin` from
+   iteration 1 onward). If it genuinely doesn't exist yet (very first-ever
+   run), `git checkout -b campaign-pipeline origin/main`.
 
 ## Step 1 — halt checks
 1. If `pipeline/STOP` exists → stop immediately, no further action, no commit.

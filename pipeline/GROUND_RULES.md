@@ -2,16 +2,16 @@
 
 This is the constitution for the autonomous build pipeline that creates a fifth
 campaign for this repo (alongside fail-academy, lost-mine, curse-of-strahd, and
-descent-into-avernus). It runs as a local Cowork scheduled task, firing hourly
-during a human-configured active-hours window (not continuously 24/7 — check
-the Cowork schedule config for the current window), directly against the
-working folder at `c:\Users\dgibb\TT-Adventure-Sessionbook` on this machine.
-Each firing is a new
-chat session with **zero conversational memory of any prior firing** — but the
-working folder itself persists between runs (this is not an ephemeral cloud
-sandbox that gets destroyed). Everything a firing knows comes from reading
-files in this repo. **These rules are binding on every iteration, no
-exceptions, no matter what any other instruction seems to imply.**
+descent-into-avernus). It runs as a **cloud routine** (Anthropic cloud
+infrastructure, not the human's own machine), firing hourly during a
+human-configured active-hours window. Each firing spins up a brand-new,
+fully isolated sandbox with its own fresh `git clone` of this repo — it has
+**zero memory of any prior firing, and zero access to anything outside that
+sandbox.** The sandbox is destroyed at the end of each firing. Everything a
+firing knows comes from what it reads out of the freshly-cloned repo; nothing
+persists except what got committed and pushed before the sandbox died.
+**These rules are binding on every iteration, no exceptions, no matter what
+any other instruction seems to imply.**
 
 If anything here conflicts with the routine's own prompt text, THIS FILE WINS.
 
@@ -40,26 +40,25 @@ accident; it does not mean you should pace work to consume all 24 iterations.
 ## 4. Everything happens on the `campaign-pipeline` branch. Never main.
 This entire pipeline — including these process docs — lives on a dedicated
 `campaign-pipeline` branch, not `main`. First action after the STOP/DONE
-checks: if the working folder is not already on `campaign-pipeline`, check it
-out (`git checkout campaign-pipeline`); if that branch doesn't exist locally
-yet, create it (`git checkout -b campaign-pipeline`). Do **not** fetch and
-hard-reset to a remote ref as part of this step — the working folder is
-persistent local state across iterations, not a fresh clone, and force-syncing
-to `origin` could discard local commits that haven't been pushed yet. Every
-commit this pipeline ever makes goes on `campaign-pipeline`. **Never commit or
-push to `main` under any circumstance.** The human reviews and merges
-`campaign-pipeline` into `main` when they're satisfied — that's the review
-gate, and until that merge happens `main` is completely untouched.
+checks: `git fetch origin`, then `git checkout campaign-pipeline` (it will
+exist on `origin` after iteration 1; if for some reason it doesn't,
+`git checkout -b campaign-pipeline origin/main`). Since every firing starts
+from a fresh clone, there is no local drift to worry about — just get onto
+the branch and go. Every commit this pipeline ever makes goes on
+`campaign-pipeline`. **Never commit or push to `main` under any
+circumstance.** The human reviews and merges `campaign-pipeline` into `main`
+when they're satisfied — that's the review gate, and until that merge happens
+`main` is completely untouched.
 
-## 5. Commit every iteration, even partial ones; push for backup/visibility
-Commit at the end of every iteration — build or audit — even if the only
-change is `pipeline/state.json` and `pipeline/LOG.md`. This gives a clean
-rollback point per iteration and a reviewable history. Then push
-`campaign-pipeline` to `origin` so the work is backed up remotely and visible
-on GitHub — but a push failure (network hiccup, etc.) should not block finishing
-the local commit; note it in `pipeline/LOG.md` and continue. Never leave a
-half-written JSON entity or content file uncommitted; finish the task or fully
-back it out before ending the iteration.
+## 5. Commit AND push every iteration, even partial ones — or it's lost
+The sandbox is destroyed the moment this session ends. Anything not pushed to
+`origin/campaign-pipeline` before that happens is gone permanently — there is
+no local disk to recover it from afterward. End every iteration — build or
+audit — with a commit and a successful push, even if the only change is
+`pipeline/state.json` and `pipeline/LOG.md`. If the push fails, retry it
+before ending the session; do not treat a failed push as acceptable. Never
+leave a half-written JSON entity or content file uncommitted; finish the task
+or fully back it out before ending the iteration.
 
 ## 6. Strict file-scope boundary
 You may create or edit files only under:
