@@ -13,7 +13,7 @@
       "id": "t002",
       "phase": 2,
       "title": "Scaffold campaigns/salt-below folder",
-      "description": "Create campaigns/salt-below/campaign.json (id, name 'The Salt Below', subtitle 'Port Calder & the Drowned Kingdom — Characters Level 1–10', rootLocation, storageKey 'salt-below.v1', dmPassHash = the CLAUDE.md placeholder hash for new campaigns, github.stateFile). Create campaigns/salt-below/data/index.json listing the 8 per-type files (locations, npcs, factions, items, creatures, mysteries, sessions, references) and create each of those 8 files as empty JSON arrays. Create empty campaigns/salt-below/content/ and campaigns/salt-below/assets/ folders (a .gitkeep if needed for assets, since no map art will exist yet — the app's dashboard nav does not require mapImage/regionMapEntity, see js/data.js defaults). Append exactly one entry for salt-below to campaigns/index.json (id, name, subtitle) without touching the existing three entries.",
+      "description": "Create campaigns/salt-below/campaign.json (id, name 'The Salt Below', subtitle 'Port Calder & the Drowned Kingdom \u2014 Characters Level 1\u201310', rootLocation, storageKey 'salt-below.v1', dmPassHash = the CLAUDE.md placeholder hash for new campaigns, github.stateFile). Create campaigns/salt-below/data/index.json listing the 8 per-type files (locations, npcs, factions, items, creatures, mysteries, sessions, references) and create each of those 8 files as empty JSON arrays. Create empty campaigns/salt-below/content/ and campaigns/salt-below/assets/ folders (a .gitkeep if needed for assets, since no map art will exist yet \u2014 the app's dashboard nav does not require mapImage/regionMapEntity, see js/data.js defaults). Append exactly one entry for salt-below to campaigns/index.json (id, name, subtitle) without touching the existing three entries.",
       "status": "done",
       "addedBy": "iteration2",
       "notes": "Scaffolded campaigns/salt-below/ (campaign.json, data/index.json + 8 empty type files, content/<type>/ subfolders, assets/.gitkeep). Appended salt-below entry to campaigns/index.json."
@@ -25,7 +25,7 @@
       "description": "Author the root location entity (id matching campaign.json rootLocation, e.g. port_calder) plus 4-5 harbor-district locations (main harbor, guild licensing house exterior, docks, harbormaster's post, a notable dockside landmark). Use working-harbor naming per CAMPAIGN_BIBLE.md naming conventions. Cross-link with [[id]] and related[].",
       "status": "done",
       "addedBy": "iteration2",
-      "notes": "Authored 6 location entities: port_calder (root), calder_harbor, concordat_licensing_house, the_long_docks, harbormasters_post, the_drowned_bell. Full HTML content + environment/curiosities per house style, cross-linked via [[id]] and related[]. Forward references to not-yet-authored factions/NPCs left as plain prose (no [[ ]]) per Rule 6/8 — to be linked once those entities exist (t006-t009), swept by t029."
+      "notes": "Authored 6 location entities: port_calder (root), calder_harbor, concordat_licensing_house, the_long_docks, harbormasters_post, the_drowned_bell. Full HTML content + environment/curiosities per house style, cross-linked via [[id]] and related[]. Forward references to not-yet-authored factions/NPCs left as plain prose (no [[ ]]) per Rule 6/8 \u2014 to be linked once those entities exist (t006-t009), swept by t029."
     },
     {
       "id": "t004",
@@ -49,7 +49,7 @@
       "id": "t006",
       "phase": 3,
       "title": "Author The Salvage Concordat faction + key NPCs",
-      "description": "Author the faction entity for The Salvage Concordat plus 2-3 key NPCs (guild leadership, a licensing officer, etc.). Tone: political antagonist, not moustache-twirling villain — protects profits, covers up bad finds.",
+      "description": "Author the faction entity for The Salvage Concordat plus 2-3 key NPCs (guild leadership, a licensing officer, etc.). Tone: political antagonist, not moustache-twirling villain \u2014 protects profits, covers up bad finds.",
       "status": "done",
       "addedBy": "iteration2",
       "notes": "Authored faction salvage_concordat + 3 NPCs (perrin_ashgrave, wick_tallow, coraline_bray). Cross-linked to concordat_licensing_house (reciprocal related[] added); Bray's private incident ledger seeded as a future plot hook."
@@ -76,7 +76,7 @@
       "id": "t009",
       "phase": 3,
       "title": "Author The Drowned Choir faction + key NPCs",
-      "description": "Author the faction entity for The Drowned Choir plus 2-3 key NPCs. Tone: a cult that is half-right about the sunken city, goals sometimes align with the party's and sometimes don't — avoid simple 'bad guy' framing.",
+      "description": "Author the faction entity for The Drowned Choir plus 2-3 key NPCs. Tone: a cult that is half-right about the sunken city, goals sometimes align with the party's and sometimes don't \u2014 avoid simple 'bad guy' framing.",
       "status": "done",
       "addedBy": "iteration2",
       "notes": "Authored faction drowned_choir + 3 NPCs (isolt_vane leader, deacon_rill recruiter, sister_meck doubter/wedge-in). Cross-linked to the_drowned_bell and saltbone_curios (reciprocal related[] added). Kept direct knowledge of It That Kept the Kingdom (t010) impressionistic per GROUND_RULES scope, not concrete."
@@ -86,16 +86,18 @@
       "phase": 3,
       "title": "Author 'It That Kept the Kingdom' + central mystery entities",
       "description": "Author the faction/presence entity for 'It That Kept the Kingdom' (mostly dm-only content, felt through what it sends up rather than direct appearances) and 1-2 mystery-type entities capturing the central mystery (why the kingdom drowned, what deal restrains It, how close Port Calder is to breaking it).",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored it_that_kept_the_kingdom (faction, dm-only, category 'The Deep Presence') and two central-mystery entities: why_the_kingdom_drowned_mystery and the_breaking_deal_mystery (both dm-only, category 'Central Mystery'). Swept 5 existing files (the_drowned_bell, harbormasters_post, isolt_vane, salvage_concordat, drowned_choir) that had left plain-prose forward references pending this task, converting them to [[it_that_kept_the_kingdom]] cross-links and adding reciprocal related[] backlinks. Full validation: no broken related[]/[[id]] links, no missing fields/content files, no duplicate ids."
     },
     {
       "id": "t011",
       "phase": 3,
       "title": "Author The Shallows locations, batch 1 (reef formations)",
       "description": "Author 5 Shallows-region (levels 1-4) dive-site locations focused on reef formations near Port Calder. Cross-link to Port Calder and to Freedivers/Concordat as issuers of contracts where fitting.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 Shallows reef-formation locations: sawback_reef (beginner site), the_kettle (licensed/gyre hazard), glasswater_shelf (training/showcase site), widows_combs (dangerous rite-of-passage site), the_chime_shoal (Drowned Choir pilgrimage site, faint tie to it_that_kept_the_kingdom). Cross-linked to port_calder plus freedivers/salvage_concordat as contract issuers where fitting, and the_chime_shoal to drowned_choir/the_drowned_bell/it_that_kept_the_kingdom. Reciprocal related[] backlinks added on all referenced entities. Full validation clean; 39 entities total."
     },
     {
       "id": "t012",
@@ -109,7 +111,7 @@
       "id": "t013",
       "phase": 3,
       "title": "Author The Shallows locations, batch 3 (kingdom outskirts)",
-      "description": "Author 5 Shallows-region locations at the shallow edge of the old kingdom's ruins — first hints of the archaic/formal naming convention contrasting with surface Port Calder.",
+      "description": "Author 5 Shallows-region locations at the shallow edge of the old kingdom's ruins \u2014 first hints of the archaic/formal naming convention contrasting with surface Port Calder.",
       "status": "pending",
       "addedBy": "iteration2"
     },
@@ -237,7 +239,7 @@
       "id": "t029",
       "phase": 3,
       "title": "Cross-link and consistency pass",
-      "description": "Sweep all salt-below entities authored so far for missing related[] backlinks and broken [[id]] references introduced across earlier batches; fix any found. (Ordinary audit iterations also cover this via AUDIT_CHECKLIST.md — use this task only if a build iteration has spare capacity and no audit is imminent.)",
+      "description": "Sweep all salt-below entities authored so far for missing related[] backlinks and broken [[id]] references introduced across earlier batches; fix any found. (Ordinary audit iterations also cover this via AUDIT_CHECKLIST.md \u2014 use this task only if a build iteration has spare capacity and no audit is imminent.)",
       "status": "pending",
       "addedBy": "iteration2"
     }

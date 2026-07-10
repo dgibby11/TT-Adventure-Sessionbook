@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "why_the_kingdom_drowned_mystery",
+    "name": "Why Did the Kingdom Really Drown?",
+    "type": "mystery",
+    "category": "Central Mystery",
+    "contentType": "html",
+    "contentFile": "content/mysteries/why_the_kingdom_drowned_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "the_drowned_bell",
+      "drowned_choir",
+      "isolt_vane"
+    ],
+    "tags": ["main-quest", "central-mystery", "old-kingdom", "dm-only"]
+  },
+  {
+    "id": "the_breaking_deal_mystery",
+    "name": "How Much Longer Does the Deal Hold?",
+    "type": "mystery",
+    "category": "Central Mystery",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_breaking_deal_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "salvage_concordat",
+      "drowned_choir",
+      "the_drowned_bell",
+      "harbormasters_post"
+    ],
+    "tags": ["main-quest", "central-mystery", "ticking-clock", "dm-only"]
+  }
+]

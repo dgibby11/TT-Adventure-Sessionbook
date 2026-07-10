@@ -12,7 +12,12 @@
       "perrin_ashgrave",
       "wick_tallow",
       "coraline_bray",
-      "port_calder"
+      "port_calder",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "sawback_reef",
+      "the_kettle",
+      "glasswater_shelf"
     ],
     "tags": ["guild", "authority", "political", "cover-up", "port-calder"]
   },
@@ -47,7 +52,9 @@
       "ruen_saltmarrow",
       "ivo_marlstone",
       "sela_vantry",
-      "port_calder"
+      "port_calder",
+      "sawback_reef",
+      "widows_combs"
     ],
     "tags": ["independent", "patron", "home-faction", "port-calder"]
   },
@@ -65,8 +72,32 @@
       "isolt_vane",
       "deacon_rill",
       "sister_meck",
-      "port_calder"
+      "port_calder",
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "the_chime_shoal"
     ],
     "tags": ["cult", "ambiguous", "old-kingdom", "port-calder"]
+  },
+  {
+    "id": "it_that_kept_the_kingdom",
+    "name": "It That Kept the Kingdom",
+    "type": "faction",
+    "category": "The Deep Presence",
+    "contentType": "html",
+    "contentFile": "content/factions/it_that_kept_the_kingdom.html",
+    "visibility": "dm-only",
+    "related": [
+      "drowned_choir",
+      "the_drowned_bell",
+      "harbormasters_post",
+      "isolt_vane",
+      "salvage_concordat",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "port_calder",
+      "the_chime_shoal"
+    ],
+    "tags": ["presence", "antagonist", "old-kingdom", "cosmic-horror", "dm-only"]
   }
 ]

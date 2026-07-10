@@ -1,11 +1,11 @@
 {
-  "iteration": 6,
+  "iteration": 7,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T15:52:10Z",
+  "lastRun": "2026-07-10T15:24:19Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t006-t009: authored all 4 Port Calder factions (Salvage Concordat, Harbor Watch, Freedivers, Drowned Choir) + 12 key NPCs (3 each), with reciprocal cross-links into existing locations."
+  "lastSummary": "Completed t010 (it_that_kept_the_kingdom faction + 2 central-mystery entities, plus a forward-reference sweep on 5 existing files) and t011 (5 Shallows reef-formation locations)."
 }

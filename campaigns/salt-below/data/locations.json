@@ -151,7 +151,9 @@
     "related": [
       "port_calder",
       "calder_harbor",
-      "the_long_docks"
+      "the_long_docks",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery"
     ],
     "environment": {
       "architecture": "A weathered two-story shack on stilts at the harbor mouth, signal flags and a tide-bell strung from the roof.",
@@ -182,7 +184,10 @@
       "port_calder",
       "calder_harbor",
       "drowned_choir",
-      "isolt_vane"
+      "isolt_vane",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "the_chime_shoal"
     ],
     "environment": {
       "architecture": "A massive green-black bronze bell, old-kingdom make, raised from the reef decades ago and hung in a timber frame at the harbor mouth.",
@@ -488,5 +493,115 @@
       "port-calder",
       "surface"
     ]
+  },
+  {
+    "id": "sawback_reef",
+    "name": "Sawback Reef",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/sawback_reef.html",
+    "visibility": "player",
+    "related": ["port_calder", "freedivers", "salvage_concordat"],
+    "environment": {
+      "architecture": "A shallow ridge of serrated coral just past the harbor mouth, growing over buried, unnaturally straight stonework.",
+      "activity": "Crowded with training dives and licensed contract crews by midmorning; a handful of solitary night-fishers and freedivers after dusk.",
+      "sensory": "Bright, close water; the click and rasp of coral against dive gear."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "The coral grows in unnaturally straight rows along buried stonework beneath the reef."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "reef", "beginner"]
+  },
+  {
+    "id": "the_kettle",
+    "name": "The Kettle",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_kettle.html",
+    "visibility": "player",
+    "related": ["port_calder", "salvage_concordat"],
+    "environment": {
+      "architecture": "A wide, bowl-shaped reef depression with a slow, permanent current gyre at its center.",
+      "activity": "Heavily licensed and inspected salvage dives; every crew that works it files a report.",
+      "sensory": "A constant low churn of silt and current; colder water than the surrounding reef."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Debris at the bowl's center skews far older and stranger than the surrounding reef."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "reef", "concordat-licensed"]
+  },
+  {
+    "id": "glasswater_shelf",
+    "name": "Glasswater Shelf",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/glasswater_shelf.html",
+    "visibility": "player",
+    "related": ["port_calder", "salvage_concordat"],
+    "environment": {
+      "architecture": "A flat, sunlit reef terrace in exceptionally clear, shallow water.",
+      "activity": "Guild licensing exams, demonstrations, and apprentice training dives by day; nearly empty after dark.",
+      "sensory": "Bright glare off the water; unusually quiet compared to other dive sites."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight (any veteran diver)",
+        "detail": "A few longtime divers avoid the Shelf despite its safety, muttering that \"picked clean\" doesn't mean empty."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "reef", "training", "concordat-licensed"]
+  },
+  {
+    "id": "widows_combs",
+    "name": "Widow's Combs",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/widows_combs.html",
+    "visibility": "player",
+    "related": ["port_calder", "freedivers"],
+    "environment": {
+      "architecture": "A stand of tall, blade-thin coral spires that comb the current into unpredictable channels.",
+      "activity": "Rarely dived except as a deliberate rite of passage; the Concordat licenses it at a steep price.",
+      "sensory": "Sharp currents, the whistle of water forced between narrow spires."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 13",
+        "detail": "No two charts of the Combs agree — the spires shift position slightly between dives."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "reef", "hazard"]
+  },
+  {
+    "id": "the_chime_shoal",
+    "name": "The Chime Shoal",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_chime_shoal.html",
+    "visibility": "player",
+    "related": ["port_calder", "drowned_choir", "the_drowned_bell", "it_that_kept_the_kingdom"],
+    "environment": {
+      "architecture": "A low reef shoal scattered with old-kingdom debris — glass, chain, bell fragments.",
+      "activity": "Cheaply licensed, rarely worked for salvage; quiet Drowned Choir pilgrimages on certain tide-nights.",
+      "sensory": "A faint hum through the water and hull on the right tide."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Small offerings — coins, carved wood, returned relics — are left scattered across the shoal."
+      }
+    ],
+    "tags": ["shallows", "dive-site", "reef", "drowned-choir", "old-kingdom"]
   }
 ]

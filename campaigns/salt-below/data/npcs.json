@@ -106,7 +106,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/isolt_vane.html",
     "visibility": "player",
-    "related": ["drowned_choir", "the_drowned_bell"],
+    "related": ["drowned_choir", "the_drowned_bell", "it_that_kept_the_kingdom", "why_the_kingdom_drowned_mystery"],
     "tags": ["drowned-choir", "leader", "ambiguous"]
   },
   {
