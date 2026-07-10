@@ -2,6 +2,62 @@
 
 One dated section per audit iteration, most recent first.
 
+## Iteration 15 — 2026-07-10T17:05:00Z
+
+**Scope checked**: full pass (still cheap at 100 entities). Verified: JSON
+validity of all 8 `data/*.json` files; required-field + enum compliance
+(`type`, `contentType`, `visibility`) for every entity; `id` uniqueness
+across all files; every `contentFile` resolves to a real file on disk
+(resolved relative to `campaigns/salt-below/`, per the schema); no
+non-location entity carries `x`/`y`, and none present on locations either
+(still no map for this campaign); `campaigns/salt-below/campaign.json` has a
+non-empty `dmPassHash`; `campaigns/index.json` has exactly one
+correctly-formed `salt-below` entry and the three pre-existing entries
+(lost-mine, curse-of-strahd, descent-into-avernus) are untouched; every
+`related[]` entry and every inline `[[id]]` / `[[id|label]]` reference
+across all 100 content HTML fragments resolves to a real entity id (checked
+programmatically, zero broken links); task list scanned for duplicate
+ids/titles, stuck `in_progress` items (none), and vague pending descriptions
+(none — t023-t029 all concrete). Spot-check of `the_regnants_seat.html`
+(newest batch, t022, Deep Kingdom capital core) against
+`CAMPAIGN_BIBLE.md`'s naming-convention (formal/archaic old-kingdom naming,
+confirmed) and Deep Kingdom scope guidance (25-35 locations target; currently
+at 12, consistent with t023 batch 3 still pending).
+
+**Findings**: none. Zero schema violations, zero broken links, zero missing
+content files, zero duplicate ids, zero task-list issues, zero tonal/naming
+drift in the sampled entity.
+
+**Severity assessment**: none — clean audit, no drift found.
+
+**Entity count summary** (100 total):
+| Type | Count |
+|---|---|
+| location | 72 |
+| npc | 12 |
+| faction | 5 |
+| creature | 8 |
+| mystery | 2 |
+| item | 1 |
+| session | 0 |
+| reference | 0 |
+| **Total** | **100** |
+
+Note: `session` and `reference` entities are still 0 — expected, scoped to
+t027/t028 which haven't run yet. Location breakdown by region: Port Calder
+14, The Shallows 21, Drowned Districts 25, Deep Kingdom 12 (growing toward
+t023's batch 3 and the climactic dungeon in t024).
+
+Also re-confirmed (outside campaign scope, no action taken beyond safe
+preservation, consistent with iteration 5/10 notes): this sandbox's initial
+`main`-branch checkout again carried the same pre-existing unpushed local
+commit ("Re-register fail-academy in campaigns/index.json"). Pushed to a new
+branch `fail-academy-index-fix` on `origin` (this run used a different branch
+name than prior runs' `wip/fail-academy-reregister` — both point at
+equivalent, safely-preserved copies of the same fix; the human may want to
+consolidate/delete the duplicate branch when reviewing). Not merged into
+`main` or touched further — out of pipeline scope per GROUND_RULES.md Rule 6.
+
 ## Iteration 10 — 2026-07-10T16:05:00Z
 
 **Scope checked**: full pass (still cheap at 59 entities). Verified: JSON

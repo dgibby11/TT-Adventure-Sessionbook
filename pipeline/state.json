@@ -1,11 +1,11 @@
 {
-  "iteration": 14,
+  "iteration": 15,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T16:48:38Z",
-  "lastIterationType": "build",
-  "lastSummary": "Completed t022 (6 Deep Kingdom locations forming the old capital's core: the_regnants_seat, cindrel_vault, ilyndras_sanctum, velmarch_spire, hallowmere_gallery, threshwater_stair), bringing salt-below to 100 entities. Capital core now fully mapped from the_regnants_seat outward; threshwater_stair opens the approach to the containment site for t023."
+  "lastRun": "2026-07-10T17:05:00Z",
+  "lastIterationType": "audit",
+  "lastSummary": "Clean audit of salt-below at 100 entities — no drift found (schema, cross-links, task list, bible consistency all verified). See AUDIT_REPORTS.md iteration 15."
 }
