@@ -453,5 +453,95 @@
       "port-calder",
       "civilian"
     ]
+  },
+  {
+    "id": "dovan_kesk",
+    "name": "Inspector Dovan Kesk",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/dovan_kesk.html",
+    "visibility": "player",
+    "related": [
+      "calder_harbor",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "concordat",
+      "port-calder",
+      "gatekeeper"
+    ]
+  },
+  {
+    "id": "corin_draw",
+    "name": "Corin Draw",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/corin_draw.html",
+    "visibility": "player",
+    "related": [
+      "the_suitors_approach",
+      "drowned_choir",
+      "vantmoor_hall"
+    ],
+    "tags": [
+      "drowned-choir",
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "petra_wexler",
+    "name": "Petra Wexler",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/petra_wexler.html",
+    "visibility": "player",
+    "related": [
+      "the_kettle",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "concordat",
+      "clerk",
+      "foreshadowing"
+    ]
+  },
+  {
+    "id": "bram_coswick",
+    "name": "Bram Coswick",
+    "type": "npc",
+    "category": "The Freedivers",
+    "contentType": "html",
+    "contentFile": "content/npcs/bram_coswick.html",
+    "visibility": "player",
+    "related": [
+      "widows_combs",
+      "freedivers"
+    ],
+    "tags": [
+      "freedivers",
+      "veteran",
+      "quest-giver"
+    ]
+  },
+  {
+    "id": "sera_vondt",
+    "name": "Sera Vondt",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/sera_vondt.html",
+    "visibility": "player",
+    "related": [
+      "the_chime_shoal",
+      "drowned_choir"
+    ],
+    "tags": [
+      "drowned-choir",
+      "civilian"
+    ]
   }
 ]

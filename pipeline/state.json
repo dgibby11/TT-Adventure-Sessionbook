@@ -1,11 +1,11 @@
 {
-  "iteration": 24,
+  "iteration": 25,
   "iterationCap": 28,
   "auditEvery": 7,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
-  "status": "building",
-  "lastRun": "2026-07-11T19:02:34Z",
+  "status": "done",
+  "lastRun": "2026-07-11T19:12:58Z",
   "lastIterationType": "build",
-  "lastSummary": "Continued t038 (NPC density pass): authored 7 more NPCs — amos_kell, ness_thatchford, dessa_wrack, gable_tarn, pol_ferrick, rosalind_vey, ilsa_cray — all in Drowned Districts/Port Calder locations whose existing prose already implied a resident (Choir converts, squatters, patrol duty, dockside traffic); NPC count 17->24, reaching the low end of the ~24-30 target. Verified Deep Kingdom locations (vaelgard_terrace, sarelles_repose, drowned_chancellery, cindrel_vault, suppliants_colonnade, warders_hold) are all written as post-evacuation and unoccupied, and several Shallows checkpoint sites are transitional/uninhabited by design — deliberately did not force NPCs into either, consistent with iteration 23's same judgment call. 140 entities, 0 duplicate ids, 0 broken related[]/[[id]] links, 0 missing content files, dmPassHash present. Task list: 37 done, 1 in_progress (t038, at low end of target — DM can decide if this is sufficient or wants more), 1 pending (t039, waits on t038). Next iteration (25) is a normal build iteration (auditEvery=7, so 24/25/26/27 are build, 28 is the closing audit)."
+  "lastSummary": "Completed t038 (NPC density pass): authored 5 more NPCs (dovan_kesk, corin_draw, petra_wexler, bram_coswick, sera_vondt), NPC count 24->29, within the ~24-30 target. Completed t039 (Phase 4 sweep + arc-integration): full-campaign validation clean (145 entities, 0 dupes, 0 broken links, 0 missing files); added fitting new mysteries/NPCs to arc_1/arc_2/arc_3 related[] by region/level scope. All 39 tasklist.json tasks now done — wrote pipeline/DONE. The Salt Below is complete and ready for human review/merge into main."
 }

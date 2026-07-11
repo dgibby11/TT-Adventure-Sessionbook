@@ -56,7 +56,8 @@
       "port_calder",
       "the_long_docks",
       "harbormasters_post",
-      "the_drowned_bell"
+      "the_drowned_bell",
+      "dovan_kesk"
     ],
     "environment": {
       "architecture": "A natural deepwater cove walled in by old breakwaters, half of them salvaged old-kingdom seawall stone.",
@@ -556,7 +557,8 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "salvage_concordat"
+      "salvage_concordat",
+      "petra_wexler"
     ],
     "environment": {
       "architecture": "A wide, bowl-shaped reef depression with a slow, permanent current gyre at its center.",
@@ -618,7 +620,8 @@
     "related": [
       "port_calder",
       "freedivers",
-      "salt_warped_grouper"
+      "salt_warped_grouper",
+      "bram_coswick"
     ],
     "environment": {
       "architecture": "A stand of tall, blade-thin coral spires that comb the current into unpredictable channels.",
@@ -651,7 +654,8 @@
       "drowned_choir",
       "the_drowned_bell",
       "it_that_kept_the_kingdom",
-      "salt_warped_grouper"
+      "salt_warped_grouper",
+      "sera_vondt"
     ],
     "environment": {
       "architecture": "A low reef shoal scattered with old-kingdom debris — glass, chain, bell fragments.",
@@ -1266,7 +1270,8 @@
       "vantmoor_hall",
       "port_calder",
       "drowned_choir",
-      "aldermourn_close"
+      "aldermourn_close",
+      "corin_draw"
     ],
     "environment": {
       "architecture": "A formal processional street of narrow townhouses, each still bearing a petitioner's plaque above its door.",

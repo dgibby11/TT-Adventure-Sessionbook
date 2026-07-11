@@ -17,7 +17,8 @@
       "drowned_choir",
       "sawback_reef",
       "the_kettle",
-      "why_the_kingdom_drowned_mystery"
+      "why_the_kingdom_drowned_mystery",
+      "the_brides_dowry"
     ],
     "reveals": [
       "port_calder",
@@ -56,7 +57,10 @@
       "isolt_vane",
       "the_leaning_archive",
       "why_the_kingdom_drowned_mystery",
-      "the_breaking_deal_mystery"
+      "the_breaking_deal_mystery",
+      "amos_kell",
+      "the_wardrobes_visitor",
+      "the_almonrys_debt"
     ],
     "reveals": [
       "the_last_landing",
@@ -94,7 +98,8 @@
       "the_open_wound",
       "the_undoing",
       "the_wardwrights_binding_seal",
-      "the_breaking_deal_mystery"
+      "the_breaking_deal_mystery",
+      "the_vaelgard_signet"
     ],
     "reveals": [
       "thalmere_gate",
