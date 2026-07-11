@@ -1,11 +1,11 @@
 {
-  "iteration": 18,
+  "iteration": 19,
   "iterationCap": 23,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-11T07:14:36Z",
+  "lastRun": "2026-07-11T20:05:00Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t027 (3 arc-level session/planning entities covering the full level 1-10 arc), t028 (salt_below_campaign_overview reference entity), and t029 (cross-link sweep: fixed 19 genuine one-way related[] backlinks; confirmed zero broken related[]/[[id]] links, zero schema errors, zero duplicate ids, zero missing content files across all 124 entities). Task list is now fully exhausted (29/29 done) with all four regions at or above their CAMPAIGN_BIBLE.md target minimums; wrote pipeline/DONE rather than inventing further work."
+  "lastSummary": "Completed t030 (Shallows creature stat blocks: reef_stalker, wreck_crab, kelp_strangler, salt_warped_grouper) and t031 (Drowned Districts creature stat blocks: choir_thrall, warden_husk, deep_maw_eel, silt_wraith) — full 5e stat blocks in house dl.facts style for all 8, with verified D&D Beyond links for 7/8 (kelp_strangler's Vine Blight link couldn't be confirmed via search, left unlinked rather than fabricated). Full validation pass: 124 entities, zero duplicate ids, zero broken related[]/[[id]] links, all content files resolve, all edited HTML re-verified as well-formed. Next iteration (20) is an AUDIT per auditEvery."
 }

@@ -262,16 +262,18 @@
       "phase": 4,
       "title": "Shallows creatures — stat blocks + D&D Beyond links",
       "description": "The Salt Below vs. Lost Mine comparison report (2026-07-11) found zero of the 12 salt-below creatures carry a mechanical stat block or a verified D&D Beyond link, vs. 7/7 in lost-mine. Add a full 5e stat block (AC, HP, Speed, CR, six ability scores, Skills/Senses/Languages, Traits, Actions) to reef_stalker, wreck_crab, kelp_strangler, and salt_warped_grouper, matching the structure/dl.facts formatting used in campaigns/lost-mine/content/creatures/goblin.html and wolf.html. Add a links[] entry to each pointing at the real D&D Beyond page for the base creature already named in its existing DM notes (Giant Constrictor Snake, Giant Crab, Vine Blight, Quipper, or the closest real match) — verify each URL resolves before adding it, don't fabricate one (see CLAUDE.md's caution about the unverified Owlbear link). Keep all existing narrative/DM-notes content; this adds a mechanical layer, it doesn't replace the prose.",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 19: stat blocks added for all 4 (reef_stalker/wreck_crab/salt_warped_grouper reskin their named bases with verified dndbeyond.com links; kelp_strangler's Vine Blight got a full stat block but no link — its D&D Beyond page URL could not be confirmed via web search, left unlinked per the no-fabrication rule rather than guessing an ID)."
     },
     {
       "id": "t031",
       "phase": 4,
       "title": "Drowned Districts creatures — stat blocks + D&D Beyond links",
       "description": "Same treatment as t030 for choir_thrall, warden_husk, deep_maw_eel, and silt_wraith: full 5e stat block matching house style, plus a verified D&D Beyond link for each's named real-creature base. Preserve existing tone guidance (e.g. choir_thrall and silt_wraith should still read as tragic/non-monstrous in prose even with combat stats attached).",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 19: stat blocks + verified links added for all 4. Two named bases from the original DM notes ('Drowned' for choir_thrall, 'Giant Eel' for deep_maw_eel) aren't confirmable official D&D Beyond stat blocks, so substituted the closest verified real match (Zombie; Giant Constrictor Snake, reused from reef_stalker but reflavored as a real winnable fight) rather than fabricating a link, per t030's precedent. silt_wraith and choir_thrall keep their non-combat/tragic tone intact — silt_wraith's Actions section is explicitly 'none by design' with the Shadow-based Strength Drain kept only as a last-resort DM fallback, not default behavior."
     },
     {
       "id": "t032",

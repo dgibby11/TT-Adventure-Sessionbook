@@ -11,6 +11,9 @@
       "farrows_grotto",
       "sawback_reef"
     ],
+    "links": [
+      { "label": "Giant Constrictor Snake — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake" }
+    ],
     "tags": [
       "predator",
       "reef",
@@ -30,6 +33,9 @@
       "anchors_grave",
       "reavers_ribs",
       "the_marrow_trawler"
+    ],
+    "links": [
+      { "label": "Giant Crab — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16879-giant-crab" }
     ],
     "tags": [
       "hazard",
@@ -69,6 +75,9 @@
       "the_chime_shoal",
       "it_that_kept_the_kingdom"
     ],
+    "links": [
+      { "label": "Quipper — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16989-quipper" }
+    ],
     "tags": [
       "aberrant",
       "warped",
@@ -89,6 +98,9 @@
       "chancel_deep",
       "the_hollow_choir_yard",
       "the_faithful_husk"
+    ],
+    "links": [
+      { "label": "Zombie — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17077-zombie" }
     ],
     "tags": [
       "cultist",
@@ -113,6 +125,9 @@
       "warden_remnant",
       "cindrel_vault"
     ],
+    "links": [
+      { "label": "Animated Armor — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16786-animated-armor" }
+    ],
     "tags": [
       "undead",
       "construct",
@@ -132,6 +147,9 @@
     "related": [
       "underbell_cistern",
       "millhollow_undercroft"
+    ],
+    "links": [
+      { "label": "Giant Constrictor Snake — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake" }
     ],
     "tags": [
       "predator",
@@ -153,6 +171,9 @@
       "the_susurrus_deep",
       "it_that_kept_the_kingdom",
       "the_unmade"
+    ],
+    "links": [
+      { "label": "Shadow — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17010-shadow" }
     ],
     "tags": [
       "aberrant",
