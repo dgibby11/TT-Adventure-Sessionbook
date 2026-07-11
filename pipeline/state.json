@@ -1,11 +1,11 @@
 {
-  "iteration": 25,
+  "iteration": 26,
   "iterationCap": 28,
-  "auditEvery": 26,
+  "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
-  "status": "building",
-  "lastRun": "2026-07-11T19:12:58Z",
-  "lastIterationType": "build",
-  "lastSummary": "Completed t038 (NPC density pass): authored 5 more NPCs (dovan_kesk, corin_draw, petra_wexler, bram_coswick, sera_vondt), NPC count 24->29, within the ~24-30 target. Completed t039 (Phase 4 sweep + arc-integration): full-campaign validation clean (145 entities, 0 dupes, 0 broken links, 0 missing files); added fitting new mysteries/NPCs to arc_1/arc_2/arc_3 related[] by region/level scope. All 39 tasklist.json tasks now done — wrote pipeline/DONE. The Salt Below is complete and ready for human review/merge into main."
+  "status": "done",
+  "lastRun": "2026-07-11T19:20:00Z",
+  "lastIterationType": "audit",
+  "lastSummary": "Final closing audit requested by the DM (phase4-setup-r2b): full pass of all 145 entities, zero findings (schema, links, task list, tone spot-checks all clean). Restored pipeline/DONE, status=done, auditEvery back to 5. The Salt Below is complete and ready for human review/merge into main."
 }

@@ -2,6 +2,83 @@
 
 One dated section per audit iteration, most recent first.
 
+## Iteration 26 — 2026-07-11T19:20:00Z (final closing audit)
+
+**Context**: this audit was requested off-cycle by the DM (see LOG.md's
+`phase4-setup-r2b` entry) as a final content-quality check after the task
+list finished 39/39 at iteration 25, two iterations early. `pipeline/DONE`
+was temporarily cleared and `auditEvery` set to 26 specifically so this
+firing would land as an audit rather than a silent no-op.
+
+**Scope checked**: full pass across all 145 entities in
+`campaigns/salt-below/`. Scripted checks across all 8
+`campaigns/salt-below/data/*.json` files: JSON validity; required-field
+(`id`/`name`/`type`/`contentType`/`contentFile`/`visibility`) and enum
+compliance for every entity; `id` uniqueness across all files; every
+`contentFile` resolves to a real file on disk; no non-location entity
+carries `x`/`y`, and every location's `x`/`y` is in 0-100 range;
+`campaigns/salt-below/campaign.json` has a non-empty `dmPassHash`;
+`campaigns/index.json` has exactly one correctly-formed `salt-below` entry
+and the three pre-existing entries (lost-mine, curse-of-strahd,
+descent-into-avernus) are untouched; every `related[]` entry and every
+inline `[[id]]` / `[[id|label]]` reference across all content HTML
+fragments resolves to a real entity id; every `sessions.json` `reveals[]`
+entry resolves to a real entity id. Task list (`tasklist.json`) scanned for
+duplicate descriptions and stuck `in_progress`/`blocked` items. Spot-checked
+3 of the newest entities (`sera_vondt`, `the_almonrys_debt`,
+`it_that_kept_the_kingdom_stat`) against `CAMPAIGN_BIBLE.md` for tone,
+faction-motivation, and light/dark balance consistency.
+
+**Findings**: none. Zero schema violations, zero duplicate ids, zero
+missing content files, zero broken `related[]`/`[[id]]`/`reveals[]` links,
+zero task-list issues. All 39/39 tasks confirmed `done`, none stuck. Spot
+checks matched the bible's established tone and faction motivations with no
+drift.
+
+**Severity assessment**: none — clean audit, no drift found. Confirms the
+campaign is in a genuinely complete, table-ready state as of iteration 25's
+Phase 4 work, not just task-list-complete.
+
+Also re-confirmed (outside campaign scope, no action taken, per
+`LESSONS_LEARNED.md` #2): this sandbox's initial checkout again carried the
+recurring stray "Re-register fail-academy in campaigns/index.json" commit
+(`2dc1b82`) — verified via `git merge-base --is-ancestor` that it is already
+an ancestor of `origin/main`, so no preservation branch was created this
+time (the fix has been on `main` proper since iteration 24; the 5 stale
+preservation branches noted in prior iterations still await human cleanup,
+unchanged, out of pipeline scope).
+
+**Entity count summary** (unchanged from iteration 25 — this was a
+quality audit, not a content-production iteration):
+
+| Type       | Count |
+|------------|-------|
+| Locations  | 85    |
+| NPCs       | 29    |
+| Factions   | 5     |
+| Items      | 4     |
+| Creatures  | 12    |
+| Mysteries  | 6     |
+| Sessions   | 3     |
+| References | 1     |
+| **Total**  | **145** |
+
+Location breakdown by region: Port Calder 14 (13 + the hub itself), The
+Shallows 21, Drowned Districts 25, Deep Kingdom 25 — all four regions at or
+above their `CAMPAIGN_BIBLE.md` target minimums except Port Calder, which
+sits 1 below its 15-20 target; noted as cosmetic (a single additional named
+location would close it) rather than fixed directly, since audits verify
+and repair, not add new content per `AUDIT_CHECKLIST.md`'s scope. NPC:
+location ratio is now 29:85 (~1:2.9), comfortably past the ~24-30 NPC target
+range from the Phase 4 density fix.
+
+**Outcome**: per the DM's `phase4-setup-r2b` plan, this clean audit closes
+out Phase 4. `pipeline/DONE` is restored, `state.json.status` set to
+`"done"`, and `auditEvery` restored to its normal cadence (5) in case the DM
+reopens the pipeline for a future phase. The Salt Below campaign (145
+entities, zero known defects) is ready for human review and merge into
+`main`.
+
 ## Iteration 20 — 2026-07-11T20:35:00Z
 
 **Scope checked**: full pass (still cheap at 124 entities). Scripted checks
