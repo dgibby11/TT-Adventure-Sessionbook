@@ -196,6 +196,12 @@
       "why_the_kingdom_drowned_mystery",
       "the_breaking_deal_mystery"
     ],
+    "links": [
+      {
+        "label": "Aboleth — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16762-aboleth"
+      }
+    ],
     "tags": [
       "aberrant",
       "boss",
@@ -216,6 +222,12 @@
       "the_vigil_wrack",
       "warders_hold",
       "warden_husk"
+    ],
+    "links": [
+      {
+        "label": "Animated Armor — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16786-animated-armor"
+      }
     ],
     "tags": [
       "undead",
@@ -238,6 +250,12 @@
       "silt_wraith",
       "it_that_kept_the_kingdom"
     ],
+    "links": [
+      {
+        "label": "Specter — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17017-specter"
+      }
+    ],
     "tags": [
       "aberrant",
       "omen",
@@ -258,6 +276,12 @@
       "choir_thrall",
       "drowned_choir",
       "the_drowned_hymnal"
+    ],
+    "links": [
+      {
+        "label": "Wight — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17059-wight"
+      }
     ],
     "tags": [
       "cultist",

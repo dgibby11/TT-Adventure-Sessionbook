@@ -1,11 +1,11 @@
 {
-  "iteration": 20,
+  "iteration": 21,
   "iterationCap": 23,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-11T20:35:00Z",
-  "lastIterationType": "audit",
-  "lastSummary": "Full audit of salt-below (124 entities) — no drift found. Schema, enums, ids, content files, campaign.json, campaigns/index.json, related[]/[[id]] links, and task-list health all clean. Spot-checked iteration 19's newest creature entities against CAMPAIGN_BIBLE.md — tone and no-fabrication convention intact. Task list: 31 done, 7 pending (t032-t038). Next iteration (21) is a normal build iteration."
+  "lastRun": "2026-07-11T21:20:00Z",
+  "lastIterationType": "build",
+  "lastSummary": "Completed t032 (stat blocks for warden_remnant/the_unmade/the_faithful_husk + full mechanical shape for the finale boss it_that_kept_the_kingdom_stat, Aboleth-based with legendary + lair actions, CR 15) and t033 (Layout & Hazards dm-only section added to all 8 finale-dungeon locations, with creature placement and trap DCs). 124 entities, 0 duplicate ids, 0 broken links. Task list: 33 done, 5 pending (t034-t038). Next iteration (22) is a normal build iteration; iteration 23 will self-halt via Rule 3 before the next scheduled audit at 25."
 }

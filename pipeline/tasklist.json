@@ -280,16 +280,18 @@
       "phase": 4,
       "title": "Deep Kingdom creatures — stat blocks + finale boss mechanical shape",
       "description": "Same treatment as t030/t031 for warden_remnant, the_unmade, and the_faithful_husk. Additionally, give it_that_kept_the_kingdom_stat a concrete mechanical shape rather than pure DM-improvisation guidance: pick a specific base (Aboleth or Elder Brain per its own existing DM notes), write out 2-3 named legendary actions and a lair-action set drawn from the_undoing's environment (a save-forcing whispered command, an area psychic-damage boundary-collapse, a punish-confrontation 'look away' effect), and land it at a specific target CR in the 13-16 range it already suggests. Keep the finale's design intent intact — combat should still read as a last resort, not the default path — this task makes that intent runnable, not undoes it. Add a links[] entry to the Aboleth/Elder Brain D&D Beyond page as the mechanical starting point (verify the URL first).",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 21: full stat blocks added for warden_remnant (empowered Animated Armor reskin, CR2, new Guardian's Riposte reaction), the_faithful_husk (Wight reskin, CR3, Drowning Grasp life-drain thematically tied to choir_thrall's own origin), and the_unmade (Specter reskin, CR1, kept strictly non-combat with 'None by design' Actions per its established house rule, same pattern as silt_wraith). it_that_kept_the_kingdom_stat given a full Aboleth-based (verified link) mechanical shape: Legendary Resistance, Multiattack/Tentacle/Tail/Bind to the Deal actions, 3 Legendary Actions (Detect, Tentacle Attack, Command), and a 3-option Lair Action set (Whispered Command, Boundary Collapse, Look Away) matching the three concepts specified in this task, scaled to CR 15 (homebrew-scaled, noted as such rather than RAW-calculated). All 3 new D&D Beyond links (Animated Armor reused/already-verified, Wight, Specter, Aboleth) verified resolvable via web search before adding."
     },
     {
       "id": "t033",
       "phase": 4,
       "title": "Finale dungeon — room-by-room tactical pass",
       "description": "The comparison report found no numbered rooms, trap DCs, or encounter placement anywhere in the 8-location climactic dungeon (the_open_wound, the_binding_lattice, the_last_accord, the_renewal_font, the_vigil_wrack, the_faithfuls_end, the_listening_deep, the_undoing), vs. lost-mine's cragmaw_hideout/redbrand_hideout which key every room with specific DCs and monster counts. Add a 'Layout & Hazards' dm-only section to each of these 8 locations with: any traps/hazards specific to that chamber and their Perception/Investigation/save DCs, and which of the now-statted t031/t032 creatures (if any) are placed there and how many. Do not restructure the 8 separate location entities into one — add tactical detail within the existing per-location model. Do not alter the destroy/renew/invent branch design already established in the_undoing's DM notes.",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 21: added a dm-only 'Layout & Hazards' section to all 8 locations. Hazard-only rooms (no creature): the_open_wound (Central Pull current hazard, hub kept combat-free per existing DM notes), the_binding_lattice (Arcing Failure-Point lightning hazard tied to the destroy branch), the_last_accord and the_renewal_font (deliberately no traps/creatures — kept as safe lore/setup rooms). Creature placement rooms: the_vigil_wrack (1 warden_remnant at the chokepoint + Unstable Barricade hazard), the_faithfuls_end (1-2 the_faithful_husk among the camp, staggered for a non-pile-on fight), the_listening_deep (1 the_unmade, explicitly non-hostile, no hazard added on top), the_undoing (it_that_kept_the_kingdom_stat itself + an Ambient Pressure exhaustion hazard for stalling, with its Lair Actions called out as the encounter's real teeth). Did not restructure the 8 entities into one, did not alter the destroy/renew/invent branch design in the_undoing's existing DM notes — only appended a new section to each. Full-campaign validation re-run after both t032 and t033: 124 entities, 0 duplicate ids, 0 missing content files, 0 broken related[]/[[id]] links."
     },
     {
       "id": "t034",
