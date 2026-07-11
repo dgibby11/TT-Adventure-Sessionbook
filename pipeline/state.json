@@ -1,7 +1,7 @@
 {
   "iteration": 23,
-  "iterationCap": 23,
-  "auditEvery": 5,
+  "iterationCap": 28,
+  "auditEvery": 7,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
