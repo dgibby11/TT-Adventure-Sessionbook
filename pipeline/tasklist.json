@@ -256,6 +256,78 @@
       "description": "Sweep all salt-below entities authored so far for missing related[] backlinks and broken [[id]] references introduced across earlier batches; fix any found. (Ordinary audit iterations also cover this via AUDIT_CHECKLIST.md — use this task only if a build iteration has spare capacity and no audit is imminent.)",
       "status": "done",
       "addedBy": "iteration2"
+    },
+    {
+      "id": "t030",
+      "phase": 4,
+      "title": "Shallows creatures — stat blocks + D&D Beyond links",
+      "description": "The Salt Below vs. Lost Mine comparison report (2026-07-11) found zero of the 12 salt-below creatures carry a mechanical stat block or a verified D&D Beyond link, vs. 7/7 in lost-mine. Add a full 5e stat block (AC, HP, Speed, CR, six ability scores, Skills/Senses/Languages, Traits, Actions) to reef_stalker, wreck_crab, kelp_strangler, and salt_warped_grouper, matching the structure/dl.facts formatting used in campaigns/lost-mine/content/creatures/goblin.html and wolf.html. Add a links[] entry to each pointing at the real D&D Beyond page for the base creature already named in its existing DM notes (Giant Constrictor Snake, Giant Crab, Vine Blight, Quipper, or the closest real match) — verify each URL resolves before adding it, don't fabricate one (see CLAUDE.md's caution about the unverified Owlbear link). Keep all existing narrative/DM-notes content; this adds a mechanical layer, it doesn't replace the prose.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t031",
+      "phase": 4,
+      "title": "Drowned Districts creatures — stat blocks + D&D Beyond links",
+      "description": "Same treatment as t030 for choir_thrall, warden_husk, deep_maw_eel, and silt_wraith: full 5e stat block matching house style, plus a verified D&D Beyond link for each's named real-creature base. Preserve existing tone guidance (e.g. choir_thrall and silt_wraith should still read as tragic/non-monstrous in prose even with combat stats attached).",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t032",
+      "phase": 4,
+      "title": "Deep Kingdom creatures — stat blocks + finale boss mechanical shape",
+      "description": "Same treatment as t030/t031 for warden_remnant, the_unmade, and the_faithful_husk. Additionally, give it_that_kept_the_kingdom_stat a concrete mechanical shape rather than pure DM-improvisation guidance: pick a specific base (Aboleth or Elder Brain per its own existing DM notes), write out 2-3 named legendary actions and a lair-action set drawn from the_undoing's environment (a save-forcing whispered command, an area psychic-damage boundary-collapse, a punish-confrontation 'look away' effect), and land it at a specific target CR in the 13-16 range it already suggests. Keep the finale's design intent intact — combat should still read as a last resort, not the default path — this task makes that intent runnable, not undoes it. Add a links[] entry to the Aboleth/Elder Brain D&D Beyond page as the mechanical starting point (verify the URL first).",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t033",
+      "phase": 4,
+      "title": "Finale dungeon — room-by-room tactical pass",
+      "description": "The comparison report found no numbered rooms, trap DCs, or encounter placement anywhere in the 8-location climactic dungeon (the_open_wound, the_binding_lattice, the_last_accord, the_renewal_font, the_vigil_wrack, the_faithfuls_end, the_listening_deep, the_undoing), vs. lost-mine's cragmaw_hideout/redbrand_hideout which key every room with specific DCs and monster counts. Add a 'Layout & Hazards' dm-only section to each of these 8 locations with: any traps/hazards specific to that chamber and their Perception/Investigation/save DCs, and which of the now-statted t031/t032 creatures (if any) are placed there and how many. Do not restructure the 8 separate location entities into one — add tactical detail within the existing per-location model. Do not alter the destroy/renew/invent branch design already established in the_undoing's DM notes.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t034",
+      "phase": 4,
+      "title": "Tactical pass on other dense multi-chamber sites",
+      "description": "Identify 2-3 existing locations that function as de-facto mini-dungeons (multiple named sub-areas or a lot of contained space described only atmospherically) — likely candidates: chancel_deep (Drowned Choir stronghold), drowned_chancellery, warders_hold. Add the same kind of numbered/named sub-area breakdown with hazard DCs and creature placement as t033, matching lost-mine's dungeon-keying convention. If fewer than 2 genuinely qualify, say so in the task notes rather than forcing structure onto a site that's meant to stay a single atmospheric room.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t035",
+      "phase": 4,
+      "title": "Session Runner integration for all 3 arc entities",
+      "description": "js/session-runner.js pulls .session-prompt divs out of a session entity's content as read-aloud text for a live in-session panel, and reads a session.reveals[] array to power one-click bulk-reveal — both features are fully working in the app but arc_1_port_calder_shallows, arc_2_drowned_districts, and arc_3_deep_kingdom use neither (0/3), vs. lost-mine's session_1-4 which use both (4/4). For each arc: add 3-5 <div class=\"session-prompt\"><div class=\"prompt-label\">...</div><p>...</p></div> blocks with actual verbatim read-aloud text for the arc's key beats (matching the style/tone of lost-mine's session_1_goblin_arrows.html), and add a reveals[] array to its data/sessions.json entry listing the location/npc/faction ids that arc's opening should unlock (matching the schema pattern in lost-mine's data/sessions.json). Keep the existing arc-level 'Key Beats' framing — the session-prompt blocks are additive, not a replacement.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t036",
+      "phase": 4,
+      "title": "Item mechanics pass",
+      "description": "The 4 existing items (barnacled_charm, pressure_ward_token, the_drowned_hymnal, the_wardwrights_binding_seal) describe what they do narratively but defer the actual numbers ('a cost the DM should design'). Add a concrete Properties section to each with real mechanical values in lost-mine's item style (spider_staff.html is the reference: attack/damage bonus, charge economy, save DCs, attunement requirements as applicable) — bonuses, activation costs, duration/range, and a gp price where one doesn't already exist. Keep the_wardwrights_binding_seal's plot-gating intent (inert until the finale) intact; give the 'reinforce the binding' cost from its existing DM notes an actual mechanical price instead of leaving it fully open.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t037",
+      "phase": 4,
+      "title": "Treasure economy + side quests",
+      "description": "Lost-mine mentions concrete gp values 21 times and has 2 dedicated side-quest mystery entities (e.g. mirnas_heirloom: a named prisoner, a specific stashed item with a gp value, a specific findable location, an emotional payoff); salt-below has 2 gp mentions and 0 side quests across 124 entities, despite having 2x the mystery-adjacent surface area. Do two things: (1) add specific gp values to notable salvage/finds in a sampling of existing wreck/ruin locations across The Shallows and Drowned Districts (5-8 locations is enough — pick ones that already describe a 'find' without pricing it), and (2) author 3-5 new self-contained side-quest mystery entities (category 'Side Quests', distinct from the existing 'Central Mystery' pair) each with a specific NPC, a specific location, a concrete reward, and a resolution — small and skippable, not central-plot-critical. Cross-link new side quests into existing NPCs/locations rather than inventing new ones where an existing entity already fits.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
+    },
+    {
+      "id": "t038",
+      "phase": 4,
+      "title": "NPC density pass",
+      "description": "Salt-below's NPC:location ratio is 1:7.1 (12 NPCs / 85 locations) vs. lost-mine's 1:1.2 (20/23) — flagged in the comparison report and confirmed in scope by the human for this phase (previously deliberately left unfixed per LESSONS_LEARNED.md #1, that guidance is superseded for this task specifically). Author additional NPCs interleaved across regions — Shallows, Drowned Districts, and Deep Kingdom all currently have long stretches of locations with no named point-of-contact. Aim roughly to double the NPC count (target ~24-30 total) by the end of this task, split across 2-3 iterations if needed rather than one giant batch. Every new NPC should attach to an existing location/faction/plot-hook that currently lacks a face (e.g. a shopkeeper at an unstaffed market_quarter stall, a Drowned Districts civic contact, a Deep Kingdom remnant-site presence) rather than inventing new locations to hold them. Add reciprocal related[] backlinks and update the host location's content to reference the new NPC.",
+      "status": "pending",
+      "addedBy": "phase4-setup"
     }
   ]
 }
