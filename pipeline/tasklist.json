@@ -298,24 +298,27 @@
       "phase": 4,
       "title": "Tactical pass on other dense multi-chamber sites",
       "description": "Identify 2-3 existing locations that function as de-facto mini-dungeons (multiple named sub-areas or a lot of contained space described only atmospherically) — likely candidates: chancel_deep (Drowned Choir stronghold), drowned_chancellery, warders_hold. Add the same kind of numbered/named sub-area breakdown with hazard DCs and creature placement as t033, matching lost-mine's dungeon-keying convention. If fewer than 2 genuinely qualify, say so in the task notes rather than forcing structure onto a site that's meant to stay a single atmospheric room.",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added a dm-only 'Key Areas' section (lost-mine Area-N convention + hazard DCs + creature placement) to drowned_chancellery (4 areas: Processional Antechamber, State Archive Hall with a Ward-Snap lightning hazard, the Unadjourned Chamber with an optional warden_remnant guardian, Lower Vaults left unresolved as a future hook) and warders_hold (3 areas: the Alcove Hall, Barracks Quarters with a rubble-crossing check and the resident warden_husk's patrol loop, the Restricted Stair with a soft-gate ward-lock into cindrel_vault). chancel_deep did NOT qualify — on reread it's a single soaring open-nave chapel space with no described sub-areas to key, so forcing an Area breakdown onto it would invent structure the location doesn't have; left unchanged per the task's own escape hatch. Added the one new cross-link ([[warden_remnant]] in drowned_chancellery) with reciprocal related[] backlinks both directions."
     },
     {
       "id": "t035",
       "phase": 4,
       "title": "Session Runner integration for all 3 arc entities",
       "description": "js/session-runner.js pulls .session-prompt divs out of a session entity's content as read-aloud text for a live in-session panel, and reads a session.reveals[] array to power one-click bulk-reveal — both features are fully working in the app but arc_1_port_calder_shallows, arc_2_drowned_districts, and arc_3_deep_kingdom use neither (0/3), vs. lost-mine's session_1-4 which use both (4/4). For each arc: add 3-5 <div class=\"session-prompt\"><div class=\"prompt-label\">...</div><p>...</p></div> blocks with actual verbatim read-aloud text for the arc's key beats (matching the style/tone of lost-mine's session_1_goblin_arrows.html), and add a reveals[] array to its data/sessions.json entry listing the location/npc/faction ids that arc's opening should unlock (matching the schema pattern in lost-mine's data/sessions.json). Keep the existing arc-level 'Key Beats' framing — the session-prompt blocks are additive, not a replacement.",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added 4 session-prompt blocks to each arc (Opening/First Contract/Faction Friction/Closing Omen for arc_1; Crossing the Threshold/First Contact — The Choir/The Reveal-in-Progress/Closing Stance for arc_2; Arrival at the Capital/The Full Reveal/Approach to the Containment Site/The Final Choice for arc_3), inserted after each arc's intro paragraph and before the existing 'Key Beats' section, which is unchanged. Added a reveals[] array to each of the 3 sessions.json entries listing the core locations/factions/NPC that arc's opening makes available (arc_1: port_calder, calder_harbor, the_brined_anchor, concordat_licensing_house, market_quarter, freedivers, salvage_concordat, harbor_watch, ruen_saltmarrow; arc_2: the_last_landing, vantmoor_hall, chancel_deep, drowned_choir, isolt_vane, the_suitors_approach, the_leaning_archive; arc_3: thalmere_gate, aurewake_concourse, drowned_chancellery, warders_hold, the_sealed_approach) — deliberately excluded finale-spoiling entities like the_undoing and it_that_kept_the_kingdom from any reveals list."
     },
     {
       "id": "t036",
       "phase": 4,
       "title": "Item mechanics pass",
       "description": "The 4 existing items (barnacled_charm, pressure_ward_token, the_drowned_hymnal, the_wardwrights_binding_seal) describe what they do narratively but defer the actual numbers ('a cost the DM should design'). Add a concrete Properties section to each with real mechanical values in lost-mine's item style (spider_staff.html is the reference: attack/damage bonus, charge economy, save DCs, attunement requirements as applicable) — bonuses, activation costs, duration/range, and a gp price where one doesn't already exist. Keep the_wardwrights_binding_seal's plot-gating intent (inert until the finale) intact; give the 'reinforce the binding' cost from its existing DM notes an actual mechanical price instead of leaving it fully open.",
-      "status": "pending",
-      "addedBy": "phase4-setup"
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added explicit activation/effect/value/no-attunement bullets to all 4 items. barnacled_charm and pressure_ward_token got minor concretization (activation cost, recharge, explicit 'no attunement' header) since their core numbers already existed. the_drowned_hymnal got an explicit once-per-long-rest-per-creature usage cap and a collector's black-market gp estimate. the_wardwrights_binding_seal got the substantial addition: a full ritual (seat at the_renewal_font, 1-hour rite, DC 16 Arcana/Religion) plus a concrete permanent cost (presiding creature's choice of -1 Constitution/Intelligence-or-Wisdom/Charisma, no save, restorable only by wish-tier magic) that fulfills the_undoing.html's existing 'a piece of the party's own vitality, memory, or luck' language without altering that location file — kept deliberately small so renewing reads as a real sacrifice rather than a trap option."
     },
     {
       "id": "t037",

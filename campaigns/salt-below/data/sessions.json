@@ -19,6 +19,17 @@
       "the_kettle",
       "why_the_kingdom_drowned_mystery"
     ],
+    "reveals": [
+      "port_calder",
+      "calder_harbor",
+      "the_brined_anchor",
+      "concordat_licensing_house",
+      "market_quarter",
+      "freedivers",
+      "salvage_concordat",
+      "harbor_watch",
+      "ruen_saltmarrow"
+    ],
     "tags": [
       "arc",
       "planning",
@@ -46,6 +57,15 @@
       "the_leaning_archive",
       "why_the_kingdom_drowned_mystery",
       "the_breaking_deal_mystery"
+    ],
+    "reveals": [
+      "the_last_landing",
+      "vantmoor_hall",
+      "chancel_deep",
+      "drowned_choir",
+      "isolt_vane",
+      "the_suitors_approach",
+      "the_leaning_archive"
     ],
     "tags": [
       "arc",
@@ -75,6 +95,13 @@
       "the_undoing",
       "the_wardwrights_binding_seal",
       "the_breaking_deal_mystery"
+    ],
+    "reveals": [
+      "thalmere_gate",
+      "aurewake_concourse",
+      "drowned_chancellery",
+      "warders_hold",
+      "the_sealed_approach"
     ],
     "tags": [
       "arc",
