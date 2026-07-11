@@ -2,6 +2,72 @@
 
 One dated section per audit iteration, most recent first.
 
+## Iteration 20 — 2026-07-11T20:35:00Z
+
+**Scope checked**: full pass (still cheap at 124 entities). Scripted checks
+across all 8 `campaigns/salt-below/data/*.json` files: JSON validity;
+required-field (`id`/`name`/`type`/`contentType`/`contentFile`/`visibility`)
+and enum compliance for every entity; `id` uniqueness across all files; every
+`contentFile` resolves to a real file on disk (including the `content/`
+subfolders, e.g. `content/creatures/`); no non-location entity carries
+`x`/`y`, and none present on locations either (still no map for this
+campaign); `campaigns/salt-below/campaign.json` has a non-empty `dmPassHash`
+matching the documented placeholder hash; `campaigns/index.json` has exactly
+one correctly-formed `salt-below` entry and the three pre-existing entries
+(lost-mine, curse-of-strahd, descent-into-avernus) are untouched. Scripted
+cross-link sweep: every `related[]` entry and every inline `[[id]]` /
+`[[id|label]]` reference across all 124 content HTML fragments resolves to a
+real entity id — zero broken links. Basic HTML well-formedness check (`<div>`
+open/close balance) on all HTML content files — zero mismatches, confirming
+iteration 19's "re-verified as well-formed" claim about the 8 edited creature
+files. Task list scanned: 31 done / 7 pending (t032-t038, the rest of Phase
+4), none `in_progress`, none `blocked`, all pending descriptions still
+concrete. Spot-checked the two newest creature entities most likely to carry
+drift — `reef_stalker.html` and `kelp_strangler.html` (iteration 19's stat-block
+batch) — against `CAMPAIGN_BIBLE.md`: Shallows tone (adventurous, avoidable
+danger, not yet dreadful) is intact on both; `kelp_strangler`'s missing
+D&D Beyond link is still correctly flagged in its DM notes rather than silently
+dropped or fabricated, consistent with the no-fabrication convention. Verified
+the `links[]` D&D Beyond URLs iteration 19 reported for all 8 stat-blocked
+creatures are actually present in `creatures.json` and match the log's claims
+(reef_stalker/deep_maw_eel intentionally share the Giant Constrictor Snake
+link; kelp_strangler correctly has no `links[]` entry).
+
+**Findings**: none. Zero schema violations, zero broken links, zero missing
+content files, zero duplicate ids, zero task-list issues, zero tonal drift in
+the sampled entities.
+
+**Severity assessment**: none — clean audit, no drift found.
+
+**Entity count summary** (124 total):
+| Type | Count |
+|---|---|
+| location | 85 |
+| npc | 12 |
+| faction | 5 |
+| item | 4 |
+| creature | 12 |
+| mystery | 2 |
+| session | 3 |
+| reference | 1 |
+| **Total** | **124** |
+
+Location breakdown by region: Port Calder 13 (+1 uncategorized settlement
+entry), The Shallows 21, Drowned Districts 25, Deep Kingdom 25 — all four
+regions remain at or above their `CAMPAIGN_BIBLE.md` target minimums.
+
+Also re-checked (outside campaign scope, no action needed): this sandbox's
+initial `main`-branch checkout again carried the recurring stray commit
+`2dc1b82` ("Re-register fail-academy in campaigns/index.json") seen in
+iterations 5/6/10/12/15/16/17/19. `git fetch origin main` confirms
+`origin/main`'s tip already equals that commit, so it's already safe on
+`main` — no new preservation branch needed. The five stale duplicate
+preservation branches noted in prior iterations (`wip/fail-academy-reregister`,
+`fail-academy-index-fix`, `recovered-fail-academy-fix`,
+`recovered/fail-academy-reregister`, `preserve/fail-academy-reregister`) are
+unchanged and still awaiting human cleanup — out of pipeline scope per
+GROUND_RULES.md Rule 6, flagged again only for continuity.
+
 ## Iteration 15 — 2026-07-10T17:05:00Z
 
 **Scope checked**: full pass (still cheap at 100 entities). Verified: JSON
