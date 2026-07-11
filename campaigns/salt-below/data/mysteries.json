@@ -23,7 +23,9 @@
       "vaelgard_terrace",
       "suppliants_colonnade",
       "mireths_reckoning",
-      "the_wardwrights_binding_seal"
+      "the_wardwrights_binding_seal",
+      "the_last_accord",
+      "the_undoing"
     ],
     "tags": [
       "main-quest",
@@ -51,7 +53,10 @@
       "the_chancellors_rest",
       "the_wardwrights_undercroft",
       "the_sealed_approach",
-      "the_wardwrights_binding_seal"
+      "the_wardwrights_binding_seal",
+      "the_binding_lattice",
+      "the_renewal_font",
+      "the_undoing"
     ],
     "tags": [
       "main-quest",

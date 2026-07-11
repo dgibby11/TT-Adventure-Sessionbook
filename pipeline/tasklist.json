@@ -211,17 +211,18 @@
       "phase": 3,
       "title": "Author the climactic dungeon (containment site of It)",
       "description": "Author 6-10 locations forming the climactic dungeon at the containment site of It That Kept the Kingdom, sized and paced for a level 9-10 finale. Should support multiple resolution paths (destroy the deal, renew it, or something the party invents) per CAMPAIGN_BIBLE.md's level arc.",
-      "status": "pending",
+      "status": "done",
       "addedBy": "iteration2",
-      "notes": "Entry point now established: the_sealed_approach (t023). the_wardwrights_binding_seal item (t026) is pre-placed as the mechanical anchor for a 'renew the deal' resolution path — this task should give it concrete ritual/cost shape rather than re-deriving the renew option from scratch."
+      "notes": "Authored 8 climactic-dungeon locations at the containment site: the_open_wound (hub past the sealed approach), the_binding_lattice + the_last_accord + the_renewal_font (destroy/lore/renew branches), the_vigil_wrack + the_faithfuls_end (guardian + Choir-tragedy branches), the_listening_deep (dread/proxy branch), and the_undoing (final convergence chamber where the destroy/renew/invent choice plays out, per CAMPAIGN_BIBLE level-arc guidance). Deep Kingdom now 25/25-35 target. Full reciprocal related[] backlinks added on the_sealed_approach, warders_hold, the_wardwrights_undercroft, mireths_reckoning, it_that_kept_the_kingdom, drowned_choir, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery, the_wardwrights_binding_seal."
     },
     {
       "id": "t025",
       "phase": 3,
       "title": "Author Deep Kingdom creatures incl. It That Kept the Kingdom",
       "description": "Author 3-5 creature entities for the Deep Kingdom, including a full stat-appropriate entry (or DM-only writeup pointing to a suitable high-CR base creature) for It That Kept the Kingdom itself, kept mysterious/dm-only until the finale.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 creature entities: it_that_kept_the_kingdom_stat (dm-only mechanical writeup for the finale boss, kept mysterious/reskin-guidance only, no bespoke stat block per house style), warden_remnant (combat-capable gatekeeper at the_vigil_wrack, escalation of warden_husk), the_unmade (escalation of silt_wraith at the_listening_deep, still non-hostile per house rule), the_faithful_husk (tragic escalation of choir_thrall at the_faithfuls_end). Reciprocal backlinks added on silt_wraith, choir_thrall, warden_husk."
     },
     {
       "id": "t026",

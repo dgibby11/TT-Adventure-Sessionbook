@@ -126,7 +126,9 @@
       "the_hollow_choir_yard",
       "the_choir_almonry",
       "choir_thrall",
-      "the_drowned_hymnal"
+      "the_drowned_hymnal",
+      "the_faithfuls_end",
+      "the_faithful_husk"
     ],
     "tags": [
       "cult",
@@ -161,7 +163,12 @@
       "bellwrit_span",
       "silt_wraith",
       "the_long_hush",
-      "the_sealed_approach"
+      "the_sealed_approach",
+      "the_open_wound",
+      "the_listening_deep",
+      "the_unmade",
+      "the_undoing",
+      "it_that_kept_the_kingdom_stat"
     ],
     "tags": [
       "presence",

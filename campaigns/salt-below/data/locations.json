@@ -2146,7 +2146,9 @@
       "aurewake_concourse",
       "warden_husk",
       "cindrel_vault",
-      "mireths_reckoning"
+      "mireths_reckoning",
+      "the_vigil_wrack",
+      "warden_remnant"
     ],
     "environment": {
       "architecture": "A fortified barracks-monument, entry hall lined with intact carved-name alcoves, each now paired with a worn statuary bust.",
@@ -2554,7 +2556,8 @@
       "the_wardwrights_undercroft",
       "warders_hold",
       "ilyndras_sanctum",
-      "why_the_kingdom_drowned_mystery"
+      "why_the_kingdom_drowned_mystery",
+      "the_last_accord"
     ],
     "environment": {
       "architecture": "A private side-chamber off [[suppliants_colonnade]], unceremonial, holding a stone seat, a bronze writing table, and walls of tightly-carved personal text.",
@@ -2596,7 +2599,9 @@
       "cindrel_vault",
       "velmarch_spire",
       "the_breaking_deal_mystery",
-      "the_wardwrights_binding_seal"
+      "the_wardwrights_binding_seal",
+      "the_binding_lattice",
+      "the_renewal_font"
     ],
     "environment": {
       "architecture": "A low workshop-archive off [[suppliants_colonnade]], racks of fist-sized ward-stones connected by corroded bronze conduit deeper into the ruin.",
@@ -2674,7 +2679,8 @@
       "the_long_hush",
       "the_wardwrights_undercroft",
       "it_that_kept_the_kingdom",
-      "the_breaking_deal_mystery"
+      "the_breaking_deal_mystery",
+      "the_open_wound"
     ],
     "environment": {
       "architecture": "A pair of thirty-foot ward-carved stone gate-leaves set into deliberately cut rock at the end of [[the_long_hush]] — built to close, not to welcome.",
@@ -2700,6 +2706,345 @@
       "old-kingdom",
       "transition",
       "central-mystery"
+    ]
+  },
+  {
+    "id": "the_open_wound",
+    "name": "The Open Wound",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_open_wound.html",
+    "visibility": "player",
+    "related": [
+      "the_sealed_approach",
+      "the_binding_lattice",
+      "the_vigil_wrack",
+      "the_listening_deep",
+      "the_undoing",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "Raw, unworked rock beyond the gate; ward-conduits from the network above dive straight into bare stone rather than kingdom masonry.",
+      "activity": "Three glyph-marked passages branch off a central shaft where the gate's current drops away and out of sight.",
+      "sensory": "The pull toward the shaft is the strongest felt anywhere in the region; loose gear drifts steadily toward it."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 16",
+        "detail": "The three onward passages are individually marked with distinct glyph-sets, clearly meant to be chosen between."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Every surface here is bare rock or ward-conduit — nothing carved for habitation, worship, or record-keeping."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The shaft's pull is strongest here of anywhere in the Deep Kingdom."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_binding_lattice",
+    "name": "The Binding Lattice",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_binding_lattice.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "the_wardwrights_undercroft",
+      "the_last_accord",
+      "the_renewal_font",
+      "the_breaking_deal_mystery",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A cathedral-scale lattice of thousands of ward-stones covering every surface — the whole containment network's true heart.",
+      "activity": "Whole patches sit dark and failing, spreading outward from a scatter of identifiable failure-points.",
+      "sensory": "A low resonant hum from the working stones; the dark patches are silent by contrast."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "A rough headcount puts the network at roughly two-thirds still functioning."
+      },
+      {
+        "roll": "Arcana DC 17",
+        "detail": "Failure-points cluster near specific stones whose loss would cascade fastest."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "An unfinished alcove holds tools left mid-work, wired to nothing."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_last_accord",
+    "name": "The Last Accord",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_last_accord.html",
+    "visibility": "player",
+    "related": [
+      "the_binding_lattice",
+      "why_the_kingdom_drowned_mystery",
+      "mireths_reckoning",
+      "the_renewal_font"
+    ],
+    "environment": {
+      "architecture": "A small side-chamber off the lattice's unfinished alcove, one wall carved wall-to-wall with a single unbroken legal text.",
+      "activity": "Undisturbed since it was carved.",
+      "sensory": "Formal old-tongue legal phrasing, clear enough to any reader who can parse the hand."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation or Religion DC 14",
+        "detail": "The text confirms the kingdom sank itself deliberately as the price of containment."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A witness-signatory listed at the text's foot matches Mireth's confession exactly."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "A closing clause describes the deal as renewable \"by hand and seal\" — a pointer toward the renewal font."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "lore"
+    ]
+  },
+  {
+    "id": "the_renewal_font",
+    "name": "The Renewal Font",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_renewal_font.html",
+    "visibility": "player",
+    "related": [
+      "the_binding_lattice",
+      "the_wardwrights_undercroft",
+      "the_wardwrights_binding_seal",
+      "the_last_accord",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A sealed side-passage alcove holding an empty housing precisely shaped for a master ward-stone.",
+      "activity": "Unfinished rather than damaged — tool-scars sharp, conduit ends capped, dust settled evenly.",
+      "sensory": "The one part of the network showing no wear or decay at all."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed (with item) / Investigation DC 14 (without)",
+        "detail": "The empty housing's shape matches the Ward-Wright's Binding Seal exactly."
+      },
+      {
+        "roll": "Investigation DC 13",
+        "detail": "The alcove shows no decay, unlike every other failure point in the region."
+      },
+      {
+        "roll": "Arcana DC 16",
+        "detail": "Conduit lines from the housing reach toward the deepest part of the lattice."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_vigil_wrack",
+    "name": "The Vigil Wrack",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_vigil_wrack.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "warders_hold",
+      "warden_remnant",
+      "the_faithfuls_end",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A hastily-thrown-up barricade of collapsed stone and old war-material, statuary busts cracked or toppled.",
+      "activity": "A warden remnant still patrols the wreckage, sharper and more alert than the husks above.",
+      "sensory": "Real battle damage — scorch, breakage, gouges — unlike the untouched hush of Warders' Hold."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Damage reads as an assault from the inner side outward — the Wardens fought going the wrong direction."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A vigil-roster names match Warders' Hold's alcove busts, closing that thread."
+      },
+      {
+        "roll": "Perception DC 14",
+        "detail": "The sentinel here challenges with more urgency and doesn't stand down as readily."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "the_faithfuls_end",
+    "name": "The Faithful's End",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_faithfuls_end.html",
+    "visibility": "player",
+    "related": [
+      "the_vigil_wrack",
+      "drowned_choir",
+      "the_faithful_husk",
+      "the_drowned_hymnal",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A side-chamber camp left arranged and undisturbed, gear packed with care.",
+      "activity": "A Drowned Choir pilgrimage cell stopped here mid-purpose and never resumed.",
+      "sensory": "Hymnal pages scattered, marginalia growing more desperate, then more certain, then stopping."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Marginalia in the hymnal pages tracks the same hymns as the Drowned Hymnal, written by a hand growing more certain over time."
+      },
+      {
+        "roll": "Perception DC 13",
+        "detail": "Nothing suggests panic or a fight — the camp was left in order, mid-purpose."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The final legible marginalia line reads like relief, not fear."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "drowned-choir",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_listening_deep",
+    "name": "The Listening Deep",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_listening_deep.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "it_that_kept_the_kingdom",
+      "the_unmade",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "An unshaped cave space; walls seem to lean inward a fraction more than measurement ever confirms.",
+      "activity": "The closest approach to It That Kept the Kingdom the site allows without full descent to the Undoing.",
+      "sensory": "Whispers in voices that resolve, briefly, into people the listener actually knows."
+    },
+    "curiosities": [
+      {
+        "roll": "Wisdom save (DM discretion, on lingering)",
+        "detail": "The whispers use recognizable voices drawn from people the listener has actually met."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "A previous explorer's gear lies undisturbed near the entrance, set down and never picked back up."
+      },
+      {
+        "roll": "Perception DC 17",
+        "detail": "The Unmade may be present, holding its shape longer and reacting faintly when spoken to."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "omen"
+    ]
+  },
+  {
+    "id": "the_undoing",
+    "name": "The Undoing",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_undoing.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "the_binding_lattice",
+      "the_renewal_font",
+      "the_last_accord",
+      "the_vigil_wrack",
+      "the_faithfuls_end",
+      "the_listening_deep",
+      "it_that_kept_the_kingdom",
+      "it_that_kept_the_kingdom_stat",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "the_wardwrights_binding_seal"
+    ],
+    "environment": {
+      "architecture": "No walls in any conventional sense — the containment given physical shape, a hollow scooped out of the world.",
+      "activity": "Every passage from the site above rejoins here.",
+      "sensory": "The boundary between kingdom and what it kept holds thinnest anywhere in the region."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "The three paths the site has offered are all physically enactable from this room, in whatever combination the party has prepared for."
+      },
+      {
+        "roll": "Wisdom save (DM discretion)",
+        "detail": "It That Kept the Kingdom is present here in a way it has been nowhere else."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The chamber does not pressure a decision on a hard timer beyond whatever tension the table has built."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "finale"
     ]
   }
 ]

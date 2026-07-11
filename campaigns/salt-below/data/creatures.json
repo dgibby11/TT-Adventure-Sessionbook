@@ -87,7 +87,8 @@
     "related": [
       "drowned_choir",
       "chancel_deep",
-      "the_hollow_choir_yard"
+      "the_hollow_choir_yard",
+      "the_faithful_husk"
     ],
     "tags": [
       "cultist",
@@ -108,7 +109,8 @@
       "ashgate_wardhouse",
       "wraithlock_gate",
       "the_warders_stair",
-      "warders_hold"
+      "warders_hold",
+      "warden_remnant"
     ],
     "tags": [
       "undead",
@@ -148,12 +150,98 @@
     "related": [
       "thornwake_hollow",
       "the_susurrus_deep",
+      "it_that_kept_the_kingdom",
+      "the_unmade"
+    ],
+    "tags": [
+      "aberrant",
+      "omen",
+      "non-hostile",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "it_that_kept_the_kingdom_stat",
+    "name": "It That Kept the Kingdom (Stat Block)",
+    "type": "creature",
+    "category": "The Deep Presence",
+    "contentType": "html",
+    "contentFile": "content/creatures/it_that_kept_the_kingdom_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "the_undoing",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery"
+    ],
+    "tags": [
+      "aberrant",
+      "boss",
+      "legendary",
+      "presence",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "warden_remnant",
+    "name": "Warden Remnant",
+    "type": "creature",
+    "category": "Kingdom Remnants",
+    "contentType": "html",
+    "contentFile": "content/creatures/warden_remnant.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_vigil_wrack",
+      "warders_hold",
+      "warden_husk"
+    ],
+    "tags": [
+      "undead",
+      "construct",
+      "kingdom-remnant",
+      "guardian",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_unmade",
+    "name": "The Unmade",
+    "type": "creature",
+    "category": "The Deep Presence",
+    "contentType": "html",
+    "contentFile": "content/creatures/the_unmade.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_listening_deep",
+      "silt_wraith",
       "it_that_kept_the_kingdom"
     ],
     "tags": [
       "aberrant",
       "omen",
       "non-hostile",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_faithful_husk",
+    "name": "The Faithful Husk",
+    "type": "creature",
+    "category": "Choir Thralls",
+    "contentType": "html",
+    "contentFile": "content/creatures/the_faithful_husk.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_faithfuls_end",
+      "choir_thrall",
+      "drowned_choir",
+      "the_drowned_hymnal"
+    ],
+    "tags": [
+      "cultist",
+      "thrall",
+      "drowned-choir",
+      "tragic",
       "dm-only"
     ]
   }
