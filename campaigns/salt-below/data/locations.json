@@ -123,7 +123,8 @@
       "calder_harbor",
       "harbormasters_post",
       "dive_outfitters_row",
-      "the_almonrys_debt"
+      "the_almonrys_debt",
+      "pol_ferrick"
     ],
     "environment": {
       "architecture": "A sprawl of wooden piers, some newer construction, some visibly built on older stone pilings.",
@@ -382,7 +383,8 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "harbor_watch_garrison"
+      "harbor_watch_garrison",
+      "ilsa_cray"
     ],
     "environment": {
       "architecture": "Cramped tenements built shoulder-to-shoulder along the tideline, patched with salvage timber and old-kingdom stone block.",
@@ -413,7 +415,8 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "the_tideward_chapel"
+      "the_tideward_chapel",
+      "rosalind_vey"
     ],
     "environment": {
       "architecture": "Taller, denser housing built up rather than out, mixing building styles from a dozen homelands.",
@@ -1225,7 +1228,8 @@
       "chancel_deep",
       "the_suitors_approach",
       "bellwrit_span",
-      "aldermourn_close"
+      "aldermourn_close",
+      "amos_kell"
     ],
     "environment": {
       "architecture": "A formal civic assembly hall, tiered stone benches in a collapsed half-dome, the old kingdom's seal still unbroken on the dais.",
@@ -1486,7 +1490,8 @@
       "the_chancellors_rest",
       "wraithlock_gate",
       "warden_husk",
-      "rees_holt"
+      "rees_holt",
+      "dessa_wrack"
     ],
     "environment": {
       "architecture": "A barracks-like guardhouse, weapon racks rotted to iron ghosts of their shapes in the silt.",
@@ -1520,7 +1525,8 @@
     "related": [
       "drowned_choir",
       "freedivers",
-      "vantmoor_hall"
+      "vantmoor_hall",
+      "ness_thatchford"
     ],
     "environment": {
       "architecture": "Rows of loom-houses, threads long rotted, loom-frames still standing in eerie orderly ranks.",
@@ -1936,7 +1942,8 @@
       "harbor_watch",
       "ashgate_wardhouse",
       "salvage_concordat",
-      "warden_husk"
+      "warden_husk",
+      "dessa_wrack"
     ],
     "environment": {
       "architecture": "A monumental formal gatehouse, once a toll checkpoint into the old kingdom's inner wards.",
@@ -2004,7 +2011,8 @@
     "visibility": "player",
     "related": [
       "freedivers",
-      "salvage_concordat"
+      "salvage_concordat",
+      "gable_tarn"
     ],
     "environment": {
       "architecture": "The flooded machinery pit of an old kingdom watermill, wheel and gearing still largely intact.",

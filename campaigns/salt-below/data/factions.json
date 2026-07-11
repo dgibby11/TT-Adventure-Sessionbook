@@ -32,7 +32,11 @@
       "the_ashen_wardrobe",
       "the_wardrobes_visitor",
       "corwin_hask",
-      "nell_sarkin"
+      "nell_sarkin",
+      "dessa_wrack",
+      "gable_tarn",
+      "pol_ferrick",
+      "ilsa_cray"
     ],
     "tags": [
       "guild",
@@ -60,7 +64,8 @@
       "ashgate_wardhouse",
       "wraithlock_gate",
       "yselda_wrenn",
-      "rees_holt"
+      "rees_holt",
+      "dessa_wrack"
     ],
     "tags": [
       "law",
@@ -93,7 +98,9 @@
       "the_loom_quarter",
       "thornwake_hollow",
       "millrace_deep",
-      "the_brides_dowry"
+      "the_brides_dowry",
+      "ness_thatchford",
+      "gable_tarn"
     ],
     "tags": [
       "independent",
@@ -134,7 +141,10 @@
       "choir_thrall",
       "the_drowned_hymnal",
       "the_faithfuls_end",
-      "the_faithful_husk"
+      "the_faithful_husk",
+      "amos_kell",
+      "pol_ferrick",
+      "rosalind_vey"
     ],
     "tags": [
       "cult",

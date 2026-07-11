@@ -1,11 +1,11 @@
 {
-  "iteration": 23,
+  "iteration": 24,
   "iterationCap": 28,
   "auditEvery": 7,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-11T23:10:00Z",
+  "lastRun": "2026-07-11T19:02:34Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t037 (gp values added to 6 wreck/ruin locations; 4 new self-contained side-quest mystery entities authored: the_brides_dowry, the_wardrobes_visitor, the_vaelgard_signet, the_almonrys_debt) and made partial progress on t038 (5 new NPCs — yselda_wrenn, corwin_hask, nell_sarkin, ysbel_corvane, rees_holt — attached to previously-unstaffed Port Calder/Drowned Districts locations, NPC:location ratio improved 1:7.1 -> 1:5.0, still short of the ~24-30 target; Deep Kingdom deliberately skipped this batch as tonally unfit for a stationed NPC). 133 entities, 0 duplicate ids, 0 broken links, 0 missing content files, dmPassHash present. Task list: 37 done, 1 in_progress (t038). This iteration's own number (23) now equals iterationCap, so the next firing's Step 2 check will write pipeline/STOP and self-halt as a no-op — that is expected, not an error. t038 needs more work; the DM should raise iterationCap in this file if more Phase 4 work is wanted."
+  "lastSummary": "Continued t038 (NPC density pass): authored 7 more NPCs — amos_kell, ness_thatchford, dessa_wrack, gable_tarn, pol_ferrick, rosalind_vey, ilsa_cray — all in Drowned Districts/Port Calder locations whose existing prose already implied a resident (Choir converts, squatters, patrol duty, dockside traffic); NPC count 17->24, reaching the low end of the ~24-30 target. Verified Deep Kingdom locations (vaelgard_terrace, sarelles_repose, drowned_chancellery, cindrel_vault, suppliants_colonnade, warders_hold) are all written as post-evacuation and unoccupied, and several Shallows checkpoint sites are transitional/uninhabited by design — deliberately did not force NPCs into either, consistent with iteration 23's same judgment call. 140 entities, 0 duplicate ids, 0 broken related[]/[[id]] links, 0 missing content files, dmPassHash present. Task list: 37 done, 1 in_progress (t038, at low end of target — DM can decide if this is sufficient or wants more), 1 pending (t039, waits on t038). Next iteration (25) is a normal build iteration (auditEvery=7, so 24/25/26/27 are build, 28 is the closing audit)."
 }

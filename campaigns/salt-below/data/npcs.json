@@ -49,7 +49,8 @@
       "the_ledger_wreck",
       "vaultward_reliquary",
       "the_ashen_wardrobe",
-      "the_wardrobes_visitor"
+      "the_wardrobes_visitor",
+      "ilsa_cray"
     ],
     "tags": [
       "concordat",
@@ -185,7 +186,8 @@
       "why_the_kingdom_drowned_mystery",
       "chancel_deep",
       "the_long_requiem",
-      "the_drowned_hymnal"
+      "the_drowned_hymnal",
+      "amos_kell"
     ],
     "tags": [
       "drowned-choir",
@@ -208,7 +210,8 @@
       "the_long_requiem",
       "the_hollow_choir_yard",
       "the_choir_almonry",
-      "the_almonrys_debt"
+      "the_almonrys_debt",
+      "pol_ferrick"
     ],
     "tags": [
       "drowned-choir",
@@ -323,6 +326,132 @@
     "tags": [
       "harbor-watch",
       "drowned-districts"
+    ]
+  },
+  {
+    "id": "amos_kell",
+    "name": "Brother Amos Kell",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/amos_kell.html",
+    "visibility": "player",
+    "related": [
+      "vantmoor_hall",
+      "drowned_choir",
+      "isolt_vane"
+    ],
+    "tags": [
+      "drowned-choir",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "ness_thatchford",
+    "name": "Ness Thatchford",
+    "type": "npc",
+    "category": "The Loom Quarter",
+    "contentType": "html",
+    "contentFile": "content/npcs/ness_thatchford.html",
+    "visibility": "player",
+    "related": [
+      "the_loom_quarter",
+      "freedivers"
+    ],
+    "tags": [
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "dessa_wrack",
+    "name": "Corporal Dessa Wrack",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/dessa_wrack.html",
+    "visibility": "player",
+    "related": [
+      "wraithlock_gate",
+      "harbor_watch",
+      "ashgate_wardhouse",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "harbor-watch",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "gable_tarn",
+    "name": "Foreman Gable Tarn",
+    "type": "npc",
+    "category": "Millrace Deep",
+    "contentType": "html",
+    "contentFile": "content/npcs/gable_tarn.html",
+    "visibility": "player",
+    "related": [
+      "millrace_deep",
+      "freedivers",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "pol_ferrick",
+    "name": "Pol Ferrick",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/pol_ferrick.html",
+    "visibility": "player",
+    "related": [
+      "the_long_docks",
+      "drowned_choir",
+      "salvage_concordat",
+      "deacon_rill"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
+    ]
+  },
+  {
+    "id": "rosalind_vey",
+    "name": "Rosalind Vey",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/rosalind_vey.html",
+    "visibility": "player",
+    "related": [
+      "shellhome_ward",
+      "drowned_choir"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
+    ]
+  },
+  {
+    "id": "ilsa_cray",
+    "name": "Ilsa Cray",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/ilsa_cray.html",
+    "visibility": "player",
+    "related": [
+      "tidewrack_ward",
+      "salvage_concordat",
+      "coraline_bray"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
     ]
   }
 ]
