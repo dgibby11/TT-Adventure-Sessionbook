@@ -20,7 +20,10 @@
       "the_sunken_rostrum",
       "drowned_chancellery",
       "sarelles_repose",
-      "vaelgard_terrace"
+      "vaelgard_terrace",
+      "suppliants_colonnade",
+      "mireths_reckoning",
+      "the_wardwrights_binding_seal"
     ],
     "tags": [
       "main-quest",
@@ -45,7 +48,10 @@
       "the_drowned_bell",
       "harbormasters_post",
       "the_salt_choked_colonnade",
-      "the_chancellors_rest"
+      "the_chancellors_rest",
+      "the_wardwrights_undercroft",
+      "the_sealed_approach",
+      "the_wardwrights_binding_seal"
     ],
     "tags": [
       "main-quest",

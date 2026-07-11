@@ -125,7 +125,8 @@
       "the_long_requiem",
       "the_hollow_choir_yard",
       "the_choir_almonry",
-      "choir_thrall"
+      "choir_thrall",
+      "the_drowned_hymnal"
     ],
     "tags": [
       "cult",
@@ -158,7 +159,9 @@
       "graves_end_locks",
       "thornwake_hollow",
       "bellwrit_span",
-      "silt_wraith"
+      "silt_wraith",
+      "the_long_hush",
+      "the_sealed_approach"
     ],
     "tags": [
       "presence",

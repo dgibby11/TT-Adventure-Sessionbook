@@ -202,8 +202,9 @@
       "phase": 3,
       "title": "Author Deep Kingdom locations, batch 3",
       "description": "Author 5-6 more Deep Kingdom locations, approaching the containment site of It.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 locations continuing from threshwater_stair toward the containment site: suppliants_colonnade (old-kingdom pilgrimage route of kneeling statues, inscriptions pleading for the binding's continuation not its end), mireths_reckoning (a Warden's private confession, primary direct-evidence source for why_the_kingdom_drowned_mystery), the_wardwrights_undercroft (the binding's physical infrastructure, ~1/3 of its ward-stones visibly failing, seeds the_wardwrights_binding_seal item), the_long_hush (pure-dread liminal zone, payoff of the Mounting Omens creature pattern, no combat/manifestation), and the_sealed_approach (the literal gate into the climactic dungeon, a failing central ward-stone makes the_breaking_deal_mystery visually explicit). Reciprocal related[] backlinks added to threshwater_stair, warders_hold, ilyndras_sanctum, cindrel_vault, velmarch_spire, it_that_kept_the_kingdom, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery. Deep Kingdom now at 17/25-35 target. the_sealed_approach is the new transition threshold for t024, same role as the_last_landing/the_last_descent."
     },
     {
       "id": "t024",
@@ -211,7 +212,8 @@
       "title": "Author the climactic dungeon (containment site of It)",
       "description": "Author 6-10 locations forming the climactic dungeon at the containment site of It That Kept the Kingdom, sized and paced for a level 9-10 finale. Should support multiple resolution paths (destroy the deal, renew it, or something the party invents) per CAMPAIGN_BIBLE.md's level arc.",
       "status": "pending",
-      "addedBy": "iteration2"
+      "addedBy": "iteration2",
+      "notes": "Entry point now established: the_sealed_approach (t023). the_wardwrights_binding_seal item (t026) is pre-placed as the mechanical anchor for a 'renew the deal' resolution path — this task should give it concrete ritual/cost shape rather than re-deriving the renew option from scratch."
     },
     {
       "id": "t025",
@@ -226,8 +228,9 @@
       "phase": 3,
       "title": "Author key campaign items",
       "description": "Author 3-5 notable item entities spanning the level arc (an early salvage curiosity, a mid-game Drowned Choir relic, a late-game artifact tied to the deal with It). Cross-link to the locations/NPCs/factions that hand them out or guard them.",
-      "status": "pending",
-      "addedBy": "iteration2"
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 3 items spanning the level arc: barnacled_charm (early Shallows salvage curiosity, minor light-cantrip effect, found at farrows_grotto or sold at saltbone_curios, with an optional DM hook for a rare 'different' one), the_drowned_hymnal (mid-game Drowned Choir relic from chancel_deep, a double-edged social tool with a built-in dread cost, ties to isolt_vane), and the_wardwrights_binding_seal (late-game artifact found at the_wardwrights_undercroft, the mechanical anchor for a 'renew the deal' third option at the climactic dungeon, inert and undetectable until t024 gives it context). Reciprocal related[] backlinks added to farrows_grotto, saltbone_curios, chancel_deep, drowned_choir, isolt_vane, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery."
     },
     {
       "id": "t027",

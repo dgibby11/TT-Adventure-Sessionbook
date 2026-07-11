@@ -338,7 +338,8 @@
       "drowned_choir",
       "sister_meck",
       "the_glass_hull",
-      "the_nightweigh"
+      "the_nightweigh",
+      "barnacled_charm"
     ],
     "environment": {
       "architecture": "A cramped, cluttered shopfront wedged behind the Market Quarter's main stalls.",
@@ -994,7 +995,8 @@
       "port_calder",
       "freedivers",
       "ivo_marlstone",
-      "reef_stalker"
+      "reef_stalker",
+      "barnacled_charm"
     ],
     "environment": {
       "architecture": "A sheltered reef cave mouth opening into a chain of air-pocketed grottoes, low ceilings hung with soft coral.",
@@ -1290,7 +1292,8 @@
       "vaultward_reliquary",
       "graves_end_locks",
       "the_leaning_archive",
-      "choir_thrall"
+      "choir_thrall",
+      "the_drowned_hymnal"
     ],
     "environment": {
       "architecture": "A soaring former high chapel, roof long gone, open straight up into black water — the Choir's true seat, of which the_drowned_bell above is only an echo.",
@@ -2142,7 +2145,8 @@
       "the_warders_stair",
       "aurewake_concourse",
       "warden_husk",
-      "cindrel_vault"
+      "cindrel_vault",
+      "mireths_reckoning"
     ],
     "environment": {
       "architecture": "A fortified barracks-monument, entry hall lined with intact carved-name alcoves, each now paired with a worn statuary bust.",
@@ -2310,7 +2314,8 @@
     "visibility": "player",
     "related": [
       "warders_hold",
-      "warden_husk"
+      "warden_husk",
+      "the_wardwrights_undercroft"
     ],
     "environment": {
       "architecture": "A sealed strongroom beneath [[warders_hold]], reached by a stair the Wardens' roll marks as restricted, guarded rather than merely locked.",
@@ -2350,7 +2355,8 @@
       "the_regnants_seat",
       "vaelgard_terrace",
       "drowned_choir",
-      "the_breaking_deal_mystery"
+      "the_breaking_deal_mystery",
+      "mireths_reckoning"
     ],
     "environment": {
       "architecture": "A circular sanctum off [[the_regnants_seat]], its walls carved floor-to-ceiling with a binding-rite in relief — the same iconography [[the_hollow_choir_yard]] echoes above, but whole here, and clearly the original rather than a copy.",
@@ -2390,7 +2396,8 @@
     "related": [
       "drowned_chancellery",
       "why_the_kingdom_drowned_mystery",
-      "the_leaning_archive"
+      "the_leaning_archive",
+      "the_wardwrights_undercroft"
     ],
     "environment": {
       "architecture": "A tall, narrow scholars' tower off [[drowned_chancellery]], its upper chamber ringed with brass instrument-mounts whose actual instruments are long gone.",
@@ -2470,7 +2477,8 @@
     "related": [
       "the_regnants_seat",
       "ilyndras_sanctum",
-      "it_that_kept_the_kingdom"
+      "it_that_kept_the_kingdom",
+      "suppliants_colonnade"
     ],
     "environment": {
       "architecture": "A final descending stair behind [[ilyndras_sanctum]], narrower and less formal than anything else in the capital core, as if it were never meant to be a public way.",
@@ -2485,6 +2493,206 @@
       {
         "roll": "DM only",
         "detail": "Marks the threshold out of the capital core and toward the containment site of [[it_that_kept_the_kingdom]] (t023/t024) — the same structural role [[the_last_descent]] played entering the Deep Kingdom. Hold any direct containment-site content until those tasks; this location is dread and anticipation only."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "transition",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "suppliants_colonnade",
+    "name": "The Suppliants' Colonnade",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/suppliants_colonnade.html",
+    "visibility": "player",
+    "related": [
+      "threshwater_stair",
+      "mireths_reckoning",
+      "the_wardwrights_undercroft",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "environment": {
+      "architecture": "A long colonnade at the base of [[threshwater_stair]], pillars in even ranks, hundreds of kneeling statues facing a single direction in unhurried genuflection.",
+      "activity": "The old kingdom's pilgrimage route, walked on a fixed calendar toward whatever waits at its far end — reverence, not terror, carved into every figure.",
+      "sensory": "The directional pull from the stair sharpens here, strongest exactly where the statues face; faded old-tongue script runs along the lower pillar band."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "Every statue's base holds a shallow, long-emptied offering-niche."
+      },
+      {
+        "roll": "Perception DC 15",
+        "detail": "Five statues near the midpoint have been deliberately turned to face back the way the party came."
+      },
+      {
+        "roll": "Translation",
+        "detail": "The repeated inscription is a plea for continuation, not release — that the debt keep being paid, not that the arrangement end."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "mireths_reckoning",
+    "name": "Mireth's Reckoning",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/mireths_reckoning.html",
+    "visibility": "player",
+    "related": [
+      "suppliants_colonnade",
+      "the_wardwrights_undercroft",
+      "warders_hold",
+      "ilyndras_sanctum",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "environment": {
+      "architecture": "A private side-chamber off [[suppliants_colonnade]], unceremonial, holding a stone seat, a bronze writing table, and walls of tightly-carved personal text.",
+      "activity": "The private record of Mireth, a Warden who oversaw the binding's containment work in its final years — dutiful reports giving way to something closer to confession.",
+      "sensory": "The carving hand shifts noticeably partway through the far wall; the room feels different by the time the text breaks off mid-sentence."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The tone shift from official report to private confession is precisely placeable partway along the far wall."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The five reversed statues at the colonnade's midpoint are named and explained here as Mireth's own act."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The final passage cuts off because Mireth stopped writing here and was never recorded again — see DM Notes."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "lore"
+    ]
+  },
+  {
+    "id": "the_wardwrights_undercroft",
+    "name": "The Ward-Wrights' Undercroft",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_wardwrights_undercroft.html",
+    "visibility": "player",
+    "related": [
+      "suppliants_colonnade",
+      "mireths_reckoning",
+      "cindrel_vault",
+      "velmarch_spire",
+      "the_breaking_deal_mystery",
+      "the_wardwrights_binding_seal"
+    ],
+    "environment": {
+      "architecture": "A low workshop-archive off [[suppliants_colonnade]], racks of fist-sized ward-stones connected by corroded bronze conduit deeper into the ruin.",
+      "activity": "The workshop of the old kingdom's Ward-Wrights, tools still racked in order as though they meant to return; roughly a third of the ward-stones have gone dark.",
+      "sensory": "The failed stones are scattered evenly through the racks rather than clustered — slow, uniform failure, not a single point of damage."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Schematic tablets trace the ward-stone network toward [[cindrel_vault]] and toward [[velmarch_spire]]'s original working-schedule."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A half-finished replacement ward-stone sits on a workbench, tools laid down mid-work."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A single larger, more heavily worked master ward-stone sits apart from the standard stock — see [[the_wardwrights_binding_seal]]."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "the_long_hush",
+    "name": "The Long Hush",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_long_hush.html",
+    "visibility": "player",
+    "related": [
+      "the_wardwrights_undercroft",
+      "the_sealed_approach",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "A long open stretch between two rock faces past the undercroft — clearly widened, never built, with no old-kingdom architecture at all.",
+      "activity": "The last stretch before whatever is being contained; nothing here attacks, because nothing here needs to.",
+      "sensory": "Sound flattens and swallows itself unnaturally; bioluminescent growth present everywhere else simply stops at an unmarked line."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "Bioluminescence stops abruptly a short distance in, as if it never took root beyond that point."
+      },
+      {
+        "roll": "Perception DC 17",
+        "detail": "Every sound — breath, whisper, dropped tool — rings wrong-close, swallowed almost before it starts."
+      },
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Old lantern-anchors at regular intervals stopped being maintained well before the kingdom drowned, not after."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "omen"
+    ]
+  },
+  {
+    "id": "the_sealed_approach",
+    "name": "The Sealed Approach",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_sealed_approach.html",
+    "visibility": "player",
+    "related": [
+      "the_long_hush",
+      "the_wardwrights_undercroft",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery"
+    ],
+    "environment": {
+      "architecture": "A pair of thirty-foot ward-carved stone gate-leaves set into deliberately cut rock at the end of [[the_long_hush]] — built to close, not to welcome.",
+      "activity": "The literal threshold into the containment site, marked by a full-height crack and old repair scarring cracked open again.",
+      "sensory": "Current runs steadily through the crack, one direction, into the dark beyond — the source of the pull felt as far back as [[threshwater_stair]]."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "The crack is the source of the directional current felt throughout the region."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Old repair scarring around the crack is decades old at least; the crack itself is recent enough its edges haven't weathered smooth."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A single large ward-stone at the gate's center is visibly failing in real time — the clearest physical sign yet that the deal is breaking."
       }
     ],
     "tags": [

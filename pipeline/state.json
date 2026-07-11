@@ -1,11 +1,11 @@
 {
-  "iteration": 15,
+  "iteration": 16,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-10T17:05:00Z",
-  "lastIterationType": "audit",
-  "lastSummary": "Clean audit of salt-below at 100 entities — no drift found (schema, cross-links, task list, bible consistency all verified). See AUDIT_REPORTS.md iteration 15."
+  "lastRun": "2026-07-11T05:14:42Z",
+  "lastIterationType": "build",
+  "lastSummary": "Completed t023 (5 Deep Kingdom locations approaching the containment site, Deep Kingdom now 17/25-35) and t026 (3 key items spanning the level arc, incl. the renew-the-deal artifact). 108 entities total, full validation clean."
 }
