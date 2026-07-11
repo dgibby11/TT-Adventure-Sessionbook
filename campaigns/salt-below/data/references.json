@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "salt_below_campaign_overview",
+    "name": "The Salt Below — Campaign Overview",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/references/salt_below_campaign_overview.html",
+    "visibility": "dm-only",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "drowned_choir",
+      "harbor_watch",
+      "freedivers",
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "arc_1_port_calder_shallows",
+      "arc_2_drowned_districts",
+      "arc_3_deep_kingdom"
+    ],
+    "tags": [
+      "overview",
+      "campaign",
+      "dm-only"
+    ]
+  }
+]

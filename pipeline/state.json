@@ -1,11 +1,11 @@
 {
-  "iteration": 17,
+  "iteration": 18,
   "iterationCap": 24,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
-  "status": "building",
-  "lastRun": "2026-07-11T06:18:24Z",
+  "status": "complete",
+  "lastRun": "2026-07-11T07:14:36Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t024 (8-location climactic dungeon at the containment site, hub-and-spoke structure converging on the_undoing's destroy/renew/invent finale) and t025 (4 creatures incl. the dm-only It That Kept the Kingdom stat-block guidance). Deep Kingdom now 25/25-35 target, 120 entities total, full validation clean. Next iteration (18) is a normal build iteration (next audit at 20)."
+  "lastSummary": "Completed t027 (3 arc-level session/planning entities covering the full level 1-10 arc), t028 (salt_below_campaign_overview reference entity), and t029 (cross-link sweep: fixed 19 genuine one-way related[] backlinks; confirmed zero broken related[]/[[id]] links, zero schema errors, zero duplicate ids, zero missing content files across all 124 entities). Task list is now fully exhausted (29/29 done) with all four regions at or above their CAMPAIGN_BIBLE.md target minimums; wrote pipeline/DONE rather than inventing further work."
 }

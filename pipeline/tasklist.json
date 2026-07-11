@@ -238,7 +238,7 @@
       "phase": 3,
       "title": "Author session/arc skeleton entities",
       "description": "Author session-type entities capturing the arc-by-arc skeleton from CAMPAIGN_BIBLE.md's level arc (surface establishment, mid-depth first contact, deep kingdom finale) as DM-facing planning aids, matching the style of other campaigns' session entities.",
-      "status": "pending",
+      "status": "done",
       "addedBy": "iteration2"
     },
     {
@@ -246,7 +246,7 @@
       "phase": 3,
       "title": "Author campaign overview reference entity",
       "description": "Author a reference-type entity giving a DM-facing campaign overview (premise, tone, factions at a glance, level arc) plus any external resource links, matching the style of the other campaigns' reference entities.",
-      "status": "pending",
+      "status": "done",
       "addedBy": "iteration2"
     },
     {
@@ -254,7 +254,7 @@
       "phase": 3,
       "title": "Cross-link and consistency pass",
       "description": "Sweep all salt-below entities authored so far for missing related[] backlinks and broken [[id]] references introduced across earlier batches; fix any found. (Ordinary audit iterations also cover this via AUDIT_CHECKLIST.md — use this task only if a build iteration has spare capacity and no audit is imminent.)",
-      "status": "pending",
+      "status": "done",
       "addedBy": "iteration2"
     }
   ]
