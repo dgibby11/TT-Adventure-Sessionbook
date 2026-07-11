@@ -122,7 +122,8 @@
       "port_calder",
       "calder_harbor",
       "harbormasters_post",
-      "dive_outfitters_row"
+      "dive_outfitters_row",
+      "the_almonrys_debt"
     ],
     "environment": {
       "architecture": "A sprawl of wooden piers, some newer construction, some visibly built on older stone pilings.",
@@ -155,7 +156,8 @@
       "the_long_docks",
       "it_that_kept_the_kingdom",
       "the_breaking_deal_mystery",
-      "harbor_watch_garrison"
+      "harbor_watch_garrison",
+      "yselda_wrenn"
     ],
     "environment": {
       "architecture": "A weathered two-story shack on stilts at the harbor mouth, signal flags and a tide-bell strung from the roof.",
@@ -229,7 +231,10 @@
       "the_brined_anchor",
       "saltbone_curios",
       "freedivers",
-      "sela_vantry"
+      "sela_vantry",
+      "the_vaelgard_signet",
+      "the_almonrys_debt",
+      "nell_sarkin"
     ],
     "environment": {
       "architecture": "Covered stalls and permanent shopfronts climbing the bluff terraces above the harbor, in uneven tiers.",
@@ -268,7 +273,8 @@
       "pressure_ward_token",
       "freedivers",
       "ruen_saltmarrow",
-      "ivo_marlstone"
+      "ivo_marlstone",
+      "corwin_hask"
     ],
     "environment": {
       "architecture": "A tight row of narrow shopfronts wedged between the market and the docks, every one crammed floor to ceiling with gear.",
@@ -478,7 +484,8 @@
     "visibility": "player",
     "related": [
       "port_calder",
-      "shellhome_ward"
+      "shellhome_ward",
+      "ysbel_corvane"
     ],
     "environment": {
       "architecture": "A modest multi-faith chapel and healer's hall, built partly from a reclaimed old-kingdom shrine's stone.",
@@ -705,7 +712,8 @@
     "related": [
       "port_calder",
       "freedivers",
-      "salvage_concordat"
+      "salvage_concordat",
+      "the_brides_dowry"
     ],
     "environment": {
       "architecture": "An intact merchant marriage-barge resting upright in a sand hollow, masts snapped but hull whole.",
@@ -1477,7 +1485,8 @@
       "salvage_concordat",
       "the_chancellors_rest",
       "wraithlock_gate",
-      "warden_husk"
+      "warden_husk",
+      "rees_holt"
     ],
     "environment": {
       "architecture": "A barracks-like guardhouse, weapon racks rotted to iron ghosts of their shapes in the silt.",
@@ -1894,7 +1903,8 @@
     "related": [
       "drowned_choir",
       "deacon_rill",
-      "the_hollow_choir_yard"
+      "the_hollow_choir_yard",
+      "the_almonrys_debt"
     ],
     "environment": {
       "architecture": "A converted almshouse, old-kingdom bones with practical Choir repairs — nothing ornamental, all function.",
@@ -2023,7 +2033,8 @@
     "visibility": "player",
     "related": [
       "salvage_concordat",
-      "coraline_bray"
+      "coraline_bray",
+      "the_wardrobes_visitor"
     ],
     "environment": {
       "architecture": "A private aristocratic vault-chamber, built into a collapsed manor cellar, still sealed by a corroded formal lock.",
@@ -2190,7 +2201,8 @@
       "drowned_chancellery",
       "ilyndras_sanctum",
       "hallowmere_gallery",
-      "why_the_kingdom_drowned_mystery"
+      "why_the_kingdom_drowned_mystery",
+      "the_vaelgard_signet"
     ],
     "environment": {
       "architecture": "A tiered aristocratic residential quarter, town-houses stacked up a gentle rise in diminishing grandeur.",

@@ -1,11 +1,11 @@
 {
-  "iteration": 22,
+  "iteration": 23,
   "iterationCap": 23,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-11T22:05:00Z",
+  "lastRun": "2026-07-11T23:10:00Z",
   "lastIterationType": "build",
-  "lastSummary": "Completed t034 (Key Areas tactical breakdown added to drowned_chancellery and warders_hold; chancel_deep judged not to qualify as a multi-chamber site and left unchanged, per the task's own escape hatch), t035 (session-prompt read-aloud blocks + sessions.json reveals[] added to all 3 arc entities, wiring them into js/session-runner.js), and t036 (concrete Properties mechanics added to all 4 items, including a full ritual/cost writeup for the_wardwrights_binding_seal's 'reinforce the binding' option). 124 entities, 0 duplicate ids, 0 broken links, dmPassHash present. Task list: 36 done, 2 pending (t037-t038). Next iteration (23) is the final build iteration before iterationCap — it will self-halt via Rule 3 immediately after (or instead of running, if it lands past the cap), so the DM should review t037/t038 and raise iterationCap if more Phase 4 work is wanted."
+  "lastSummary": "Completed t037 (gp values added to 6 wreck/ruin locations; 4 new self-contained side-quest mystery entities authored: the_brides_dowry, the_wardrobes_visitor, the_vaelgard_signet, the_almonrys_debt) and made partial progress on t038 (5 new NPCs — yselda_wrenn, corwin_hask, nell_sarkin, ysbel_corvane, rees_holt — attached to previously-unstaffed Port Calder/Drowned Districts locations, NPC:location ratio improved 1:7.1 -> 1:5.0, still short of the ~24-30 target; Deep Kingdom deliberately skipped this batch as tonally unfit for a stationed NPC). 133 entities, 0 duplicate ids, 0 broken links, 0 missing content files, dmPassHash present. Task list: 37 done, 1 in_progress (t038). This iteration's own number (23) now equals iterationCap, so the next firing's Step 2 check will write pipeline/STOP and self-halt as a no-op — that is expected, not an error. t038 needs more work; the DM should raise iterationCap in this file if more Phase 4 work is wanted."
 }

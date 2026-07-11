@@ -48,7 +48,8 @@
       "concordat_licensing_house",
       "the_ledger_wreck",
       "vaultward_reliquary",
-      "the_ashen_wardrobe"
+      "the_ashen_wardrobe",
+      "the_wardrobes_visitor"
     ],
     "tags": [
       "concordat",
@@ -85,7 +86,8 @@
     "related": [
       "harbor_watch",
       "harbor_watch_garrison",
-      "the_marrow_trawler"
+      "the_marrow_trawler",
+      "rees_holt"
     ],
     "tags": [
       "harbor-watch",
@@ -141,7 +143,8 @@
       "freedivers",
       "dive_outfitters_row",
       "farrows_grotto",
-      "thornwake_hollow"
+      "thornwake_hollow",
+      "the_brides_dowry"
     ],
     "tags": [
       "freedivers",
@@ -204,7 +207,8 @@
       "the_nightweigh",
       "the_long_requiem",
       "the_hollow_choir_yard",
-      "the_choir_almonry"
+      "the_choir_almonry",
+      "the_almonrys_debt"
     ],
     "tags": [
       "drowned-choir",
@@ -231,6 +235,94 @@
       "drowned-choir",
       "doubter",
       "informant"
+    ]
+  },
+  {
+    "id": "yselda_wrenn",
+    "name": "Harbormaster Yselda Wrenn",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/yselda_wrenn.html",
+    "visibility": "player",
+    "related": [
+      "harbormasters_post",
+      "harbor_watch",
+      "the_breaking_deal_mystery"
+    ],
+    "tags": [
+      "port-calder",
+      "harbormaster"
+    ]
+  },
+  {
+    "id": "corwin_hask",
+    "name": "Outfitter Corwin Hask",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/corwin_hask.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "port-calder",
+      "merchant"
+    ]
+  },
+  {
+    "id": "nell_sarkin",
+    "name": "Appraiser Nell Sarkin",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/nell_sarkin.html",
+    "visibility": "player",
+    "related": [
+      "market_quarter",
+      "salvage_concordat",
+      "the_brined_anchor"
+    ],
+    "tags": [
+      "port-calder",
+      "merchant"
+    ]
+  },
+  {
+    "id": "ysbel_corvane",
+    "name": "Chaplain Ysbel Corvane",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/ysbel_corvane.html",
+    "visibility": "player",
+    "related": [
+      "the_tideward_chapel"
+    ],
+    "tags": [
+      "port-calder",
+      "healer"
+    ]
+  },
+  {
+    "id": "rees_holt",
+    "name": "Scout Rees Holt",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/rees_holt.html",
+    "visibility": "player",
+    "related": [
+      "ashgate_wardhouse",
+      "harbor_watch",
+      "tam_ostler",
+      "warden_husk"
+    ],
+    "tags": [
+      "harbor-watch",
+      "drowned-districts"
     ]
   }
 ]

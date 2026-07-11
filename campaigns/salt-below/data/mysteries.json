@@ -64,5 +64,77 @@
       "ticking-clock",
       "dm-only"
     ]
+  },
+  {
+    "id": "the_brides_dowry",
+    "name": "The Bride's Undelivered Dowry",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_brides_dowry.html",
+    "visibility": "player",
+    "related": [
+      "the_foundered_bride",
+      "ivo_marlstone",
+      "freedivers"
+    ],
+    "tags": [
+      "side-quest",
+      "shallows"
+    ]
+  },
+  {
+    "id": "the_wardrobes_visitor",
+    "name": "The Wardrobe's Quiet Visitor",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_wardrobes_visitor.html",
+    "visibility": "player",
+    "related": [
+      "the_ashen_wardrobe",
+      "coraline_bray",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "side-quest",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "the_vaelgard_signet",
+    "name": "The Vaelgard Signet",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_vaelgard_signet.html",
+    "visibility": "player",
+    "related": [
+      "vaelgard_terrace",
+      "market_quarter"
+    ],
+    "tags": [
+      "side-quest",
+      "deep-kingdom"
+    ]
+  },
+  {
+    "id": "the_almonrys_debt",
+    "name": "A Debt to the Almonry",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_almonrys_debt.html",
+    "visibility": "player",
+    "related": [
+      "the_choir_almonry",
+      "deacon_rill",
+      "the_long_docks",
+      "market_quarter"
+    ],
+    "tags": [
+      "side-quest",
+      "drowned-districts"
+    ]
   }
 ]

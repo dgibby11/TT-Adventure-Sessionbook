@@ -29,7 +29,10 @@
       "vaultward_reliquary",
       "wraithlock_gate",
       "millrace_deep",
-      "the_ashen_wardrobe"
+      "the_ashen_wardrobe",
+      "the_wardrobes_visitor",
+      "corwin_hask",
+      "nell_sarkin"
     ],
     "tags": [
       "guild",
@@ -55,7 +58,9 @@
       "port_calder",
       "the_marrow_trawler",
       "ashgate_wardhouse",
-      "wraithlock_gate"
+      "wraithlock_gate",
+      "yselda_wrenn",
+      "rees_holt"
     ],
     "tags": [
       "law",
@@ -87,7 +92,8 @@
       "farrows_grotto",
       "the_loom_quarter",
       "thornwake_hollow",
-      "millrace_deep"
+      "millrace_deep",
+      "the_brides_dowry"
     ],
     "tags": [
       "independent",

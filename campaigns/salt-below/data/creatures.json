@@ -12,7 +12,10 @@
       "sawback_reef"
     ],
     "links": [
-      { "label": "Giant Constrictor Snake — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake" }
+      {
+        "label": "Giant Constrictor Snake — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake"
+      }
     ],
     "tags": [
       "predator",
@@ -35,7 +38,10 @@
       "the_marrow_trawler"
     ],
     "links": [
-      { "label": "Giant Crab — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16879-giant-crab" }
+      {
+        "label": "Giant Crab — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16879-giant-crab"
+      }
     ],
     "tags": [
       "hazard",
@@ -76,7 +82,10 @@
       "it_that_kept_the_kingdom"
     ],
     "links": [
-      { "label": "Quipper — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16989-quipper" }
+      {
+        "label": "Quipper — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16989-quipper"
+      }
     ],
     "tags": [
       "aberrant",
@@ -100,7 +109,10 @@
       "the_faithful_husk"
     ],
     "links": [
-      { "label": "Zombie — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17077-zombie" }
+      {
+        "label": "Zombie — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17077-zombie"
+      }
     ],
     "tags": [
       "cultist",
@@ -123,10 +135,14 @@
       "the_warders_stair",
       "warders_hold",
       "warden_remnant",
-      "cindrel_vault"
+      "cindrel_vault",
+      "rees_holt"
     ],
     "links": [
-      { "label": "Animated Armor — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16786-animated-armor" }
+      {
+        "label": "Animated Armor — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16786-animated-armor"
+      }
     ],
     "tags": [
       "undead",
@@ -149,7 +165,10 @@
       "millhollow_undercroft"
     ],
     "links": [
-      { "label": "Giant Constrictor Snake — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake" }
+      {
+        "label": "Giant Constrictor Snake — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake"
+      }
     ],
     "tags": [
       "predator",
@@ -173,7 +192,10 @@
       "the_unmade"
     ],
     "links": [
-      { "label": "Shadow — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17010-shadow" }
+      {
+        "label": "Shadow — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17010-shadow"
+      }
     ],
     "tags": [
       "aberrant",
