@@ -346,6 +346,46 @@
       "status": "done",
       "addedBy": "phase4-setup-r2",
       "note": "Iteration 25: ran the full sweep now that t038 is closed out. Consistency check across all 145 entities: 0 duplicate ids, 0 broken related[] references, 0 broken [[id]] cross-links in content, 0 missing content files, 0 broken reveals[] entries — clean. Arc-integration pass: matched t037's 4 side-quest mysteries and t038's 12 new NPCs (from iterations 23-25) against each arc's region/level scope. Added the_brides_dowry to arc_1's related[] (the_foundered_bride is a Shallows site). Added the_wardrobes_visitor and the_almonrys_debt to arc_2's related[] (the_ashen_wardrobe and the_choir_almonry are both Drowned Districts). Added the_vaelgard_signet to arc_3's related[] (vaelgard_terrace is Deep Kingdom). Added amos_kell to arc_2's related[] specifically — his own content is explicitly written as a 'soft first-contact' Choir NPC at vantmoor_hall, which is arc_2's own 'First Contact — The Choir' beat, a clean fit rather than a forced one. Deliberately did NOT add the other 11 new civilian/background NPCs (dovan_kesk, corin_draw, petra_wexler, bram_coswick, sera_vondt, ness_thatchford, dessa_wrack, gable_tarn, pol_ferrick, rosalind_vey, ilsa_cray) to any arc's related[]/reveals[] — existing precedent (arc_1's reveals[] lists only ruen_saltmarrow out of ~8 Port Calder/Harbor Watch NPCs, arc_2 lists only isolt_vane) shows these arrays are curated headline reveals, not a roster of every resident of the region; forcing all 11 in would misrepresent their narrative weight and dilute the arrays' signal. Skipped per the task's own 'skip any that don't cleanly fit rather than forcing it' instruction."
+    },
+    {
+      "id": "t040",
+      "phase": 5,
+      "title": "Define underwater dive mechanics — breathing, pressure, and dive procedure",
+      "description": "A second comparison report (2026-07-11, structural/procedural focus) found a foundational gap: across all 145 entities, \"water breathing\" appears exactly once, as a trait on a hostile creature (salt_warped_grouper), never as anything available to the party. The campaign's one dive-survival item, pressure_ward_token, is explicit that it does NOT cover this — its own text says 'the pressure below the reef line will crush an unwarded diver long before they'd otherwise need to worry about air,' naming air as a real, separate, unsolved concern. There is also no dive-as-procedure framework anywhere: no stated dive duration, no return-trip logic, no consequence for staying down too long. Every one of the ~85 Shallows/Drowned Districts/Deep Kingdom locations silently depends on this being solved and it never has been. Fix, in three parts: (1) Design a universal, economically-consistent answer for how PCs breathe underwater — the natural fit is a companion piece of dive gear or licensed service sold through the same Concordat-regulated economy as the Pressure-Ward Token (e.g. at dive_outfitters_row), explicitly complementing rather than replacing the pressure token's existing pressure-only scope. Consider giving it a distinct failure mode from the pressure token (two different things that can go wrong on a bad dive is better DM-usable tension than one). (2) Author a new DM-facing reference-type entity (matching the existing salt_below_campaign_overview pattern) documenting how a routine dive actually works: prep, descent, a rough time/depth budget before gear needs attention, the return trip, and what a DM should do if gear fails mid-dive. (3) Light-touch (not rewrite) the highest-traffic hub entities so this is actually discoverable without hunting: dive_outfitters_row (sell the new gear alongside the token), concordat_licensing_house or freedivers (establish it as standard-issue/mandatory), and a cross-link from salt_below_campaign_overview. Do NOT retroactively rewrite the ~85 existing dive-site locations — per CAMPAIGN_BIBLE.md's own 'don't retroactively rewrite' convention (see Authoring Notes), establishing the mechanic once at the gear/reference level is sufficient; those locations never contradicted the mechanic, they just assumed it existed.",
+      "status": "pending",
+      "addedBy": "phase5-setup"
+    },
+    {
+      "id": "t041",
+      "phase": 5,
+      "title": "Add indexed Clues sections to the two central mysteries",
+      "description": "The same report found why_the_kingdom_drowned_mystery.html and the_breaking_deal_mystery.html each have strong, DC-gated, specific evidence already written across their related[] entities (18 and 14 respectively — e.g. mireths_reckoning's Investigation DC 14 confession, the_leaning_archive's History DC 15 evacuation decree) but neither mystery entity has a scannable index of where to find it. Compare campaigns/lost-mine/content/mysteries/black_spider_identity.html and glasstaff_identity.html, which both use a clean 'Clues' H2 with 3-4 bullets, each naming an exact location and the specific discoverable fact there. For each of the two salt-below mysteries, add an equivalent 'Clues' section curating 4-6 of the strongest existing related locations into that same bulleted format (mireths_reckoning, the_leaning_archive, and the_sunken_rostrum are already confirmed strong candidates for why_the_kingdom_drowned_mystery per their own content). This is an indexing/synthesis task — do not rewrite the source locations, just point at them precisely. If a mystery's related[] doesn't have enough genuinely clue-like entries (as opposed to thematic-only connections) to fill 4-6 solid bullets, say so honestly in the task note rather than padding with weak entries.",
+      "status": "pending",
+      "addedBy": "phase5-setup"
+    },
+    {
+      "id": "t042",
+      "phase": 5,
+      "title": "Add level-danger calibration to all 12 creature entities",
+      "description": "Lost-mine explicitly flags outlier-danger creatures — campaigns/lost-mine/content/creatures/venomfang.html states 'CR 8 — severely dangerous for a level 3-4 party in direct combat.' Salt-below's 12 creatures carry real CR ratings as of Phase 4 (CR 1 reef predators through the CR 15 finale boss) but none include this kind of framing. Add a one-line level-appropriateness callout to each creature's stat block (near the existing CR line in its dl.facts block), stating which party level range it's appropriately dangerous for, matching lost-mine's phrasing convention. Pay particular attention to genuine outliers — creatures whose CR sits meaningfully above or below their region's expected level band — since those are exactly where a DM could get blindsided running this cold.",
+      "status": "pending",
+      "addedBy": "phase5-setup"
+    },
+    {
+      "id": "t043",
+      "phase": 5,
+      "title": "Add milestone-leveling guidance to all 3 arc session entities",
+      "description": "Every lost-mine session ends with an explicit target (e.g. session_3_spiders_web.html: 'Target: Level 4 by end of session'). Salt-below's 3 arcs (arc_1_port_calder_shallows, arc_2_drowned_districts, arc_3_deep_kingdom) are tagged with level bands (levels-1-3, levels-4-6, levels-7-10) but nothing inside their content says when within that 3-level span the party should actually level up. Add a 'Leveling Milestones' subsection to each arc entity suggesting 2-3 concrete story-beat-triggered level-up points, tied to beats already established in that arc's existing 'Key Beats' section — not a rigid XP count, matching the arc-level (not numbered-session) granularity this campaign already deliberately chose over lost-mine's tighter session structure.",
+      "status": "pending",
+      "addedBy": "phase5-setup"
+    },
+    {
+      "id": "t044",
+      "phase": 5,
+      "title": "Optional: light reputation/standing track + hook density touch-up",
+      "description": "Lowest priority of this batch — only attempt this if t040-t043 are complete with iteration budget to spare, and it is explicitly fine to skip either half or all of it rather than rushing. Two small, independent pieces: (1) the campaign currently has exactly 2 'standing favor' mentions (the_brides_dowry.html, rees_holt.html) with no underlying mechanic behind them. Define a lightweight, freeform-friendly reputation/standing framework for the 4 surface factions (salvage_concordat, harbor_watch, freedivers, drowned_choir) — not a rigid numeric track, match the campaign's existing informal tone — and retrofit those 2 existing mentions to reference it explicitly. (2) Only 24 of 85 locations (28%) carry explicit hook/contract language. If time remains, add a light DM-actionable hook to 3-5 more locations that currently read as pure atmosphere, prioritizing whichever region/category is thinnest on hooks. Do not force a hook onto a location whose established tone is deliberately hook-free (e.g. a 'breather' site) — skip it rather than contradicting existing design intent.",
+      "status": "pending",
+      "addedBy": "phase5-setup"
     }
   ]
 }
