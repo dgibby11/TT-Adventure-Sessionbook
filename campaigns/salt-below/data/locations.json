@@ -1016,7 +1016,8 @@
       "freedivers",
       "ivo_marlstone",
       "reef_stalker",
-      "barnacled_charm"
+      "barnacled_charm",
+      "salt_below_campaign_overview"
     ],
     "environment": {
       "architecture": "A sheltered reef cave mouth opening into a chain of air-pocketed grottoes, low ceilings hung with soft coral.",
@@ -1236,7 +1237,8 @@
       "the_suitors_approach",
       "bellwrit_span",
       "aldermourn_close",
-      "amos_kell"
+      "amos_kell",
+      "salt_below_campaign_overview"
     ],
     "environment": {
       "architecture": "A formal civic assembly hall, tiered stone benches in a collapsed half-dome, the old kingdom's seal still unbroken on the dais.",
@@ -1744,7 +1746,8 @@
       "freedivers",
       "ivo_marlstone",
       "it_that_kept_the_kingdom",
-      "silt_wraith"
+      "silt_wraith",
+      "salt_below_campaign_overview"
     ],
     "environment": {
       "architecture": "A sunken garden-hollow behind a collapsed manor wall, once ornamental, now a dead zone of bare stone.",
@@ -1951,7 +1954,8 @@
       "ashgate_wardhouse",
       "salvage_concordat",
       "warden_husk",
-      "dessa_wrack"
+      "dessa_wrack",
+      "salt_below_campaign_overview"
     ],
     "environment": {
       "architecture": "A monumental formal gatehouse, once a toll checkpoint into the old kingdom's inner wards.",

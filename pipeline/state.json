@@ -1,11 +1,11 @@
 {
-  "iteration": 27,
+  "iteration": 28,
   "iterationCap": 30,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
-  "status": "building",
-  "lastRun": "2026-07-12T04:02:35Z",
+  "status": "done",
+  "lastRun": "2026-07-12T04:09:15Z",
   "lastIterationType": "build",
-  "lastSummary": "Phase 5 build: completed t040 (brinelung_mask breathing item + salt_below_dive_procedure DM reference + hub cross-links), t041 (Clues sections on both central mysteries), t042 (level-danger calibration on all 12 creatures), t043 (Leveling Milestones on all 3 arcs). t044 (optional reputation/hook-density touch-up) left pending for the next iteration. 147 entities, full link/schema validation clean."
+  "lastSummary": "Completed t044 (optional reputation/standing framework + hook density touch-up): added a Faction Standing section to salt_below_campaign_overview.html and retrofitted 2 existing standing-favor mentions, plus light hooks on 4 under-hooked locations. 44/44 tasks done, 147 entities, validation clean. Wrote pipeline/DONE."
 }
