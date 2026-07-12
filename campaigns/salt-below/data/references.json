@@ -18,11 +18,36 @@
       "the_breaking_deal_mystery",
       "arc_1_port_calder_shallows",
       "arc_2_drowned_districts",
-      "arc_3_deep_kingdom"
+      "arc_3_deep_kingdom",
+      "salt_below_dive_procedure"
     ],
     "tags": [
       "overview",
       "campaign",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "salt_below_dive_procedure",
+    "name": "Diving the Salt Below — A DM Reference",
+    "type": "reference",
+    "category": "Procedures",
+    "contentType": "html",
+    "contentFile": "content/references/salt_below_dive_procedure.html",
+    "visibility": "dm-only",
+    "related": [
+      "pressure_ward_token",
+      "brinelung_mask",
+      "dive_outfitters_row",
+      "concordat_licensing_house",
+      "freedivers",
+      "the_sealed_approach",
+      "salt_below_campaign_overview"
+    ],
+    "tags": [
+      "reference",
+      "procedures",
+      "dive-gear",
       "dm-only"
     ]
   }

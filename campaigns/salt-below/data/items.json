@@ -17,6 +17,25 @@
     ]
   },
   {
+    "id": "brinelung_mask",
+    "name": "Brinelung Mask",
+    "type": "item",
+    "category": "Dive Gear",
+    "contentType": "html",
+    "contentFile": "content/items/brinelung_mask.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row",
+      "pressure_ward_token",
+      "salt_below_dive_procedure"
+    ],
+    "tags": [
+      "magic",
+      "dive-gear",
+      "wondrous-item"
+    ]
+  },
+  {
     "id": "barnacled_charm",
     "name": "Barnacled Charm",
     "type": "item",

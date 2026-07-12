@@ -1,11 +1,11 @@
 {
-  "iteration": 26,
+  "iteration": 27,
   "iterationCap": 30,
   "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "building",
-  "lastRun": "2026-07-11T19:20:00Z",
-  "lastIterationType": "audit",
-  "lastSummary": "Final closing audit requested by the DM (phase4-setup-r2b): full pass of all 145 entities, zero findings (schema, links, task list, tone spot-checks all clean). Restored pipeline/DONE, status=done, auditEvery back to 5. The Salt Below is complete and ready for human review/merge into main."
+  "lastRun": "2026-07-12T04:02:35Z",
+  "lastIterationType": "build",
+  "lastSummary": "Phase 5 build: completed t040 (brinelung_mask breathing item + salt_below_dive_procedure DM reference + hub cross-links), t041 (Clues sections on both central mysteries), t042 (level-danger calibration on all 12 creatures), t043 (Leveling Milestones on all 3 arcs). t044 (optional reputation/hook-density touch-up) left pending for the next iteration. 147 entities, full link/schema validation clean."
 }

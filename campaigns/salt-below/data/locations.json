@@ -91,7 +91,9 @@
       "salvage_concordat",
       "perrin_ashgrave",
       "wick_tallow",
-      "coraline_bray"
+      "coraline_bray",
+      "pressure_ward_token",
+      "brinelung_mask"
     ],
     "environment": {
       "architecture": "A blocky, well-kept stone hall facing the harbor, Concordat blue-and-gold banners over the door.",
@@ -273,6 +275,7 @@
       "market_quarter",
       "the_long_docks",
       "pressure_ward_token",
+      "brinelung_mask",
       "freedivers",
       "ruen_saltmarrow",
       "ivo_marlstone",
