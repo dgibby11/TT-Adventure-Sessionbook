@@ -1,11 +1,11 @@
 {
-  "iteration": 28,
+  "iteration": 29,
   "iterationCap": 30,
-  "auditEvery": 29,
+  "auditEvery": 5,
   "branch": "campaign-pipeline",
   "campaignSlug": "salt-below",
   "status": "done",
-  "lastRun": "2026-07-12T04:09:15Z",
-  "lastIterationType": "build",
-  "lastSummary": "Completed t044 (optional reputation/standing framework + hook density touch-up): added a Faction Standing section to salt_below_campaign_overview.html and retrofitted 2 existing standing-favor mentions, plus light hooks on 4 under-hooked locations. 44/44 tasks done, 147 entities, validation clean. Wrote pipeline/DONE."
+  "lastRun": "2026-07-13T12:13:28Z",
+  "lastIterationType": "audit",
+  "lastSummary": "Final closing audit for Phase 5: verified all 5 t040-t044 deliverables (dive procedure, mystery clue indexes, creature danger calibration, arc milestone leveling, faction standing) present and correct. Zero schema/link/task-list defects across 147 entities. Restored pipeline/DONE and auditEvery to 5."
 }
