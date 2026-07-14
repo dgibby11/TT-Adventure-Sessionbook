@@ -1,0 +1,3099 @@
+[
+  {
+    "id": "port_calder",
+    "name": "Port Calder",
+    "type": "location",
+    "category": "Settlements",
+    "contentType": "html",
+    "contentFile": "content/locations/port_calder.html",
+    "visibility": "player",
+    "related": [
+      "calder_harbor",
+      "concordat_licensing_house",
+      "the_long_docks",
+      "harbormasters_post",
+      "the_drowned_bell",
+      "market_quarter",
+      "dive_outfitters_row",
+      "the_brined_anchor",
+      "saltbone_curios",
+      "tidewrack_ward",
+      "shellhome_ward",
+      "harbor_watch_garrison",
+      "the_tideward_chapel"
+    ],
+    "environment": {
+      "architecture": "Timber-and-coral-stone buildings climbing the harbor bluffs in uneven terraces; salvaged old-kingdom masonry reused as foundation stone throughout the older quarters.",
+      "activity": "Dive crews hauling gear to the docks at dawn, guild criers reading the day's licensed sites, a constant traffic of handcarts moving salvage from harbor to market.",
+      "sensory": "Salt, tar, and drying kelp; the clatter of winches; gulls and the distant clang of the Drowned Bell marking the tide.",
+      "lighting": "Bright and glaring at midday off the water; oil-lamp lit and rowdy after dark, especially near the harbor."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 12",
+        "detail": "Old-kingdom stonework is visible in half the building foundations, if you know to look for the archaic lettering."
+      },
+      {
+        "roll": "Insight (any local)",
+        "detail": "Everyone in Port Calder has a story about someone who dove too deep and came back wrong, or didn't come back at all."
+      }
+    ],
+    "tags": [
+      "hub",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "calder_harbor",
+    "name": "Calder Harbor",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/calder_harbor.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_long_docks",
+      "harbormasters_post",
+      "the_drowned_bell",
+      "dovan_kesk"
+    ],
+    "environment": {
+      "architecture": "A natural deepwater cove walled in by old breakwaters, half of them salvaged old-kingdom seawall stone.",
+      "activity": "Dive boats, salvage barges, and Concordat inspection skiffs crowd the water; crews load and unload from dawn to dusk.",
+      "sensory": "Rope and tar, brine, the groan of hulls against pilings.",
+      "lighting": "Open sky; lantern-strung at night along the seawall."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "A section of old breakwater stone bears worn old-kingdom carvings, half-submerged at low tide."
+      }
+    ],
+    "tags": [
+      "harbor",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "concordat_licensing_house",
+    "name": "The Licensing House",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/concordat_licensing_house.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "salvage_concordat",
+      "perrin_ashgrave",
+      "wick_tallow",
+      "coraline_bray",
+      "pressure_ward_token",
+      "brinelung_mask"
+    ],
+    "environment": {
+      "architecture": "A blocky, well-kept stone hall facing the harbor, Concordat blue-and-gold banners over the door.",
+      "activity": "Queues of divers waiting on permits; clerks stamping manifests; a guard or two watching the line.",
+      "sensory": "Ink, wax seals, the murmur of paperwork disputes."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The public manifest board is missing several recent dive-site postings — quietly pulled, not officially cancelled."
+      }
+    ],
+    "tags": [
+      "guild",
+      "concordat",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_long_docks",
+    "name": "The Long Docks",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_long_docks.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "harbormasters_post",
+      "dive_outfitters_row",
+      "the_almonrys_debt",
+      "pol_ferrick"
+    ],
+    "environment": {
+      "architecture": "A sprawl of wooden piers, some newer construction, some visibly built on older stone pilings.",
+      "activity": "Dive crews prepping gear, dockhands haggling over cargo, licensed and unlicensed boats jockeying for berths.",
+      "sensory": "Wet rope, fish, low tide mud at the pier bases."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "One unmarked pier at the far end sees regular traffic at odd hours — no Concordat flag, no manifest posted."
+      }
+    ],
+    "tags": [
+      "docks",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "harbormasters_post",
+    "name": "The Harbormaster's Post",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/harbormasters_post.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "the_long_docks",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "harbor_watch_garrison",
+      "yselda_wrenn"
+    ],
+    "environment": {
+      "architecture": "A weathered two-story shack on stilts at the harbor mouth, signal flags and a tide-bell strung from the roof.",
+      "activity": "Tide and weather postings, berth assignments, incident reports.",
+      "sensory": "Damp wood, lamp oil, chalk dust from the tide-board."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 13",
+        "detail": "The harbormaster logs every unusual find and current shift with more care than her pay grade requires — she's tracking something."
+      }
+    ],
+    "tags": [
+      "harbor-watch",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_drowned_bell",
+    "name": "The Drowned Bell",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_drowned_bell.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "drowned_choir",
+      "isolt_vane",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "the_chime_shoal",
+      "graves_end_locks",
+      "bellwrit_span"
+    ],
+    "environment": {
+      "architecture": "A massive green-black bronze bell, old-kingdom make, raised from the reef decades ago and hung in a timber frame at the harbor mouth.",
+      "activity": "Rung on the hour by a rotating duty-watch; a minor local landmark and meeting point.",
+      "sensory": "A low, resonant tone that carries over the whole harbor; faint verdigris smell of old bronze."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 15",
+        "detail": "The bell's old-kingdom inscription isn't a maker's mark — it's a warning, in a dialect none of Port Calder's scholars fully recognize."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The bell was cast as part of the original containment working. Ringing it in a specific pattern (unknown to the surface) can be felt below."
+      }
+    ],
+    "tags": [
+      "landmark",
+      "port-calder",
+      "surface",
+      "old-kingdom"
+    ]
+  },
+  {
+    "id": "market_quarter",
+    "name": "The Market Quarter",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/market_quarter.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "dive_outfitters_row",
+      "the_brined_anchor",
+      "saltbone_curios",
+      "freedivers",
+      "sela_vantry",
+      "the_vaelgard_signet",
+      "the_almonrys_debt",
+      "nell_sarkin"
+    ],
+    "environment": {
+      "architecture": "Covered stalls and permanent shopfronts climbing the bluff terraces above the harbor, in uneven tiers.",
+      "activity": "Salvage appraisers weighing hauls in the open, food carts, guild criers reading the day's dive postings.",
+      "sensory": "Fry-oil and brine, competing vendor calls, coin counted loudly to discourage shortchanging.",
+      "lighting": "Awning-shaded by day; lantern-strung food stalls after dark."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "An appraiser openly low-balls anything the Concordat hasn't pre-approved — a quiet way of steering unlicensed finds out of the market."
+      },
+      {
+        "roll": "Perception DC 14",
+        "detail": "A stall further back sells \"curios\" that look a lot more genuine than they should. See [[saltbone_curios]]."
+      }
+    ],
+    "tags": [
+      "market",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "dive_outfitters_row",
+    "name": "Dive-Outfitter Row",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/dive_outfitters_row.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "market_quarter",
+      "the_long_docks",
+      "pressure_ward_token",
+      "brinelung_mask",
+      "freedivers",
+      "ruen_saltmarrow",
+      "ivo_marlstone",
+      "corwin_hask"
+    ],
+    "environment": {
+      "architecture": "A tight row of narrow shopfronts wedged between the market and the docks, every one crammed floor to ceiling with gear.",
+      "activity": "Crews outfitting before a dive, apprentices pressure-testing helm seals, haggling over warded gear.",
+      "sensory": "Oiled leather, brass polish, the hiss of bladders under pressure-test.",
+      "lighting": "Workshop lamps; occasional sparks from a smith's stall."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "One outfitter's gear consistently outperforms what a Concordat license should allow to be sold — she has an unlicensed supplier."
+      }
+    ],
+    "tags": [
+      "shops",
+      "dive-gear",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_brined_anchor",
+    "name": "The Brined Anchor",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_brined_anchor.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "calder_harbor",
+      "market_quarter"
+    ],
+    "environment": {
+      "architecture": "A broad, low timber tavern built from retired ship's timbers, with a second floor of let rooms.",
+      "activity": "Dive crews trading stories and contracts over ale; a corkboard of job postings by the door.",
+      "sensory": "Woodsmoke, spilled ale, brine off wet oilskins drying by the hearth.",
+      "lighting": "Hearth-fire and oil lamps; warm and smoky."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 11",
+        "detail": "Part of the job-postings corkboard carries no Concordat seal at all — informal, word-of-mouth contracts."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Recommended default home base / rest location for the party. The innkeeper trades in quiet information as readily as ale — a strong candidate for a Freedivers-adjacent contact NPC once that faction is authored (t008)."
+      }
+    ],
+    "tags": [
+      "tavern",
+      "inn",
+      "home-base",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "saltbone_curios",
+    "name": "Saltbone Curios",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/saltbone_curios.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "market_quarter",
+      "drowned_choir",
+      "sister_meck",
+      "the_glass_hull",
+      "the_nightweigh",
+      "barnacled_charm"
+    ],
+    "environment": {
+      "architecture": "A cramped, cluttered shopfront wedged behind the Market Quarter's main stalls.",
+      "activity": "Quiet transactions; an owner who asks very few questions.",
+      "sensory": "Dust, old brine, a faint ozone-tang off half-charged relics.",
+      "lighting": "Deliberately dim."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 15",
+        "detail": "Several shelf items are genuine, low-grade old-kingdom relics that were never registered with the Concordat."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A quiet fence for crews avoiding Concordat tax — the owner is a good seed for a Freedivers-aligned NPC once that faction is authored (t008)."
+      }
+    ],
+    "tags": [
+      "shop",
+      "black-market",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "tidewrack_ward",
+    "name": "Tidewrack Ward",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/tidewrack_ward.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbor_watch_garrison",
+      "ilsa_cray"
+    ],
+    "environment": {
+      "architecture": "Cramped tenements built shoulder-to-shoulder along the tideline, patched with salvage timber and old-kingdom stone block.",
+      "activity": "Dockworker families, nets drying on lines, children working the tide pools at low water.",
+      "sensory": "Wet laundry, low-tide mud, cookfire smoke.",
+      "lighting": "Dim, close alleys; a handful of public lamps at corners."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "Tidewrack gossip travels faster than the guild boards — a good place to hear what's really happening below before it's official."
+      }
+    ],
+    "tags": [
+      "residential",
+      "port-calder",
+      "surface",
+      "working-class"
+    ]
+  },
+  {
+    "id": "shellhome_ward",
+    "name": "Shellhome Ward",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/shellhome_ward.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_tideward_chapel",
+      "rosalind_vey"
+    ],
+    "environment": {
+      "architecture": "Taller, denser housing built up rather than out, mixing building styles from a dozen homelands.",
+      "activity": "A rotating string of street-shrines and festivals, communal courtyards shared across households.",
+      "sensory": "Layered cooking smells, overlapping languages, wind chimes and hung charms.",
+      "lighting": "Strings of colored lanterns between buildings after dark."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "A small courtyard shrine doesn't match any faith known to the ward's residents — recently added, and quietly well-tended."
+      }
+    ],
+    "tags": [
+      "residential",
+      "port-calder",
+      "surface",
+      "multicultural"
+    ]
+  },
+  {
+    "id": "harbor_watch_garrison",
+    "name": "The Harbor Watch Garrison",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/harbor_watch_garrison.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbormasters_post",
+      "calder_harbor",
+      "tidewrack_ward",
+      "harbor_watch",
+      "fenn_hurley",
+      "tam_ostler",
+      "brack_fennimore",
+      "anchors_grave",
+      "reavers_ribs",
+      "the_marrow_trawler"
+    ],
+    "environment": {
+      "architecture": "A squat stone blockhouse retrofitted from an old-kingdom seawall tower — patched, but sturdy.",
+      "activity": "Recruit drills, incident-report processing, a duty board that's perpetually short-staffed.",
+      "sensory": "Oiled steel, chalk dust, the creak of the old tower stair.",
+      "lighting": "Functional, undecorated lamplight."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 13",
+        "detail": "The duty board lists three \"unresolved\" incidents out of the Shallows with no follow-up logged — understaffing, or something being quietly buried."
+      }
+    ],
+    "tags": [
+      "harbor-watch",
+      "garrison",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "the_tideward_chapel",
+    "name": "The Tideward Chapel",
+    "type": "location",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/locations/the_tideward_chapel.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "shellhome_ward",
+      "ysbel_corvane"
+    ],
+    "environment": {
+      "architecture": "A modest multi-faith chapel and healer's hall, built partly from a reclaimed old-kingdom shrine's stone.",
+      "activity": "Healers tending dive injuries, an open shrine room welcoming any faith, a small ossuary for the unclaimed drowned.",
+      "sensory": "Incense, clean linen, a faint salt-damp in the older stonework.",
+      "lighting": "Candlelight; a skylight over the shrine room."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "The chapel keeps careful record of every diver who never surfaced — meant as remembrance, but it's also the closest thing Port Calder has to a casualty log."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The reused old-kingdom stone in the shrine room is subtly warm to the touch, always, regardless of weather."
+      }
+    ],
+    "tags": [
+      "temple",
+      "healer",
+      "civic",
+      "port-calder",
+      "surface"
+    ]
+  },
+  {
+    "id": "sawback_reef",
+    "name": "Sawback Reef",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/sawback_reef.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "freedivers",
+      "salvage_concordat",
+      "reef_stalker"
+    ],
+    "environment": {
+      "architecture": "A shallow ridge of serrated coral just past the harbor mouth, growing over buried, unnaturally straight stonework.",
+      "activity": "Crowded with training dives and licensed contract crews by midmorning; a handful of solitary night-fishers and freedivers after dusk.",
+      "sensory": "Bright, close water; the click and rasp of coral against dive gear."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "The coral grows in unnaturally straight rows along buried stonework beneath the reef."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "beginner"
+    ]
+  },
+  {
+    "id": "the_kettle",
+    "name": "The Kettle",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_kettle.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "petra_wexler"
+    ],
+    "environment": {
+      "architecture": "A wide, bowl-shaped reef depression with a slow, permanent current gyre at its center.",
+      "activity": "Heavily licensed and inspected salvage dives; every crew that works it files a report.",
+      "sensory": "A constant low churn of silt and current; colder water than the surrounding reef."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Debris at the bowl's center skews far older and stranger than the surrounding reef."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "concordat-licensed"
+    ]
+  },
+  {
+    "id": "glasswater_shelf",
+    "name": "Glasswater Shelf",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/glasswater_shelf.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat"
+    ],
+    "environment": {
+      "architecture": "A flat, sunlit reef terrace in exceptionally clear, shallow water.",
+      "activity": "Guild licensing exams, demonstrations, and apprentice training dives by day; nearly empty after dark.",
+      "sensory": "Bright glare off the water; unusually quiet compared to other dive sites."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight (any veteran diver)",
+        "detail": "A few longtime divers avoid the Shelf despite its safety, muttering that \"picked clean\" doesn't mean empty."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "training",
+      "concordat-licensed"
+    ]
+  },
+  {
+    "id": "widows_combs",
+    "name": "Widow's Combs",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/widows_combs.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "freedivers",
+      "salt_warped_grouper",
+      "bram_coswick"
+    ],
+    "environment": {
+      "architecture": "A stand of tall, blade-thin coral spires that comb the current into unpredictable channels.",
+      "activity": "Rarely dived except as a deliberate rite of passage; the Concordat licenses it at a steep price.",
+      "sensory": "Sharp currents, the whistle of water forced between narrow spires."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 13",
+        "detail": "No two charts of the Combs agree — the spires shift position slightly between dives."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "hazard"
+    ]
+  },
+  {
+    "id": "the_chime_shoal",
+    "name": "The Chime Shoal",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_chime_shoal.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "drowned_choir",
+      "the_drowned_bell",
+      "it_that_kept_the_kingdom",
+      "salt_warped_grouper",
+      "sera_vondt"
+    ],
+    "environment": {
+      "architecture": "A low reef shoal scattered with old-kingdom debris — glass, chain, bell fragments.",
+      "activity": "Cheaply licensed, rarely worked for salvage; quiet Drowned Choir pilgrimages on certain tide-nights.",
+      "sensory": "A faint hum through the water and hull on the right tide."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Small offerings — coins, carved wood, returned relics — are left scattered across the shoal."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "drowned-choir",
+      "old-kingdom"
+    ]
+  },
+  {
+    "id": "anchors_grave",
+    "name": "Anchor's Grave",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/anchors_grave.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "harbor_watch_garrison",
+      "wreck_crab"
+    ],
+    "environment": {
+      "architecture": "Half a dozen wrecks fused into one tangled reef by decades of coral growth and shifting sand.",
+      "activity": "Loud and crowded by day with staggered licensed crews; unlicensed wreck-pickers work it unmarked after dark.",
+      "sensory": "Groaning timber, hissing shifted sand, the metallic tang of old iron fittings."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "One wreck's hull timbers are centuries older than the rest and driven into the tangle rather than sunk alongside it."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "contested"
+    ]
+  },
+  {
+    "id": "the_foundered_bride",
+    "name": "The Foundered Bride",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_foundered_bride.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "freedivers",
+      "salvage_concordat",
+      "the_brides_dowry"
+    ],
+    "environment": {
+      "architecture": "An intact merchant marriage-barge resting upright in a sand hollow, masts snapped but hull whole.",
+      "activity": "A perennial favorite for licensed crews; storm-shifted sand exposes new cargo each season.",
+      "sensory": "Hazy gold light through the broken upper deck by morning; arm's-length visibility by afternoon current."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "A sealed dowry chest sits untouched in the lower hold despite decades of open salvage."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "legendary"
+    ]
+  },
+  {
+    "id": "reavers_ribs",
+    "name": "Reaver's Ribs",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/reavers_ribs.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "freedivers",
+      "harbor_watch_garrison",
+      "wreck_crab"
+    ],
+    "environment": {
+      "architecture": "A raider longship's broken ribs jutting from a sand shelf, hull split nearly in two.",
+      "activity": "Rarely worked; crews that still take contracts here dive in daylight, in pairs, and don't linger.",
+      "sensory": "Unexplained cold pockets in the water; the creak of shifting wreckage."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 14",
+        "detail": "Fresh scrape marks scar the ribs' inner hull, too large and too recent to be old salvage damage."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "hazard"
+    ]
+  },
+  {
+    "id": "the_ledger_wreck",
+    "name": "The Ledger Wreck",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_ledger_wreck.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "coraline_bray"
+    ],
+    "environment": {
+      "architecture": "A modest Concordat records-cutter, hull deliberately scored open along one seam.",
+      "activity": "Officially 'lost with all documents' two years back; never licensed for salvage, no exceptions.",
+      "sensory": "A sealed strongbox visible through a breached cabin window."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The hull's scoring is even and deliberate, clearly tool-made — not storm damage."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "cover-up",
+      "concordat"
+    ]
+  },
+  {
+    "id": "the_glass_hull",
+    "name": "The Glass Hull",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_glass_hull.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "drowned_choir",
+      "saltbone_curios"
+    ],
+    "environment": {
+      "architecture": "A trade galley whose cargo hold burst open on impact, scattering old-kingdom glass cargo across the sand.",
+      "activity": "A frequent source for illicit curio stock; Drowned Choir pilgrims comb it clean on certain low tides.",
+      "sensory": "Scattered glints of light through murky water even at midday; sharp shards underfoot."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Several glass fragments are etched with old-kingdom script, intact enough to translate."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "drowned-choir",
+      "old-kingdom"
+    ]
+  },
+  {
+    "id": "the_sunken_causeway",
+    "name": "The Sunken Causeway",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_sunken_causeway.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "aldergate_shoal"
+    ],
+    "environment": {
+      "architecture": "A broad, largely intact paved road sloping down from the reef flats into deeper dark.",
+      "activity": "Concordat survey crews plant a numbered marker along it each season; no formal chart of its end exists.",
+      "sensory": "A faint, steady downward current pull that strengthens with depth."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The paving stones carry formal, titled old-kingdom script, distinct from any reused surface salvage stone."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "landmark"
+    ]
+  },
+  {
+    "id": "aldergate_shoal",
+    "name": "Aldergate Shoal",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/aldergate_shoal.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_sunken_causeway",
+      "the_warders_stair",
+      "hollowmarch",
+      "tallowmark_reach",
+      "the_last_landing"
+    ],
+    "environment": {
+      "architecture": "Two broken gate-towers flanking a collapsed formal archway, lintel stone still legibly inscribed.",
+      "activity": "A common turnaround point for licensed crews; a handful of 'beyond the gate' rumors trade like currency.",
+      "sensory": "A noticeable cold pressure change past the arch, like a doorway that isn't there anymore."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Two distinct sets of tool-marks scar the archway, one old-kingdom, one recent and not Concordat work."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "checkpoint"
+    ]
+  },
+  {
+    "id": "the_warders_stair",
+    "name": "The Warders' Stair",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_warders_stair.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "aldergate_shoal",
+      "the_salt_choked_colonnade",
+      "the_last_landing",
+      "warders_hold",
+      "warden_husk"
+    ],
+    "environment": {
+      "architecture": "A wide formal stairway in even, deliberate steps, empty statuary alcoves lining the walls.",
+      "activity": "Technically off-limits without a Concordat writ; a rule enforced about as often as depth discourages visitors anyway.",
+      "sensory": "A faint, regular pulse of cold current from the alcoves, like slow breathing."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Every alcove carries a worn, carved name beneath it, none matching any figure known to Port Calder's history."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom"
+    ]
+  },
+  {
+    "id": "hollowmarch",
+    "name": "Hollowmarch",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/hollowmarch.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "aldergate_shoal",
+      "freedivers",
+      "the_salt_choked_colonnade",
+      "the_last_landing"
+    ],
+    "environment": {
+      "architecture": "Rows of modest, formally-built rowhouses in orderly ranks along a straight street grid.",
+      "activity": "Popular low-risk independent salvage; Freedivers use it to train new divers on room-to-room search.",
+      "sensory": "Deep-drifted sand in every lower room; kelp curtains in doorless frames."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 11",
+        "detail": "Every house still bears its formal door-name plaque, oddly undamaged for otherwise fully collapsed structures."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "training"
+    ]
+  },
+  {
+    "id": "the_salt_choked_colonnade",
+    "name": "The Salt-Choked Colonnade",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_salt_choked_colonnade.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_warders_stair",
+      "hollowmarch",
+      "salvage_concordat",
+      "the_breaking_deal_mystery"
+    ],
+    "environment": {
+      "architecture": "Dozens of fluted pillars standing in formal ranks around a roofless processional plaza.",
+      "activity": "Licensed only for supervised survey work as a 'heritage site' — not worth the guild's trouble to loot.",
+      "sensory": "Unusually good visibility for the depth; a faint tonal hum between pillars on certain tides."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 14",
+        "detail": "Faint remnant wards cling to several pillars — old-kingdom protective work, long depleted but not fully dead."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "wards"
+    ]
+  },
+  {
+    "id": "farrows_grotto",
+    "name": "Farrow's Grotto",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/farrows_grotto.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "freedivers",
+      "ivo_marlstone",
+      "reef_stalker",
+      "barnacled_charm",
+      "salt_below_campaign_overview"
+    ],
+    "environment": {
+      "architecture": "A sheltered reef cave mouth opening into a chain of air-pocketed grottoes, low ceilings hung with soft coral.",
+      "activity": "Freedivers use the outer chamber to train newcomers on breath control and confined-space work; the inner chambers are informally off-limits.",
+      "sensory": "Trapped air pockets that smell faintly of sulfur; the cave amplifies every sound, including things that aren't quite an echo.",
+      "lighting": "Dark past the outer chamber — most crews work it by lamp only at slack tide, when the current stops fighting the entrance."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "Something has been dragging prey remains into the third chamber and stacking the bones with unsettling neatness."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "freedivers",
+      "training"
+    ]
+  },
+  {
+    "id": "the_bellweed_shallows",
+    "name": "The Bellweed Shallows",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_bellweed_shallows.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "kelp_strangler"
+    ],
+    "environment": {
+      "architecture": "A dense, rootless kelp forest rooted in buried old-kingdom rubble, fronds tall enough to blot out the surface glow.",
+      "activity": "Licensed crews string guide-lines between numbered marker buoys before entering; solo divers who skip the lines have a bad habit of not resurfacing on schedule.",
+      "sensory": "Cold pockets between kelp stands; a rhythmic clacking of buoy-bells overhead that gets harder to place the deeper you go.",
+      "lighting": "Green-gold and dappled by day; the marker buoys carry small lanterns that Concordat crews light before dusk dives."
+    },
+    "curiosities": [
+      {
+        "roll": "Survival DC 13",
+        "detail": "The kelp stands are subtly denser in a spiral pattern radiating from the forest's center — not natural growth."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "reef",
+      "hazard",
+      "concordat-licensed"
+    ]
+  },
+  {
+    "id": "the_marrow_trawler",
+    "name": "The Marrow Trawler",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_marrow_trawler.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbor_watch_garrison",
+      "harbor_watch",
+      "tam_ostler",
+      "wreck_crab"
+    ],
+    "environment": {
+      "architecture": "A mid-sized fishing trawler resting level on a sand shelf, sails long rotted but hull and rigging otherwise intact.",
+      "activity": "Harbor Watch keeps it nominally closed pending an incident review that's gone nowhere in three years; nothing stops unlicensed crews from working it anyway.",
+      "sensory": "Nets still coiled on deck, heavy with a catch that never got hauled in; unnervingly little marine growth on the hull for its age.",
+      "lighting": "Sits in open sand with good ambient light — the wreck is easy to see coming, which somehow makes it worse."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The ship's log, still legible in the waterlogged cabin, ends mid-sentence — no storm noted, no distress called, just silence."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The Marrow's full crew of nine were never found, alive or dead. This is the third of harbor_watch_garrison's three unresolved duty-board incidents (see harbor_watch_garrison.html) — the only one with no bodies and no obvious cause, which is precisely why Harbor Watch keeps burying the file instead of closing it."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "cold-case",
+      "harbor-watch"
+    ]
+  },
+  {
+    "id": "the_nightweigh",
+    "name": "The Nightweigh",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_nightweigh.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "drowned_choir",
+      "deacon_rill",
+      "saltbone_curios"
+    ],
+    "environment": {
+      "architecture": "A slim, fast ketch scuttled deliberately in a shallow sand cut, hull scored open along the keel rather than broken by wreck.",
+      "activity": "No Concordat record of the ship ever existing under this name; local rumor calls it a smuggler's boat, and local rumor is right.",
+      "sensory": "A false-bottomed hold, empty now but for packing straw and a lingering incense smell out of place on a fishing coast.",
+      "lighting": "Shallow enough to work by daylight, though the Choir prefers it moonless."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Fresh straw and rope-burn marks in the false-bottomed hold — it was used within the last season, not decades ago."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The Nightweigh is a Drowned Choir supply run, run by deacon_rill, ferrying relics out of saltbone_curios' unregistered stock and new converts in, under a name that dies as fast as the Concordat can flag it. A good later hook: the party stakes it out on a Choir run night."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "dive-site",
+      "wreck",
+      "drowned-choir",
+      "smuggling"
+    ]
+  },
+  {
+    "id": "tallowmark_reach",
+    "name": "Tallowmark Reach",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/tallowmark_reach.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "aldergate_shoal",
+      "salvage_concordat"
+    ],
+    "environment": {
+      "architecture": "A long stretch of collapsed formal wall, old-kingdom boundary stones still standing at regular intervals along its length.",
+      "activity": "A second, lesser-known checkpoint to Aldergate Shoal's — Concordat surveyors mark it on charts as the outer edge of the 'licensed zone' proper.",
+      "sensory": "The boundary stones hum faintly underhand, each at a slightly different pitch from its neighbors.",
+      "lighting": "Open, sunlit water by day; the boundary stones catch and hold a little residual glow well after dusk, which no one has satisfactorily explained."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 14",
+        "detail": "Each boundary stone bears a different formal old-kingdom title, as though marking the edge of nine separate estates rather than one wall."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "checkpoint"
+    ]
+  },
+  {
+    "id": "the_last_landing",
+    "name": "The Last Landing",
+    "type": "location",
+    "category": "The Shallows",
+    "contentType": "html",
+    "contentFile": "content/locations/the_last_landing.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_warders_stair",
+      "hollowmarch",
+      "aldergate_shoal",
+      "vantmoor_hall",
+      "the_weeping_stair"
+    ],
+    "environment": {
+      "architecture": "A broad formal landing at the base of the Warders' Stair, where dressed paving gives way to open dark — the last built surface before the reef floor simply falls away.",
+      "activity": "The furthest point most licensed Shallows crews will chart; a few worn mooring rings suggest someone once meant to keep coming back to this exact spot.",
+      "sensory": "Noticeably colder past the landing's edge; sound travels strangely, swallowed rather than echoed.",
+      "lighting": "The last reliable ambient light in the Shallows — lamps carried past this point are, by long habit, kept lit no matter the cost in oil."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 13",
+        "detail": "The paving stones at the landing's very edge are worn smooth in a path leading down and out — not from salvage traffic, which stops here, but from something that used to."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Mark this as the literal transition point into the Drowned Districts once that region is authored (t016) — the Warders' Stair leads here, and the Last Landing is where a party first commits to going past the Shallows for good."
+      }
+    ],
+    "tags": [
+      "shallows",
+      "kingdom-outskirts",
+      "old-kingdom",
+      "landmark",
+      "transition"
+    ]
+  },
+  {
+    "id": "vantmoor_hall",
+    "name": "Vantmoor Hall",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/vantmoor_hall.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "the_last_landing",
+      "drowned_choir",
+      "chancel_deep",
+      "the_suitors_approach",
+      "bellwrit_span",
+      "aldermourn_close",
+      "amos_kell",
+      "salt_below_campaign_overview"
+    ],
+    "environment": {
+      "architecture": "A formal civic assembly hall, tiered stone benches in a collapsed half-dome, the old kingdom's seal still unbroken on the dais.",
+      "activity": "The first real Choir presence a party meets past the Shallows — converts hold small vigils here and won't fight to keep outsiders out, just watch closely.",
+      "sensory": "A cold draft through the broken vault carries chant-echo from somewhere deeper in the district.",
+      "lighting": "A handful of Choir lanterns strung along old rafter-lines; everything past their reach is true dark."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "The benches are worn in patterns that suggest regular recent use, not decades of neglect."
+      },
+      {
+        "roll": "Religion DC 13",
+        "detail": "The assembly dais still bears the old kingdom's formal seal, deliberately left unbroken by whoever gathers here now."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "landmark"
+    ]
+  },
+  {
+    "id": "the_suitors_approach",
+    "name": "The Suitors' Approach",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_suitors_approach.html",
+    "visibility": "player",
+    "related": [
+      "vantmoor_hall",
+      "port_calder",
+      "drowned_choir",
+      "aldermourn_close",
+      "corin_draw"
+    ],
+    "environment": {
+      "architecture": "A formal processional street of narrow townhouses, each still bearing a petitioner's plaque above its door.",
+      "activity": "A few Choir converts squat in the empty townhouses; otherwise quiet, the kind of quiet that makes salvage crews walk fast.",
+      "sensory": "Door-plaques are still legible under a film of silt if wiped clean."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 12",
+        "detail": "The plaques list unresolved petitions — some naming plaintiffs against the crown itself."
+      },
+      {
+        "roll": "DM only",
+        "detail": "One plaque bears a surname matching a known Port Calder founding family — a usable hook if the DM wants to tie a PC or NPC's lineage to the old kingdom."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir"
+    ]
+  },
+  {
+    "id": "chancel_deep",
+    "name": "Chancel Deep",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/chancel_deep.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "isolt_vane",
+      "the_drowned_bell",
+      "vantmoor_hall",
+      "why_the_kingdom_drowned_mystery",
+      "vaultward_reliquary",
+      "graves_end_locks",
+      "the_leaning_archive",
+      "choir_thrall",
+      "the_drowned_hymnal"
+    ],
+    "environment": {
+      "architecture": "A soaring former high chapel, roof long gone, open straight up into black water — the Choir's true seat, of which the_drowned_bell above is only an echo.",
+      "activity": "Choir vigil-boats moor at the altar-rail around the clock; this is where Isolt Vane herself is most often found.",
+      "sensory": "Chant carries strangely through open water here, felt in the chest more than heard."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 14",
+        "detail": "The altar mosaic depicts the kingdom either embraced or swallowed by something vast — worn just enough that which one is deliberately unclear."
+      },
+      {
+        "roll": "DM only",
+        "detail": "This is where Isolt performs the Choir's binding-adjacent rites, unknowingly reinforcing rather than loosening the deal described in why_the_kingdom_drowned_mystery — a strong scene if the party ever needs to see her sincerity up close."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "landmark"
+    ]
+  },
+  {
+    "id": "millhollow_undercroft",
+    "name": "Millhollow Undercroft",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/millhollow_undercroft.html",
+    "visibility": "player",
+    "related": [
+      "chancel_deep",
+      "drowned_choir",
+      "port_calder",
+      "the_susurrus_deep",
+      "the_last_descent",
+      "deep_maw_eel",
+      "the_weeping_stair",
+      "underbell_cistern"
+    ],
+    "environment": {
+      "architecture": "The gutted undercroft of the district's old grain-mill — stalled wheels locked in silt, machinery frozen mid-turn.",
+      "activity": "Mostly abandoned; the Choir uses the tunnels beneath it as a discreet route between sites.",
+      "sensory": "Settling machinery groans occasionally, audible even through water."
+    },
+    "curiosities": [
+      {
+        "roll": "Athletics DC 13",
+        "detail": "One mill-wheel can still be forced to turn, opening a sealed passage beneath it."
+      },
+      {
+        "roll": "DM only",
+        "detail": "That passage connects toward the_weeping_stair — a shortcut for a party that finds it early, worth rewarding rather than gating."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir"
+    ]
+  },
+  {
+    "id": "the_weeping_stair",
+    "name": "The Weeping Stair",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_weeping_stair.html",
+    "visibility": "player",
+    "related": [
+      "millhollow_undercroft",
+      "vantmoor_hall",
+      "the_last_landing",
+      "the_susurrus_deep",
+      "the_last_descent"
+    ],
+    "environment": {
+      "architecture": "A tight switchback stairway descending in stepped terraces, water sheeting visibly down every riser.",
+      "activity": "Little traffic — colder and darker than the rest of the district discourages casual passage.",
+      "sensory": "Noticeably colder with every landing; the water itself seems to thicken."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "Mark this as the eventual continuation point deeper into the Drowned Districts and, later, toward the Deep Kingdom — the same threshold role the_last_landing played for the Shallows."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "transition"
+    ]
+  },
+  {
+    "id": "verdigris_court",
+    "name": "Verdigris Court",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/verdigris_court.html",
+    "visibility": "player",
+    "related": [
+      "chancel_deep",
+      "drowned_choir",
+      "sister_meck",
+      "the_hollow_choir_yard"
+    ],
+    "environment": {
+      "architecture": "A small formal courtyard dominated by a bronze statue gone entirely green, its face smoothed to near-blankness.",
+      "activity": "A quiet shrine annex; Sister Meck comes here alone more often than official Choir business explains.",
+      "sensory": "A faint metallic taste in the water near the statue's base."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 13",
+        "detail": "The statue's face was deliberately defaced at some point in the kingdom's own history, not worn away by time."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A good spot for a private party–Meck scene — she prays here without an audience, which is unusual for the Choir."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir"
+    ]
+  },
+  {
+    "id": "the_chancellors_rest",
+    "name": "The Chancellor's Rest",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_chancellors_rest.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "chancel_deep",
+      "the_breaking_deal_mystery",
+      "the_sunken_rostrum",
+      "drowned_chancellery",
+      "ashgate_wardhouse",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "environment": {
+      "architecture": "A fortified mausoleum-house, still sealed under old-kingdom state wardwork rather than religious protection.",
+      "activity": "Undisturbed — heavier silt than anywhere else in the district, no current, no Choir presence.",
+      "sensory": "An unnatural stillness; nothing here drifts the way it should."
+    },
+    "curiosities": [
+      {
+        "roll": "Arcana DC 14",
+        "detail": "The seal wards are state magic, not religious — whoever built this expected someone to come looking, eventually."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The chancellor's private papers inside can seed a real fragment of why_the_kingdom_drowned_mystery — a strong player-found-lore location."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "ashgate_wardhouse",
+    "name": "Ashgate Wardhouse",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/ashgate_wardhouse.html",
+    "visibility": "player",
+    "related": [
+      "port_calder",
+      "harbor_watch",
+      "salvage_concordat",
+      "the_chancellors_rest",
+      "wraithlock_gate",
+      "warden_husk",
+      "rees_holt",
+      "dessa_wrack"
+    ],
+    "environment": {
+      "architecture": "A barracks-like guardhouse, weapon racks rotted to iron ghosts of their shapes in the silt.",
+      "activity": "The old kingdom's equivalent of the Harbor Watch garrison; modern Harbor Watch has an unofficial, low-key interest in it.",
+      "sensory": "An old alarm-bell mechanism still hangs intact near the entrance."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 12",
+        "detail": "The alarm mechanism, if triggered, still partially works — a clang carries a surprising distance underwater."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Usable hook for fenn_hurley or tam_ostler to quietly commission the party — Harbor Watch would rather know what's in here before the Concordat does."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "the_loom_quarter",
+    "name": "The Loom Quarter",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_loom_quarter.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "freedivers",
+      "vantmoor_hall",
+      "ness_thatchford"
+    ],
+    "environment": {
+      "architecture": "Rows of loom-houses, threads long rotted, loom-frames still standing in eerie orderly ranks.",
+      "activity": "A handful of independent squatters and Choir converts live here — one of the district's few genuinely mundane, low-dread spots.",
+      "sensory": "Quieter than most of the district; almost domestic."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 11",
+        "detail": "A few looms have been recently restrung with scavenged wire and kelp-fiber — someone here is actually trying to weave again."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A good breather location between dread beats — low-stakes social encounters, minor salvage, no real danger."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir"
+    ]
+  },
+  {
+    "id": "underbell_cistern",
+    "name": "Underbell Cistern",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/underbell_cistern.html",
+    "visibility": "player",
+    "related": [
+      "millhollow_undercroft",
+      "chancel_deep",
+      "drowned_choir",
+      "deep_maw_eel"
+    ],
+    "environment": {
+      "architecture": "A claustrophobic network of vaulted cisterns and narrow flooded tunnels beneath the district.",
+      "activity": "The Choir's discreet passage between several sites; strong tidal currents make parts of it genuinely hazardous.",
+      "sensory": "Current strong enough in places to sweep an unbraced diver off course."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "Functions as a shortcut network connecting several Drowned Districts sites once discovered — useful for pacing a return trip, not required for the main path."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "hazard"
+    ]
+  },
+  {
+    "id": "the_long_requiem",
+    "name": "The Long Requiem",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_long_requiem.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "isolt_vane",
+      "deacon_rill",
+      "chancel_deep",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "environment": {
+      "architecture": "A long colonnade lined with hundreds of formal memorial markers, organized by old-kingdom district of origin rather than family.",
+      "activity": "The Choir tends the markers constantly, keeping the names legible against the silt.",
+      "sensory": "Solemn and undisturbed; even Choir converts lower their voices here."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 13",
+        "detail": "Markers grouped by district rather than family suggest whole neighborhoods went down together, fast."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A strong site for Deacon Rill's most sincere, least cult-like scene — grief rather than dogma."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "landmark"
+    ]
+  },
+  {
+    "id": "the_susurrus_deep",
+    "name": "The Susurrus Deep",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_susurrus_deep.html",
+    "visibility": "player",
+    "related": [
+      "millhollow_undercroft",
+      "the_weeping_stair",
+      "it_that_kept_the_kingdom",
+      "silt_wraith"
+    ],
+    "environment": {
+      "architecture": "A long flooded avenue of collapsed row-houses, oddly free of silt drift compared to neighboring streets.",
+      "activity": "Almost none — divers who work the district avoid lingering here without saying exactly why.",
+      "sensory": "A constant susurrus of whispering, never louder, never quite resolving into words, with no visible source."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 14",
+        "detail": "The whispering seems to trail slightly behind wherever the party's light points, not ahead of it."
+      },
+      {
+        "roll": "DM only",
+        "detail": "First deliberately 'clear' omen in the Drowned Districts — no longer as deniable as the Shallows' salt_warped_grouper, but still nothing a party can act against directly. Escalate sparingly."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "omen"
+    ]
+  },
+  {
+    "id": "vaultward_reliquary",
+    "name": "Vaultward Reliquary",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/vaultward_reliquary.html",
+    "visibility": "player",
+    "related": [
+      "salvage_concordat",
+      "coraline_bray",
+      "it_that_kept_the_kingdom",
+      "chancel_deep"
+    ],
+    "environment": {
+      "architecture": "A fortified reliquary vault, old-kingdom masonry with the Concordat's newer pry-marks scarring the doors.",
+      "activity": "A standing Concordat salvage claim; Wick Tallow's licensing stamps are recent, meaning crews are still working it.",
+      "sensory": "Faint warmth off certain reliquary shelves, in water that should carry no warmth at all."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "One emptied shelf's manifest tag has been quietly altered — someone logged a find as 'lost in transit' that clearly wasn't."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The site behind Coraline Bray's private incident ledger: a recent haul from here wasn't inert the way salvage should be. Feeds the faction's 'still-breathing salvage' hook — use as a rare, escalating incident, not a repeatable mechanic."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "salvage",
+      "omen"
+    ]
+  },
+  {
+    "id": "graves_end_locks",
+    "name": "Graves End Locks",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/graves_end_locks.html",
+    "visibility": "player",
+    "related": [
+      "the_drowned_bell",
+      "chancel_deep",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "A derelict set of canal locks and sluice gates, once used to manage the old kingdom's inner waterways.",
+      "activity": "The gates shift and groan on their own, slow and rhythmic, with no current strong enough to explain it.",
+      "sensory": "A low structural groan that divers who've heard [[the_drowned_bell]] rung topside swear keeps the same rhythm."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 15",
+        "detail": "The groaning briefly synchronizes with the bell whenever it's rung above, then drifts back out of step over the following hour."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A physical, roughly-verifiable version of the omen tone — not proof of anything supernatural on its own, but a strong beat for a party starting to connect the bell to something deeper."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "omen",
+      "hazard"
+    ]
+  },
+  {
+    "id": "thornwake_hollow",
+    "name": "Thornwake Hollow",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/thornwake_hollow.html",
+    "visibility": "player",
+    "related": [
+      "freedivers",
+      "ivo_marlstone",
+      "it_that_kept_the_kingdom",
+      "silt_wraith",
+      "salt_below_campaign_overview"
+    ],
+    "environment": {
+      "architecture": "A sunken garden-hollow behind a collapsed manor wall, once ornamental, now a dead zone of bare stone.",
+      "activity": "A Freedivers survey site; Ivo Marlstone has pushed twice to chart it further despite the crew's unease.",
+      "sensory": "Noticeably colder than the surrounding district; no fish, no growth, no scavengers — total, unnatural quiet."
+    },
+    "curiosities": [
+      {
+        "roll": "Survival DC 13",
+        "detail": "Even scavenger fish that pick at every other wreck in the district give this hollow a wide, consistent berth."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Ivo's ambition (seeded in t008) versus Ruen/Sela's caution can come to a head here — a good site for that internal Freedivers tension to surface in play."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "omen",
+      "hazard"
+    ]
+  },
+  {
+    "id": "the_leaning_archive",
+    "name": "The Leaning Archive",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_leaning_archive.html",
+    "visibility": "player",
+    "related": [
+      "why_the_kingdom_drowned_mystery",
+      "chancel_deep",
+      "sister_meck",
+      "velmarch_spire"
+    ],
+    "environment": {
+      "architecture": "A records hall tilted hard on a collapsed foundation, shelving racked at an unsettling angle but largely intact.",
+      "activity": "[[sister_meck]] has been quietly working this site alone, against Choir custom of never reading the old records unsupervised.",
+      "sensory": "Undisturbed dust-silt on most shelves except one cleared, well-lit-by-lantern reading nook."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 15",
+        "detail": "A surviving civic decree references sealing 'the lower wards' on the sovereign's own order, days before the water came — not an accident, an evacuation."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The first non-Choir textual fragment supporting [[why_the_kingdom_drowned_mystery]]. Ties directly to Sister Meck's doubt arc (seeded t009) — this is where her private research happens."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "mystery",
+      "landmark"
+    ]
+  },
+  {
+    "id": "bellwrit_span",
+    "name": "Bellwrit Span",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/bellwrit_span.html",
+    "visibility": "player",
+    "related": [
+      "the_drowned_bell",
+      "vantmoor_hall",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "A processional bridge of formal old-kingdom stonework, spanning a wide flooded plaza beneath [[vantmoor_hall]].",
+      "activity": "Little foot traffic; the span is structurally sound but avoided out of habit rather than danger.",
+      "sensory": "When [[the_drowned_bell]] rings topside, it isn't heard here so much as felt — a pressure change underwater ears shouldn't register."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "A clean, repeatable way to let the party physically feel the bell's reach without any direct confirmation of what it means — good for building dread before the Deep Kingdom chapters."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "landmark",
+      "omen"
+    ]
+  },
+  {
+    "id": "the_hollow_choir_yard",
+    "name": "The Hollow Choir Yard",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_hollow_choir_yard.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "sister_meck",
+      "deacon_rill",
+      "verdigris_court",
+      "choir_thrall",
+      "the_choir_almonry"
+    ],
+    "environment": {
+      "architecture": "An open courtyard ringed with worn devotional carvings, adjoining [[verdigris_court]].",
+      "activity": "The Choir gathers here for call-and-response chants at set hours; attendance has grown in recent months.",
+      "sensory": "On the last few gatherings, something has answered the chant's final response line back — faint, wrong, and not from any Choir throat."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 13",
+        "detail": "[[deacon_rill]] treats the answering echo as proof of the Choir's faith; [[sister_meck]] treats it as the first real evidence something is badly wrong."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A strong wedge scene for Sister Meck's arc — she can pull a sympathetic party aside here without breaking from the Choir outright."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "omen"
+    ]
+  },
+  {
+    "id": "aldermourn_close",
+    "name": "Aldermourn Close",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/aldermourn_close.html",
+    "visibility": "player",
+    "related": [
+      "vantmoor_hall",
+      "the_suitors_approach"
+    ],
+    "environment": {
+      "architecture": "A short close of modest old-kingdom townhouses, better preserved than most of the district.",
+      "activity": "Genuinely quiet — no Choir presence, no salvage claims, just settled silt and closed doors.",
+      "sensory": "The closest thing the Drowned Districts offer to peaceful; even the ambient dread eases here."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 12",
+        "detail": "A few homes still have undisturbed personal effects — the kind of ordinary, human detail easy to miss between omens and salvage."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Deliberate low-dread breather site between heavier beats — use it to pace tension, not to hide anything major."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "residential"
+    ]
+  },
+  {
+    "id": "the_choir_almonry",
+    "name": "The Choir Almonry",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_choir_almonry.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "deacon_rill",
+      "the_hollow_choir_yard",
+      "the_almonrys_debt"
+    ],
+    "environment": {
+      "architecture": "A converted almshouse, old-kingdom bones with practical Choir repairs — nothing ornamental, all function.",
+      "activity": "[[deacon_rill]] runs supply and shelter here for stragglers, lapsed converts, and the occasional lost diver.",
+      "sensory": "Warm lantern-light and mended nets; the most welcoming space the Choir maintains anywhere in the district."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "Deliberately humanizing site for the Choir — genuine charity, no hidden agenda here. Good place for a party to owe the Choir a real, uncomplicated debt before the campaign pushes toward opposition."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "drowned-choir",
+      "civic"
+    ]
+  },
+  {
+    "id": "wraithlock_gate",
+    "name": "Wraithlock Gate",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/wraithlock_gate.html",
+    "visibility": "player",
+    "related": [
+      "harbor_watch",
+      "ashgate_wardhouse",
+      "salvage_concordat",
+      "warden_husk",
+      "dessa_wrack",
+      "salt_below_campaign_overview"
+    ],
+    "environment": {
+      "architecture": "A monumental formal gatehouse, once a toll checkpoint into the old kingdom's inner wards.",
+      "activity": "Disputed ground: [[harbor_watch]] patrols it as an extension of [[ashgate_wardhouse]]'s beat, while the Concordat claims salvage rights on the gatehouse vaults.",
+      "sensory": "Fresh rope and lantern-oil residue from both Watch patrols and Concordat crews, neither acknowledging the other's presence."
+    },
+    "curiosities": [
+      {
+        "roll": "Insight DC 12",
+        "detail": "Neither faction has filed a formal complaint about the other — both would rather quietly coexist than draw attention to what's really behind the gate."
+      },
+      {
+        "roll": "DM only",
+        "detail": "A low-stakes jurisdiction friction site — useful if the party ever needs a faction favor and has to pick a side, however small."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "the_sunken_rostrum",
+    "name": "The Sunken Rostrum",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_sunken_rostrum.html",
+    "visibility": "player",
+    "related": [
+      "why_the_kingdom_drowned_mystery",
+      "the_chancellors_rest",
+      "drowned_chancellery"
+    ],
+    "environment": {
+      "architecture": "A raised formal speaking platform facing a collapsed public square, near [[the_chancellors_rest]].",
+      "activity": "Silent and empty — the old kingdom's court of public appeals, long since adjourned.",
+      "sensory": "The platform is oddly undamaged compared to the ruined square facing it, as if the water rose around it rather than through it."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 14",
+        "detail": "A weathered but legible inscription references a final address given from this rostrum — a sovereign's decree, not a plea for rescue."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Pairs with [[the_leaning_archive]]'s sealed-wards decree — together they build the picture that the drowning was ordered, not suffered, feeding [[why_the_kingdom_drowned_mystery]]."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "kingdom-remnant",
+      "mystery"
+    ]
+  },
+  {
+    "id": "millrace_deep",
+    "name": "Millrace Deep",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/millrace_deep.html",
+    "visibility": "player",
+    "related": [
+      "freedivers",
+      "salvage_concordat",
+      "gable_tarn"
+    ],
+    "environment": {
+      "architecture": "The flooded machinery pit of an old kingdom watermill, wheel and gearing still largely intact.",
+      "activity": "Both [[freedivers]] and [[salvage_concordat]] crews work it in rotation for scrap-metal contracts.",
+      "sensory": "Rusted gearing groans and shifts under current, snagging unwary divers on jagged, half-turning teeth."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "Straightforward hazard/salvage site — jammed machinery as an environmental obstacle, no supernatural weight needed here. Useful as a mechanical breather between omen-heavy sites."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "hazard"
+    ]
+  },
+  {
+    "id": "the_ashen_wardrobe",
+    "name": "The Ashen Wardrobe",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_ashen_wardrobe.html",
+    "visibility": "player",
+    "related": [
+      "salvage_concordat",
+      "coraline_bray",
+      "the_wardrobes_visitor"
+    ],
+    "environment": {
+      "architecture": "A private aristocratic vault-chamber, built into a collapsed manor cellar, still sealed by a corroded formal lock.",
+      "activity": "Unclaimed by the Concordat's official manifests — [[coraline_bray]] knows it exists and hasn't logged it.",
+      "sensory": "Fine ash-grey silt coats everything inside, undisturbed for centuries, faintly luminous under lantern-light."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "A single item among the ash has clearly been handled recently, then carefully replaced exactly where it was."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Seed site for a future mid-game item entity (t026) — hold the specific relic open until that task, but the hook (Coraline's undisclosed interest) is live now."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "salvage",
+      "item-hook"
+    ]
+  },
+  {
+    "id": "the_last_descent",
+    "name": "The Last Descent",
+    "type": "location",
+    "category": "Drowned Districts",
+    "contentType": "html",
+    "contentFile": "content/locations/the_last_descent.html",
+    "visibility": "player",
+    "related": [
+      "the_weeping_stair",
+      "millhollow_undercroft",
+      "thalmere_gate"
+    ],
+    "environment": {
+      "architecture": "A final formal stairwell, wider and colder than [[the_weeping_stair]] above it, descending past the last intact district wall.",
+      "activity": "Nothing lives at this depth; even the Choir does not linger past this point.",
+      "sensory": "Absolute cold and absolute dark beyond lantern range — pressure a diver feels in their teeth, not just their ears."
+    },
+    "curiosities": [
+      {
+        "roll": "DM only",
+        "detail": "Marks the transition threshold out of the Drowned Districts and into the Deep Kingdom (t021+), the same structural role [[the_last_landing]] played between the Shallows and here. Hold any Deep Kingdom content until those tasks."
+      }
+    ],
+    "tags": [
+      "drowned-districts",
+      "old-kingdom",
+      "transition"
+    ]
+  },
+  {
+    "id": "thalmere_gate",
+    "name": "Thalmere Gate",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/thalmere_gate.html",
+    "visibility": "player",
+    "related": [
+      "the_last_descent",
+      "aurewake_concourse"
+    ],
+    "environment": {
+      "architecture": "A monumental twin-towered gatehouse at full original height, doors long rotted from intact titanic hinges.",
+      "activity": "Nothing moves here voluntarily; this is the first Deep Kingdom site most parties reach.",
+      "sensory": "Unnerving stillness — no current, no drift, water that barely seems to move at all past the threshold."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 16",
+        "detail": "The lintel inscription is a formal title addressed to whoever approaches, in a register no living Port Calder scholar fully reads."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "gate",
+      "capital",
+      "transition"
+    ]
+  },
+  {
+    "id": "aurewake_concourse",
+    "name": "The Aurewake Concourse",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/aurewake_concourse.html",
+    "visibility": "player",
+    "related": [
+      "thalmere_gate",
+      "the_regnants_seat",
+      "warders_hold",
+      "vaelgard_terrace",
+      "drowned_chancellery",
+      "sarelles_repose"
+    ],
+    "environment": {
+      "architecture": "A grand processional avenue wide enough for a twenty-abreast procession, flanked by empty statuary plinths.",
+      "activity": "The capital's hub — side avenues branch toward the Hold, the Terrace, and the Chancellery.",
+      "sensory": "Lantern light feels smaller here than anywhere above; the scale was built for a light source no diver carries."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Every plinth plaque names a title and a date, never a person — a formal honor roll, not a memorial."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "capital",
+      "hub"
+    ]
+  },
+  {
+    "id": "warders_hold",
+    "name": "The Warders' Hold",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/warders_hold.html",
+    "visibility": "player",
+    "related": [
+      "the_warders_stair",
+      "aurewake_concourse",
+      "warden_husk",
+      "cindrel_vault",
+      "mireths_reckoning",
+      "the_vigil_wrack",
+      "warden_remnant"
+    ],
+    "environment": {
+      "architecture": "A fortified barracks-monument, entry hall lined with intact carved-name alcoves, each now paired with a worn statuary bust.",
+      "activity": "A possible warden_husk patrol still walks a fixed route through the hall.",
+      "sensory": "Cold, formal, and very quiet — the hush of a garrison that stood its last post and was never relieved."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Several busts are deliberately defaced, not by time; the roll's gaps cluster together rather than scattering at random."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "wardens",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "vaelgard_terrace",
+    "name": "Vaelgard Terrace",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/vaelgard_terrace.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "drowned_chancellery",
+      "ilyndras_sanctum",
+      "hallowmere_gallery",
+      "why_the_kingdom_drowned_mystery",
+      "the_vaelgard_signet"
+    ],
+    "environment": {
+      "architecture": "A tiered aristocratic residential quarter, town-houses stacked up a gentle rise in diminishing grandeur.",
+      "activity": "Untouched since the drowning — doors open or missing, nothing looted, nothing disturbed.",
+      "sensory": "Melancholy rather than horror — a life mid-sentence, interrupted and never resumed."
+    },
+    "curiosities": [
+      {
+        "roll": "Passive Perception 12",
+        "detail": "Personal effects remain in nearly every house — a set table, a child's toy on a stair, a wardrobe never emptied."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "residential",
+      "aristocracy"
+    ]
+  },
+  {
+    "id": "drowned_chancellery",
+    "name": "The Drowned Chancellery",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/drowned_chancellery.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "the_chancellors_rest",
+      "the_sunken_rostrum",
+      "why_the_kingdom_drowned_mystery",
+      "sarelles_repose",
+      "vaelgard_terrace",
+      "velmarch_spire",
+      "warden_remnant"
+    ],
+    "environment": {
+      "architecture": "A fortress-palace complex housing the old kingdom's seat of governance, its state archive hall largely intact.",
+      "activity": "Nothing moves; the archive seals remain unbroken, waiting the way an unfinished meeting waits.",
+      "sensory": "One chamber's furniture is still arranged for a session that was never adjourned."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The archive seals bear a chancellor's formal seal-mark, matching the one on the_chancellors_rest's door exactly."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "governance",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "sarelles_repose",
+    "name": "Sarelle's Repose",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/sarelles_repose.html",
+    "visibility": "player",
+    "related": [
+      "drowned_chancellery",
+      "why_the_kingdom_drowned_mystery",
+      "aurewake_concourse"
+    ],
+    "environment": {
+      "architecture": "The old capital's central marketplace, stalls standing in orderly rows.",
+      "activity": "Frozen mid-transaction — shutters drawn, stalls tidied, coin still sitting in more than one abandoned till.",
+      "sensory": "Human-scale and quiet, a normal night that was never resumed rather than a disaster scene."
+    },
+    "curiosities": [
+      {
+        "roll": "Free / no check",
+        "detail": "Coin remains untouched in stall-tills throughout the market — a fortune in old-kingdom currency, worthless to modern buyers but a curiosity to collectors."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "marketplace",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "the_regnants_seat",
+    "name": "The Regnant's Seat",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_regnants_seat.html",
+    "visibility": "player",
+    "related": [
+      "aurewake_concourse",
+      "hallowmere_gallery",
+      "ilyndras_sanctum",
+      "threshwater_stair"
+    ],
+    "environment": {
+      "architecture": "The processional terminus of [[aurewake_concourse]] — a domed audience hall raised on a stepped dais, built to be seen from the avenue's full length.",
+      "activity": "Utterly still; the hall's acoustics amplify even a diver's own bubbles into something like a held breath.",
+      "sensory": "A cold, clean draft that shouldn't exist this deep moves through the dome — the first sign in the Deep Kingdom that something down here still circulates on its own terms."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "The dais holds no throne — an empty plinth, the seat itself removed as deliberately as the statues on [[aurewake_concourse]]."
+      },
+      {
+        "roll": "History DC 16",
+        "detail": "Wall reliefs depict a coronation rite that matches no ritual practiced anywhere in modern Port Calder, old-kingdom or Choir."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The unexplained draft is the campaign's first non-symbolic hint that [[it_that_kept_the_kingdom]] is close and active, not merely a story — keep it as atmosphere, never a direct manifestation here."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "capital",
+      "throne-hall",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "cindrel_vault",
+    "name": "The Cindrel Vault",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/cindrel_vault.html",
+    "visibility": "player",
+    "related": [
+      "warders_hold",
+      "warden_husk",
+      "the_wardwrights_undercroft"
+    ],
+    "environment": {
+      "architecture": "A sealed strongroom beneath [[warders_hold]], reached by a stair the Wardens' roll marks as restricted, guarded rather than merely locked.",
+      "activity": "Sealed since the drowning — the vault door shows tool-marks from a deliberate, orderly locking, not a hasty one.",
+      "sensory": "Absolute silence inside the seal; even current and drift stop dead at the threshold, as though the room itself is holding still."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Shelving racks are three-quarters empty and neatly so — most of the treasury was deliberately removed, not looted, before the seal went up."
+      },
+      {
+        "roll": "Free / no check",
+        "detail": "What remains is modest by treasury standards: coin, minor regalia, and a handful of sealed document tubes — the valuable things clearly went somewhere else on purpose."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Good seed location for a future item entity (t026) — a minor regalia piece or a sealed document tube makes a natural, low-stakes find here. A [[warden_husk]] may still be posted at the inner seal."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "treasury",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "ilyndras_sanctum",
+    "name": "Ilyndra's Sanctum",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/ilyndras_sanctum.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "vaelgard_terrace",
+      "drowned_choir",
+      "the_breaking_deal_mystery",
+      "mireths_reckoning",
+      "threshwater_stair"
+    ],
+    "environment": {
+      "architecture": "A circular sanctum off [[the_regnants_seat]], its walls carved floor-to-ceiling with a binding-rite in relief — the same iconography [[the_hollow_choir_yard]] echoes above, but whole here, and clearly the original rather than a copy.",
+      "activity": "Undisturbed by the Choir, who venerate this rite without having ever actually reached this room.",
+      "sensory": "The carvings seem to draw what little light a lantern casts, leaving the rest of the sanctum darker than the water outside should allow."
+    },
+    "curiosities": [
+      {
+        "roll": "Religion DC 15",
+        "detail": "The relief depicts the binding as a covenant struck willingly, not a spell cast in desperation — a nuance the modern Choir's teachings have lost entirely."
+      },
+      {
+        "roll": "Arcana DC 17",
+        "detail": "A working still faintly active in the stone confirms the binding is a covenant, not a one-time casting — it requires something ongoing to hold, which lines up with [[the_breaking_deal_mystery]]."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The strongest single location for a player who wants to understand the Choir sympathetically — they're not wrong that something was sacred here, only wrong about what freeing it would mean. Do not let this room resolve [[the_breaking_deal_mystery]] outright; it clarifies the nature of the deal, not its remaining lifespan."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "sanctum",
+      "drowned-choir",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "velmarch_spire",
+    "name": "Velmarch Spire",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/velmarch_spire.html",
+    "visibility": "player",
+    "related": [
+      "drowned_chancellery",
+      "why_the_kingdom_drowned_mystery",
+      "the_leaning_archive",
+      "the_wardwrights_undercroft"
+    ],
+    "environment": {
+      "architecture": "A tall, narrow scholars' tower off [[drowned_chancellery]], its upper chamber ringed with brass instrument-mounts whose actual instruments are long gone.",
+      "activity": "Abandoned mid-use — star-charts and tide-tables left pinned open rather than shelved.",
+      "sensory": "The tower's height puts a diver above the worst of the ambient silt; visibility here is the best anywhere in the Deep Kingdom, which only makes the empty instrument-mounts more conspicuous."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The pinned-open charts track tidal and astronomical cycles obsessively in the final months' entries — someone here was trying to time something."
+      },
+      {
+        "roll": "Arcana DC 16",
+        "detail": "Annotations cross-reference the charts against a ritual calendar, not a navigational one — this was a working being scheduled, not weather being predicted."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Pairs directly with [[the_leaning_archive]]'s sealed decree — the scholars here were calculating the correct timing for the binding-working itself, another concrete plank in the 'evacuation, not disaster' case for [[why_the_kingdom_drowned_mystery]]."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "scholars",
+      "kingdom-remnant",
+      "mystery"
+    ]
+  },
+  {
+    "id": "hallowmere_gallery",
+    "name": "The Hallowmere Gallery",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/hallowmere_gallery.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "why_the_kingdom_drowned_mystery",
+      "vaelgard_terrace"
+    ],
+    "environment": {
+      "architecture": "A long memorial hall off [[the_regnants_seat]], lined with portrait-reliefs of the old royal line in unbroken succession, down to a final frame.",
+      "activity": "Quiet and orderly — a place kept, not abandoned in haste, in the same register as [[vaelgard_terrace]].",
+      "sensory": "Cold stone made colder by scale; the final portrait-frame is noticeably larger than the rest, as if built for a likeness that was never finished."
+    },
+    "curiosities": [
+      {
+        "roll": "History DC 15",
+        "detail": "The succession is unbroken and complete — every ruler accounted for, right up to the last, unfinished frame."
+      },
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The final frame's relief is roughed in but not carved to completion, tools left neatly beside it rather than dropped mid-work."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The unfinished final portrait is a quiet, human-scale echo of [[drowned_chancellery]]'s unfinished draft document — the same last ruler, caught mid-decision in two different rooms. Keep both discoveries available independently; a party that finds this before the Chancellery should still feel the weight without needing the other to explain it."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "gallery",
+      "kingdom-remnant",
+      "mystery"
+    ]
+  },
+  {
+    "id": "threshwater_stair",
+    "name": "The Threshwater Stair",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/threshwater_stair.html",
+    "visibility": "player",
+    "related": [
+      "the_regnants_seat",
+      "ilyndras_sanctum",
+      "it_that_kept_the_kingdom",
+      "suppliants_colonnade"
+    ],
+    "environment": {
+      "architecture": "A final descending stair behind [[ilyndras_sanctum]], narrower and less formal than anything else in the capital core, as if it were never meant to be a public way.",
+      "activity": "The last stretch of the old kingdom built for people; past its bottom step, nothing here was built for anyone.",
+      "sensory": "Pressure and cold deepen sharply past the first few steps, and the earlier draft from [[the_regnants_seat]] resolves here into a slow, directional pull — something down there is drawing water toward itself."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 16",
+        "detail": "The pull is faint but constant, strongest at the stair's lowest visible landing — current with a clear source, in water that shouldn't have current at all."
+      },
+      {
+        "roll": "DM only",
+        "detail": "Marks the threshold out of the capital core and toward the containment site of [[it_that_kept_the_kingdom]] (t023/t024) — the same structural role [[the_last_descent]] played entering the Deep Kingdom. Hold any direct containment-site content until those tasks; this location is dread and anticipation only."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "transition",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "suppliants_colonnade",
+    "name": "The Suppliants' Colonnade",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/suppliants_colonnade.html",
+    "visibility": "player",
+    "related": [
+      "threshwater_stair",
+      "mireths_reckoning",
+      "the_wardwrights_undercroft",
+      "why_the_kingdom_drowned_mystery"
+    ],
+    "environment": {
+      "architecture": "A long colonnade at the base of [[threshwater_stair]], pillars in even ranks, hundreds of kneeling statues facing a single direction in unhurried genuflection.",
+      "activity": "The old kingdom's pilgrimage route, walked on a fixed calendar toward whatever waits at its far end — reverence, not terror, carved into every figure.",
+      "sensory": "The directional pull from the stair sharpens here, strongest exactly where the statues face; faded old-tongue script runs along the lower pillar band."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 13",
+        "detail": "Every statue's base holds a shallow, long-emptied offering-niche."
+      },
+      {
+        "roll": "Perception DC 15",
+        "detail": "Five statues near the midpoint have been deliberately turned to face back the way the party came."
+      },
+      {
+        "roll": "Translation",
+        "detail": "The repeated inscription is a plea for continuation, not release — that the debt keep being paid, not that the arrangement end."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "mireths_reckoning",
+    "name": "Mireth's Reckoning",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/mireths_reckoning.html",
+    "visibility": "player",
+    "related": [
+      "suppliants_colonnade",
+      "the_wardwrights_undercroft",
+      "warders_hold",
+      "ilyndras_sanctum",
+      "why_the_kingdom_drowned_mystery",
+      "the_last_accord"
+    ],
+    "environment": {
+      "architecture": "A private side-chamber off [[suppliants_colonnade]], unceremonial, holding a stone seat, a bronze writing table, and walls of tightly-carved personal text.",
+      "activity": "The private record of Mireth, a Warden who oversaw the binding's containment work in its final years — dutiful reports giving way to something closer to confession.",
+      "sensory": "The carving hand shifts noticeably partway through the far wall; the room feels different by the time the text breaks off mid-sentence."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "The tone shift from official report to private confession is precisely placeable partway along the far wall."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The five reversed statues at the colonnade's midpoint are named and explained here as Mireth's own act."
+      },
+      {
+        "roll": "DM only",
+        "detail": "The final passage cuts off because Mireth stopped writing here and was never recorded again — see DM Notes."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "lore"
+    ]
+  },
+  {
+    "id": "the_wardwrights_undercroft",
+    "name": "The Ward-Wrights' Undercroft",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_wardwrights_undercroft.html",
+    "visibility": "player",
+    "related": [
+      "suppliants_colonnade",
+      "mireths_reckoning",
+      "cindrel_vault",
+      "velmarch_spire",
+      "the_breaking_deal_mystery",
+      "the_wardwrights_binding_seal",
+      "the_binding_lattice",
+      "the_renewal_font",
+      "the_long_hush",
+      "the_sealed_approach"
+    ],
+    "environment": {
+      "architecture": "A low workshop-archive off [[suppliants_colonnade]], racks of fist-sized ward-stones connected by corroded bronze conduit deeper into the ruin.",
+      "activity": "The workshop of the old kingdom's Ward-Wrights, tools still racked in order as though they meant to return; roughly a third of the ward-stones have gone dark.",
+      "sensory": "The failed stones are scattered evenly through the racks rather than clustered — slow, uniform failure, not a single point of damage."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Schematic tablets trace the ward-stone network toward [[cindrel_vault]] and toward [[velmarch_spire]]'s original working-schedule."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A half-finished replacement ward-stone sits on a workbench, tools laid down mid-work."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A single larger, more heavily worked master ward-stone sits apart from the standard stock — see [[the_wardwrights_binding_seal]]."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "the_long_hush",
+    "name": "The Long Hush",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_long_hush.html",
+    "visibility": "player",
+    "related": [
+      "the_wardwrights_undercroft",
+      "the_sealed_approach",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "A long open stretch between two rock faces past the undercroft — clearly widened, never built, with no old-kingdom architecture at all.",
+      "activity": "The last stretch before whatever is being contained; nothing here attacks, because nothing here needs to.",
+      "sensory": "Sound flattens and swallows itself unnaturally; bioluminescent growth present everywhere else simply stops at an unmarked line."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "Bioluminescence stops abruptly a short distance in, as if it never took root beyond that point."
+      },
+      {
+        "roll": "Perception DC 17",
+        "detail": "Every sound — breath, whisper, dropped tool — rings wrong-close, swallowed almost before it starts."
+      },
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Old lantern-anchors at regular intervals stopped being maintained well before the kingdom drowned, not after."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "omen"
+    ]
+  },
+  {
+    "id": "the_sealed_approach",
+    "name": "The Sealed Approach",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_sealed_approach.html",
+    "visibility": "player",
+    "related": [
+      "the_long_hush",
+      "the_wardwrights_undercroft",
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "the_open_wound"
+    ],
+    "environment": {
+      "architecture": "A pair of thirty-foot ward-carved stone gate-leaves set into deliberately cut rock at the end of [[the_long_hush]] — built to close, not to welcome.",
+      "activity": "The literal threshold into the containment site, marked by a full-height crack and old repair scarring cracked open again.",
+      "sensory": "Current runs steadily through the crack, one direction, into the dark beyond — the source of the pull felt as far back as [[threshwater_stair]]."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "The crack is the source of the directional current felt throughout the region."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Old repair scarring around the crack is decades old at least; the crack itself is recent enough its edges haven't weathered smooth."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A single large ward-stone at the gate's center is visibly failing in real time — the clearest physical sign yet that the deal is breaking."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "transition",
+      "central-mystery"
+    ]
+  },
+  {
+    "id": "the_open_wound",
+    "name": "The Open Wound",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_open_wound.html",
+    "visibility": "player",
+    "related": [
+      "the_sealed_approach",
+      "the_binding_lattice",
+      "the_vigil_wrack",
+      "the_listening_deep",
+      "the_undoing",
+      "it_that_kept_the_kingdom"
+    ],
+    "environment": {
+      "architecture": "Raw, unworked rock beyond the gate; ward-conduits from the network above dive straight into bare stone rather than kingdom masonry.",
+      "activity": "Three glyph-marked passages branch off a central shaft where the gate's current drops away and out of sight.",
+      "sensory": "The pull toward the shaft is the strongest felt anywhere in the region; loose gear drifts steadily toward it."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 16",
+        "detail": "The three onward passages are individually marked with distinct glyph-sets, clearly meant to be chosen between."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "Every surface here is bare rock or ward-conduit — nothing carved for habitation, worship, or record-keeping."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The shaft's pull is strongest here of anywhere in the Deep Kingdom."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_binding_lattice",
+    "name": "The Binding Lattice",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_binding_lattice.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "the_wardwrights_undercroft",
+      "the_last_accord",
+      "the_renewal_font",
+      "the_breaking_deal_mystery",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A cathedral-scale lattice of thousands of ward-stones covering every surface — the whole containment network's true heart.",
+      "activity": "Whole patches sit dark and failing, spreading outward from a scatter of identifiable failure-points.",
+      "sensory": "A low resonant hum from the working stones; the dark patches are silent by contrast."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "A rough headcount puts the network at roughly two-thirds still functioning."
+      },
+      {
+        "roll": "Arcana DC 17",
+        "detail": "Failure-points cluster near specific stones whose loss would cascade fastest."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "An unfinished alcove holds tools left mid-work, wired to nothing."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_last_accord",
+    "name": "The Last Accord",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_last_accord.html",
+    "visibility": "player",
+    "related": [
+      "the_binding_lattice",
+      "why_the_kingdom_drowned_mystery",
+      "mireths_reckoning",
+      "the_renewal_font",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A small side-chamber off the lattice's unfinished alcove, one wall carved wall-to-wall with a single unbroken legal text.",
+      "activity": "Undisturbed since it was carved.",
+      "sensory": "Formal old-tongue legal phrasing, clear enough to any reader who can parse the hand."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation or Religion DC 14",
+        "detail": "The text confirms the kingdom sank itself deliberately as the price of containment."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A witness-signatory listed at the text's foot matches Mireth's confession exactly."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "A closing clause describes the deal as renewable \"by hand and seal\" — a pointer toward the renewal font."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "lore"
+    ]
+  },
+  {
+    "id": "the_renewal_font",
+    "name": "The Renewal Font",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_renewal_font.html",
+    "visibility": "player",
+    "related": [
+      "the_binding_lattice",
+      "the_wardwrights_undercroft",
+      "the_wardwrights_binding_seal",
+      "the_last_accord",
+      "the_undoing",
+      "the_breaking_deal_mystery"
+    ],
+    "environment": {
+      "architecture": "A sealed side-passage alcove holding an empty housing precisely shaped for a master ward-stone.",
+      "activity": "Unfinished rather than damaged — tool-scars sharp, conduit ends capped, dust settled evenly.",
+      "sensory": "The one part of the network showing no wear or decay at all."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed (with item) / Investigation DC 14 (without)",
+        "detail": "The empty housing's shape matches the Ward-Wright's Binding Seal exactly."
+      },
+      {
+        "roll": "Investigation DC 13",
+        "detail": "The alcove shows no decay, unlike every other failure point in the region."
+      },
+      {
+        "roll": "Arcana DC 16",
+        "detail": "Conduit lines from the housing reach toward the deepest part of the lattice."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_vigil_wrack",
+    "name": "The Vigil Wrack",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_vigil_wrack.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "warders_hold",
+      "warden_remnant",
+      "the_faithfuls_end",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A hastily-thrown-up barricade of collapsed stone and old war-material, statuary busts cracked or toppled.",
+      "activity": "A warden remnant still patrols the wreckage, sharper and more alert than the husks above.",
+      "sensory": "Real battle damage — scorch, breakage, gouges — unlike the untouched hush of Warders' Hold."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 16",
+        "detail": "Damage reads as an assault from the inner side outward — the Wardens fought going the wrong direction."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "A vigil-roster names match Warders' Hold's alcove busts, closing that thread."
+      },
+      {
+        "roll": "Perception DC 14",
+        "detail": "The sentinel here challenges with more urgency and doesn't stand down as readily."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "kingdom-remnant"
+    ]
+  },
+  {
+    "id": "the_faithfuls_end",
+    "name": "The Faithful's End",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_faithfuls_end.html",
+    "visibility": "player",
+    "related": [
+      "the_vigil_wrack",
+      "drowned_choir",
+      "the_faithful_husk",
+      "the_drowned_hymnal",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "A side-chamber camp left arranged and undisturbed, gear packed with care.",
+      "activity": "A Drowned Choir pilgrimage cell stopped here mid-purpose and never resumed.",
+      "sensory": "Hymnal pages scattered, marginalia growing more desperate, then more certain, then stopping."
+    },
+    "curiosities": [
+      {
+        "roll": "Investigation DC 14",
+        "detail": "Marginalia in the hymnal pages tracks the same hymns as the Drowned Hymnal, written by a hand growing more certain over time."
+      },
+      {
+        "roll": "Perception DC 13",
+        "detail": "Nothing suggests panic or a fight — the camp was left in order, mid-purpose."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The final legible marginalia line reads like relief, not fear."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "drowned-choir",
+      "climactic-dungeon"
+    ]
+  },
+  {
+    "id": "the_listening_deep",
+    "name": "The Listening Deep",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_listening_deep.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "it_that_kept_the_kingdom",
+      "the_unmade",
+      "the_undoing"
+    ],
+    "environment": {
+      "architecture": "An unshaped cave space; walls seem to lean inward a fraction more than measurement ever confirms.",
+      "activity": "The closest approach to It That Kept the Kingdom the site allows without full descent to the Undoing.",
+      "sensory": "Whispers in voices that resolve, briefly, into people the listener actually knows."
+    },
+    "curiosities": [
+      {
+        "roll": "Wisdom save (DM discretion, on lingering)",
+        "detail": "The whispers use recognizable voices drawn from people the listener has actually met."
+      },
+      {
+        "roll": "Investigation DC 15",
+        "detail": "A previous explorer's gear lies undisturbed near the entrance, set down and never picked back up."
+      },
+      {
+        "roll": "Perception DC 17",
+        "detail": "The Unmade may be present, holding its shape longer and reacting faintly when spoken to."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "omen"
+    ]
+  },
+  {
+    "id": "the_undoing",
+    "name": "The Undoing",
+    "type": "location",
+    "category": "Deep Kingdom",
+    "contentType": "html",
+    "contentFile": "content/locations/the_undoing.html",
+    "visibility": "player",
+    "related": [
+      "the_open_wound",
+      "the_binding_lattice",
+      "the_renewal_font",
+      "the_last_accord",
+      "the_vigil_wrack",
+      "the_faithfuls_end",
+      "the_listening_deep",
+      "it_that_kept_the_kingdom",
+      "it_that_kept_the_kingdom_stat",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "the_wardwrights_binding_seal"
+    ],
+    "environment": {
+      "architecture": "No walls in any conventional sense — the containment given physical shape, a hollow scooped out of the world.",
+      "activity": "Every passage from the site above rejoins here.",
+      "sensory": "The boundary between kingdom and what it kept holds thinnest anywhere in the region."
+    },
+    "curiosities": [
+      {
+        "roll": "No check needed",
+        "detail": "The three paths the site has offered are all physically enactable from this room, in whatever combination the party has prepared for."
+      },
+      {
+        "roll": "Wisdom save (DM discretion)",
+        "detail": "It That Kept the Kingdom is present here in a way it has been nowhere else."
+      },
+      {
+        "roll": "No check needed",
+        "detail": "The chamber does not pressure a decision on a hard timer beyond whatever tension the table has built."
+      }
+    ],
+    "tags": [
+      "deep-kingdom",
+      "old-kingdom",
+      "central-mystery",
+      "climactic-dungeon",
+      "finale"
+    ]
+  }
+]

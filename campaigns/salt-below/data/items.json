@@ -1,0 +1,101 @@
+[
+  {
+    "id": "pressure_ward_token",
+    "name": "Pressure-Ward Token",
+    "type": "item",
+    "category": "Dive Gear",
+    "contentType": "html",
+    "contentFile": "content/items/pressure_ward_token.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row"
+    ],
+    "tags": [
+      "magic",
+      "dive-gear",
+      "wondrous-item"
+    ]
+  },
+  {
+    "id": "brinelung_mask",
+    "name": "Brinelung Mask",
+    "type": "item",
+    "category": "Dive Gear",
+    "contentType": "html",
+    "contentFile": "content/items/brinelung_mask.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row",
+      "pressure_ward_token",
+      "salt_below_dive_procedure"
+    ],
+    "tags": [
+      "magic",
+      "dive-gear",
+      "wondrous-item"
+    ]
+  },
+  {
+    "id": "barnacled_charm",
+    "name": "Barnacled Charm",
+    "type": "item",
+    "category": "Salvage Curiosity",
+    "contentType": "html",
+    "contentFile": "content/items/barnacled_charm.html",
+    "visibility": "player",
+    "related": [
+      "farrows_grotto",
+      "saltbone_curios"
+    ],
+    "tags": [
+      "magic",
+      "salvage",
+      "wondrous-item",
+      "shallows"
+    ]
+  },
+  {
+    "id": "the_drowned_hymnal",
+    "name": "The Drowned Hymnal",
+    "type": "item",
+    "category": "Drowned Choir Relic",
+    "contentType": "html",
+    "contentFile": "content/items/the_drowned_hymnal.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "chancel_deep",
+      "isolt_vane",
+      "the_faithfuls_end",
+      "the_faithful_husk"
+    ],
+    "tags": [
+      "magic",
+      "wondrous-item",
+      "drowned-choir",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "the_wardwrights_binding_seal",
+    "name": "The Ward-Wright's Binding Seal",
+    "type": "item",
+    "category": "Deep Kingdom Artifact",
+    "contentType": "html",
+    "contentFile": "content/items/the_wardwrights_binding_seal.html",
+    "visibility": "player",
+    "related": [
+      "the_wardwrights_undercroft",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "the_renewal_font",
+      "the_undoing"
+    ],
+    "tags": [
+      "magic",
+      "artifact",
+      "deep-kingdom",
+      "central-mystery"
+    ]
+  }
+]

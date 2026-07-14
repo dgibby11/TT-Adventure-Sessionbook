@@ -1,0 +1,317 @@
+[
+  {
+    "id": "reef_stalker",
+    "name": "Reef Stalker",
+    "type": "creature",
+    "category": "Reef Predators",
+    "contentType": "html",
+    "contentFile": "content/creatures/reef_stalker.html",
+    "visibility": "dm-only",
+    "related": [
+      "farrows_grotto",
+      "sawback_reef"
+    ],
+    "links": [
+      {
+        "label": "Giant Constrictor Snake — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake"
+      }
+    ],
+    "tags": [
+      "predator",
+      "reef",
+      "ambush",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "wreck_crab",
+    "name": "Wreck-Walker Crab",
+    "type": "creature",
+    "category": "Salvage Hazards",
+    "contentType": "html",
+    "contentFile": "content/creatures/wreck_crab.html",
+    "visibility": "dm-only",
+    "related": [
+      "anchors_grave",
+      "reavers_ribs",
+      "the_marrow_trawler"
+    ],
+    "links": [
+      {
+        "label": "Giant Crab — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16879-giant-crab"
+      }
+    ],
+    "tags": [
+      "hazard",
+      "wreck",
+      "territorial",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "kelp_strangler",
+    "name": "Kelp Strangler",
+    "type": "creature",
+    "category": "Salvage Hazards",
+    "contentType": "html",
+    "contentFile": "content/creatures/kelp_strangler.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_bellweed_shallows"
+    ],
+    "tags": [
+      "hazard",
+      "plant",
+      "ambush",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "salt_warped_grouper",
+    "name": "Salt-Warped Grouper",
+    "type": "creature",
+    "category": "Early Signs",
+    "contentType": "html",
+    "contentFile": "content/creatures/salt_warped_grouper.html",
+    "visibility": "dm-only",
+    "related": [
+      "widows_combs",
+      "the_chime_shoal",
+      "it_that_kept_the_kingdom"
+    ],
+    "links": [
+      {
+        "label": "Quipper — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16989-quipper"
+      }
+    ],
+    "tags": [
+      "aberrant",
+      "warped",
+      "omen",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "choir_thrall",
+    "name": "Choir Thrall",
+    "type": "creature",
+    "category": "Choir Thralls",
+    "contentType": "html",
+    "contentFile": "content/creatures/choir_thrall.html",
+    "visibility": "dm-only",
+    "related": [
+      "drowned_choir",
+      "chancel_deep",
+      "the_hollow_choir_yard",
+      "the_faithful_husk"
+    ],
+    "links": [
+      {
+        "label": "Zombie — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17077-zombie"
+      }
+    ],
+    "tags": [
+      "cultist",
+      "thrall",
+      "drowned-choir",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "warden_husk",
+    "name": "Warden Husk",
+    "type": "creature",
+    "category": "Kingdom Remnants",
+    "contentType": "html",
+    "contentFile": "content/creatures/warden_husk.html",
+    "visibility": "dm-only",
+    "related": [
+      "ashgate_wardhouse",
+      "wraithlock_gate",
+      "the_warders_stair",
+      "warders_hold",
+      "warden_remnant",
+      "cindrel_vault",
+      "rees_holt"
+    ],
+    "links": [
+      {
+        "label": "Animated Armor — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16786-animated-armor"
+      }
+    ],
+    "tags": [
+      "undead",
+      "construct",
+      "kingdom-remnant",
+      "guardian",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "deep_maw_eel",
+    "name": "Deep-Maw Eel",
+    "type": "creature",
+    "category": "Mid-Depth Horrors",
+    "contentType": "html",
+    "contentFile": "content/creatures/deep_maw_eel.html",
+    "visibility": "dm-only",
+    "related": [
+      "underbell_cistern",
+      "millhollow_undercroft"
+    ],
+    "links": [
+      {
+        "label": "Giant Constrictor Snake — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16878-giant-constrictor-snake"
+      }
+    ],
+    "tags": [
+      "predator",
+      "ambush",
+      "tunnel",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "silt_wraith",
+    "name": "Silt Wraith",
+    "type": "creature",
+    "category": "Mounting Omens",
+    "contentType": "html",
+    "contentFile": "content/creatures/silt_wraith.html",
+    "visibility": "dm-only",
+    "related": [
+      "thornwake_hollow",
+      "the_susurrus_deep",
+      "it_that_kept_the_kingdom",
+      "the_unmade"
+    ],
+    "links": [
+      {
+        "label": "Shadow — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17010-shadow"
+      }
+    ],
+    "tags": [
+      "aberrant",
+      "omen",
+      "non-hostile",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "it_that_kept_the_kingdom_stat",
+    "name": "It That Kept the Kingdom (Stat Block)",
+    "type": "creature",
+    "category": "The Deep Presence",
+    "contentType": "html",
+    "contentFile": "content/creatures/it_that_kept_the_kingdom_stat.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "the_undoing",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery"
+    ],
+    "links": [
+      {
+        "label": "Aboleth — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16762-aboleth"
+      }
+    ],
+    "tags": [
+      "aberrant",
+      "boss",
+      "legendary",
+      "presence",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "warden_remnant",
+    "name": "Warden Remnant",
+    "type": "creature",
+    "category": "Kingdom Remnants",
+    "contentType": "html",
+    "contentFile": "content/creatures/warden_remnant.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_vigil_wrack",
+      "warders_hold",
+      "warden_husk",
+      "drowned_chancellery"
+    ],
+    "links": [
+      {
+        "label": "Animated Armor — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16786-animated-armor"
+      }
+    ],
+    "tags": [
+      "undead",
+      "construct",
+      "kingdom-remnant",
+      "guardian",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_unmade",
+    "name": "The Unmade",
+    "type": "creature",
+    "category": "The Deep Presence",
+    "contentType": "html",
+    "contentFile": "content/creatures/the_unmade.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_listening_deep",
+      "silt_wraith",
+      "it_that_kept_the_kingdom"
+    ],
+    "links": [
+      {
+        "label": "Specter — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17017-specter"
+      }
+    ],
+    "tags": [
+      "aberrant",
+      "omen",
+      "non-hostile",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_faithful_husk",
+    "name": "The Faithful Husk",
+    "type": "creature",
+    "category": "Choir Thralls",
+    "contentType": "html",
+    "contentFile": "content/creatures/the_faithful_husk.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_faithfuls_end",
+      "choir_thrall",
+      "drowned_choir",
+      "the_drowned_hymnal"
+    ],
+    "links": [
+      {
+        "label": "Wight — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17059-wight"
+      }
+    ],
+    "tags": [
+      "cultist",
+      "thrall",
+      "drowned-choir",
+      "tragic",
+      "dm-only"
+    ]
+  }
+]

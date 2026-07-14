@@ -1,0 +1,141 @@
+[
+  {
+    "id": "why_the_kingdom_drowned_mystery",
+    "name": "Why Did the Kingdom Really Drown?",
+    "type": "mystery",
+    "category": "Central Mystery",
+    "contentType": "html",
+    "contentFile": "content/mysteries/why_the_kingdom_drowned_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "the_breaking_deal_mystery",
+      "the_drowned_bell",
+      "drowned_choir",
+      "isolt_vane",
+      "chancel_deep",
+      "the_long_requiem",
+      "the_chancellors_rest",
+      "the_leaning_archive",
+      "the_sunken_rostrum",
+      "drowned_chancellery",
+      "sarelles_repose",
+      "vaelgard_terrace",
+      "suppliants_colonnade",
+      "mireths_reckoning",
+      "the_wardwrights_binding_seal",
+      "the_last_accord",
+      "the_undoing"
+    ],
+    "tags": [
+      "main-quest",
+      "central-mystery",
+      "old-kingdom",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_breaking_deal_mystery",
+    "name": "How Much Longer Does the Deal Hold?",
+    "type": "mystery",
+    "category": "Central Mystery",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_breaking_deal_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "salvage_concordat",
+      "drowned_choir",
+      "the_drowned_bell",
+      "harbormasters_post",
+      "the_salt_choked_colonnade",
+      "the_chancellors_rest",
+      "the_wardwrights_undercroft",
+      "the_sealed_approach",
+      "the_wardwrights_binding_seal",
+      "the_binding_lattice",
+      "the_renewal_font",
+      "the_undoing"
+    ],
+    "tags": [
+      "main-quest",
+      "central-mystery",
+      "ticking-clock",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "the_brides_dowry",
+    "name": "The Bride's Undelivered Dowry",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_brides_dowry.html",
+    "visibility": "player",
+    "related": [
+      "the_foundered_bride",
+      "ivo_marlstone",
+      "freedivers",
+      "salt_below_campaign_overview"
+    ],
+    "tags": [
+      "side-quest",
+      "shallows"
+    ]
+  },
+  {
+    "id": "the_wardrobes_visitor",
+    "name": "The Wardrobe's Quiet Visitor",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_wardrobes_visitor.html",
+    "visibility": "player",
+    "related": [
+      "the_ashen_wardrobe",
+      "coraline_bray",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "side-quest",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "the_vaelgard_signet",
+    "name": "The Vaelgard Signet",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_vaelgard_signet.html",
+    "visibility": "player",
+    "related": [
+      "vaelgard_terrace",
+      "market_quarter"
+    ],
+    "tags": [
+      "side-quest",
+      "deep-kingdom"
+    ]
+  },
+  {
+    "id": "the_almonrys_debt",
+    "name": "A Debt to the Almonry",
+    "type": "mystery",
+    "category": "Side Quests",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_almonrys_debt.html",
+    "visibility": "player",
+    "related": [
+      "the_choir_almonry",
+      "deacon_rill",
+      "the_long_docks",
+      "market_quarter"
+    ],
+    "tags": [
+      "side-quest",
+      "drowned-districts"
+    ]
+  }
+]

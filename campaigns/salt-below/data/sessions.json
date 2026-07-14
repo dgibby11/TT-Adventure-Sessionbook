@@ -1,0 +1,120 @@
+[
+  {
+    "id": "arc_1_port_calder_shallows",
+    "name": "Arc 1: Port Calder & The Shallows",
+    "type": "session",
+    "category": "Planning",
+    "startLocation": "port_calder",
+    "contentType": "html",
+    "contentFile": "content/sessions/arc_1_port_calder_shallows.html",
+    "visibility": "dm-only",
+    "related": [
+      "port_calder",
+      "the_brined_anchor",
+      "freedivers",
+      "salvage_concordat",
+      "harbor_watch",
+      "drowned_choir",
+      "sawback_reef",
+      "the_kettle",
+      "why_the_kingdom_drowned_mystery",
+      "the_brides_dowry"
+    ],
+    "reveals": [
+      "port_calder",
+      "calder_harbor",
+      "the_brined_anchor",
+      "concordat_licensing_house",
+      "market_quarter",
+      "freedivers",
+      "salvage_concordat",
+      "harbor_watch",
+      "ruen_saltmarrow"
+    ],
+    "tags": [
+      "arc",
+      "planning",
+      "levels-1-3",
+      "port-calder",
+      "shallows",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "arc_2_drowned_districts",
+    "name": "Arc 2: The Drowned Districts",
+    "type": "session",
+    "category": "Planning",
+    "startLocation": "the_last_landing",
+    "contentType": "html",
+    "contentFile": "content/sessions/arc_2_drowned_districts.html",
+    "visibility": "dm-only",
+    "related": [
+      "the_last_landing",
+      "vantmoor_hall",
+      "chancel_deep",
+      "drowned_choir",
+      "isolt_vane",
+      "the_leaning_archive",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "amos_kell",
+      "the_wardrobes_visitor",
+      "the_almonrys_debt"
+    ],
+    "reveals": [
+      "the_last_landing",
+      "vantmoor_hall",
+      "chancel_deep",
+      "drowned_choir",
+      "isolt_vane",
+      "the_suitors_approach",
+      "the_leaning_archive"
+    ],
+    "tags": [
+      "arc",
+      "planning",
+      "levels-4-6",
+      "drowned-districts",
+      "drowned-choir",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "arc_3_deep_kingdom",
+    "name": "Arc 3: The Deep Kingdom",
+    "type": "session",
+    "category": "Planning",
+    "startLocation": "thalmere_gate",
+    "contentType": "html",
+    "contentFile": "content/sessions/arc_3_deep_kingdom.html",
+    "visibility": "dm-only",
+    "related": [
+      "thalmere_gate",
+      "aurewake_concourse",
+      "drowned_chancellery",
+      "it_that_kept_the_kingdom",
+      "the_sealed_approach",
+      "the_open_wound",
+      "the_undoing",
+      "the_wardwrights_binding_seal",
+      "the_breaking_deal_mystery",
+      "the_vaelgard_signet"
+    ],
+    "reveals": [
+      "thalmere_gate",
+      "aurewake_concourse",
+      "drowned_chancellery",
+      "warders_hold",
+      "the_sealed_approach"
+    ],
+    "tags": [
+      "arc",
+      "planning",
+      "levels-7-10",
+      "deep-kingdom",
+      "finale",
+      "dm-only"
+    ]
+  }
+]

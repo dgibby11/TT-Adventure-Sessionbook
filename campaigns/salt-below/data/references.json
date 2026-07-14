@@ -1,0 +1,60 @@
+[
+  {
+    "id": "salt_below_campaign_overview",
+    "name": "The Salt Below — Campaign Overview",
+    "type": "reference",
+    "category": "Campaign",
+    "contentType": "html",
+    "contentFile": "content/references/salt_below_campaign_overview.html",
+    "visibility": "dm-only",
+    "related": [
+      "port_calder",
+      "salvage_concordat",
+      "drowned_choir",
+      "harbor_watch",
+      "freedivers",
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "the_breaking_deal_mystery",
+      "arc_1_port_calder_shallows",
+      "arc_2_drowned_districts",
+      "arc_3_deep_kingdom",
+      "salt_below_dive_procedure",
+      "the_brides_dowry",
+      "rees_holt",
+      "wraithlock_gate",
+      "vantmoor_hall",
+      "thornwake_hollow",
+      "farrows_grotto"
+    ],
+    "tags": [
+      "overview",
+      "campaign",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "salt_below_dive_procedure",
+    "name": "Diving the Salt Below — A DM Reference",
+    "type": "reference",
+    "category": "Procedures",
+    "contentType": "html",
+    "contentFile": "content/references/salt_below_dive_procedure.html",
+    "visibility": "dm-only",
+    "related": [
+      "pressure_ward_token",
+      "brinelung_mask",
+      "dive_outfitters_row",
+      "concordat_licensing_house",
+      "freedivers",
+      "the_sealed_approach",
+      "salt_below_campaign_overview"
+    ],
+    "tags": [
+      "reference",
+      "procedures",
+      "dive-gear",
+      "dm-only"
+    ]
+  }
+]

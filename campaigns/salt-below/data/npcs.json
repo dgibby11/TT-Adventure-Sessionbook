@@ -1,0 +1,548 @@
+[
+  {
+    "id": "perrin_ashgrave",
+    "name": "Guildmaster Perrin Ashgrave",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/perrin_ashgrave.html",
+    "visibility": "player",
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house"
+    ],
+    "tags": [
+      "concordat",
+      "guildmaster",
+      "political"
+    ]
+  },
+  {
+    "id": "wick_tallow",
+    "name": "Licensing Officer Wick Tallow",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/wick_tallow.html",
+    "visibility": "player",
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house"
+    ],
+    "tags": [
+      "concordat",
+      "clerk",
+      "informant"
+    ]
+  },
+  {
+    "id": "coraline_bray",
+    "name": "Coraline Bray",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/coraline_bray.html",
+    "visibility": "player",
+    "related": [
+      "salvage_concordat",
+      "concordat_licensing_house",
+      "the_ledger_wreck",
+      "vaultward_reliquary",
+      "the_ashen_wardrobe",
+      "the_wardrobes_visitor",
+      "ilsa_cray"
+    ],
+    "tags": [
+      "concordat",
+      "cover-up",
+      "fixer"
+    ]
+  },
+  {
+    "id": "fenn_hurley",
+    "name": "Captain Fenn Hurley",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/fenn_hurley.html",
+    "visibility": "player",
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison"
+    ],
+    "tags": [
+      "harbor-watch",
+      "captain",
+      "ally"
+    ]
+  },
+  {
+    "id": "tam_ostler",
+    "name": "Sergeant Tam Ostler",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/tam_ostler.html",
+    "visibility": "player",
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison",
+      "the_marrow_trawler",
+      "rees_holt"
+    ],
+    "tags": [
+      "harbor-watch",
+      "sergeant",
+      "quest-giver"
+    ]
+  },
+  {
+    "id": "brack_fennimore",
+    "name": "Watchman Brack Fennimore",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/brack_fennimore.html",
+    "visibility": "player",
+    "related": [
+      "harbor_watch",
+      "harbor_watch_garrison"
+    ],
+    "tags": [
+      "harbor-watch",
+      "recruit",
+      "gossip"
+    ]
+  },
+  {
+    "id": "ruen_saltmarrow",
+    "name": "Ruen Saltmarrow",
+    "type": "npc",
+    "category": "The Freedivers",
+    "contentType": "html",
+    "contentFile": "content/npcs/ruen_saltmarrow.html",
+    "visibility": "player",
+    "related": [
+      "freedivers",
+      "dive_outfitters_row"
+    ],
+    "tags": [
+      "freedivers",
+      "patron",
+      "elder"
+    ]
+  },
+  {
+    "id": "ivo_marlstone",
+    "name": "Ivo Marlstone",
+    "type": "npc",
+    "category": "The Freedivers",
+    "contentType": "html",
+    "contentFile": "content/npcs/ivo_marlstone.html",
+    "visibility": "player",
+    "related": [
+      "freedivers",
+      "dive_outfitters_row",
+      "farrows_grotto",
+      "thornwake_hollow",
+      "the_brides_dowry"
+    ],
+    "tags": [
+      "freedivers",
+      "rival",
+      "ambitious"
+    ]
+  },
+  {
+    "id": "sela_vantry",
+    "name": "Sela Vantry",
+    "type": "npc",
+    "category": "The Freedivers",
+    "contentType": "html",
+    "contentFile": "content/npcs/sela_vantry.html",
+    "visibility": "player",
+    "related": [
+      "freedivers",
+      "market_quarter"
+    ],
+    "tags": [
+      "freedivers",
+      "warning",
+      "foreshadowing"
+    ]
+  },
+  {
+    "id": "isolt_vane",
+    "name": "Isolt Vane",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/isolt_vane.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "the_drowned_bell",
+      "it_that_kept_the_kingdom",
+      "why_the_kingdom_drowned_mystery",
+      "chancel_deep",
+      "the_long_requiem",
+      "the_drowned_hymnal",
+      "amos_kell"
+    ],
+    "tags": [
+      "drowned-choir",
+      "leader",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "deacon_rill",
+    "name": "Deacon Rill",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/deacon_rill.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "the_drowned_bell",
+      "the_nightweigh",
+      "the_long_requiem",
+      "the_hollow_choir_yard",
+      "the_choir_almonry",
+      "the_almonrys_debt",
+      "pol_ferrick"
+    ],
+    "tags": [
+      "drowned-choir",
+      "recruiter",
+      "true-believer"
+    ]
+  },
+  {
+    "id": "sister_meck",
+    "name": "Sister Meck",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/sister_meck.html",
+    "visibility": "player",
+    "related": [
+      "drowned_choir",
+      "saltbone_curios",
+      "verdigris_court",
+      "the_leaning_archive",
+      "the_hollow_choir_yard"
+    ],
+    "tags": [
+      "drowned-choir",
+      "doubter",
+      "informant"
+    ]
+  },
+  {
+    "id": "yselda_wrenn",
+    "name": "Harbormaster Yselda Wrenn",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/yselda_wrenn.html",
+    "visibility": "player",
+    "related": [
+      "harbormasters_post",
+      "harbor_watch",
+      "the_breaking_deal_mystery"
+    ],
+    "tags": [
+      "port-calder",
+      "harbormaster"
+    ]
+  },
+  {
+    "id": "corwin_hask",
+    "name": "Outfitter Corwin Hask",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/corwin_hask.html",
+    "visibility": "player",
+    "related": [
+      "dive_outfitters_row",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "port-calder",
+      "merchant"
+    ]
+  },
+  {
+    "id": "nell_sarkin",
+    "name": "Appraiser Nell Sarkin",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/nell_sarkin.html",
+    "visibility": "player",
+    "related": [
+      "market_quarter",
+      "salvage_concordat",
+      "the_brined_anchor"
+    ],
+    "tags": [
+      "port-calder",
+      "merchant"
+    ]
+  },
+  {
+    "id": "ysbel_corvane",
+    "name": "Chaplain Ysbel Corvane",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/ysbel_corvane.html",
+    "visibility": "player",
+    "related": [
+      "the_tideward_chapel"
+    ],
+    "tags": [
+      "port-calder",
+      "healer"
+    ]
+  },
+  {
+    "id": "rees_holt",
+    "name": "Scout Rees Holt",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/rees_holt.html",
+    "visibility": "player",
+    "related": [
+      "ashgate_wardhouse",
+      "harbor_watch",
+      "tam_ostler",
+      "warden_husk",
+      "salt_below_campaign_overview"
+    ],
+    "tags": [
+      "harbor-watch",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "amos_kell",
+    "name": "Brother Amos Kell",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/amos_kell.html",
+    "visibility": "player",
+    "related": [
+      "vantmoor_hall",
+      "drowned_choir",
+      "isolt_vane"
+    ],
+    "tags": [
+      "drowned-choir",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "ness_thatchford",
+    "name": "Ness Thatchford",
+    "type": "npc",
+    "category": "The Loom Quarter",
+    "contentType": "html",
+    "contentFile": "content/npcs/ness_thatchford.html",
+    "visibility": "player",
+    "related": [
+      "the_loom_quarter",
+      "freedivers"
+    ],
+    "tags": [
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "dessa_wrack",
+    "name": "Corporal Dessa Wrack",
+    "type": "npc",
+    "category": "Harbor Watch",
+    "contentType": "html",
+    "contentFile": "content/npcs/dessa_wrack.html",
+    "visibility": "player",
+    "related": [
+      "wraithlock_gate",
+      "harbor_watch",
+      "ashgate_wardhouse",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "harbor-watch",
+      "drowned-districts"
+    ]
+  },
+  {
+    "id": "gable_tarn",
+    "name": "Foreman Gable Tarn",
+    "type": "npc",
+    "category": "Millrace Deep",
+    "contentType": "html",
+    "contentFile": "content/npcs/gable_tarn.html",
+    "visibility": "player",
+    "related": [
+      "millrace_deep",
+      "freedivers",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "pol_ferrick",
+    "name": "Pol Ferrick",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/pol_ferrick.html",
+    "visibility": "player",
+    "related": [
+      "the_long_docks",
+      "drowned_choir",
+      "salvage_concordat",
+      "deacon_rill"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
+    ]
+  },
+  {
+    "id": "rosalind_vey",
+    "name": "Rosalind Vey",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/rosalind_vey.html",
+    "visibility": "player",
+    "related": [
+      "shellhome_ward",
+      "drowned_choir"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
+    ]
+  },
+  {
+    "id": "ilsa_cray",
+    "name": "Ilsa Cray",
+    "type": "npc",
+    "category": "Port Calder",
+    "contentType": "html",
+    "contentFile": "content/npcs/ilsa_cray.html",
+    "visibility": "player",
+    "related": [
+      "tidewrack_ward",
+      "salvage_concordat",
+      "coraline_bray"
+    ],
+    "tags": [
+      "port-calder",
+      "civilian"
+    ]
+  },
+  {
+    "id": "dovan_kesk",
+    "name": "Inspector Dovan Kesk",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/dovan_kesk.html",
+    "visibility": "player",
+    "related": [
+      "calder_harbor",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "concordat",
+      "port-calder",
+      "gatekeeper"
+    ]
+  },
+  {
+    "id": "corin_draw",
+    "name": "Corin Draw",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/corin_draw.html",
+    "visibility": "player",
+    "related": [
+      "the_suitors_approach",
+      "drowned_choir",
+      "vantmoor_hall"
+    ],
+    "tags": [
+      "drowned-choir",
+      "drowned-districts",
+      "civilian"
+    ]
+  },
+  {
+    "id": "petra_wexler",
+    "name": "Petra Wexler",
+    "type": "npc",
+    "category": "Salvage Concordat",
+    "contentType": "html",
+    "contentFile": "content/npcs/petra_wexler.html",
+    "visibility": "player",
+    "related": [
+      "the_kettle",
+      "salvage_concordat"
+    ],
+    "tags": [
+      "concordat",
+      "clerk",
+      "foreshadowing"
+    ]
+  },
+  {
+    "id": "bram_coswick",
+    "name": "Bram Coswick",
+    "type": "npc",
+    "category": "The Freedivers",
+    "contentType": "html",
+    "contentFile": "content/npcs/bram_coswick.html",
+    "visibility": "player",
+    "related": [
+      "widows_combs",
+      "freedivers"
+    ],
+    "tags": [
+      "freedivers",
+      "veteran",
+      "quest-giver"
+    ]
+  },
+  {
+    "id": "sera_vondt",
+    "name": "Sera Vondt",
+    "type": "npc",
+    "category": "The Drowned Choir",
+    "contentType": "html",
+    "contentFile": "content/npcs/sera_vondt.html",
+    "visibility": "player",
+    "related": [
+      "the_chime_shoal",
+      "drowned_choir"
+    ],
+    "tags": [
+      "drowned-choir",
+      "civilian"
+    ]
+  }
+]
