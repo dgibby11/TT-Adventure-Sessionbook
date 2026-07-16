@@ -179,5 +179,38 @@
     "visibility": "player",
     "related": ["rangers", "druids", "high_forest", "druids_grove"],
     "tags": ["elk", "herd", "seasonal", "campus", "autumn", "migratory", "grove-spirit"]
+  },
+  {
+    "id": "earth_elemental",
+    "name": "Earth Elemental",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/creatures/earth_elemental.html",
+    "visibility": "dm-only",
+    "related": ["nether_mountains", "oswald_crumb", "session_5", "dust_mephit"],
+    "tags": ["elemental", "dm-only", "nether-mountains", "session-5", "boss", "CR-5"]
+  },
+  {
+    "id": "dust_mephit",
+    "name": "Dust Mephit",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/creatures/dust_mephit.html",
+    "visibility": "dm-only",
+    "related": ["nether_mountains", "earth_elemental", "session_5"],
+    "tags": ["elemental", "mephit", "dm-only", "nether-mountains", "session-5", "swarm", "CR-1/2"]
+  },
+  {
+    "id": "mud_mephit",
+    "name": "Mud Mephit",
+    "type": "creature",
+    "category": "Wilderness Threats",
+    "contentType": "html",
+    "contentFile": "content/creatures/mud_mephit.html",
+    "visibility": "dm-only",
+    "related": ["nether_mountains", "session_5"],
+    "tags": ["elemental", "mephit", "dm-only", "nether-mountains", "session-5", "reserve-encounter", "CR-1/4"]
   }
 ]

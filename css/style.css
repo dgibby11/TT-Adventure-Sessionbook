@@ -2745,6 +2745,22 @@ dl.spell-stats dd { margin: 0; }
 .monsters-th-sortable[data-sort="asc"]::after  { content: '↑'; opacity: 1; }
 .monsters-th-sortable[data-sort="desc"]::after { content: '↓'; opacity: 1; }
 
+/* Widen/heighten the resource modal only while a monster stat block is open,
+   so long stat blocks need less scrolling. Scoped to this one state — the
+   monster list, and the Spells/Gods tabs, keep the default #resource-modal size.
+   Uses a fixed height (not just max-height): the modal has no explicit height
+   normally, so it auto-sizes to its content — and #monster-detail-panel is
+   position:absolute (out of flow), so it can't grow the modal on its own. If a
+   search had filtered the underlying (still-in-DOM, just visually covered)
+   monster list down to a few rows first, an auto-height modal would stay
+   collapsed to that short list's size even with a full stat block open. A
+   fixed height sidesteps that regardless of what the hidden list looks like. */
+#resource-modal.monster-detail-open {
+  width: 1150px;
+  height: 94vh;
+  max-height: 94vh;
+}
+
 /* Monster stat block detail panel — overlays the resource modal body */
 #monster-detail-panel {
   position: absolute;

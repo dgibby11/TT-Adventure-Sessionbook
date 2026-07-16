@@ -504,7 +504,7 @@
     "contentType": "html",
     "contentFile": "content/locations/nether_mountains.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "thornwick_consortium", "silverymoon", "river_rauvin", "orc_warband", "mountain_base"],
+    "related": ["oswald_crumb", "thornwick_consortium", "silverymoon", "river_rauvin", "orc_warband", "mountain_base", "earth_elemental", "dust_mephit", "mud_mephit"],
     "tags": ["remote", "mountains", "expedition", "mining", "cold", "dangerous"],
     "environment": {
       "architecture": "A decommissioned excavation site at high altitude — dig frames from previous seasons still standing, partially collapsed. A stone equipment cache that hasn't been restocked in two seasons. Above the dig site, exposed granite ridges and loose scree fields.",

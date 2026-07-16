@@ -52,7 +52,7 @@
     "contentFile": "content/sessions/session_5.html",
     "visibility": "dm-only",
     "startLocation": "main_complex",
-    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club"],
+    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club", "earth_elemental", "dust_mephit", "mud_mephit"],
     "tags": ["session", "planning", "dm-only", "mountains", "crumb", "elemental", "thornwick", "expedition"]
   },
   {

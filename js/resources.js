@@ -40,7 +40,7 @@
   });
 
   // ── Resource modal ─────────────────────────────────────────────────────────
-  let overlay, titleEl, searchInput, classFilter, countEl, bodyEl, searchRow;
+  let overlay, modalEl, titleEl, searchInput, classFilter, countEl, bodyEl, searchRow;
   let currentResource = null;
   let filterTimer     = null;
   let dynamicFilters  = {}; // extra filter elements added per-resource, keyed by name
@@ -76,6 +76,7 @@
       </div>`;
     document.body.appendChild(overlay);
 
+    modalEl     = overlay.querySelector('#resource-modal');
     titleEl     = overlay.querySelector('#resource-modal-title');
     searchInput = overlay.querySelector('#resource-search-input');
     classFilter = overlay.querySelector('#resource-class-filter');
@@ -132,6 +133,7 @@
     Object.values(dynamicFilters).forEach((el) => el.remove());
     dynamicFilters = {};
     detailPanel = null;
+    modalEl.classList.remove('monster-detail-open');
 
     if (resource === 'monsters') {
       loadMonsters();
@@ -702,6 +704,7 @@
     if (!detailPanel) return;
     pendingDetailIdx = idx; // track most recent click for when full data arrives
     detailPanel.hidden = false;
+    modalEl.classList.add('monster-detail-open');
     const body = detailPanel.querySelector('#monster-detail-body');
     if (!body) return;
 
@@ -744,6 +747,7 @@
   }
 
   function closeMonsterDetail() {
+    modalEl.classList.remove('monster-detail-open');
     if (detailPanel) {
       detailPanel.hidden = true;
       detailPanel.scrollTop = 0;

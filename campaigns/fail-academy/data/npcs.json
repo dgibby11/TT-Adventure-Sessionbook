@@ -151,7 +151,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
-    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex"],
+    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
   },
   {
