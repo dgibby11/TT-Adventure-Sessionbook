@@ -124,6 +124,10 @@
     toggleBtn.textContent = on ? "◆ DM View" : "◯ Player View";
     toggleBtn.classList.toggle("dm-active", on);
     toggleBtn.setAttribute("aria-pressed", String(on));
+    const qnpc = document.getElementById('quick-npc-wrap');
+    const gen  = document.getElementById('generator-btn');
+    if (qnpc) qnpc.hidden = !on;
+    if (gen)  gen.hidden  = !on;
   }
 
   function wire() {

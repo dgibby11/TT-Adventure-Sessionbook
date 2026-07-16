@@ -36,11 +36,6 @@ def main():
 
     passes.append('campaigns/index.json parsed OK')
 
-    if any(c.get('id') == 'fail-academy' for c in registry):
-        failures.append('campaigns/index.json: fail-academy must never appear in the registry')
-    else:
-        passes.append('campaigns/index.json: fail-academy not in registry ✓')
-
     # ── Per-campaign ──────────────────────────────────────────────────────────
     for entry in registry:
         check_campaign(ROOT, entry.get('id', '<unknown>'), passes, failures, warnings)

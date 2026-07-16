@@ -7,7 +7,7 @@
 //          column sorting (gods) + result count.
 
 (function () {
-  const LABELS = { spells: 'Spells', gods: 'Gods' };
+  const LABELS = { spells: 'Spells', gods: 'Gods', monsters: 'Monsters' };
 
   const wrap = document.getElementById('resources-wrap');
   const btn  = document.getElementById('resources-btn');
@@ -45,7 +45,14 @@
   let filterTimer     = null;
   let dynamicFilters  = {}; // extra filter elements added per-resource, keyed by name
   let godsSort        = { col: -1, dir: 1 };
-  const cache         = {};
+  let monstersSort    = { col:  0, dir: 1 }; // default: Name asc
+  const cache           = {};
+  let monsterIndex      = [];   // lightweight list data (name/type/cr/source)
+  let allMonsters       = null; // full stat block data, null until first detail click
+  let monstersLoaded    = false;
+  let monstersFullLoading = false;
+  let pendingDetailIdx  = -1;
+  let detailPanel       = null;
 
   function build() {
     overlay = document.createElement('div');
@@ -96,7 +103,10 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && overlay && !overlay.hidden) {
       e.stopImmediatePropagation();
-      closeModal();
+      const lb = document.getElementById('monster-token-lightbox');
+      if (lb && !lb.hidden)               { lb.hidden = true; }
+      else if (detailPanel && !detailPanel.hidden) { closeMonsterDetail(); }
+      else { closeModal(); }
     }
   }, true);
 
@@ -115,11 +125,18 @@
     classFilter.hidden   = true;
     classFilter.innerHTML = '';
     countEl.textContent  = '';
-    godsSort = { col: -1, dir: 1 };
+    godsSort     = { col: -1, dir: 1 };
+    monstersSort = { col:  0, dir: 1 };
 
     // Remove any per-resource dynamic filters from previous open
     Object.values(dynamicFilters).forEach((el) => el.remove());
     dynamicFilters = {};
+    detailPanel = null;
+
+    if (resource === 'monsters') {
+      loadMonsters();
+      return;
+    }
 
     if (cache[resource]) {
       bodyEl.innerHTML = cache[resource];
@@ -161,6 +178,10 @@
       searchInput.placeholder = 'Search…';
       buildGodsFilters();
       buildGodsSort();
+    } else if (resource === 'monsters') {
+      searchInput.placeholder = 'Search by name…';
+      buildMonsterFilters();
+      buildMonstersSort();
     }
     searchInput.focus();
   }
@@ -362,6 +383,13 @@
       const alignVal  = dynamicFilters.alignment ? dynamicFilters.alignment.value : '';
       const domainVal = dynamicFilters.domain    ? dynamicFilters.domain.value    : '';
       filterGods(query, alignVal, domainVal);
+    } else if (currentResource === 'monsters') {
+      const typeVal = dynamicFilters.monType ? dynamicFilters.monType.value : '';
+      const sizeVal = dynamicFilters.monSize ? dynamicFilters.monSize.value : '';
+      const crFrom  = dynamicFilters.crFrom  ? dynamicFilters.crFrom.value  : '';
+      const crTo    = dynamicFilters.crTo    ? dynamicFilters.crTo.value    : '';
+      const srcVal  = dynamicFilters.monSrc  ? dynamicFilters.monSrc.value  : '';
+      filterMonsters(query, typeVal, sizeVal, crFrom, crTo, srcVal);
     }
   }
 
@@ -436,6 +464,312 @@
       if (dt.textContent.trim() === fieldName) return (dt.nextElementSibling?.textContent || '').trim();
     }
     return '';
+  }
+
+  // ── Monster resource (shared data — not campaign-specific) ───────────────
+
+  const MONSTER_ADVENTURE_SOURCES = new Set(['cos', 'lmop', 'dip', 'bgdia', 'pabtso']);
+
+  function monCrDisplay(cr) {
+    if (cr === undefined || cr === null) return '–';
+    return typeof cr === 'object' ? (cr.cr || '–') : cr;
+  }
+
+  function monCrNumeric(cr) {
+    const s = (typeof cr === 'object' ? cr.cr : cr) || '0';
+    if (s === '1/8') return 0.125;
+    if (s === '1/4') return 0.25;
+    if (s === '1/2') return 0.5;
+    const n = parseFloat(s);
+    return isNaN(n) ? -1 : n;
+  }
+
+  function monTypeDisplay(type) {
+    if (!type) return '';
+    if (typeof type === 'string') return type.split('/').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('/');
+    if (type.swarmSize) return 'Swarm';
+    if (Array.isArray(type.choose)) return type.choose.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('/');
+    return monTypeDisplay(type.type || '');
+  }
+
+  // Phase 1: fetch lightweight index (~122 KB) → render list immediately.
+  // Phase 2: fetch full stat blocks (6 MB) on first detail click, cached.
+  function loadMonsters() {
+    if (monstersLoaded) {
+      buildMonsterList();
+      afterLoad('monsters');
+      return;
+    }
+    bodyEl.innerHTML = '<p class="resource-status">Loading monsters…</p>';
+    bodyEl.scrollTop = 0;
+    fetch('shared/data/monsters-index.json')
+      .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then((data) => {
+        monsterIndex   = data;
+        monstersLoaded = true;
+        if (!overlay.hidden && currentResource === 'monsters') {
+          buildMonsterList();
+          afterLoad('monsters');
+        }
+      })
+      .catch((err) => {
+        bodyEl.innerHTML = `<p class="resource-status resource-error">Could not load monsters.<br><small>${err}</small></p>`;
+        console.error('[resources] monsters index load failed:', err);
+      });
+  }
+
+  function buildMonsterList() {
+    const rows = monsterIndex.map((m, idx) => {
+      const cr   = monCrDisplay(m.cr);
+      const type = monTypeDisplay(m.type);
+      const size = monSizeDisplay(m.size);
+      return `<tr data-midx="${idx}"><td>${m.name}</td><td class="mn-cr">${cr}</td><td class="mn-type">${type}</td><td class="mn-size">${size}</td><td class="mn-src">${m.source}</td></tr>`;
+    }).join('');
+
+    bodyEl.innerHTML = `
+      <table class="monsters-table">
+        <thead><tr><th>Name</th><th>CR</th><th>Type</th><th>Size</th><th>Source</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+
+    bodyEl.querySelector('.monsters-table tbody').addEventListener('click', (e) => {
+      const tr = e.target.closest('tr');
+      if (!tr) return;
+      openMonsterDetail(parseInt(tr.dataset.midx, 10));
+    });
+
+    detailPanel = document.createElement('div');
+    detailPanel.id = 'monster-detail-panel';
+    detailPanel.hidden = true;
+    detailPanel.innerHTML = `<button class="monster-detail-back" type="button">← Monsters</button><div id="monster-detail-body"></div>`;
+    detailPanel.querySelector('.monster-detail-back').addEventListener('click', closeMonsterDetail);
+    bodyEl.appendChild(detailPanel);
+  }
+
+  const CR_VALUES = ['0','1/8','1/4','1/2','1','2','3','4','5','6','7','8','9','10',
+    '11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'];
+
+  const SIZE_OPTIONS = [['T','Tiny'],['S','Small'],['M','Medium'],['L','Large'],['H','Huge'],['G','Gargantuan']];
+  const SIZE_MAP     = Object.fromEntries(SIZE_OPTIONS);
+  const SIZE_RANK    = {T:0,S:1,M:2,L:3,H:4,G:5};
+
+  function monSizeDisplay(size) {
+    if (!size) return '';
+    return size.split('').map(c => SIZE_MAP[c] || c).join('/');
+  }
+
+  function buildMonsterFilters() {
+    // CR range: two selects with a dash separator, wrapped so they remove together
+    const crWrap = document.createElement('span');
+    crWrap.className = 'cr-range-wrap';
+
+    const crFromSel = document.createElement('select');
+    crFromSel.className = 'resource-extra-filter';
+    crFromSel.setAttribute('aria-label', 'CR minimum');
+    crFromSel.innerHTML = '<option value="">CR min</option>' +
+      CR_VALUES.map(v => `<option value="${v}">${v}</option>`).join('');
+
+    const crDash = document.createElement('span');
+    crDash.className = 'cr-range-dash';
+    crDash.textContent = '–';
+
+    const crToSel = document.createElement('select');
+    crToSel.className = 'resource-extra-filter';
+    crToSel.setAttribute('aria-label', 'CR maximum');
+    crToSel.innerHTML = '<option value="">CR max</option>' +
+      CR_VALUES.map(v => `<option value="${v}">${v}</option>`).join('');
+
+    crFromSel.addEventListener('change', () => {
+      const fNum = crFromSel.value ? monCrNumeric(crFromSel.value) : -Infinity;
+      const tNum = crToSel.value   ? monCrNumeric(crToSel.value)   :  Infinity;
+      if (fNum > tNum) crToSel.value = '';
+      applyFilter();
+    });
+    crToSel.addEventListener('change', () => {
+      const fNum = crFromSel.value ? monCrNumeric(crFromSel.value) : -Infinity;
+      const tNum = crToSel.value   ? monCrNumeric(crToSel.value)   :  Infinity;
+      if (fNum > tNum) crFromSel.value = '';
+      applyFilter();
+    });
+
+    crWrap.appendChild(crFromSel);
+    crWrap.appendChild(crDash);
+    crWrap.appendChild(crToSel);
+    searchRow.appendChild(crWrap);
+    dynamicFilters.crWrap = crWrap;
+    dynamicFilters.crFrom = crFromSel;
+    dynamicFilters.crTo   = crToSel;
+
+    const types = new Set();
+    monsterIndex.forEach((m) => { const t = monTypeDisplay(m.type); if (t) types.add(t); });
+    const typeSel = makeSelect('All types', [...types].sort());
+    typeSel.setAttribute('aria-label', 'Filter by monster type');
+    typeSel.addEventListener('change', applyFilter);
+    searchRow.appendChild(typeSel);
+    dynamicFilters.monType = typeSel;
+
+    const sizeSel = document.createElement('select');
+    sizeSel.className = 'resource-extra-filter';
+    sizeSel.setAttribute('aria-label', 'Filter by size');
+    sizeSel.innerHTML = '<option value="">All sizes</option>' +
+      SIZE_OPTIONS.map(([code, label]) => `<option value="${code}">${label}</option>`).join('');
+    sizeSel.addEventListener('change', applyFilter);
+    searchRow.appendChild(sizeSel);
+    dynamicFilters.monSize = sizeSel;
+
+    const srcSel = makeSelect('All sources', ['Core Books', 'Adventures']);
+    srcSel.setAttribute('aria-label', 'Filter by source type');
+    srcSel.addEventListener('change', applyFilter);
+    searchRow.appendChild(srcSel);
+    dynamicFilters.monSrc = srcSel;
+  }
+
+  function buildMonstersSort() {
+    bodyEl.querySelectorAll('.monsters-table th').forEach((th, i) => {
+      th.classList.add('monsters-th-sortable');
+      if (i === monstersSort.col) th.setAttribute('data-sort', monstersSort.dir === 1 ? 'asc' : 'desc');
+      th.addEventListener('click', () => sortMonstersBy(i));
+    });
+  }
+
+  function sortMonstersBy(colIndex) {
+    monstersSort.dir = (monstersSort.col === colIndex) ? monstersSort.dir * -1 : 1;
+    monstersSort.col = colIndex;
+
+    const tbody = bodyEl.querySelector('.monsters-table tbody');
+    if (!tbody) return;
+    const rows = [...tbody.querySelectorAll('tr')];
+
+    rows.sort((a, b) => {
+      const am = monsterIndex[parseInt(a.dataset.midx, 10)];
+      const bm = monsterIndex[parseInt(b.dataset.midx, 10)];
+      let cmp = 0;
+      switch (colIndex) {
+        case 0: cmp = am.name.localeCompare(bm.name); break;
+        case 1: cmp = monCrNumeric(am.cr) - monCrNumeric(bm.cr); break;
+        case 2: cmp = monTypeDisplay(am.type).localeCompare(monTypeDisplay(bm.type)); break;
+        case 3: cmp = (SIZE_RANK[am.size?.[0]] ?? 99) - (SIZE_RANK[bm.size?.[0]] ?? 99); break;
+        case 4: cmp = am.source.localeCompare(bm.source); break;
+      }
+      return cmp * monstersSort.dir;
+    });
+
+    rows.forEach((r) => tbody.appendChild(r));
+
+    bodyEl.querySelectorAll('.monsters-table th').forEach((th, i) => {
+      th.removeAttribute('data-sort');
+      if (i === colIndex) th.setAttribute('data-sort', monstersSort.dir === 1 ? 'asc' : 'desc');
+    });
+
+    applyFilter();
+  }
+
+  function safeMonsterFilename(name) {
+    return name.replace(/[\\/:*?"<>|]/g, '_');
+  }
+
+  function openTokenLightbox(src, name) {
+    let lb = document.getElementById('monster-token-lightbox');
+    if (!lb) {
+      lb = document.createElement('div');
+      lb.id = 'monster-token-lightbox';
+      lb.hidden = true;
+      lb.innerHTML = '<img alt="">';
+      lb.addEventListener('click', () => { lb.hidden = true; });
+      document.body.appendChild(lb);
+    }
+    lb.querySelector('img').src = src;
+    lb.querySelector('img').alt = name;
+    lb.hidden = false;
+  }
+
+  function renderMonsterStatBlock(m, bodyEl) {
+    bodyEl.innerHTML = window.MonsterRenderer.buildStatBlock(m);
+    // Token image: floated right inside the stat block; removed silently if not found locally
+    const sbInner = bodyEl.querySelector('.sb-inner');
+    if (sbInner) {
+      const img = document.createElement('img');
+      img.className = 'monster-token-img';
+      img.alt = m.name;
+      img.src = `shared/img/monsters/${m.source}/${safeMonsterFilename(m.name)}.webp`;
+      img.onerror = () => img.remove();
+      img.addEventListener('click', (e) => { e.stopPropagation(); openTokenLightbox(img.src, m.name); });
+      sbInner.insertBefore(img, sbInner.firstChild);
+    }
+  }
+
+  function openMonsterDetail(idx) {
+    if (!detailPanel) return;
+    pendingDetailIdx = idx; // track most recent click for when full data arrives
+    detailPanel.hidden = false;
+    const body = detailPanel.querySelector('#monster-detail-body');
+    if (!body) return;
+
+    if (allMonsters) {
+      const m = allMonsters[idx];
+      if (m && window.MonsterRenderer) {
+        renderMonsterStatBlock(m, body);
+        detailPanel.scrollTop = 0; // after DOM write to avoid forced reflow
+      }
+      return;
+    }
+
+    body.innerHTML = '<p class="resource-status" style="padding:1.5rem;text-align:center">Loading stat block…</p>';
+    detailPanel.scrollTop = 0;
+    if (monstersFullLoading) return; // fetch already in flight; will render via pendingDetailIdx
+
+    monstersFullLoading = true;
+    fetch('shared/data/monsters-raw.json')
+      .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then((data) => {
+        allMonsters = data;
+        monstersFullLoading = false;
+        if (detailPanel && !detailPanel.hidden && window.MonsterRenderer) {
+          const m = allMonsters[pendingDetailIdx];
+          const liveBody = detailPanel.querySelector('#monster-detail-body');
+          if (m && liveBody) {
+            renderMonsterStatBlock(m, liveBody);
+            detailPanel.scrollTop = 0;
+          }
+        }
+      })
+      .catch((err) => {
+        monstersFullLoading = false;
+        if (detailPanel && !detailPanel.hidden) {
+          const liveBody = detailPanel.querySelector('#monster-detail-body');
+          if (liveBody) liveBody.innerHTML = `<p class="resource-status resource-error">Could not load stat block.<br><small>${err}</small></p>`;
+        }
+        console.error('[resources] monsters full load failed:', err);
+      });
+  }
+
+  function closeMonsterDetail() {
+    if (detailPanel) {
+      detailPanel.hidden = true;
+      detailPanel.scrollTop = 0;
+    }
+  }
+
+  function filterMonsters(query, typeVal, sizeVal, crFrom, crTo, srcVal) {
+    let total = 0, visible = 0;
+    const fromNum = crFrom ? monCrNumeric(crFrom) : -Infinity;
+    const toNum   = crTo   ? monCrNumeric(crTo)   :  Infinity;
+    bodyEl.querySelectorAll('.monsters-table tbody tr').forEach((tr) => {
+      total++;
+      const m         = monsterIndex[parseInt(tr.dataset.midx, 10)];
+      const nameMatch = !query   || m.name.toLowerCase().includes(query);
+      const typeMatch = !typeVal || monTypeDisplay(m.type) === typeVal;
+      const sizeMatch = !sizeVal || (m.size || '').includes(sizeVal);
+      const crNum     = monCrNumeric(m.cr);
+      const crMatch   = crNum >= fromNum && crNum <= toNum;
+      const isAdv     = MONSTER_ADVENTURE_SOURCES.has((m.source || '').toLowerCase());
+      const srcMatch  = !srcVal  || (srcVal === 'Adventures' ? isAdv : !isAdv);
+      const show = nameMatch && typeMatch && sizeMatch && crMatch && srcMatch;
+      tr.hidden = !show;
+      if (show) visible++;
+    });
+    const active = query || typeVal || sizeVal || crFrom || crTo || srcVal;
+    countEl.textContent = active ? `${visible} of ${total} monsters` : '';
   }
 
   window.openResourceModal = openResourceModal;

@@ -54,5 +54,49 @@
     "startLocation": "main_complex",
     "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club"],
     "tags": ["session", "planning", "dm-only", "mountains", "crumb", "elemental", "thornwick", "expedition"]
+  },
+  {
+    "id": "session_6",
+    "name": "Session 6 — The Society's Claim",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_6.html",
+    "visibility": "dm-only",
+    "related": ["secret_society", "ninth_thesis", "founders_statue", "occult_systems"],
+    "tags": ["session", "planning", "stub", "dm-only", "secret-society", "ninth-thesis", "seed"]
+  },
+  {
+    "id": "session_7",
+    "name": "Session 7 — Supply Lines",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_7.html",
+    "visibility": "dm-only",
+    "related": ["thornwick_consortium", "oswald_crumb", "teleportation_network", "nether_mountains"],
+    "tags": ["session", "planning", "stub", "dm-only", "thornwick", "supply-chain", "seed"]
+  },
+  {
+    "id": "session_8",
+    "name": "Session 8 — Last Trial",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_8.html",
+    "visibility": "dm-only",
+    "related": ["thornwick_consortium", "founders_statue", "secret_society"],
+    "tags": ["session", "planning", "stub", "dm-only", "expedition", "evidence", "seed"]
+  },
+  {
+    "id": "session_9",
+    "name": "Session 9 — Commencement",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_9.html",
+    "visibility": "dm-only",
+    "related": ["thornwick_consortium", "party_overview"],
+    "tags": ["session", "planning", "stub", "dm-only", "graduation", "commencement", "hook"]
   }
 ]

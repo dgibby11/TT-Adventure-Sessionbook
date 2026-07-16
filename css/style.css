@@ -1756,6 +1756,7 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   padding: 0.9rem 1.4rem 1.5rem;
   font-size: 0.88rem;
   line-height: 1.55;
+  position: relative;
 }
 #resource-modal-body::-webkit-scrollbar-thumb { background: var(--paper-edge); }
 
@@ -2703,3 +2704,160 @@ dl.spell-stats dd { margin: 0; }
 .stat-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-bottom: 0.6rem; }
 .stat-table th { background: var(--panel); color: var(--muted); font-family: var(--display); font-size: 0.67rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.5rem; border: 1px solid var(--line-soft); }
 .stat-table td { padding: 0.25rem 0.5rem; border: 1px solid var(--line-soft); text-align: center; }
+
+/* ═══════════════════════════════════════════════════ MONSTERS RESOURCE */
+
+/* Monster list table */
+.monsters-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.monsters-table thead th {
+  background: var(--panel);
+  color: var(--muted);
+  font-family: var(--display);
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.monsters-table tbody tr { cursor: pointer; border-bottom: 1px solid var(--line-soft); transition: background 0.1s; }
+.monsters-table tbody tr:hover { background: var(--panel-2); }
+.monsters-table tbody tr:hover td:first-child,
+.monsters-table tbody tr:hover .mn-type,
+.monsters-table tbody tr:hover .mn-size,
+.monsters-table tbody tr:hover .mn-src  { color: var(--ink); }
+.monsters-table tbody tr:hover .mn-cr   { color: #e8909a; }
+.monsters-table tbody tr[hidden] { display: none; }
+.monsters-table td { padding: 0.28rem 0.5rem; vertical-align: middle; }
+.cr-range-wrap { display: inline-flex; align-items: center; gap: 0.2rem; flex: 0 0 auto; }
+.cr-range-dash { color: var(--muted); font-size: 0.8rem; user-select: none; }
+.mn-cr   { width: 3.5rem; text-align: center; font-weight: 600; color: var(--oxblood); }
+.mn-type { width: 9rem; color: var(--sepia-mut); }
+.mn-size { width: 7rem; color: var(--sepia-mut); }
+.mn-src  { width: 5rem; color: var(--sepia-mut); font-size: 0.75rem; }
+
+.monsters-th-sortable { cursor: pointer; }
+.monsters-th-sortable:hover { color: var(--sepia); }
+.monsters-th-sortable::after { content: ''; margin-left: 0.35rem; opacity: 0.35; }
+.monsters-th-sortable[data-sort="asc"]::after  { content: '↑'; opacity: 1; }
+.monsters-th-sortable[data-sort="desc"]::after { content: '↓'; opacity: 1; }
+
+/* Monster stat block detail panel — overlays the resource modal body */
+#monster-detail-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow-y: auto;
+  background: var(--paper, #f5ede0);
+  padding: 0.6rem 1.2rem 2rem;
+}
+#monster-detail-panel[hidden] { display: none; }
+
+.monster-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  color: var(--oxblood);
+  font-family: var(--display);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.3rem 0 0.6rem;
+  opacity: 0.75;
+}
+.monster-detail-back:hover { opacity: 1; }
+
+.monster-token-img {
+  float: right;
+  margin: 0.1rem 0 0.6rem 1rem;
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.22);
+  cursor: zoom-in;
+}
+#monster-token-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0,0,0,0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#monster-token-lightbox[hidden] { display: none; }
+#monster-token-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+}
+
+/* ── D&D stat block card (parchment-style, self-contained light theme) ── */
+.stat-block {
+  background: #fdf1dc;
+  color: #1a1a1a;
+  max-width: 640px;
+  margin: 0 auto;
+  border: 1px solid #c8a96e;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  font-family: Georgia, 'Palatino Linotype', Palatino, serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  position: relative;
+}
+.stat-block::before, .stat-block::after {
+  content: '';
+  display: block;
+  height: 7px;
+  background: linear-gradient(to right, #8a1e0c, #c8390c, #8a1e0c);
+}
+.sb-inner { padding: 0.55rem 0.9rem 0.7rem; }
+.sb-name { font-size: 1.5rem; font-weight: bold; color: #58180d; line-height: 1.1; margin: 0; letter-spacing: 0.01em; }
+.sb-meta { font-size: 0.82rem; font-style: italic; color: #333; margin: 0.15rem 0 0.4rem; }
+.sb-rule { border: none; border-top: 1px solid #9c2512; margin: 0.45rem 0; }
+.sb-rule-heavy { border: none; border-top: 2px solid #9c2512; margin: 0.6rem 0; }
+.sb-basics p { margin: 0.1rem 0; font-size: 0.88rem; }
+.sb-basics .label { color: #58180d; font-weight: bold; }
+.sb-abilities {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  font-size: 0.82rem;
+  margin: 0.3rem 0;
+  gap: 0.1rem;
+}
+.sb-ability .score-label { font-weight: bold; color: #58180d; font-size: 0.7rem; text-transform: uppercase; display: block; }
+.sb-ability .score-val { display: block; }
+.sb-ability .score-mod { display: block; font-size: 0.78rem; }
+.sb-details p { margin: 0.12rem 0; font-size: 0.85rem; }
+.sb-details .label { color: #58180d; font-weight: bold; }
+.sb-cr-row { display: flex; justify-content: space-between; gap: 1rem; }
+.sb-section-title {
+  font-size: 1.05rem;
+  color: #58180d;
+  font-weight: bold;
+  margin: 0.55rem 0 0.2rem;
+  border-bottom: 1px solid #9c2512;
+  padding-bottom: 0.1rem;
+}
+p.sb-entry { margin: 0.3rem 0; font-size: 0.86rem; line-height: 1.5; }
+div.sb-entry { margin: 0.3rem 0; font-size: 0.86rem; line-height: 1.5; }
+.sb-entry-name { font-weight: bold; font-style: italic; }
+.sb-entry-name::after { content: '.'; }
+.sb-spell-list { margin: 0.15rem 0 0.15rem 1rem; padding: 0; list-style: none; font-size: 0.84rem; }
+.sb-spell-slot-label { color: #58180d; font-weight: bold; }
+.sb-legendary-intro { font-size: 0.85rem; margin: 0.3rem 0 0.45rem; font-style: italic; color: #333; }
+.sb-lore { background: #fdf8ef; border-top: 2px solid #9c2512; padding: 0.6rem 0.9rem 0.7rem; font-size: 0.84rem; line-height: 1.55; }
+.sb-lore p { margin: 0.35rem 0; }
+.sb-lore .lore-header { font-weight: bold; font-style: italic; display: block; margin-top: 0.5rem; color: #222; }
+.sb-source { font-size: 0.72rem; color: #888; text-align: right; margin-top: 0; padding: 0.2rem 0.9rem 0.4rem; background: #fdf1dc; border-top: 1px solid #e0c9a0; }
