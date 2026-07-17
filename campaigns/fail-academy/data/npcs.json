@@ -18,7 +18,7 @@
     "contentType": "html",
     "contentFile": "content/players/lugeiros_serise.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3"],
+    "related": ["session_1", "session_2", "session_3", "session_4", "session_5", "oswald_crumb"],
     "links": [
       { "label": "Lugeiros Serise — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157565841" }
     ],
@@ -32,7 +32,7 @@
     "contentType": "html",
     "contentFile": "content/players/gunnar.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3"],
+    "related": ["session_1", "session_2", "session_3", "session_4", "session_5"],
     "links": [
       { "label": "Gunnar — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157566207" }
     ],
@@ -46,7 +46,7 @@
     "contentType": "html",
     "contentFile": "content/players/caelum_rivenstone.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3", "bards"],
+    "related": ["session_1", "session_2", "session_3", "session_4", "session_5", "bards", "boots_of_elvenkind"],
     "links": [
       { "label": "Caelum Rivenstone — D&D Beyond", "url": "https://www.dndbeyond.com/characters/123583842" }
     ],
@@ -60,7 +60,7 @@
     "contentType": "html",
     "contentFile": "content/players/bloodraven.html",
     "visibility": "player",
-    "related": ["sunken_fang_spear", "session_1", "session_2", "session_3", "fighters"],
+    "related": ["sunken_fang_spear", "session_1", "session_2", "session_3", "session_4", "session_5", "fighters"],
     "links": [
       { "label": "BloodRaven — D&D Beyond", "url": "https://www.dndbeyond.com/characters/138257820" }
     ],
@@ -74,7 +74,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/silas_morne.html",
     "visibility": "player",
-    "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium"],
+    "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium", "session_5"],
     "tags": ["staff", "store", "provisions", "suspicious", "merchant"]
   },
   {
@@ -151,7 +151,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
-    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit"],
+    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "session_5"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
   },
   {

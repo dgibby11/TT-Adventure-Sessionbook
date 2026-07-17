@@ -298,7 +298,7 @@
     "contentType": "html",
     "contentFile": "content/locations/main_complex.html",
     "visibility": "player",
-    "related": ["headmistress_dowe", "old_library", "food_court", "academy_provisions", "torvald_thatch"],
+    "related": ["headmistress_dowe", "old_library", "food_court", "academy_provisions", "torvald_thatch", "oswald_crumb", "session_5"],
     "tags": ["administration", "tower", "faculty", "offices", "central"],
     "environment": {
       "architecture": "Central administrative tower flanked by two academic wings and a formal courtyard. Gothic stonework on the original sections; newer administrative additions in a more severe style that announces itself as more recent without meaning to.",
@@ -597,7 +597,7 @@
     "contentType": "html",
     "contentFile": "content/locations/academy_provisions.html",
     "visibility": "player",
-    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night"],
+    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night", "boots_of_elvenkind", "session_5"],
     "tags": ["store", "credits", "supplies", "provisions", "magic-items", "economy"],
     "environment": {
       "architecture": "A narrow shopfront inside the main complex ground floor. Shelves behind a counter, a locked cabinet on the back wall, and a ledger stand that Silas Morne faces away from customers with impressive consistency.",

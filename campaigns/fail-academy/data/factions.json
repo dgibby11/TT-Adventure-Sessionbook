@@ -50,9 +50,9 @@
     "category": "External Powers",
     "contentType": "html",
     "contentFile": "content/factions/thornwick_consortium.html",
-    "visibility": "dm-only",
-    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund"],
-    "tags": ["dm-only", "external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
+    "visibility": "player",
+    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "session_5"],
+    "tags": ["external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
   },
   {
     "id": "ninth_thesis",

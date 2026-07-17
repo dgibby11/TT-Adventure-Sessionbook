@@ -14,6 +14,20 @@
     "tags": ["magic-item", "shield", "cursed", "mountains", "undiscovered"]
   },
   {
+    "id": "boots_of_elvenkind",
+    "name": "Boots of Elvenkind",
+    "type": "item",
+    "category": "Special Acquisitions",
+    "contentType": "html",
+    "contentFile": "content/items/boots_of_elvenkind.html",
+    "visibility": "player",
+    "related": ["academy_provisions", "session_5"],
+    "links": [
+      { "label": "Boots of Elvenkind — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/91-boots-of-elvenkind" }
+    ],
+    "tags": ["magic-item", "store", "special-acquisition", "wondrous", "stealth", "pc-item"]
+  },
+  {
     "id": "sunken_fang_spear",
     "name": "Sunken Fang Spear",
     "type": "item",

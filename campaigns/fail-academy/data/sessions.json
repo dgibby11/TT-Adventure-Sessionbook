@@ -47,13 +47,13 @@
     "id": "session_5",
     "name": "Session 5 — The Nether Mountains Expedition",
     "type": "session",
-    "category": "Planning",
+    "category": "Completed",
     "contentType": "html",
     "contentFile": "content/sessions/session_5.html",
-    "visibility": "dm-only",
+    "visibility": "player",
     "startLocation": "main_complex",
-    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club", "earth_elemental", "dust_mephit", "mud_mephit"],
-    "tags": ["session", "planning", "dm-only", "mountains", "crumb", "elemental", "thornwick", "expedition"]
+    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club", "earth_elemental", "dust_mephit", "mud_mephit", "academy_provisions", "boots_of_elvenkind", "shield_of_missile_attraction", "silas_morne"],
+    "tags": ["session", "completed", "mountains", "crumb", "elemental", "thornwick", "expedition"]
   },
   {
     "id": "session_6",
