@@ -1,0 +1,53 @@
+{
+  "_note": "Planning doc — organization detail. NOT a live entity. Reframes/expands the existing 'ninth_thesis' and 'secret_society' faction entities in data/factions.json. See ../campaign_arc.json for the big picture.",
+  "name": "The Ninth Thesis",
+  "status": "draft",
+
+  "leader": {
+    "identity": "Dr. Ellery Voss (existing NPC — founder-descendant, already tagged independent/secretive)",
+    "role": "Runs the Ninth Thesis."
+  },
+
+  "purpose": "Exists to uncover hidden evils in the world. Presently actively investigating the source of the escalating incidents at the Academy.",
+
+  "name_origin": {
+    "description": "Named for the Academy's first graduating class, hundreds of years ago, which had nine members. Each of the nine was required to write a thesis about their time at the Academy and how they intended to fit into the world upon graduating.",
+    "the_missing_thesis": "One of the nine original theses went missing. The organization found it years ago (predating the current incident investigation) and adopted it as the basis for its existence."
+  },
+
+  "founding_document": {
+    "author": {
+      "name": "Wren Halloway",
+      "status": "One of the nine members of the Academy's first graduating class. Proposed — open to a different name if you'd rather.",
+      "background": "Not a star student — quiet, watchful, kept to herself more than her eight classmates. Where the others wrote their mandatory graduation theses as the expected declarations of glory (dragons to fight, kingdoms to serve), Halloway spent her four years noticing things: whispered conversations that stopped when she entered a room, professors who locked their doors twice, classmates who weren't who their letters of introduction said they were. Her thesis broke from the form entirely — instead of stating her intentions for the world, she wrote what she'd actually learned at the Academy. That break from convention is very likely why it was the one thesis quietly pulled from the record rather than filed with the other eight.",
+      "afterward": "What became of her after graduation is unrecorded — open/placeholder, not yet needed for the plot unless you want to use her later."
+    },
+    "excerpt": "We were asked to write of what we intend to become, and so all around me my classmates wrote of glory. I found I could not join them. In four years here I learned exactly one lesson worth keeping, and it is this: no one is without a secret, and no one is without a reason for it. Not the students who whispered in the dueling yard past curfew. Not the professors who locked their doors twice. Not, I think, the three who built this place and told us it was built for one purpose, when I have walked its halls long enough to feel it was built for another. I do not say this as an accusation. I say it because a secret, once it is understood for what it is, is a kind of power — and I intend to spend the rest of my life learning to recognize it, wherever it is kept.",
+    "excerpt_status": "Draft — yours to revise or approve as-is.",
+    "assessment": "On its own the thesis is a little too subtle/abstract to prove anything. Combined with other data points the organization has gathered since, it forms a convincing argument that there's a secret source of evil somewhere on campus.",
+    "veil_knowledge_boundary": "Halloway did not know about the veil specifically — she sensed only that the founders had an unstated deeper purpose. This matters for continuity: campaign_arc.json states the founders never passed along their veil knowledge to anyone. Aldric Voss founding the organization around her instinct (see below) doesn't contradict that — he gave the Ninth Thesis a mandate to watch for hidden danger, not the specific secret of the veil itself. That's consistent with the current Ninth Thesis (Ellery included) suspecting a single source behind the incidents without knowing what it actually is."
+  },
+
+  "relationship_to_secret_society": {
+    "decision": "CONFIRMED — The Ninth Thesis IS the existing Secret Society entity. Not a distinct-but-allied group; they're the same organization and the two data entities need to be smartly merged into one.",
+    "merge_plan_proposed": {
+      "surviving_id": "ninth_thesis (proposed) — it's already visibility:player and already tied to completed Session 2 canon, so the new PCs could plausibly have heard the name as campus legend. 'secret_society' would be retired/redirected into it.",
+      "mechanism": "Use the schema's existing dm-only-content-block convention: the entity stays visibility:player with the public-facing 'campus legend' framing at the top of its content, and the true nature (it's a real active organization, Voss leads it, what they actually know/do) goes in a <div class=\"dm-only\"> block inside the same file — rather than keeping a separate dm-only faction entity.",
+      "backlink_migration_needed": "secret_society is currently referenced in related[] by: aldric_voss, isolde_orath, brennan_ashcroft, headmistress_dowe, prof_bram_holdar (npcs.json); occult_systems (factions.json); underground_storage, founders_statue, old_library, and at least one more location (locations.json); hidden_knowledge, founders_charter, contraband_log (references.json). All of these need to point at ninth_thesis instead once merged.",
+      "status": "Plan drafted, not yet executed against live data. Who-founded-it is now decided (below), so the remaining gate is just: say the word and this gets executed as its own step, alongside the content pass that folds Halloway/Voss/the excerpt into the actual entity file."
+    }
+  },
+
+  "who_founded_it": {
+    "decision": "CONFIRMED — Option B. Aldric Voss (founder) quietly arranged for Wren Halloway's thesis to be pulled from the record and preserved rather than lost, and built the organization around it privately as a contingency alongside the Academy's official wards.",
+    "age": "Founded within the first several years of the Academy's ~350-year history (right after the first class graduated, while Voss was still active on campus) — roughly as old as the Academy itself, comfortably past the 200+ year minimum.",
+    "leadership_lineage": "The organization has been led by successive generations of the Voss family since Aldric founded it, with Dr. Ellery Voss the latest to run it. Exact line of succession between Aldric and Ellery (how many generations, any gaps or non-Voss interim leaders) is placeholder — not yet needed unless the plot calls for it.",
+    "tone_guardrail": "Write this as prudence, not manipulation — Voss didn't fabricate or alter anything, he preserved a true document that was about to be quietly discarded and let it speak for itself rather than issuing orders. Keeps this consistent with the founders-persona-rewrite decision (they were sincerely good; this is hedging, not conspiring)."
+  },
+
+  "relationship_to_phase1_voss_notes_clue": {
+    "decision": "CONFIRMED — the party finds Voss's notes, which are Ninth Thesis materials. Whether Voss left them findable by accident or on purpose is left ambiguous/intentional-leaning ('potentially at her intention') — this ties her to the organization and ties their investigation directly into the party's hook. Applied to phase1_something_is_happening.json."
+  },
+
+  "continuity_flag": "Feeds into the pending founders-persona audit noted in campaign_arc.json (secret_society's existing tags lean conspiratorial/sinister — needs reconciling with 'hunts hidden evil, currently allied with the party's goals' as part of the merge content pass)."
+}

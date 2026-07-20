@@ -1,0 +1,54 @@
+{
+  "_note": "Big-picture campaign design doc for the Session 0 reboot. NOT a live entity — not referenced in index.json, not loaded by the app. Working reference only until we break it down into actual entities/sessions.",
+  "title": "The Veil of Thanatos",
+  "status": "draft — big picture only, not yet broken into entities or sessions",
+
+  "premise": {
+    "the_veil": "F.A.I.L. Academy sits atop a thin veil separating the Material Plane from Thanatos, the 333rd layer of the Abyss, ruled by the demon prince Orcus.",
+    "founding_purpose": "The founders discovered the veil and built the Academy at this location specifically to maintain control over the weak point, for defensive purposes.",
+    "incidents": "Occasionally something leaks through the veil, causing localized 'incidents' at the Academy. For most of the Academy's history this has been rare and manageable.",
+    "founders_departure": "When the founders departed the Academy (each by different means), they did not pass along their knowledge of the veil. They believed the glyphs, wards, and other magical defenses they left behind would be sufficient on their own.",
+    "current_problem": "That confidence was partly misplaced. The veil has lately been stretching wider with each passing year, and the wards are no longer holding it as tightly as they once did."
+  },
+
+  "antagonist": {
+    "identity": "A student who graduated from the Academy several years ago (not yet named/detailed).",
+    "possession": "At some point they were possessed by something originating from Thanatos.",
+    "goal": "They left the Academy intending to grow their power enough to tear the veil open wide.",
+    "thornwick_connection": "They first encountered the Thornwick Arcane Consortium during a student expedition (which one is not yet specified — placeholder). After graduating, they approached Thornwick directly with the intent to subvert their former school by any means necessary.",
+    "operation": "They are the one responsible for the corrupting magical items being planted around campus (see phase1_something_is_happening.json's three incidents) — delivered via an unidentified 'inside person' on campus. See phase2_the_one_who_got_away.json for the insider brainstorm; not yet decided.",
+    "status": "At large; current whereabouts unknown to the party at campaign start.",
+    "phase_boundary_note": "Per instruction, none of this antagonist material appears in Phase 1 — the party doesn't learn about the former student until Phase 2. Phase 1 clues only establish that incidents are happening and that the veil exists."
+  },
+
+  "core_plot": "The players must discover what is happening to the veil and why, track down the possessed former student, and stop them before they gain enough power to return and tear the veil open.",
+
+  "phases": [
+    {
+      "phase": 1,
+      "name": "Something is Happening",
+      "goal": "The party learns that incidents at the Academy are escalating and begins to uncover why — the existence of the veil, its history, and its current instability."
+    },
+    {
+      "phase": 2,
+      "name": "The One Who Got Away",
+      "goal": "The party learns about the possessed former student and locates them."
+    },
+    {
+      "phase": 3,
+      "name": "Closing the Veil",
+      "goal": "The party stops the former student from gaining enough power to return and rip the veil open."
+    }
+  ],
+
+  "continuity_notes": {
+    "prior_lore": "Some lore from sessions 1-5 is being retained (the veil/founders concept is built on top of existing Academy history). Which specific prior threads/entities (e.g. the Secret Society, the Ninth Thesis, Occult Systems, the founders' individual dm-only lore) map onto this new picture is not yet decided — TBD in a later pass.",
+    "founders_persona_rewrite": {
+      "decision": "The same three founders already in the data (Aldric Voss, Isolde Orath, Brennan Ashcroft) are being kept as-is in identity, but their personas and relationships are being rewritten to fit the new plot: they were genuinely good people who believed that founding the Academy — concentrating a high density of powerful heroes, faculty, and students in one place — was the right way to build a defense against the veil and a potential evil incursion.",
+      "consequence": "Any existing lore about the founders (or things tied closely to them, e.g. the Secret Society, the Ninth Thesis, Occult Systems) that conflicts with this well-intentioned framing needs to be rewritten. Specific conflicts have not been catalogued yet — placeholder for a later audit pass of aldric_voss, isolde_orath, brennan_ashcroft, secret_society, ninth_thesis, occult_systems."
+    },
+    "the_ninth_thesis": "See the_ninth_thesis.json — Voss runs the Ninth Thesis, an organization hunting hidden evil in the world, now investigating the campus incidents. CONFIRMED: it IS the existing secret_society entity (to be merged into ninth_thesis); CONFIRMED: founded by Aldric Voss ~350 years ago around student Wren Halloway's suppressed graduation thesis, led by successive Voss descendants since. Merge not yet executed against live data.",
+    "sessions_6_9": "Removed per prior instruction; this arc supersedes them.",
+    "next_steps": "Not yet determined — awaiting further direction before drafting entities, hooks, or sessions."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_note": "Planning doc — Phase 2 detail. NOT a live entity. See ../campaign_arc.json for the big picture this breaks down from.",
+  "phase": 2,
+  "name": "The One Who Got Away",
+  "goal": "The party learns about the possessed former student and locates them.",
+  "details": {
+    "antagonist_operation": {
+      "thornwick_connection": "The former student first encountered the Thornwick Arcane Consortium (existing faction, already tied to completed Session 5) during a student expedition. Which expedition is not yet specified — placeholder.",
+      "after_graduating": "They approached Thornwick directly, intending to subvert their former school by any means necessary.",
+      "method": "They are the source of the corrupting magical items behind all three Phase 1 incidents (the catalog item, the tainted component pouch, the angry instrument) — supplied/arranged through Thornwick and delivered onto campus via an unidentified 'inside person.'",
+      "phase_boundary_note": "None of this belongs in Phase 1 — the party doesn't learn about the former student or the Thornwick connection until Phase 2. Phase 1 only establishes that incidents are happening and that the veil exists."
+    },
+    "the_insider": {
+      "decision": "CONFIRMED — Torvald Thatch (existing NPC, head groundskeeper/night watch). Not evil — an unwitting instrument, corrupted via a cursed ring given to him by the former student as a 'thank you' gift. Redeemable if the ring is removed. Full depth (backstory with the former student, how the ring works, what he knows, interrogation guidance, open removal-mechanism options) is in torvald_the_insider.json.",
+      "why_him": "Campus-wide unsupervised access (groundskeeper + night watch), no pre-existing 'suspicious' tag to spoil the reveal, and his established discretion/don't-report-it personality (see his existing content file) is exactly what the ring exploits — it doesn't fight his character, it wears it."
+    }
+  }
+}
