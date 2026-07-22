@@ -1,15 +1,17 @@
 {
   "_note": "Planning doc — depth pass on Torvald Thatch as the campus insider. NOT a live entity. Builds on his existing content/npcs/torvald_thatch.html (41-year groundskeeper/night-watch, half-orc, extremely discreet, keeps his own counsel, has a hidden journal, has quietly noticed people entering the Eastern Wing for decades without reporting it). See phase2_the_one_who_got_away.json and campaign_arc.json for the surrounding plot.",
 
+  "party_relationship": "As of the Session Zero reboot, the party are fifth-year students who've known Torvald for their whole time at the Academy — a familiar, trusted campus fixture, not a stranger they're investigating cold. The trust-challenge removal scene (see confirmed_decisions.redeemable) should draw on that standing rapport rather than building it from nothing.",
+
   "confirmed_decisions": {
-    "not_evil": "Torvald is not a willing villain. He's the instrument, not the author — he receives items from the former student and places them where 'asked,' without understanding what they actually are or do.",
-    "the_ring": "He wears a ring, a 'gift' from the former student for his years of service and stewardship of the campus. The ring is the actual source of his corruption/compulsion.",
-    "redeemable": "He can be saved if the ring is removed. Mechanism for removal not yet decided — see open_questions."
+    "not_evil": "Torvald is not a willing villain. He's the instrument, not the author — he receives items from Corvin and places them where 'asked,' without understanding what they actually are or do.",
+    "the_ring": "He wears a ring, a 'gift' from Corvin for his years of service and stewardship of the campus. The ring is the actual source of his corruption/compulsion.",
+    "redeemable": "He can be saved if the ring is removed. CONFIRMED — psychologically resistant, not magically bonded. The ring isn't physically stuck; Torvald won't let anyone touch it until he's emotionally ready to take it off himself. Removal is a trust/persuasion challenge, not a Remove Curse. See interrogation_guidance below for how that scene should play."
   },
 
-  "how_he_knew_the_former_student": {
-    "the_relationship": "During their years as a student, the former student was one of the rare ones who treated Torvald as a person worth real conversation rather than campus furniture — helped him with grounds work now and then, not for credit, just to be outside and away from department noise. Torvald decides who's earned a genuine answer by criteria he keeps to himself; this one earned it early. He never said so directly — that's not how he operates — but being noticed by Torvald, in his own quiet way, was its own kind of endorsement.",
-    "the_gift": "Some time after graduation (exact gap placeholder) the former student returned to campus once, briefly — ostensibly just to see the grounds again — and gave Torvald the ring as thanks 'for the years, and for treating me like I mattered when nobody else did.' Torvald noticed something was different about them that day — a stillness that hadn't been there before, something behind the eyes that didn't quite track — and said nothing, because it wasn't his business and it wasn't his place to ask. He's turned that visit over in his mind many times since without ever landing on why it bothers him.",
+  "how_he_knew_corvin": {
+    "the_relationship": "During his years as a student, Corvin Ashworth was one of the rare ones who treated Torvald as a person worth real conversation rather than campus furniture — helped him with grounds work now and then, not for credit, just to be outside and away from department noise. Torvald decides who's earned a genuine answer by criteria he keeps to himself; Corvin earned it early. He never said so directly — that's not how he operates — but being noticed by Torvald, in his own quiet way, was its own kind of endorsement.",
+    "the_gift": "About six years after graduating, Corvin returned to campus once, briefly, about a year and a half ago — ostensibly just to see the grounds again — and gave Torvald the ring as thanks 'for the years, and for treating me like I mattered when nobody else did.' It was the warmest thing Corvin had ever said to him. But it came out flat — the words shaped the sentiment, his voice never picked it up, like hearing a language spoken correctly by someone who'd only ever read it. Torvald said nothing, because it wasn't his business and it wasn't his place to ask. He's turned that visit over in his mind many times since without ever landing on why it bothers him.",
     "since_then": "No further in-person contact. Everything since has come through the ring itself — see below."
   },
 
@@ -20,12 +22,12 @@
 
   "what_he_knows_vs_doesnt": {
     "knows": [
-      "A detailed physical memory of the former student as they appeared on that one return visit, including the 'off' detail (a good lead for the party — description not yet written).",
-      "That he's been quietly moving items around campus at what he understands to be a former student's request.",
+      "A detailed physical memory of Corvin as he appeared on that one return visit, including the 'off' detail — the mismatch between his warm words and his flat delivery (see the_gift above). A good lead for the party to hear secondhand; Torvald can describe it precisely without being able to explain why it unsettles him.",
+      "That he's been quietly moving items around campus at what he understands to be Corvin's request.",
       "Where each item went — Voss's incidents (the catalog item, the component pouch, the instrument) all trace back to him if the party connects the dots."
     ],
     "does_not_know": [
-      "The former student's current whereabouts.",
+      "Corvin's current whereabouts.",
       "The Thornwick Arcane Consortium connection by name.",
       "That the items are dangerous or magical in nature beyond vaguely 'special.'",
       "Anything about the veil, Orcus, or the possession. He's been a conduit, not a confidant."
@@ -39,15 +41,10 @@
     "the_ring_itself_is_the_tell": "Pointed questions about the ring specifically — where he got it, why he wears it, whether they can see it — are the closest thing to a crack in the facade before it's removed. Visible discomfort, evasiveness, maybe an unconscious hand covering it."
   },
 
-  "open_questions": {
-    "removal_mechanism": {
-      "option_1": "Magically bonded/cursed — cannot be removed by mundane means, requires a Remove Curse (or similar) cast on it, or a specific counter-method the party has to research (a good excuse to lean on Voss/the Ninth Thesis for help).",
-      "option_2": "Not physically stuck, but psychologically resistant — he won't willingly let anyone touch it, and getting it off is a persuasion/trust challenge (earning enough of his confidence that he takes it off himself) rather than a spell.",
-      "option_3 (hybrid)": "Both — needs an emotional breakthrough to get him willing, AND a spell/ritual to actually get it off once he is. More table time, richer scene, more prep.",
-      "status": "OPEN — pick one, or ask for more options."
-    },
-    "former_student_gender_and_name": "Still unnamed/ungendered in all planning docs (using 'they/them' throughout). Not blocking this doc, but will need to be settled before writing any actual content that includes dialogue or description.",
-    "physical_tell_from_the_visit": "What exactly was 'off' about the former student when they gave Torvald the ring — not yet written. Could be a good, small, unsettling detail for the party to hear secondhand.",
-    "time_gap": "How long ago was graduation, and how long after that was the visit/gift? Not yet decided — affects how 'recent' this all feels."
+  "resolved_questions": {
+    "removal_mechanism": "CONFIRMED — psychologically resistant (see confirmed_decisions.redeemable above). Rejected: magically bonded (would reduce the redemption to a fetch-quest) and the hybrid option (more prep than the scene needs).",
+    "former_student_gender_and_name": "CONFIRMED — Corvin Ashworth, he/him.",
+    "physical_tell_from_the_visit": "CONFIRMED — the affect mismatch described in how_he_knew_corvin.the_gift above.",
+    "time_gap": "CONFIRMED — graduated ~6 years before campaign start; the ring visit was ~1.5 years ago."
   }
 }

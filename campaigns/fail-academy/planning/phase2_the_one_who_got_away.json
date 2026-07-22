@@ -4,15 +4,49 @@
   "name": "The One Who Got Away",
   "goal": "The party learns about the possessed former student and locates them.",
   "details": {
+    "former_student": {
+      "decision": "CONFIRMED — Corvin Ashworth (he/him). An unremarkable scholarship student, easy to overlook — which is exactly why Torvald's attention meant something to him. Full character depth (relationship with Torvald, the ring, the visit) is in torvald_the_insider.json.",
+      "timeline": "Graduated approximately 6 years before campaign start; returned to campus and gave Torvald the ring approximately 1.5 years ago. Both figures are the chosen midpoint of the approved 5-7-years / 1-2-years ranges — adjust freely if a specific session date needs a different anchor."
+    },
     "antagonist_operation": {
-      "thornwick_connection": "The former student first encountered the Thornwick Arcane Consortium (existing faction, already tied to completed Session 5) during a student expedition. Which expedition is not yet specified — placeholder.",
-      "after_graduating": "They approached Thornwick directly, intending to subvert their former school by any means necessary.",
-      "method": "They are the source of the corrupting magical items behind all three Phase 1 incidents (the catalog item, the tainted component pouch, the angry instrument) — supplied/arranged through Thornwick and delivered onto campus via an unidentified 'inside person.'",
-      "phase_boundary_note": "None of this belongs in Phase 1 — the party doesn't learn about the former student or the Thornwick connection until Phase 2. Phase 1 only establishes that incidents are happening and that the veil exists."
+      "thornwick_connection": "Corvin first encountered the Thornwick Arcane Consortium (existing faction, already tied to completed Session 5) during a student expedition. Which expedition is not yet specified — placeholder.",
+      "after_graduating": "He approached Thornwick directly, intending to subvert his former school by any means necessary.",
+      "method": "He is the source of the corrupting magical items behind all three Phase 1 incidents (the catalog item, the tainted component pouch, the angry instrument) — supplied/arranged through Thornwick and delivered onto campus via Torvald Thatch.",
+      "phase_boundary_note": "None of this belongs in Phase 1 — the party doesn't learn about Corvin or the Thornwick connection until Phase 2. Phase 1 only establishes that incidents are happening and that the veil exists."
     },
     "the_insider": {
-      "decision": "CONFIRMED — Torvald Thatch (existing NPC, head groundskeeper/night watch). Not evil — an unwitting instrument, corrupted via a cursed ring given to him by the former student as a 'thank you' gift. Redeemable if the ring is removed. Full depth (backstory with the former student, how the ring works, what he knows, interrogation guidance, open removal-mechanism options) is in torvald_the_insider.json.",
+      "decision": "CONFIRMED — Torvald Thatch (existing NPC, head groundskeeper/night watch). Not evil — an unwitting instrument, corrupted via a cursed ring given to him by Corvin as a 'thank you' gift. Redeemable if the ring is removed via a trust challenge, not a spell (see torvald_the_insider.json). Full depth (backstory with Corvin, how the ring works, what he knows, interrogation guidance) is in torvald_the_insider.json.",
       "why_him": "Campus-wide unsupervised access (groundskeeper + night watch), no pre-existing 'suspicious' tag to spoil the reveal, and his established discretion/don't-report-it personality (see his existing content file) is exactly what the ring exploits — it doesn't fight his character, it wears it."
+    },
+    "how_the_party_finds_him": {
+      "decision": "CONFIRMED — dual-thread convergence. Two independent investigative tracks, pursuable in either order, that name Corvin from different angles and confirm each other.",
+      "thread_a_ninth_thesis": "Voss and the Ninth Thesis (already investigating the incidents — see the_ninth_thesis.json) cross-reference incident dates, the Thornwick stamp found on the tainted pouch, and Academy alumni records. This surfaces Corvin Ashworth as a person of interest: an alum with an unusual, undisclosed post-graduation entanglement with Thornwick and no public trail since. This thread gives the party his name and the Thornwick connection, but not how the items are getting onto campus. Triggered by trigger_events.thread_a_reassurance_address below.",
+      "thread_b_item_forensics": "The party traces the planted items' physical chain of custody — deliveries, storage access, who had reason to be in each location — back to Torvald. Confronting him (evidence lands harder than argument, per his established characterization) eventually surfaces what he knows: a former student's name, the ring, and the visit. This thread gives the party the human/insider side — how, but initially not why or who's really behind it beyond a name. Triggered by trigger_events.thread_b_loading_dock_argument below.",
+      "convergence": "When both threads land, the party has the same name (Corvin Ashworth) arrived at two independent ways — which is what makes it convincing rather than a single unverified tip. This closes Phase 2's 'learn about them' half and sets up 'locate them' for the Phase 2/3 transition.",
+      "note": "Order is not fixed — the party can pursue either thread first. Neither thread alone should give the full picture; each is deliberately partial so the convergence feels earned rather than redundant."
+    },
+    "trigger_events": {
+      "_purpose": "Secondary clues — active, in-fiction events that put the party in position to find the real clue, rather than a passive 'you overhear/notice' beat. Each feeds one thread above.",
+      "thread_a_reassurance_address": {
+        "event": "After the third incident (the angry instrument), the administration calls a campus-wide assembly to address rising unease. Headmistress Dowe (proposed — swap freely for another administrator if preferred) gives the address: calm, measured, working hard to frame the incidents as isolated and already handled — a formality, not a pattern worth alarm over.",
+        "the_catch": "Keen-eyed players (a Perception/Insight beat, not automatic) can catch one of two people reacting to the speech in a way that doesn't fit its reassuring tone:",
+        "voss_reaction": "If Ellery Voss is present (seated with faculty), a flash of restrained frustration — almost an interruption — at the 'just a formality' framing, visibly suppressed a beat later. She knows it isn't a formality.",
+        "torvald_reaction": "If Torvald is present (working the assembly or standing at the back), an uneasy flicker at Dowe's specific phrasing — something about handling this 'quietly, without troubling the wider community.' It echoes, almost word for word, the kind of instruction the ring feeds him. He can't say why it unsettles him.",
+        "follow_up": "Approaching Voss afterward doesn't get a straight answer on the spot — she deflects, because whatever they saw, she won't casually pull students into serious Academy matters. But it's within a day or two of this that thread_a_voss_office_scene below happens. Approaching Torvald afterward should NOT crack him open — this is a plant, not a confession; he brushes it off. Real progress on him is gated behind thread_b_loading_dock_argument, consistent with 'evidence lands harder than argument' in torvald_the_insider.json."
+      },
+      "thread_a_voss_office_scene": {
+        "event": "CONFIRMED — a day or two after the assembly (or after the party otherwise presses her, given they know her well enough to ask), Voss invites the party to her office at a specific time. When they arrive at that time, she isn't there — the door is unlocked, ajar, and her notes (the Ninth Thesis / alumni cross-reference materials) are laid open on the desk, practically inviting a read.",
+        "the_wink": "After giving them a few minutes to read, she 'arrives' to find them already in her office, notes in hand, ready to help. Played as a knowing wink-wink, nudge-nudge — she's not fooling anyone about how deliberate this was, and doesn't try very hard to. It's her way of looping trusted students into something serious without technically being the one who did it: she never officially invited them into Academy business, they just happened to find themselves there.",
+        "continuity_note": "This mirrors — and in retrospect clarifies — the Voss's Notes clue from phase1_something_is_happening.json, where whether she left those notes findable by accident or intention was left ambiguous, leaning intentional. This scene is the same instinct with the ambiguity dropped: by now the party (and the DM) can be confident the first time was deliberate too.",
+        "what_it_gives_them": "Direct involvement in the alumni cross-referencing that surfaces Corvin — not as outside investigators building a case, but as students a professor they already trust has quietly pulled into her confidence."
+      },
+      "thread_b_loading_dock_argument": {
+        "event": "The party is at or passing the loading dock for an unrelated reason (staging is the DM's call) when they overhear a heated argument between a courier and a Provisions receiving clerk.",
+        "content": "The clerk is refusing a package because its listed place of origin doesn't check out, and states that under a new policy, any delivery without a clear, verifiable origin will be refused outright going forward.",
+        "if_the_party_intervenes": "They're firmly shut out and told to direct any questions to Dr. Voss — this is her new policy.",
+        "continuity_hook": "This is the visible, campus-facing follow-through on the last line of Voss's Notes in phase1_something_is_happening.json ('Start with Provisions') — she did exactly that, and this scene is the result.",
+        "hidden_detail": "On a genuinely hard Perception check (not passive, not easy) a sharp-eyed player can catch the addressee printed on the rejected package: Torvald Thatch. Most parties will walk away with only the 'go ask Voss' hook, which is by design — it keeps Thread A and Thread B meaningfully separate rather than collapsing them into one lucky roll."
+      }
     }
   }
 }

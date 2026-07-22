@@ -12,7 +12,7 @@
   },
 
   "antagonist": {
-    "identity": "A student who graduated from the Academy several years ago (not yet named/detailed).",
+    "identity": "Corvin Ashworth (he/him) — an unremarkable scholarship student at the Academy, easy to overlook, which is exactly why Torvald Thatch's attention meant something to him. Graduated roughly 6 years before campaign start. See phase2_the_one_who_got_away.json and torvald_the_insider.json for full depth.",
     "possession": "At some point they were possessed by something originating from Thanatos.",
     "goal": "They left the Academy intending to grow their power enough to tear the veil open wide.",
     "thornwick_connection": "They first encountered the Thornwick Arcane Consortium during a student expedition (which one is not yet specified — placeholder). After graduating, they approached Thornwick directly with the intent to subvert their former school by any means necessary.",
@@ -22,6 +22,12 @@
   },
 
   "core_plot": "The players must discover what is happening to the veil and why, track down the possessed former student, and stop them before they gain enough power to return and tear the veil open.",
+
+  "party": {
+    "session_zero_reboot": "Sessions 1-5 PCs are retired/archived canon. The active party is entirely new: fifth-year students in their final year, about to graduate.",
+    "relationship_to_npcs": "As long-tenured students, they know the Academy's faculty and staff well — years of personal history, not stranger introductions. This applies especially to figures like Ellery Voss, Headmistress Dowe, and Torvald Thatch, and matters mechanically: they know these people's normal demeanor well enough to clock a deviation from it.",
+    "relationship_to_the_mystery": "They have no personal investigative history with the incidents — everything they know going in is third-party campus rumor, same as any other student. Their engagement should start curiosity-driven, not procedural: noticing something feels off about people they already know and care about, rather than building a case like outside investigators. Hooks and clues across all phases should be written with this in mind."
+  },
 
   "phases": [
     {
