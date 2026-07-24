@@ -49,5 +49,45 @@
     "decision": "CONFIRMED — the party finds Voss's notes, which are Ninth Thesis materials. Whether Voss left them findable by accident or on purpose is left ambiguous/intentional-leaning ('potentially at her intention') — this ties her to the organization and ties their investigation directly into the party's hook. Applied to phase1_something_is_happening.json."
   },
 
-  "continuity_flag": "Feeds into the pending founders-persona audit noted in campaign_arc.json (secret_society's existing tags lean conspiratorial/sinister — needs reconciling with 'hunts hidden evil, currently allied with the party's goals' as part of the merge content pass)."
+  "continuity_flag": "Feeds into the pending founders-persona audit noted in campaign_arc.json (secret_society's existing tags lean conspiratorial/sinister — needs reconciling with 'hunts hidden evil, currently allied with the party's goals' as part of the merge content pass).",
+
+  "operational_profile": {
+    "_purpose": "Added 2026-07-24 to support Session 1's recruitment pitch (see session1_something_is_happening.json → structure.the_voss_summons) — Voss names the organization directly and makes a real recruitment offer, so the DM needs answers ready for follow-up questions, not just founding history.",
+
+    "scale_and_membership": {
+      "size": "Small and deliberately so — a loose network of roughly a dozen active operatives scattered across the region and beyond, not an institution. Voss selects people personally; there's no application process, no roster anyone outside the organization has ever seen.",
+      "composition": "A mix of Academy alumni (the majority) and a handful of outside specialists Voss has recruited over the years for skills the alumni pool doesn't cover. No current students until now — the party would be the first active operatives still enrolled.",
+      "structure": "Voss runs it personally; she is the only point of contact for any operative. No council, no hierarchy beneath her. Operatives generally don't know who else is in the organization unless Voss chooses to introduce them — compartmentalized more from institutional caution than secrecy theater.",
+      "sample_existing_operatives": [
+        { "sketch": "A retired battle-cleric working the eastern borderlands, mostly investigating cult activity — the closest thing the organization has to a 'senior' field agent. Has been quietly asked to look into the Academy's incidents from the outside and found nothing actionable." },
+        { "sketch": "A pair of Academy graduates, some years out, who work the trade routes as caravan guards — cover for tracking rumors and contraband across several city-states. Good at long-haul information gathering, not built for close campus investigation." },
+        { "sketch": "One alumnus embedded in a distant city's magistrate's office — mostly useful for records and legal cover, not fieldwork." }
+      ]
+    },
+
+    "why_the_party_specifically": {
+      "the_real_reason": "CONFIRMED — this is Voss's actual answer if pressed on 'why us': every existing operative is an outsider to campus life now, however capable. They can't walk the halls, sit in on lectures, or overhear faculty gossip without raising exactly the kind of attention that would tip off whoever's behind this. The party doesn't have that problem — they belong there, above suspicion, with better day-to-day access to the Academy than any Ninth Thesis field agent could get without years spent rebuilding a cover that these four already have for free. That's the actual pitch, not flattery.",
+      "guntrah_specifically": "On top of the structural advantage above, Guntrah's Investigator background and demonstrated aptitude make him personally the piece she's been missing — someone who can actually turn access into answers. She says as much to him directly."
+    },
+
+    "what_operatives_do": {
+      "mandate": "Investigate credible leads on 'hidden evil' — Voss's own phrase, deliberately broad. In practice: things that look wrong in a way institutions won't or can't act on. No formal jurisdiction; operatives go where the lead goes.",
+      "day_to_day": "No chain of command beyond reporting findings back to Voss, generally in person or via a trusted courier method she'll explain if asked (a code phrase to a specific contact — details open, invent at the table if it comes up). Operatives are expected to use judgment, not wait for orders.",
+      "current_case": "Right now: the pattern of planted-item incidents at the Academy this year, and whatever's behind it. That's the immediate ask. What it turns into after Session 1's discovery (Phase 2 onward) is intentionally open-ended from the party's perspective at this point — Voss doesn't oversell the scope up front."
+    },
+
+    "resources_provided": {
+      "funding": "Modest but real — the organization isn't wealthy, but Voss can authorize reasonable expenses for a specific lead (travel, lodging, a bribe, replacement gear lost in the field). Not a blank check; she expects an accounting, not out of distrust but because that's how she runs everything.",
+      "information": "Access to whatever the organization already knows that's relevant — which on THIS case is mostly what's in her notes (the party's already read those) plus whatever her other operatives' dead ends have ruled out.",
+      "cover": "None needed on campus (that's the whole point) but she can vouch for them / open doors with contacts elsewhere once they're off-campus, on a case-by-case basis.",
+      "no_magic_bailout": "No standing magical support, no cavalry — this is a small, quiet organization, not an institution with resources to spare. Consistent with 'they don't have the numbers to have already cracked this.'"
+    },
+
+    "secrecy_expectations": {
+      "tone": "Discretion requested, not demanded. Voss isn't running a cult of silence — she'd rather they not advertise it campus-wide (for the same reason outside operatives can't work openly: it tips off whoever's responsible), but there's no blood oath, no threat if they talk. Fits her established personality — direct, doesn't need theatrics to make a point land.",
+      "campus_legend_status": "Per relationship_to_secret_society above, 'the Secret Society' already exists as vague campus legend/rumor the new party may have heard of before this scene (harmless-sounding, half-joke, the way any school has an urban legend). Voss confirming it's real is the actual reveal here, not the concept of secrecy itself."
+    },
+
+    "if_they_decline": "No pressure, no consequence. She made the offer once, sincerely, and will respect a no without repeating the pitch or holding it against them. Consistent with her character — she doesn't coerce, she selects. Leaves the door open implicitly ('the offer doesn't expire') without saying so outright."
+  }
 }

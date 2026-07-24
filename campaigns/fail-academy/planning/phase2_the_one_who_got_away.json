@@ -6,11 +6,20 @@
   "details": {
     "former_student": {
       "decision": "CONFIRMED — Corvin Ashworth (he/him). An unremarkable scholarship student, easy to overlook — which is exactly why Torvald's attention meant something to him. Full character depth (relationship with Torvald, the ring, the visit) is in torvald_the_insider.json.",
+      "background_flavor": "CONFIRMED — a composite of three overlapping reasons he was overlooked, all true at once: no pedigree (scholarship kid among legacy names, the kind of student professors mix up at grading time), deliberately quiet (chose not to compete for attention, a survival strategy rather than incapacity), and middling at everything (never bottom of a class, never top, never generating a memorable data point). Useful texture for any flashback/NPC-recollection scene.",
       "timeline": "Graduated approximately 6 years before campaign start; returned to campus and gave Torvald the ring approximately 1.5 years ago. Both figures are the chosen midpoint of the approved 5-7-years / 1-2-years ranges — adjust freely if a specific session date needs a different anchor."
     },
+    "possession": {
+      "when_and_where": "CONFIRMED — began halfway through his 5th (final) year, before he'd encountered Thornwick. He was doing what unnoticed kids do: exploring long-forgotten nooks and crannies of campus. He got too close to the veil (specific on-campus location still not established — see open_questions) and one of Orcus's loyal spirits slipped through and possessed him.",
+      "why_it_worked": "He barely valued his own selfhood to begin with — easy to possess someone who nearly voluntarily gives it up. Consistent with background_flavor above.",
+      "irreversibility": "CONFIRMED — became irreversible weeks before graduation.",
+      "current_state": "Corvin is still in there, aware, watching, unable to retake control. The possessing spirit has access to his memories and characteristics, which is why blending in afterward was difficult but possible — not a clean swap, a struggle the spirit won.",
+      "the_spirit": "Not yet named/individuated — currently just 'one of Orcus's loyal spirits.' See open_questions for whether it needs its own identity."
+    },
     "antagonist_operation": {
-      "thornwick_connection": "Corvin first encountered the Thornwick Arcane Consortium (existing faction, already tied to completed Session 5) during a student expedition. Which expedition is not yet specified — placeholder.",
-      "after_graduating": "He approached Thornwick directly, intending to subvert his former school by any means necessary.",
+      "thornwick_connection": "CONFIRMED — nothing went wrong on the expedition itself (separate from the possession, which happened independently back on campus). Corvin simply learned, during a student expedition, that the bounty/take from it was going to the Thornwick Arcane Consortium, made a mental note, and followed up with them directly right after graduating. Which expedition is still not specified — see open_questions (strong candidate: reuse the Nether Mountains expedition tradition already tied to Session 5/Crumb).",
+      "thornwick_leadership": "CONFIRMED — Thornwick's leadership is, at its core, a group of cultists worshipping Orcus. There is no singular 'Thornwick' founder-figure to meet — whoever originally established the Consortium is long since dead. Current inner-circle leadership is not yet established — see open_questions.",
+      "after_graduating": "CONFIRMED — Corvin wandered for a while post-graduation before finally discovering the Thornwick Consortium. Once in, he worked his way up the chain over the next few years until he reached the inner circle. There he convinced the rest to move against the Academy's veil weakness — the others were reluctant, wary of the Academy's strength, until Corvin told them he had a plan. What that plan actually is remains open — see open_questions; likely the Phase 3 engine.",
       "method": "He is the source of the corrupting magical items behind all three Phase 1 incidents (the catalog item, the tainted component pouch, the angry instrument) — supplied/arranged through Thornwick and delivered onto campus via Torvald Thatch.",
       "phase_boundary_note": "None of this belongs in Phase 1 — the party doesn't learn about Corvin or the Thornwick connection until Phase 2. Phase 1 only establishes that incidents are happening and that the veil exists."
     },
@@ -48,5 +57,13 @@
         "hidden_detail": "On a genuinely hard Perception check (not passive, not easy) a sharp-eyed player can catch the addressee printed on the rejected package: Torvald Thatch. Most parties will walk away with only the 'go ask Voss' hook, which is by design — it keeps Thread A and Thread B meaningfully separate rather than collapsing them into one lucky roll."
       }
     }
+  },
+  "open_questions": {
+    "_purpose": "Durable follow-up list from the 2026-07-24 antagonist deep-dive session — tracked here instead of only in an ephemeral chat todo list, so it survives across sessions.",
+    "veil_location": "Where on campus the veil's weak point actually is. Eastern Wing is the leading candidate — Torvald has quietly noticed unexplained foot traffic there for decades (see his existing content file).",
+    "corvin_expedition": "Which student expedition surfaced the Thornwick bounty connection for Corvin. Candidate: reuse the Nether Mountains expedition tradition already tied to Session 5/Crumb, tying the old and new party's threads together.",
+    "the_spirit_identity": "Whether the possessing spirit (see details.possession.the_spirit) gets its own name/identity, or stays an anonymous 'loyal servant of Orcus.' Matters if the party ever needs to address it directly rather than Corvin.",
+    "thornwick_inner_circle": "Sketch of Thornwick's current inner-circle leadership (the founder is long dead — see details.antagonist_operation.thornwick_leadership). Needed before Phase 3.",
+    "corvins_plan": "What Corvin actually proposed to get the reluctant inner circle to move against the Academy's strength (see details.antagonist_operation.after_graduating). Likely the Phase 3 engine — highest-value item to resolve next."
   }
 }

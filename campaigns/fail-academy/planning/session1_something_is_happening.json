@@ -1,0 +1,85 @@
+{
+  "_note": "Planning doc — Session 1 design for the new (Session Zero) party. NOT a live entity — not in index.json, not loaded by the app. STUB: skeleton only, to be fleshed out with the DM. Builds on phase1_something_is_happening.json (the full incident/clue bank this session draws from) and campaign_arc.json (party framing, founders persona constraint).",
+  "status": "STUB — structure only, no scene-level prose yet",
+  "session": 1,
+  "title": "TBD — working title \"Something is Happening\"",
+  "maps_to_phase": "Phase 1 — Something is Happening. This session is intended to BE Phase 1, condensed into a single on-campus session, rather than the start of a multi-session phase.",
+
+  "premise": "The party's final year at the Academy, in the run-up to graduation. Entirely on-campus. The session surfaces the pattern of escalating incidents from phase1_something_is_happening.json and ends on a hook into graduation — which becomes Session 2's opening and the campaign's pivot from 'students at school' to 'adventuring party in the world.'",
+
+  "party_framing": {
+    "note": "Per campaign_arc.json's party section — apply this throughout, not just as a reminder.",
+    "engagement_style": "The party has no investigative history with these incidents — they know what any student knows, campus rumor. Engagement should be curiosity-driven: noticing something's off with people/places they already know (Voss, the Wizards Tower, the Memorial Garden), not procedural fact-finding as outside investigators.",
+    "npc_relationships": "They've known faculty like Ellery Voss for years. Scenes with her (or other long-tenured NPCs) should read as an established relationship, not an introduction."
+  },
+
+  "structure": {
+    "parting_gifts": {
+      "status": "CONFIRMED as a session element, individual gift details partly TBD",
+      "timing": "Spread across the 'few weeks before graduation' window this session covers — quick, warm, personal vignettes establishing character before the plot intrudes.",
+      "items": [
+        { "recipient": "tavian_stormnet", "giver": "commander_orvyn", "gift": "His sword — a parting gift from his Paladins department head.", "status": "confirmed pairing; item details TBD" },
+        { "recipient": "tito", "giver": "an admirer (unnamed)", "gift": "A cloak, gifted by an admirer.", "status": "confirmed pairing; admirer's identity and item details TBD" },
+        { "recipient": "zarad", "giver": "TBD", "gift": "TBD", "status": "open" },
+        { "recipient": "guntrah", "giver": "TBD", "gift": "TBD", "status": "open" }
+      ]
+    },
+    "the_voss_summons": {
+      "status": "CONFIRMED — this is the session's main spine, replaces the old generic 'opening_hook' placeholder.",
+      "the_summons": "A few weeks before graduation, all four PCs independently receive a short, unexplained written note from Ellery Voss: something like 'My office. Thursday, after last bell. All four of you. —E.V.' No context given. Given how well they know her after years at the Academy, this is already strange on its face — she doesn't operate this way, and has no ordinary reason to want four students from four different departments in a room together. That wrongness (a deviation from someone they already know well, per campaign_arc.json's party_framing) is the hook, not the plot content yet.",
+      "the_office": "They arrive at the appointed time. She isn't there. The door is unlocked, ajar. Her handwritten notes on the three incidents (the E.V. draft text already written in phase1_something_is_happening.json → clues.confirmed → Voss's Notes) are sitting in plain view on the desk. Whether this is an oversight or deliberate should read as genuinely ambiguous WHILE they're reading — this is the first time she pulls this move, play it straight, not as a wink (that's Phase 2's job — see the mirroring note below).",
+      "the_reveal": "CONFIRMED: Voss never explains the summons beforehand because the reason becomes obvious once she arrives and they've read the notes — she's recruiting them as Ninth Thesis field operatives, to work OFF-campus. She already has operatives, but believes this specific party can succeed where her existing people haven't. This retroactively resolves the 'accident or deliberate' ambiguity from the read: it was clearly deliberate — she wanted them to have the evidence in hand before she made the ask, so the pitch lands as substantiated rather than a cold sales job. This is also the mechanical answer to structure.graduation_hook below.",
+      "guntrah_spotlight": "CONFIRMED: Voss singles out Guntrah specifically during the pitch — his Investigator background and the promise he's already shown at untangling exactly this kind of mystery make him, in her eyes, the party's biggest asset for this work. Stage this as a direct beat/line to him, not just background characterization (matches his existing DM notes on guntrah.html re: Phase 2's item-forensics thread — this is the campaign's first on-the-nose acknowledgment of that fit).",
+      "org_disclosure": "PROPOSED, not yet confirmed: she names 'the Ninth Thesis' outright (being cagey about the org's name would undercut the sincerity of a real recruitment pitch) but stays vague on deep specifics — founding history, other members, full scope — consistent with her established 'doesn't explain her methodology' personality. Open for the DM to adjust.",
+      "acceptance": "OPEN: does the party answer on the spot, or is this left as a standing offer they sit with until graduation itself? Leaning toward leaving it open at the table — no need to force a mechanical yes/no here.",
+      "phase_boundary_check": "Safe within Session 1's constraints: the pitch only needs 'there's a dangerous pattern, my people haven't cracked it, I need outside help' — no need to reveal Corvin Ashworth, Torvald, or Thornwick specifics to make the recruitment land.",
+      "mirroring_note": "This is Voss's first use of the 'leave evidence out, let them find it, arrive after' move. Per phase2_the_one_who_got_away.json's own continuity_note, the Phase 2 office scene (thread_a_voss_office_scene) is written as a deliberate echo of this — playing Session 1 straight/ambiguous makes the Phase 2 version (played as an open wink) land as a callback rather than a repeat."
+    },
+    "contingency_hadra_quill": {
+      "status": "BACKUP ONLY — per the DM: use only if the Voss hook doesn't land for some reason. If the party engages with the Voss summons as intended, skip this entirely.",
+      "source": "phase1_something_is_happening.json → inciting_hook",
+      "summary": "Party overhears Ambrose Quill and Captain Hadra in an ordinary, gossipy conversation — not a secret briefing — about incident frequency ticking up. Both suspect a single underlying cause but don't know what.",
+      "timing": "Later the same afternoon.",
+      "location": "Left blank — DM will place it wherever the party ends up going."
+    },
+    "incident_background": {
+      "source": "phase1_something_is_happening.json → inciting_hook.incidents_mentioned",
+      "summary": "Three incidents this school year, already resolved by the time of the session — this is what Voss's notes cover, not a live encounter: (1) dinosaur infiltration during a midterm, caused by a planted catalog item; (2) tainted component pouch in the shared Wizards/Sorcerers stores, Thornwick-stamped; (3) an anger-inducing instrument planted in the Bards storage closet."
+    },
+    "other_confirmed_clues": {
+      "source": "phase1_something_is_happening.json → clues.confirmed",
+      "note": "Voss's Notes is now the session's primary clue-delivery vehicle (see the_voss_summons above). These two remain available as optional follow-up material, either later in Session 1 or after — not required to make the session work.",
+      "items": [
+        {
+          "name": "The Founders' Correspondence",
+          "status": "confirmed concept, draft text NOT yet written. Needs: which storage room, how the party gains access, deciphering method."
+        },
+        {
+          "name": "The Memorial Garden Plaques",
+          "status": "confirmed concept, draft text NOT yet written. Needs: the plaque text (in each founder's own voice), the cipher/code method, how the message splits across all three."
+        }
+      ]
+    },
+    "graduation_hook": {
+      "status": "LARGELY RESOLVED by the_voss_summons above.",
+      "resolved": "The personal stake is now concrete: Voss has personally asked them (Guntrah especially) to become Ninth Thesis operatives once they leave the Academy. That's the throughline reason this party keeps investigating off-campus for the rest of the campaign, and why they'd come back to save the school later — not abstract obligation, a direct ask from someone they trust.",
+      "still_open": "The exact closing image of Session 1. Since the summons happens weeks before graduation, the session likely time-skips/montages forward through the remaining weeks (contingency_hadra_quill could land somewhere in that montage if needed) and cuts away right on the cusp of the ceremony — Session 2 then opens ON graduation itself, per the user's original framing that graduation happens in Session 2, not 1."
+    }
+  },
+
+  "continuity_constraints": {
+    "phase_boundary": "Per phase1_something_is_happening.json's phase_boundary_note: nothing about Corvin Ashworth, Torvald's ring, or the Thornwick connection belongs in this session. Session 1 only establishes that incidents are happening and that the veil exists — Phase 2 material stays out.",
+    "founders_persona": "Per campaign_arc.json's founders_persona_rewrite: the founders were sincerely well-intentioned. The Founders' Correspondence and Memorial Garden Plaque clues must not imply otherwise.",
+    "structural_constraint": "Clues should lead to discovering THAT the veil exists and why it's unstable, but must NOT let the party physically locate the veil — that stays gated behind Phase 2."
+  },
+
+  "open_questions": {
+    "title": "Needs an actual session title once the shape is locked. Candidates once graduation_hook's closing image is decided.",
+    "closing_image": "The only real remaining structural gap — see structure.graduation_hook.still_open. What's the last beat/line of Session 1, right before the cut to Session 2's graduation opening?",
+    "parting_gifts_zarad_guntrah": "Gift + giver for Zarad and Guntrah still TBD — see structure.parting_gifts.",
+    "tito_admirer_identity": "Who the admirer gifting Tito the cloak is — TBD, could stay a mystery hook or be named.",
+    "voss_summons_acceptance": "Does the party answer Voss's recruitment offer on the spot, or is it left open until graduation? See structure.the_voss_summons.acceptance.",
+    "org_disclosure_confirm": "Confirm or adjust structure.the_voss_summons.org_disclosure (proposed: she names the Ninth Thesis outright but stays vague on deep specifics).",
+    "other_clues_use": "Whether the Founders' Correspondence and Memorial Garden Plaques (structure.other_confirmed_clues) get used in Session 1 as extra material, held for later, or dropped — no longer load-bearing now that Voss's Notes carries the session."
+  }
+}
