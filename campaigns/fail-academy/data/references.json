@@ -8,10 +8,9 @@
     "contentFile": "content/references/party_overview.html",
     "visibility": "player",
     "related": [
-      "lugeiros_serise", "gunnar", "caelum_rivenstone", "bloodraven",
-      "session_1", "session_2", "session_3", "session_4"
+      "zarad", "guntrah", "tito", "tavian_stormnet"
     ],
-    "tags": ["party", "players", "characters", "overview"]
+    "tags": ["party", "players", "characters", "overview", "session-zero"]
   },
   {
     "id": "campaign_overview",

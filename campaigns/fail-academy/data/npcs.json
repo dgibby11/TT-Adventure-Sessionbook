@@ -1,20 +1,9 @@
 [
   {
-    "id": "ozzy",
-    "name": "Ozzy",
-    "type": "npc",
-    "category": "Player Characters",
-    "contentType": "html",
-    "contentFile": "content/players/ozzy.html",
-    "visibility": "player",
-    "related": ["session_5", "oswald_crumb", "nether_mountains"],
-    "tags": ["player-character", "sorcerer", "goblin", "draconic"]
-  },
-  {
     "id": "lugeiros_serise",
     "name": "Lugeiros Serise",
     "type": "npc",
-    "category": "Player Characters",
+    "category": "Player Characters (Archived)",
     "contentType": "html",
     "contentFile": "content/players/lugeiros_serise.html",
     "visibility": "player",
@@ -22,13 +11,13 @@
     "links": [
       { "label": "Lugeiros Serise — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157565841" }
     ],
-    "tags": ["player-character", "ranger", "elf"]
+    "tags": ["player-character", "ranger", "elf", "archived"]
   },
   {
     "id": "gunnar",
     "name": "Gunnar",
     "type": "npc",
-    "category": "Player Characters",
+    "category": "Player Characters (Archived)",
     "contentType": "html",
     "contentFile": "content/players/gunnar.html",
     "visibility": "player",
@@ -36,13 +25,13 @@
     "links": [
       { "label": "Gunnar — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157566207" }
     ],
-    "tags": ["player-character", "ranger", "elf"]
+    "tags": ["player-character", "ranger", "elf", "archived"]
   },
   {
     "id": "caelum_rivenstone",
     "name": "Caelum Rivenstone",
     "type": "npc",
-    "category": "Player Characters",
+    "category": "Player Characters (Archived)",
     "contentType": "html",
     "contentFile": "content/players/caelum_rivenstone.html",
     "visibility": "player",
@@ -50,13 +39,13 @@
     "links": [
       { "label": "Caelum Rivenstone — D&D Beyond", "url": "https://www.dndbeyond.com/characters/123583842" }
     ],
-    "tags": ["player-character", "bard", "half-elf"]
+    "tags": ["player-character", "bard", "half-elf", "archived"]
   },
   {
     "id": "bloodraven",
     "name": "BloodRaven",
     "type": "npc",
-    "category": "Player Characters",
+    "category": "Player Characters (Archived)",
     "contentType": "html",
     "contentFile": "content/players/bloodraven.html",
     "visibility": "player",
@@ -64,7 +53,51 @@
     "links": [
       { "label": "BloodRaven — D&D Beyond", "url": "https://www.dndbeyond.com/characters/138257820" }
     ],
-    "tags": ["player-character", "fighter", "human"]
+    "tags": ["player-character", "fighter", "human", "archived"]
+  },
+  {
+    "id": "zarad",
+    "name": "Zarad",
+    "type": "npc",
+    "category": "Player Characters",
+    "contentType": "html",
+    "contentFile": "content/players/zarad.html",
+    "visibility": "player",
+    "related": ["guntrah", "tito", "tavian_stormnet"],
+    "tags": ["player-character", "wizard", "half-orc", "evocation", "session-zero"]
+  },
+  {
+    "id": "guntrah",
+    "name": "Guntrah",
+    "type": "npc",
+    "category": "Player Characters",
+    "contentType": "html",
+    "contentFile": "content/players/guntrah.html",
+    "visibility": "player",
+    "related": ["zarad", "tito", "tavian_stormnet"],
+    "tags": ["player-character", "artificer", "orc", "armorer", "session-zero"]
+  },
+  {
+    "id": "tito",
+    "name": "Tito",
+    "type": "npc",
+    "category": "Player Characters",
+    "contentType": "html",
+    "contentFile": "content/players/tito.html",
+    "visibility": "player",
+    "related": ["zarad", "guntrah", "tavian_stormnet"],
+    "tags": ["player-character", "bard", "satyr", "eloquence", "session-zero"]
+  },
+  {
+    "id": "tavian_stormnet",
+    "name": "Tavian Stormnet",
+    "type": "npc",
+    "category": "Player Characters",
+    "contentType": "html",
+    "contentFile": "content/players/tavian_stormnet.html",
+    "visibility": "player",
+    "related": ["zarad", "guntrah", "tito"],
+    "tags": ["player-character", "paladin", "air-genasi", "oath-of-glory", "session-zero"]
   },
   {
     "id": "silas_morne",
