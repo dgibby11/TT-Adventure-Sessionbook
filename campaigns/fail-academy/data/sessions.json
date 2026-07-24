@@ -3,56 +3,56 @@
     "id": "session_1",
     "name": "Session 1 — The Basement Incident",
     "type": "session",
-    "category": "Completed",
+    "category": "Completed (Archived)",
     "contentType": "html",
     "contentFile": "content/sessions/session_1.html",
     "visibility": "player",
     "related": ["underground_storage", "bodak", "mimics", "magical_gauntlet", "lenny_goldvein"],
-    "tags": ["session", "completed", "underground", "combat", "bodak", "gauntlet"]
+    "tags": ["session", "completed", "underground", "combat", "bodak", "gauntlet", "archived"]
   },
   {
     "id": "session_2",
     "name": "Session 2 — The Ninth Thesis",
     "type": "session",
-    "category": "Completed",
+    "category": "Completed (Archived)",
     "contentType": "html",
     "contentFile": "content/sessions/session_2.html",
     "visibility": "player",
     "related": ["founders_statue", "secret_society", "ninth_thesis"],
-    "tags": ["session", "completed", "founders-statue", "secret-society", "mystery"]
+    "tags": ["session", "completed", "founders-statue", "secret-society", "mystery", "archived"]
   },
   {
     "id": "session_3",
     "name": "Session 3 — The Dinosaur Breach",
     "type": "session",
-    "category": "Completed",
+    "category": "Completed (Archived)",
     "contentType": "html",
     "contentFile": "content/sessions/session_3.html",
     "visibility": "player",
     "related": ["fail_chamber", "jungle_site", "sunken_fang_spear", "dinosaurs", "ellery_voss"],
-    "tags": ["session", "completed", "fail-chamber", "jungle", "dinosaurs", "teleportation"]
+    "tags": ["session", "completed", "fail-chamber", "jungle", "dinosaurs", "teleportation", "archived"]
   },
   {
     "id": "session_4",
     "name": "Session 4 — The Owlbear Prank",
     "type": "session",
-    "category": "Completed",
+    "category": "Completed (Archived)",
     "contentType": "html",
     "contentFile": "content/sessions/session_4.html",
     "visibility": "player",
     "related": ["owlbear_cave", "kass", "rangers", "the_upperclassmen"],
-    "tags": ["session", "completed", "owlbear", "prank", "upperclassmen", "intervention"]
+    "tags": ["session", "completed", "owlbear", "prank", "upperclassmen", "intervention", "archived"]
   },
   {
     "id": "session_5",
     "name": "Session 5 — The Nether Mountains Expedition",
     "type": "session",
-    "category": "Completed",
+    "category": "Completed (Archived)",
     "contentType": "html",
     "contentFile": "content/sessions/session_5.html",
     "visibility": "player",
     "startLocation": "main_complex",
     "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club", "earth_elemental", "dust_mephit", "mud_mephit", "academy_provisions", "boots_of_elvenkind", "shield_of_missile_attraction", "silas_morne"],
-    "tags": ["session", "completed", "mountains", "crumb", "elemental", "thornwick", "expedition"]
+    "tags": ["session", "completed", "mountains", "crumb", "elemental", "thornwick", "expedition", "archived"]
   }
 ]
