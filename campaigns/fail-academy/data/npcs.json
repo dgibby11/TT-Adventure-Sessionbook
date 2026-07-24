@@ -144,6 +144,17 @@
     "tags": ["faculty", "combat", "beloved", "martial", "instructor"]
   },
   {
+    "id": "prof_brasca_ironquill",
+    "name": "Professor Brasca Ironquill",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/prof_brasca_ironquill.html",
+    "visibility": "player",
+    "related": ["wizards", "prof_aldous_fenwick", "oswald_crumb"],
+    "tags": ["faculty", "wizards", "dwarf", "department-head", "administrative", "meticulous"]
+  },
+  {
     "id": "prof_aldous_fenwick",
     "name": "Professor Aldous Fenwick",
     "type": "npc",
@@ -151,7 +162,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/prof_aldous_fenwick.html",
     "visibility": "player",
-    "related": ["wizards", "old_library", "main_complex"],
+    "related": ["wizards", "old_library", "main_complex", "prof_brasca_ironquill"],
     "tags": ["faculty", "arcane", "worst-professor", "tenured", "wizards"]
   },
   {
@@ -184,8 +195,19 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
-    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "session_5"],
+    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "session_5", "prof_brasca_ironquill", "oswald_crumb_statblock"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
+  },
+  {
+    "id": "oswald_crumb_statblock",
+    "name": "Oswald Crumb — Combat Stats",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/oswald_crumb_statblock.html",
+    "visibility": "dm-only",
+    "related": ["oswald_crumb", "session_5", "nether_mountains"],
+    "tags": ["faculty", "dm-only", "statblock", "combat-reference", "sorcerer", "goblin"]
   },
   {
     "id": "aldric_voss",

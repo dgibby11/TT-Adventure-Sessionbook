@@ -251,7 +251,7 @@
     "contentType": "html",
     "contentFile": "content/locations/wizards.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "prof_aldous_fenwick", "sorcerers", "main_complex", "old_library", "nether_mountains"],
+    "related": ["prof_brasca_ironquill", "oswald_crumb", "prof_aldous_fenwick", "sorcerers", "main_complex", "old_library", "nether_mountains"],
     "tags": ["department", "arcane", "transmutation", "spells", "theory", "research"],
     "environment": {
       "architecture": "A tower complex — the primary spire reaches seven stories. Lower floors contain classrooms and reference libraries. Upper floors are restricted research laboratories. The top floor has no windows and no official purpose listed in any campus document.",
