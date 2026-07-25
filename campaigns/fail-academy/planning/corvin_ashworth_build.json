@@ -1,0 +1,83 @@
+{
+  "_note": "Planning doc — full mechanical build for Corvin Ashworth as a level 20 boss NPC, developed via a dedicated build session and finalized on a D&D Beyond character sheet (Warlock 20). NOT a live entity — Corvin has no content/npcs/corvin_ashworth.html or data/npcs.json entry yet. See phase2_the_one_who_got_away.json and campaign_arc.json for narrative/plot context, and torvald_the_insider.json for his connection to Torvald. This doc is the mechanics companion to that narrative material.",
+
+  "identity": {
+    "race": "Variant Human",
+    "class": "Warlock 20",
+    "background": "Haunted One",
+    "pact_boon": "Pact of the Blade",
+    "patron": "The Fiend",
+    "ability_scores": { "STR": 11, "DEX": 14, "CON": 12, "INT": 12, "WIS": 12, "CHA": 20 },
+    "ac": 18,
+    "hp": 123,
+    "hit_dice": "20d8",
+    "speed": "40 ft. (base 30 + Mobile feat)",
+    "proficiency_bonus": "+6",
+    "spellcasting": { "ability": "CHA", "save_dc": 19, "attack_bonus": "+11" },
+    "languages": ["Abyssal", "Common", "Infernal", "Primordial"]
+  },
+
+  "physical_description": {
+    "_note": "Descriptors pulled from a reference portrait for use when his appearance is eventually written up — not a saved asset, just source material.",
+    "build": "Human, bald, sharp/angular features — strong jawline, straight nose, a stern, severe default expression that reads as cold rather than expressive.",
+    "eyes": "Vivid violet/purple, clearly unnatural — the most obvious visible tell that something is wrong with him, worth using as the physical detail an NPC or the party would fixate on.",
+    "attire": "A metallic silver V-shaped circlet or browband across the forehead. High-collared dark robes/armor with gold trim over a maroon underlayer. An ornate mantle at the shoulders held by two bronze/gold skull-shaped clasps linked by a chain across the chest — the skull-and-chain motif is a good recurring visual signature for him.",
+    "aura": "Faint violet flame/smoke curling from his shoulders and background, with ghostly skull shapes half-visible in it — reads as the possession bleeding through visually, useful for a 'something's wrong with the air around him' description when he's on-screen."
+  },
+
+  "design_rationale": {
+    "race_and_class": "Human + Warlock chosen deliberately: he's canonically an unremarkable, no-pedigree scholarship student (see phase2_the_one_who_got_away.json) — Warlock explains how someone with no notable raw talent became a real threat, since his power is granted by his patron rather than earned.",
+    "patron_choice": "The Fiend — final call. Dark One's Blessing (gain 25 temp HP when he reduces a creature to 0 HP) and Dark One's Own Luck (1/short rest, add a d10 to an ability check or save after seeing the roll) are both in active use.",
+    "pact_of_the_blade": "His pact weapon is narratively a Shadow Blade — 'a simple channeling of Orcus's power' — paired with a +1 shield, also framed as part of the same pact magic (mechanically just a plain magic shield, no special narrative power beyond flavor).",
+    "combat_style": "Ranged-capable (Eldritch Blast, Agonizing Blast, 4 beams via V/S components) but built to fight mostly up close: Thirsting Blade + Lifedrinker + Eldritch Smite on the pact weapon, Sentinel to punish anyone who tries to disengage or protect an ally. Grasp of Hadar (pull targets into melee on an Eldritch Blast hit) was considered for the Eldritch Adept invocation slot but ultimately passed over in favor of Shroud of Shadow.",
+    "two_stage_fight_concept": "True Polymorph (9th-level Mystic Arcanum) is intended as a mid-fight transformation: cast on himself when bloodied, turning the 'Corvin still fighting for control' phase into 'the possessing spirit's true form takes over,' for the rest of the encounter. Note: while transformed, he uses the new form's statistics and loses his own Warlock spellcasting/class features unless the chosen form has its own Innate Spellcasting — the target creature/stat block for the true form still needs to be picked with this in mind (see open_todo).",
+    "concentration_protection": "War Caster (advantage on Concentration saves, can cast spells with weapon+shield in hand, can cast a spell instead of a weapon attack on an opportunity attack) plus Resilient-style Con reliability were the original plan; the finalized sheet instead pairs War Caster with Mobile (extra speed, no OA when he attacks and leaves) and Metamagic Adept (Quickened Spell + Extended Spell via 2 sorcery points/long rest) as the 4th and 5th feats, alongside Eldritch Adept and Sentinel."
+  },
+
+  "invocations": [
+    "Thirsting Blade",
+    "Lifedrinker",
+    "Eldritch Smite",
+    "Agonizing Blast",
+    "Trickster's Escape",
+    "Armor of Shadows",
+    "Mask of Many Faces",
+    "Whispers of the Grave",
+    "Shroud of Shadow (via Eldritch Adept feat)"
+  ],
+
+  "feats": [
+    "Eldritch Adept (grants Shroud of Shadow)",
+    "War Caster",
+    "Sentinel",
+    "Mobile",
+    "Metamagic Adept (Quickened Spell, Extended Spell; 2 sorcery points/long rest)"
+  ],
+
+  "mystic_arcanum": {
+    "6th": "Circle of Death",
+    "7th": "Finger of Death",
+    "8th": "Power Word Stun",
+    "9th": "True Polymorph"
+  },
+
+  "spells_known": {
+    "cantrips": ["Eldritch Blast", "Booming Blade", "Sword Burst", "True Strike (concentration removed — DM houserule)"],
+    "1st": ["Hex", "Armor of Agathys"],
+    "2nd": ["Hold Person", "Mirror Image", "Misty Step", "Shadow Blade", "Suggestion"],
+    "3rd": ["Counterspell", "Hypnotic Pattern", "Vampiric Touch"],
+    "4th": ["Blight", "Summon Greater Demon", "Dimension Door"],
+    "5th": ["Danse Macabre", "Scrying"]
+  },
+
+  "dm_houserules": {
+    "true_strike": "Concentration requirement removed — NPC-only ruling.",
+    "shadow_blade": "Reflavored as his permanent pact weapon rather than a cast spell: no spell slot, no action to cast, always active, does not require concentration, cannot be Counterspelled or Dispelled. NOT RAW — deliberate DM flavor choice for this NPC only, comparable to a permanent Teleportation Circle. Because it's no longer functionally 'cast,' it should be written into his eventual stat block as a fixed weapon trait (e.g. 'Shadow Blade (Pact Weapon). Melee or Ranged Weapon Attack: ...') rather than tracked as a known spell — the D&D Beyond sheet still lists it under 2nd-level Spells Known (XGtE 164) purely because the tool can't represent a custom rule like this; that's a bookkeeping artifact, not the intended final rule.",
+    "hold_person_over_hold_monster": "Took Hold Person instead of Hold Monster since he's expected to fight only humanoids — same practical effect for a cheaper slot against this party."
+  },
+
+  "open_todo": {
+    "true_form_stat_block": "Still needs a target creature/stat block chosen for the True Polymorph transformation (the 'possessing spirit's true form') — decide whether it keeps some spellcasting (Innate Spellcasting trait) or goes full monster-mode for that phase of the fight.",
+    "no_live_entity_yet": "No content/npcs/corvin_ashworth.html or data/npcs.json entry exists. Per reboot_status.md, nothing from the reboot goes into live data without explicit instruction — this build doc is planning-only until told otherwise."
+  }
+}
