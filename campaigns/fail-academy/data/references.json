@@ -20,7 +20,7 @@
     "contentType": "html",
     "contentFile": "content/references/campaign_overview.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3", "session_4", "headmistress_dowe", "campus_root"],
+    "related": ["one_shot_1", "one_shot_2", "one_shot_3", "one_shot_4", "headmistress_dowe", "campus_root"],
     "tags": ["campaign", "overview", "summary", "reference"]
   },
   {

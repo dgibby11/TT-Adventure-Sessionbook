@@ -3,11 +3,15 @@
 _Moved out of the root CLAUDE.md 2026-07-24 so all planning-related content for this
 campaign lives under `campaigns/fail-academy/planning/` — CLAUDE.md now just points here._
 
-Sessions 1-5 are played/completed canon (one-shot format, category "Completed").
-Sessions 6-9 (unplayed DM-planning stubs) have been REMOVED — deleted from
-data/sessions.json and content/sessions/. Starting with a Session 0, the
-campaign becomes an ongoing story: same Academy, new PCs (fifth-year students
-about to graduate), archived old PCs.
+The original Sessions 1-5 are played/completed canon, one-shot format. RENAMED
+(2026-07-27, both id and contentFile, not just display name) to `one_shot_1`
+through `one_shot_5` — category "Completed (Archived)" — to free up the
+`session_1` id for the ongoing campaign's real Session 1. Sessions 6-9 (unplayed
+DM-planning stubs) have been REMOVED — deleted from data/sessions.json and
+content/sessions/. Starting with a Session 0, the campaign becomes an ongoing
+story: same Academy, new PCs (fifth-year students about to graduate), archived
+old PCs. `session_1` ("Something is Happening") is now live — category
+"Planning", visibility `dm-only` until it's actually played at the table.
 
 All design work for the reboot is happening in
 `campaigns/fail-academy/planning/*` — these are working docs, NOT live
@@ -20,13 +24,14 @@ any live data for this campaign:
   `phase3_closing_the_veil.json` — one file per phase; phase 3 still empty.
 - `session1_something_is_happening.json` — Session 1 design (the new party's first
   actual play session, condensing Phase 1 into one on-campus session that ends on
-  a graduation hook into Session 2). CONFIRMED — structure and all four parting
-  gifts locked in; not a skeleton anymore. See `session1_draft.html` for the
-  written-up version.
-- `session1_draft.html` — full prose draft of Session 1, ready for DM review.
-  Written from session1_something_is_happening.json + the other Phase 1/2 docs
-  below. NOT live (not in data/sessions.json, not in index.json) until reviewed
-  and promoted.
+  a graduation hook into Session 2). PROMOTED (2026-07-27) — see `session1_draft.html`
+  and the live entity note below.
+- `session1_draft.html` — full prose draft of Session 1. PROMOTED (2026-07-27) to
+  `data/sessions.json` (id `session_1`, category "Planning", visibility `dm-only`
+  since it hasn't been played at the table yet — flip to `player` once it has, to
+  match how the archived One Shots are handled). This planning file is kept as the
+  design-history record; the live `content/sessions/session_1.html` is authoritative
+  going forward.
 - `the_ninth_thesis.json` — the Ninth Thesis / Secret Society organization
   (confirmed: they're the same entity, to be merged; not yet executed against
   live data — see `founders_persona_audit.json`, below, for why this is now
@@ -80,12 +85,16 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   mechanical build now exists too, see `corvin_ashworth_build.json`.
 - Session 1's four parting gifts (Witness for Tavian, The Standing Ovation for
   Tito, The Quick Components Pouch for Zarad, the self-made All-Purpose Tool
-  for Guntrah) are CONFIRMED and already written up as live entities in
-  data/items.json / data/npcs.json — see `session1_something_is_happening.json`
-  → structure.parting_gifts and `session1_draft.html`.
-- None of this reboot work has been applied to live data yet EXCEPT the
-  Session 1 parting-gift items/NPCs noted above (those were explicitly
-  requested as live entities). Everything else — Phase 1-3 plot material,
-  the Ninth Thesis/Secret Society merge, Corvin Ashworth, Torvald's ring,
-  the dwarven ruins — stays planning-only. Don't merge or rewrite further
-  live entities for this without explicit instruction.
+  for Guntrah) are CONFIRMED and live in data/items.json / data/npcs.json — see
+  `session1_something_is_happening.json` → structure.parting_gifts.
+- Session 1 itself ("Something is Happening") is PROMOTED and live as
+  `data/sessions.json` id `session_1` / `content/sessions/session_1.html` —
+  category "Planning", visibility `dm-only` (not yet played). ninth_thesis.html
+  has a forward-pointing note flagging what needs updating once it's actually
+  run (the party will then know the org's name).
+- Reboot work applied to live data so far: the Session 1 parting-gift
+  items/NPCs, the Session 1 entity itself (dm-only, unplayed), and the
+  one_shot_1-5 id rename (mechanical, not a content rewrite). Everything else —
+  Phase 1-3 plot material, the Ninth Thesis/Secret Society merge, Corvin
+  Ashworth, Torvald's ring, the dwarven ruins — stays planning-only. Don't merge
+  or rewrite further live entities for this without explicit instruction.

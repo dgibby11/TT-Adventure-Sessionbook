@@ -1,8 +1,8 @@
 {
-  "_note": "Planning doc — Session 1 design for the new (Session Zero) party. NOT a live entity — not in index.json, not loaded by the app. STUB: skeleton only, to be fleshed out with the DM. Builds on phase1_something_is_happening.json (the full incident/clue bank this session draws from) and campaign_arc.json (party framing, founders persona constraint).",
-  "status": "STUB — structure only, no scene-level prose yet",
+  "_note": "Planning doc — Session 1 design for the new (Session Zero) party. NOT a live entity itself — not in index.json, not loaded by the app — but PROMOTED (2026-07-27): the design here is now live as data/sessions.json id 'session_1' / content/sessions/session_1.html (category Planning, visibility dm-only, not yet played). This doc remains as the design-history/rationale record. Builds on phase1_something_is_happening.json (the full incident/clue bank this session draws from) and campaign_arc.json (party framing, founders persona constraint).",
+  "status": "PROMOTED — structure, all scene-level prose, and all parting gifts confirmed; live as session_1. Only the bulette encounter's mechanics remain open (left to the DM by request).",
   "session": 1,
-  "title": "TBD — working title \"Something is Happening\"",
+  "title": "Something is Happening (finalized on promotion, 2026-07-27)",
   "maps_to_phase": "Phase 1 — Something is Happening. This session is intended to BE Phase 1, condensed into a single on-campus session, rather than the start of a multi-session phase.",
 
   "premise": "The party's final year at the Academy, in the run-up to graduation. Entirely on-campus. The session surfaces the pattern of escalating incidents from phase1_something_is_happening.json and ends on a hook into graduation — which becomes Session 2's opening and the campaign's pivot from 'students at school' to 'adventuring party in the world.'",
@@ -88,7 +88,7 @@
   },
 
   "open_questions": {
-    "title": "Needs an actual session title once the shape is locked. Candidates once graduation_hook's closing image is decided.",
+    "title": "RESOLVED (2026-07-27) — \"Something is Happening\" adopted as final, matching how it had been used as the working title throughout; live entity name is \"Session 1 — Something is Happening\".",
     "closing_image": "RESOLVED (2026-07-25) — see structure.graduation_hook.the_debrief. Voss tells the party to focus on finals, she'll reach out as graduation nears; cut straight to Session 2's graduation opening.",
     "parting_gifts_zarad_guntrah": "RESOLVED (2026-07-27) — see structure.parting_gifts.items.",
     "tito_admirer_identity": "RESOLVED (2026-07-27) — Viola Gossamer, named. See structure.parting_gifts.items and data/npcs.json (id: viola_gossamer).",

@@ -36,7 +36,7 @@
       "items.json": ["orath_charter", "founders_compass"],
       "locations.json": ["founders_statue", "old_library", "underground_storage", "memorial_garden", "voss_imprint", "restricted_floor", "ritual_floor"],
       "references.json": ["hidden_knowledge", "founders_charter", "contraband_log"],
-      "sessions.json": ["session_2"],
+      "sessions.json": ["one_shot_2"],
       "factions.json": ["ninth_thesis", "occult_systems"]
     },
     "occult_systems_referenced_by": {
@@ -49,7 +49,7 @@
       "factions.json": ["secret_society"],
       "locations.json": ["founders_statue"],
       "references.json": ["academy_legends"],
-      "sessions.json": ["session_2"]
+      "sessions.json": ["one_shot_2"]
     },
     "note": "ninth_thesis.html itself already carries a forward-pointing dm-restricted note acknowledging the pending merge and explicitly says not to rewrite it further without explicit instruction — that note is accurate and doesn't need correction."
   }

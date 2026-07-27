@@ -1,20 +1,30 @@
 <!--
-  DRAFT — pending DM review, NOT yet live. Not in data/sessions.json, not in index.json,
-  not loaded by the app. Written from campaigns/fail-academy/planning/session1_something_is_happening.json,
+  PROMOTED (2026-07-27) — this draft is now live as content/sessions/session_1.html /
+  data/sessions.json (id: session_1, category "Planning", visibility "dm-only" since it
+  hasn't been played yet). This file is kept as the design-history record (the reasoning
+  and resolved-open-question trail below), not as the authoritative content anymore —
+  edit the live file for anything that needs to change post-promotion, then port
+  meaningful changes back here if worth preserving as history.
+
+  Written from campaigns/fail-academy/planning/session1_something_is_happening.json,
   the_dwarven_ruins.json, campaign_arc.json, phase1_something_is_happening.json, and
   phase2_the_one_who_got_away.json — all "confirmed" decisions in those docs are represented
   here; anything still open in them is flagged inline below with [DRAFT — ...].
 
-  Before this goes live it needs:
-  - Confirmed (2026-07-26): the archived Sessions 1-5 are being renamed "One Shot 1-5" to
-    free up "Session 1" for this draft's id/name once published — see data/sessions.json.
-  - Done (2026-07-27): all four parting gifts are now confirmed and written up as live entities
-    (data/items.json: witness, quick_components_pouch, standing_ovation; data/npcs.json:
-    viola_gossamer) — see session1_something_is_happening.json's structure.parting_gifts.
-  - The bulette encounter itself (left to the DM by request — only staged/framed here).
-  - Done (2026-07-26): the rangers location's dangling "fresh tracks" curiosity has been
-    removed from data/locations.json — this session is now its resolution, not an open
+  Resolved on the way to promotion:
+  - Confirmed (2026-07-26): the archived Sessions 1-5 were renamed "One Shot 1-5" (both
+    display name AND id/contentFile, executed 2026-07-27) to free up "session_1" for
+    this draft's live id.
+  - Done (2026-07-27): all four parting gifts confirmed and live (data/items.json:
+    witness, quick_components_pouch, standing_ovation; data/npcs.json: viola_gossamer).
+  - Done (2026-07-26): the rangers location's dangling "fresh tracks" curiosity was
+    removed from data/locations.json — this session is its resolution, not an open
     mystery waiting on it.
+  - Fixed on promotion: a stray [[corvin_ashworth]] cross-link (line ~60 below) was a
+    broken link since no live NPC entity exists for him yet — the live version uses
+    plain text instead. Left as-is here since this file is history, not authoritative.
+  - The bulette encounter itself remains open by request — only staged/framed, in both
+    this file and the live version.
 -->
 <article class="loc">
   <dl class="facts">

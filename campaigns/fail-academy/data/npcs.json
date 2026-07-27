@@ -7,7 +7,7 @@
     "contentType": "html",
     "contentFile": "content/players/lugeiros_serise.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3", "session_4", "session_5", "oswald_crumb"],
+    "related": ["one_shot_1", "one_shot_2", "one_shot_3", "one_shot_4", "one_shot_5", "oswald_crumb"],
     "links": [
       { "label": "Lugeiros Serise — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157565841" }
     ],
@@ -21,7 +21,7 @@
     "contentType": "html",
     "contentFile": "content/players/gunnar.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3", "session_4", "session_5"],
+    "related": ["one_shot_1", "one_shot_2", "one_shot_3", "one_shot_4", "one_shot_5"],
     "links": [
       { "label": "Gunnar — D&D Beyond", "url": "https://www.dndbeyond.com/characters/157566207" }
     ],
@@ -35,7 +35,7 @@
     "contentType": "html",
     "contentFile": "content/players/caelum_rivenstone.html",
     "visibility": "player",
-    "related": ["session_1", "session_2", "session_3", "session_4", "session_5", "bards", "boots_of_elvenkind"],
+    "related": ["one_shot_1", "one_shot_2", "one_shot_3", "one_shot_4", "one_shot_5", "bards", "boots_of_elvenkind"],
     "links": [
       { "label": "Caelum Rivenstone — D&D Beyond", "url": "https://www.dndbeyond.com/characters/123583842" }
     ],
@@ -49,7 +49,7 @@
     "contentType": "html",
     "contentFile": "content/players/bloodraven.html",
     "visibility": "player",
-    "related": ["sunken_fang_spear", "session_1", "session_2", "session_3", "session_4", "session_5", "fighters"],
+    "related": ["sunken_fang_spear", "one_shot_1", "one_shot_2", "one_shot_3", "one_shot_4", "one_shot_5", "fighters"],
     "links": [
       { "label": "BloodRaven — D&D Beyond", "url": "https://www.dndbeyond.com/characters/138257820" }
     ],
@@ -63,7 +63,7 @@
     "contentType": "html",
     "contentFile": "content/players/zarad.html",
     "visibility": "player",
-    "related": ["guntrah", "tito", "tavian_stormnet", "quick_components_pouch", "oswald_crumb"],
+    "related": ["guntrah", "tito", "tavian_stormnet", "quick_components_pouch", "oswald_crumb", "session_1"],
     "tags": ["player-character", "wizard", "half-orc", "evocation", "session-zero"]
   },
   {
@@ -74,7 +74,7 @@
     "contentType": "html",
     "contentFile": "content/players/guntrah.html",
     "visibility": "player",
-    "related": ["zarad", "tito", "tavian_stormnet"],
+    "related": ["zarad", "tito", "tavian_stormnet", "session_1"],
     "tags": ["player-character", "artificer", "orc", "armorer", "session-zero"]
   },
   {
@@ -85,7 +85,7 @@
     "contentType": "html",
     "contentFile": "content/players/tito.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tavian_stormnet", "standing_ovation", "viola_gossamer"],
+    "related": ["zarad", "guntrah", "tavian_stormnet", "standing_ovation", "viola_gossamer", "session_1"],
     "tags": ["player-character", "bard", "satyr", "eloquence", "session-zero"]
   },
   {
@@ -96,7 +96,7 @@
     "contentType": "html",
     "contentFile": "content/players/tavian_stormnet.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tito", "witness", "commander_orvyn"],
+    "related": ["zarad", "guntrah", "tito", "witness", "commander_orvyn", "session_1"],
     "tags": ["player-character", "paladin", "air-genasi", "oath-of-glory", "session-zero"]
   },
   {
@@ -107,7 +107,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/silas_morne.html",
     "visibility": "player",
-    "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium", "session_5"],
+    "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium", "one_shot_5"],
     "tags": ["staff", "store", "provisions", "suspicious", "merchant"]
   },
   {
@@ -118,7 +118,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/torvald_thatch.html",
     "visibility": "player",
-    "related": ["campus_root", "memorial_garden", "underground_storage", "eastern_wing", "campus_ravens"],
+    "related": ["campus_root", "memorial_garden", "underground_storage", "eastern_wing", "campus_ravens", "session_1"],
     "tags": ["staff", "groundskeeper", "night-watch", "half-orc", "veteran", "grounds"]
   },
   {
@@ -173,7 +173,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/ellery_voss.html",
     "visibility": "player",
-    "related": ["fail_chamber", "jungle_site", "aldric_voss", "teleportation_network", "session_3", "main_complex"],
+    "related": ["fail_chamber", "jungle_site", "aldric_voss", "teleportation_network", "one_shot_3", "main_complex", "session_1"],
     "tags": ["faculty", "voss-family", "fail-chamber", "secrets", "independent", "founder-descendant"]
   },
   {
@@ -184,7 +184,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/lenny_goldvein.html",
     "visibility": "player",
-    "related": ["underground_storage", "session_1", "academy_provisions", "academy_credits", "food_court"],
+    "related": ["underground_storage", "one_shot_1", "academy_provisions", "academy_credits", "food_court"],
     "tags": ["faculty", "administration", "credits", "economy", "cutting-corners"]
   },
   {
@@ -195,7 +195,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
-    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "session_5", "prof_brasca_ironquill", "oswald_crumb_statblock"],
+    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "one_shot_5", "prof_brasca_ironquill", "oswald_crumb_statblock", "session_1"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
   },
   {
@@ -206,7 +206,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb_statblock.html",
     "visibility": "dm-only",
-    "related": ["oswald_crumb", "session_5", "nether_mountains"],
+    "related": ["oswald_crumb", "one_shot_5", "nether_mountains"],
     "tags": ["faculty", "dm-only", "statblock", "combat-reference", "sorcerer", "goblin"]
   },
   {
@@ -261,7 +261,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/the_upperclassmen.html",
     "visibility": "dm-only",
-    "related": ["owlbear_cave", "session_4", "dead_hours"],
+    "related": ["owlbear_cave", "one_shot_4", "dead_hours"],
     "tags": ["students", "dm-only", "antagonist", "prank", "upperclassmen"]
   },
   {
@@ -305,7 +305,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/commander_orvyn.html",
     "visibility": "player",
-    "related": ["paladins", "clerics", "memorial_garden", "archcleric_senna"],
+    "related": ["paladins", "clerics", "memorial_garden", "archcleric_senna", "witness", "session_1"],
     "tags": ["faculty", "paladins", "tiefling", "department-head", "oath-of-glory", "institutional"]
   },
   {
@@ -437,7 +437,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/viola_gossamer.html",
     "visibility": "player",
-    "related": ["bards", "tito", "standing_ovation", "maestro_lira"],
+    "related": ["bards", "tito", "standing_ovation", "maestro_lira", "session_1"],
     "tags": ["student", "bards", "fairy", "fey", "fourth-year", "crush", "session-zero-gift"]
   },
   {

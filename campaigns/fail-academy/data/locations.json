@@ -55,7 +55,7 @@
     "contentType": "html",
     "contentFile": "content/locations/rangers.html",
     "visibility": "player",
-    "related": ["owlbear_cave", "kass", "maren_duskhollow", "high_forest", "torvald_thatch"],
+    "related": ["owlbear_cave", "kass", "maren_duskhollow", "high_forest", "torvald_thatch", "session_1"],
     "tags": ["department", "ranged", "wilderness", "survival", "tracking", "nature"],
     "environment": {
       "architecture": "A low timber longhouse that blends into the treeline at the campus edge, with lean-to shelters for equipment and a covered tracking range running west into the forest. The path to Kass's cave starts here.",
@@ -297,7 +297,7 @@
     "contentType": "html",
     "contentFile": "content/locations/main_complex.html",
     "visibility": "player",
-    "related": ["headmistress_dowe", "old_library", "food_court", "academy_provisions", "torvald_thatch", "oswald_crumb", "session_5"],
+    "related": ["headmistress_dowe", "old_library", "food_court", "academy_provisions", "torvald_thatch", "oswald_crumb", "one_shot_5"],
     "tags": ["administration", "tower", "faculty", "offices", "central"],
     "environment": {
       "architecture": "Central administrative tower flanked by two academic wings and a formal courtyard. Gothic stonework on the original sections; newer administrative additions in a more severe style that announces itself as more recent without meaning to.",
@@ -319,7 +319,7 @@
     "contentType": "html",
     "contentFile": "content/locations/founders_statue.html",
     "visibility": "player",
-    "related": ["secret_society", "ninth_thesis", "aldric_voss", "session_2", "memorial_garden", "occult_systems"],
+    "related": ["secret_society", "ninth_thesis", "aldric_voss", "one_shot_2", "memorial_garden", "occult_systems"],
     "tags": ["landmark", "founders", "mystery", "ritual-site", "lore"],
     "environment": {
       "architecture": "A tall stone figure on a raised plinth at the junction of three campus paths. Older than everything immediately around it — stone worn smooth, features slightly indistinct.",
@@ -414,7 +414,7 @@
     "contentType": "html",
     "contentFile": "content/locations/underground_storage.html",
     "visibility": "dm-only",
-    "related": ["bodak", "mimics", "magical_gauntlet", "session_1", "food_court", "occult_systems", "secret_society"],
+    "related": ["bodak", "mimics", "magical_gauntlet", "one_shot_1", "food_court", "occult_systems", "secret_society"],
     "tags": ["underground", "dangerous", "secret", "bodak", "founding", "dm-only"],
     "environment": {
       "architecture": "Rough-cut stone chambers extending beneath the food court and east under the main courtyard. Not a single construction — something older lies below, with something newer grafted on top in a later era.",
@@ -436,7 +436,7 @@
     "contentType": "html",
     "contentFile": "content/locations/fail_chamber.html",
     "visibility": "player",
-    "related": ["ellery_voss", "jungle_site", "teleportation_network", "session_3", "expedition_club"],
+    "related": ["ellery_voss", "jungle_site", "teleportation_network", "one_shot_3", "expedition_club"],
     "tags": ["examination", "teleportation", "secret", "sigil", "dr-voss", "fieldwork"],
     "environment": {
       "architecture": "A high-ceilinged stone chamber with a permanent magical sigil inlaid in the floor. Observation balconies on three sides. The sigil is presented to students as testing infrastructure.",
@@ -459,7 +459,7 @@
     "contentType": "html",
     "contentFile": "content/locations/owlbear_cave.html",
     "visibility": "player",
-    "related": ["kass", "rangers", "maren_duskhollow", "session_4", "the_upperclassmen"],
+    "related": ["kass", "rangers", "maren_duskhollow", "one_shot_4", "the_upperclassmen"],
     "tags": ["creature", "cave", "containment", "owlbear", "kass", "rangers"],
     "environment": {
       "architecture": "A natural cave system expanded with timber framing and iron reinforcement. Outer entrance area open to the air; main holding chamber deep enough that the temperature stays constant year-round. A feeding apparatus on a pulley system at the entrance.",
@@ -479,7 +479,7 @@
     "contentType": "html",
     "contentFile": "content/locations/jungle_site.html",
     "visibility": "player",
-    "related": ["sunken_fang_spear", "dinosaurs", "fail_chamber", "session_3", "expedition_club"],
+    "related": ["sunken_fang_spear", "dinosaurs", "fail_chamber", "one_shot_3", "expedition_club"],
     "tags": ["remote", "jungle", "fieldwork", "teleportation", "dinosaurs", "artifact"],
     "environment": {
       "architecture": "No permanent structures. The site is a remote jungle clearing reached only through the FAIL Chamber. Previous expedition markers are visible — stakes, rope guides, a collapsed shelter from a prior cohort that no one has cleared.",
@@ -596,7 +596,7 @@
     "contentType": "html",
     "contentFile": "content/locations/academy_provisions.html",
     "visibility": "player",
-    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night", "boots_of_elvenkind", "session_5"],
+    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night", "boots_of_elvenkind", "one_shot_5"],
     "tags": ["store", "credits", "supplies", "provisions", "magic-items", "economy"],
     "environment": {
       "architecture": "A narrow shopfront inside the main complex ground floor. Shelves behind a counter, a locked cabinet on the back wall, and a ledger stand that Silas Morne faces away from customers with impressive consistency.",
@@ -655,7 +655,7 @@
     "contentType": "html",
     "contentFile": "content/locations/high_forest.html",
     "visibility": "player",
-    "related": ["river_rauvin", "silverymoon", "wolves", "displacer_beast"],
+    "related": ["river_rauvin", "silverymoon", "wolves", "displacer_beast", "session_1"],
     "links": [
       { "label": "High Forest — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/High_Forest" }
     ],

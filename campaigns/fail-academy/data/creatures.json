@@ -7,7 +7,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/bodak.html",
     "visibility": "dm-only",
-    "related": ["underground_storage", "session_1", "occult_systems"],
+    "related": ["underground_storage", "one_shot_1", "occult_systems"],
     "links": [
       { "label": "Bodak — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16975-bodak" }
     ],
@@ -21,7 +21,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/kass.html",
     "visibility": "player",
-    "related": ["owlbear_cave", "rangers", "maren_duskhollow", "session_4"],
+    "related": ["owlbear_cave", "rangers", "maren_duskhollow", "one_shot_4"],
     "links": [
       { "label": "Owlbear — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/owlbear" }
     ],
@@ -50,7 +50,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/mimics.html",
     "visibility": "dm-only",
-    "related": ["underground_storage", "session_1"],
+    "related": ["underground_storage", "one_shot_1"],
     "links": [
       { "label": "Mimic — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/27127-mimic" }
     ],
@@ -64,7 +64,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/dinosaurs.html",
     "visibility": "player",
-    "related": ["jungle_site", "sunken_fang_spear", "session_3"],
+    "related": ["jungle_site", "sunken_fang_spear", "one_shot_3"],
     "links": [
       { "label": "Triceratops — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/27186-triceratops" }
     ],
@@ -188,7 +188,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/earth_elemental.html",
     "visibility": "dm-only",
-    "related": ["nether_mountains", "oswald_crumb", "session_5", "dust_mephit"],
+    "related": ["nether_mountains", "oswald_crumb", "one_shot_5", "dust_mephit"],
     "tags": ["elemental", "dm-only", "nether-mountains", "session-5", "boss", "CR-5"]
   },
   {
@@ -199,7 +199,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/dust_mephit.html",
     "visibility": "dm-only",
-    "related": ["nether_mountains", "earth_elemental", "session_5"],
+    "related": ["nether_mountains", "earth_elemental", "one_shot_5"],
     "tags": ["elemental", "mephit", "dm-only", "nether-mountains", "session-5", "swarm", "CR-1/2"]
   },
   {
@@ -210,7 +210,7 @@
     "contentType": "html",
     "contentFile": "content/creatures/mud_mephit.html",
     "visibility": "dm-only",
-    "related": ["nether_mountains", "session_5"],
+    "related": ["nether_mountains", "one_shot_5"],
     "tags": ["elemental", "mephit", "dm-only", "nether-mountains", "session-5", "reserve-encounter", "CR-1/4"]
   }
 ]

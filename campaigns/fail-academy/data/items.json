@@ -7,7 +7,7 @@
     "contentType": "html",
     "contentFile": "content/items/witness.html",
     "visibility": "player",
-    "related": ["tavian_stormnet", "commander_orvyn", "paladins", "memorial_garden"],
+    "related": ["tavian_stormnet", "commander_orvyn", "paladins", "memorial_garden", "session_1"],
     "tags": ["magic-item", "weapon", "longsword", "legendary", "sentient", "paladin", "oath-of-glory", "pc-item"]
   },
   {
@@ -18,7 +18,7 @@
     "contentType": "html",
     "contentFile": "content/items/quick_components_pouch.html",
     "visibility": "player",
-    "related": ["zarad", "oswald_crumb", "thornwick_consortium"],
+    "related": ["zarad", "oswald_crumb", "thornwick_consortium", "session_1"],
     "tags": ["magic-item", "wondrous", "pouch", "wizard", "spellcasting-focus", "pc-item", "thornwick"]
   },
   {
@@ -29,7 +29,7 @@
     "contentType": "html",
     "contentFile": "content/items/standing_ovation.html",
     "visibility": "player",
-    "related": ["tito", "viola_gossamer", "bards"],
+    "related": ["tito", "viola_gossamer", "bards", "session_1"],
     "tags": ["magic-item", "cloak", "wondrous", "bard", "death-save", "pc-item"]
   },
   {
@@ -43,7 +43,7 @@
     "links": [
       { "label": "Shield of Missile Attraction — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/4754-shield-of-missile-attraction" }
     ],
-    "related": ["nether_mountains", "mountain_base", "session_5"],
+    "related": ["nether_mountains", "mountain_base", "one_shot_5"],
     "tags": ["magic-item", "shield", "cursed", "mountains", "undiscovered"]
   },
   {
@@ -54,7 +54,7 @@
     "contentType": "html",
     "contentFile": "content/items/boots_of_elvenkind.html",
     "visibility": "player",
-    "related": ["academy_provisions", "session_5"],
+    "related": ["academy_provisions", "one_shot_5"],
     "links": [
       { "label": "Boots of Elvenkind — D&D Beyond", "url": "https://www.dndbeyond.com/magic-items/91-boots-of-elvenkind" }
     ],
@@ -68,7 +68,7 @@
     "contentType": "html",
     "contentFile": "content/items/sunken_fang_spear.html",
     "visibility": "player",
-    "related": ["jungle_site", "dinosaurs", "fail_chamber", "session_3", "bloodraven"],
+    "related": ["jungle_site", "dinosaurs", "fail_chamber", "one_shot_3", "bloodraven"],
     "tags": ["artifact", "weapon", "spear", "jungle", "creature-influence", "pc-item", "mysterious"]
   },
   {
@@ -79,7 +79,7 @@
     "contentType": "html",
     "contentFile": "content/items/magical_gauntlet.html",
     "visibility": "player",
-    "related": ["underground_storage", "session_1"],
+    "related": ["underground_storage", "one_shot_1"],
     "tags": ["artifact", "armor", "gauntlet", "underground", "mysterious", "recovered"]
   },
   {
@@ -154,7 +154,7 @@
     "contentType": "html",
     "contentFile": "content/items/teleportation_network.html",
     "visibility": "dm-only",
-    "related": ["fail_chamber", "jungle_site", "ellery_voss", "session_3", "voss_imprint"],
+    "related": ["fail_chamber", "jungle_site", "ellery_voss", "one_shot_3", "voss_imprint"],
     "tags": ["dm-only", "mystery", "teleportation", "infrastructure", "founding", "fail-chamber", "hidden"]
   },
   {

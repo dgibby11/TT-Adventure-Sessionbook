@@ -51,7 +51,7 @@
     "contentType": "html",
     "contentFile": "content/factions/thornwick_consortium.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "session_5"],
+    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "one_shot_5", "session_1"],
     "tags": ["external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
   },
   {
@@ -62,7 +62,7 @@
     "contentType": "html",
     "contentFile": "content/factions/ninth_thesis.html",
     "visibility": "player",
-    "related": ["secret_society", "founders_statue", "session_2", "aldric_voss"],
+    "related": ["secret_society", "founders_statue", "one_shot_2", "aldric_voss", "session_1"],
     "tags": ["mystery", "conspiracy", "founding", "secret-society", "ritual", "lore"]
   },
   {
