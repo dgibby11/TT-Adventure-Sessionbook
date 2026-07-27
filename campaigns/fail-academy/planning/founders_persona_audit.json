@@ -1,0 +1,56 @@
+{
+  "_note": "Planning doc — the catalogued audit that campaign_arc.json's founders_persona_rewrite.consequence and the_ninth_thesis.json's merge_plan_proposed both pointed to as 'not yet catalogued.' Read-only survey of LIVE data (content/, data/) against the reboot's confirmed decisions — no live entity has been changed to produce this doc. NOT a live entity itself. This is the single largest gate before any of the reboot's founders/Ninth Thesis material can be merged into live data — resolve the open decisions below before executing that merge.",
+  "audited": "2026-07-27",
+  "status": "Conflicts catalogued, backlinks fully enumerated, resolution NOT yet chosen — needs a DM decision before execution.",
+
+  "conflict_1_founder_identity": {
+    "severity": "Hard contradiction — direct, not a tone mismatch.",
+    "live_claim": "content/npcs/brennan_ashcroft.html: Ashcroft (third founder) founded 'The Alumni Society,' presented as alumni networking/institutional support, whose student-facing identity today is the Secret Society. content/factions/secret_society.html repeats this: 'Founded by brennan_ashcroft... Original identity: The Alumni Society.' Ashcroft's descendants hold board-of-governors seats.",
+    "reboot_claim": "the_ninth_thesis.json (CONFIRMED): Aldric Voss (first founder) founded the Ninth Thesis by quietly preserving Wren Halloway's suppressed graduation thesis and building an organization around it, roughly within the Academy's first several years. No mention of Ashcroft, alumni networking, or a board-of-governors angle anywhere in the reboot material.",
+    "why_it_matters": "The reboot's merge plan (the_ninth_thesis.json → relationship_to_secret_society) assumes secret_society and ninth_thesis are the same org and can be collapsed into one entity. As currently written, live data gives that org two different founders and two different founding stories. That can't be silently merged — someone has to decide which founding story is true, or whether both are true of two different things.",
+    "resolution_options": {
+      "note": "Not decided here — DM's call. Recorded as options so the eventual merge session can move fast instead of re-litigating from scratch.",
+      "option_a_retcon_ashcroft": "Straight merge as the current plan implies: rewrite brennan_ashcroft.html and secret_society.html so Ashcroft's 'Alumni Society' claim goes away, replaced by the Voss/Halloway origin. Simplest data model, but discards existing lore and needs a new answer for what Ashcroft actually did/founded instead (he's still 'third of the three founders' with nothing else established about him).",
+      "option_b_unconflate": "Keep both as real and distinct: Ashcroft's Alumni Society stays mundane, real, board-of-governors-legitimate, and unrelated to any secrecy. The campus legend 'Secret Society' is revealed to be a case of mistaken identity/rumor-bleed — students conflate the (boring, real) Alumni Society with rumors that are actually about the (genuinely secret) Ninth Thesis. Preserves all existing lore; secret_society.html would be rewritten to explicitly BE that conflation/rumor artifact rather than a real organization in its own right.",
+      "option_c_both_true": "Ashcroft founded the real Alumni Society AND was separately, privately read into the Ninth Thesis by Voss (as a founding-era ally/member, not its founder). Both founding claims stay technically true; requires the least rewriting of brennan_ashcroft.html (add a paragraph) but requires deciding how much Ashcroft's persona-rewrite (sincerely well-intentioned) extends to whatever his Alumni Society actually does today."
+    }
+  },
+
+  "conflict_2_tone_and_occult_material": {
+    "severity": "Tone mismatch — not a factual contradiction, but incompatible with the founders_persona_rewrite as written.",
+    "live_claim": "secret_society.html: 'performs rituals and preserves forbidden knowledge,' 'ritualistic chanting, hidden academic doctrines, and magical manifestations,' 'others are already indoctrinated.' occult_systems.html (separate dm-only faction): 'Hints that sacrificial or occult systems operate beneath the academy,' 'sealed horrors' in underground_storage, evidence tag 'suspicious staff involvement.'",
+    "reboot_claim": "campaign_arc.json's founders_persona_rewrite: founders were 'sincerely well-intentioned.' the_ninth_thesis.json: the org 'hunts hidden evils in the world,' Voss's tone_guardrail explicitly says 'write this as prudence, not manipulation... not conspiring.' Nothing in any reboot doc proposes rituals, sacrifice, indoctrination, or 'sealed horrors' as things the well-intentioned founders' organization would run.",
+    "why_it_matters": "occult_systems.html is a self-contained dm-only faction whose entire premise (sacrificial/occult systems, sealed horrors, suspicious staff) has no proposed home anywhere in the reboot material. campaign_arc.json flagged it as one of the entities needing reconciliation but never said what happens to it — this audit is the first place that's made explicit.",
+    "open_decision": "Not decided here. Options run from 'occult_systems turns out to be unrelated old lore that gets quietly dropped / left as an unconnected campus legend with no payoff' to 'it's real, but it's the villain's (Corvin/Thornwick's) doing, retroactively unconnected to the founders' to 'it's real and it's actually evidence for whichever secret_society/ninth_thesis interpretation is chosen in conflict_1' — genuinely open, needs a table decision, not an audit-time guess."
+  },
+
+  "unresolved_but_not_conflicting": {
+    "isolde_orath_disappearance": "isolde_orath.html: she disappeared, three sealed letters to Ashcroft are administratively sealed and unread, open thread 'is she still on campus in some form?' Nothing in the reboot material touches her at all. Doesn't contradict the well-intentioned rewrite (a founder can disappear for sympathetic reasons) but is a dangling thread the reboot hasn't picked up.",
+    "aldric_voss_empty_tomb": "aldric_voss.html: his memorial tomb is empty, marked dm-restricted ('do not surface until players actively investigate'). Also doesn't contradict the rewrite on its face — could even support it (e.g. he's still active/bound somewhere in service of the veil) — but the reboot hasn't connected it to anything (it is NOT the same figure as the unnamed predecessor commander bound in Tavian's sword [[witness]] — that's a Paladins-department NPC, unrelated to Voss). Flagging so a future pass doesn't forget it exists."
+  },
+
+  "backlink_migration_list": {
+    "_purpose": "Supersedes the vague 'and at least one more location' note in the_ninth_thesis.json → merge_plan_proposed.backlink_migration_needed. Full, grep-verified list of every live entity whose related[] currently contains secret_society, occult_systems, or ninth_thesis, as of the audit date above. Re-verify before executing any merge in case new content has been added since.",
+    "secret_society_referenced_by": {
+      "npcs.json": ["headmistress_dowe", "aldric_voss", "isolde_orath", "brennan_ashcroft", "prof_bram_holdar"],
+      "items.json": ["orath_charter", "founders_compass"],
+      "locations.json": ["founders_statue", "old_library", "underground_storage", "memorial_garden", "voss_imprint", "restricted_floor", "ritual_floor"],
+      "references.json": ["hidden_knowledge", "founders_charter", "contraband_log"],
+      "sessions.json": ["session_2"],
+      "factions.json": ["ninth_thesis", "occult_systems"]
+    },
+    "occult_systems_referenced_by": {
+      "creatures.json": ["bodak"],
+      "items.json": ["sealed_urn"],
+      "locations.json": ["founders_statue", "underground_storage", "ritual_floor"],
+      "factions.json": ["secret_society"]
+    },
+    "ninth_thesis_referenced_by": {
+      "factions.json": ["secret_society"],
+      "locations.json": ["founders_statue"],
+      "references.json": ["academy_legends"],
+      "sessions.json": ["session_2"]
+    },
+    "note": "ninth_thesis.html itself already carries a forward-pointing dm-restricted note acknowledging the pending merge and explicitly says not to rewrite it further without explicit instruction — that note is accurate and doesn't need correction."
+  }
+}

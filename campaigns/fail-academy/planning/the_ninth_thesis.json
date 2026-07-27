@@ -33,8 +33,8 @@
     "merge_plan_proposed": {
       "surviving_id": "ninth_thesis (proposed) — it's already visibility:player and already tied to completed Session 2 canon, so the new PCs could plausibly have heard the name as campus legend. 'secret_society' would be retired/redirected into it.",
       "mechanism": "Use the schema's existing dm-only-content-block convention: the entity stays visibility:player with the public-facing 'campus legend' framing at the top of its content, and the true nature (it's a real active organization, Voss leads it, what they actually know/do) goes in a <div class=\"dm-only\"> block inside the same file — rather than keeping a separate dm-only faction entity.",
-      "backlink_migration_needed": "secret_society is currently referenced in related[] by: aldric_voss, isolde_orath, brennan_ashcroft, headmistress_dowe, prof_bram_holdar (npcs.json); occult_systems (factions.json); underground_storage, founders_statue, old_library, and at least one more location (locations.json); hidden_knowledge, founders_charter, contraband_log (references.json). All of these need to point at ninth_thesis instead once merged.",
-      "status": "Plan drafted, not yet executed against live data. Who-founded-it is now decided (below), so the remaining gate is just: say the word and this gets executed as its own step, alongside the content pass that folds Halloway/Voss/the excerpt into the actual entity file."
+      "backlink_migration_needed": "Full, grep-verified list now in founders_persona_audit.json → backlink_migration_list (supersedes the old partial list that used to live here).",
+      "status": "Plan drafted, not yet executed against live data. Who-founded-it is decided on the reboot side (below), but founders_persona_audit.json (2026-07-27) found this contradicts brennan_ashcroft.html/secret_society.html's existing live claim that Ashcroft founded it as 'The Alumni Society' — that conflict needs a DM decision (see the audit doc's resolution options) before this merge can execute, not just a green light."
     }
   },
 

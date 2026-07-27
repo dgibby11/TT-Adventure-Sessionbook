@@ -13,15 +13,27 @@
     "npc_relationships": "They've known faculty like Ellery Voss for years. Scenes with her (or other long-tenured NPCs) should read as an established relationship, not an introduction."
   },
 
+  "confirmed_scene_order": [
+    "1. Parting-gifts montage — the last few weeks before graduation, before any of the plot below begins.",
+    "2. The Voss summons note arrives.",
+    "3. Office scene: Voss absent, notes found in plain view (Voss's Notes).",
+    "4. Voss 'arrives' — recruitment pitch (join the Ninth Thesis as field operatives post-graduation, Guntrah singled out).",
+    "5. Same scene, second and more immediate ask: a bulette has worked its way toward the Rangers Department/High Forest edge of campus, and faculty/rangers are stretched thin dealing with fallout from the three already-public incidents — she needs students she trusts right now, not just as a future promise.",
+    "6. Same day: Torvald Thatch escorts the party to the bulette's last sighting.",
+    "7. Same day: the fight (DM's own design — an 'enhanced'/more dangerous bulette than a ranger patrol could handle alone).",
+    "8. Return to Voss — a clean debrief. NO physical evidence or clue pointing toward the ruins in any form, even a suppressed/deflected one — see the_dwarven_ruins.json's aftermath_clue (rejected 2026-07-25).",
+    "9. Cut to graduation itself, opening Session 2."
+  ],
+
   "structure": {
     "parting_gifts": {
       "status": "CONFIRMED as a session element, individual gift details partly TBD",
-      "timing": "Spread across the 'few weeks before graduation' window this session covers — quick, warm, personal vignettes establishing character before the plot intrudes.",
+      "timing": "CONFIRMED (2026-07-25) — this montage happens BEFORE the Voss summons note, not during a post-summons time-skip. Quick, warm, personal vignettes establishing character before the plot intrudes.",
       "items": [
-        { "recipient": "tavian_stormnet", "giver": "commander_orvyn", "gift": "His sword — a parting gift from his Paladins department head.", "status": "confirmed pairing; item details TBD" },
-        { "recipient": "tito", "giver": "an admirer (unnamed)", "gift": "A cloak, gifted by an admirer.", "status": "confirmed pairing; admirer's identity and item details TBD" },
-        { "recipient": "zarad", "giver": "TBD", "gift": "TBD", "status": "open" },
-        { "recipient": "guntrah", "giver": "TBD", "gift": "TBD", "status": "open" }
+        { "recipient": "tavian_stormnet", "giver": "commander_orvyn", "gift": "Witness — a legendary sentient longsword, Orvyn's own late instructor's blade. Starts at +1; grows via Legend Runes as Tavian earns witnessed, retold deeds. See data/items.json (id: witness).", "status": "CONFIRMED — full item written, content/items/witness.html" },
+        { "recipient": "tito", "giver": "viola_gossamer", "gift": "The Standing Ovation — a rare attuned cloak (advantage on death saves; 1/day drop to 1 HP instead of 0). Giver named: Viola Gossamer, a fourth-year fairy bard with an unspoken crush, tied to the recital where Tito once saved her from freezing on stage. See data/items.json (id: standing_ovation) and data/npcs.json (id: viola_gossamer).", "status": "CONFIRMED — full item + giver NPC written, content/items/standing_ovation.html" },
+        { "recipient": "zarad", "giver": "oswald_crumb", "gift": "The Quick Components Pouch — rare, no attunement, 1/day bonus-action casting of a level ≤3 action spell, with a nested attuned Pearl of Power. DM secret: Thornwick-sourced via Crumb's own supply chain, same maker's stamp as the tainted pouch from the three incidents — an independent lead into the supply chain, not evidence against Crumb. See data/items.json (id: quick_components_pouch).", "status": "CONFIRMED — full item written, content/items/quick_components_pouch.html" },
+        { "recipient": "guntrah", "giver": "self-made", "gift": "The All-Purpose Tool, +1 — not a gift from anyone else; his own last piece of proof-of-work before leaving the workshops, already reflected as attuned equipment on guntrah.html.", "status": "CONFIRMED (already reflected in session1_draft.html)" }
       ]
     },
     "the_voss_summons": {
@@ -63,7 +75,9 @@
     "graduation_hook": {
       "status": "LARGELY RESOLVED by the_voss_summons above.",
       "resolved": "The personal stake is now concrete: Voss has personally asked them (Guntrah especially) to become Ninth Thesis operatives once they leave the Academy. That's the throughline reason this party keeps investigating off-campus for the rest of the campaign, and why they'd come back to save the school later — not abstract obligation, a direct ask from someone they trust.",
-      "still_open": "The exact closing image of Session 1. Since the summons happens weeks before graduation, the session likely time-skips/montages forward through the remaining weeks (contingency_hadra_quill could land somewhere in that montage if needed) and cuts away right on the cusp of the ceremony — Session 2 then opens ON graduation itself, per the user's original framing that graduation happens in Session 2, not 1."
+      "bulette_incident": "CONFIRMED — see ../the_dwarven_ruins.json → the_bulette_incident and confirmed_scene_order above. This is NOT a post-summons montage beat — it happens the same day as the office scene, immediately after the recruitment pitch, as a second and more immediate ask. Proves the 'loyal and capable' pitch in practice rather than leaving it abstract. The parting-gifts montage covers the weeks BEFORE the summons, not after.",
+      "the_debrief": "CONFIRMED (2026-07-25) — this IS Session 1's closing image, resolving still_open below. After the fight, Voss tells the party plainly to put this aside and focus on finals/graduation — she'll be in touch as the day gets closer. DM-only: in the meantime she reaches out to her other contacts, digging into how these events tie into growing irregularities in Thornwick Arcane Consortium activity — this is Voss's own off-screen legwork feeding directly into phase2_the_one_who_got_away.json's thread_a_ninth_thesis investigation (the alumni/Thornwick-stamp cross-reference that eventually surfaces Corvin). She deliberately withholds this from the party until after graduation specifically so it doesn't derail their focus on finals — not coyness for its own sake, a genuine protective call consistent with her character. Cut straight to graduation opening Session 2.",
+      "still_open": "RESOLVED by the_debrief above — no further montage needed between the fight and graduation."
     }
   },
 
@@ -75,9 +89,9 @@
 
   "open_questions": {
     "title": "Needs an actual session title once the shape is locked. Candidates once graduation_hook's closing image is decided.",
-    "closing_image": "The only real remaining structural gap — see structure.graduation_hook.still_open. What's the last beat/line of Session 1, right before the cut to Session 2's graduation opening?",
-    "parting_gifts_zarad_guntrah": "Gift + giver for Zarad and Guntrah still TBD — see structure.parting_gifts.",
-    "tito_admirer_identity": "Who the admirer gifting Tito the cloak is — TBD, could stay a mystery hook or be named.",
+    "closing_image": "RESOLVED (2026-07-25) — see structure.graduation_hook.the_debrief. Voss tells the party to focus on finals, she'll reach out as graduation nears; cut straight to Session 2's graduation opening.",
+    "parting_gifts_zarad_guntrah": "RESOLVED (2026-07-27) — see structure.parting_gifts.items.",
+    "tito_admirer_identity": "RESOLVED (2026-07-27) — Viola Gossamer, named. See structure.parting_gifts.items and data/npcs.json (id: viola_gossamer).",
     "voss_summons_acceptance": "Does the party answer Voss's recruitment offer on the spot, or is it left open until graduation? See structure.the_voss_summons.acceptance.",
     "org_disclosure_confirm": "Confirm or adjust structure.the_voss_summons.org_disclosure (proposed: she names the Ninth Thesis outright but stays vague on deep specifics).",
     "other_clues_use": "Whether the Founders' Correspondence and Memorial Garden Plaques (structure.other_confirmed_clues) get used in Session 1 as extra material, held for later, or dropped — no longer load-bearing now that Voss's Notes carries the session."

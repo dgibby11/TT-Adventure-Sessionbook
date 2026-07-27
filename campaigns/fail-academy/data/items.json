@@ -1,5 +1,38 @@
 [
   {
+    "id": "witness",
+    "name": "Witness",
+    "type": "item",
+    "category": "Parting Gifts",
+    "contentType": "html",
+    "contentFile": "content/items/witness.html",
+    "visibility": "player",
+    "related": ["tavian_stormnet", "commander_orvyn", "paladins", "memorial_garden"],
+    "tags": ["magic-item", "weapon", "longsword", "legendary", "sentient", "paladin", "oath-of-glory", "pc-item"]
+  },
+  {
+    "id": "quick_components_pouch",
+    "name": "The Quick Components Pouch",
+    "type": "item",
+    "category": "Parting Gifts",
+    "contentType": "html",
+    "contentFile": "content/items/quick_components_pouch.html",
+    "visibility": "player",
+    "related": ["zarad", "oswald_crumb", "thornwick_consortium"],
+    "tags": ["magic-item", "wondrous", "pouch", "wizard", "spellcasting-focus", "pc-item", "thornwick"]
+  },
+  {
+    "id": "standing_ovation",
+    "name": "The Standing Ovation",
+    "type": "item",
+    "category": "Parting Gifts",
+    "contentType": "html",
+    "contentFile": "content/items/standing_ovation.html",
+    "visibility": "player",
+    "related": ["tito", "viola_gossamer", "bards"],
+    "tags": ["magic-item", "cloak", "wondrous", "bard", "death-save", "pc-item"]
+  },
+  {
     "id": "shield_of_missile_attraction",
     "name": "Shield of Missile Attraction",
     "type": "item",

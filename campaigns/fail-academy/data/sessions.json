@@ -1,7 +1,7 @@
 [
   {
     "id": "session_1",
-    "name": "Session 1 — The Basement Incident",
+    "name": "One Shot 1 — The Basement Incident",
     "type": "session",
     "category": "Completed (Archived)",
     "contentType": "html",
@@ -12,7 +12,7 @@
   },
   {
     "id": "session_2",
-    "name": "Session 2 — The Ninth Thesis",
+    "name": "One Shot 2 — The Ninth Thesis",
     "type": "session",
     "category": "Completed (Archived)",
     "contentType": "html",
@@ -23,7 +23,7 @@
   },
   {
     "id": "session_3",
-    "name": "Session 3 — The Dinosaur Breach",
+    "name": "One Shot 3 — The Dinosaur Breach",
     "type": "session",
     "category": "Completed (Archived)",
     "contentType": "html",
@@ -34,7 +34,7 @@
   },
   {
     "id": "session_4",
-    "name": "Session 4 — The Owlbear Prank",
+    "name": "One Shot 4 — The Owlbear Prank",
     "type": "session",
     "category": "Completed (Archived)",
     "contentType": "html",
@@ -45,7 +45,7 @@
   },
   {
     "id": "session_5",
-    "name": "Session 5 — The Nether Mountains Expedition",
+    "name": "One Shot 5 — The Nether Mountains Expedition",
     "type": "session",
     "category": "Completed (Archived)",
     "contentType": "html",

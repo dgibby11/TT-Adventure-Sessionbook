@@ -65,7 +65,6 @@
       "lighting": "Natural only. Students learn by it, including at night."
     },
     "curiosities": [
-      { "roll": "Perception DC 12", "detail": "Fresh tracks circle the longhouse — large, three-toed, not from Kass's direction. No ranger has mentioned seeing anything." },
       { "roll": "Survival DC 13", "detail": "The trap markers along the western training path use a notation system not taught in current curriculum. Someone set them long before the department's current faculty arrived — and they're still active." },
       { "detail": "At first light, students are already moving through the forest — single file, quiet, tracking something or practicing being untraceable. The longhouse itself is at its emptiest of the day.", "time": ["dawn"] },
       { "detail": "The forest beyond the perimeter wall is louder at night than it was during the day — a different set of animals, a different layer of the ecosystem, active in the dark. Something in the treeline is watching the building. This is probably normal.", "time": ["night"] }

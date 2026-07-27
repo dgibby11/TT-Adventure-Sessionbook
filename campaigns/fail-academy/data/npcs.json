@@ -63,7 +63,7 @@
     "contentType": "html",
     "contentFile": "content/players/zarad.html",
     "visibility": "player",
-    "related": ["guntrah", "tito", "tavian_stormnet"],
+    "related": ["guntrah", "tito", "tavian_stormnet", "quick_components_pouch", "oswald_crumb"],
     "tags": ["player-character", "wizard", "half-orc", "evocation", "session-zero"]
   },
   {
@@ -85,7 +85,7 @@
     "contentType": "html",
     "contentFile": "content/players/tito.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tavian_stormnet"],
+    "related": ["zarad", "guntrah", "tavian_stormnet", "standing_ovation", "viola_gossamer"],
     "tags": ["player-character", "bard", "satyr", "eloquence", "session-zero"]
   },
   {
@@ -96,7 +96,7 @@
     "contentType": "html",
     "contentFile": "content/players/tavian_stormnet.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tito"],
+    "related": ["zarad", "guntrah", "tito", "witness", "commander_orvyn"],
     "tags": ["player-character", "paladin", "air-genasi", "oath-of-glory", "session-zero"]
   },
   {
@@ -428,6 +428,17 @@
     "visibility": "player",
     "related": ["fighters", "dueling_society", "prof_thalia_varn"],
     "tags": ["student", "fighters", "senior", "top-of-cohort", "plans"]
+  },
+  {
+    "id": "viola_gossamer",
+    "name": "Viola Gossamer",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/viola_gossamer.html",
+    "visibility": "player",
+    "related": ["bards", "tito", "standing_ovation", "maestro_lira"],
+    "tags": ["student", "bards", "fairy", "fey", "fourth-year", "crush", "session-zero-gift"]
   },
   {
     "id": "petra_vance",

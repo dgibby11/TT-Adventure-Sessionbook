@@ -1,0 +1,103 @@
+<!--
+  DRAFT — pending DM review, NOT yet live. Not in data/sessions.json, not in index.json,
+  not loaded by the app. Written from campaigns/fail-academy/planning/session1_something_is_happening.json,
+  the_dwarven_ruins.json, campaign_arc.json, phase1_something_is_happening.json, and
+  phase2_the_one_who_got_away.json — all "confirmed" decisions in those docs are represented
+  here; anything still open in them is flagged inline below with [DRAFT — ...].
+
+  Before this goes live it needs:
+  - Confirmed (2026-07-26): the archived Sessions 1-5 are being renamed "One Shot 1-5" to
+    free up "Session 1" for this draft's id/name once published — see data/sessions.json.
+  - Done (2026-07-27): all four parting gifts are now confirmed and written up as live entities
+    (data/items.json: witness, quick_components_pouch, standing_ovation; data/npcs.json:
+    viola_gossamer) — see session1_something_is_happening.json's structure.parting_gifts.
+  - The bulette encounter itself (left to the DM by request — only staged/framed here).
+  - Done (2026-07-26): the rangers location's dangling "fresh tracks" curiosity has been
+    removed from data/locations.json — this session is now its resolution, not an open
+    mystery waiting on it.
+-->
+<article class="loc">
+  <dl class="facts">
+    <dt>Title</dt><dd>"Something is Happening"</dd>
+    <dt>Status</dt><dd>DRAFT — not yet played</dd>
+    <dt>Party</dt><dd>[[zarad|Zarad]] · [[guntrah|Guntrah]] · [[tito|Tito]] · [[tavian_stormnet|Tavian Stormnet]]</dd>
+    <dt>Maps to</dt><dd>Phase 1 — Something is Happening, condensed into a single on-campus session</dd>
+  </dl>
+
+  <p><strong>Premise:</strong> The party's final year at [[campus_root|the Academy]], a few weeks out from graduation. Entirely on-campus. They've known these people for years — this isn't a stranger's introduction to [[ellery_voss|Dr. Voss]] or [[torvald_thatch|Torvald Thatch]], it's long-standing familiarity, which is exactly what lets them clock it when something's off.</p>
+
+  <h3>Parting Gifts</h3>
+  <p>Spread across the last few weeks before graduation — quick, warm vignettes to run before the plot intrudes. Order doesn't matter; drop them between classes, meals, or downtime scenes.</p>
+  <ul>
+    <li><strong>[[tavian_stormnet|Tavian]]</strong> — [[commander_orvyn|Commander Orvyn]] gives him <strong>[[witness|Witness]]</strong>, a legendary sentient longsword: his own late instructor's blade, its runes gone dark since he released his attunement. A formal, slightly stiff ceremony in front of the department, exactly Orvyn's style — he says nothing of who's bound in the steel.</li>
+    <li><strong>[[tito|Tito]]</strong> — a small voice catches him after a rehearsal, not a stranger: <strong>[[viola_gossamer|Viola Gossamer]]</strong>, a fourth-year fairy bard, gives him <strong>[[standing_ovation|The Standing Ovation]]</strong>, a cloak woven from her own graduation capstone enchantment — repaying the moment, two years back, when he turned her frozen recital into an ovation. Her devotion is unspoken and she isn't about to spell it out.</li>
+    <li><strong>[[zarad|Zarad]]</strong> — summoned to [[oswald_crumb|Professor Crumb]]'s office, where the pedantic goblin professor hands over <strong>[[quick_components_pouch|The Quick Components Pouch]]</strong>, meticulously labeled by his own hand, with a Pearl of Power tucked inside as a "separate, footnoted" gift. As close to open affection as Crumb gets.</li>
+    <li><strong>[[guntrah|Guntrah]]</strong> — not a gift from anyone else: he made his own parting gift, the <strong>All-Purpose Tool, +1</strong> he's now attuned to. A last piece of proof-of-work before he leaves the workshops behind, not a keepsake handed to him.</li>
+  </ul>
+
+  <h3>The Summons</h3>
+  <p>A short, unexplained note reaches all four of them independently: <em>"My office. Thursday, after last bell. All four of you. — E.V."</em> No context. Given how well they know her, this is already strange — she doesn't operate this way, and she has no ordinary reason to want four students from four different departments in one room.</p>
+
+  <h3>The Empty Office</h3>
+  <p>They arrive on time. She isn't there. The door is unlocked, ajar. Her handwritten notes are sitting in plain view on the desk:</p>
+  <blockquote>
+    <p>Three this year. Three, this school year alone — not spread across some longer span I could talk myself out of.</p>
+    <p>The catalog item — someone fed something into the midterm requisitions that had no business being there. Attracted the pack, and worse, angered them past anything natural. I've asked Provisions for the acquisition record twice. Twice I've been told it "doesn't exist." A requisition doesn't stop existing.</p>
+    <p>The component pouch in the Arcane Tower stores. Wizards and Sorcerers share that supply room and spent a week blaming each other for what happened, which told me plainly that neither of them did it. Turned the pouch over myself after. Small mark stamped on the underside — [[thornwick_consortium|Thornwick Arcane Consortium]]. I've seen that mark before and never once thought about where it came from.</p>
+    <p>An instrument, left anonymous in the practice closet. Ordinary to look at. Enchanted to feed on its own sound — play it past a few minutes and whoever's holding it starts wanting to hurt something. Found because a rehearsal nearly ended in a fistfight over nothing.</p>
+    <p>The Academy's never been silent — I've read the incident logs back generations, and something goes wrong here every so often, has for centuries. That's not what stops me. What stops me is the shape of it. The old incidents are scattered — years apart, no common thread, easy enough to write off one at a time as bad luck. These three are not that. Three, inside a single year, and every one of them traces back to something that shouldn't have been where it was — placed there, not natural. That's not the campus's old checkered luck repeating. That's a pattern, close together and all the same shape, and patterns have authors.</p>
+    <p>"A secret, once it is understood for what it is, is a kind of power." I keep coming back to that line. Read it again last night. She wasn't writing about ghosts or thieves. She meant something living here, wearing the ordinary shape of the place, using its silence as cover.</p>
+    <p>If she was right — and I think she was — then something is doing exactly that. Somewhere on these grounds. I don't know what. I don't know where. I have three incidents, one old thesis, and a very bad feeling that we've been standing on top of something for three hundred and fifty years and calling it a floor.</p>
+    <p>Need more before I bring this to anyone. Cross-reference incident dates against the exam schedule and faculty travel logs. Start with Provisions — someone signed for that catalog entry.</p>
+    <p>— E.V.</p>
+  </blockquote>
+  <p><em>[Whether she left these findable by accident or on purpose should read as genuinely ambiguous while the party is reading — play it straight here. The wink-wink version of this same move is Phase 2's job, not this session's — see phase2_the_one_who_got_away.json's mirroring_note.]</em></p>
+
+  <h3>Voss's Return — The Ninth Thesis</h3>
+  <p>She arrives to find them mid-read and doesn't pretend otherwise. The reason for the summons becomes obvious once they've seen the notes: she's recruiting them, as [[ninth_thesis|Ninth Thesis]] field operatives, to work off-campus once they graduate. She already has operatives. She believes this party can succeed where her existing people haven't.</p>
+  <p>She singles out <strong>[[guntrah|Guntrah]]</strong> directly — his Investigator background and his instinct for untangling exactly this kind of mystery make him, in her eyes, the party's biggest asset for this work. Say it to him, not about him.</p>
+  <p>She names the Ninth Thesis outright — a real recruitment pitch loses credibility if she's cagey about what she's even asking them to join — but stays vague on deep specifics: founding history, other members, full scope. Consistent with a woman who has never explained her methodology to anyone. <em>[DRAFT — whether the party answers on the spot or this stays a standing offer they sit with is left open; no need to force a yes/no at the table.]</em></p>
+  <p>Nothing here needs to touch [[corvin_ashworth|Corvin Ashworth]], [[torvald_thatch|Torvald]], or [[thornwick_consortium|Thornwick]] specifics to land — "there's a dangerous pattern, my people haven't cracked it, I need outside help" is the whole pitch.</p>
+
+  <h3>A Second, More Immediate Ask</h3>
+  <p>Before they leave, she raises something else — same visit, same sitting. Not a trade, not leverage: a direct, genuine appeal. <em>[DRAFT assumption, freely adjustable]</em> Faculty and rangers are already stretched thin managing the fallout from the three incidents above — parents asking questions, the administration wanting quiet reassurance, nobody with hands free for anything new. And now something is loose near the campus edge.</p>
+  <p>A bulette — displaced from wherever it denned, agitated rather than settling — has been working its way toward the [[rangers|Rangers Department]] and the treeline of the [[high_forest|High Forest]]. She doesn't have people to spare for it properly. She has four students she trusts, right now, not just as a future promise. She asks them to deal with it before it gets closer.</p>
+
+  <h3>Torvald's Escort</h3>
+  <p>[[torvald_thatch|Torvald Thatch]] meets them, same day, and walks them out toward the Rangers Department himself rather than sending word ahead — this matters enough to him to do in person. He's exactly as he always is: direct, economical, doesn't over-explain himself. He confirms what the rangers have already flagged — <em>fresh tracks circling the longhouse, large, three-toed, not from anything the rangers keep</em> — and leads them along the treeline toward where the sightings cluster. He doesn't editorialize about what it means. He doesn't need to.</p>
+  <p><em>[No hint of anything unusual about Torvald himself belongs here — see phase1_something_is_happening.json's phase_boundary_note. This is just Torvald being reliably, familiarly Torvald.]</em></p>
+
+  <h3>The Bulette</h3>
+  <p>[DM's own design — left open by request. Framing only: this bulette should read as wrong in scale or ferocity compared to what Rangers-department students would expect from the bestiary, without any explanation offered on-screen for why. No clue here — physical, verbal, or otherwise, suppressed or not — should point toward the fissure or ruins it came from. The party fights it because it's dangerous and close, not because they're investigating its origin.]</p>
+
+  <h3>The Debrief</h3>
+  <p>Back at her office, Voss's tone shifts entirely from the earlier pitch — no wink, no more asks. She tells them plainly to put this down and focus on finals. Graduation is close; she'll be in touch as it nears.</p>
+  <div class="dm-only">
+    <p class="dm-label">DM Only</p>
+    <p>In the meantime, off-screen, she's reaching out to her own contacts — quietly digging into how these incidents tie into growing irregularities in [[thornwick_consortium|Thornwick Arcane Consortium]] activity. This is her own legwork feeding directly into phase2_the_one_who_got_away.json's thread_a_ninth_thesis investigation (the alumni/Thornwick-stamp cross-reference that eventually surfaces Corvin). She withholds all of this from the party for now — not coyness, a genuine call to protect their focus through finals.</p>
+  </div>
+
+  <p>The rest of term passes quietly. Cut to graduation itself — Session 2 opens there.</p>
+
+  <div class="dm-only">
+    <p class="dm-label">DM Only — Canon Established (once played)</p>
+    <ul>
+      <li>The party has met [[ellery_voss|Dr. Voss]]'s formal recruitment pitch for the [[ninth_thesis|Ninth Thesis]] and knows the org by name — full scope and history still withheld by her, consistent with her character.</li>
+      <li>The party has handled one live, on-screen incident (the bulette) rather than only hearing about the three prior ones secondhand through her notes.</li>
+      <li>The bulette incident is the first NON-sabotage escalation the party has seen — nothing was planted this time. Worth letting that distinction surface later once they have more context to recognize it as significant.</li>
+      <li>No information of any kind about the fissure, the dwarven ruins, Corvin Ashworth, Torvald's ring, or Thornwick's deeper involvement has been given to the party. All of that stays gated behind later phases per campaign_arc.json / phase2_the_one_who_got_away.json / the_dwarven_ruins.json.</li>
+      <li>Voss is now privately investigating Thornwick irregularities off-screen — not yet shared with the party. This is the seed of Phase 2's thread_a.</li>
+    </ul>
+  </div>
+
+  <h3>Hooks for Next Time</h3>
+  <ul>
+    <li>The standing Ninth Thesis offer — accepted, or still hanging, depending on how the table played the office scene.</li>
+    <li>Whatever the party made of the bulette being tougher/stranger than expected — no answer given yet, but worth letting them wonder aloud.</li>
+    <li>Voss's private Thornwick digging (DM-only) — pays off in Phase 2's dual-thread convergence, not before.</li>
+    <li>Graduation itself, opening Session 2.</li>
+  </ul>
+
+  <h3>Reputation Shifts</h3>
+  <p>Quiet and personal, not campus-wide. The party's read on Voss deepens — she's not just a professor anymore, she's someone with a real ask and a real trust in them. Torvald's reliability is reinforced, nothing more, nothing less — exactly as it should read at this point in the story.</p>
+</article>

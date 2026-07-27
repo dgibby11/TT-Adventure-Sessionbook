@@ -1,0 +1,30 @@
+{
+  "_note": "Planning doc — the dwarven ruins / bulette thread. NOT a live entity. See ../campaign_arc.json for the big picture this ties into, and session1_something_is_happening.json for how the bulette incident fills that session's montage gap.",
+  "status": "concept confirmed 2026-07-25, scene-level detail still placeholder",
+
+  "origin_of_the_veil": {
+    "decision": "CONFIRMED — an ancient dwarven city, now ruins, sits near the edge of the Academy grounds. Something the dwarves did there (mechanism TBD — a ritual, an excavation gone wrong, forge-work reaching too deep) tore or thinned the barrier to Thanatos. That's why the veil exists at this location at all, and why the city is ruins today instead of a living settlement. The founders discovered the ALREADY-EXISTING veil generations later and built the Academy to watch/contain it — they did not create it and have no knowledge of the dwarves' role. Consistent with campaign_arc.json's founders_persona_rewrite (still sincerely well-intentioned, just not the origin).",
+    "relationship_to_eastern_wing": "Not yet decided — whether the ruins connect underground to the Eastern Wing (phase2's leading candidate for the current on-campus weak point) or are a separate, unrelated rupture. Open question — resolve before Phase 3.",
+    "late_game_status": "CONFIRMED — the ruins are a late-game location. The party should not physically visit them in Phase 1 or early Phase 2. What happened down there, why it ruptured the veil, and whether anything down there is still active are all undecided — good Phase 3 material, not before."
+  },
+
+  "prior_party_visit": {
+    "event": "The retired Sessions 1-5 party found a map leading to a fissure, explored briefly, and encountered ancient dwarven ruins and a rampaging bulette before withdrawing back to campus without going deeper.",
+    "status": "NOT logged as a played session in data/sessions.json or content/sessions/ — recalled from the table, not yet written up in the sessionbook. Consider writing it up as proper canon later if it needs to be referenceable in-app.",
+    "continuity_hook": "Ties the old party's leftover threads into the new party's story — consistent with campaign_arc.json's retired_party_timeline (the old party are current underclassmen, not gone, and fair game as recurring material)."
+  },
+
+  "the_bulette_incident": {
+    "status": "CONFIRMED as a new session beat — fills the 'montage between the Voss summons and graduation' gap flagged as still_open in session1_something_is_happening.json's structure.graduation_hook.",
+    "premise": "Sometime after the fissure was first found, the bulette that denned near/in the ruins has worked its way toward the Academy — displaced and agitated rather than staying put. Framed as the first NON-sabotage escalation: unlike the three Phase 1 incidents (all planted items), this is the ground/veil genuinely destabilizing on its own, independent of anyone's meddling.",
+    "voss_ask": "CONFIRMED tone — a genuine appeal, not leverage or coercion. Faculty and rangers are already stretched thin dealing with the broader incident pattern; she has few students who are both loyal and capable enough to handle a real threat, and asks this party directly. Consistent with her established recruitment logic in session1_something_is_happening.json's the_voss_summons — same trust, not a transaction.",
+    "location": "CONFIRMED — the encounter happens at/near the Rangers Department and the High Forest treeline at the campus edge (existing locations.json entries), NOT at the fissure or the ruins themselves. The party intercepts the bulette on its way in; they do not go looking for where it came from.",
+    "existing_hook_reuse": "Rangers Department already has an unclaimed curiosity in locations.json (Perception DC 12: 'Fresh tracks circle the longhouse — large, three-toed, not from Kass's direction. No ranger has mentioned seeing anything.'). Reuse this as advance foreshadowing rather than inventing a new clue.",
+    "aftermath_clue": "REJECTED (2026-07-25) — no physical evidence pointing toward the ruins in any form, not even one Voss suppresses/deflects. Per the DM: a suppressed clue is still a clue, and a single good Perception/Investigation roll would let the party identify the ruins way too early, regardless of how the NPC reacts to it. The return-to-Voss scene (see session1_something_is_happening.json) is a clean debrief instead — no artifact, no dangling physical thread back to the ruins yet.",
+    "timing": "CONFIRMED (2026-07-25) — same day. Torvald escorts the party to the last sighting directly after the office scene, and the fight happens that same day. This is NOT a separate post-summons montage beat — see session1_something_is_happening.json's confirmed_scene_order.",
+    "not_yet_decided": [
+      "One session or a two-parter.",
+      "Whether Torvald or another ranger NPC leads the party partway there."
+    ]
+  }
+}
