@@ -41,7 +41,13 @@ DEFAULT_PORT = 8791  # deliberately not 8000, so this never collides with a DM's
 
 
 def _py_cmd():
-    return "py" if which("py") else "python"
+    # "py" launcher on Windows (this repo's primary dev env); "python3" is the
+    # safer bet on Linux (e.g. GitHub Actions runners via actions/setup-python)
+    # before falling back to plain "python".
+    for candidate in ("py", "python3", "python"):
+        if which(candidate):
+            return candidate
+    return "python"
 
 
 def _port_open(port):

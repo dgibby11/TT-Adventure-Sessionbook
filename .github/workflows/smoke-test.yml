@@ -1,0 +1,70 @@
+name: Smoke Test
+
+# Runs on every push to every branch, per the DM's request: catch a broken
+# campaign (bad JSON, dangling cross-link, a session that no longer loads
+# in the actual app) automatically instead of only at the table.
+# ("on" quoted below only to stop plain-YAML tools from parsing it as the
+# boolean `true` per YAML 1.1 — GitHub's own workflow parser special-cases
+# this key regardless and always reads it as the trigger section.)
+"on":
+  push:
+
+jobs:
+  data-integrity:
+    name: Data integrity (all campaigns)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      # tools/test.py exits 1 on FAIL (bad JSON, duplicate ids, missing
+      # contentFile, missing required fields) — warnings (dangling related[]
+      # / [[links]]) are reported but don't fail the build.
+      - run: python tools/test.py
+
+  browser-smoke:
+    name: Browser smoke (${{ matrix.campaign.id }})
+    runs-on: ubuntu-latest
+    needs: data-integrity
+    strategy:
+      fail-fast: false
+      matrix:
+        # Passphrase here is the plaintext dmPassHash pre-image for each
+        # campaign, per campaigns/<id>/campaign.json + root CLAUDE.md's
+        # "Campaign Setup Requirements" section — update both together if a
+        # passphrase ever changes. Add a line here for each new campaign.
+        campaign:
+          - { id: fail-academy, passphrase: Smuckers }
+          - { id: lost-mine, passphrase: Demo }
+          - { id: salt-below, passphrase: Demo }
+          - { id: curse-of-strahd, passphrase: Demo }
+          - { id: descent-into-avernus, passphrase: Demo }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install Playwright + Chromium
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      # driver.py's `smoke` command: load the campaign dashboard, log in as
+      # DM, open a "Planning"-category session if one exists (checking for
+      # broken [[ ]] cross-links along the way), launch the Session Runner,
+      # verify Prompts/Plan/Pinboard populate, run the Complete Session
+      # reveal dialog, and assert zero browser console/page errors. See
+      # .claude/skills/run-tt-adventure-sessionbook/SKILL.md for the full
+      # list of gotchas this driver already works around.
+      - name: Run smoke driver
+        run: >
+          python .claude/skills/run-tt-adventure-sessionbook/driver.py smoke
+          --campaign ${{ matrix.campaign.id }}
+          --passphrase "${{ matrix.campaign.passphrase }}"
+      - name: Upload screenshots (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-${{ matrix.campaign.id }}
+          path: .claude/skills/run-tt-adventure-sessionbook/screenshots/
+          if-no-files-found: ignore
