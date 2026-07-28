@@ -51,8 +51,8 @@
     "contentType": "html",
     "contentFile": "content/factions/thornwick_consortium.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "one_shot_5", "session_1"],
-    "tags": ["external", "arcane", "merchant", "supply-chain", "consortium", "threat"]
+    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "silverymoon", "garrick_nash", "one_shot_5", "session_1"],
+    "tags": ["external", "arcane", "merchant", "supply-chain", "consortium", "threat", "decentralized", "cult"]
   },
   {
     "id": "ninth_thesis",

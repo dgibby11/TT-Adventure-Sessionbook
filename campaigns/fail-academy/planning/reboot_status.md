@@ -98,3 +98,33 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   Phase 1-3 plot material, the Ninth Thesis/Secret Society merge, Corvin
   Ashworth, Torvald's ring, the dwarven ruins — stays planning-only. Don't merge
   or rewrite further live entities for this without explicit instruction.
+- Thornwick Arcane Consortium lore pass (2026-07-27, live data): decentralized
+  structure confirmed — no known headquarters (a deliberate "red flag" detail,
+  not yet noticed by any party), only known foothold is a small brokerage
+  office in Neverwinter (west, ~a month's travel), with additional small fronts
+  in Silverymoon and Everlund already established. Crumb has been Academy
+  faculty for 50 years and Thornwick's supply contact for ~40 of them. An
+  emblem image now exists at `campaigns/fail-academy/assets/thornwick_emblem.png`
+  (a T/A/C blackletter monogram maker's-stamp), referenced in
+  thornwick_consortium.html. Also patched two live player-view leaks —
+  one_shot_5.html and session_1.html both named "Thornwick" in plain text
+  outside dm-only blocks, which would have exposed the org to the new party
+  (who have never heard of them) once those sessions' visibility flips to
+  player. Both now keep the name dm-only-gated; one_shot_5's player-visible
+  prose uses "an outside buyer" instead. Thornwick's inner-circle leadership
+  (Orcus cult) and Corvin's specific pitch to them remain open — see
+  phase2_the_one_who_got_away.json.
+- Session 1 Thornwick discoverability pass (2026-07-27, live data): added
+  Garrick Nash (`data/npcs.json`, dm-only) — Crumb's actual Thornwick contact,
+  a low-rung middleman reachable only through Crumb, who'll point toward the
+  Neverwinter office if approached in good faith. Documented exactly what's
+  discoverable at the Session 1 stage in thornwick_consortium.html and
+  oswald_crumb.html: nothing public, Crumb only cracks under improvised
+  player pressure (no scripted moment does it for them), capped at naming
+  Garrick. Also gave Voss's off-screen post-Session-1 investigation real
+  content in session_1.html: her Ninth Thesis operatives confirm the org is
+  real/active in Silverymoon + Everlund but find nothing pointing at Crumb;
+  it's her own memory of the stamp that puts "talk to Crumb" on her working
+  list. Added an optional, DM-gated "glimpse" beat (a scrap to-do list on her
+  desk) so the party can see that note without her stating it outright —
+  intentionally lighter than the Crumb/Garrick path per instruction.

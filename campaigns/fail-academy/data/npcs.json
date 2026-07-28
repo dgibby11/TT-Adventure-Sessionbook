@@ -195,7 +195,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
-    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "one_shot_5", "prof_brasca_ironquill", "oswald_crumb_statblock", "session_1"],
+    "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "one_shot_5", "prof_brasca_ironquill", "oswald_crumb_statblock", "session_1", "garrick_nash"],
     "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
   },
   {
@@ -450,5 +450,16 @@
     "visibility": "player",
     "related": ["clerics", "old_library", "archcleric_senna"],
     "tags": ["student", "clerics", "second-year", "researcher", "sealed-chapels", "investigator"]
+  },
+  {
+    "id": "garrick_nash",
+    "name": "Garrick Nash",
+    "type": "npc",
+    "category": "External Contacts",
+    "contentType": "html",
+    "contentFile": "content/npcs/garrick_nash.html",
+    "visibility": "dm-only",
+    "related": ["oswald_crumb", "thornwick_consortium", "nether_mountains"],
+    "tags": ["dm-only", "thornwick", "contact", "lead", "external"]
   }
 ]
