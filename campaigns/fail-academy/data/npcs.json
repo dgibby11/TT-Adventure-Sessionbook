@@ -408,6 +408,17 @@
     "tags": ["staff", "administration", "human", "secretary", "institutional-memory"]
   },
   {
+    "id": "perrin_oakhollow",
+    "name": "Perrin Oakhollow",
+    "type": "npc",
+    "category": "Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/perrin_oakhollow.html",
+    "visibility": "dm-only",
+    "related": ["viola_gossamer", "bards_stage", "green_room_curtain"],
+    "tags": ["staff", "elf", "hidden-protector", "gossamer-family", "bards", "dm-secret"]
+  },
+  {
     "id": "tavin_crestfall",
     "name": "Tavin Crestfall",
     "type": "npc",
@@ -437,7 +448,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/viola_gossamer.html",
     "visibility": "player",
-    "related": ["bards", "tito", "standing_ovation", "maestro_lira", "session_1"],
+    "related": ["bards", "tito", "standing_ovation", "maestro_lira", "session_1", "green_room_curtain", "perrin_oakhollow"],
     "tags": ["student", "bards", "fairy", "fey", "fourth-year", "crush", "session-zero-gift"]
   },
   {

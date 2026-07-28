@@ -33,6 +33,17 @@
     "tags": ["magic-item", "cloak", "wondrous", "bard", "death-save", "pc-item"]
   },
   {
+    "id": "green_room_curtain",
+    "name": "The Green Room Curtain",
+    "type": "item",
+    "category": "Artifacts",
+    "contentType": "html",
+    "contentFile": "content/items/green_room_curtain.html",
+    "visibility": "dm-only",
+    "related": ["viola_gossamer", "bards", "headmistress_dowe", "maestro_lira"],
+    "tags": ["magic-item", "curtain", "planar", "feywild", "extremely-rare", "dm-secret", "gossamer-family"]
+  },
+  {
     "id": "shield_of_missile_attraction",
     "name": "Shield of Missile Attraction",
     "type": "item",
