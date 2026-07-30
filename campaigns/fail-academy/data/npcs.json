@@ -74,7 +74,7 @@
     "contentType": "html",
     "contentFile": "content/players/guntrah.html",
     "visibility": "player",
-    "related": ["zarad", "tito", "tavian_stormnet", "session_1"],
+    "related": ["zarad", "tito", "tavian_stormnet", "session_1", "prof_bram_holdar", "prof_tavel", "julian_vance"],
     "tags": ["player-character", "artificer", "orc", "armorer", "session-zero"]
   },
   {
@@ -272,7 +272,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/prof_bram_holdar.html",
     "visibility": "player",
-    "related": ["barbarians", "fail_chamber", "secret_society"],
+    "related": ["barbarians", "fail_chamber", "secret_society", "guntrah", "prof_tavel"],
     "tags": ["faculty", "barbarians", "half-orc", "department-head", "martial"]
   },
   {
@@ -406,6 +406,39 @@
     "visibility": "player",
     "related": ["main_complex", "headmistress_dowe"],
     "tags": ["staff", "administration", "human", "secretary", "institutional-memory"]
+  },
+  {
+    "id": "ghurza_stillhammer",
+    "name": "Ghurza Stillhammer",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/ghurza_stillhammer.html",
+    "visibility": "player",
+    "related": ["artificers", "artificers_forge", "tinkerer_dunn"],
+    "tags": ["faculty", "artificers", "orc", "researcher", "stub"]
+  },
+  {
+    "id": "prof_tavel",
+    "name": "Professor Tavel",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/prof_tavel.html",
+    "visibility": "player",
+    "related": ["artificers", "guntrah", "julian_vance", "prof_bram_holdar", "tinkerer_dunn"],
+    "tags": ["faculty", "artificers", "dwarf", "mentor", "secret-training"]
+  },
+  {
+    "id": "julian_vance",
+    "name": "Julian Vance",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/julian_vance.html",
+    "visibility": "player",
+    "related": ["artificers", "guntrah", "prof_tavel"],
+    "tags": ["student", "artificers", "fifth-year", "rival", "wealthy", "prodigy"]
   },
   {
     "id": "perrin_oakhollow",
