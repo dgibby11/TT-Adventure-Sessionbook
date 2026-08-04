@@ -55,7 +55,7 @@
     "contentType": "html",
     "contentFile": "content/locations/rangers.html",
     "visibility": "player",
-    "related": ["owlbear_cave", "kass", "maren_duskhollow", "high_forest", "torvald_thatch", "session_1"],
+    "related": ["owlbear_cave", "kass", "maren_duskhollow", "high_forest", "torvald_thatch", "warden_ashgrove", "session_1"],
     "tags": ["department", "ranged", "wilderness", "survival", "tracking", "nature"],
     "environment": {
       "architecture": "A low timber longhouse that blends into the treeline at the campus edge, with lean-to shelters for equipment and a covered tracking range running west into the forest. The path to Kass's cave starts here.",

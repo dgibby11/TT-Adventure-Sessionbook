@@ -8,7 +8,7 @@
     "contentFile": "content/sessions/session_1.html",
     "visibility": "dm-only",
     "startLocation": "main_complex",
-    "related": ["zarad", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "commander_orvyn", "oswald_crumb", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "thornwick_consortium", "rangers", "high_forest"],
+    "related": ["zarad", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "commander_orvyn", "oswald_crumb", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "thornwick_consortium", "rangers", "high_forest", "warden_ashgrove", "academy_provisions", "silas_morne"],
     "reveals": ["zarad", "guntrah", "tito", "tavian_stormnet", "commander_orvyn", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "high_forest"],
     "tags": ["session", "upcoming", "session-zero", "parting-gifts", "ninth-thesis", "recruitment", "bulette", "graduation-hook"]
   },

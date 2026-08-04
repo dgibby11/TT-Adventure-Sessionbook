@@ -505,5 +505,16 @@
     "visibility": "dm-only",
     "related": ["oswald_crumb", "thornwick_consortium", "nether_mountains"],
     "tags": ["dm-only", "thornwick", "contact", "lead", "external"]
+  },
+  {
+    "id": "warden_ashgrove",
+    "name": "Warden Rowan Ashgrove",
+    "type": "npc",
+    "category": "Faculty",
+    "contentType": "html",
+    "contentFile": "content/npcs/warden_ashgrove.html",
+    "visibility": "player",
+    "related": ["rangers", "owlbear_cave", "kass", "high_forest", "torvald_thatch", "session_1"],
+    "tags": ["faculty", "rangers", "department-head", "half-elf", "tracking", "wilderness"]
   }
 ]
