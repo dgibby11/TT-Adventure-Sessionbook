@@ -52,7 +52,17 @@ any live data for this campaign:
   founders-persona rewrite below (Ashcroft vs. Voss as founder, chief among
   them), lists resolution options, and has the full verified backlink list for
   the eventual merge. Read this before touching secret_society, ninth_thesis,
-  occult_systems, or the three founders' entities.
+  occult_systems, or the three founders' entities. Its occult_systems conflict
+  now has a likely-resolution note (2026-08-02) pointing at phase3's veil
+  location — see below.
+- `session_plan.json` — NEW (2026-08-02). The master session-by-session
+  tracker for the whole campaign: the 10-sessions-per-phase pacing target,
+  Sessions 1-5 confirmed at the beat level, a loose unnumbered sequence for
+  the rest of Phase 2 into Phase 3, the graduation Ring Selection concept, and
+  the DM's route-map geography (Academy location, Neverwinter route, the
+  Sanctum). Read this alongside phase1/2/3 for what's actually been decided
+  session-by-session — it supersedes the phase docs' session numbering where
+  they disagree.
 
 Key decisions already locked in (see the planning docs for full detail/reasoning):
 - The founders (Aldric Voss, Isolde Orath, Brennan Ashcroft) are being
@@ -128,3 +138,20 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   list. Added an optional, DM-gated "glimpse" beat (a scrap to-do list on her
   desk) so the party can see that note without her stating it outright —
   intentionally lighter than the Crumb/Garrick path per instruction.
+- Session-level roadmap and Phase 3 engine (2026-08-02, planning-only — see
+  `session_plan.json` and `phase3_closing_the_veil.json` for full detail):
+  pacing target set at ~10 sessions per phase (30 total), Session 1 as Phase
+  1's opener. Sessions 1-5 confirmed at the beat level (Voss/bulette/
+  recruitment, then graduation/Ring Selection/departure, then Neverwinter/
+  Thornwick investigation, then a travel day pointing at Torvald, then
+  Torvald's interrogation naming Corvin Ashworth and the Sanctum north of
+  Mirabar). Phase 3's engine is now locked: Corvin is buying into Thornwick's
+  larger effort to bring Orcus through somewhere, not running a solo plan;
+  the possessing spirit is named Harthoon (real D&D lore, Orcus's
+  vizier/castellan); the veil's true location is the Underdark beneath campus
+  via long-forgotten sealed passages that only Torvald knows about (not even
+  Voss); Thornwick's inner circle stays faceless to the party. A DM-drawn
+  route map confirmed the Academy sits at the High Forest/Evermoors border
+  southeast of Silverymoon. Everything beyond Session 5 is intentionally
+  loose (not session-numbered) per the DM's request — see
+  session_plan.json's loose_sequence_post_session_5.

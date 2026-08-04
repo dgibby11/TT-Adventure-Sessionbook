@@ -4,7 +4,7 @@
 
   "origin_of_the_veil": {
     "decision": "CONFIRMED — an ancient dwarven city, now ruins, sits near the edge of the Academy grounds. Something the dwarves did there (mechanism TBD — a ritual, an excavation gone wrong, forge-work reaching too deep) tore or thinned the barrier to Thanatos. That's why the veil exists at this location at all, and why the city is ruins today instead of a living settlement. The founders discovered the ALREADY-EXISTING veil generations later and built the Academy to watch/contain it — they did not create it and have no knowledge of the dwarves' role. Consistent with campaign_arc.json's founders_persona_rewrite (still sincerely well-intentioned, just not the origin).",
-    "relationship_to_eastern_wing": "Not yet decided — whether the ruins connect underground to the Eastern Wing (phase2's leading candidate for the current on-campus weak point) or are a separate, unrelated rupture. Open question — resolve before Phase 3.",
+    "relationship_to_eastern_wing": "RESOLVED (2026-08-02) — superseded. The Eastern Wing is no longer the veil's on-campus weak point at all; see phase3_closing_the_veil.json's details.veil_location. The actual weak point is the Underdark itself, reached via long-forgotten passages sealed beneath campus (known only to Torvald Thatch, not even Voss). Those passages plausibly connect to this same underdark network the ruins sit in — one continuous underground geography, not two separate threads.",
     "late_game_status": "CONFIRMED — the ruins are a late-game location. The party should not physically visit them in Phase 1 or early Phase 2. What happened down there, why it ruptured the veil, and whether anything down there is still active are all undecided — good Phase 3 material, not before."
   },
 

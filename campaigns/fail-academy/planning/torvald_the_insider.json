@@ -34,6 +34,13 @@
     ]
   },
 
+  "the_sealed_passages": {
+    "status": "NEW (2026-08-02) — a second, ring-unrelated secret Torvald holds.",
+    "what_he_knows": "In 41 years of grounds-keeping, Torvald has found (and quietly kept to himself) long-forgotten, sealed passages beneath campus leading down into the Underdark and, per phase3_closing_the_veil.json's veil_location, toward the veil itself. This predates and is independent of Corvin's ring/corruption — just decades of a discreet man noticing things and never mentioning them.",
+    "who_else_knows": "Nobody else on campus, including Dr. Ellery Voss — despite running the entire Ninth Thesis investigation, she has no idea the passages exist. Torvald is the only living person who can get the party down there.",
+    "narrative_role": "Makes Torvald's Phase 2/3 arc doubly load-bearing — corrupted insider AND sole key to the endgame's geography. Whether this knowledge surfaces during his Session 5 interrogation alongside Corvin's name, or has to be drawn out separately later, is open/DM's call."
+  },
+
   "interrogation_guidance": {
     "wont_lie": "Consistent with his existing characterization, he will not lie outright. But the ring shapes what he's even capable of registering as relevant or worth mentioning — his answers will be truthful but incomplete unless the party asks precisely the right questions, or finds the ring itself.",
     "direct_accusation": "Produces flat, genuine confusion or denial — not defensiveness. He doesn't experience what he's done as wrongdoing, so a direct accusation without evidence likely goes nowhere.",

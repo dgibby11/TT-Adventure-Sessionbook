@@ -1,0 +1,96 @@
+{
+  "_note": "Planning doc — master session-by-session tracker for the reboot campaign. NOT a live entity. Sits alongside campaign_arc.json's phase-goal breakdown; this file tracks what actually happens session-by-session as it gets designed, which doesn't necessarily land on the phase boundaries campaign_arc.json originally sketched (see pacing_target.caveat below).",
+
+  "pacing_target": {
+    "decision": "CONFIRMED (2026-08-01) — roughly 10 sessions per phase, 30 sessions total. Session 1 is Phase 1's opener.",
+    "caveat": "In practice, session-level design for Sessions 1-5 already surfaces material originally scoped as Phase 2 (Corvin's identity, the Thornwick connection, Torvald as the insider) well before a notional 'session 10' Phase 1 climax. Treat the phase documents (phase1/phase2/phase3_*.json) as content reference libraries, not strict session-number gates — this file is the authoritative session-by-session record when the two disagree."
+  },
+
+  "sessions": {
+    "session_1": {
+      "status": "LIVE — promoted to data/sessions.json (id session_1), dm-only, unplayed. Full design in session1_something_is_happening.json.",
+      "beats": "Parting gifts montage, the Voss summons/office scene, recruitment pitch as Ninth Thesis operatives, a corrupted bulette (ambient veil-bleed, NOT possession — no independent entity riding it, just abnormal aggression/toughness from proximity to the destabilizing veil, ties to campaign_arc.json's 'occasionally something leaks through' premise) driven back near the Rangers Dept/High Forest edge, debrief.",
+      "correction_2026-08-02": "The bulette is CORRUPTED, not possessed — word choice matters: 'possessed' implies an intelligence behind it that isn't there."
+    },
+    "session_2": {
+      "status": "CONFIRMED shape, not yet drafted in prose.",
+      "beats": [
+        "A major lore dump plus subsequent in-fiction investigation (content TBD when this session is actually drafted).",
+        "Graduation ceremony.",
+        "Ring Selection (NEW — see graduation_ring_selection below): graduates each choose a magic ring from a menu of options; all look identical (plain Academy-crest signet) regardless of what's chosen.",
+        "Party picks a travel destination based on what the investigation turned up and departs campus.",
+        "Travel with stops for socializing/shopping in small towns along the route (Triboar and/or Yartar, per the route map — see geography below).",
+        "No battles expected this session, aside from a possible optional side-quest battle helping a small village with a threat (TBD, not required)."
+      ]
+    },
+    "session_3": {
+      "status": "CONFIRMED shape, flexible on specifics pending sessions 1-2's actual outcomes.",
+      "beats": [
+        "Arrival in Neverwinter.",
+        "Meet the local Ninth Thesis operative (identity TBD — leading option: repurpose the existing 'alumnus embedded in a distant city's magistrate's office' sketch from the_ninth_thesis.json rather than invent a new character; not yet confirmed, to be decided when this session is actually planned).",
+        "Operative enlists the party's help investigating the Thornwick Arcane Consortium's Neverwinter brokerage office (already-established live lore: Neverwinter is Thornwick's one confirmed foothold).",
+        "Likely spends remainder of the session enjoying the city before continuing the investigation."
+      ]
+    },
+    "session_4": {
+      "status": "CONFIRMED shape.",
+      "beats": [
+        "Continued investigation in/around Neverwinter surfaces signs pointing back to the Academy — specifically the groundskeeper (Torvald Thatch) as the inside man who needs interrogating.",
+        "Framed as a travel day (heading back toward the Academy) containing a 'random' encounter/battle."
+      ]
+    },
+    "session_5": {
+      "status": "CONFIRMED shape.",
+      "beats": [
+        "Interrogating Torvald.",
+        "Reveals: Corvin Ashworth's existence/identity, and a clue pointing to the cult's meeting site north of Mirabar in the Spine of the World (see geography.the_sanctum below).",
+        "This is the dual-thread convergence from phase2_the_one_who_got_away.json (Thread A/Neverwinter-Thornwick + Thread B/Torvald), sequenced here as A-then-B rather than parallel — the doc's own 'order is not fixed' note allows this."
+      ]
+    }
+  },
+
+  "loose_sequence_post_session_5": {
+    "status": "Deliberately NOT session-numbered — DM wants a loose shape, not a tight outline, beyond Session 5. Pacing depends heavily on how much time the table spends on non-plot content.",
+    "beats": [
+      "The trip north — multi-day travel past Mirabar toward the Spine of the World. Mirrors the Neverwinter leg; no obligation to fill it with plot.",
+      "Approaching the Sanctum — first look at the site from outside; probably scouting/infiltration rather than a straight fight, since the inner circle stays faceless to the party (see thornwick_inner_circle_and_the_sanctum below) and this isn't meant to be where they're first named/met.",
+      "First contact with Corvin — doesn't need to be a clean capture or kill. Him escaping, or realizing the party is onto him and accelerating his plan, is the intended way to end this stretch on urgency: Phase 2's actual goal is 'locate them,' not 'stop them' yet.",
+      "Phase 2 -> Phase 3 pivot: the race back to the Academy. Torvald's arc has to resolve one way or another here, since he's the only one who knows the way into the sealed passages beneath campus.",
+      "The Underdark descent — CONFIRMED (2026-08-02) as wanted content: hostile terrain, native Underdark threats/combat, before the Harthoon showdown. Session placement TBD, definitely after Session 5. Optional: surface the dwarven ruins connection here (see the_dwarven_ruins.json).",
+      "The veil itself — showdown with Corvin/Harthoon, the 'closing the veil' climax.",
+      "Aftermath."
+    ]
+  },
+
+  "graduation_ring_selection": {
+    "status": "NEW (2026-08-02), needs full prep before Session 2 — DM's own task, not yet detailed here.",
+    "concept": "A graduation tradition: every graduate selects one magic ring from a menu of options. All the rings are physically identical regardless of choice — plain, bearing the Academy crest — so the effect is a private/mechanical choice, not a visible status marker.",
+    "content_approach": "CONFIRMED — reuse existing D&D ring options (e.g. Ring of Protection, Ring of Mind Shielding) rather than inventing from scratch; a handful of homebrew options may be added later. Don't build this out further until the DM is ready to prep it directly."
+  },
+
+  "geography": {
+    "_purpose": "Captured 2026-08-02 from the DM's own hand-drawn route map (Sword Coast North, Mirabar to the High Forest). Not yet reflected in live data/locations.json — the Academy has no formal real-world coordinate in the app; this is DM reference only unless promoted later.",
+    "academy_location": "Confirmed to sit at the border of the Evermoors and the High Forest, southeast of Silverymoon — consistent with already-live lore that the Rangers Department and High Forest treeline sit at the campus edge (see the_dwarven_ruins.json's bulette-incident location).",
+    "route_to_neverwinter": "Academy -> (trail, likely crossing near Yartar/the Dessarin River) -> Triboar -> High Road southwest through Neverwinter Wood -> Neverwinter. Matches real Sword Coast geography. Triboar and/or Yartar are the natural stop(s) for Session 2's small-town socializing/shopping and optional village side quest.",
+    "the_sanctum": {
+      "location": "North of Mirabar, in the Spine of the World.",
+      "clarification": "CONFIRMED (2026-08-02) — this is NOT a Thornwick corporate headquarters; the established 'no known headquarters' detail (thornwick_consortium.html, still a live-data red flag nobody's noticed) stays true. This is the cult inner circle's own private meeting/ritual site, separate from Thornwick's mundane business fronts (Neverwinter/Silverymoon/Everlund). 'HQ' was just a placeholder word in conversation, not the intended in-fiction framing.",
+      "geographic_consistency": "Sits in the same broad Sword Coast North region as Neverwinter/Silverymoon/Everlund — no travel-logic issue."
+    }
+  },
+
+  "thornwick_inner_circle_and_the_sanctum": {
+    "leadership_visibility": "CONFIRMED (2026-08-02) — kept faceless. The party never meets named Thornwick/cult leadership; only ever Corvin himself and hired muscle. Composition of the inner circle (if the DM wants it for personal reference) is TBD/internal-only, not required for play.",
+    "supersedes": "phase2_the_one_who_got_away.json's open_questions.thornwick_inner_circle — see that file for the pointer back here."
+  },
+
+  "open_items": [
+    "Session 2's lore-dump content specifics.",
+    "Session 2 optional village side-quest (village/threat TBD).",
+    "Session 3 Neverwinter operative identity (leaning toward repurposing the existing magistrate's-office alumnus sketch, not confirmed).",
+    "Ring Selection's full options list (existing rings + homebrew) — DM's own prep task.",
+    "Underdark descent's exact session placement and encounter design.",
+    "Whether the dwarven-ruins thread gets used during the Underdark descent.",
+    "Fragment-of-Harthoon vs. the genuine full Harthoon possessing Corvin — see phase3_closing_the_veil.json's engine.the_spirit_harthoon.open_flag."
+  ]
+}
