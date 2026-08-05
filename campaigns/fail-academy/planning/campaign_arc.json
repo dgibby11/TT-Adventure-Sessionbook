@@ -59,6 +59,7 @@
   ],
 
   "continuity_notes": {
+    "setting_year": "The campaign takes place in 1500 DR (Forgotten Realms Dale Reckoning). Added 2026-08-05 to campus_overview.html's Geographic Context facts (player-visible). Relative in-world year markers elsewhere (e.g. department_incident_log.html's 'Year 23/38/51', academy_credits.html's 'introduced 18 years ago', reboot_status.md's 'founded ~350 years ago') are Academy-founding-relative, not DR-absolute — left as-is; don't convert them without explicit instruction.",
     "prior_lore": "Some lore from sessions 1-5 is being retained (the veil/founders concept is built on top of existing Academy history). Which specific prior threads/entities (e.g. the Secret Society, the Ninth Thesis, Occult Systems, the founders' individual dm-only lore) map onto this new picture is not yet decided — TBD in a later pass.",
     "founders_persona_rewrite": {
       "decision": "The same three founders already in the data (Aldric Voss, Isolde Orath, Brennan Ashcroft) are being kept as-is in identity, but their personas and relationships are being rewritten to fit the new plot: they were genuinely good people who believed that founding the Academy — concentrating a high density of powerful heroes, faculty, and students in one place — was the right way to build a defense against the veil and a potential evil incursion.",

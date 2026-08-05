@@ -213,3 +213,10 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   correction — reworded to a general Voss-family-archive handoff.
   `data/*.json` related[] arrays updated to add `ninth_thesis` wherever
   content now cross-links it.
+- Setting year established (2026-08-05, live data): the campaign takes place
+  in **1500 DR** (Forgotten Realms Dale Reckoning) — added to
+  `campus_overview.html`'s Geographic Context facts (player-visible) and
+  `campaign_arc.json`'s continuity_notes. Existing relative year markers
+  (department_incident_log.html's Year 23/38/51, academy_credits.html's
+  "18 years ago", this file's "~350 years ago" founding note) are
+  Academy-founding-relative, not DR-absolute, and were left unconverted.
