@@ -1,0 +1,13 @@
+[
+  {
+    "id": "voss_notes_handout",
+    "name": "Voss's Notes — Printable Handout",
+    "type": "image",
+    "category": "Handouts",
+    "contentType": "image",
+    "contentFile": "assets/VossNote.png",
+    "visibility": "dm-only",
+    "related": ["session_1", "ellery_voss"],
+    "tags": ["handout", "printable", "session-1", "voss-notes"]
+  }
+]
