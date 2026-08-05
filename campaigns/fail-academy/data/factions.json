@@ -41,7 +41,7 @@
     "contentFile": "content/factions/secret_society.html",
     "visibility": "dm-only",
     "related": ["founders_statue", "ninth_thesis", "brennan_ashcroft", "old_library", "occult_systems", "aldric_voss"],
-    "tags": ["dm-only", "secret", "ritual", "conspiracy", "founding", "society"]
+    "tags": ["dm-only", "campus-legend", "rumor", "misidentified", "founding", "society"]
   },
   {
     "id": "thornwick_consortium",
@@ -62,8 +62,8 @@
     "contentType": "html",
     "contentFile": "content/factions/ninth_thesis.html",
     "visibility": "player",
-    "related": ["secret_society", "founders_statue", "one_shot_2", "aldric_voss", "session_1"],
-    "tags": ["mystery", "conspiracy", "founding", "secret-society", "ritual", "lore"]
+    "related": ["secret_society", "founders_statue", "one_shot_2", "aldric_voss", "ellery_voss", "session_1"],
+    "tags": ["organization", "founding", "hidden-evil", "voss", "wren-halloway", "lore"]
   },
   {
     "id": "occult_systems",
@@ -73,7 +73,7 @@
     "contentType": "html",
     "contentFile": "content/factions/occult_systems.html",
     "visibility": "dm-only",
-    "related": ["underground_storage", "secret_society", "founders_statue", "bodak"],
+    "related": ["underground_storage", "ninth_thesis", "secret_society", "founders_statue", "bodak"],
     "tags": ["dm-only", "mystery", "occult", "ritual", "underground", "dark", "founding"]
   }
 ]

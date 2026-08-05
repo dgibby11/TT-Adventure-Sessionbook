@@ -722,7 +722,7 @@
     "contentType": "html",
     "contentFile": "content/locations/headmistress_office.html",
     "visibility": "dm-only",
-    "related": ["main_complex", "headmistress_dowe", "ambrose_quill"],
+    "related": ["main_complex", "headmistress_dowe", "ambrose_quill", "ninth_thesis"],
     "tags": ["main-complex", "administration", "office", "restricted"],
     "environment": {
       "architecture": "Second floor of the Main Complex. Outer reception area managed by Quill. Inner office accessed by invitation. Large windows face the main courtyard. Bookshelves, clear desk, one locked drawer.",
@@ -824,7 +824,7 @@
     "contentType": "html",
     "contentFile": "content/locations/restricted_floor.html",
     "visibility": "dm-only",
-    "related": ["old_library", "fennick_mosswood", "secret_society", "founders_charter"],
+    "related": ["old_library", "fennick_mosswood", "ninth_thesis", "secret_society", "founders_charter"],
     "tags": ["library", "restricted", "dm-only", "founding-documents", "cold-section", "sub-location"],
     "environment": {
       "architecture": "Third floor of the Old Library, behind an iron door with a monitoring ward. Standard library shelving layout. Card catalogue that stopped being updated in Year 47. Northeast corner is consistently colder.",

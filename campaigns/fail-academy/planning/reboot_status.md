@@ -77,7 +77,10 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   successive Voss descendants down to Ellery Voss today. NOTE: this directly
   conflicts with brennan_ashcroft.html's live claim that Ashcroft founded it —
   see `founders_persona_audit.json` for the conflict and resolution options
-  before executing the merge.
+  before executing the merge. **SUPERSEDED (2026-08-02/08-04):** kept for
+  history only — the Ninth Thesis is NOT the Secret Society after all (see
+  the unconflate resolution below), and the founder is Nerissa Voss, not
+  Aldric (see the founder-correction entry below).
 - The veil under the Academy traces back to an ancient dwarven city (now
   ruins, off the edge of campus) that ruptured the barrier to Thanatos; the
   founders discovered the already-existing veil generations later and did not
@@ -155,3 +158,58 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   southeast of Silverymoon. Everything beyond Session 5 is intentionally
   loose (not session-numbered) per the DM's request — see
   session_plan.json's loose_sequence_post_session_5.
+- Ninth Thesis / Secret Society founder conflict RESOLVED and executed
+  against live data (2026-08-02): founders_persona_audit.json's conflict_1
+  is settled via Option B (unconflate), not the originally-proposed
+  straight merge. `content/factions/ninth_thesis.html` is fully fleshed out
+  (Wren Halloway's suppressed thesis, Nerissa Voss founding it, the Voss
+  leadership lineage down to Ellery, the operational profile). Ashcroft's
+  Alumni Society stays real, mundane, and unrewritten. `secret_society.html`
+  is rewritten to explain "the Secret Society" as campus rumor-bleed between
+  Ashcroft's society and half-true whispers about the real, secret Ninth
+  Thesis — not a real organization of its own. `one_shot_2` and
+  `founders_statue.html` are updated to retroactively identify what the
+  prior party witnessed as genuine Ninth Thesis activity. Per explicit
+  instruction, `academy_legends.html`'s "Lost Year" and "Golden Cohort"
+  sections — which treated "the current Secret Society" as real, active,
+  and responsible for real deaths — were removed outright rather than
+  recast, since they no longer had a factual basis ("the Lost Year wasn't
+  a thing"). `occult_systems.html` itself remains untouched and still
+  needs its own pass — see founders_persona_audit.json's conflict_2.
+- Ninth Thesis founder corrected (2026-08-04, live data): Aldric Voss
+  removed from the founding lore entirely per explicit instruction. The
+  founder is now **Nerissa Voss** — Aldric's younger sister and the
+  Academy's first archivist, never one of the three officially-credited
+  founders herself. She's the one who noticed Wren Halloway's thesis pulled
+  from the record and preserved it as her own private initiative. Dr.
+  Ellery Voss now descends from Nerissa's line, not Aldric's directly —
+  `ellery_voss.html`'s ancestry note corrected to match. Updated across
+  `ninth_thesis.html`, `the_ninth_thesis.json`, `founders_persona_audit.json`,
+  and `campaign_arc.json`.
+- Full lore-consistency sweep (2026-08-05, live data): a DM-requested audit of
+  every file mentioning Aldric Voss, the Ninth Thesis, the Secret Society, or
+  the founders turned up a much larger web than the original audit caught —
+  `founders_compass.html`, `founders_charter.html`, `contraband_log.html`,
+  `academy_grounds_map.html`, `headmistress_dowe.html`, `hidden_knowledge.html`,
+  `campaign_overview.html`, and `open_questions.html` all still treated "the
+  Secret Society" as a real, active, currently-operating organization —
+  independent of the unconflate resolution above, which those files predated
+  or weren't touched by. Fixed: the real actor behind the compass, the ritual
+  floor, the redacted security log, and Dowe's 20-year cover-up is now the
+  [[ninth_thesis|Ninth Thesis]], not a fictional "Secret Society." Dowe's core
+  DM-only secret was rewritten to match — she knowingly tolerates the Ninth
+  Thesis operating outside her authority because she trusts Voss's judgment,
+  rather than covering up a dangerous conspiracy with implied-dead
+  administrators (which no longer fit a sincerely well-intentioned Ninth
+  Thesis). Also removed the last stray Lost Year / Year 34 references that
+  survived the earlier academy_legends.html cut — `headmistress_dowe.html`,
+  `headmistress_office.html`, `high_forest.html`, `silverymoon.html`, and
+  `prof_aldous_fenwick.html` all had it woven into character secrets or NPC
+  motivations; each was rewritten to drop the dependency without inventing
+  new lore to replace it (Fenwick's mystery stays a mystery, just untethered
+  from Year 34; the wood elves' and Dowe's watchfulness stays but loses the
+  specific false anchor). Also fixed: `voss_keycard.html` implied Ellery
+  directly inherited Aldric's "personal materials," contradicting the Nerissa
+  correction — reworded to a general Voss-family-archive handoff.
+  `data/*.json` related[] arrays updated to add `ninth_thesis` wherever
+  content now cross-links it.

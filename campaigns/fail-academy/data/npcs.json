@@ -129,7 +129,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/headmistress_dowe.html",
     "visibility": "player",
-    "related": ["lenny_goldvein", "ellery_voss", "secret_society", "academy_traditions", "main_complex"],
+    "related": ["lenny_goldvein", "ellery_voss", "ninth_thesis", "secret_society", "academy_traditions", "main_complex", "headmistress_office"],
     "tags": ["faculty", "headmistress", "administration", "tiefling", "authority", "dangerous"]
   },
   {

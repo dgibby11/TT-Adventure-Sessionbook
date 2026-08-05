@@ -91,7 +91,7 @@
     "contentType": "html",
     "contentFile": "content/references/hidden_knowledge.html",
     "visibility": "dm-only",
-    "related": ["founders_statue", "secret_society", "old_library", "eastern_wing"],
+    "related": ["founders_statue", "ninth_thesis", "secret_society", "old_library", "eastern_wing"],
     "tags": ["dm-only", "mystery", "secrets", "bargains", "library", "lore", "founding"]
   },
   {
@@ -112,7 +112,7 @@
     "contentType": "html",
     "contentFile": "content/references/academy_grounds_map.html",
     "visibility": "dm-only",
-    "related": ["campus_root", "underground_storage", "rogues", "eastern_wing", "torvald_thatch"],
+    "related": ["campus_root", "underground_storage", "rogues", "eastern_wing", "torvald_thatch", "ninth_thesis"],
     "tags": ["dm-only", "map", "omissions", "grounds", "administration", "evidence"]
   },
   {
@@ -123,7 +123,7 @@
     "contentType": "html",
     "contentFile": "content/references/founders_charter.html",
     "visibility": "dm-only",
-    "related": ["restricted_floor", "old_library", "aldric_voss", "isolde_orath", "brennan_ashcroft", "ritual_floor", "secret_society"],
+    "related": ["restricted_floor", "old_library", "aldric_voss", "isolde_orath", "brennan_ashcroft", "ritual_floor", "ninth_thesis", "secret_society"],
     "tags": ["dm-only", "founding", "charter", "obligations", "ritual", "three-founders", "lore"]
   },
   {
@@ -134,7 +134,7 @@
     "contentType": "html",
     "contentFile": "content/references/contraband_log.html",
     "visibility": "dm-only",
-    "related": ["captain_hadra", "main_complex", "founders_compass", "secret_society"],
+    "related": ["captain_hadra", "main_complex", "founders_compass", "ninth_thesis", "secret_society"],
     "tags": ["dm-only", "security", "contraband", "redacted", "hadra", "evidence"]
   },
   {

@@ -198,7 +198,7 @@
     "contentType": "html",
     "contentFile": "content/items/founders_compass.html",
     "visibility": "dm-only",
-    "related": ["secret_society", "ritual_floor", "underground_storage", "voss_keycard"],
+    "related": ["ninth_thesis", "secret_society", "ritual_floor", "underground_storage", "voss_keycard"],
     "tags": ["artifact", "compass", "founding", "nine-sites", "dm-only", "secret-society"]
   },
   {
