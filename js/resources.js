@@ -705,6 +705,11 @@
     pendingDetailIdx = idx; // track most recent click for when full data arrives
     detailPanel.hidden = false;
     modalEl.classList.add('monster-detail-open');
+    // #monster-detail-panel is position:absolute inside #resource-modal-body, so it
+    // scrolls along with the body's own scroll offset — reset that too, not just the
+    // panel's internal scroll, or the panel opens off-screen above wherever the list
+    // was scrolled to when it was clicked.
+    bodyEl.scrollTop = 0;
     const body = detailPanel.querySelector('#monster-detail-body');
     if (!body) return;
 
