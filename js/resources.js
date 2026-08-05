@@ -7,7 +7,7 @@
 //          column sorting (gods) + result count.
 
 (function () {
-  const LABELS = { spells: 'Spells', gods: 'Gods', monsters: 'Monsters' };
+  const LABELS = { spells: 'Spells', gods: 'Gods', monsters: 'Monsters', rings: 'Rings' };
 
   const wrap = document.getElementById('resources-wrap');
   const btn  = document.getElementById('resources-btn');
@@ -184,6 +184,8 @@
       searchInput.placeholder = 'Search by name…';
       buildMonsterFilters();
       buildMonstersSort();
+    } else if (resource === 'rings') {
+      searchInput.placeholder = 'Search…';
     }
     searchInput.focus();
   }
@@ -392,7 +394,20 @@
       const crTo    = dynamicFilters.crTo    ? dynamicFilters.crTo.value    : '';
       const srcVal  = dynamicFilters.monSrc  ? dynamicFilters.monSrc.value  : '';
       filterMonsters(query, typeVal, sizeVal, crFrom, crTo, srcVal);
+    } else if (currentResource === 'rings') {
+      filterRings(query);
     }
+  }
+
+  function filterRings(query) {
+    let total = 0, visible = 0;
+    bodyEl.querySelectorAll('.ring-entry').forEach((entry) => {
+      total++;
+      const show = !query || entry.textContent.toLowerCase().includes(query);
+      entry.hidden = !show;
+      if (show) visible++;
+    });
+    countEl.textContent = query ? `${visible} of ${total} rings` : '';
   }
 
   function filterSpells(query, cls, level, source, ritualOnly) {
