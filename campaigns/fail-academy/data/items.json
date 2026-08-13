@@ -18,7 +18,7 @@
     "contentType": "html",
     "contentFile": "content/items/quick_components_pouch.html",
     "visibility": "player",
-    "related": ["zarad", "oswald_crumb", "thornwick_consortium", "session_1"],
+    "related": ["silas", "oswald_crumb", "thornwick_consortium", "session_1"],
     "tags": ["magic-item", "wondrous", "pouch", "wizard", "spellcasting-focus", "pc-item", "thornwick"]
   },
   {

@@ -32,7 +32,7 @@
       "items": [
         { "recipient": "tavian_stormnet", "giver": "commander_orvyn", "gift": "Witness — a legendary sentient longsword, Orvyn's own late instructor's blade. Starts at +1; grows via Legend Runes as Tavian earns witnessed, retold deeds. See data/items.json (id: witness).", "status": "CONFIRMED — full item written, content/items/witness.html" },
         { "recipient": "tito", "giver": "viola_gossamer", "gift": "The Standing Ovation — a rare attuned cloak (advantage on death saves; 1/day drop to 1 HP instead of 0). Giver named: Viola Gossamer, a fourth-year fairy bard with an unspoken crush, tied to the recital where Tito once saved her from freezing on stage. See data/items.json (id: standing_ovation) and data/npcs.json (id: viola_gossamer).", "status": "CONFIRMED — full item + giver NPC written, content/items/standing_ovation.html" },
-        { "recipient": "zarad", "giver": "oswald_crumb", "gift": "The Quick Components Pouch — rare, no attunement, 1/day bonus-action casting of a level ≤3 action spell, with a nested attuned Pearl of Power. DM secret: Thornwick-sourced via Crumb's own supply chain, same maker's stamp as the tainted pouch from the three incidents — an independent lead into the supply chain, not evidence against Crumb. See data/items.json (id: quick_components_pouch).", "status": "CONFIRMED — full item written, content/items/quick_components_pouch.html" },
+        { "recipient": "silas", "giver": "oswald_crumb", "gift": "The Quick Components Pouch — rare, no attunement, 1/day bonus-action casting of a level ≤3 action spell, with a nested attuned Pearl of Power. DM secret: Thornwick-sourced via Crumb's own supply chain, same maker's stamp as the tainted pouch from the three incidents — an independent lead into the supply chain, not evidence against Crumb. See data/items.json (id: quick_components_pouch).", "status": "CONFIRMED — full item written, content/items/quick_components_pouch.html" },
         { "recipient": "guntrah", "giver": "self-made", "gift": "The All-Purpose Tool, +1 — not a gift from anyone else; his own last piece of proof-of-work before leaving the workshops, already reflected as attuned equipment on guntrah.html.", "status": "CONFIRMED (already reflected in session1_draft.html)" }
       ]
     },
@@ -90,7 +90,7 @@
   "open_questions": {
     "title": "RESOLVED (2026-07-27) — \"Something is Happening\" adopted as final, matching how it had been used as the working title throughout; live entity name is \"Session 1 — Something is Happening\".",
     "closing_image": "RESOLVED (2026-07-25) — see structure.graduation_hook.the_debrief. Voss tells the party to focus on finals, she'll reach out as graduation nears; cut straight to Session 2's graduation opening.",
-    "parting_gifts_zarad_guntrah": "RESOLVED (2026-07-27) — see structure.parting_gifts.items.",
+    "parting_gifts_silas_guntrah": "RESOLVED (2026-07-27) — see structure.parting_gifts.items.",
     "tito_admirer_identity": "RESOLVED (2026-07-27) — Viola Gossamer, named. See structure.parting_gifts.items and data/npcs.json (id: viola_gossamer).",
     "voss_summons_acceptance": "Does the party answer Voss's recruitment offer on the spot, or is it left open until graduation? See structure.the_voss_summons.acceptance.",
     "org_disclosure_confirm": "Confirm or adjust structure.the_voss_summons.org_disclosure (proposed: she names the Ninth Thesis outright but stays vague on deep specifics).",

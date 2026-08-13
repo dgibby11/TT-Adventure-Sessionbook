@@ -8,7 +8,7 @@
     "contentFile": "content/references/party_overview.html",
     "visibility": "player",
     "related": [
-      "zarad", "guntrah", "tito", "tavian_stormnet"
+      "silas", "guntrah", "tito", "tavian_stormnet"
     ],
     "tags": ["party", "players", "characters", "overview", "session-zero"]
   },

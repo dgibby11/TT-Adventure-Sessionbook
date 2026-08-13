@@ -56,12 +56,12 @@
     "tags": ["player-character", "fighter", "human", "archived"]
   },
   {
-    "id": "zarad",
-    "name": "Zarad",
+    "id": "silas",
+    "name": "Silas",
     "type": "npc",
     "category": "Player Characters",
     "contentType": "html",
-    "contentFile": "content/players/zarad.html",
+    "contentFile": "content/players/silas.html",
     "visibility": "player",
     "related": ["guntrah", "tito", "tavian_stormnet", "quick_components_pouch", "oswald_crumb", "session_1"],
     "tags": ["player-character", "wizard", "half-orc", "evocation", "session-zero"]
@@ -74,7 +74,7 @@
     "contentType": "html",
     "contentFile": "content/players/guntrah.html",
     "visibility": "player",
-    "related": ["zarad", "tito", "tavian_stormnet", "session_1", "prof_bram_holdar", "prof_tavel", "julian_vance"],
+    "related": ["silas", "tito", "tavian_stormnet", "session_1", "prof_bram_holdar", "prof_tavel", "julian_vance"],
     "tags": ["player-character", "artificer", "orc", "armorer", "session-zero"]
   },
   {
@@ -85,7 +85,7 @@
     "contentType": "html",
     "contentFile": "content/players/tito.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tavian_stormnet", "standing_ovation", "viola_gossamer", "session_1"],
+    "related": ["silas", "guntrah", "tavian_stormnet", "standing_ovation", "viola_gossamer", "session_1"],
     "tags": ["player-character", "bard", "satyr", "eloquence", "session-zero"]
   },
   {
@@ -96,7 +96,7 @@
     "contentType": "html",
     "contentFile": "content/players/tavian_stormnet.html",
     "visibility": "player",
-    "related": ["zarad", "guntrah", "tito", "witness", "commander_orvyn", "session_1"],
+    "related": ["silas", "guntrah", "tito", "witness", "commander_orvyn", "session_1"],
     "tags": ["player-character", "paladin", "air-genasi", "oath-of-glory", "session-zero"]
   },
   {

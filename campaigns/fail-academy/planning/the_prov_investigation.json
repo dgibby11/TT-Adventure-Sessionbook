@@ -1,0 +1,137 @@
+{
+  "_note": "Planning doc — a self-contained, session-agnostic encounter module: the party investigating the Provisions Office ('the Prov') on Voss's behalf (or in her stead). NOT a live entity, NOT tied to a specific session number. Triggers whenever the party decides to go, independent of graduation/Ring Selection (see session_plan.json's session_2 entry, prepped separately). See academy_provisions.html and silas_morne.html for the existing live location/NPC this builds on top of — nothing here contradicts them, it extends them. See torvald_the_insider.json for the ring mechanism this ties into (updated 2026-08-11 alongside this file).",
+  "status": "Design complete, ready for table use. DM outline provided 2026-08-11 (round 1: overall shape; round 2: Silas bypass, the crate/bait object, the portal trigger, and the Thanatos workshop destination). Not yet played.",
+
+  "premise": "Voss's session_1.html notes name Provisions as the next lead ('Start with Provisions — someone signed for that catalog entry'). If the party proposes going themselves — to help her, or because she hasn't gotten to it yet — she allows it, reluctantly. This module is what happens when they do.",
+
+  "how_it_starts": {
+    "voss_authorization": "She doesn't send them in blind or unescorted-in-spirit. Something like: 'That's exactly where I was headed myself. Fine — you'll likely get further with Silas than I would; he respects effort more than rank. But this is fact-finding, not a raid. Find out what happened to that record. If you find anything you don't recognize, you leave it exactly where it is and you come tell me. Do you understand?' The instruction to NOT handle unknown items is explicit and on the record — this matters for how Branch A reads (they were told not to) and gives Branch B a clean, in-character reason to exist.",
+    "flexibility": "No specific day/session this has to happen on. Can be slotted in anytime after Session 1 — before graduation, during the Session 2 travel-prep window, or later. Nothing else in the campaign depends on its timing."
+  },
+
+  "location_addition": {
+    "name": "The Intake Annex",
+    "placement": "A locked door at the back of academy_provisions.html's existing 'Back Room (staff only)' — not a new building, an extension of the space already established. Where the back room is Silas's desk and day-to-day stockroom, the Annex is deeper: the actual bulk warehouse where incoming requisitions, department orders, and anything awaiting catalog review get shelved before processing. This is where an unrecognized item would plausibly sit.",
+    "promotion_note": "If/when this gets played, fold this room into academy_provisions.html's Layout section and add a DM-only paragraph, same pattern as the existing back-room note. Don't add it preemptively — only once it's canon."
+  },
+
+  "getting_past_silas": {
+    "the_baseline": "Silas will not personally let students past his counter, full stop — see silas_beat below. This section is about the party's actual bypass, whatever creative approach they land on. He does not need to be dealt with violently or permanently; the goal is access, and the game gets more interesting the less damage the plan does to the relationship.",
+    "approach_timing": "The Prov keeps posted hours (Mon–Sat 7am–6pm, closed Sundays, per academy_provisions.html). Silas typically stays late doing ledger work most nights — DM's call how late, suggest ~1-2 hours past close most days — then leaves for his own quarters elsewhere on campus. Sunday is a full clean window: the shop is shut and empty all day. Waiting for a genuinely empty building is the 'boring but reliable' option and should be treated as such — no roll required if the party simply waits him out and picks the lock (DC 12, per existing academy_provisions.html DC).",
+    "approach_magical": "He's a mundane NPC in his sixties with no magic resistance or training to notice it. A Sleep spell trivially affects him (treat him as well within range of even a low-level casting — no need to upcast). Charm Person also works mechanically (he has no proficiency bonus on Wisdom saves worth noting), but charming him doesn't rewrite his values — a charmed Silas regards the caster as a trusted friend, which might get him to unlock the door for a 'friend' he wouldn't for a stranger, or might not, if his professional rigidity holds even so. Worth playing as a genuine judgment call in the moment rather than an automatic yes.",
+    "approach_stealth_and_distraction": "One PC holds his attention at the counter — a drawn-out purchase, a question that plays to his pedantry about the ledger, anything that keeps him talking — while the others slip past. Treat this as a Stealth check (opposed by a passive Perception of 14 for Silas — attentive, 'never forgets a face,' but not supernaturally alert) with advantage or a flat bonus if the distracting PC is actively succeeding on a Persuasion/Performance check to hold him (Help action logic).",
+    "approach_honest": "Showing him a written note from Voss (rather than just reporting her permission verbally) is enough to get him to personally unlock the door and describe the item's location himself — see silas_beat.how_he_actually_helps. This skips the bypass entirely if the party thinks to ask for something in writing first. Include this as the 'boring but always available' option.",
+    "consequences": "He will notice inventory/access discrepancies within about a day regardless of method (existing canon, academy_provisions.html). If he was put to sleep, charmed, or otherwise handled without his knowledge and later works out what happened, honesty afterward repairs the relationship faster than getting caught in a lie — he already has his own private reasons to sympathize (see silas_beat.his_real_reason_for_sitting_on_it) and can come to respect initiative if it's owned rather than hidden. A clean, undetected bypass costs nothing immediately, but doesn't accelerate the trust arc either — he has to actually witness their character to move faster on the private ledger reveal."
+  },
+
+  "silas_beat": {
+    "the_refusal": "Silas meets any request to go into the back room or Annex with an immediate, flat no — this isn't negotiable for him even with Voss's blessing verbally reported. 'Absolutely not. Nobody goes past that counter who isn't on my payroll. That has been true for thirty years and Dr. Voss knowing your names doesn't change it.' He is not being obstructive for its own sake — this is the same institutional rigidity that makes him trustworthy in the first place.",
+    "how_he_actually_helps": "He won't escort them in, but he can be moved: a written note from Voss gets him to unbend just enough. He'll confirm the shape of the problem out loud ('There's an intake item I haven't been able to place. Tagged for her already. I hadn't gotten around to sending it — hadn't decided how, if I'm honest with you') and describe roughly where it is, but he does not personally walk them back there or open anything himself. He stays at his counter. This preserves 'students are never invited into the back room' as written while still giving the party a legitimate way in.",
+    "his_real_reason_for_sitting_on_it": "DM secret, revealable only if pushed hard or if the party earns real trust: normal channels have started disappearing paperwork on him — the same pattern Voss's notes describe. He doesn't trust a requisition form to survive the walk to her office anymore, so he's been quietly stalling on how to get this one to her safely rather than just filing it. This is new, in-character evidence for his private ledger, not a contradiction of it."
+  },
+
+  "security": {
+    "layer_1_the_back_room_door": "Standard lock, DC 12 (reuses the existing academy_provisions.html DC), OR Silas's own key/description if he's been talked into helping (see getting_past_silas).",
+    "layer_2_finding_the_item": "The Annex is a genuine warehouse — shelving, crates, requisition slips pinned to nearly everything. Without Silas's rough pointer, finding one specific tagged crate among the backlog is a DC 15 Investigation check (auto-success with his description in hand). Played as a bureaucratic-treasure-hunt beat, not a trap room."
+  },
+
+  "the_artifact": {
+    "the_crate": {
+      "player_facing_description": "A small shipping crate, banded in dark iron, its lid ringed with a visible sigil-ward — faint amber lines etched into the wood, clearly Abjuration-flavored to anyone who looks closely or casts Detect Magic. It reads as serious, deliberate security: the kind of thing that makes a party stop and start planning a proper breach.",
+      "the_twist": "It isn't. The warding is a transit seal — meant to protect the crate's contents in shipping, not to guard against tampering once it arrived — and it's inert now, expired the moment the crate reached its destination. A DC 12 Arcana or Investigation check identifies this for what it is; once identified, the crate opens with no further roll. Failing the check just means the party wastes time on an elaborate breach plan (Knock, Dispel Magic, a crowbar) against a lock that was never going to resist them — a fair, slightly funny beat: the real danger in this scene was never the crate."
+    },
+    "the_bait_object": {
+      "purpose": "A mundane-looking object inside, meant to blend into a warehouse shelf and invite handling rather than deter it — the opposite instinct from the crate's warding. Pick one, or let the DM decide in the moment based on who's most likely to reach for it first:",
+      "options": [
+        "A tarnished brass compass, lens cracked, needle drifting slowly in a direction that isn't north — good bait for Guntrah specifically; an artificer's hands go to a broken instrument on reflex.",
+        "A stoppered clay inkwell, dried crust around the lip — blends perfectly among the Academic Supplies stock one aisle over; unremarkable enough that almost anyone might pick it up just to move it out of the way.",
+        "A small leather-bound notebook, blank pages, cover slightly warped as if it had once been wet — appeals to anyone investigation-minded who wants to flip it open.",
+        "A cracked hourglass, sand frozen mid-fall inside it — the most overtly strange option if you want the 'why would I NOT touch this' tension to be part of the scene rather than pure camouflage.",
+        "A dull iron hand tool (calipers or an awl), tagged 'sample — artificer stores' — another strong Guntrah hook. Avoid a plain ring specifically; it'll read as a preview of graduation's Ring Selection and muddy that later beat."
+      ]
+    },
+    "dm_secret_what_it_actually_is": "The bait object is one end of a linked planar rift — the delivery/check-in mechanism described in torvald_the_insider.json's the_periodic_checkin. It was built to activate when the Groundskeeper (Torvald, never named in this scene) reached for it during one of his periodic trance visits. Provisions intake flagged and quarantined the crate before it ever reached him, so the workshop on the other end has been waiting for a visit that was never going to happen — see below."
+    },
+
+  "the_trigger_and_portal": {
+    "the_touch": "The instant skin (or a held tool) makes contact with the object, it goes ice-cold and then hot in the same heartbeat. No save to avoid the trigger — the crate's warning tag and Voss's explicit instruction were the save, already given, twice over. This is fair, not a gotcha.",
+    "the_manifestation": "A seam splits open in the air or floor nearest whoever's touching it — not light, its opposite: a bruised violet-black that seems to drink the light around it, dilating wet and slow like a pupil rather than snapping open like a spell effect. Its surface ripples, thick and faintly luminous, closer to liquid than to any portal in a textbook. There's a smell first — copper, then ash. Sound drops out almost entirely; a character's own heartbeat becomes the loudest thing in the room.",
+    "the_pull": "Not a shove — a suction, patient and total, like the room exhaled and the character was standing exactly where the breath went. No real falling sensation; more like being swallowed sideways, over in under a second. Anyone within 10 feet who isn't the toucher gets a reactive DC 15 Dexterity save to avoid being pulled in as well — meant to plausibly catch 2-3 party members, not always exactly one, so the fight on the other side isn't solo.",
+    "arrival": "Heat, red-orange light, and the smell of a forge, before the eyes even adjust. See the_destination_thanatos_workshop below."
+  },
+
+  "branch_a_handle_it_themselves": {
+    "trigger": "Any PC touches the bait object — in the Annex, or anywhere else if they pocket it first without realizing what it is. Let them carry it if they don't examine it closely; the trap goes off wherever curiosity wins.",
+    "resolution": "See the_destination_thanatos_workshop below.",
+    "aftermath": "They return (see that section's return mechanism) to the Annex, shaken, with direct firsthand experience and physical evidence to report. No one needs convincing this matters anymore."
+  },
+
+  "branch_b_report_first": {
+    "trigger": "The party identifies the crate as dangerous (or just respects the tag/Voss's instruction) and leaves without touching the bait object — either heading straight back to Voss or telling Silas to handle it himself.",
+    "the_distraction": {
+      "purpose": "Occupies the party's attention long enough for the crate to reach Voss's office before they do, without them escorting it directly or intervening before it's opened. Pick whichever fits the moment rather than scripting one rigidly:",
+      "options": [
+        "Silas, spooked by their report, insists on handling delivery himself immediately and ushers them out the door ('I'll see to it. Go.') — simplest option, no external event needed.",
+        "A campus bell/alarm (fire, containment, curfew) goes off elsewhere and pulls the party's attention for several minutes before they can even leave the Prov.",
+        "Torvald or another familiar NPC intercepts them right outside with an unrelated, time-sensitive ask (mirrors the Session 1 pattern of Torvald flagging something urgent) — reuse deliberately, it's now an established campus rhythm.",
+        "A student they know (Viola, Lugeiros, anyone with an existing relationship) stops them for something minor but hard to brush off quickly."
+      ]
+    },
+    "the_delivery": "Off-screen: the crate reaches Voss's office and gets opened there — by her, alone, trusting the 'forward to Dr. Voss' tag and her own authority to handle unknowns safely. This isn't a characterization stumble; it's the same trap the party would have triggered, sprung on someone who had every reasonable expectation of being the correct, safe recipient.",
+    "the_rescue": {
+      "framing": "The party arrives at her office (on their own timeline) to find the door ajar, the room cold, and the same violet-black rift open where her desk should be. A gut-punch, not a puzzle.",
+      "resolution": "See the_destination_thanatos_workshop below — same encounter, relocated to her office as the arrival point instead of the Annex. Voss is inside, alive and actively fighting when they arrive — competent, not helpless — but outmatched alone.",
+      "what_she_overheard": "Because she triggered it, she's the one who hears the tinkerers' 'you're late, Groundskeeper' confusion firsthand (see the dialogue below) before combat starts. This preserves the same clue for Branch B tables: she can relay it to the party afterward, once rescued, even though they didn't hear it themselves.",
+      "aftermath": "She's shaken in a way the party has never seen — first time cracking her composure on-screen. Good beat for deepening the Session 1 relationship. She'll want to know exactly what the party saw, and this is a natural moment for her to admit she's scared of what the pattern adds up to."
+    }
+  },
+
+  "the_destination_thanatos_workshop": {
+    "shared_design_note": "One encounter, two possible entry points (Branch A: the party falls in; Branch B: they arrive to rescue Voss, who triggered it herself). Build it once, run it either way — Voss simply occupies the 'first arrival' role in Branch B and is already mid-fight when the party gets there.",
+    "dm_only_what_it_actually_is": "This is a workshop on Thanatos, the 333rd layer of the Abyss where Orcus resides (see campaign_arc.json's premise) — specifically a fabrication site where the corrupting items seeded around campus (the catalog item, the component pouch, the practice-closet instrument, this crate) are actually built, staffed by demons in Thornwick/the cult's service. This is DM-facing knowledge. How much of it the table ever hears by name is a live choice, not a requirement — see how_much_to_reveal below.",
+    "the_space": "A forge-hot chamber roughly 50x50 ft, walls of black stone shot through with something that isn't quite metal — the whole room has a low, continuous grinding, breathing sound, like it's alive at a scale too large to notice. Embers drift in the air without rising or falling naturally. Shelving lines the walls, stocked with components in careful, obsessive order (a visual echo of Silas's and Crumb's own cataloguing habits, uncomfortably). No visible exit besides the rift the party arrived through.",
+    "the_forge_altar": "A caged, bound flame at the room's center — black iron bars, chains, warding glyphs — clearly the source of the room's heat and the summoning point for the fire elemental below. Can be targeted directly: dealing enough damage to it (DM's call on a threshold, or just narrating that focused attacks visibly stress the binding) interrupts the summoning ritual if the party acts fast enough, a tactical option for players paying attention rather than a required path.",
+    "the_workbenches": "Scattered tools and half-finished items in progress — and, on close inspection (no roll needed, just looking), unmistakable kin to the objects from Voss's Session 1 notes: another component pouch frame mid-assembly, coiled wire matching the practice-closet instrument's build, spare tags in the same unfamiliar hand as the crate's warning label. This is the visual 'oh' moment — let it land silently, no NPC needs to explain it.",
+    "the_abyssal_tinkerers": {
+      "appearance": "Two hunched, too-many-jointed humanoid figures, skin like scorched leather, vestigial wings folded uselessly against their backs. Tool belts hung with instruments that are subtly wrong — pliers that seem to bite on their own, needles of yellowed bone. They read as craftsmen, not beasts: precise, irritable, competent. That's what makes them unsettling rather than just monstrous.",
+      "suggested_stat_base": "Reflavored babau demons (CR 4 each, adjust in D&D Beyond per house convention) work well — cunning, capable of speech, thematically suited to sabotage/craft work. Two of them plus the fire elemental below should feel at least as tough as the Session 1 bulette fight, arguably tougher given the ambush framing; scale up (a third tinkerer, or higher CR reflavors) if the table wants it harder.",
+      "opening_dialogue": [
+        "One tinkerer, back turned, not yet looking up: 'Finally. Later than usual, even for you, Groundskeeper. Did the pull not take properly this time, or did you dawdle?'",
+        "[Turns around. Sees the party.] 'That is not the Groundskeeper.'",
+        "Second tinkerer, already reaching for tools: 'That is decidedly not the Groundskeeper.'"
+      ],
+      "the_clue": "One line before things turn hostile — pick the temperature that fits your table: 'No matter. The Consortium's schedule doesn't bend for a missed pickup — the work reaches the surface however it must.' (uses 'the Consortium' — rewards a sharp player who remembers the Thornwick stamp from Voss's Session 1 notes without spelling it out). If you want a bigger, more direct connect-the-dots moment instead, have the line use 'Thornwick' outright — the name itself is not new information to the party; it's already sitting in their hands from Voss's printable notes handout in session_1.html, just never spoken aloud by a hostile source before now. Either version is safe; pick based on how hard you want this scene to land.",
+      "turn_to_combat": "'Kill them or hold them — the Master decides which once we know what they know.' No named patron, no Orcus, no Corvin — an oblique reference is exactly the right amount of information. Roll initiative once dialogue breaks (or immediately, if the party attacks before the tinkerers finish talking — no forced surprise round either direction; let whoever acts first actually go first)."
+    },
+    "the_fire_elemental": "Standard Fire Elemental (CR 5) — summoned via a brief ritual at the forge-altar, 1 round to complete, interruptible per the_forge_altar above. If the ritual is stopped, the fight is meaningfully easier; treat that as a fair reward for alert play rather than something to prevent happening.",
+    "environmental_pressure": "Optional, use if you want a soft reason not to linger indefinitely once the fight's over: every full minute spent in the workshop beyond the initial arrival, DC 13 Constitution save or 1 level of exhaustion. Not meant to be punishing — just enough to make the place feel actively hostile to living things, not merely dangerous in combat.",
+    "loot_and_evidence": [
+      "A half-finished item off a workbench, visually matching the style of Voss's known incidents — strong physical evidence to bring back to her.",
+      "A stack of blank tags in the same unfamiliar hand as the crate's warning label.",
+      "A pouch of small black coin-like tokens, unfamiliar currency or markers — a sellable curiosity, or a lead of its own if anyone thinks to show them around later.",
+      "Tinkerer tools, if anyone wants a grim souvenir — flavor only, no mechanical benefit recommended, to avoid turning a horror beat into a shopping trip."
+    ],
+    "return_mechanism": "The rift stays open for the whole encounter and for roughly a minute afterward — enough time to loot and regroup — before sealing itself. It expels anyone still touching it or standing within a few feet automatically the moment it closes, as a safety valve against anyone getting left behind by accident. Deposits the party back at the arrival point (Annex floor for Branch A, Voss's office floor for Branch B)."
+  },
+
+  "how_much_to_reveal": {
+    "safe_to_confirm": "That someone deliberately built something to hurt whoever opened it; that this is where the campus's planted incidents are actually made; that a term ('the Consortium,' or 'Thornwick' outright per your choice above) connects to the mark from Voss's own notes; that there's a third party on campus receiving deliveries ('the Groundskeeper') without revealing who.",
+    "keep_gated": "Orcus's name, Corvin Ashworth's identity, Torvald's identity specifically, the ring, the veil's true location beneath campus, and the dwarven ruins. None of these need to come up even obliquely — the scene works entirely on 'something evil is making these, on purpose, somewhere else' without any of them.",
+    "if_players_guess_right": "If someone connects 'the Groundskeeper' to Torvald out loud, that's earned deduction from attentive players, not information you handed them — let it sit as an unconfirmed theory rather than confirming or denying at the table. Matches how Voss herself would respond to being asked (see silas_morne.html and session_1.html's established pattern of her not overcommitting to unproven links)."
+  },
+
+  "additional_details": {
+    "silas_forward_hook": "Whatever happens, this is a strong, earned moment to have Silas show the party his private anomaly ledger for the first time (see silas_morne.html) if he wasn't ready to before — surviving/uncovering this together is exactly the kind of trust his file says he needs.",
+    "voss_forward_hook": "This is the first time the party has physical, firsthand proof that the pattern is deliberate and dangerous, not just Voss's theory. Good moment for her to start treating them less as promising recruits and more as actual colleagues.",
+    "torvald_long_game": "Nothing here should tip Torvald's own arc — see torvald_the_insider.json. 'The Groundskeeper' stays a loose thread the party can chew on for sessions if they want to, with no obligation to resolve it here.",
+    "table_management_note": "The two-branch structure means you genuinely don't know which version you're running until the table decides mid-scene — keep both the crate/bait-object beat and the workshop encounter loaded mentally, but don't over-prep dialogue for one branch at the expense of being ready for the other."
+  },
+
+  "open_decisions": [
+    "Final bait-object choice (or leave it to the moment).",
+    "'The Consortium' vs. 'Thornwick' outright in the tinkerers' clue line.",
+    "Exact tinkerer count/CR scaling once you see how the table's actually playing that night.",
+    "Whether to use the environmental exhaustion pressure or skip it.",
+    "Whether Silas shows the private ledger immediately after this or holds it a while longer — both are consistent with his file."
+  ]
+}

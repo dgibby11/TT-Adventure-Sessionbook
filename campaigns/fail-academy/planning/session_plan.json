@@ -8,8 +8,8 @@
 
   "sessions": {
     "session_1": {
-      "status": "LIVE — promoted to data/sessions.json (id session_1), dm-only, unplayed. Full design in session1_something_is_happening.json.",
-      "beats": "Parting gifts montage, the Voss summons/office scene, recruitment pitch as Ninth Thesis operatives, a corrupted bulette (ambient veil-bleed, NOT possession — no independent entity riding it, just abnormal aggression/toughness from proximity to the destabilizing veil, ties to campaign_arc.json's 'occasionally something leaks through' premise) driven back near the Rangers Dept/High Forest edge, debrief.",
+      "status": "PLAYED IN FULL (2026-08-09) — see content/sessions/session_1.html's 'What Actually Happened at the Table' DM-only note for how actual play diverged from the design (tunnel fight instead of open field, harder-than-expected fight, an unresolved unnamed figure Torvald was seen talking to). Full design in session1_something_is_happening.json.",
+      "beats": "Parting gifts montage, the Voss summons/office scene, recruitment pitch as Ninth Thesis operatives (accepted outright by all four, ~50gp/week), a corrupted bulette (ambient veil-bleed, NOT possession — no independent entity riding it, just abnormal aggression/toughness from proximity to the destabilizing veil, ties to campaign_arc.json's 'occasionally something leaks through' premise) fought underground after burrowing, debrief.",
       "correction_2026-08-02": "The bulette is CORRUPTED, not possessed — word choice matters: 'possessed' implies an intelligence behind it that isn't there."
     },
     "session_2": {

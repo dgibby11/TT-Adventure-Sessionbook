@@ -21,18 +21,18 @@ fine. The goal is a hook you can play at the table, not a novel.
 
 _Corrected against the DM's source doc (Google Doc "academy-relationship-table", per-bond
 Notes) — the party only rolled **four** pairings, not all six combinations. Real player →
-character mapping: Myles = Guntrah, Ben = Tavian, Russ = Zarad, Christian = Tito. This is
+character mapping: Myles = Guntrah, Ben = Tavian, Russ = Silas, Christian = Tito. This is
 already live in each character's own entity (`content/players/*.html`, "Relationships
 (Session 0)" section) — this table exists as the design-history record._
 
 | Pair | Bond | Roles |
 |---|---|---|
 | Guntrah & Tavian | #2 The Cover Story | Guntrah = the Sneaker · Tavian = the Alibi |
-| Zarad & Tito | #3 Training Yard Rivals | — (Tito's gotten the better of Zarad slightly more often) |
-| Zarad & Tavian | #6 The Bad Semester | Tavian = the One Who Almost Left · Zarad = the One Who Stayed Up Talking |
+| Silas & Tito | #3 Training Yard Rivals | — (Tito's gotten the better of Silas slightly more often) |
+| Silas & Tavian | #6 The Bad Semester | Tavian = the One Who Almost Left · Silas = the One Who Stayed Up Talking |
 | Guntrah & Tito | #9 Kitchen Duty Comrades | — |
 
-No roll yet for Zarad↔Guntrah or Tito↔Tavian — open for a future table session (also
+No roll yet for Silas↔Guntrah or Tito↔Tavian — open for a future table session (also
 already noted in the live character entities). The Cover Story bond additionally involves
 [[lugeiros_serise]] (Lug), a retired-party NPC who Guntrah blames for refusing to cast
 Pass Without Trace on him beforehand — see `guntrah.html`'s DM note.
@@ -100,8 +100,8 @@ admit how much you'd miss it.
 - What's the current score on the Ranking Board, and who's ahead?
 - What was the moment the dislike turned into respect?
 
-**Rolled:** Zarad & Tito — fits well, since they're both casters. Still working out
-details; one certainty already locked in — Tito's gotten the better of Zarad slightly
+**Rolled:** Silas & Tito — fits well, since they're both casters. Still working out
+details; one certainty already locked in — Tito's gotten the better of Silas slightly
 more often.
 
 ---
@@ -158,7 +158,7 @@ under everything.
   knowledge.)
 - What did the other one say — or do — that worked?
 
-**Rolled:** Tavian (the One Who Almost Left) & Zarad (the One Who Stayed Up Talking).
+**Rolled:** Tavian (the One Who Almost Left) & Silas (the One Who Stayed Up Talking).
 Still working out details.
 
 ---

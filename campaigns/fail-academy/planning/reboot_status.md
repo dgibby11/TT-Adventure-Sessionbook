@@ -55,6 +55,27 @@ any live data for this campaign:
   occult_systems, or the three founders' entities. Its occult_systems conflict
   now has a likely-resolution note (2026-08-02) pointing at phase3's veil
   location — see below.
+- `the_prov_investigation.json` — NEW (2026-08-11), expanded same day with a second
+  round of DM detail. A self-contained, session-agnostic encounter module for
+  whenever the party investigates the Provisions Office (Voss's session_1.html
+  notes already point them there) — not tied to a session number. Covers
+  bypassing Silas (timing, magic, stealth/distraction, or the honest note-from-
+  Voss route, each with different trust consequences), a new "Intake Annex"
+  storage area behind the existing back room, a magically-sealed crate that
+  looks far harder to open than it actually is (the real ward expired in
+  transit), a mundane bait object inside meant to invite handling, and a
+  planar-rift trigger with full sensory detail (violet-black, liquid-surfaced,
+  a suction pull) leading to a workshop on **Thanatos** itself (Orcus's Abyssal
+  layer, per campaign_arc.json's premise) staffed by two reflavored-babau
+  "abyssal tinkerers" who mistake the arrival for Torvald (referred to only as
+  "the Groundskeeper," never named) before turning hostile and summoning a
+  fire elemental. Ties directly into torvald_the_insider.json's ring mechanism
+  — updated the same day with a new "periodic check-in" trance-visit detail
+  this scene surfaces. Two branches (party opens it themselves, or reports
+  back first and has to rescue Voss when she opens it instead) share the same
+  encounter. Deliberately gated — confirms the sabotage pattern is real and
+  that the veil leads somewhere real, but keeps Orcus, Corvin, Torvald's
+  identity, the ring, and the ruins unconfirmed at the table.
 - `session_plan.json` — NEW (2026-08-02). The master session-by-session
   tracker for the whole campaign: the 10-sessions-per-phase pacing target,
   Sessions 1-5 confirmed at the beat level, a loose unnumbered sequence for
@@ -97,7 +118,7 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   Thornwick inner-circle leadership, Corvin's actual plan, etc.). Full level-20
   mechanical build now exists too, see `corvin_ashworth_build.json`.
 - Session 1's four parting gifts (Witness for Tavian, The Standing Ovation for
-  Tito, The Quick Components Pouch for Zarad, the self-made All-Purpose Tool
+  Tito, The Quick Components Pouch for Silas, the self-made All-Purpose Tool
   for Guntrah) are CONFIRMED and live in data/items.json / data/npcs.json — see
   `session1_something_is_happening.json` → structure.parting_gifts.
 - Session 1 itself ("Something is Happening") is PROMOTED and live as
@@ -213,6 +234,20 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   correction — reworded to a general Voss-family-archive handoff.
   `data/*.json` related[] arrays updated to add `ninth_thesis` wherever
   content now cross-links it.
+- Session 1 played at the table (2026-08-09, live data): full session ran in one
+  sitting — parting gifts, the Voss summons/note, the Ninth Thesis recruitment
+  pitch (accepted outright by all four, ~50gp/week), the bulette hunt, and the
+  debrief. `content/sessions/session_1.html`'s Status field updated to reflect
+  completion, and a DM-only "What Actually Happened at the Table" note added
+  documenting where play diverged from the script: the bulette fight happened
+  underground in tunnels the creature burrowed (not the open field/training-course
+  terrain originally blocked out) and ran harder than a level-10 party should
+  have felt, played deliberately as a tonal gut-check. One unscripted loose
+  thread, left open per DM instruction: as the party emerged from the forest,
+  Torvald was seen quietly talking with an unidentified figure who walked away
+  before the party got close — not tied to Garrick Nash or any existing NPC,
+  no obligation to resolve it in Session 2. `session_plan.json`'s session_1
+  entry updated to match.
 - Setting year established (2026-08-05, live data): the campaign takes place
   in **1500 DR** (Forgotten Realms Dale Reckoning) — added to
   `campus_overview.html`'s Geographic Context facts (player-visible) and
