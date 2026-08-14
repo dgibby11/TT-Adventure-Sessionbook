@@ -1,5 +1,42 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+NPC first-name collision fix (2026-08-14, live data): the player formerly
+named Xarad was renamed to Silas (see the earlier Silas rename commit), which
+collided with the existing Provisions Office NPC's first name. Renamed that
+NPC from **Silas Morne** to **Osric Morne** — display name, body text, AND
+the internal slug: entity `id` changed `silas_morne` → `osric_morne`, and
+`content/npcs/silas_morne.html` was git-mv'd to `content/npcs/osric_morne.html`
+(2026-08-14, follow-up pass — the id was initially left alone as "not
+player-facing," but changed on request to avoid future-DM confusion between
+the two Silases at the data layer). Updated every reference across
+data/npcs.json (id + contentFile), the `related[]` arrays in data/locations.json,
+data/sessions.json, data/factions.json, and data/references.json, and every
+`[[silas_morne|...]]` cross-link and bare filename mention in the content files
+that mention him (academy_provisions.html, academy_credits.html,
+academy_traditions.html, thornwick_consortium.html, dueling_society.html,
+one_shot_5.html, session_1.html, bag_of_tricks.html, goggles_of_night.html,
+potion_of_healing.html, everlund.html, river_rauvin.html), plus the
+not-yet-played planning doc `the_prov_investigation.json` (including its
+internal `silas_beat`/`getting_past_silas`/`silas_forward_hook` keys, renamed
+to `osric_*` for consistency, and its `silas_morne.html` filename mentions)
+and the top-level README feature list. Player character Silas's own
+references (id `silas`, e.g. in session_1.html's party list,
+content/players/*.html, party_overview.html, quick_components_pouch.html)
+were left untouched — those are the party member, not the Provisions NPC.
+
+Voss-lineage race/age pass (2026-08-13, live data): `ellery_voss.html` had no
+Species/Age fields (unlike e.g. `headmistress_dowe.html`) — filled in as
+**Human, late 40s**, per explicit instruction (non-elven lifespan). Applied
+the same Human species to `aldric_voss.html` for consistency across the
+lineage. Created a new dm-only NPC entity, `nerissa_voss` (Human, founding
+era, ~350 years before present — an ordinary human lifespan, long since
+ended), since she was previously only prose-described inside
+`ninth_thesis.html`/`the_ninth_thesis.json` with no entity of her own.
+Cross-linked her `[[nerissa_voss]]` from `ellery_voss.html`, `aldric_voss.html`,
+`ninth_thesis.html`, and `voss_keycard.html` wherever she was previously named
+in plain text. She is deliberately kept thin (textual/historical role only,
+not a scene NPC) — see her entity's own dm-only note before expanding her.
+
 _Moved out of the root CLAUDE.md 2026-07-24 so all planning-related content for this
 campaign lives under `campaigns/fail-academy/planning/` — CLAUDE.md now just points here._
 
@@ -59,7 +96,7 @@ any live data for this campaign:
   round of DM detail. A self-contained, session-agnostic encounter module for
   whenever the party investigates the Provisions Office (Voss's session_1.html
   notes already point them there) — not tied to a session number. Covers
-  bypassing Silas (timing, magic, stealth/distraction, or the honest note-from-
+  bypassing Osric (timing, magic, stealth/distraction, or the honest note-from-
   Voss route, each with different trust consequences), a new "Intake Annex"
   storage area behind the existing back room, a magically-sealed crate that
   looks far harder to open than it actually is (the real ward expired in
@@ -76,6 +113,34 @@ any live data for this campaign:
   encounter. Deliberately gated — confirms the sabotage pattern is real and
   that the veil leads somewhere real, but keeps Orcus, Corvin, Torvald's
   identity, the ring, and the ruins unconfirmed at the table.
+- `session2_draft.html` — NEW (2026-08-13), full arc blocked out (2026-08-14).
+  Prose draft of Session 2, same pattern as `session1_draft.html`. Now covers
+  the whole session: Voss's pre-ceremony Ninth Thesis contact-list handoff,
+  the Commencement ceremony (venue: Founder's Statue, plus a forgettable
+  guest-speaker set piece), Ring Selection restaged as a public part of the
+  ceremony itself (doubling as the diploma conferral, not a private
+  pre-ceremony errand as first drafted), Voss's own failed break-in at
+  Provisions during the ceremony and her off-screen argument with Osric
+  Morne, the party's branch into the_prov_investigation.json's Provisions
+  break-in, and a substantially reworked destination scene once the
+  unmarked package (Conjuration-school planar magic) is opened: a
+  map-driven open-air ritual platform on Thanatos with a lava moat, a
+  broken drow captive (placeholder name Vrenn — Stockholm-syndromed, forced
+  labor, won't fight unless provoked, deliberately thin backstory held back
+  by the DM) instead of the original babau "tinkerers," and two armanites
+  (CR 7 each) as guards instead of the original combat design. The escape
+  this time is one-way — the arrival rift vanishes on its own, and forcing
+  the site's ritual dais open under duress strands the party in Neverwinter
+  Wood, not back at the Academy. Session 2 now deliberately ends there,
+  disoriented, with the choice of which direction to travel explicitly
+  deferred to Session 3 — see session_plan.json's new `post_session_2_fork`
+  entry for the four options (Thundertree, Mount Hotenow, the Triboar Trail,
+  Agatha's Grove), none of which are prepped yet. This supersedes Session
+  2's old "party chooses a destination and departs campus" beat and cuts the
+  Triboar/Yartar travel-stop scene from this session. `the_prov_investigation.json`
+  itself is marked superseded-in-part (2026-08-14) rather than rewritten —
+  it's kept as design history, session2_draft.html is authoritative for how
+  this actually gets run.
 - `session_plan.json` — NEW (2026-08-02). The master session-by-session
   tracker for the whole campaign: the 10-sessions-per-phase pacing target,
   Sessions 1-5 confirmed at the beat level, a loose unnumbered sequence for

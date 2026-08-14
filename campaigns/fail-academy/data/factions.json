@@ -51,7 +51,7 @@
     "contentType": "html",
     "contentFile": "content/factions/thornwick_consortium.html",
     "visibility": "player",
-    "related": ["oswald_crumb", "nether_mountains", "silas_morne", "artificers", "everlund", "silverymoon", "garrick_nash", "one_shot_5", "session_1"],
+    "related": ["oswald_crumb", "nether_mountains", "osric_morne", "artificers", "everlund", "silverymoon", "garrick_nash", "one_shot_5", "session_1"],
     "tags": ["external", "arcane", "merchant", "supply-chain", "consortium", "threat", "decentralized", "cult"]
   },
   {
@@ -62,7 +62,7 @@
     "contentType": "html",
     "contentFile": "content/factions/ninth_thesis.html",
     "visibility": "player",
-    "related": ["secret_society", "founders_statue", "one_shot_2", "aldric_voss", "ellery_voss", "session_1"],
+    "related": ["secret_society", "founders_statue", "one_shot_2", "aldric_voss", "nerissa_voss", "ellery_voss", "session_1"],
     "tags": ["organization", "founding", "hidden-evil", "voss", "wren-halloway", "lore"]
   },
   {

@@ -596,15 +596,15 @@
     "contentType": "html",
     "contentFile": "content/locations/academy_provisions.html",
     "visibility": "player",
-    "related": ["silas_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night", "boots_of_elvenkind", "one_shot_5"],
+    "related": ["osric_morne", "academy_credits", "lenny_goldvein", "food_court", "potion_of_healing", "eyes_of_minute_seeing", "bag_of_tricks", "goggles_of_night", "boots_of_elvenkind", "one_shot_5"],
     "tags": ["store", "credits", "supplies", "provisions", "magic-items", "economy"],
     "environment": {
-      "architecture": "A narrow shopfront inside the main complex ground floor. Shelves behind a counter, a locked cabinet on the back wall, and a ledger stand that Silas Morne faces away from customers with impressive consistency.",
+      "architecture": "A narrow shopfront inside the main complex ground floor. Shelves behind a counter, a locked cabinet on the back wall, and a ledger stand that Osric Morne faces away from customers with impressive consistency.",
       "activity": "Open prescribed hours; Morne is always there before opening and still there after close. Students come for supplies, healing potions, and occasionally to ask about the Special Acquisitions cabinet.",
       "sensory": "Clean, organized, faintly herbaceous from the potion stock."
     },
     "curiosities": [
-      { "roll": "Perception DC 12", "detail": "Silas Morne keeps a second ledger under the counter. The pages visible through the reflection in the polished display case include sums significantly larger than anything on the public price list." },
+      { "roll": "Perception DC 12", "detail": "Osric Morne keeps a second ledger under the counter. The pages visible through the reflection in the polished display case include sums significantly larger than anything on the public price list." },
       { "roll": "Insight DC 14", "detail": "Morne is professionally warm — but pauses, almost imperceptibly, before answering questions about supply sources or lead times. The pause is always the same length." }
     ]
   },

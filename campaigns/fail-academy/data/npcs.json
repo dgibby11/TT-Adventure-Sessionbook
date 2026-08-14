@@ -100,12 +100,12 @@
     "tags": ["player-character", "paladin", "air-genasi", "oath-of-glory", "session-zero"]
   },
   {
-    "id": "silas_morne",
-    "name": "Silas Morne",
+    "id": "osric_morne",
+    "name": "Osric Morne",
     "type": "npc",
     "category": "Staff",
     "contentType": "html",
-    "contentFile": "content/npcs/silas_morne.html",
+    "contentFile": "content/npcs/osric_morne.html",
     "visibility": "player",
     "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium", "one_shot_5"],
     "tags": ["staff", "store", "provisions", "suspicious", "merchant"]
@@ -173,7 +173,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/ellery_voss.html",
     "visibility": "player",
-    "related": ["fail_chamber", "jungle_site", "aldric_voss", "teleportation_network", "one_shot_3", "main_complex", "session_1"],
+    "related": ["fail_chamber", "jungle_site", "aldric_voss", "nerissa_voss", "teleportation_network", "one_shot_3", "main_complex", "session_1"],
     "tags": ["faculty", "voss-family", "fail-chamber", "secrets", "independent", "founder-descendant"]
   },
   {
@@ -217,8 +217,19 @@
     "contentType": "html",
     "contentFile": "content/npcs/aldric_voss.html",
     "visibility": "dm-only",
-    "related": ["memorial_garden", "voss_imprint", "ellery_voss", "secret_society", "founders_statue"],
+    "related": ["memorial_garden", "voss_imprint", "ellery_voss", "nerissa_voss", "secret_society", "founders_statue"],
     "tags": ["founder", "dm-only", "voss-family", "architect", "mystery", "lore"]
+  },
+  {
+    "id": "nerissa_voss",
+    "name": "Nerissa Voss",
+    "type": "npc",
+    "category": "Founders",
+    "contentType": "html",
+    "contentFile": "content/npcs/nerissa_voss.html",
+    "visibility": "dm-only",
+    "related": ["aldric_voss", "ellery_voss", "ninth_thesis", "memorial_garden"],
+    "tags": ["founder", "dm-only", "voss-family", "archivist", "ninth-thesis", "lore"]
   },
   {
     "id": "isolde_orath",

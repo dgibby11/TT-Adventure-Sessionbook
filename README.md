@@ -56,7 +56,7 @@ Campaign-specific content built for FAIL Academy (formerly F.U.C.K.S.):
 
 - Campus map with invisible clickable hotspots over department banners
 - Player character entries — Lugeiros Serise, Gunnar, Caelum Rivenstone, BloodRaven (full stat blocks + D&D Beyond links)
-- Campus store + credits system — The Provisions Office ("The Prov"), run by Silas Morne; full credits economy (100 AC/year; 50 AC potions, cap 2/year; black market at 100 gp; Special Acquisitions magical inventory)
+- Campus store + credits system — The Provisions Office ("The Prov"), run by Osric Morne; full credits economy (100 AC/year; 50 AC potions, cap 2/year; black market at 100 gp; Special Acquisitions magical inventory)
 - More lore content — Headmistress Dowe, Prof. Thalia Varn (beloved), Prof. Aldous Fenwick (worst); Arcane Dueling Society, Expedition Volunteers, The Dead Hours (underground fight club, dm-only); Academy Traditions & Calendar; Legends of the Academy (Whispering Archive, the Lost Year, Golden Cohort, Last Student, the Room That Moves)
 - Nearby world content — Silverymoon, River Rauvin, High Forest, Everlund; all cross-linked with Thornwick Consortium hooks
 - More D&D Beyond creature links — fixed Owlbear URL (was duplicate of Bodak ID); added Wolves/Dire Wolves, Displacer Beast, Orc Warband with tactical profiles and D&D Beyond links

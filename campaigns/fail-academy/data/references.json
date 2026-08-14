@@ -42,7 +42,7 @@
     "contentType": "html",
     "contentFile": "content/references/academy_credits.html",
     "visibility": "player",
-    "related": ["academy_provisions", "silas_morne", "lenny_goldvein", "food_court", "dead_hours"],
+    "related": ["academy_provisions", "osric_morne", "lenny_goldvein", "food_court", "dead_hours"],
     "tags": ["credits", "economy", "store", "potions", "currency"]
   },
   {

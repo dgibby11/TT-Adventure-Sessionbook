@@ -13,18 +13,27 @@
       "correction_2026-08-02": "The bulette is CORRUPTED, not possessed — word choice matters: 'possessed' implies an intelligence behind it that isn't there."
     },
     "session_2": {
-      "status": "CONFIRMED shape, not yet drafted in prose.",
+      "status": "IN DRAFT, full arc blocked out (2026-08-14) — see session2_draft.html. Voss's contact list, the ceremony, Ring Selection (now staged publicly as part of Commencement, doubling as the diploma conferral), the Voss/Osric incident, the Provisions break-in, the portal, the destination/escape scene, and the ending are all drafted. NOT drafted: the actual Session 3 opening (which of the four post-session-2 directions the party picks) — explicitly out of scope for Session 2 itself.",
       "beats": [
-        "A major lore dump plus subsequent in-fiction investigation (content TBD when this session is actually drafted).",
-        "Graduation ceremony.",
-        "Ring Selection (NEW — see graduation_ring_selection below): graduates each choose a magic ring from a menu of options; all look identical (plain Academy-crest signet) regardless of what's chosen.",
-        "Party picks a travel destination based on what the investigation turned up and departs campus.",
-        "Travel with stops for socializing/shopping in small towns along the route (Triboar and/or Yartar, per the route map — see geography below).",
-        "No battles expected this session, aside from a possible optional side-quest battle helping a small village with a threat (TBD, not required)."
+        "A major lore dump plus subsequent in-fiction investigation — the_prov_investigation.json's Provisions Office module, restaged (2026-08-14): Voss attempts the break-in herself first during the ceremony and is caught by Osric Morne; the party gets pulled in only if they follow up on her absence, or via DM improvisation if they don't.",
+        "Graduation ceremony, including a forgettable guest-speaker set piece (Councilor Bertram Hollis) most of the crowd tunes out.",
+        "Ring Selection (see graduation_ring_selection below) — RESTAGED (2026-08-14) as a public part of the ceremony itself, doubling as the diploma conferral, rather than a private pre-ceremony errand.",
+        "SUPERSEDED (2026-08-14): 'party picks a travel destination and departs campus' and the Triboar/Yartar travel stop no longer happen this session. The Provisions investigation now ends in an uncontrolled planar escape that stops after the fight forces open the ritual dais they arrived near — the party is dumped in Neverwinter Wood, not campus, with no deliberate choice of destination and no clean departure scene. See session2_draft.html's ending and the post_session_2_fork entry below.",
+        "No battles expected this session — SUPERSEDED (2026-08-14): a hard fight (two armanites, CR 7 each) is now a near-certain part of this session, on the other side of the portal."
       ]
     },
+    "post_session_2_fork": {
+      "status": "NEW (2026-08-14) — replaces the old 'travel-destination decision' beat. The party is stranded in Neverwinter Wood at the end of Session 2, not knowing where they are, and must pick a direction with zero information about what's actually there. This choice happens at the top of Session 3, not during Session 2 itself.",
+      "directions": {
+        "west": "The ruined town of Thundertree.",
+        "northwest": "Mount Hotenow.",
+        "south": "The Triboar Trail — the original planned route; still leads toward the same Triboar/Yartar-adjacent territory session_2 used to cover directly.",
+        "east": "Agatha's Grove — involves undead."
+      },
+      "prep_status": "None of the four are detailed yet — explicitly beyond Session 2's scope per the DM. Only prep whichever one the table actually picks, once Session 2 is played and the choice is known."
+    },
     "session_3": {
-      "status": "CONFIRMED shape, flexible on specifics pending sessions 1-2's actual outcomes.",
+      "status": "CONTINGENT (2026-08-14) — the 'arrival in Neverwinter' framing below assumed a deliberate, chosen departure from campus, which session_2 no longer delivers. If the party picks south (the Triboar Trail) out of Neverwinter Wood, this beat sheet likely still applies with minor rework. If they pick west, northwest, or east instead, this session needs to be redesigned around whichever location that turns out to be — do not assume Neverwinter arrival until the Session 2 table's actual choice is known.",
       "beats": [
         "Arrival in Neverwinter.",
         "Meet the local Ninth Thesis operative (identity TBD — leading option: repurpose the existing 'alumnus embedded in a distant city's magistrate's office' sketch from the_ninth_thesis.json rather than invent a new character; not yet confirmed, to be decided when this session is actually planned).",
@@ -63,15 +72,15 @@
   },
 
   "graduation_ring_selection": {
-    "status": "NEW (2026-08-02), needs full prep before Session 2 — DM's own task, not yet detailed here.",
+    "status": "RESOLVED — options list live since 2026-08-05 (content/references/rings.html, sixteen patterns including the 2026-08-13 homebrew Ring of Augury); staging drafted 2026-08-14 in session2_draft.html as a public part of Commencement, doubling as the diploma conferral.",
     "concept": "A graduation tradition: every graduate selects one magic ring from a menu of options. All the rings are physically identical regardless of choice — plain, bearing the Academy crest — so the effect is a private/mechanical choice, not a visible status marker.",
-    "content_approach": "CONFIRMED — reuse existing D&D ring options (e.g. Ring of Protection, Ring of Mind Shielding) rather than inventing from scratch; a handful of homebrew options may be added later. Don't build this out further until the DM is ready to prep it directly."
+    "content_approach": "CONFIRMED — reused existing D&D ring options (e.g. Ring of Protection, Ring of Mind Shielding) rather than inventing from scratch, plus one homebrew addition (Ring of Augury)."
   },
 
   "geography": {
     "_purpose": "Captured 2026-08-02 from the DM's own hand-drawn route map (Sword Coast North, Mirabar to the High Forest). Not yet reflected in live data/locations.json — the Academy has no formal real-world coordinate in the app; this is DM reference only unless promoted later.",
     "academy_location": "Confirmed to sit at the border of the Evermoors and the High Forest, southeast of Silverymoon — consistent with already-live lore that the Rangers Department and High Forest treeline sit at the campus edge (see the_dwarven_ruins.json's bulette-incident location).",
-    "route_to_neverwinter": "Academy -> (trail, likely crossing near Yartar/the Dessarin River) -> Triboar -> High Road southwest through Neverwinter Wood -> Neverwinter. Matches real Sword Coast geography. Triboar and/or Yartar are the natural stop(s) for Session 2's small-town socializing/shopping and optional village side quest.",
+    "route_to_neverwinter": "Academy -> (trail, likely crossing near Yartar/the Dessarin River) -> Triboar -> High Road southwest through Neverwinter Wood -> Neverwinter. Matches real Sword Coast geography. Triboar and/or Yartar were the planned stop(s) for small-town socializing/shopping and an optional village side quest — SUPERSEDED for Session 2 itself (see post_session_2_fork); may still happen naturally if the party's post-session-2 choice puts them back on this route.",
     "the_sanctum": {
       "location": "North of Mirabar, in the Spine of the World.",
       "clarification": "CONFIRMED (2026-08-02) — this is NOT a Thornwick corporate headquarters; the established 'no known headquarters' detail (thornwick_consortium.html, still a live-data red flag nobody's noticed) stays true. This is the cult inner circle's own private meeting/ritual site, separate from Thornwick's mundane business fronts (Neverwinter/Silverymoon/Everlund). 'HQ' was just a placeholder word in conversation, not the intended in-fiction framing.",
@@ -85,12 +94,14 @@
   },
 
   "open_items": [
-    "Session 2's lore-dump content specifics.",
-    "Session 2 optional village side-quest (village/threat TBD).",
-    "Session 3 Neverwinter operative identity (leaning toward repurposing the existing magistrate's-office alumnus sketch, not confirmed).",
-    "Ring Selection's full options list (existing rings + homebrew) — DM's own prep task.",
+    "RESOLVED (2026-08-14): Session 2's lore-dump content specifics — see session2_draft.html.",
+    "SUPERSEDED (2026-08-14): Session 2's optional village side-quest no longer applies as originally scoped, since the Triboar/Yartar travel stop it was attached to got cut from this session — see post_session_2_fork. May resurface naturally if the party picks south (the Triboar Trail) out of Neverwinter Wood.",
+    "Which of the four post_session_2_fork directions the party actually picks, and prepping Session 3 around it once known.",
+    "Session 3 Neverwinter operative identity (leaning toward repurposing the existing magistrate's-office alumnus sketch, not confirmed) — only relevant if the party ends up heading toward Neverwinter.",
+    "RESOLVED (2026-08-05): Ring Selection's full options list — see content/references/rings.html, now sixteen patterns.",
     "Underdark descent's exact session placement and encounter design.",
     "Whether the dwarven-ruins thread gets used during the Underdark descent.",
-    "Fragment-of-Harthoon vs. the genuine full Harthoon possessing Corvin — see phase3_closing_the_veil.json's engine.the_spirit_harthoon.open_flag."
+    "Fragment-of-Harthoon vs. the genuine full Harthoon possessing Corvin — see phase3_closing_the_veil.json's engine.the_spirit_harthoon.open_flag.",
+    "Ring of Augury (NEW homebrew ring, added 2026-08-13 to content/references/rings.html, one of the Registrar's approved graduation-ring patterns) — mechanically a 1/day action-cast augury via warm/cold answers, deliberately unclear in-fiction who or what is actually answering. DM has explicitly deferred deciding the source for now (considered and set aside: Ninth Thesis backing, a Thornwick/cult surveillance vector echoing Torvald's ring, ambient veil-bleed, or a fully unconnected mystery) — needs real lore before whichever PC takes this ring starts relying on it at the table."
   ]
 }
