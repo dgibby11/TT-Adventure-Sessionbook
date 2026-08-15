@@ -141,6 +141,23 @@ any live data for this campaign:
   itself is marked superseded-in-part (2026-08-14) rather than rewritten —
   it's kept as design history, session2_draft.html is authoritative for how
   this actually gets run.
+- `vrenn_the_captive.json` — NEW (2026-08-14), revised same day. Companion
+  depth doc for Vrenn (placeholder name), the captive drow craftsman at
+  session2_draft.html's Thanatos ritual site — same pattern as
+  torvald_the_insider.json and corvin_ashworth_build.json. Covers how long
+  he's been trapped (longer than he can accurately say), being bought and
+  sold multiple times before ending up here, and his craft (primes raw
+  material for enchantment but never performs the enchantment itself,
+  deliberately kept just short of that final step so he stays dependent).
+  His master is **Vrask**, a lesser lich subordinate to Harthoon (Orcus's
+  already-confirmed lich-vizier from phase3_closing_the_veil.json) — an
+  initial same-day proposal to make the site belong to the genuine Harthoon
+  directly was floated and then reverted; Harthoon is explicitly one tier
+  up and not involved at this level. 'Vrask' was previously an abandoned
+  early-draft placeholder name for Harthoon himself — it's now repurposed as
+  this distinct, separate character, and phase3_closing_the_veil.json has
+  been updated to flag the reuse. Hard constraint either way: neither Vrask
+  nor Harthoon appears in person in session2_draft.html's scene.
 - `session_plan.json` — NEW (2026-08-02). The master session-by-session
   tracker for the whole campaign: the 10-sessions-per-phase pacing target,
   Sessions 1-5 confirmed at the beat level, a loose unnumbered sequence for
