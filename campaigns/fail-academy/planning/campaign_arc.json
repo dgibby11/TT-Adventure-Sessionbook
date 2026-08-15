@@ -36,7 +36,7 @@
 
   "geography": {
     "_purpose": "Captured 2026-08-02 from the DM's own route map. Not yet reflected in live data — DM reference only unless promoted to locations.json later.",
-    "academy_location": "Sits at the border of the Evermoors and the High Forest, southeast of Silverymoon — consistent with the already-live detail that the Rangers Department/High Forest treeline sit at the campus edge.",
+    "academy_location": "CORRECTED (2026-08-15, DM ruling) — sits INSIDE the High Forest at its northwestern-most edge, roughly 200 yards south of the River Rauvin, with Silverymoon about two days' walk NORTH. Supersedes the earlier 'Evermoors border, southeast of Silverymoon' reading. Still consistent with the already-live detail that the Rangers Department/High Forest treeline sit at the campus edge — the treeline rings the grounds on every side; it's just very shallow to the north. See session_plan.json's geography.academy_location for the full note.",
     "the_sanctum": "North of Mirabar, in the Spine of the World — the cult inner circle's private meeting site (not a Thornwick corporate HQ). See phase3_closing_the_veil.json and session_plan.json for full detail."
   },
 

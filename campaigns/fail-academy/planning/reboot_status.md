@@ -1,5 +1,20 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Academy geography FIXED (2026-08-15, DM ruling, live data): the campus sits
+**inside the High Forest but only just — at the forest's northwestern-most
+edge, roughly 200 yards south of the River Rauvin, with Silverymoon about two
+days' walk NORTH.** This supersedes two earlier and mutually inconsistent
+claims: `campus_root.html`'s "northern fringe of Silverymoon, along the River
+Rauvin," and the route-map reading of "High Forest/Evermoors border, southeast
+of Silverymoon." The practical consequence, now written into live data: north
+of campus the trees give out within a couple hundred yards and open onto the
+river, while south and east the forest runs on for days and deepens — so the
+Academy is on the shallow end of something very deep. Applied to
+`campus_root.html`, `high_forest.html`, `river_rauvin.html`, and
+`silverymoon.html` (which also had Silverymoon at 3–4 days south-southwest;
+now a little over two days north, slightly under two by boat downstream).
+Also updated in `session_plan.json` and `campaign_arc.json`.
+
 NPC first-name collision fix (2026-08-14, live data): the player formerly
 named Xarad was renamed to Silas (see the earlier Silas rename commit), which
 collided with the existing Provisions Office NPC's first name. Renamed that
@@ -257,8 +272,9 @@ Key decisions already locked in (see the planning docs for full detail/reasoning
   vizier/castellan); the veil's true location is the Underdark beneath campus
   via long-forgotten sealed passages that only Torvald knows about (not even
   Voss); Thornwick's inner circle stays faceless to the party. A DM-drawn
-  route map confirmed the Academy sits at the High Forest/Evermoors border
-  southeast of Silverymoon. Everything beyond Session 5 is intentionally
+  route map placed the Academy at the High Forest/Evermoors border southeast
+  of Silverymoon — **SUPERSEDED 2026-08-15**, see the Academy geography entry
+  at the top of this file. Everything beyond Session 5 is intentionally
   loose (not session-numbered) per the DM's request — see
   session_plan.json's loose_sequence_post_session_5.
 - Ninth Thesis / Secret Society founder conflict RESOLVED and executed
