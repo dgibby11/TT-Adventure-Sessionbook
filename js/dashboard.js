@@ -361,8 +361,16 @@
     if (!dash) return;
 
     const ROOT      = window.CAMPAIGN.rootLocation;
-    const currentId = window.App.getCurrentLocationId() || ROOT;
-    const loc       = window.App.byId(currentId);
+    let   currentId = window.App.getCurrentLocationId() || ROOT;
+    let   loc       = window.App.byId(currentId);
+    // Fall back to the root view if the stored location can't be resolved —
+    // entities may not have loaded yet, or a saved id may point at an entity
+    // that has since been renamed or removed. Rendering a header for an
+    // undefined entity throws and takes the whole dashboard down with it.
+    if (!loc && currentId !== ROOT) {
+      currentId = ROOT;
+      loc       = window.App.byId(ROOT);
+    }
     const isRoot    = currentId === ROOT;
     const graph     = getGraph(currentId);
 

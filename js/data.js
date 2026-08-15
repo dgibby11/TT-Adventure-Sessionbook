@@ -113,6 +113,12 @@
       const sub = document.querySelector('#topbar .subtitle');
       if (h1)  h1.textContent  = window.CAMPAIGN.name;
       if (sub) sub.textContent = window.CAMPAIGN.subtitle;
+      // campaign.json is fetched async, so this is the first moment
+      // CAMPAIGN.baselineRevealed actually exists — state.js cannot seed at
+      // its own script-load time. Idempotent, so calling it here is safe.
+      if (window.App && window.App.seedBaselineKnowledge) {
+        window.App.seedBaselineKnowledge();
+      }
     }
 
     // Override defaults from campaign.json (non-fatal if missing).

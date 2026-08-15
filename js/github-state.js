@@ -136,6 +136,11 @@
         const KEY   = window.CAMPAIGN.storageKey;
         const local = JSON.parse(localStorage.getItem(KEY) || '{}');
         const merged = {
+          // Spread `local` first so purely-local bookkeeping keys survive the
+          // merge. `baselineSeeded` in particular must NOT be dropped: losing
+          // it makes campaign.json's baselineRevealed re-seed on next load,
+          // which would silently undo any entity the DM deliberately hid.
+          ...local,
           revealed:          { ...local.revealed,  ...remote.revealed  },
           notes:             { ...local.notes,     ...remote.notes     },
           timeOfDay:         local.timeOfDay         || remote.timeOfDay         || 'day',

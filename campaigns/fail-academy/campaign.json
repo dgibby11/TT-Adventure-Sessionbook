@@ -6,6 +6,39 @@
   "rootLocation": "campus_root",
   "storageKey": "fail-academy.v1",
   "dmPassHash": "00afe2303c7382f4c9d96401f5bce99c027c75ba993fada538e039e7c048823f",
+
+  "_baselineRevealed_note": "Entities the party knows from the campaign's first moment rather than by discovering them — they are fifth-year students who have lived here five years. Applied once per id at load (see js/state.js), additive only: it never un-reveals anything and never overrides a DM's deliberate un-reveal. Session-earned discoveries belong in a session's reveals[], NOT here.",
+  "baselineRevealed": [
+    "silas", "guntrah", "tito", "tavian_stormnet",
+    "party_overview",
+
+    "ellery_voss", "headmistress_dowe", "lenny_goldvein",
+    "oswald_crumb", "prof_brasca_ironquill", "prof_aldous_fenwick",
+    "prof_tavel", "ghurza_stillhammer", "tinkerer_dunn",
+    "maestro_lira", "commander_orvyn",
+    "prof_ysera", "archcleric_senna", "prof_thalia_varn",
+
+    "osric_morne", "torvald_thatch", "captain_hadra",
+    "ambrose_quill", "fennick_mosswood", "reva_kettner",
+
+    "viola_gossamer", "thessa_rann", "julian_vance", "petra_vance",
+
+    "campus_root", "main_complex", "dormitory_wings",
+    "food_court", "old_library", "academy_provisions",
+    "founders_statue", "memorial_garden", "healing_ward",
+
+    "wizards", "artificers", "bards", "paladins",
+    "sorcerers", "clerics", "fighters", "rangers",
+    "druids", "monks", "rogues", "barbarians",
+    "artificers_forge", "bards_stage", "paladin_chapel",
+
+    "high_forest", "river_rauvin", "evermoors",
+    "silverymoon", "everlund", "nether_mountains",
+
+    "academy_traditions", "academy_credits", "academy_legends",
+    "campus_overview", "dnd_resources"
+  ],
+
   "github": {
     "owner": "dgibby11",
     "repo": "DnDAcademy",

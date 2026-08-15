@@ -9,7 +9,7 @@
     "visibility": "player",
     "startLocation": "main_complex",
     "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "commander_orvyn", "oswald_crumb", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "thornwick_consortium", "old_library", "high_forest", "academy_provisions", "osric_morne", "voss_notes_handout"],
-    "reveals": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "oswald_crumb", "commander_orvyn", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "high_forest"],
+    "reveals": ["witness", "standing_ovation", "quick_components_pouch", "ninth_thesis"],
     "tags": ["session", "completed", "played", "parting-gifts", "ninth-thesis", "recruitment", "bulette", "graduation-hook"]
   },
   {

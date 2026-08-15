@@ -662,6 +662,20 @@
     "tags": ["forest", "nearby", "wilderness", "elves", "ancient", "fey"]
   },
   {
+    "id": "evermoors",
+    "name": "The Evermoors",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/locations/evermoors.html",
+    "visibility": "player",
+    "related": ["river_rauvin", "high_forest", "silverymoon", "campus_root"],
+    "links": [
+      { "label": "The Evermoors — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Evermoors" }
+    ],
+    "tags": ["wilderness", "moor", "trolls", "boundary", "off-limits", "nearby"]
+  },
+  {
     "id": "everlund",
     "name": "Everlund",
     "type": "location",
@@ -696,7 +710,7 @@
     ],
     "tags": ["campus", "grounds", "root", "academy"],
     "environment": {
-      "architecture": "A dispersed campus of freestanding buildings spread across the northern fringe of Silverymoon, connected by maintained paths through wooded terrain. The central facilities — main complex, food court, library, memorial garden — occupy a core area. The twelve department buildings stand separately, each reached by traveling through the grounds. No two departments share a wall.",
+      "architecture": "A dispersed campus of freestanding buildings occupying a clearing cut from the northwestern corner of the High Forest, connected by maintained paths through wooded terrain. The central facilities — main complex, food court, library, memorial garden — occupy a core area. The twelve department buildings stand separately, each reached by traveling through the grounds. No two departments share a wall. The treeline rings the whole campus, but it is shallow to the north: a couple hundred yards past it the trees give out entirely at the River Rauvin.",
       "activity": "Students crossing between locations on foot at all hours. The sounds of sparring, debate, and occasional arcane mishap carry across the open grounds. After the Evening Bell, foot traffic thins and the paths belong mostly to Torvald and whoever is out there for reasons they don't want documented.",
       "sensory": "Steel and chalk, wood smoke from the smithing yards, ozone from the Wizards' tower, and whatever the Food Court is doing to a leg of something.",
       "flora": "Overgrown ivy on the older stone walls. A line of ancient oaks along the east path. Moss in the shaded alcoves between buildings. The Druids Department's influence leaks north in summer.",
