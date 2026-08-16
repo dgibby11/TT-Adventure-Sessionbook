@@ -56,7 +56,88 @@ Auto-detect approach: any multi-roll of d20 shows individual die values side-by-
 - ~~**Session runner image panel**~~ — removed from active icebox. Cold storage: the idea was to split the bottom of the session runner into thirds with a center image cycler. Shelved indefinitely.
 - ~~**Random generator expansion**~~ ✅ Done — added "Tables" third tab with Weather (weighted conditions + detail) and Encounter (4 environments: Road, Wilderness, Town, Dungeon) roll tables.
 - **Color scheme — contrast overhaul** — *partially done:* the dashboard ground is now parchment (`--paper`) while the quads stay dark, so panels no longer blur into the background once they fill with data; the chrome sitting on it (title, meta, Full Entry, time-of-day buttons) was re-pointed to the sepia scale, scoped under `#dashboard`. Still to review: modal/overlay backgrounds, the Session Runner's own panels, and the menu/topbar surfaces.
-- **Settings modal** — a `⚙ Settings` button/link in the topbar's upper-right opening a modal of user options. First occupant: **theme / color scheme** selection, so the parchment-vs-dark work above becomes a choice rather than a hard-coded edit (dark, parchment, and room for more). Build it as a general settings surface, not a theme picker — future options land here rather than accreting more topbar buttons. Needs: a settings store in `localStorage` (alongside the existing campaign state), theme as a `data-theme` attribute on `<html>` with the palette moved into per-theme `:root` blocks, and a modal shell reusing the existing one. Candidates for later: default view (DM/player), font size, which dashboard quadrants show, time-of-day default.
+- **Settings modal** — a `⚙ Settings` button/link in the topbar's upper-right opening a modal of user options. First occupant: **theme / colour scheme** selection, so the parchment work above becomes a choice rather than a hard-coded edit. Build it as a general settings surface, not a theme picker — future options land here rather than accreting more topbar buttons. Needs a settings store in `localStorage`, `data-theme` on `<html>`, per-theme `:root` blocks, and a modal shell reusing the existing one. Later candidates: default view (DM/player), font size, which dashboard quadrants show, time-of-day default. **See the theming audit below before starting.**
+
+#### Theming audit — what has to be tokenised first
+
+Audit of `css/style.css` (2,962 lines) done 2026-08-16. The blocker is not the
+number of colours, it's that colour is currently expressed three different ways:
+**22 `--tokens`, 126 `rgba()` literals, and ~20 hard-coded hex values.** Only the
+first is themeable. Until the other two are folded in, switching a theme will
+recolour some surfaces and leave others stranded.
+
+**Proposed role tokens (~12, from ~6 hues).** Six hues is right; six *values* is
+not, because separation needs several steps of the same hue. A theme = redefining
+this list, nothing else:
+
+| token | role | today |
+|---|---|---|
+| `--surface-0` | page ground | `--bg` `#12141a` / now `--paper` on dashboard |
+| `--surface-1` | panels, quads, pinboard cards | `--panel` `#1e2132` |
+| `--surface-2` | elevated: dropdowns, prompt cards, hover | `--panel-2` `#272940` |
+| `--surface-sunk` | inset: panel headers, notes fields | `--bg-2` `#0d0f13` |
+| `--border` | primary separator | `--line` `#46424e` |
+| `--border-soft` | secondary separator | `--line-soft` `#353248` |
+| `--text` | body copy | `--ink` `#e8dfce` |
+| `--text-muted` | labels, meta, placeholders | `--muted` `#a99c83` (56 uses — most-used token) |
+| `--accent` | headings, active state | `--gold` / `--gold-soft` |
+| `--danger` | modal rule, DC pills, destructive | `--oxblood` / `--oxblood-2` |
+| `--dm` | DM-only signalling | `--dm` `#d39a3e` |
+| `--scrim` | overlay dim behind modals | 126 assorted `rgba(0,0,0,x)` |
+
+Plus one **inverse pair** (`--paper` + `--sepia`/`--sepia-mut`) for parchment
+surfaces. In a parchment theme that pair and `--surface-0` converge — which is
+exactly where new contrast bugs will appear, so treat it as a real case, not an
+afterthought. `--panel-bg` is a dead alias of `--panel` (1 use) — delete it.
+
+**Separation-critical pairs (surface against surface).** Each of these is a place
+where two backgrounds meet and the only thing preventing a blur is their value
+gap — the original dashboard complaint was #1 in this list:
+
+1. page ground ↔ `.dash-quad` — *fixed* by the parchment change; the rest are not
+2. `.dash-quad` ↔ the cards inside it (`.dash-entity-card`, `.dash-loc-card`, `.dash-cur-card`, `.dash-env-block`)
+3. `.sr-panel` ↔ `.sr-prompt-card` (`--panel-2`) and `.sr-pin-card` (`--panel`)
+4. `.sr-panel-hdr` (`--bg-2`) ↔ its own panel body
+5. `#search-results` (`--panel-2`) floating over topbar **and** the now-parchment dashboard — this dropdown crosses two grounds
+6. `#resources-menu` (`--panel-2`) over the topbar
+7. **Pop-outs:** `#dice-panel` and `#quick-npc-panel` (`#1a1510`), `#generator-panel` (`#16110c`) — all hard-coded, all darker than `--bg`, none themeable today
+8. `#modal` (`--paper`) over `#modal-overlay` scrim
+9. `#session-confirm-dialog` (`--paper`) — renders *over the Session Runner*, so its scrim has to work against a busy three-panel layout, not the page
+10. **`.stat-block` (`#fdf1dc`) nested inside the parchment modal (`--paper` `#e9ddc1`)** — parchment on parchment, the lowest-contrast pair in the app, and entirely hard-coded (`#58180d`, `#9c2512`, `#c8a96e`, `#1a1a1a`). It is a self-contained light theme that will not follow a dark theme at all
+11. `#topbar` (`--leather`) ↔ page ground
+12. `#locations-panel` ↔ `#panel-backdrop` scrim ↔ page beneath
+
+**Frame/border inventory.** `--line` carries topbar buttons, search input and
+results, the dice/quick-NPC/resources pop-outs, runner cards and chooser items.
+`--line-soft` carries the `.dash-quad` frame, the dashboard header rule and the
+notes-field top rule. `--paper-edge` frames the modal and (since the parchment
+change) the dashboard chrome. Three runner rules use **gold at alpha**
+(`rgba(201,162,39,0.22–0.3)` on `.sr-bar`, `.sr-panel`, `.sr-panel-hdr`) — alpha
+over a changing surface shifts with the theme, so these need to become solid
+tokens. `#modal-header` uses a 2px `--oxblood` rule; the stat block uses
+hard-coded `#9c2512` / `#c8a96e`.
+
+**Readability pairs (text on its ground).** `--muted` on the four dark surfaces is
+the most likely failure (56 uses, lowest-contrast text in the app). Then
+`--ink` on `--bg`/`--panel`/`--panel-2`/`--bg-2`; `--sepia` and `--sepia-mut` on
+`--paper` (modal, confirm dialog, resource modal, and now the dashboard header
+strip); `--gold` headings on dark (`#topbar h1`, `.menu-type-title`,
+`.dash-quad-hdr`); `--gold-soft` on `--bg-2` (`.sr-panel-hdr`); `#58180d` on
+`#fdf1dc` (stat block); oxblood DC pills on `--panel`; and the placeholder text in
+`.sr-notes-ta` / `.dash-notes-ta`, which is muted-on-sunk — the weakest pair of
+all.
+
+**Order of work.** (1) Rename the existing tokens to the role names above, leaving
+values alone — no visual change, purely mechanical. (2) Replace the ~20 hard-coded
+hex values, starting with the three pop-outs and the stat block. (3) Replace the
+`rgba()` literals that encode surface or border colour; the ones that are genuinely
+just shadow/scrim can stay, but should reference `--scrim`. (4) Only then add
+`data-theme` blocks. Steps 1–3 are worth doing even if the picker is never built —
+they are what make the current palette auditable.
+
+**Guard rail.** Whatever the theme, keep a minimum lightness gap between
+`--surface-0/1/2`. The bug that started this was two navies about four points
+apart in lightness; any theme that lets those converge reproduces it.
 - ~~**Player vs DM view**~~ ✅ Already done — `isVisible()` gates on `visibility:"player"` AND `isRevealed()`; dm-only blocks hidden in player mode; toggle + badge in topbar.
 - **Import process overhaul** — CoS and DiA are sparse stubs; define content standard per entity type, richer templates, semi-automate Google Doc → JSON+HTML stub. One campaign at a time. Large effort.
 - **Party overview page** — new panel/page: party members, HP, conditions, inventory. Needs data model + persistent state. Large effort.
