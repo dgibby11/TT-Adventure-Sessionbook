@@ -26,7 +26,7 @@ with driver.static_server(PORT):
         chk('modal opens', p.is_visible('#settings-dialog'))
         opts = p.eval_on_selector_all('#settings-theme option', 'e=>e.map(o=>o.textContent)')
         chk('dropdown labelled "Color Theme"', 'COLOR THEME' in p.inner_text('#settings-body').upper())
-        chk('theme roster  got=%s' % opts, opts == ['Default','Gothic','High Fantasy'])
+        chk('theme roster  got=%s' % opts, opts == ['Default','Artificer','Barbarian','Bard','Blood Hunter','Cleric','Druid','Fighter','Monk','Paladin','Pugilist','Ranger','Rogue','Sorcerer','Warlock','Wizard'])
         p.screenshot(path=os.path.join(SHOT, 'settings_01_open.png'))
 
         # Cancel closes

@@ -23,10 +23,30 @@
 
   // The theme roster. "default" is the palette currently defined on bare :root,
   // so it intentionally sets no data-theme attribute at all.
+  //
+  // Themes are named after character classes, which doubles as a match for the
+  // Academy's own departments -- all 15 are covered, including the two
+  // non-traditional ones (Blood Hunter, Pugilist). Listed alphabetically after
+  // Default. Adding another means an entry here plus a matching
+  // :root[data-theme="<id>"] block in css/style.css -- the dropdown builds
+  // itself from this list, so no other JS changes.
   const THEMES = [
-    { id: 'default',      name: 'Default' },
-    { id: 'gothic',       name: 'Gothic' },
-    { id: 'high-fantasy', name: 'High Fantasy' },
+    { id: 'default', name: 'Default' },
+    { id: 'artificer',      name: 'Artificer' },
+    { id: 'barbarian',      name: 'Barbarian' },
+    { id: 'bard',           name: 'Bard' },
+    { id: 'blood-hunter',   name: 'Blood Hunter' },
+    { id: 'cleric',         name: 'Cleric' },
+    { id: 'druid',          name: 'Druid' },
+    { id: 'fighter',        name: 'Fighter' },
+    { id: 'monk',           name: 'Monk' },
+    { id: 'paladin',        name: 'Paladin' },
+    { id: 'pugilist',       name: 'Pugilist' },
+    { id: 'ranger',         name: 'Ranger' },
+    { id: 'rogue',          name: 'Rogue' },
+    { id: 'sorcerer',       name: 'Sorcerer' },
+    { id: 'warlock',        name: 'Warlock' },
+    { id: 'wizard',         name: 'Wizard' },
   ];
 
   const DEFAULTS = { theme: 'default' };

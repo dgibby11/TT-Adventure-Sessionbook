@@ -23,7 +23,7 @@ with driver.static_server(8810):
         p.wait_for_timeout(300)
 
         seen={}
-        for tid,label in (('default','Default'),('gothic','Gothic'),('high-fantasy','High Fantasy')):
+        for tid,label in zip(('default','artificer','barbarian','bard','blood-hunter','cleric','druid','fighter','monk','paladin','pugilist','ranger','rogue','sorcerer','warlock','wizard'), ['Default','Artificer','Barbarian','Bard','Blood Hunter','Cleric','Druid','Fighter','Monk','Paladin','Pugilist','Ranger','Rogue','Sorcerer','Warlock','Wizard']):
             p.click('#settings-btn'); p.wait_for_timeout(200)
             p.select_option('#settings-theme', tid)
             p.click('#settings-save'); p.wait_for_timeout(400)
@@ -34,8 +34,8 @@ with driver.static_server(8810):
                 p.evaluate("document.body.classList.contains('dm-on')"))
             p.screenshot(path=os.path.join(SHOT, f'theme_{tid}.png'))
 
-        chk('all three themes render distinct dashboard grounds',
-            len({v[0] for v in seen.values()}) == 3)
+        chk('all %d themes render distinct dashboard grounds' % len(seen),
+            len({v[0] for v in seen.values()}) == len(seen))
         for t,(ground,quad,ink) in seen.items():
             print(f'      {t:13} ground={ground:22} quad={quad:22} ink={ink}')
 
@@ -50,14 +50,14 @@ with driver.static_server(8810):
         # instant swap must not reload: prove by marking the window
         p.evaluate("window.__notReloaded = true")
         p.click('#settings-btn'); p.wait_for_timeout(150)
-        p.select_option('#settings-theme','gothic'); p.click('#settings-save'); p.wait_for_timeout(300)
+        p.select_option('#settings-theme','blood-hunter'); p.click('#settings-save'); p.wait_for_timeout(300)
         chk('theme swap did NOT reload the page', p.evaluate("window.__notReloaded === true"))
 
         # DM mode persists across a real reload
         p.reload(); driver.wait_for_dashboard(p); p.wait_for_timeout(400)
         chk('DM mode survives reload', p.evaluate("document.body.classList.contains('dm-on')"))
         chk('theme survives reload (no flash-back)',
-            p.evaluate("document.documentElement.getAttribute('data-theme')")=='gothic')
+            p.evaluate("document.documentElement.getAttribute('data-theme')")=='blood-hunter')
         chk('no console/page errors %s'%errs, not errs)
         b.close()
 print('\nRESULT:', 'PASS' if not fails else 'FAIL -> '+'; '.join(fails))

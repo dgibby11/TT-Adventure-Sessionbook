@@ -15,7 +15,7 @@ fails=[]
 with driver.static_server(8822):
     with sync_playwright() as pw:
         b=pw.chromium.launch(channel='chrome')
-        for tid in ('default','gothic','high-fantasy'):
+        for tid in ('default','artificer','barbarian','bard','blood-hunter','cleric','druid','fighter','monk','paladin','pugilist','ranger','rogue','sorcerer','warlock','wizard'):
             p=b.new_page(viewport=driver.VIEWPORT)
             p.goto(f'http://localhost:8822/index.html?campaign=fail-academy')
             driver.wait_for_dashboard(p); driver.dm_login(p,'Smuckers')
