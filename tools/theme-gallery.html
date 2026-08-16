@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Theme Gallery — TT Adventure Sessionbook</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Every theme on one page. Works because the theme blocks in style.css are
+       scoped as [data-theme="x"] rather than :root[data-theme="x"], so each
+       card below can carry its own palette and its children inherit it. */
+    html, body { height: auto; overflow: auto; }
+    body { background: #14161c; color: #e8dfce; font-family: var(--body);
+           padding: 1.1rem 1.3rem 2.5rem; display: block; }
+    .page-hd { font-family: var(--display); font-size: 1rem; letter-spacing: 0.14em;
+               text-transform: uppercase; color: #c9a227; margin: 0 0 0.2rem; }
+    .page-sub { font-size: 0.74rem; color: #a99c83; margin: 0 0 1.1rem; }
+    .page-sub a { color: #c9a227; }
+
+    .gallery { display: grid; gap: 0.9rem;
+               grid-template-columns: repeat(auto-fill, minmax(430px, 1fr)); }
+
+    /* Each card paints itself entirely from its own theme's tokens. */
+    .card { border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+            background: var(--dash-ground); }
+    .card-hd { display: flex; align-items: baseline; justify-content: space-between;
+               gap: 0.5rem; padding: 0.45rem 0.7rem;
+               background: var(--leather); border-bottom: 1px solid var(--line); }
+    .card-nm { font-family: var(--display); font-size: 0.82rem; letter-spacing: 0.12em;
+               text-transform: uppercase; color: var(--gold); }
+    .card-id { font-size: 0.62rem; color: var(--muted);
+               font-family: ui-monospace, Consolas, monospace; }
+
+    .swatches { display: flex; flex-wrap: wrap; gap: 3px; padding: 0.5rem 0.7rem 0.4rem; }
+    .sw { width: 30px; height: 22px; border-radius: 2px;
+          border: 1px solid rgba(var(--sheen-rgb), 0.18); }
+
+    .body { padding: 0 0.7rem 0.7rem; display: grid; gap: 0.45rem;
+            grid-template-columns: 1fr 1fr; }
+    .mini { border: 1px solid var(--line-soft); border-radius: 3px;
+            background: var(--panel); padding: 0.45rem 0.55rem; }
+    .mini-hd { font-family: var(--display); font-size: 0.6rem; letter-spacing: 0.1em;
+               text-transform: uppercase; color: var(--gold); margin-bottom: 0.25rem; }
+    .mini p { margin: 0; font-size: 0.72rem; color: var(--ink); line-height: 1.4; }
+    .mini .mut { color: var(--muted); font-size: 0.66rem; }
+    .card2 { background: var(--panel-2); border: 1px solid var(--line-soft);
+             border-radius: 2px; padding: 0.25rem 0.4rem; margin-top: 0.3rem;
+             font-size: 0.68rem; color: var(--ink); }
+
+    .doss { background: var(--paper); border: 1px solid var(--paper-edge);
+            border-radius: 3px; padding: 0.45rem 0.55rem; }
+    .doss .mini-hd { color: var(--oxblood); }
+    .doss p { color: var(--sepia); }
+    .doss .em { color: var(--sepia-em); font-style: italic; }
+
+    .btns { grid-column: 1 / -1; display: flex; gap: 0.35rem; flex-wrap: wrap;
+            align-items: center; }
+    .btns button { font-family: var(--display); font-size: 0.6rem; letter-spacing: 0.06em;
+                   padding: 0.2rem 0.6rem; border-radius: 2px; cursor: default; }
+    .b1 { background: linear-gradient(180deg, var(--btn-face), var(--btn-face-2));
+          color: var(--ink); border: 1px solid var(--line); }
+    .b2 { background: var(--oxblood); color: var(--on-accent); border: 1px solid var(--oxblood); }
+    .b3 { background: linear-gradient(180deg, var(--dm-face), var(--dm-face-2));
+          color: var(--dm); border: 1px solid var(--dm); }
+    .b4 { background: none; color: var(--success); border: 1px solid var(--success-line); }
+    .tag { font-size: 0.6rem; padding: 0.15rem 0.4rem; border-radius: 2px;
+           background: rgba(var(--gold-rgb), 0.16); color: var(--gold); }
+    .tag2 { font-size: 0.6rem; padding: 0.15rem 0.4rem; border-radius: 2px;
+            background: rgba(var(--oxblood-rgb), 0.18); color: var(--oxblood-2); }
+    .full { margin-left: auto; font-size: 0.62rem; color: var(--muted);
+            text-decoration: none; border-bottom: 1px dotted var(--line); }
+    .full:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <h1 class="page-hd">Theme Gallery</h1>
+  <p class="page-sub">
+    Every theme rendered at once — no URL changes. Click <em>full sheet</em> on any
+    card for all 57 tokens of that theme.
+  </p>
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    var THEMES = [
+      ['default','Default'], ['artificer','Artificer'], ['barbarian','Barbarian'],
+      ['bard','Bard'], ['blood-hunter','Blood Hunter'], ['cleric','Cleric'],
+      ['druid','Druid'], ['fighter','Fighter'], ['monk','Monk'],
+      ['paladin','Paladin'], ['pugilist','Pugilist'], ['ranger','Ranger'],
+      ['rogue','Rogue'], ['sorcerer','Sorcerer'], ['warlock','Warlock'],
+      ['wizard','Wizard']
+    ];
+    // The tokens most worth eyeballing per theme, in ramp order.
+    var KEYS = ['dash-ground','panel','panel-2','bg-2','line','line-soft','ink','muted',
+                'gold','gold-soft','oxblood','dm','success','paper','paper-edge','sepia'];
+
+    var g = document.getElementById('gallery');
+    THEMES.forEach(function (t) {
+      var id = t[0], label = t[1];
+      var card = document.createElement('div');
+      card.className = 'card';
+      // "default" is the bare :root palette, so it carries no attribute.
+      if (id !== 'default') card.setAttribute('data-theme', id);
+
+      var sw = KEYS.map(function (k) {
+        return '<div class="sw" style="background:var(--' + k + ')" title="--' + k + '"></div>';
+      }).join('');
+
+      card.innerHTML =
+        '<div class="card-hd"><span class="card-nm">' + label + '</span>' +
+          '<span class="card-id">' + id + '</span></div>' +
+        '<div class="swatches">' + sw + '</div>' +
+        '<div class="body">' +
+          '<div class="mini"><div class="mini-hd">Panel</div>' +
+            '<p>Body copy on a quad.</p>' +
+            '<p class="mut">Muted meta line</p>' +
+            '<div class="card2">Elevated card</div></div>' +
+          '<div class="mini doss"><div class="mini-hd">Dossier</div>' +
+            '<p>Parchment surface with <span class="em">emphasis</span>.</p></div>' +
+          '<div class="btns">' +
+            '<button class="b1">Default</button>' +
+            '<button class="b2">Confirm</button>' +
+            '<button class="b3">DM</button>' +
+            '<button class="b4">Synced</button>' +
+            '<span class="tag">accent</span><span class="tag2">danger</span>' +
+            '<a class="full" href="theme-preview.html?theme=' + id + '">full sheet →</a>' +
+          '</div>' +
+        '</div>';
+      g.appendChild(card);
+    });
+  </script>
+</body>
+</html>

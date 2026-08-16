@@ -117,6 +117,10 @@ body {
 
 /* ==========================================================================
    Themes
+
+   Selectors are [data-theme="x"] rather than :root[data-theme="x"] on purpose:
+   scoping to any element lets tools/theme-gallery.html show all of them at
+   once. On <html> the behaviour is identical.
    A theme redefines tokens only -- never selectors. Every colour in this file
    already resolves through a token (verified: the tokenisation pass was
    pixel-identical), so overriding the list below re-skins the whole app,
@@ -128,7 +132,7 @@ body {
    ========================================================================== */
 
 /* ---------- Blood Hunter — reds and blacks ---------- */
-:root[data-theme="blood-hunter"] {
+[data-theme="blood-hunter"] {
   /* Black, oxblood, bone, tarnished gold. The bone (--ink) does the heavy
      lifting: the first pass used a pinkish white and read mauve rather than
      funereal. Panels keep B < G so they stay blood, not plum. */
@@ -203,7 +207,7 @@ body {
 /* ---------- Cleric — light, serene, near-pastel ---------- */
 /* The only light theme, so it inverts the surface ramp: the ground is the
    most tinted and panels climb toward white, rather than the other way up. */
-:root[data-theme="cleric"] {
+[data-theme="cleric"] {
   /* Warm and serene rather than cool. The first pass was all blue-grey and
      read clinical; this one is cream, antique gold and dusty rose, with a
      lavender note on the stat block. Still the only light theme, so the
@@ -273,7 +277,7 @@ body {
   --ring-rare:    #9a8535;
 }
 
-:root[data-theme="wizard"] {
+[data-theme="wizard"] {
   /* Cool dark — deep indigo night, ice-blue accent. The cool counterweight to Gothic. */
   --bg: #0d1220;
   --bg-2: #252a36;
@@ -334,7 +338,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="druid"] {
+[data-theme="druid"] {
   /* Light sage — grove greens and leaf, warm-neutral. The green here is light, not another dark theme. */
   --bg: #cfd6c4;
   --bg-2: #bac1b0;
@@ -395,7 +399,7 @@ body {
   --well-rgb: 130,145,120;
 }
 
-:root[data-theme="sorcerer"] {
+[data-theme="sorcerer"] {
   /* Vivid dark — deep violet with electric cyan and magenta. The high-saturation end of the set. */
   --bg: #150d22;
   --bg-2: #2c2538;
@@ -456,7 +460,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="artificer"] {
+[data-theme="artificer"] {
   /* Warm mid-tone — terracotta and sand, neither black nor pale. */
   --bg: #241a15;
   --bg-2: #3a312c;
@@ -517,7 +521,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="fighter"] {
+[data-theme="fighter"] {
   /* Austere neutral — near-monochrome greys with a single steel-blue accent. */
   --bg: #c9ccd1;
   --bg-2: #b5b8bc;
@@ -578,7 +582,7 @@ body {
   --well-rgb: 120,128,140;
 }
 
-:root[data-theme="paladin"] {
+[data-theme="paladin"] {
   /* Paladin — light and metallic: silver and platinum with gold trim. */
   --bg: #d8d9d5;
   --bg-2: #c2c3c0;
@@ -639,7 +643,7 @@ body {
   --well-rgb: 150,152,145;
 }
 
-:root[data-theme="barbarian"] {
+[data-theme="barbarian"] {
   /* Barbarian — skin and leather tones over black, with blood red. */
   --bg: #1a1210;
   --bg-2: #312a28;
@@ -700,7 +704,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="ranger"] {
+[data-theme="ranger"] {
   /* Ranger — dark forest green and leather. Green like Druid, but deep rather than pale. */
   --bg: #0f1410;
   --bg-2: #272c28;
@@ -761,7 +765,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="bard"] {
+[data-theme="bard"] {
   /* Bard — theatrical wine and rose under stage gold. */
   --bg: #1c1018;
   --bg-2: #33282f;
@@ -822,7 +826,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="monk"] {
+[data-theme="monk"] {
   /* Monk — bleached bone and undyed cloth with a saffron accent. */
   --bg: #ddd4c2;
   --bg-2: #c7bfaf;
@@ -883,7 +887,7 @@ body {
   --well-rgb: 150,140,120;
 }
 
-:root[data-theme="rogue"] {
+[data-theme="rogue"] {
   /* Rogue — charcoal and shadow, desaturated, with a muted steel-green accent. */
   --bg: #0e0f10;
   --bg-2: #262728;
@@ -944,7 +948,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="warlock"] {
+[data-theme="warlock"] {
   /* Warlock — aubergine dark with an acid-green eldritch accent. */
   --bg: #120e18;
   --bg-2: #2a262f;
@@ -1005,7 +1009,7 @@ body {
   --well-rgb: 0,0,0;
 }
 
-:root[data-theme="pugilist"] {
+[data-theme="pugilist"] {
   /* Pugilist — canvas and hand-tape over bruise and blood. */
   --bg: #1c1a18;
   --bg-2: #33312f;
