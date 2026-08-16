@@ -40,6 +40,10 @@ jobs:
           - { id: salt-below, passphrase: Demo }
           - { id: curse-of-strahd, passphrase: Demo }
           - { id: descent-into-avernus, passphrase: Demo }
+          # Purpose-built test campaign: one entity of every type plus a
+          # Planning session with a populated reveals[], so this is the only
+          # matrix entry that actually exercises the Complete-Session flow.
+          - { id: test-fixture, passphrase: Demo }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -56,11 +60,22 @@ jobs:
       # reveal dialog, and assert zero browser console/page errors. See
       # .claude/skills/run-tt-adventure-sessionbook/SKILL.md for the full
       # list of gotchas this driver already works around.
+      # Exit codes: 0 = pass, 1 = console/page errors (fail the build),
+      # 2 = INCOMPLETE, meaning the run was clean but never reached the session
+      # flow because the campaign has no "Planning"-category session. That is a
+      # content gap in those campaigns (curse-of-strahd, descent-into-avernus),
+      # not a code fault, so surface it loudly without failing the build.
       - name: Run smoke driver
-        run: >
-          python .claude/skills/run-tt-adventure-sessionbook/driver.py smoke
-          --campaign ${{ matrix.campaign.id }}
-          --passphrase "${{ matrix.campaign.passphrase }}"
+        run: |
+          set +e
+          python .claude/skills/run-tt-adventure-sessionbook/driver.py smoke             --campaign ${{ matrix.campaign.id }}             --passphrase "${{ matrix.campaign.passphrase }}"
+          code=$?
+          set -e
+          if [ "$code" = "2" ]; then
+            echo "::warning title=Incomplete smoke::${{ matrix.campaign.id }} has no Planning session; session/runner flow was skipped."
+            exit 0
+          fi
+          exit $code
       - name: Upload screenshots (on failure)
         if: failure()
         uses: actions/upload-artifact@v4

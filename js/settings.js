@@ -97,6 +97,8 @@
         <div id="settings-body">
           <div class="settings-field">
             <label for="settings-theme">Color Theme</label>
+            <a id="settings-gallery-link" href="tools/theme-gallery.html"
+               target="_blank" rel="noopener">Preview all themes &#8599;</a>
             <select id="settings-theme"></select>
             <p class="settings-hint">Applies immediately — no reload, and nothing in progress is lost.</p>
           </div>

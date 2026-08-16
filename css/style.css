@@ -2401,6 +2401,19 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   color: var(--sepia-mut);
   margin-bottom: 0.35rem;
 }
+#settings-gallery-link {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--sepia-em);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--paper-edge);
+}
+#settings-gallery-link:hover {
+  color: var(--sepia);
+  border-bottom-color: var(--sepia-mut);
+}
+
 .settings-field select {
   width: 100%;
   font-family: var(--body);
