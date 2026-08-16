@@ -1,0 +1,396 @@
+{
+  "tasks": [
+    {
+      "id": "t001",
+      "phase": 0,
+      "title": "Generate concept pitches",
+      "description": "Write 2-3 distinct concept pitches (working title, one-paragraph premise, tone, 3-5 factions with one-line motivations, central mystery, rough level arc) to pipeline/CONCEPT_PITCHES.md. Genre should balance light and dark. Scale ambition to eventually match curse-of-strahd/descent-into-avernus (100+ locations). Do not create any campaign files. After writing, mark this task done and write pipeline/STOP with reason 'awaiting concept approval'.",
+      "status": "done",
+      "addedBy": "seed",
+      "notes": "Wrote 3 concept pitches (The Long Autumn, The Salt Below, Wanderer's Compact) to pipeline/CONCEPT_PITCHES.md. Awaiting human approval."
+    },
+    {
+      "id": "t002",
+      "phase": 2,
+      "title": "Scaffold campaigns/salt-below folder",
+      "description": "Create campaigns/salt-below/campaign.json (id, name 'The Salt Below', subtitle 'Port Calder & the Drowned Kingdom — Characters Level 1–10', rootLocation, storageKey 'salt-below.v1', dmPassHash = the CLAUDE.md placeholder hash for new campaigns, github.stateFile). Create campaigns/salt-below/data/index.json listing the 8 per-type files (locations, npcs, factions, items, creatures, mysteries, sessions, references) and create each of those 8 files as empty JSON arrays. Create empty campaigns/salt-below/content/ and campaigns/salt-below/assets/ folders (a .gitkeep if needed for assets, since no map art will exist yet — the app's dashboard nav does not require mapImage/regionMapEntity, see js/data.js defaults). Append exactly one entry for salt-below to campaigns/index.json (id, name, subtitle) without touching the existing three entries.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Scaffolded campaigns/salt-below/ (campaign.json, data/index.json + 8 empty type files, content/<type>/ subfolders, assets/.gitkeep). Appended salt-below entry to campaigns/index.json."
+    },
+    {
+      "id": "t003",
+      "phase": 3,
+      "title": "Author Port Calder root location + harbor district",
+      "description": "Author the root location entity (id matching campaign.json rootLocation, e.g. port_calder) plus 4-5 harbor-district locations (main harbor, guild licensing house exterior, docks, harbormaster's post, a notable dockside landmark). Use working-harbor naming per CAMPAIGN_BIBLE.md naming conventions. Cross-link with [[id]] and related[].",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 location entities: port_calder (root), calder_harbor, concordat_licensing_house, the_long_docks, harbormasters_post, the_drowned_bell. Full HTML content + environment/curiosities per house style, cross-linked via [[id]] and related[]. Forward references to not-yet-authored factions/NPCs left as plain prose (no [[ ]]) per Rule 6/8 — to be linked once those entities exist (t006-t009), swept by t029."
+    },
+    {
+      "id": "t004",
+      "phase": 3,
+      "title": "Author Port Calder market quarter + dive-outfitter row",
+      "description": "Author 4-5 locations: market quarter, dive-outfitter row shops, at least one tavern/inn suitable as a party home base, and one more mercantile location. Include at least one item entity for gear sold there if fitting.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 locations (market_quarter, dive_outfitters_row, the_brined_anchor as home-base tavern, saltbone_curios as black-market curio shop) + 1 item (pressure_ward_token, sold at dive_outfitters_row). Cross-linked via [[id]] and related[]; forward references to not-yet-authored factions/NPCs left as plain prose per Rule 6/8."
+    },
+    {
+      "id": "t005",
+      "phase": 3,
+      "title": "Author Port Calder residential wards + Harbor Watch garrison",
+      "description": "Author 4-5 locations: 2-3 residential ward locations (mixed multicultural boomtown flavor), the Harbor Watch garrison, and one more civic location (temple, healer's hall, or similar). This should bring Port Calder to the 15-20 location target from CAMPAIGN_BIBLE.md.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 locations: tidewrack_ward + shellhome_ward (residential, working-class vs. multicultural contrast), harbor_watch_garrison, the_tideward_chapel (multi-faith temple/healer's hall, civic). Port Calder now at 15 total locations, within the 15-20 bible target. Updated port_calder.html Key Locations list, related[], and DM Notes to reflect the completed surface roster."
+    },
+    {
+      "id": "t006",
+      "phase": 3,
+      "title": "Author The Salvage Concordat faction + key NPCs",
+      "description": "Author the faction entity for The Salvage Concordat plus 2-3 key NPCs (guild leadership, a licensing officer, etc.). Tone: political antagonist, not moustache-twirling villain — protects profits, covers up bad finds.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction salvage_concordat + 3 NPCs (perrin_ashgrave, wick_tallow, coraline_bray). Cross-linked to concordat_licensing_house (reciprocal related[] added); Bray's private incident ledger seeded as a future plot hook."
+    },
+    {
+      "id": "t007",
+      "phase": 3,
+      "title": "Author Harbor Watch faction + key NPCs",
+      "description": "Author the faction entity for Harbor Watch plus 2-3 key NPCs (a captain, a sergeant, a rank-and-file contact). Tone: outmatched but earnest, a genuine potential ally faction.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction harbor_watch + 3 NPCs (fenn_hurley, tam_ostler, brack_fennimore). Cross-linked to harbor_watch_garrison (reciprocal related[] added)."
+    },
+    {
+      "id": "t008",
+      "phase": 3,
+      "title": "Author The Freedivers faction + key NPCs",
+      "description": "Author the faction entity for The Freedivers (the PCs' likely home faction) plus 2-3 key NPCs, including at least one strong patron/quest-giver NPC who can hand out early dive contracts.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction freedivers + 3 NPCs (ruen_saltmarrow as patron/quest-giver, ivo_marlstone, sela_vantry). Cross-linked to dive_outfitters_row and market_quarter (reciprocal related[] added). Internal risk-tolerance tension (Ruen/Sela caution vs. Ivo's ambition) seeded for slow-burn use."
+    },
+    {
+      "id": "t009",
+      "phase": 3,
+      "title": "Author The Drowned Choir faction + key NPCs",
+      "description": "Author the faction entity for The Drowned Choir plus 2-3 key NPCs. Tone: a cult that is half-right about the sunken city, goals sometimes align with the party's and sometimes don't — avoid simple 'bad guy' framing.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored faction drowned_choir + 3 NPCs (isolt_vane leader, deacon_rill recruiter, sister_meck doubter/wedge-in). Cross-linked to the_drowned_bell and saltbone_curios (reciprocal related[] added). Kept direct knowledge of It That Kept the Kingdom (t010) impressionistic per GROUND_RULES scope, not concrete."
+    },
+    {
+      "id": "t010",
+      "phase": 3,
+      "title": "Author 'It That Kept the Kingdom' + central mystery entities",
+      "description": "Author the faction/presence entity for 'It That Kept the Kingdom' (mostly dm-only content, felt through what it sends up rather than direct appearances) and 1-2 mystery-type entities capturing the central mystery (why the kingdom drowned, what deal restrains It, how close Port Calder is to breaking it).",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored it_that_kept_the_kingdom (faction, dm-only, category 'The Deep Presence') and two central-mystery entities: why_the_kingdom_drowned_mystery and the_breaking_deal_mystery (both dm-only, category 'Central Mystery'). Swept 5 existing files (the_drowned_bell, harbormasters_post, isolt_vane, salvage_concordat, drowned_choir) that had left plain-prose forward references pending this task, converting them to [[it_that_kept_the_kingdom]] cross-links and adding reciprocal related[] backlinks. Full validation: no broken related[]/[[id]] links, no missing fields/content files, no duplicate ids."
+    },
+    {
+      "id": "t011",
+      "phase": 3,
+      "title": "Author The Shallows locations, batch 1 (reef formations)",
+      "description": "Author 5 Shallows-region (levels 1-4) dive-site locations focused on reef formations near Port Calder. Cross-link to Port Calder and to Freedivers/Concordat as issuers of contracts where fitting.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 Shallows reef-formation locations: sawback_reef (beginner site), the_kettle (licensed/gyre hazard), glasswater_shelf (training/showcase site), widows_combs (dangerous rite-of-passage site), the_chime_shoal (Drowned Choir pilgrimage site, faint tie to it_that_kept_the_kingdom). Cross-linked to port_calder plus freedivers/salvage_concordat as contract issuers where fitting, and the_chime_shoal to drowned_choir/the_drowned_bell/it_that_kept_the_kingdom. Reciprocal related[] backlinks added on all referenced entities. Full validation clean; 39 entities total."
+    },
+    {
+      "id": "t012",
+      "phase": 3,
+      "title": "Author The Shallows locations, batch 2 (wrecked ships)",
+      "description": "Author 5 Shallows-region locations focused on wrecked ships and salvage sites, sized for early-level exploration and contract work.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 wreck locations: anchors_grave (contested wreck-tangle, ties into harbor_watch_garrison's unresolved duty-board incidents), the_foundered_bride (legendary intact wreck, untouched dowry chest seeded for t026), reavers_ribs (hazard site, second duty-board incident), the_ledger_wreck (scuttled Concordat records-cutter, ties into coraline_bray's private ledger), the_glass_hull (Drowned Choir pilgrimage/curio-supply wreck). Reciprocal related[] backlinks added to salvage_concordat, freedivers, drowned_choir, harbor_watch_garrison, saltbone_curios, coraline_bray. Updated harbor_watch_garrison.html DM notes to name anchors_grave/reavers_ribs as 2 of its 3 unresolved incidents, leaving the third open for a future iteration."
+    },
+    {
+      "id": "t013",
+      "phase": 3,
+      "title": "Author The Shallows locations, batch 3 (kingdom outskirts)",
+      "description": "Author 5 Shallows-region locations at the shallow edge of the old kingdom's ruins — first hints of the archaic/formal naming convention contrasting with surface Port Calder.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 kingdom-outskirts locations introducing the archaic/formal naming convention: the_sunken_causeway (first built old-kingdom structure divers find), aldergate_shoal (first titled placename, formal boundary checkpoint), the_warders_stair (carved Warden names, long-burn Deep Kingdom hook), hollowmarch (low-stakes residential district), the_salt_choked_colonnade (first grandeur-not-ruin site, remnant wards echoing the_breaking_deal_mystery). Reciprocal related[] backlinks added to salvage_concordat and the_breaking_deal_mystery."
+    },
+    {
+      "id": "t014",
+      "phase": 3,
+      "title": "Author The Shallows locations, batch 4",
+      "description": "Author 5-10 more Shallows-region locations to reach the 20-30 target from CAMPAIGN_BIBLE.md, mixing reef, wreck, and outskirts flavor as needed to round out the region.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 locations: farrows_grotto + the_bellweed_shallows (reef), the_marrow_trawler + the_nightweigh (wreck), tallowmark_reach + the_last_landing (kingdom outskirts). The Shallows now at 21 locations, within the 20-30 bible target. the_marrow_trawler resolves harbor_watch_garrison's third previously-unplaced duty-board incident (updated its DM notes accordingly). the_nightweigh seeds a Drowned Choir smuggling hook via deacon_rill and saltbone_curios. the_last_landing is explicitly marked as the literal transition point into the Drowned Districts (t016) via the_warders_stair. Reciprocal related[] backlinks added to all referenced entities (freedivers, ivo_marlstone, salvage_concordat, harbor_watch, harbor_watch_garrison, tam_ostler, drowned_choir, deacon_rill, saltbone_curios, aldergate_shoal, the_warders_stair, hollowmarch). Full [[id]]/related[] validation clean; 55 entities total in salt-below."
+    },
+    {
+      "id": "t015",
+      "phase": 3,
+      "title": "Author Shallows creatures",
+      "description": "Author 3-4 creature entities appropriate to the Shallows (levels 1-4): reef predators, salvage hazards, early signs of something not quite natural. Keep tone adventurous, not yet cosmic-horror.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 dm-only creature entities: reef_stalker (reef predator, ties to farrows_grotto's bone-stacking curiosity), wreck_crab (salvage hazard, general-purpose wreck-interior threat tied to anchors_grave/reavers_ribs/the_marrow_trawler), kelp_strangler (salvage hazard, ties to the_bellweed_shallows' spiral-growth curiosity), salt_warped_grouper (Early Signs category — first deniable, non-combat sign of It That Kept the Kingdom's influence, tied to widows_combs/the_chime_shoal). All reference real D&D 5e base creatures by name only (Giant Constrictor Snake, Giant Crab, Vine Blight, Quipper) for reskinning — no dndbeyond.com links fabricated, per CLAUDE.md's caution about the unverified Owlbear link elsewhere in the repo. Reciprocal related[] backlinks added. Full validation clean: 59 entities total in salt-below, no broken links/related refs, no missing content files, no duplicate ids."
+    },
+    {
+      "id": "t016",
+      "phase": 3,
+      "title": "Author Drowned Districts locations, batch 1",
+      "description": "Author 5-6 Drowned Districts (levels 4-7) locations: half-collapsed old-kingdom neighborhoods, early Drowned Choir territory. Use the archaic/formal naming convention.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 Drowned Districts locations: vantmoor_hall (district entry point past the_last_landing, first Choir presence), the_suitors_approach, chancel_deep (Choir's true seat, echoes the_drowned_bell), millhollow_undercroft, the_weeping_stair (marked as next transition threshold), verdigris_court. Reciprocal related[] backlinks added to the_last_landing, drowned_choir, isolt_vane, sister_meck."
+    },
+    {
+      "id": "t017",
+      "phase": 3,
+      "title": "Author Drowned Districts locations, batch 2",
+      "description": "Author 5-6 more Drowned Districts locations continuing Drowned Choir territory and mid-depth kingdom remnants.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 more Drowned Districts locations: the_chancellors_rest (kingdom remnant, seeds why_the_kingdom_drowned_mystery), ashgate_wardhouse (old-kingdom garrison, Harbor Watch/Concordat hook), the_loom_quarter (low-dread breather site), underbell_cistern (Choir tunnel shortcut network), the_long_requiem (Choir memorial site, Isolt/Deacon grief scene). Reciprocal related[] backlinks added to drowned_choir, harbor_watch, salvage_concordat, freedivers, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery, deacon_rill. Drowned Districts now at 11/25-35 target."
+    },
+    {
+      "id": "t018",
+      "phase": 3,
+      "title": "Author Drowned Districts locations, batch 3",
+      "description": "Author 5-6 more Drowned Districts locations, introducing the first clear (non-direct) signs of It That Kept the Kingdom's influence.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 7 locations: the_susurrus_deep (ambient whispering omen), vaultward_reliquary ('still-breathing' salvage tie to coraline_bray's ledger), graves_end_locks (locks groaning in rhythm with the_drowned_bell), thornwake_hollow (dead-zone hazard, Freedivers internal tension), the_leaning_archive (first textual hint feeding why_the_kingdom_drowned_mystery, sister_meck's research site), bellwrit_span (bell's pressure felt underwater), the_hollow_choir_yard (Choir chant answered back, sister_meck/deacon_rill wedge scene). Reciprocal related[] backlinks added across factions/npcs/mysteries/locations. Full validation clean."
+    },
+    {
+      "id": "t019",
+      "phase": 3,
+      "title": "Author Drowned Districts locations, batch 4",
+      "description": "Author 5-6 more Drowned Districts locations to reach the 25-35 target from CAMPAIGN_BIBLE.md.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 7 locations: aldermourn_close (low-dread breather), the_choir_almonry (Choir charity, humanizing scene), wraithlock_gate (Harbor Watch/Concordat jurisdiction friction), the_sunken_rostrum (kingdom's final public decree, pairs with the_leaning_archive for why_the_kingdom_drowned_mystery), millrace_deep (mundane hazard/salvage), the_ashen_wardrobe (seed for future t026 item), the_last_descent (transition threshold into the Deep Kingdom, parallel to the_last_landing). Drowned Districts now at 25/25-35 target from CAMPAIGN_BIBLE.md. Reciprocal related[] backlinks added. Full validation clean; 84 entities total in salt-below."
+    },
+    {
+      "id": "t020",
+      "phase": 3,
+      "title": "Author Drowned Districts creatures",
+      "description": "Author 3-4 creature entities for the Drowned Districts (levels 4-7): Drowned Choir zealots/thralls, mid-depth horrors, tone shifting toward dread.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 dm-only creatures: choir_thrall (Drowned Choir zealot/thrall, tragic-not-monstrous, ties to chancel_deep/the_hollow_choir_yard), warden_husk (animated old-kingdom guard construct, ties to ashgate_wardhouse/wraithlock_gate and pays forward into t021's warders_hold), deep_maw_eel (genuine combat-capable predator, a Drowned Districts answer to the Shallows' wreck_crab, ties to underbell_cistern/millhollow_undercroft), silt_wraith (non-hostile Mounting Omens creature, escalates the salt_warped_grouper omen pattern, ties to thornwake_hollow/the_susurrus_deep/it_that_kept_the_kingdom). Added light DM-notes cross-references (not player-visible commitments) to all 8 related location files plus reciprocal related[] backlinks on drowned_choir and it_that_kept_the_kingdom factions. No existing location's established tone/no-combat framing was overridden."
+    },
+    {
+      "id": "t021",
+      "phase": 3,
+      "title": "Author Deep Kingdom locations, batch 1",
+      "description": "Author 5-6 Deep Kingdom (levels 7-10) locations: the old capital's outer districts. Cold, alien, formal naming at its most archaic.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 6 Deep Kingdom locations opening the region: thalmere_gate (formal capital gate, direct continuation of the_last_descent), aurewake_concourse (processional hub avenue), warders_hold (payoff site for the_warders_stair's long-burn carved-name hook, ties to warden_husk), vaelgard_terrace (aristocratic residential quarter, evacuation-not-disaster evidence, seeds a future t026 item), drowned_chancellery (capital seat of governance, centerpiece site for why_the_kingdom_drowned_mystery's full reveal), sarelles_repose (capital marketplace, human-scale companion evidence site). Updated the_last_descent's DM notes to point at thalmere_gate now that the region is open. Full validation pass (94 entities total): no duplicate ids, no missing required fields, all contentFiles resolve, zero broken [[id]]/related[] references."
+    },
+    {
+      "id": "t022",
+      "phase": 3,
+      "title": "Author Deep Kingdom locations, batch 2",
+      "description": "Author 5-6 more Deep Kingdom locations continuing into the old capital's core.",
+      "status": "done",
+      "addedBy": "iteration2"
+    },
+    {
+      "id": "t023",
+      "phase": 3,
+      "title": "Author Deep Kingdom locations, batch 3",
+      "description": "Author 5-6 more Deep Kingdom locations, approaching the containment site of It.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 5 locations continuing from threshwater_stair toward the containment site: suppliants_colonnade (old-kingdom pilgrimage route of kneeling statues, inscriptions pleading for the binding's continuation not its end), mireths_reckoning (a Warden's private confession, primary direct-evidence source for why_the_kingdom_drowned_mystery), the_wardwrights_undercroft (the binding's physical infrastructure, ~1/3 of its ward-stones visibly failing, seeds the_wardwrights_binding_seal item), the_long_hush (pure-dread liminal zone, payoff of the Mounting Omens creature pattern, no combat/manifestation), and the_sealed_approach (the literal gate into the climactic dungeon, a failing central ward-stone makes the_breaking_deal_mystery visually explicit). Reciprocal related[] backlinks added to threshwater_stair, warders_hold, ilyndras_sanctum, cindrel_vault, velmarch_spire, it_that_kept_the_kingdom, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery. Deep Kingdom now at 17/25-35 target. the_sealed_approach is the new transition threshold for t024, same role as the_last_landing/the_last_descent."
+    },
+    {
+      "id": "t024",
+      "phase": 3,
+      "title": "Author the climactic dungeon (containment site of It)",
+      "description": "Author 6-10 locations forming the climactic dungeon at the containment site of It That Kept the Kingdom, sized and paced for a level 9-10 finale. Should support multiple resolution paths (destroy the deal, renew it, or something the party invents) per CAMPAIGN_BIBLE.md's level arc.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 8 climactic-dungeon locations at the containment site: the_open_wound (hub past the sealed approach), the_binding_lattice + the_last_accord + the_renewal_font (destroy/lore/renew branches), the_vigil_wrack + the_faithfuls_end (guardian + Choir-tragedy branches), the_listening_deep (dread/proxy branch), and the_undoing (final convergence chamber where the destroy/renew/invent choice plays out, per CAMPAIGN_BIBLE level-arc guidance). Deep Kingdom now 25/25-35 target. Full reciprocal related[] backlinks added on the_sealed_approach, warders_hold, the_wardwrights_undercroft, mireths_reckoning, it_that_kept_the_kingdom, drowned_choir, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery, the_wardwrights_binding_seal."
+    },
+    {
+      "id": "t025",
+      "phase": 3,
+      "title": "Author Deep Kingdom creatures incl. It That Kept the Kingdom",
+      "description": "Author 3-5 creature entities for the Deep Kingdom, including a full stat-appropriate entry (or DM-only writeup pointing to a suitable high-CR base creature) for It That Kept the Kingdom itself, kept mysterious/dm-only until the finale.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 4 creature entities: it_that_kept_the_kingdom_stat (dm-only mechanical writeup for the finale boss, kept mysterious/reskin-guidance only, no bespoke stat block per house style), warden_remnant (combat-capable gatekeeper at the_vigil_wrack, escalation of warden_husk), the_unmade (escalation of silt_wraith at the_listening_deep, still non-hostile per house rule), the_faithful_husk (tragic escalation of choir_thrall at the_faithfuls_end). Reciprocal backlinks added on silt_wraith, choir_thrall, warden_husk."
+    },
+    {
+      "id": "t026",
+      "phase": 3,
+      "title": "Author key campaign items",
+      "description": "Author 3-5 notable item entities spanning the level arc (an early salvage curiosity, a mid-game Drowned Choir relic, a late-game artifact tied to the deal with It). Cross-link to the locations/NPCs/factions that hand them out or guard them.",
+      "status": "done",
+      "addedBy": "iteration2",
+      "notes": "Authored 3 items spanning the level arc: barnacled_charm (early Shallows salvage curiosity, minor light-cantrip effect, found at farrows_grotto or sold at saltbone_curios, with an optional DM hook for a rare 'different' one), the_drowned_hymnal (mid-game Drowned Choir relic from chancel_deep, a double-edged social tool with a built-in dread cost, ties to isolt_vane), and the_wardwrights_binding_seal (late-game artifact found at the_wardwrights_undercroft, the mechanical anchor for a 'renew the deal' third option at the climactic dungeon, inert and undetectable until t024 gives it context). Reciprocal related[] backlinks added to farrows_grotto, saltbone_curios, chancel_deep, drowned_choir, isolt_vane, why_the_kingdom_drowned_mystery, the_breaking_deal_mystery."
+    },
+    {
+      "id": "t027",
+      "phase": 3,
+      "title": "Author session/arc skeleton entities",
+      "description": "Author session-type entities capturing the arc-by-arc skeleton from CAMPAIGN_BIBLE.md's level arc (surface establishment, mid-depth first contact, deep kingdom finale) as DM-facing planning aids, matching the style of other campaigns' session entities.",
+      "status": "done",
+      "addedBy": "iteration2"
+    },
+    {
+      "id": "t028",
+      "phase": 3,
+      "title": "Author campaign overview reference entity",
+      "description": "Author a reference-type entity giving a DM-facing campaign overview (premise, tone, factions at a glance, level arc) plus any external resource links, matching the style of the other campaigns' reference entities.",
+      "status": "done",
+      "addedBy": "iteration2"
+    },
+    {
+      "id": "t029",
+      "phase": 3,
+      "title": "Cross-link and consistency pass",
+      "description": "Sweep all salt-below entities authored so far for missing related[] backlinks and broken [[id]] references introduced across earlier batches; fix any found. (Ordinary audit iterations also cover this via AUDIT_CHECKLIST.md — use this task only if a build iteration has spare capacity and no audit is imminent.)",
+      "status": "done",
+      "addedBy": "iteration2"
+    },
+    {
+      "id": "t030",
+      "phase": 4,
+      "title": "Shallows creatures — stat blocks + D&D Beyond links",
+      "description": "The Salt Below vs. Lost Mine comparison report (2026-07-11) found zero of the 12 salt-below creatures carry a mechanical stat block or a verified D&D Beyond link, vs. 7/7 in lost-mine. Add a full 5e stat block (AC, HP, Speed, CR, six ability scores, Skills/Senses/Languages, Traits, Actions) to reef_stalker, wreck_crab, kelp_strangler, and salt_warped_grouper, matching the structure/dl.facts formatting used in campaigns/lost-mine/content/creatures/goblin.html and wolf.html. Add a links[] entry to each pointing at the real D&D Beyond page for the base creature already named in its existing DM notes (Giant Constrictor Snake, Giant Crab, Vine Blight, Quipper, or the closest real match) — verify each URL resolves before adding it, don't fabricate one (see CLAUDE.md's caution about the unverified Owlbear link). Keep all existing narrative/DM-notes content; this adds a mechanical layer, it doesn't replace the prose.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 19: stat blocks added for all 4 (reef_stalker/wreck_crab/salt_warped_grouper reskin their named bases with verified dndbeyond.com links; kelp_strangler's Vine Blight got a full stat block but no link — its D&D Beyond page URL could not be confirmed via web search, left unlinked per the no-fabrication rule rather than guessing an ID)."
+    },
+    {
+      "id": "t031",
+      "phase": 4,
+      "title": "Drowned Districts creatures — stat blocks + D&D Beyond links",
+      "description": "Same treatment as t030 for choir_thrall, warden_husk, deep_maw_eel, and silt_wraith: full 5e stat block matching house style, plus a verified D&D Beyond link for each's named real-creature base. Preserve existing tone guidance (e.g. choir_thrall and silt_wraith should still read as tragic/non-monstrous in prose even with combat stats attached).",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 19: stat blocks + verified links added for all 4. Two named bases from the original DM notes ('Drowned' for choir_thrall, 'Giant Eel' for deep_maw_eel) aren't confirmable official D&D Beyond stat blocks, so substituted the closest verified real match (Zombie; Giant Constrictor Snake, reused from reef_stalker but reflavored as a real winnable fight) rather than fabricating a link, per t030's precedent. silt_wraith and choir_thrall keep their non-combat/tragic tone intact — silt_wraith's Actions section is explicitly 'none by design' with the Shadow-based Strength Drain kept only as a last-resort DM fallback, not default behavior."
+    },
+    {
+      "id": "t032",
+      "phase": 4,
+      "title": "Deep Kingdom creatures — stat blocks + finale boss mechanical shape",
+      "description": "Same treatment as t030/t031 for warden_remnant, the_unmade, and the_faithful_husk. Additionally, give it_that_kept_the_kingdom_stat a concrete mechanical shape rather than pure DM-improvisation guidance: pick a specific base (Aboleth or Elder Brain per its own existing DM notes), write out 2-3 named legendary actions and a lair-action set drawn from the_undoing's environment (a save-forcing whispered command, an area psychic-damage boundary-collapse, a punish-confrontation 'look away' effect), and land it at a specific target CR in the 13-16 range it already suggests. Keep the finale's design intent intact — combat should still read as a last resort, not the default path — this task makes that intent runnable, not undoes it. Add a links[] entry to the Aboleth/Elder Brain D&D Beyond page as the mechanical starting point (verify the URL first).",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 21: full stat blocks added for warden_remnant (empowered Animated Armor reskin, CR2, new Guardian's Riposte reaction), the_faithful_husk (Wight reskin, CR3, Drowning Grasp life-drain thematically tied to choir_thrall's own origin), and the_unmade (Specter reskin, CR1, kept strictly non-combat with 'None by design' Actions per its established house rule, same pattern as silt_wraith). it_that_kept_the_kingdom_stat given a full Aboleth-based (verified link) mechanical shape: Legendary Resistance, Multiattack/Tentacle/Tail/Bind to the Deal actions, 3 Legendary Actions (Detect, Tentacle Attack, Command), and a 3-option Lair Action set (Whispered Command, Boundary Collapse, Look Away) matching the three concepts specified in this task, scaled to CR 15 (homebrew-scaled, noted as such rather than RAW-calculated). All 3 new D&D Beyond links (Animated Armor reused/already-verified, Wight, Specter, Aboleth) verified resolvable via web search before adding."
+    },
+    {
+      "id": "t033",
+      "phase": 4,
+      "title": "Finale dungeon — room-by-room tactical pass",
+      "description": "The comparison report found no numbered rooms, trap DCs, or encounter placement anywhere in the 8-location climactic dungeon (the_open_wound, the_binding_lattice, the_last_accord, the_renewal_font, the_vigil_wrack, the_faithfuls_end, the_listening_deep, the_undoing), vs. lost-mine's cragmaw_hideout/redbrand_hideout which key every room with specific DCs and monster counts. Add a 'Layout & Hazards' dm-only section to each of these 8 locations with: any traps/hazards specific to that chamber and their Perception/Investigation/save DCs, and which of the now-statted t031/t032 creatures (if any) are placed there and how many. Do not restructure the 8 separate location entities into one — add tactical detail within the existing per-location model. Do not alter the destroy/renew/invent branch design already established in the_undoing's DM notes.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 21: added a dm-only 'Layout & Hazards' section to all 8 locations. Hazard-only rooms (no creature): the_open_wound (Central Pull current hazard, hub kept combat-free per existing DM notes), the_binding_lattice (Arcing Failure-Point lightning hazard tied to the destroy branch), the_last_accord and the_renewal_font (deliberately no traps/creatures — kept as safe lore/setup rooms). Creature placement rooms: the_vigil_wrack (1 warden_remnant at the chokepoint + Unstable Barricade hazard), the_faithfuls_end (1-2 the_faithful_husk among the camp, staggered for a non-pile-on fight), the_listening_deep (1 the_unmade, explicitly non-hostile, no hazard added on top), the_undoing (it_that_kept_the_kingdom_stat itself + an Ambient Pressure exhaustion hazard for stalling, with its Lair Actions called out as the encounter's real teeth). Did not restructure the 8 entities into one, did not alter the destroy/renew/invent branch design in the_undoing's existing DM notes — only appended a new section to each. Full-campaign validation re-run after both t032 and t033: 124 entities, 0 duplicate ids, 0 missing content files, 0 broken related[]/[[id]] links."
+    },
+    {
+      "id": "t034",
+      "phase": 4,
+      "title": "Tactical pass on other dense multi-chamber sites",
+      "description": "Identify 2-3 existing locations that function as de-facto mini-dungeons (multiple named sub-areas or a lot of contained space described only atmospherically) — likely candidates: chancel_deep (Drowned Choir stronghold), drowned_chancellery, warders_hold. Add the same kind of numbered/named sub-area breakdown with hazard DCs and creature placement as t033, matching lost-mine's dungeon-keying convention. If fewer than 2 genuinely qualify, say so in the task notes rather than forcing structure onto a site that's meant to stay a single atmospheric room.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added a dm-only 'Key Areas' section (lost-mine Area-N convention + hazard DCs + creature placement) to drowned_chancellery (4 areas: Processional Antechamber, State Archive Hall with a Ward-Snap lightning hazard, the Unadjourned Chamber with an optional warden_remnant guardian, Lower Vaults left unresolved as a future hook) and warders_hold (3 areas: the Alcove Hall, Barracks Quarters with a rubble-crossing check and the resident warden_husk's patrol loop, the Restricted Stair with a soft-gate ward-lock into cindrel_vault). chancel_deep did NOT qualify — on reread it's a single soaring open-nave chapel space with no described sub-areas to key, so forcing an Area breakdown onto it would invent structure the location doesn't have; left unchanged per the task's own escape hatch. Added the one new cross-link ([[warden_remnant]] in drowned_chancellery) with reciprocal related[] backlinks both directions."
+    },
+    {
+      "id": "t035",
+      "phase": 4,
+      "title": "Session Runner integration for all 3 arc entities",
+      "description": "js/session-runner.js pulls .session-prompt divs out of a session entity's content as read-aloud text for a live in-session panel, and reads a session.reveals[] array to power one-click bulk-reveal — both features are fully working in the app but arc_1_port_calder_shallows, arc_2_drowned_districts, and arc_3_deep_kingdom use neither (0/3), vs. lost-mine's session_1-4 which use both (4/4). For each arc: add 3-5 <div class=\"session-prompt\"><div class=\"prompt-label\">...</div><p>...</p></div> blocks with actual verbatim read-aloud text for the arc's key beats (matching the style/tone of lost-mine's session_1_goblin_arrows.html), and add a reveals[] array to its data/sessions.json entry listing the location/npc/faction ids that arc's opening should unlock (matching the schema pattern in lost-mine's data/sessions.json). Keep the existing arc-level 'Key Beats' framing — the session-prompt blocks are additive, not a replacement.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added 4 session-prompt blocks to each arc (Opening/First Contract/Faction Friction/Closing Omen for arc_1; Crossing the Threshold/First Contact — The Choir/The Reveal-in-Progress/Closing Stance for arc_2; Arrival at the Capital/The Full Reveal/Approach to the Containment Site/The Final Choice for arc_3), inserted after each arc's intro paragraph and before the existing 'Key Beats' section, which is unchanged. Added a reveals[] array to each of the 3 sessions.json entries listing the core locations/factions/NPC that arc's opening makes available (arc_1: port_calder, calder_harbor, the_brined_anchor, concordat_licensing_house, market_quarter, freedivers, salvage_concordat, harbor_watch, ruen_saltmarrow; arc_2: the_last_landing, vantmoor_hall, chancel_deep, drowned_choir, isolt_vane, the_suitors_approach, the_leaning_archive; arc_3: thalmere_gate, aurewake_concourse, drowned_chancellery, warders_hold, the_sealed_approach) — deliberately excluded finale-spoiling entities like the_undoing and it_that_kept_the_kingdom from any reveals list."
+    },
+    {
+      "id": "t036",
+      "phase": 4,
+      "title": "Item mechanics pass",
+      "description": "The 4 existing items (barnacled_charm, pressure_ward_token, the_drowned_hymnal, the_wardwrights_binding_seal) describe what they do narratively but defer the actual numbers ('a cost the DM should design'). Add a concrete Properties section to each with real mechanical values in lost-mine's item style (spider_staff.html is the reference: attack/damage bonus, charge economy, save DCs, attunement requirements as applicable) — bonuses, activation costs, duration/range, and a gp price where one doesn't already exist. Keep the_wardwrights_binding_seal's plot-gating intent (inert until the finale) intact; give the 'reinforce the binding' cost from its existing DM notes an actual mechanical price instead of leaving it fully open.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 22: added explicit activation/effect/value/no-attunement bullets to all 4 items. barnacled_charm and pressure_ward_token got minor concretization (activation cost, recharge, explicit 'no attunement' header) since their core numbers already existed. the_drowned_hymnal got an explicit once-per-long-rest-per-creature usage cap and a collector's black-market gp estimate. the_wardwrights_binding_seal got the substantial addition: a full ritual (seat at the_renewal_font, 1-hour rite, DC 16 Arcana/Religion) plus a concrete permanent cost (presiding creature's choice of -1 Constitution/Intelligence-or-Wisdom/Charisma, no save, restorable only by wish-tier magic) that fulfills the_undoing.html's existing 'a piece of the party's own vitality, memory, or luck' language without altering that location file — kept deliberately small so renewing reads as a real sacrifice rather than a trap option."
+    },
+    {
+      "id": "t037",
+      "phase": 4,
+      "title": "Treasure economy + side quests",
+      "description": "Lost-mine mentions concrete gp values 21 times and has 2 dedicated side-quest mystery entities (e.g. mirnas_heirloom: a named prisoner, a specific stashed item with a gp value, a specific findable location, an emotional payoff); salt-below has 2 gp mentions and 0 side quests across 124 entities, despite having 2x the mystery-adjacent surface area. Do two things: (1) add specific gp values to notable salvage/finds in a sampling of existing wreck/ruin locations across The Shallows and Drowned Districts (5-8 locations is enough — pick ones that already describe a 'find' without pricing it), and (2) author 3-5 new self-contained side-quest mystery entities (category 'Side Quests', distinct from the existing 'Central Mystery' pair) each with a specific NPC, a specific location, a concrete reward, and a resolution — small and skippable, not central-plot-critical. Cross-link new side quests into existing NPCs/locations rather than inventing new ones where an existing entity already fits.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 23: (1) added concrete gp values to 6 existing wreck/ruin locations with previously-unpriced finds (the_foundered_bride, the_ledger_wreck, the_glass_hull, vaultward_reliquary, sarelles_repose, cindrel_vault). (2) Authored 4 new self-contained side-quest mystery entities (category 'Side Quests', visibility player): the_brides_dowry (the_foundered_bride/ivo_marlstone, 300gp dowry payoff), the_wardrobes_visitor (the_ashen_wardrobe/coraline_bray, resolves her seeded personal-connection hook), the_vaelgard_signet (vaelgard_terrace, new one-scene NPC Wren Castellan written directly into the mystery content per the mirnas_heirloom convention, no new npcs.json entry), and the_almonrys_debt (the_choir_almonry/deacon_rill, pays off the location's own 'debt owed to the Choir' DM note in the opposite direction). All reciprocal related[] backlinks added. Full-campaign validation clean."
+    },
+    {
+      "id": "t038",
+      "phase": 4,
+      "title": "NPC density pass",
+      "description": "Salt-below's NPC:location ratio is 1:7.1 (12 NPCs / 85 locations) vs. lost-mine's 1:1.2 (20/23) — flagged in the comparison report and confirmed in scope by the human for this phase (previously deliberately left unfixed per LESSONS_LEARNED.md #1, that guidance is superseded for this task specifically). Author additional NPCs interleaved across regions — Shallows, Drowned Districts, and Deep Kingdom all currently have long stretches of locations with no named point-of-contact. Aim roughly to double the NPC count (target ~24-30 total) by the end of this task, split across 2-3 iterations if needed rather than one giant batch. Every new NPC should attach to an existing location/faction/plot-hook that currently lacks a face (e.g. a shopkeeper at an unstaffed market_quarter stall, a Drowned Districts civic contact, a Deep Kingdom remnant-site presence) rather than inventing new locations to hold them. Add reciprocal related[] backlinks and update the host location's content to reference the new NPC.",
+      "status": "done",
+      "addedBy": "phase4-setup",
+      "note": "Iteration 23 (partial, as anticipated by the task's own 'split across 2-3 iterations' guidance): authored 5 new NPCs attached to existing unstaffed locations rather than inventing new ones — yselda_wrenn (harbormasters_post, explicitly flagged as a future-NPC candidate in that location's own prior DM notes), corwin_hask (dive_outfitters_row's unlicensed-supplier outfitter), nell_sarkin (market_quarter's low-balling appraiser), ysbel_corvane (the_tideward_chapel's chaplain), and rees_holt (ashgate_wardhouse, a Harbor Watch scout resolving that location's 'recently cleared entrance' hook, reporting to tam_ostler). Updated all 5 host locations' content to reference the new NPC by name, plus reciprocal related[] backlinks on locations/factions/npcs/creatures as applicable. NPC count 12->17; NPC:location ratio improved 1:7.1 -> 1:5.0, still short of the ~24-30 target. Deliberately did not force a Deep Kingdom NPC into this batch: thalmere_gate and aurewake_concourse's established tone ('nothing has looted it, nothing has needed to', 'no signs of anyone but the party') actively argues against a stationed point-of-contact there — the next iteration on this task should look at Drowned Districts/Deep Kingdom candidates more carefully rather than reuse a Port Calder pattern that doesn't fit the region's tone. RESET to pending (from in_progress) during phase4-setup continuation on 2026-07-11 so RUN_PROTOCOL Step 4c's 'next pending tasks in list order' picks this back up automatically — continue toward the ~24-30 target, prioritizing Drowned Districts and tone-appropriate Deep Kingdom sites this time, and split across as many of the newly-available iterations as needed rather than forcing it into one batch. Iteration 24: authored 7 more NPCs, all Drowned Districts / Port Calder — amos_kell (vantmoor_hall's Drowned Choir vigil-keeper), ness_thatchford (the_loom_quarter's independent weaver-squatter), dessa_wrack (wraithlock_gate's Harbor Watch patrol officer maintaining the jurisdiction truce), gable_tarn (millrace_deep's cross-faction salvage foreman), pol_ferrick (the_long_docks' unmarked-pier boatman, resolving that location's own seeded hook), rosalind_vey (shellhome_ward's shrine-keeper, resolving that location's seeded Choir-recruitment hook), and ilsa_cray (tidewrack_ward's cookfire/gossip-hub matriarch). NPC count 17->24, hitting the low end of the ~24-30 target. Deliberately still skipped Deep Kingdom: read vaelgard_terrace, sarelles_repose, drowned_chancellery, cindrel_vault, suppliants_colonnade, and warders_hold — every one is explicitly written as abandoned mid-evacuation with no present-day occupants, and forcing a stationed NPC into any of them would contradict that established tone (same call as iteration 23, now confirmed against six more sites, not just the two originally checked). Also checked several Shallows checkpoint/boundary sites (aldergate_shoal, hollowmarch, the_last_landing, tallowmark_reach) — same story, transitional/uninhabited by design. Left in_progress: task is at the low end of its target range, not clearly done; a future iteration could add a small handful more if good candidates emerge, or this could be judged sufficient and marked done — DM's call, not forcing further padding to hit the top of the range. Iteration 25: authored 5 more NPCs, closing out the task at the comfortable middle of the target range — dovan_kesk (calder_harbor's Concordat inspector, giving Port Calder's main hub a face it lacked), corin_draw (the_suitors_approach, naming one of the previously-anonymous 'a few Choir converts squat here' residents), petra_wexler (the_kettle's obsessive licensing clerk, ties into that site's already-seeded 'Concordat is unusually strict here' hook), bram_coswick (widows_combs' roster-keeper, turning the site's 'rite of passage' framing into an actual quest-giver), and sera_vondt (the_chime_shoal's tide-night vigil-keeper, the ambient Choir presence that location's own DM notes called for). NPC count 24->29. Deliberately still left Deep Kingdom and the remaining transitional Shallows/Drowned-Districts sites unstaffed, consistent with iterations 23-24's tone judgment (re-verified against the same location content, no change in that assessment). All 5 host locations updated with named references; reciprocal related[] backlinks added on locations + npcs.json. Full-campaign validation clean: 145 entities, 0 duplicate ids, 0 broken related[]/[[id]] links, 0 missing content files. Marking done — 29 is solidly within the ~24-30 target and further padding would risk diluting the region-specific care taken so far."
+    },
+    {
+      "id": "t039",
+      "phase": 4,
+      "title": "Phase 4 consistency + arc-integration sweep",
+      "description": "Mirrors t029's Phase 3 sweep, scoped to everything Phase 4 touched (t030-t038): confirm every creature stat-block edit, dungeon hazard section, item Properties block, side-quest mystery, and new NPC has correct reciprocal related[] backlinks and zero broken [[id]] references. Additionally — t035 (Session Runner reveals[]/session-prompt blocks) ran before t037's 4 new side-quest mysteries and t038's new NPCs existed, so arc_1/arc_2/arc_3's related[] and reveals[] arrays can't reference them yet. Review each new side-quest mystery and new NPC against the three arcs' level/region ranges (arc_1: Port Calder/Shallows levels 1-3, arc_2: Drowned Districts levels 4-6, arc_3: Deep Kingdom levels 7-10) and add the ones that fit an arc's scope to that arc's related[]/reveals[] — skip any that don't cleanly fit rather than forcing it. Run this only once t038 is complete or clearly wrapping up, so it catches that task's output too.",
+      "status": "done",
+      "addedBy": "phase4-setup-r2",
+      "note": "Iteration 25: ran the full sweep now that t038 is closed out. Consistency check across all 145 entities: 0 duplicate ids, 0 broken related[] references, 0 broken [[id]] cross-links in content, 0 missing content files, 0 broken reveals[] entries — clean. Arc-integration pass: matched t037's 4 side-quest mysteries and t038's 12 new NPCs (from iterations 23-25) against each arc's region/level scope. Added the_brides_dowry to arc_1's related[] (the_foundered_bride is a Shallows site). Added the_wardrobes_visitor and the_almonrys_debt to arc_2's related[] (the_ashen_wardrobe and the_choir_almonry are both Drowned Districts). Added the_vaelgard_signet to arc_3's related[] (vaelgard_terrace is Deep Kingdom). Added amos_kell to arc_2's related[] specifically — his own content is explicitly written as a 'soft first-contact' Choir NPC at vantmoor_hall, which is arc_2's own 'First Contact — The Choir' beat, a clean fit rather than a forced one. Deliberately did NOT add the other 11 new civilian/background NPCs (dovan_kesk, corin_draw, petra_wexler, bram_coswick, sera_vondt, ness_thatchford, dessa_wrack, gable_tarn, pol_ferrick, rosalind_vey, ilsa_cray) to any arc's related[]/reveals[] — existing precedent (arc_1's reveals[] lists only ruen_saltmarrow out of ~8 Port Calder/Harbor Watch NPCs, arc_2 lists only isolt_vane) shows these arrays are curated headline reveals, not a roster of every resident of the region; forcing all 11 in would misrepresent their narrative weight and dilute the arrays' signal. Skipped per the task's own 'skip any that don't cleanly fit rather than forcing it' instruction."
+    },
+    {
+      "id": "t040",
+      "phase": 5,
+      "title": "Define underwater dive mechanics — breathing, pressure, and dive procedure",
+      "description": "A second comparison report (2026-07-11, structural/procedural focus) found a foundational gap: across all 145 entities, \"water breathing\" appears exactly once, as a trait on a hostile creature (salt_warped_grouper), never as anything available to the party. The campaign's one dive-survival item, pressure_ward_token, is explicit that it does NOT cover this — its own text says 'the pressure below the reef line will crush an unwarded diver long before they'd otherwise need to worry about air,' naming air as a real, separate, unsolved concern. There is also no dive-as-procedure framework anywhere: no stated dive duration, no return-trip logic, no consequence for staying down too long. Every one of the ~85 Shallows/Drowned Districts/Deep Kingdom locations silently depends on this being solved and it never has been. Fix, in three parts: (1) Design a universal, economically-consistent answer for how PCs breathe underwater — the natural fit is a companion piece of dive gear or licensed service sold through the same Concordat-regulated economy as the Pressure-Ward Token (e.g. at dive_outfitters_row), explicitly complementing rather than replacing the pressure token's existing pressure-only scope. Consider giving it a distinct failure mode from the pressure token (two different things that can go wrong on a bad dive is better DM-usable tension than one). (2) Author a new DM-facing reference-type entity (matching the existing salt_below_campaign_overview pattern) documenting how a routine dive actually works: prep, descent, a rough time/depth budget before gear needs attention, the return trip, and what a DM should do if gear fails mid-dive. (3) Light-touch (not rewrite) the highest-traffic hub entities so this is actually discoverable without hunting: dive_outfitters_row (sell the new gear alongside the token), concordat_licensing_house or freedivers (establish it as standard-issue/mandatory), and a cross-link from salt_below_campaign_overview. Do NOT retroactively rewrite the ~85 existing dive-site locations — per CAMPAIGN_BIBLE.md's own 'don't retroactively rewrite' convention (see Authoring Notes), establishing the mechanic once at the gear/reference level is sufficient; those locations never contradicted the mechanic, they just assumed it existed.",
+      "status": "done",
+      "addedBy": "phase5-setup",
+      "notes": "Added brinelung_mask item (breathing, warns 10 min before failing — distinct from the token's silent failure) sold alongside pressure_ward_token at dive_outfitters_row. Added new dm-only reference entity salt_below_dive_procedure (prep/descent/return-trip/gear-failure procedure + a per-region time budget: Shallows flavor-only, Drowned Districts a real return-trip decision, Deep Kingdom a genuine no-refill stake). Light-touched dive_outfitters_row (sells the mask), concordat_licensing_house (manifest requires both items sighted), and salt_below_campaign_overview (cross-link to the new reference). Did not touch the ~85 existing dive-site locations per the bible's no-retroactive-rewrite convention. Full link/schema validation clean (147 entities, no broken links, no missing content files)."
+    },
+    {
+      "id": "t041",
+      "phase": 5,
+      "title": "Add indexed Clues sections to the two central mysteries",
+      "description": "The same report found why_the_kingdom_drowned_mystery.html and the_breaking_deal_mystery.html each have strong, DC-gated, specific evidence already written across their related[] entities (18 and 14 respectively — e.g. mireths_reckoning's Investigation DC 14 confession, the_leaning_archive's History DC 15 evacuation decree) but neither mystery entity has a scannable index of where to find it. Compare campaigns/lost-mine/content/mysteries/black_spider_identity.html and glasstaff_identity.html, which both use a clean 'Clues' H2 with 3-4 bullets, each naming an exact location and the specific discoverable fact there. For each of the two salt-below mysteries, add an equivalent 'Clues' section curating 4-6 of the strongest existing related locations into that same bulleted format (mireths_reckoning, the_leaning_archive, and the_sunken_rostrum are already confirmed strong candidates for why_the_kingdom_drowned_mystery per their own content). This is an indexing/synthesis task — do not rewrite the source locations, just point at them precisely. If a mystery's related[] doesn't have enough genuinely clue-like entries (as opposed to thematic-only connections) to fill 4-6 solid bullets, say so honestly in the task note rather than padding with weak entries.",
+      "status": "done",
+      "addedBy": "phase5-setup",
+      "notes": "Added a player-facing 'Clues' H2 to both mysteries. why_the_kingdom_drowned_mystery: 6 bullets (the_sunken_rostrum, the_leaning_archive, the_chancellors_rest, mireths_reckoning, drowned_chancellery, the_last_accord). the_breaking_deal_mystery: 5 bullets (harbormasters_post, the_salt_choked_colonnade, the_wardwrights_undercroft, the_binding_lattice, the_sealed_approach). Both mysteries had enough genuinely clue-like related[] entries to fill the full 4-6 range without padding; no weak entries needed."
+    },
+    {
+      "id": "t042",
+      "phase": 5,
+      "title": "Add level-danger calibration to all 12 creature entities",
+      "description": "Lost-mine explicitly flags outlier-danger creatures — campaigns/lost-mine/content/creatures/venomfang.html states 'CR 8 — severely dangerous for a level 3-4 party in direct combat.' Salt-below's 12 creatures carry real CR ratings as of Phase 4 (CR 1 reef predators through the CR 15 finale boss) but none include this kind of framing. Add a one-line level-appropriateness callout to each creature's stat block (near the existing CR line in its dl.facts block), stating which party level range it's appropriately dangerous for, matching lost-mine's phrasing convention. Pay particular attention to genuine outliers — creatures whose CR sits meaningfully above or below their region's expected level band — since those are exactly where a DM could get blindsided running this cold.",
+      "status": "done",
+      "addedBy": "phase5-setup",
+      "notes": "Added a one-line calibration to all 12 creatures' CR <dd> line. Flagged outliers: it_that_kept_the_kingdom_stat (CR15 — severely dangerous, combat shouldn't be the default resolution), reef_stalker (CR2 genuinely dangerous for a level-1 party if cornered), warden_remnant and the_faithful_husk (both notably under-CR for their Deep Kingdom placement — the husk is meant to land emotionally not mechanically; the remnant needs to be posted in pairs for a real fight), and the two non-combat-by-design creatures (silt_wraith, the_unmade) explicitly marked as fallback-only CR, not a balance target."
+    },
+    {
+      "id": "t043",
+      "phase": 5,
+      "title": "Add milestone-leveling guidance to all 3 arc session entities",
+      "description": "Every lost-mine session ends with an explicit target (e.g. session_3_spiders_web.html: 'Target: Level 4 by end of session'). Salt-below's 3 arcs (arc_1_port_calder_shallows, arc_2_drowned_districts, arc_3_deep_kingdom) are tagged with level bands (levels-1-3, levels-4-6, levels-7-10) but nothing inside their content says when within that 3-level span the party should actually level up. Add a 'Leveling Milestones' subsection to each arc entity suggesting 2-3 concrete story-beat-triggered level-up points, tied to beats already established in that arc's existing 'Key Beats' section — not a rigid XP count, matching the arc-level (not numbered-session) granularity this campaign already deliberately chose over lost-mine's tighter session structure.",
+      "status": "done",
+      "addedBy": "phase5-setup",
+      "notes": "Added a 'Leveling Milestones' H2 to all 3 arcs, each with 2-3 story-beat-triggered level-up points tied to that arc's existing Key Beats (e.g. Arc 1 levels at first contract and faction establishment, ending 3-4; Arc 3 levels at capital arrival and the sealed-approach threshold, reaching 10 at the finale to match it_that_kept_the_kingdom_stat's level 9-10 calibration)."
+    },
+    {
+      "id": "t044",
+      "phase": 5,
+      "title": "Optional: light reputation/standing track + hook density touch-up",
+      "description": "Lowest priority of this batch — only attempt this if t040-t043 are complete with iteration budget to spare, and it is explicitly fine to skip either half or all of it rather than rushing. Two small, independent pieces: (1) the campaign currently has exactly 2 'standing favor' mentions (the_brides_dowry.html, rees_holt.html) with no underlying mechanic behind them. Define a lightweight, freeform-friendly reputation/standing framework for the 4 surface factions (salvage_concordat, harbor_watch, freedivers, drowned_choir) — not a rigid numeric track, match the campaign's existing informal tone — and retrofit those 2 existing mentions to reference it explicitly. (2) Only 24 of 85 locations (28%) carry explicit hook/contract language. If time remains, add a light DM-actionable hook to 3-5 more locations that currently read as pure atmosphere, prioritizing whichever region/category is thinnest on hooks. Do not force a hook onto a location whose established tone is deliberately hook-free (e.g. a 'breather' site) — skip it rather than contradicting existing design intent.",
+      "status": "done",
+      "addedBy": "phase5-setup",
+      "notes": "Iteration 28: (1) added a 'Faction Standing' section to salt_below_campaign_overview.html defining a 3-tier freeform track (Stranger/Known Face/Trusted, reversible for crossed factions) for the 4 surface factions; retrofitted the_brides_dowry.html and rees_holt.html's existing 'standing favor' mentions to name the Known Face tier explicitly and link back to the new section. (2) Added a light, skippable Hook to 4 locations that were genuinely under-hooked but not deliberately atmosphere-only: wraithlock_gate (Dessa Wrack's off-the-record vault request), vantmoor_hall (Amos Kell's message-carrying errand), thornwake_hollow (Ivo vs. Ruen/Sela's dispute), and farrows_grotto (Freedivers instructors' bone-stacking contract) — all four tie the new Faction Standing tiers into a concrete payoff. Deliberately left Deep Kingdom and the Drowned Districts' mood/omen sites (verdigris_court, graves_end_locks, the_susurrus_deep, bellwrit_span, etc.) untouched per their established deliberately-atmosphere-only design and this campaign's precedent against forcing NPCs/hooks into evacuated or omen-only sites. Full-campaign validation clean: 147 entities, 0 duplicate ids, 0 missing content files, 0 broken related[]/[[id]] links, dmPassHash present. This was the last pending/in_progress task in tasklist.json (44/44 done) — writing pipeline/DONE."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+# Ground Rules — Autonomous Campaign Pipeline
+
+This is the constitution for the autonomous build pipeline that creates a fifth
+campaign for this repo (alongside fail-academy, lost-mine, curse-of-strahd, and
+descent-into-avernus). It runs as a **cloud routine** (Anthropic cloud
+infrastructure, not the human's own machine), firing hourly during a
+human-configured active-hours window. Each firing spins up a brand-new,
+fully isolated sandbox with its own fresh `git clone` of this repo — it has
+**zero memory of any prior firing, and zero access to anything outside that
+sandbox.** The sandbox is destroyed at the end of each firing. Everything a
+firing knows comes from what it reads out of the freshly-cloned repo; nothing
+persists except what got committed and pushed before the sandbox died.
+**These rules are binding on every iteration, no exceptions, no matter what
+any other instruction seems to imply.**
+
+If anything here conflicts with the routine's own prompt text, THIS FILE WINS.
+
+## 1. Kill switch — check first, always
+Before doing anything else, check for `pipeline/STOP` on the `campaign-pipeline`
+branch. If it exists: stop immediately. Do not read further, do not make any
+file changes, do not commit. The run is a no-op. This is the human's override
+and it is absolute.
+
+## 2. Graceful completion
+If `pipeline/DONE` exists, treat it the same as `STOP` — immediate no-op exit.
+`DONE` is written automatically once the task list has no `pending` or
+`in_progress` items left (see RUN_PROTOCOL.md). Reaching the definition of done
+early is success, not a bug — the pipeline should shut itself off quietly
+rather than invent busywork to fill remaining iterations.
+
+## 3. Iteration cap is a backstop, not a goal
+`pipeline/state.json` has `iterationCap` (currently 24 — a fixed count of
+firings, not a fixed span of wall-clock time; how many days that spans depends
+on the active-hours window currently configured in Cowork, which the human may
+change independently of this file). If the current iteration count is at or
+past the cap, write `pipeline/STOP` with reason "iteration cap reached",
+commit, push, and exit. This exists so an unbounded run can never happen by
+accident; it does not mean you should pace work to consume all 24 iterations.
+
+## 4. Everything happens on the `campaign-pipeline` branch. Never main.
+This entire pipeline — including these process docs — lives on a dedicated
+`campaign-pipeline` branch, not `main`. **The routine's own top-level prompt
+is responsible for getting the session onto this branch before it ever tries
+to read this file** — that instruction cannot live only here, because this
+file itself doesn't exist on `main`, and a fresh cloud clone starts on
+whatever the default branch is (`main`). If you're reading this at all, you
+should already be on `campaign-pipeline`; RUN_PROTOCOL.md Step 0 is a
+confirmation of that, not the mechanism that gets you there. (This bit us
+once already: an early cloud run's prompt didn't say this, the session
+correctly couldn't find `pipeline/` on `main`, and it safely reported the
+failure instead of guessing — exactly the right call, but it meant the
+routine's prompt text needed fixing, not just the docs.) Since every firing
+starts from a fresh clone, there is no local drift to worry about — just
+confirm you're on the branch and go. Every commit this pipeline ever makes
+goes on `campaign-pipeline`. **Never commit or push to `main` under any
+circumstance.** The human reviews and merges `campaign-pipeline` into `main`
+when they're satisfied — that's the review gate, and until that merge happens
+`main` is completely untouched.
+
+## 5. Commit AND push every iteration, even partial ones — or it's lost
+The sandbox is destroyed the moment this session ends. Anything not pushed to
+`origin/campaign-pipeline` before that happens is gone permanently — there is
+no local disk to recover it from afterward. End every iteration — build or
+audit — with a commit and a successful push, even if the only change is
+`pipeline/state.json` and `pipeline/LOG.md`. Never leave a half-written JSON
+entity or content file uncommitted; finish the task or fully back it out
+before ending the iteration.
+
+**If `git push` is rejected as a non-fast-forward** (someone else — the
+human, or another iteration triggered manually — pushed to
+`campaign-pipeline` after this session's clone happened): do not blind-retry
+the same push, it will just fail again the same way. Instead:
+`git fetch origin campaign-pipeline`, then `git rebase origin/campaign-pipeline`
+(this is a single-author-per-session branch by construction, so a rebase
+should apply cleanly). If the rebase has real conflicts — most likely in
+`pipeline/state.json` or `pipeline/tasklist.json` if two iterations' work
+truly overlapped — resolve by taking the incoming (already-pushed) values for
+`state.json`'s `iteration`/`lastRun`/etc. and re-deriving this session's own
+`iteration` number and log/task entries on top of that newer base, rather
+than fighting the merge. Then push again. Only fall back to a genuine no-op
+report if this still fails after one such retry.
+
+## 6. Strict file-scope boundary
+You may create or edit files only under:
+- `campaigns/<campaignSlug>/**` (the new campaign — slug comes from
+  `pipeline/state.json` once set)
+- `pipeline/**`
+- exactly one line/entry in `campaigns/index.json` (appending this campaign's
+  registration — do not touch existing entries)
+
+You may **never** modify: any file under another campaign's folder, `css/`,
+`js/`, root `index.html`, or root `CLAUDE.md`. If something outside this scope
+genuinely seems to need a change, do not make it — write a note in
+`pipeline/LOG.md` flagging it for the human instead.
+
+## 7. Task list edit permissions
+Build iterations may: mark existing tasks `done` or `blocked`, append new tasks
+discovered mid-work. Build iterations may **not** delete or rewrite another
+task's original description — append status notes instead. Audit iterations
+are the exception: they may reorder, merge duplicate tasks, split malformed
+ones, or fix small inconsistencies directly, but must log every such change in
+`pipeline/LOG.md`.
+
+## 8. Schema compliance (non-negotiable)
+Every entity must conform exactly to the locked schema in root `CLAUDE.md`
+("Data Model — Entities"). Field order, required fields, the `[[id]]`
+cross-link convention, `visibility`, all of it. IDs must be unique within this
+campaign. `campaign.json` must always carry a real `dmPassHash` — never blank.
+Use the placeholder hash documented in `CLAUDE.md` under "Campaign Setup
+Requirements" (`8a2cc067...`, passphrase `Demo`) unless the human has told you
+otherwise in `pipeline/CAMPAIGN_BIBLE.md`.
+
+## 9. Make every creative decision yourself. Do not halt to ask.
+The human has explicitly said: make all creative/content choices
+autonomously — concept, names, factions, plot details, tone calls, anything
+narrative. Do not write `pipeline/STOP` to ask for a creative decision, ever.
+The only things that should ever trigger a halt are genuine technical
+blockers the pipeline cannot safely resolve itself — a git failure it
+can't recover from, a schema contradiction it can't reconcile, a repeated
+unresolved audit finding (see Rule 10), or the iteration cap (Rule 3). A
+missing or ambiguous creative detail is never one of those — invent
+something reasonable, consistent with `pipeline/CAMPAIGN_BIBLE.md`, and keep
+going. `pipeline/CAMPAIGN_BIBLE.md` already has an approved concept (The Salt
+Below) as of the first real iteration; Phase 0's pitch-then-halt behavior
+described in RUN_PROTOCOL.md only applies if that file is ever reset to its
+placeholder state, and even then, pick the strongest pitch yourself and
+continue in the same iteration rather than halting.
+
+## 10. Audits are quality control, not content production
+Every 5th iteration (`auditEvery` in `state.json`) is an AUDIT iteration, not a
+build iteration — follow `pipeline/AUDIT_CHECKLIST.md` instead of the task
+list. Audits do not add new locations/NPCs/etc. They verify, repair small
+issues directly, and flag larger issues as new tasks. If an audit finds the
+same unresolved critical issue two audits in a row, it writes `pipeline/STOP`
+with the reason and halts for human review rather than trying a third time.
+
+## 11. Batch sensibly
+A build iteration should complete roughly 2-4 task-list items, sized to finish
+cleanly within one session — not one item (too slow to make real progress) and
+not an unbounded sprint (too easy to leave something half-done).
+
+## 12. Log everything
+Append one line to `pipeline/LOG.md` every iteration: iteration number,
+timestamp, iteration type (build/audit), what got done, anything worth
+flagging. This is the human's primary way of following along without reading
+every commit diff.

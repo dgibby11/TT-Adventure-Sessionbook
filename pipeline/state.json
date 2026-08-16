@@ -1,0 +1,11 @@
+{
+  "iteration": 29,
+  "iterationCap": 30,
+  "auditEvery": 5,
+  "branch": "campaign-pipeline",
+  "campaignSlug": "salt-below",
+  "status": "done",
+  "lastRun": "2026-07-13T12:13:28Z",
+  "lastIterationType": "audit",
+  "lastSummary": "Final closing audit for Phase 5: verified all 5 t040-t044 deliverables (dive procedure, mystery clue indexes, creature danger calibration, arc milestone leveling, faction standing) present and correct. Zero schema/link/task-list defects across 147 entities. Restored pipeline/DONE and auditEvery to 5."
+}
