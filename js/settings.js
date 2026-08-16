@@ -24,7 +24,9 @@
   // The theme roster. "default" is the palette currently defined on bare :root,
   // so it intentionally sets no data-theme attribute at all.
   const THEMES = [
-    { id: 'default', name: 'Default' },
+    { id: 'default',      name: 'Default' },
+    { id: 'gothic',       name: 'Gothic' },
+    { id: 'high-fantasy', name: 'High Fantasy' },
   ];
 
   const DEFAULTS = { theme: 'default' };
@@ -43,6 +45,9 @@
 
   // ── Apply ─────────────────────────────────────────────────────────────────
 
+  // Applying a theme only swaps CSS custom properties, so the whole app
+  // recolours in place: the Session Runner stays open, modals stay open, scroll
+  // position and DM mode are untouched. No reload, nothing to restore.
   function applyTheme(id) {
     const root = document.documentElement;
     // "default" is the bare :root palette — no attribute, so nothing overrides it.
@@ -73,7 +78,7 @@
           <div class="settings-field">
             <label for="settings-theme">Color Theme</label>
             <select id="settings-theme"></select>
-            <p class="settings-hint">Additional themes will appear here as they are added.</p>
+            <p class="settings-hint">Applies immediately — no reload, and nothing in progress is lost.</p>
           </div>
         </div>
 

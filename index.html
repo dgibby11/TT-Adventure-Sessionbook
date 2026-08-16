@@ -7,6 +7,15 @@
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="shared/img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="shared/img/favicon-180.png" />
+  <script>
+    // Theme bootstrap — inline and first so data-theme is set before the
+    // stylesheet paints. Without this the page flashes the default palette
+    // before settings.js (which loads last) can re-skin it.
+    try {
+      var t = (JSON.parse(localStorage.getItem('tt.settings.v1')) || {}).theme;
+      if (t && t !== 'default') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { /* no stored settings — default palette */ }
+  </script>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>

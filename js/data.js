@@ -49,8 +49,15 @@
     github: { owner: '', repo: '', stateFile: 'campaign-state.json' },
   };
 
+  const DM_KEY = 'tt.dm.v1';
+
   window.ENTITIES = [];
   let byIdMap = new Map();
+
+  // Restore persisted DM mode immediately, before any renderer runs.
+  try {
+    if (localStorage.getItem(DM_KEY) === '1') document.body.classList.add('dm-on');
+  } catch { /* storage unavailable — start in player view */ }
 
   window.App = {
     isDM() {
@@ -58,6 +65,12 @@
     },
     setDM(on) {
       document.body.classList.toggle('dm-on', !!on);
+      // Persisted app-wide (not per campaign, and not synced to GitHub) so DM
+      // mode survives a reload. NOTE: this is localStorage by explicit choice,
+      // so it also survives closing the browser -- the app will reopen in DM
+      // view until it is toggled off.
+      try { localStorage.setItem(DM_KEY, on ? '1' : '0'); }
+      catch (e) { console.warn('[data] DM mode persist failed:', e); }
       document.dispatchEvent(
         new CustomEvent('dm:changed', { detail: { on: !!on } })
       );
