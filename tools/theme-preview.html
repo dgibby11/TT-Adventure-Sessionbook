@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Theme Preview — TT Adventure Sessionbook</title>
+  <script>
+    // ?theme=gothic | high-fantasy | default
+    var t = new URLSearchParams(location.search).get('theme');
+    if (t && t !== 'default') document.documentElement.setAttribute('data-theme', t);
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Preview chrome only — deliberately uses the theme's own tokens so the
+       page itself is a test of them. */
+    body { height: auto; overflow: auto; background: var(--bg); color: var(--ink);
+           font-family: var(--body); padding: 1.1rem 1.3rem 2rem; display: block; }
+    h1 { font-family: var(--display); font-size: 1rem; letter-spacing: 0.14em;
+         text-transform: uppercase; color: var(--gold); margin: 0 0 0.15rem; }
+    .sub { font-size: 0.72rem; color: var(--muted); margin: 0 0 1rem;
+           text-transform: uppercase; letter-spacing: 0.1em; }
+    h2 { font-family: var(--display); font-size: 0.72rem; letter-spacing: 0.13em;
+         text-transform: uppercase; color: var(--gold-soft); margin: 1.3rem 0 0.5rem;
+         border-bottom: 1px solid var(--line-soft); padding-bottom: 0.25rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+            gap: 0.45rem; }
+    .chip { border: 1px solid var(--line-soft); border-radius: 3px; overflow: hidden;
+            background: var(--panel); }
+    .chip .sw { height: 40px; }
+    .chip .nm { font-size: 0.62rem; padding: 0.2rem 0.35rem 0; color: var(--ink);
+                font-family: ui-monospace, Consolas, monospace; word-break: break-all; }
+    .chip .vl { font-size: 0.58rem; padding: 0 0.35rem 0.25rem; color: var(--muted);
+                font-family: ui-monospace, Consolas, monospace; }
+    .pair { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .demo { border: 1px solid var(--line-soft); border-radius: 3px; padding: 0.6rem 0.75rem;
+            background: var(--panel); font-size: 0.82rem; flex: 1 1 260px; }
+    .demo .hd { font-family: var(--display); font-size: 0.66rem; letter-spacing: 0.12em;
+                text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .onpaper { background: var(--paper); color: var(--sepia); border-color: var(--paper-edge); }
+    .onpaper .hd { color: var(--oxblood); }
+    .onpaper em { color: var(--sepia-em); }
+    .onpaper .mut { color: var(--sepia-mut); }
+    .btnrow { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .btnrow button { font-family: var(--display); font-size: 0.66rem; letter-spacing: 0.07em;
+                     padding: 0.25rem 0.7rem; border-radius: 2px; cursor: default; }
+    .b-def { background: linear-gradient(180deg, var(--btn-face), var(--btn-face-2));
+             color: var(--ink); border: 1px solid var(--line); }
+    .b-ok  { background: var(--oxblood); border: 1px solid var(--oxblood); color: var(--paper); }
+    .b-dm  { background: linear-gradient(180deg, var(--dm-face), var(--dm-face-2));
+             color: var(--dm); border: 1px solid var(--dm); }
+    .b-sx  { background: none; border: 1px solid var(--success-line); color: var(--success); }
+    .well { background: rgba(var(--well-rgb), 0.35); border: 1px solid var(--line);
+            color: var(--ink); padding: 0.3rem 0.45rem; border-radius: 2px;
+            font-size: 0.76rem; margin-top: 0.5rem; }
+    .tint { display: flex; gap: 0.4rem; margin-top: 0.5rem; flex-wrap: wrap; }
+    .tint span { font-size: 0.62rem; padding: 0.25rem 0.5rem; border-radius: 2px; }
+    .t-gold { background: rgba(var(--gold-rgb), 0.18); color: var(--gold); }
+    .t-ox   { background: rgba(var(--oxblood-rgb), 0.18); color: var(--oxblood-2);
+              border: 1px solid rgba(var(--oxblood-rgb), 0.4); }
+    .t-sheen{ background: rgba(var(--sheen-rgb), 0.10); color: var(--muted); }
+    .err { background: var(--error-bg); color: var(--error-ink); padding: 0.35rem 0.6rem;
+           border-radius: 2px; font-size: 0.76rem; margin-top: 0.5rem; }
+    .pop { background: var(--popout); border: 1px solid var(--line); }
+    .pop2 { background: var(--popout-2); border: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <h1 id="ttl">Theme Preview</h1>
+  <p class="sub" id="sub"></p>
+
+  <h2>Every token</h2>
+  <div class="grid" id="grid"></div>
+
+  <h2>Surfaces in context</h2>
+  <div class="pair">
+    <div class="demo">
+      <div class="hd">Panel — quad / card</div>
+      Body copy on <code>--panel</code>. <span style="color:var(--muted)">Muted meta text.</span>
+      <div class="well">Inset well — search / notes field</div>
+      <div class="tint">
+        <span class="t-gold">gold tint</span>
+        <span class="t-ox">oxblood tint</span>
+        <span class="t-sheen">sheen</span>
+      </div>
+      <div class="btnrow">
+        <button class="b-def">Default</button>
+        <button class="b-ok">Confirm</button>
+        <button class="b-dm">DM View</button>
+        <button class="b-sx">Synced</button>
+      </div>
+      <div class="err">Load error banner</div>
+    </div>
+
+    <div class="demo onpaper">
+      <div class="hd">Dossier — parchment surface</div>
+      Body copy on <code>--paper</code> with <em>emphasis</em> and
+      <span class="mut">muted</span> text. Rules use <code>--paper-edge</code>.
+      <hr style="border:none;border-top:1px solid var(--paper-edge);margin:.5rem 0" />
+      <div class="btnrow"><button class="b-ok">Save</button></div>
+    </div>
+
+    <div class="demo pop">
+      <div class="hd">Pop-out — dice / generator</div>
+      <code>--popout</code> over the page ground.
+      <div class="demo pop2" style="margin-top:.5rem">
+        <code>--popout-2</code> nested
+      </div>
+    </div>
+  </div>
+
+  <h2>Stat block card</h2>
+  <div class="stat-block" style="max-width:520px">
+    <div class="sb-inner">
+      <div class="sb-name">Assertion Mimic</div>
+      <div class="sb-meta">Medium Aberration, Neutral</div>
+      <hr class="sb-rule-heavy" />
+      <div class="sb-basics">
+        <div><span class="label">Armor Class</span> 15</div>
+        <div><span class="label">Hit Points</span> 66 (12d8 + 12)</div>
+      </div>
+      <hr class="sb-rule" />
+      <div class="sb-section-title">Actions</div>
+      <div class="sb-entry"><span class="sb-entry-name">Pseudopod.</span>
+        Melee attack, +5 to hit, 7 (1d8 + 3) bludgeoning damage.</div>
+      <div class="sb-lore"><span class="lore-header">Lore</span>
+        Indistinguishable from whatever the test expected to find.</div>
+      <div class="sb-source">Preview p.1</div>
+    </div>
+  </div>
+
+  <script>
+    var TOKENS = ['bg','bg-2','bg-deep','dash-ground','panel','panel-2','leather',
+      'popout','popout-2','popout-3','gen-option','btn-face','btn-face-2','dm-face','dm-face-2',
+      'frame','frame-2','line','line-soft','ink','muted','on-accent',
+      'gold','gold-soft','oxblood','oxblood-2','dm','dm-link','amber-deep','ring-rare',
+      'success','success-line','danger-hot','danger-deep','danger-lite','error-bg','error-ink',
+      'paper','paper-2','paper-hi','paper-edge','sepia','sepia-mut','sepia-em',
+      'stat-ink','stat-meta','stat-title','stat-rule','stat-edge','stat-bar','stat-bar-2',
+      'stat-lore-bg','stat-source'];
+    var RGB = ['gold-rgb','oxblood-rgb','sheen-rgb','well-rgb'];
+    var cs = getComputedStyle(document.documentElement);
+    var grid = document.getElementById('grid');
+
+    TOKENS.forEach(function (t) {
+      var v = cs.getPropertyValue('--' + t).trim();
+      var d = document.createElement('div');
+      d.className = 'chip';
+      d.innerHTML = '<div class="sw" style="background:' + v + '"></div>' +
+                    '<div class="nm">--' + t + '</div><div class="vl">' + v + '</div>';
+      grid.appendChild(d);
+    });
+    RGB.forEach(function (t) {
+      var v = cs.getPropertyValue('--' + t).trim();
+      var d = document.createElement('div');
+      d.className = 'chip';
+      d.innerHTML = '<div class="sw" style="background:rgb(' + v + ')"></div>' +
+                    '<div class="nm">--' + t + '</div><div class="vl">' + v + '</div>';
+      grid.appendChild(d);
+    });
+
+    var name = document.documentElement.getAttribute('data-theme') || 'default';
+    document.getElementById('ttl').textContent = 'Theme Preview — ' + name;
+    document.getElementById('sub').textContent =
+      TOKENS.length + RGB.length + ' tokens · every one rendered below';
+  </script>
+</body>
+</html>

@@ -129,146 +129,148 @@ body {
 
 /* ---------- Gothic — reds and blacks ---------- */
 :root[data-theme="gothic"] {
-  /* surfaces: near-black with a red undertone, each step clearly separated */
-  --bg:        #070405;
-  --bg-2:      #030202;
-  --bg-deep:   #020101;
-  --panel:     #38181f;
-  --panel-2:   #4a2029;
-  --leather:   #130809;
-  --dash-ground: #040203;
-  --popout:    #140a0c;
-  --popout-2:  #0e0607;
-  --popout-3:  #180b0e;
-  --gen-option:#140a0c;
-  --frame:     #1b0f10;
-  --frame-2:   #0b0607;
-  --btn-face:   #201014;
-  --btn-face-2: #16090c;
-  --dm-face:    #2a1a12;
-  --dm-face-2:  #1b100b;
+  /* Black, oxblood, bone, tarnished gold. The bone (--ink) does the heavy
+     lifting: the first pass used a pinkish white and read mauve rather than
+     funereal. Panels keep B < G so they stay blood, not plum. */
+  --bg:        #0a0809;
+  --bg-2:      #060506;
+  --bg-deep:   #030303;
+  --panel:     #3b1a17;
+  --panel-2:   #4d2420;
+  --leather:   #150b0b;
+  --dash-ground: #070607;
+  --popout:    #17100f;
+  --popout-2:  #100a0a;
+  --popout-3:  #1c1211;
+  --gen-option:#17100f;
+  --frame:     #1c1214;
+  --frame-2:   #0c0809;
+  --btn-face:   #221618;
+  --btn-face-2: #170f10;
+  --dm-face:    #2b1d12;
+  --dm-face-2:  #1c1209;
 
-  --line:      #663039;
-  --line-soft: #40191f;
+  --line:      #6b3028;
+  --line-soft: #40201c;
 
-  --ink:       #ece0e0;
-  --muted:     #ab8b8d;
+  --ink:       #e9e2d4;   /* bone */
+  --muted:     #a3948a;
   --on-accent: #fff;
 
-  /* accent is crimson rather than gold */
-  --gold:      #c8474e;
-  --gold-soft: #9a353b;
-  --gold-rgb:  200,71,78;
-  --oxblood:   #8c1419;
-  --oxblood-2: #b21e26;
-  --oxblood-rgb: 140,20,25;
+  /* accent is tarnished gold; oxblood carries danger and rules */
+  --gold:      #b8892f;
+  --gold-soft: #8a6724;
+  --gold-rgb:  184,137,47;
+  --oxblood:   #8e1a18;
+  --oxblood-2: #b02422;
+  --oxblood-rgb: 142,26,24;
   --dm:        #c08a3e;
   --sheen-rgb: 255,255,255;
   --well-rgb:  0,0,0;
 
-  /* the dossier goes dark too */
-  --paper:      #1c0e12;
-  --paper-2:    #241318;
-  --paper-hi:   #241218;
-  --paper-edge: #56242c;
-  --sepia:      #ece0e0;
-  --sepia-mut:  #b09294;
-  --sepia-em:   #d99aa0;
+  /* dossier: bone on near-black, gilt edges */
+  --paper:      #191113;
+  --paper-2:    #221719;
+  --paper-hi:   #241a1b;
+  --paper-edge: #5c2c26;
+  --sepia:      #e9e2d4;
+  --sepia-mut:  #a3948a;
+  --sepia-em:   #c9a86a;
 
-  /* stat block card */
-  --stat-ink:      #ece0e0;
-  --stat-meta:     #a98d8f;
-  --stat-title:    #d9545c;
-  --stat-rule:     #9c2229;
-  --stat-edge:     #56242c;
-  --stat-bar:      #7a1219;
-  --stat-bar-2:    #cc3a42;
-  --stat-lore-bg:  #1f1015;
-  --stat-source:   #937779;
+  /* stat block reads as a grimoire page: gilt titles, oxblood rules */
+  --stat-ink:      #e9e2d4;
+  --stat-meta:     #a3948a;
+  --stat-title:    #c9a049;
+  --stat-rule:     #8e1a18;
+  --stat-edge:     #5c2c26;
+  --stat-bar:      #6e1412;
+  --stat-bar-2:    #b8892f;
+  --stat-lore-bg:  #1d1416;
+  --stat-source:   #8c7f76;
 
-  --success:      #6fa06f;
-  --success-line: #447044;
-  --danger-hot:   #e35a5a;
-  --danger-deep:  #b02028;
-  --danger-lite:  #f0a6ad;
-  --error-bg:     #3d0f11;
-  --error-ink:    #f2d4d6;
-  --dm-link:      #bc8a3e;
-  --amber-deep:   #b46e22;
-  --ring-rare:    #b39433;
+  --success:      #6f9a63;
+  --success-line: #44603c;
+  --danger-hot:   #d94a3e;
+  --danger-deep:  #a81f1c;
+  --danger-lite:  #e8a09a;
+  --error-bg:     #3a1210;
+  --error-ink:    #f0dcd6;
+  --dm-link:      #b8892f;
+  --amber-deep:   #b06a20;
+  --ring-rare:    #b8892f;
 }
 
 /* ---------- High Fantasy — light, serene, near-pastel ---------- */
 /* The only light theme, so it inverts the surface ramp: the ground is the
    most tinted and panels climb toward white, rather than the other way up. */
 :root[data-theme="high-fantasy"] {
-  --bg:        #dbe3ef;
-  --bg-2:      #cbd6e3;   /* "sunk" is DARKER than the ground on a light theme */
-  --bg-deep:   #bcc9da;
-  --panel:     #f4f8fc;
+  /* Warm and serene rather than cool. The first pass was all blue-grey and
+     read clinical; this one is cream, antique gold and dusty rose, with a
+     lavender note on the stat block. Still the only light theme, so the
+     surface ramp inverts: ground most tinted, panels climbing to white. */
+  --bg:        #ded2ba;
+  --bg-2:      #cfc2a8;   /* "sunk" is DARKER than the ground on a light theme */
+  --bg-deep:   #bfae8f;
+  --panel:     #fbf7ef;
   --panel-2:   #ffffff;
-  --leather:   #cfd9e8;
-  --dash-ground: #ccd6e8;
-  --popout:    #f3f6fb;
-  --popout-2:  #e9eef7;
-  --popout-3:  #f8fafd;
-  --gen-option:#eef2f9;
-  --frame:     #dde4ef;
-  --frame-2:   #c9d3e2;
-  --btn-face:   #f5f8fc;
-  --btn-face-2: #e6ecf6;
-  --dm-face:    #efe7d2;
-  --dm-face-2:  #e0d4b6;
+  --leather:   #d9cbb0;
+  --dash-ground: #e6dcc8;
+  --popout:    #fbf7ef;
+  --popout-2:  #f2ebdc;
+  --popout-3:  #fdfbf5;
+  --gen-option:#f5efe2;
+  --frame:     #e6dcc8;
+  --frame-2:   #cfc2a8;
+  --btn-face:   #fbf7ef;
+  --btn-face-2: #efe7d6;
+  --dm-face:    #f0e4c8;
+  --dm-face-2:  #e3d3ad;
 
-  --line:      #9aabc0;
-  --line-soft: #c4d0e0;
+  --line:      #b0a184;
+  --line-soft: #d3c7ae;
 
-  --ink:       #232f3c;   /* dark text on light chrome */
-  --muted:     #5c6b7d;
+  --ink:       #3b3630;
+  --muted:     #6f6656;
   --on-accent: #fff;
 
-  /* accent is a soft heather rather than gold */
-  --gold:      #6d5da4;
-  --gold-soft: #8579b6;
-  --gold-rgb:  109,93,164;
-  --oxblood:   #a05c78;
-  --oxblood-2: #b87091;
-  --oxblood-rgb: 160,92,120;
+  --gold:      #9a7b3f;   /* antique gold */
+  --gold-soft: #b09660;
+  --gold-rgb:  154,123,63;
+  --oxblood:   #a8556a;   /* dusty rose */
+  --oxblood-2: #bd6a80;
+  --oxblood-rgb: 168,85,106;
   --dm:        #8a6d2f;
-  /* white sheen is invisible on light chrome — tint downward instead */
-  --sheen-rgb: 70,90,120;
-  --well-rgb:  120,140,175;
+  --sheen-rgb: 120,100,70;
+  --well-rgb:  150,135,105;
 
-  /* the dossier stays warm ivory, so it reads as paper against cool chrome */
-  --paper:      #fbf7ef;
-  --paper-2:    #f3ece0;
-  --paper-hi:   #fefdf9;
-  --paper-edge: #d8ccb6;
-  --sepia:      #3a3328;
-  --sepia-mut:  #6e6454;
-  --sepia-em:   #7a5f36;
+  --paper:      #fdfaf3;
+  --paper-2:    #f6efe0;
+  --paper-hi:   #fffdf8;
+  --paper-edge: #ddcfb4;
+  --sepia:      #3b3630;
+  --sepia-mut:  #6f6656;
+  --sepia-em:   #7d5f2e;
 
-  /* stat block card */
-  --stat-ink:      #2b2b30;
-  --stat-meta:     #6a6a72;
-  --stat-title:    #6d5da4;
-  --stat-rule:     #a795d4;
-  --stat-edge:     #d6cce9;
-  --stat-bar:      #8f7ec4;
-  --stat-bar-2:    #bcabe4;
-  --stat-lore-bg:  #fdfbff;
-  --stat-source:   #8a8a97;
+  --stat-ink:      #33302b;
+  --stat-meta:     #6f6656;
+  --stat-title:    #7b6a9c;
+  --stat-rule:     #b09fca;
+  --stat-edge:     #ddd2ba;
+  --stat-bar:      #9a86bd;
+  --stat-bar-2:    #c9b8e0;
+  --stat-lore-bg:  #fbf8f1;
+  --stat-source:   #8a8274;
 
-  --success:      #4f8c60;
-  --success-line: #82b192;
+  --success:      #5b8a5b;
+  --success-line: #8cae86;
   --danger-hot:   #c05f5f;
-  --danger-deep:  #9a3c4c;
-  --danger-lite:  #b06a82;
-  --error-bg:     #f7e1e4;
-  --error-ink:    #6d2b35;
+  --danger-deep:  #9a4050;
+  --danger-lite:  #c08496;
+  --error-bg:     #f6e2e2;
+  --error-ink:    #6d3038;
   --dm-link:      #8a6d2f;
-  --amber-deep:   #9a6a20;
-  --ring-rare:    #94842f;
+  --amber-deep:   #96661f;
+  --ring-rare:    #9a8535;
 }
 
 /* ---------- Top bar ---------- */
@@ -1047,7 +1049,7 @@ details[open] > .menu-cat-title::before { content: "▾"; }
 #session-confirm-ok {
   background: var(--oxblood);
   border: 1px solid var(--oxblood);
-  color: var(--paper);
+  color: var(--on-accent);
   padding: 0.35rem 1.2rem;
   font-size: 0.8rem;
   border-radius: 2px;
@@ -1650,7 +1652,7 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
 #settings-save {
   background: var(--oxblood);
   border: 1px solid var(--oxblood);
-  color: var(--paper);
+  color: var(--on-accent);
 }
 #settings-save:hover { background: var(--oxblood-2); border-color: var(--oxblood-2); }
 
