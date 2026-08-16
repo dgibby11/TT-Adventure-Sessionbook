@@ -1323,6 +1323,129 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   background: rgba(0,0,0,0.2);
 }
 
+/* ---------- Settings modal ---------- */
+/* Parchment dialog, matching the session-confirm dialog's shape so the two
+   read as the same kind of surface. Sits above the panels/runner but below
+   nothing else -- it is the topmost chrome. */
+#settings-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+#settings-overlay[hidden] { display: none; }
+
+#settings-dialog {
+  background: var(--paper);
+  color: var(--sepia);
+  border-radius: 3px;
+  width: 100%;
+  max-width: 460px;
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+  overflow: hidden;
+}
+
+#settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.2rem 0.7rem;
+  border-bottom: 1px solid var(--paper-edge);
+  flex-shrink: 0;
+}
+#settings-title {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  color: var(--sepia);
+  margin: 0;
+}
+#settings-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--sepia-mut);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.2rem;
+}
+#settings-close:hover { color: var(--sepia); }
+
+#settings-body {
+  overflow-y: auto;
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+
+.settings-field { margin-bottom: 1rem; }
+.settings-field:last-child { margin-bottom: 0; }
+.settings-field label {
+  display: block;
+  font-family: var(--display);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sepia-mut);
+  margin-bottom: 0.35rem;
+}
+.settings-field select {
+  width: 100%;
+  font-family: var(--body);
+  font-size: 0.85rem;
+  color: var(--sepia);
+  background: var(--paper-2);
+  border: 1px solid var(--paper-edge);
+  border-radius: 2px;
+  padding: 0.35rem 0.45rem;
+  cursor: pointer;
+}
+.settings-field select:focus {
+  outline: none;
+  border-color: var(--sepia-mut);
+}
+.settings-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.7rem;
+  color: var(--sepia-mut);
+  line-height: 1.45;
+}
+
+#settings-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  padding: 0.75rem 1.2rem;
+  border-top: 1px solid var(--paper-edge);
+  flex-shrink: 0;
+}
+#settings-cancel,
+#settings-save {
+  padding: 0.35rem 1.2rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: var(--display);
+  letter-spacing: 0.06em;
+}
+#settings-cancel {
+  background: none;
+  border: 1px solid var(--paper-edge);
+  color: var(--sepia-mut);
+}
+#settings-cancel:hover { color: var(--sepia); border-color: var(--sepia-mut); }
+#settings-save {
+  background: var(--oxblood);
+  border: 1px solid var(--oxblood);
+  color: var(--paper);
+}
+#settings-save:hover { background: var(--oxblood-2); border-color: var(--oxblood-2); }
+
 /* ---------- Responsiveness (desktop-first, don't break narrow) ---------- */
 @media (max-width: 640px) {
   #topbar { flex-wrap: wrap; gap: 0.5rem; }
