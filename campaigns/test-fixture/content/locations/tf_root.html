@@ -1,0 +1,21 @@
+<article>
+  <h1>The Proving Ground</h1>
+  <p class="entity-meta">LOCATION · Fixture Sites</p>
+
+  <p>The root location of the automated-test campaign. Everything in this campaign hangs off this entity's <code>related[]</code> array, which is what the dashboard renders — so if a quadrant is empty here, that is the bug the test is meant to catch.</p>
+
+  <h2>Linked Fixtures</h2>
+  <ul>
+    <li><strong>[[tf_hall]]</strong> — a second location, so Locations is never a single-item list.</li>
+    <li><strong>[[tf_npc]]</strong> — the fixture NPC.</li>
+    <li><strong>[[tf_faction]]</strong> — the fixture faction.</li>
+    <li><strong>[[tf_item]]</strong> — the fixture item.</li>
+    <li><strong>[[tf_creature]]</strong> — the fixture creature, which carries an external reference link.</li>
+    <li><strong>[[tf_reference]]</strong> — the fixture reference doc.</li>
+  </ul>
+
+  <div class="dm-only">
+    <h2>DM Only</h2>
+    <p>This block is wrapped in <code>.dm-only</code>. It must be visible in DM view and hidden in Player View — that toggle is the thing under test. It also links [[tf_mystery]], a <code>dm-only</code> entity.</p>
+  </div>
+</article>

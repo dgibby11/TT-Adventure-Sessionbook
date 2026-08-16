@@ -1,0 +1,20 @@
+[
+  {
+    "id": "tf_mystery",
+    "name": "The Unresolved Hum",
+    "type": "mystery",
+    "category": "Fixture Threads",
+    "contentType": "html",
+    "contentFile": "content/mysteries/tf_mystery.html",
+    "visibility": "dm-only",
+    "related": [
+      "tf_root",
+      "tf_creature"
+    ],
+    "tags": [
+      "fixture",
+      "mystery",
+      "dm-only"
+    ]
+  }
+]

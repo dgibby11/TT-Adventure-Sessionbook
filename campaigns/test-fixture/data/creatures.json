@@ -1,0 +1,24 @@
+[
+  {
+    "id": "tf_creature",
+    "name": "Assertion Mimic",
+    "type": "creature",
+    "category": "Fixture Bestiary",
+    "contentType": "html",
+    "contentFile": "content/creatures/tf_creature.html",
+    "visibility": "player",
+    "related": [
+      "tf_hall"
+    ],
+    "links": [
+      {
+        "label": "Mimic — D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/mimic"
+      }
+    ],
+    "tags": [
+      "fixture",
+      "creature"
+    ]
+  }
+]

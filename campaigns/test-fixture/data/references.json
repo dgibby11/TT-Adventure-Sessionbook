@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tf_reference",
+    "name": "Fixture Overview",
+    "type": "reference",
+    "category": "Fixture Docs",
+    "contentType": "html",
+    "contentFile": "content/references/tf_reference.html",
+    "visibility": "player",
+    "related": [
+      "tf_root"
+    ],
+    "tags": [
+      "fixture",
+      "reference"
+    ]
+  }
+]

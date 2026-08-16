@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tf_item",
+    "name": "Calibration Lantern",
+    "type": "item",
+    "category": "Fixture Gear",
+    "contentType": "html",
+    "contentFile": "content/items/tf_item.html",
+    "visibility": "player",
+    "related": [
+      "tf_npc"
+    ],
+    "tags": [
+      "fixture",
+      "item"
+    ]
+  }
+]

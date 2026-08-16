@@ -1,0 +1,41 @@
+<article>
+  <h1>Session 1: Smoke Check</h1>
+  <p class="entity-meta">SESSION · Planning</p>
+
+  <p>The fixture session. It exists to be launched by the Session Runner, to populate Prompts / Plan / Pinboard, and to make the Complete-Session reveal dialog reachable.</p>
+
+  <div class="session-prompt">
+    <div class="prompt-label">Opening</div>
+    <p>Read: <em>"You are standing in [[tf_root]]. Nothing is happening, and nothing is going to."</em> This is the first prompt card; if the Prompts panel is empty, extraction of <code>.session-prompt</code> has broken.</p>
+  </div>
+
+  <div class="session-prompt">
+    <div class="prompt-label">Cross-links</div>
+    <p>The party meets [[tf_npc]] of [[tf_faction]], who is carrying [[tf_item]]. All three links must resolve — any of them rendering struck-through means the cross-link resolver regressed.</p>
+  </div>
+
+  <div class="session-prompt">
+    <div class="prompt-label">Encounter</div>
+    <p>An [[tf_creature]] is discovered in [[tf_hall]]. It does not attack. It has no statistics worth using.</p>
+  </div>
+
+  <div class="session-prompt">
+    <div class="prompt-label">Closing</div>
+    <p>End the session and open the Complete-Session dialog. Its checkboxes come from this session's <code>reveals[]</code>.</p>
+  </div>
+
+  <h2>Key Beats</h2>
+  <ul>
+    <li>Launch the Runner and confirm Prompts, Plan and Pinboard all populate.</li>
+    <li>Confirm the Pinboard lists this session's <code>related[]</code> entities.</li>
+    <li>Open Complete Session and confirm the reveal checkboxes are grouped by type.</li>
+  </ul>
+
+  <div class="dm-only">
+    <h2>DM Only</h2>
+    <p>A <code>.dm-only</code> block inside session content, so the Runner's handling of secret blocks is covered too. Mentions [[tf_mystery]].</p>
+  </div>
+
+  <h2>Tone</h2>
+  <p>Flat, synthetic, and entirely uninteresting. That is the point.</p>
+</article>

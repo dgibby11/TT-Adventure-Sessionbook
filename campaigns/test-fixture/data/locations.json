@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tf_root",
+    "name": "The Proving Ground",
+    "type": "location",
+    "category": "Fixture Sites",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_root.html",
+    "visibility": "player",
+    "related": [
+      "tf_hall",
+      "tf_npc",
+      "tf_faction",
+      "tf_item",
+      "tf_creature",
+      "tf_mystery",
+      "tf_reference",
+      "tf_session_1"
+    ],
+    "environment": {
+      "architecture": "A featureless grey courtyard whose walls are ruled off in measured squares.",
+      "activity": "Nothing happens here that was not scheduled to happen.",
+      "sensory": "Clean air, no smell, and a faint hum just below hearing.",
+      "flora": "A single potted fern, artificial.",
+      "lighting": "Even, sourceless, and unchanging.",
+      "weather": "None. The sky is a flat plate."
+    },
+    "tags": [
+      "fixture",
+      "root"
+    ]
+  },
+  {
+    "id": "tf_hall",
+    "name": "Fixture Hall",
+    "type": "location",
+    "category": "Fixture Sites",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_hall.html",
+    "visibility": "player",
+    "related": [
+      "tf_root",
+      "tf_npc",
+      "tf_creature"
+    ],
+    "tags": [
+      "fixture"
+    ]
+  }
+]

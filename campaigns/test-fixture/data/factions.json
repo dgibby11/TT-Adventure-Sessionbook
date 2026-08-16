@@ -1,0 +1,19 @@
+[
+  {
+    "id": "tf_faction",
+    "name": "The Fixture Wardens",
+    "type": "faction",
+    "category": "Fixture Groups",
+    "contentType": "html",
+    "contentFile": "content/factions/tf_faction.html",
+    "visibility": "player",
+    "related": [
+      "tf_npc",
+      "tf_root"
+    ],
+    "tags": [
+      "fixture",
+      "faction"
+    ]
+  }
+]

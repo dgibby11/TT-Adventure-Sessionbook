@@ -23,5 +23,11 @@
     "id": "salt-below",
     "name": "The Salt Below",
     "subtitle": "Port Calder & the Drowned Kingdom — Characters Level 1–10"
+  },
+  {
+    "id": "test-fixture",
+    "name": "Test Fixture",
+    "subtitle": "Automated-test campaign — not real content",
+    "hidden": true
   }
 ]

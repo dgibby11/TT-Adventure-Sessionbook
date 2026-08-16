@@ -1,0 +1,20 @@
+[
+  {
+    "id": "tf_npc",
+    "name": "Warden Testwell",
+    "type": "npc",
+    "category": "Fixture Staff",
+    "contentType": "html",
+    "contentFile": "content/npcs/tf_npc.html",
+    "visibility": "player",
+    "related": [
+      "tf_faction",
+      "tf_hall",
+      "tf_item"
+    ],
+    "tags": [
+      "fixture",
+      "npc"
+    ]
+  }
+]

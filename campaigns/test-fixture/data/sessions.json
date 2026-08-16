@@ -1,0 +1,36 @@
+[
+  {
+    "id": "tf_session_1",
+    "name": "Session 1: Smoke Check",
+    "type": "session",
+    "category": "Planning",
+    "startLocation": "tf_root",
+    "contentType": "html",
+    "contentFile": "content/sessions/tf_session_1.html",
+    "visibility": "dm-only",
+    "related": [
+      "tf_root",
+      "tf_hall",
+      "tf_npc",
+      "tf_faction",
+      "tf_item",
+      "tf_creature",
+      "tf_mystery",
+      "tf_reference"
+    ],
+    "reveals": [
+      "tf_root",
+      "tf_hall",
+      "tf_npc",
+      "tf_faction",
+      "tf_item",
+      "tf_creature",
+      "tf_reference"
+    ],
+    "tags": [
+      "fixture",
+      "session",
+      "planning"
+    ]
+  }
+]

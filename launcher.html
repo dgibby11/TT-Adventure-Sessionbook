@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Campaign Launcher</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="shared/img/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="shared/img/favicon-180.png" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     #launcher-main {
@@ -87,7 +90,14 @@
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
         })
-        .then(function (campaigns) {
+        .then(function (allCampaigns) {
+          // Campaigns flagged "hidden" in campaigns/index.json are test
+          // fixtures, not playable content -- keep them out of the picker so
+          // neither the DM nor players ever land on one by accident. They stay
+          // reachable by direct deep link (index.html?campaign=<id>), which is
+          // how the test driver opens them. ?showHidden=1 reveals them here.
+          var showHidden = new URLSearchParams(window.location.search).has('showHidden');
+          var campaigns  = allCampaigns.filter(function (c) { return showHidden || !c.hidden; });
           status.hidden = true;
           if (!campaigns.length) {
             status.hidden = false;
