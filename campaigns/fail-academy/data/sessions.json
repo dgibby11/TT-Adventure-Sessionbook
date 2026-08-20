@@ -21,7 +21,7 @@
     "contentFile": "content/sessions/session_2.html",
     "visibility": "dm-only",
     "startLocation": "founders_statue",
-    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "headmistress_dowe", "osric_morne", "torvald_thatch", "oswald_crumb", "commander_orvyn", "viola_gossamer", "ninth_thesis", "founders_statue", "academy_provisions", "session_1"],
+    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "headmistress_dowe", "osric_morne", "torvald_thatch", "oswald_crumb", "commander_orvyn", "viola_gossamer", "ninth_thesis", "nyella_sarreth", "anselm_ferreck", "ledger", "huri_sibreldo", "lysandra_belaine", "emeric_vantt", "founders_statue", "academy_provisions", "session_1"],
     "reveals": [],
     "tags": ["session", "planned", "unplayed", "graduation", "ring-selection", "provisions", "planar", "abyss", "vrask", "cliffhanger"]
   },

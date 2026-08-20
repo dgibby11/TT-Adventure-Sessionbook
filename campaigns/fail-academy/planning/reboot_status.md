@@ -15,6 +15,49 @@ Academy is on the shallow end of something very deep. Applied to
 now a little over two days north, slightly under two by boat downstream).
 Also updated in `session_plan.json` and `campaign_arc.json`.
 
+Session 2 package rewrite — the Celestial trigger (2026-08-19, DM ruling,
+live in `content/sessions/session_2.html`). The unmarked package in the
+Provisions Intake Annex is **no longer addressed to Dr. Voss**. It is addressed
+to **the groundskeeper** ([[torvald_thatch]]), and carries two handwritten notes
+on the outside: one in Common instructing that Voss is not to see it, by name,
+and beneath it several lines in **Celestial**. This is why Osric Morne has not
+delivered it and why he is anxious — he can read the first note, cannot read the
+second, and has no rule that covers holding a package addressed to one colleague
+with written instructions to hide it from another. He is NOT complicit; this is
+the real reason he stayed back from Commencement and part of why the argument
+with Voss went as badly as it did.
+The trap itself: a 7th-level **glyph of warding** (spell glyph) storing
+**plane shift**, keyed to a spoken trigger word inside the Celestial text — NOT
+to opening the package. Everyone within 20 ft makes a **DC 20 Charisma save** or
+is transported to Thanatos; the rift then stays open one round (≈ five seconds)
+so anyone left behind may choose to follow, then collapses. Because the glyph is
+keyed to Celestial, it is inert to Osric and to Torvald and only catches an
+interceptor literate enough to be a threat — which is itself a clue about the
+sender. Verified against the live character sheets: **Silas is the party's only
+Celestial speaker and has a CHA save of −1**, so the reader is the one person who
+cannot pass the DC unaided; **Tito** (CHA +8 plus Satyr advantage vs spells)
+effectively cannot be caught by any reasonable DC, so his going through is a
+decision rather than a roll. Tavian's Aura of Protection (+3, 10 ft) vs the
+glyph's 20 ft radius means table positioning decides two of the four saves — ask
+where everyone is standing BEFORE the note is read.
+**Return mechanism LOCKED the same day:** *plane shift* requires a forked metal
+rod attuned to the destination plane, and the site must own one to ship at all.
+It sits at the dais, set to a **delivery lane** rather than a chosen place. The
+Academy's consignment has already gone out (it is the package in the Annex), so
+the rod is set to the other lane, which terminates in **Neverwinter Wood** — the
+landing is therefore not arbitrary, it means somebody else is being supplied out
+there, and it quietly seeds Thundertree among the four Session 3 directions. Both
+exits (forcing the dais, Vrenn's scroll) use the same rod and land in the same
+place, so only one arrival needs prepping. The rod is portable and the party may
+take it; it is proof and a future asset but NOT an escape hatch, since
+*plane shift* is 7th level and the party's highest slot is 5th.
+**Known cost, accepted:** this puts the groundskeeper in front of the party as a
+suspect in Session 2, earlier than `torvald_the_insider.json` and
+`session_plan.json` assumed (Torvald's interrogation was pencilled for Session 5).
+Nothing about the ring, the possession, or Corvin is exposed — only that
+something addressed to Torvald did not want Voss knowing about it. The Thanatos
+scene's own guardrail is unchanged: Torvald is not named or referenced there.
+
 NPC first-name collision fix (2026-08-14, live data): the player formerly
 named Xarad was renamed to Silas (see the earlier Silas rename commit), which
 collided with the existing Provisions Office NPC's first name. Renamed that

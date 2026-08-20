@@ -55,5 +55,7 @@
     "former_student_gender_and_name": "CONFIRMED — Corvin Ashworth, he/him.",
     "physical_tell_from_the_visit": "CONFIRMED — the affect mismatch described in how_he_knew_corvin.the_gift above.",
     "time_gap": "CONFIRMED — graduated ~6 years before campaign start; the ring visit was ~1.5 years ago."
-  }
+  },
+
+  "_session2_exposure_2026_08_19": "ACCELERATION (2026-08-19, DM ruling): the Session 2 Provisions package is addressed to THE GROUNDSKEEPER and carries a handwritten instruction hiding it from Voss, so the party can leave Session 2 already suspecting Torvald. This is earlier than this document and session_plan.json assumed (his interrogation was pencilled for Session 5). What is exposed: that something addressed to him did not want Voss knowing. What is NOT exposed and must stay that way: the ring, the corruption, that he is an unwitting instrument rather than a willing one, and Corvin entirely. Torvald is still not named or referenced anywhere in the Thanatos scene. Mitigating factor: the party ends Session 2 in Neverwinter Wood, a continent from him, so they cannot act on the suspicion immediately — it will sit and sour, which suits the redemption arc better than a confrontation would have."
 }

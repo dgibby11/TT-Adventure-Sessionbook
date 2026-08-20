@@ -527,5 +527,71 @@
     "visibility": "player",
     "related": ["rangers", "owlbear_cave", "kass", "high_forest", "torvald_thatch", "session_1"],
     "tags": ["faculty", "rangers", "department-head", "half-elf", "tracking", "wilderness"]
+  },
+  {
+    "id": "nyella_sarreth",
+    "name": "Nyella Sarreth",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/nyella_sarreth.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "silverymoon", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "contact", "silverymoon", "half-elf", "wizard", "external"]
+  },
+  {
+    "id": "anselm_ferreck",
+    "name": "Anselm Ferreck",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/anselm_ferreck.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "thornwick_consortium", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "contact", "neverwinter", "human", "records", "external"]
+  },
+  {
+    "id": "ledger",
+    "name": "Ledger",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/ledger.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "thornwick_consortium", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "contact", "mirabar", "dwarf", "trade", "external"]
+  },
+  {
+    "id": "huri_sibreldo",
+    "name": "Huri Sibreldo",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/huri_sibreldo.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "retired", "struck-from-list", "triel", "gnome", "druid", "callback", "external"]
+  },
+  {
+    "id": "lysandra_belaine",
+    "name": "Lysandra Belaine",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/lysandra_belaine.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "contact", "waterdeep", "human", "cleric", "sune", "external"]
+  },
+  {
+    "id": "emeric_vantt",
+    "name": "Emeric Vantt",
+    "type": "npc",
+    "category": "Ninth Thesis Operatives",
+    "contentType": "html",
+    "contentFile": "content/npcs/emeric_vantt.html",
+    "visibility": "dm-only",
+    "related": ["ellery_voss", "ninth_thesis", "session_2"],
+    "tags": ["dm-only", "operative", "ninth-thesis", "contact", "moonshae-isles", "human", "missing", "external"]
   }
 ]
