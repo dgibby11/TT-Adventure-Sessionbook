@@ -29,7 +29,7 @@ already live in each character's own entity (`content/players/*.html`, "Relation
 |---|---|---|
 | Guntrah & Tavian | #2 The Cover Story | Guntrah = the Sneaker · Tavian = the Alibi |
 | Silas & Tito | #3 Training Yard Rivals | — (Tito's gotten the better of Silas slightly more often) |
-| Silas & Tavian | #6 The Bad Semester | Tavian = the One Who Almost Left · Silas = the One Who Stayed Up Talking |
+| Silas & Tavian | #6 The Bad Semester | **REVERSED IN PLAY (2026-08-20):** Silas = the One Who Almost Left · Tavian = the One Who Stayed Up Talking. Draft above had it the other way round; the table version is canon. See the live character entities and `content/sessions/session_2.html`. |
 | Guntrah & Tito | #9 Kitchen Duty Comrades | — |
 
 No roll yet for Silas↔Guntrah or Tito↔Tavian — open for a future table session (also

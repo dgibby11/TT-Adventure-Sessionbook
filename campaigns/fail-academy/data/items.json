@@ -299,5 +299,38 @@
     "visibility": "dm-only",
     "related": ["eastern_wing", "ellery_voss", "aldric_voss", "wizards_tower_top", "ritual_floor"],
     "tags": ["key", "credential", "founding-era", "dm-only", "voss-family", "east-annex", "access"]
+  },
+  {
+    "id": "speaking_stone",
+    "name": "The Speaking Stone",
+    "type": "item",
+    "category": "Communication",
+    "contentType": "html",
+    "contentFile": "content/items/speaking_stone.html",
+    "visibility": "player",
+    "related": ["guntrah", "silas_and_breena", "session_2"],
+    "tags": ["communication", "gift", "session-2", "family"]
+  },
+  {
+    "id": "ollie",
+    "name": "Ollie",
+    "type": "item",
+    "category": "Constructs",
+    "contentType": "html",
+    "contentFile": "content/items/ollie.html",
+    "visibility": "player",
+    "related": ["guntrah", "silas_and_breena", "prof_tavel"],
+    "tags": ["construct", "steel-defender", "artificer", "self-made"]
+  },
+  {
+    "id": "torvald_package",
+    "name": "The Unmarked Package",
+    "type": "item",
+    "category": "Evidence",
+    "contentType": "html",
+    "contentFile": "content/items/torvald_package.html",
+    "visibility": "player",
+    "related": ["torvald_thatch", "osric_morne", "ellery_voss", "academy_provisions", "ritual_platform", "session_2"],
+    "tags": ["evidence", "celestial", "planar", "session-2", "groundskeeper"]
   }
 ]

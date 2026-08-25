@@ -1,5 +1,186 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Mysteries wired in + session reveals fired (2026-08-24, live data). This
+campaign had no `mysteries.json` despite `type:"mystery"` being in the locked
+schema; created and added to `data/index.json`. **No code change was needed** —
+`menu.js`, `modal.js`, `search.js` and `dashboard.js` already handle the type.
+Six open mysteries, all player-visible with the answers in `dm-only` blocks:
+`the_sabotage_pattern` (the oldest live thread), `the_groundskeepers_package`,
+`what_the_drow_owes` (the unscripted "it's not time, I told you I needed
+another day" slip — the best hook Session 2 produced),
+`the_figure_at_the_treeline`, `the_bulette_that_didnt_fit`, and
+`why_voss_has_latitude`.
+
+**Both played sessions' `reveals[]` have now been applied** — via
+`campaign.json`'s `baselineRevealed`, which is the only mechanism that actually
+works here. First attempt wrote them into `campaign-state.json`; that file is
+**gitignored and written exclusively via the GitHub API**, nothing in the app
+reads the local copy, so the edit was inert. It has been restored to its
+previous contents. `baselineRevealed` is loaded on every app start, is additive
+and idempotent, and `baselineSeeded` means a deliberate un-reveal is never
+undone — so listing them there applies them with no action from the DM and no
+risk to existing state. Each session's `reveals[]` remains the authoritative
+record of which session earned what; `baselineRevealed` is only the delivery
+mechanism, and the reason is documented in `campaign.json`'s own
+`_baselineRevealed_note`. **Session 3 onward should be authored as
+`category: "Planning"` and run through the Session Runner at the table**, which
+fires its reveals natively and makes this exception unnecessary. Note
+`session_2` is still `visibility: dm-only`, so revealing it is a no-op until
+that flips — both gates must pass. Player View now shows **104 of 120**
+player-visible entities; the 16 held back are the retired party's five One
+Shots, their six magic items, two remote field sites and three wilderness
+creature entries.
+
+**Armanite printing settled:** Mordenkainen's Tome of Foes, per the DM's
+tie-break ("whichever matches the transcript; if both match equally, MToF").
+The read-aloud flavour text — curling talons, serrated tail ridges that
+*flense*, rarely seen in packs as small as two — is carried in both printings
+essentially unchanged, so the recording cannot distinguish them and the
+tie-break applies. **This is a deliberate exception to the standing
+"newest official sourcebook wins" rule**, which would have pointed at MPMM.
+Practical caveat recorded on the entity: D&D Beyond pulled Volo's and MToF from
+its marketplace on 17 May 2022 and serves the MToF armanite behind a
+legacy-content notice, so the MPMM stat block is the fallback if the physical
+book isn't to hand.
+
+Session 2 entity build-out + Player View audit (2026-08-24, live data). Nine
+new entities, all authored **player-visible with the secrets in `dm-only`
+blocks** rather than gated wholesale — the pattern the DM asked for: the party
+gets an accurate account of what they perceived, and everything they don't know
+sits inside the file. New: `hooved_demons` (the party has no name for armanites
+— the DM declined to give one at the table, so the entity is named from their
+perception and the stat block/CR/D&D Beyond link are dm-only), `ritual_platform`
+(player-facing description says only "somewhere in **the Abyss**" per DM ruling
+that the lava moat and idol-busts were enough; Thanatos, Orcus, Vrask, the
+forked rod and the Neverwinter Wood delivery lane are all dm-only),
+`the_captive_drow` (**Vrenn's name is dm-only** — he never introduced himself
+and is expected to in Session 3), `silas_and_breena` (one entity, not two —
+avoids an id collision with the PC Silas), `speaking_stone`, `torvald_package`,
+`ollie`, `bertram_hollis`, and `hask_undermoor` — the last invented to give a
+face to the fourth-year who spoke up for Guntrah at Commencement. New categories:
+"Beyond the Veil" (locations/npcs/creatures), "Family", "Communication",
+"Constructs", "Evidence".
+
+**Ring Conferral — the one place authored data overruled the transcript.** The
+recording shows an on-stage pick from a case of mixed-metal labelled bands; the
+DM clarified that was never the intent. Canon: selection is **private, before
+Commencement** (so nobody reads item text or asks rules questions on a stage),
+the choice is **announced publicly at the conferral**, and bands stay struck
+identical in gold. `rings.html` rewritten accordingly. What the transcript does
+settle and is now canon: separate diplomas exist, conferred by a clerk, so the
+ring does NOT double as the diploma. Standing rule adopted the same day and
+recorded at the top of `transcript_glossary.md`: **where transcript and data
+diverge the transcript wins, except for major conflicts, which get presented for
+approval** — this was the worked example.
+
+**Holdar's reaction is not what Guntrah thinks it is.** He turned away partly
+from embarrassment and partly from **disgust** (DM, 2026-08-24) — Guntrah routed
+around five years of the one conviction Holdar's whole department is built on,
+and the Academy applauded. Recorded in `prof_bram_holdar.html`, `guntrah.html`
+and `session_2.html`; the target of the disgust is deliberately unpinned.
+
+**Player View audit — 45 → 17.** An audit found **36 entities already
+`visibility: player` but never revealed**, and therefore invisible in Player
+View regardless of their visibility flag. Most were plain oversights: four
+faculty (`archdruid_sevra`, `master_jin`, `master_veris`, `warden_ashgrove`),
+three campus facilities (`fail_chamber` — which Voss runs and every PC has sat
+practicals in — plus `druids_grove` and `owlbear_cave`), four campus creatures,
+both student clubs, `campaign_overview`, and `potion_of_healing` (every student
+gets two a year). Added to `campaign.json`'s `baselineRevealed`, which is
+additive and idempotent so it applies on next load without clobbering any
+deliberate un-reveal. Also added: the retired One Shots party
+(`lugeiros_serise`, `gunnar`, `caelum_rivenstone`, `bloodraven`) — per
+campaign_arc's continuity note they are current *underclassmen* the party knows,
+not strangers. **17 remain unrevealed and all are defensible** (the archived
+One Shots and their loot, remote field sites, wilderness threats) — except
+`session_1`, see the mechanism note below.
+
+**Known mechanism gap (RESOLVED 2026-08-24 — kept for the explanation):** a
+session's `reveals[]` only fires through the Session Runner's Complete-Session
+flow, and the Runner filters on `category == "Planning"` exactly. Both played
+sessions are `Completed`, so neither could fire automatically. Rather than
+round-trip the categories, both sessions' reveals were written straight into
+`campaign-state.json` — safe because the GitHub pull path is an additive merge.
+`session_1` and `session_2` were each added to their own `reveals[]` first, so
+the sessions themselves are flagged too. **Worth remembering for Session 3:**
+author the session as `category: "Planning"` and run it through the Session
+Runner at the table, and its reveals fire on their own — this only became a
+chore because both sessions were reconciled after the fact.
+
+Session 2 played and reconciled (played 2026-08-20, reconciled 2026-08-23,
+live data). Full session ran in one sitting — Commencement, the Ring Conferral,
+an extended and almost entirely unscripted farewells block, Voss's ask, the
+Provisions break-in, the package, the portal, and the fight on the far side.
+`content/sessions/session_2.html` rewritten against the transcript the same way
+`session_1.html` was, with a dated "What Actually Happened at the Table" record;
+`data/sessions.json` session_2 flipped category `Planning` → `Completed`.
+(Its `reveals[]` was expanded on 2026-08-24 once the new entities existed — see
+the entity build-out entry above.) **Visibility deliberately left `dm-only`** —
+see the LEAK SCAN block at the foot of session_2.html; recommendation is to hold
+until Session 3 closes the scene and flip both together. New reference doc:
+`planning/transcript_glossary.md`, the agreed STT correction set (name fixes,
+name-collision hazards, speaker-attribution fixes, standing rules) — reuse and
+extend it for every future transcript pass.
+
+**The session does not end where it was planned to.** The party never got home.
+Both designed exits failed: they never found the dais or the forked rod, and the
+drow's *plane shift* scroll — which he handed over unprompted rather than
+needing to be found — was destroyed when Silas rolled a natural 1 casting from
+it. Session 2 ends **stranded on the Thanatos platform** with fifteen more
+armanites about a minute out, and Session 3 now opens there. Consequence:
+**the arrival in Neverwinter Wood and the four-direction fork both slide one
+session later** — the fork is now a Session 4 beat, not the top of Session 3.
+`session_plan.json`'s post_session_2_fork updated to match. The escape design
+(LOCKED 2026-08-19) is unspent rather than invalid: the dais and its forked rod,
+set to the Neverwinter Wood delivery lane, are untouched and are now the only
+way out.
+
+Four further Session 2 rulings, all live: (a) **the Celestial trigger word is
+scrapped** — the DM ran the glyph as firing on the package being *opened*, not
+on a spoken word, so nobody ever read the note aloud and no word is owed;
+session_plan.json's open item is closed, and the "only catches someone literate
+enough to be a threat" clue is no longer supported by the mechanism as run.
+(b) **Voss's six-name contact list was never handed over** — the DM forgot it,
+and it will be delivered retroactively at the top of Session 3; the six
+operatives are NOT revealed. (c) **The Ring Conferral was restaged live** and
+diverges from the locked plan in three ways — the rings are visibly different
+metals, openly labelled and publicly chosen, and separate diplomas exist, so the
+ring does not double as the diploma; `rings.html` needs a decision between the
+table version (recommended) and the 2026-08-14 draft. (d) **Nobody took the Ring
+of Augury**, so the Savras/Senna thread is entirely unspent.
+
+**Four of the five intended takeaways did not land.** The party arrived, was
+charged within seconds, and left the moment the fight ended — nobody examined
+the workbench, the altar, the tools, or the matching crate. They do not know the
+artifacts are made there, do not know it is the Abyss, have never heard "Vrask",
+and got no sense of increasing traffic. This is recoverable rather than lost:
+they are still standing on top of every one of those clues. Nothing leaked in
+the other direction either — Vrenn was never named (he simply never introduced
+himself), and Vrask, Harthoon, Orcus, Thanatos and "armanite" were never spoken.
+**Torvald's name entered the scene from a player's mouth** (Tito tried "Thatch
+sent us") and the drow's honest "I don't know who that is" gave nothing back.
+
+Ring choices are permanent character data and are now recorded on each PC
+entity: **Guntrah — Ring of Swimming · Silas — Ring of Regeneration · Tavian —
+Ring of the Ram · Tito — Ring of Free Action.** A large amount of unscripted PC
+canon was also captured onto the four player entities: Silas's hometown
+**Rosgaunt** and his lottery place; Tavian's unnamed **fishing village** and his
+scholarship; Tito's satyr family in **Baldur's Gate** (import-export, quite
+possibly criminal, an open offer to take over, and a sack of uncounted gold);
+Guntrah's adoptive gnome parents **Silas and Breena**, the paired **speaking
+stone** they gave him, and his construct **Ollie** (a Steel Defender, three and
+a half years in the making). Two live-data corrections fell out of the pass:
+**Professor Tavel is famous** — a run of well-known inventions forty or fifty
+years ago, newly established and not previously in his entity — and **the "Bad
+Semester" bond between Silas and Tavian runs the opposite way to the Session 0
+draft**: Silas is the one who nearly left, Tavian talked him into staying.
+Corrected in `silas.html`, `tavian_stormnet.html`, and
+`session_zero_relationship_table.md`, with the superseded reading kept inline
+for the record. Unscripted and now canon at the NPC level: **Holdar could not
+meet Guntrah's eye at the Conferral and looked ashamed**, then left before
+Guntrah could find him — the thread `prof_tavel.html`/`guntrah.html` both
+flagged as "established as backstory, not yet dramatized" has now fired.
+
 Academy geography FIXED (2026-08-15, DM ruling, live data): the campus sits
 **inside the High Forest but only just — at the forest's northwestern-most
 edge, roughly 200 yards south of the River Rauvin, with Silverymoon about two

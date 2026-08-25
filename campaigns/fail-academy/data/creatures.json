@@ -212,5 +212,17 @@
     "visibility": "dm-only",
     "related": ["nether_mountains", "one_shot_5"],
     "tags": ["elemental", "mephit", "dm-only", "nether-mountains", "session-5", "reserve-encounter", "CR-1/4"]
+  },
+  {
+    "id": "hooved_demons",
+    "name": "The Hooved Demons",
+    "type": "creature",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/creatures/hooved_demons.html",
+    "visibility": "player",
+    "related": ["ritual_platform", "the_captive_drow", "session_2"],
+    "links": [{ "label": "Armanite (Mordenkainen's Tome of Foes) — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/armanite" }],
+    "tags": ["demon", "abyss", "planar", "lightning", "session-2", "dangerous"]
   }
 ]

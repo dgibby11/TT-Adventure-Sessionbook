@@ -1,0 +1,68 @@
+[
+  {
+    "id": "the_sabotage_pattern",
+    "name": "The Sabotage Pattern",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_sabotage_pattern.html",
+    "visibility": "player",
+    "related": ["ellery_voss", "ninth_thesis", "academy_provisions", "osric_morne", "session_1", "session_2", "torvald_package"],
+    "tags": ["mystery", "open", "sabotage", "artifacts", "voss", "phase-1"]
+  },
+  {
+    "id": "the_groundskeepers_package",
+    "name": "The Groundskeeper's Package",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_groundskeepers_package.html",
+    "visibility": "player",
+    "related": ["torvald_thatch", "torvald_package", "osric_morne", "ellery_voss", "academy_provisions", "ritual_platform", "session_2"],
+    "tags": ["mystery", "open", "groundskeeper", "celestial", "session-2", "suspect"]
+  },
+  {
+    "id": "what_the_drow_owes",
+    "name": "What the Drow Owes",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/what_the_drow_owes.html",
+    "visibility": "player",
+    "related": ["the_captive_drow", "ritual_platform", "hooved_demons", "session_2"],
+    "tags": ["mystery", "open", "planar", "abyss", "session-2", "captive"]
+  },
+  {
+    "id": "the_figure_at_the_treeline",
+    "name": "The Figure at the Treeline",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_figure_at_the_treeline.html",
+    "visibility": "player",
+    "related": ["torvald_thatch", "high_forest", "session_1"],
+    "tags": ["mystery", "open", "unresolved", "session-1", "torvald"]
+  },
+  {
+    "id": "the_bulette_that_didnt_fit",
+    "name": "The Bulette That Didn't Fit",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/the_bulette_that_didnt_fit.html",
+    "visibility": "player",
+    "related": ["ellery_voss", "high_forest", "session_1", "tito"],
+    "tags": ["mystery", "open", "bulette", "session-1", "veil"]
+  },
+  {
+    "id": "why_voss_has_latitude",
+    "name": "Why Voss Has So Much Latitude",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/why_voss_has_latitude.html",
+    "visibility": "player",
+    "related": ["ellery_voss", "headmistress_dowe", "ninth_thesis", "fail_chamber"],
+    "tags": ["mystery", "open", "voss", "faculty", "ninth-thesis"]
+  }
+]

@@ -593,5 +593,49 @@
     "visibility": "dm-only",
     "related": ["ellery_voss", "ninth_thesis", "session_2"],
     "tags": ["dm-only", "operative", "ninth-thesis", "contact", "moonshae-isles", "human", "missing", "external"]
+  },
+  {
+    "id": "the_captive_drow",
+    "name": "The Captive Drow",
+    "type": "npc",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/npcs/the_captive_drow.html",
+    "visibility": "player",
+    "related": ["ritual_platform", "hooved_demons", "session_2", "torvald_thatch", "tavian_stormnet", "silas", "tito"],
+    "tags": ["drow", "captive", "planar", "abyss", "session-2", "unresolved"]
+  },
+  {
+    "id": "silas_and_breena",
+    "name": "Silas & Breena",
+    "type": "npc",
+    "category": "Family",
+    "contentType": "html",
+    "contentFile": "content/npcs/silas_and_breena.html",
+    "visibility": "player",
+    "related": ["guntrah", "speaking_stone", "ollie", "prof_tavel", "session_2"],
+    "tags": ["gnome", "family", "adoptive", "artificer", "session-2"]
+  },
+  {
+    "id": "bertram_hollis",
+    "name": "Councilor Bertram Hollis",
+    "type": "npc",
+    "category": "External Contacts",
+    "contentType": "html",
+    "contentFile": "content/npcs/bertram_hollis.html",
+    "visibility": "player",
+    "related": ["silverymoon", "headmistress_dowe", "session_2"],
+    "tags": ["silverymoon", "merchant-council", "guest-speaker", "session-2", "comic-relief"]
+  },
+  {
+    "id": "hask_undermoor",
+    "name": "Hask Undermoor",
+    "type": "npc",
+    "category": "Students",
+    "contentType": "html",
+    "contentFile": "content/npcs/hask_undermoor.html",
+    "visibility": "player",
+    "related": ["guntrah", "barbarians", "prof_bram_holdar", "session_2"],
+    "tags": ["student", "barbarian", "half-orc", "session-2"]
   }
 ]

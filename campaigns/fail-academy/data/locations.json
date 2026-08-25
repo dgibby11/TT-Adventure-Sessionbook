@@ -972,5 +972,16 @@
       { "roll": "Arcana DC 13", "detail": "The pattern on the floor radiates faint residual enchantment. It is dormant but not inert — the difference between a mechanism that has stopped and one that has been paused." },
       { "roll": "Perception DC 14", "detail": "The sealed urn against the north wall is faintly warm to the touch — slightly warmer than an object in this cool room should be." }
     ]
+  },
+  {
+    "id": "ritual_platform",
+    "name": "The Ritual Platform",
+    "type": "location",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/locations/ritual_platform.html",
+    "visibility": "player",
+    "related": ["the_captive_drow", "hooved_demons", "torvald_package", "academy_provisions", "session_2"],
+    "tags": ["planar", "abyss", "ritual", "session-2", "current-location"]
   }
 ]

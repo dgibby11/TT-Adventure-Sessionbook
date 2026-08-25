@@ -9,21 +9,21 @@
     "visibility": "player",
     "startLocation": "main_complex",
     "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "commander_orvyn", "oswald_crumb", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "thornwick_consortium", "old_library", "high_forest", "academy_provisions", "osric_morne", "voss_notes_handout"],
-    "reveals": ["witness", "standing_ovation", "quick_components_pouch", "ninth_thesis"],
+    "reveals": ["session_1", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "the_sabotage_pattern", "the_bulette_that_didnt_fit", "the_figure_at_the_treeline"],
     "tags": ["session", "completed", "played", "parting-gifts", "ninth-thesis", "recruitment", "bulette", "graduation-hook"]
   },
   {
     "id": "session_2",
     "name": "Session 2 — Commencement",
     "type": "session",
-    "category": "Planning",
+    "category": "Completed",
     "contentType": "html",
     "contentFile": "content/sessions/session_2.html",
     "visibility": "dm-only",
     "startLocation": "founders_statue",
-    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "headmistress_dowe", "osric_morne", "torvald_thatch", "oswald_crumb", "commander_orvyn", "viola_gossamer", "ninth_thesis", "nyella_sarreth", "anselm_ferreck", "ledger", "huri_sibreldo", "lysandra_belaine", "emeric_vantt", "founders_statue", "academy_provisions", "session_1"],
-    "reveals": [],
-    "tags": ["session", "planned", "unplayed", "graduation", "ring-selection", "provisions", "planar", "abyss", "vrask", "cliffhanger"]
+    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "headmistress_dowe", "osric_morne", "torvald_thatch", "oswald_crumb", "commander_orvyn", "prof_bram_holdar", "prof_tavel", "archcleric_senna", "viola_gossamer", "bertram_hollis", "hask_undermoor", "silas_and_breena", "the_captive_drow", "hooved_demons", "ritual_platform", "torvald_package", "speaking_stone", "ollie", "ninth_thesis", "nyella_sarreth", "anselm_ferreck", "ledger", "huri_sibreldo", "lysandra_belaine", "emeric_vantt", "founders_statue", "academy_provisions", "session_1"],
+    "reveals": ["session_2", "bertram_hollis", "speaking_stone", "torvald_package", "ritual_platform", "hooved_demons", "the_captive_drow", "the_groundskeepers_package", "what_the_drow_owes"],
+    "tags": ["session", "completed", "played", "graduation", "ring-selection", "provisions", "planar", "abyss", "stranded", "cliffhanger"]
   },
   {
     "id": "one_shot_1",
