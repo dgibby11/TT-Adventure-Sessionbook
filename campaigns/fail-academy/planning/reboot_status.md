@@ -1,5 +1,71 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Silas's spell list received; Session 3 Route A designed end to end (2026-08-30,
+live data + planning). The character-sheet PDF arrived and resolved the biggest
+blocker on the file. **Silas has *Leomund's Tiny Hut*, and it is a ritual** — no
+slot, no preparation, available every night regardless of what he prepped. He
+does **not** have *Rope Trick*. His full spellbook is now recorded on
+`content/players/silas.html`, replacing the "spellbook page came through blank"
+placeholder that had been there since Session 0, along with his real equipment
+(15 gp, and — worth noting — **ink, an ink pen and ten sheets of parchment**, so
+he is already carrying scribing kit when Vrenn offers him materials). Caveat kept
+on the entity: the sheet's prepared markers were all blank, so his prepared
+fifteen on any given day is still unconfirmed. The rituals do not need it.
+
+**The night is now a placement puzzle, not a survival one.** Tiny Hut means the
+party cannot be got at, so Route A is designed around the four things the hut
+*cannot* do: it takes **ten minutes** to cast (not an escape button with
+something crossing the bridge), the dome is **opaque and conspicuous** from
+outside and immobile, it **ends if Silas leaves**, and it runs **exactly eight
+hours** against roughly twelve until dawn — which leaves about two hours of
+exposure at each end that the hut cannot cover. Route A therefore runs as three
+scenes: **the break** (getting off the island — one stone bridge, contested, and
+a fifteen-foot lava moat that Tavian and Tito can jump and Silas at STR 7 cannot,
+which is a good three-minute problem that belongs to the martials), **the night**
+(where the dome goes and what walks past it), and **the return**.
+
+**Route A's climax is not the casting — it is holding the platform for an hour.**
+The armanites find two dead guards and sixty feet of stone wall, so the site is
+occupied when the party comes back; they have to retake it quietly and then hold
+it while Vrenn writes. That is a defence with a clock and a win condition that
+is not "kill everything," it escalates on a timer rather than on damage, and it
+is the right use of what this party actually has. Note for building it: this
+time we know *wall of stone* **and *wall of force*** are coming, so plan around
+them rather than being blindsided the way Session 2 was.
+
+**Terrain beyond the moat — PROPOSED, swap freely.** An ash-and-slag plain with
+smoke venting at chest height, long low **slag ridges** running toward the
+mountains, and the spoil of **old workings** (collapsed shafts, a sink deep
+enough to hide a dome). Built to do three jobs, which any replacement should
+keep: cover exists in *specific places* so choosing a campsite is a real
+decision; the dome is invisible behind a ridge and visible for miles on open ash;
+and **the ash holds footprints**, so walking out leaves a line pointing at where
+you stopped — with the answer (walk the hard slag) available and deliberately
+unstated. Well-placed dome: they hear the search pass and get a clean night.
+Badly placed: something finds it, cannot get in, and **sits down outside to
+wait** — worse than a fight, costs no hit points, and turns the morning exit into
+the problem. Either way **they get the long rest**, which is what puts Guntrah's
+five unspent uses of Flash of Genius back on the table and makes the dawn casting
+winnable.
+
+Other spells on the sheet that will change scenes and are now flagged on his
+entity: **Alarm** (ritual, 8 hours of free early warning), **Comprehend
+Languages** (ritual — any written clue in an unknown language is a ten-minute
+delay, not an obstacle, worth knowing before authoring the next one),
+**Clairvoyance** (1 mile) and **Arcane Eye** (this party can scout a building
+thoroughly without entering it, which Route B must be designed to survive),
+**Wall of Force** and **Otiluke's Resilient Sphere** as further hard counters,
+**Darkvision** (solves Tito's blindness for 8 hours), **Protection from Energy**
+(answers the lightning lance), and **Augury** as a ritual, which sits oddly
+nicely beside the untaken Ring of Augury and the Savras thread. Confirmed from
+the sheet: slots run **4/3/3/3/2 and stop** — the 7th-level ceiling problem is
+real and permanent for a long while.
+
+**Still open:** Route B in its entirety, Plan C if the dawn casting also fails,
+the vellum count, a permanent name for "a true hand," and the twelve-hours-until-
+dawn assumption that the whole of A2/A3 is timed against.
+
+
 Session 3 escape mechanism + Vrenn build-out (2026-08-29, live data + planning).
 Session 3 opens mid-scene on the Thanatos platform and the question is not "how
 do we escape" but **"where do we survive the next twelve hours"** — because the
