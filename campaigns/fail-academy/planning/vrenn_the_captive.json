@@ -1,18 +1,15 @@
 {
   "_note": "Planning doc — depth pass on Vrenn (placeholder name — rename freely), the captive drow craftsman at the Thanatos ritual site the party portals into during session2_draft.html's Provisions Office scene. NOT a live entity. Companion to session2_draft.html the same way torvald_the_insider.json and corvin_ashworth_build.json are companions to their own scenes. Read session2_draft.html's 'The Captive at the Workbench' section first — this file is the history behind it, not a replacement for it.",
-
   "vrask_connection": {
     "status": "REVISED (2026-08-14) — Vrenn's master is Vrask, not Harthoon. This section previously proposed making the site belong to the genuine Harthoon directly; the DM corrected that same day. Kept below in its final form only — see phase3_closing_the_veil.json's open_flag for the reverted history if useful.",
     "who_vrask_is": "A lesser lich in Orcus's service — one tier below Harthoon, subordinate to him rather than the same entity under an old placeholder name. 'Vrask' was previously logged (phase3_closing_the_veil.json) as a discarded early-draft name for Harthoon himself; it's been repurposed here as a distinct character, and that file has been updated to flag the reuse so it doesn't read as a leftover contradiction.",
     "the_hierarchy": "Vrask oversees this specific fabrication/altar site as one node in Harthoon's larger sleeper-agent supply operation (matches Harthoon's canon 'master embalmer'/administrator MO — he delegates operational work like this to subordinates rather than running every site personally). Harthoon himself is NOT involved at this level and has no direct presence here — this scene doesn't touch, resolve, or need to resolve phase3_closing_the_veil.json's separate fragment-vs-whole question about what possesses Corvin later. That question is fully open again, untouched by anything in session2_draft.html.",
     "critical_constraint": "Neither Vrask nor Harthoon appears in person, speaks, or is a combat presence anywhere in session2_draft.html's destination scene. Any lich is well past what a level 10 party should be fighting. Both are felt only as an absence/authority — an altar, a name Vrenn flinches at — never a body in the room."
   },
-
   "the_altar": {
     "identity": "The same central dais already described in session2_draft.html's map-driven destination scene — not a separate feature. It's simultaneously the site's working ritual/transit anchor AND, in this reading, a literal altar to Vrask. Vrenn's workbench sits in one of the colonnade alcoves radiating off it; he works in its light, under its authority, more or less permanently.",
     "vrask_not_usually_present": "Vrask's attention is mostly elsewhere too — a lich running one node of a larger operation still has more than one thing to manage. Vrenn's 'service' in practice is unsupervised most of the time: he works, the altar periodically collects/transmits what he makes, and Vrask (or an intermediary) checks in only occasionally. This deliberately mirrors torvald_the_insider.json's 'periodic check-in' trance-visit mechanism — same operational pattern, different victim, reinforcing that this is how this whole supply chain runs generally, not a one-off."
   },
-
   "history": {
     "how_long": "Longer than he can accurately say. Time doesn't track normally this deep in the Abyss, and he's stopped trying to count — not a mechanical detail to pin down with a number, an actual piece of his damage. If a player asks him directly how long he's been here, that's a good moment for him to visibly try to answer and fail, not a moment to give them a year count.",
     "before_the_altar": "Deliberately unresolved — how he first ended up on Thanatos, which drow city or circumstance he came from, whether he was captured, sold by his own kin, or simply wandered somewhere he shouldn't have, is NOT decided here. Leave it open for the DM to fill in later (or never); don't let it get invented at the table as a throwaway answer, since it's exactly the kind of thing 'I won't spoil much yet' was flagging.",
@@ -22,10 +19,56 @@
     "who_finishes_them_instead": "Suggested reading, not required to ever surface at the table: Vrask himself (or a close agent) performs the actual corrupting enchantment on what Vrenn primes, as part of the pipeline feeding Harthoon's wider sleeper-agent network — thematically tight, since the corrupted items already seeded around campus (the catalog item, the component pouch, the practice-closet instrument, the package the party found) are exactly that pattern, just several links down the chain from Harthoon himself. Keep this DM-only; Vrenn himself may not even know this part clearly enough to say it.",
     "current_state": "A sad-sack, in the plainest sense — not dangerous, not defiant, just worn all the way down to compliance. He works because working is what he does, flinches easily, startles at sudden movement or raised voices, and finds a kind of numb comfort in the repetitive motion of the craft itself, the one thing in his life that's still entirely his own competence. See session2_draft.html's 'Playing him at the table' note for how this translates to actual dialogue — talks readily, answers almost nothing of real value."
   },
-
   "table_use_reminders": [
     "Everything above is DM-only background. Vrenn himself should not deliver this as exposition — see session2_draft.html's dialogue-voice note. If any of it surfaces at the table, it should leak out sideways, in fragments, not as a monologue.",
     "Vrask's name, if Vrenn mutters it at all, should land the same way 'the Groundskeeper' and 'the Consortium' already do elsewhere in this campaign's design — an unexplained anchor point for attentive players to file away, not a lore dump. Harthoon's name should not come up in this scene at all; he's not part of what Vrenn would even reference.",
     "Do not let Vrenn's scroll (session2_draft.html's escape option) or his backstory here imply he has any realistic way to have escaped on his own before now beyond what's already written — the incompleteness of his craft training is specifically why he never could, whatever the exact reason he never used the scroll turns out to be."
-  ]
+  ],
+  "_status_2026_08_29": "EXPANDED for Session 3 (DM rulings 2026-08-25 to 2026-08-29). Vrenn is now a scene NPC with a working escape plan, a name he gives freely, and a soul coin. Nothing below has been deleted; see _supersessions_2026_08_29 for the four places play has overtaken the original 2026-08-14 material. SCOPE NOTE: all of the Session 3 material here only comes into effect if the party chooses to hide nearby and return to the ritual site at dawn. The alternative branch (the structure to the east) is NOT YET DESIGNED and is deliberately held.",
+  "_supersessions_2026_08_29": [
+    "history.why_he_never_finishes_the_job - NARROWED, not removed. He is still kept short of the final step on everything Vrask actually values: the priming, the corrupted goods, the day job. The single exception is transcription, because a site that ships needs somebody who can post the parcel and a lich is not coming down every week to do it himself. See the_true_hand.",
+    "'Why he never used the scroll' (table_use_reminders, and content/mysteries/what_the_drow_owes.html) - RESOLVED by the soul coin. The deliberately-dual reading (nowhere better to go vs. simply having stopped being able to act on his own behalf) is retired. He never used it because leaving does not work while Vrask holds the coin. This is a better answer than either original: he is not too broken to act, he is leashed.",
+    "'He could even leave with them if persuaded' - SUPERSEDED (DM, 2026-08-26). He will leave the site, help them hide out in the landscape, and go to the structure with them if that is the plan. He will not leave the PLANE, and he intends to be at his workbench when Vrask arrives at dawn. If the party pushes he resists as much as is reasonable - it is a bad idea, not a locked door.",
+    "The Session 2 handoff re-reads. The scroll he gave away was never his one chance, because the coin means he was never going to use it. What he actually gave four strangers was Vrask's property, the day before Vrask came to collect it. 'They might kill me, they might not, I don't know' stops being resignation and becomes an accurate risk assessment by a man who had already decided. That is braver, not smaller."
+  ],
+  "the_true_hand": {
+    "name": "PROPOSED - 'a true hand'. What Vrenn calls it himself, flatly and without pride, the way a tradesman names a knack rather than a gift. The site's operational word for it is just 'transcription'. The DM flagged this as unnamed on 2026-08-29 - rename freely, nothing depends on the words.",
+    "what_it_is": "He is a natural copyist. Given prepared vellum, prepared inks and components, and the tuning fork, he can transcribe an existing spell scroll's text exactly, and the copy works. He casts nothing. He expends no spell slot - he has none and is not being given any. He does not understand a single character of what he is copying. He reproduces it perfectly, which is the only thing he has ever been able to do.",
+    "why_this_does_not_break_the_character": "It is the same faculty as his priming, pointed at ink instead of metal: exactness without comprehension. It is precisely NOT enchantment, which is the line Vrask keeps him behind. He can copy a working. He could not originate one, alter one, or aim one anywhere the original was not already aimed.",
+    "cost": "It saps him, visibly. Once per day and no more, and he is worse company afterwards. Roughly an hour of work with his calligraphic supplies.",
+    "materials": "A few prepared vellums are on hand - exact count UNDECIDED, settle it before a player asks. Prepared inks and components, and the tuning fork. The vellum and inks are consumed; the fork is not.",
+    "the_supplies_handoff": "He will very likely press his spare vellum, inks and components on [[silas]] before the party leaves - unprompted and awkwardly, a man giving away the only thing he owns that is worth anything to anyone. CRITICAL DISTINCTION: this hands Silas MATERIALS, not the knack. Silas is a wizard and scribes by the ordinary rules; what he has been given is components he would otherwise have to buy. He does not acquire a true hand and cannot copy a scroll without casting.",
+    "why_vrenn_cannot_use_it_himself": "Two reasons, both true, and he only says the first: he would be taken with it (DM, 2026-08-29), and he cannot read or cast what he copies. Mechanically he has no spellcasting and plane shift is on no list of his. Silas is the only person who can cast from the finished scroll."
+  },
+  "the_soul_coin": {
+    "ruling": "CONFIRMED (DM, 2026-08-26 / 2026-08-29). Vrask carries it on his belt. Vrenn knows exactly where it is and will say so in a single sentence if asked why he will not come.",
+    "how_it_binds": "BEACON, not anchor. He is not physically prevented from crossing planes - the coin tells Vrask where its soul is, always. So leaving is not so much futile for him as lethal for whoever is standing next to him. That is the reason he gives, and note that it is a reason about protecting THEM, which is the right register for a man who handed four strangers his only scroll ninety seconds after meeting them.",
+    "so_the_party_can_take_him": "Deliberately. If they push hard enough he can be talked into it, and it is a genuinely bad idea rather than a closed door. He makes the consequence explicit first: Vrask follows, Vrask is incredibly strong, and he intends to be at the workbench at dawn regardless. Let the party own the decision.",
+    "how_he_sold_it": "He sold it himself, and not for himself. His sister was going to die at the hands of something in the Undermountain. Somebody was willing to trade for that, and what he had to trade was his soul. He does not tell this story and should not be made to; if it ever surfaces it surfaces later, in fragments, somewhere safe.",
+    "the_sister": "ALIVE (DM, 2026-08-29), and deliberately left open-ended as a future plot point or side quest. Whether VRENN knows she is alive is UNDECIDED and should stay undecided until the DM wants it - do not resolve it at the table. Free connection if it is ever wanted, and nothing is built on it: lysandra_belaine is the Ninth Thesis operative in Waterdeep, and the Undermountain lies beneath Waterdeep.",
+    "why_this_improves_the_history": "history.bought_and_sold becomes mechanical rather than metaphorical. The coin changed hands and he went with it, every time. He was never a person being traded. He was a receipt."
+  },
+  "session_3_role": {
+    "applies_only_to": "The hide-and-return branch. If the party goes east to the structure instead, most of this is deferred or never happens at all.",
+    "register": "Under fire he is COMPETENT - the one register the party has not seen and will not expect. Not brave: procedural. He knows this site the way a night-shift worker knows a warehouse, and for about four minutes he is the most useful person standing on it. When the pressure comes off he degrades back into the deflecting, trailing-off rambler in history.current_state. Playing the competence FIRST is what makes the collapse land later.",
+    "he_gives": [
+      "His name, unprompted, in the middle of an instruction.",
+      "What the tuning fork is, and that it is the only one here.",
+      "That he can finish a scroll with it by dawn, and that Vrask comes at dawn too.",
+      "Vrask's name - already licensed by the original design, and spent for free inside the opening lines.",
+      "The armanite estimate, hedged as a year of watching rather than a fact.",
+      "That the structure east exists, that it is not undefended, and that he will not pretend it is a good idea.",
+      "The coin, only if asked why he will not come, and then flatly, once, before changing the subject."
+    ],
+    "he_still_does_not_give": [
+      "What he makes, or for whom.",
+      "How long he has been here.",
+      "How he got here, or one word about the sister.",
+      "Anything about the far end of the lane beyond the single word he has for it.",
+      "Anything about Torvald - he genuinely does not know the name.",
+      "Anything at all about what lies beyond this site."
+    ],
+    "the_licensed_slip": "'There's more of us now than there used to be.' Still unspent, still available, and still the cleanest way to land the increasing-traffic clue that did not land in Session 2.",
+    "what_happens_to_him": "Vrask does NOT kill him (DM, 2026-08-26) and he may recur later in the story. At the table he dodges the question - 'That's not your problem. Dawn's your problem.' - and if pressed says only 'I don't think he kills me. I'm too much work to replace.' The party has no way to know that is true, and the not-knowing is the payload they carry into Session 4."
+  }
 }

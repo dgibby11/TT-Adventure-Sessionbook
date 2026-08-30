@@ -1,5 +1,102 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Session 3 escape mechanism + Vrenn build-out (2026-08-29, live data + planning).
+Session 3 opens mid-scene on the Thanatos platform and the question is not "how
+do we escape" but **"where do we survive the next twelve hours"** — because the
+only exit takes until morning to build. New draft: `planning/session3_draft.html`,
+Route A runnable, **Route B (the structure east) deliberately stubbed** at the
+DM's instruction.
+
+**The escape is now Vrenn, not the dais.** The 2026-08-19 design (a forked rod at
+the central dais, forced open under an Arcana check, set to a "delivery lane")
+is **retired in part** — preserved intact in `session_2.html`'s Carried Forward
+block, and superseded on the live entities. The runic circle the party can see is
+now **the altar and the receiving end** — how Vrask reaches in, how finished goods
+are collected. It does not fire on demand and it was never Vrenn's to work:
+*"That's not for going. That's for him."* Note the circle itself **stays** — it is
+on the Session 2 recording and in the player-facing prose; it simply is not an
+exit. What replaces it: Vrenn transcribes a fresh *plane shift* scroll at dawn,
+about an hour's work, **one scroll only, and Vrask comes for it.**
+
+**The tuning fork is the *plane shift* material component** — the spell's own text
+calls it "a forked, metal rod... attuned to a particular plane of existence," so
+the fork and the old "rod" were always the same object under two vocabularies.
+It is the only one on site, it is **not consumed by casting**, and it carries the
+operation's capital value — which is where the scroll's 25,000 gp actually sits,
+so nothing has to evaporate per scroll (vellum and inks are the consumables).
+Consequence the DM should not signpost: **the fork leaves with whoever is holding
+it**, making that a real choice at the moment of exit — proof and a future asset,
+against the one object standing between Vrenn and Vrask's temper. It is still not
+a hatch: *plane shift* is 7th level, the party's ceiling is 5th.
+
+**"A true hand" (name provisional).** Vrenn finishes a 7th-level scroll without
+being a caster because he is a **natural copyist**: given prepared vellum, inks
+and the fork he reproduces an existing scroll's text exactly, and the copy works.
+No slot, no spellcasting, no comprehension. It is the same faculty as his priming
+pointed at ink instead of metal — **exactness without comprehension**, which is
+specifically *not* enchantment, so the locked cruelty in `vrenn_the_captive.json`
+survives narrowed rather than overwritten: Vrask still keeps him short of the
+final step on everything that matters, and tolerates this one exception because a
+site that ships needs somebody who can post the parcel. It saps him — once a day,
+and he is worse company afterwards. He will likely press his spare supplies on
+Silas, which hands Silas **materials, not the knack**.
+
+**The soul coin — BEACON, not anchor, and Vrask wears it.** Nothing physically
+stops Vrenn crossing planes; the coin tells Vrask where its soul is, always, so
+leaving is not futile for him so much as **lethal for whoever is standing next to
+him**. That is the reason he gives, and it is an argument about protecting *them*.
+So the party genuinely **can** talk him into coming, and it is a bad idea rather
+than a locked door; he resists as much as is reasonable, and intends to be at his
+workbench when Vrask arrives regardless. He will leave the *site* — to hide out or
+to walk east — but not the *plane*. **He sold the coin himself, and not for
+himself:** his sister was going to die at the hands of something in the
+Undermountain. **She is alive**, deliberately open-ended as a future thread;
+whether Vrenn knows is undecided. He does not tell this story and should not be
+made to. Two knock-ons: `history.bought_and_sold` stops being metaphor — the coin
+changed hands and he went with it every time, so he was never a person being
+traded, he was a receipt — and **"why he never used the scroll" is now answered**,
+retiring the deliberately-dual reading in `what_the_drow_owes.html`. He is not too
+broken to act. He is leashed. That also re-aims the Session 2 handoff: he did not
+give away his one chance, he gave away **Vrask's property the day before Vrask
+came to collect it**, which is braver rather than smaller.
+
+**The destination "oopsie."** Vrenn can make the scroll and cannot aim it — he
+copies the one working he was taught, and the only surface place he has a name for
+is **"Neverwinter."** Which is a region as well as a city. They name Neverwinter;
+they arrive in **Neverwinter Wood**. Nobody at the table is told this was an error.
+This preserves the locked landing, the Thundertree seed and Session 4's
+four-direction fork, and delivers all of it through a person instead of an
+inspection roll nobody made. Background, no urgency: **Vrask personally casts
+*plane shift* for the FAIL Academy consignments** — that end of the lane is his.
+
+**The dawn casting, and the real dial.** Silas is the only one who can do it —
+Vrenn would be taken with it, Tavian cannot use the scroll at all (*plane shift*
+is not on the paladin list), Tito is a poor fallback. DC 17, Silas +9, so **35%
+failure unaided** (an earlier 20% estimate was wrong). **Guntrah's Flash of
+Genius** — +5, reaction, five per long rest, unspent all campaign — takes it to
+10%; Tito's Bardic d10 on top takes it to roughly 1 in 200. **So the dial is not
+the DC, it is whether they think to stack it**, which makes the difference between
+the two attempts *preparation* rather than luck. The DM will hint. **Plan C (a
+second failure) is deliberately not planned.**
+
+**The armanite count is an estimate, not a fact** (DM, 2026-08-26) — Vrenn has
+watched them a year and "fifteen in about a minute" is where he puts the highest
+probability. That converts the opening from a countdown into a decision window; a
+forward patrol arriving ahead of the main body is the most useful shape, and
+whatever arrives, the answer is a chase, not a stand.
+
+**Live data touched:** `content/npcs/the_captive_drow.html` (new Session 3 dm-only
+block — the ~18-second monologue, the follow-up bank, the true hand, the coin,
+where he will and will not go; the old "could even leave with them" line marked
+superseded), `content/mysteries/what_the_drow_owes.html` (the coin answers the
+scroll question), `content/locations/ritual_platform.html` (circle is the altar,
+dais exit retired, fork replaces the rod). All three are `visibility: player`, so
+every word of this sits inside `dm-only` blocks; player-facing prose is unchanged.
+**Blocking Session 3:** Silas's prepared spell list (Tiny Hut / Rope Trick — the
+hide-and-evade branch cannot be balanced without it), a paragraph of terrain
+beyond the moat, and all of Route B.
+
+
 Mysteries wired in + session reveals fired (2026-08-24, live data). This
 campaign had no `mysteries.json` despite `type:"mystery"` being in the locked
 schema; created and added to `data/index.json`. **No code change was needed** —
