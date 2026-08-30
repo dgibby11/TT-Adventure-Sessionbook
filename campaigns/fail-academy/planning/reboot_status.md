@@ -41,18 +41,21 @@ site that ships needs somebody who can post the parcel. It saps him — once a d
 and he is worse company afterwards. He will likely press his spare supplies on
 Silas, which hands Silas **materials, not the knack**.
 
-**The soul coin — BEACON, not anchor, and Vrask wears it.** Nothing physically
-stops Vrenn crossing planes; the coin tells Vrask where its soul is, always, so
+**The Grave Token — BEACON, not anchor, and Vrask wears it.** A Grave Token is
+an **Abyssal** soul-binding invented for this campaign and is deliberately **not**
+an infernal soul coin — nothing in this campaign touches the Nine Hells, and it
+should never be written in a way that implies devils. Nothing physically stops
+Vrenn crossing planes; the Token tells Vrask where its soul is, always, so
 leaving is not futile for him so much as **lethal for whoever is standing next to
 him**. That is the reason he gives, and it is an argument about protecting *them*.
 So the party genuinely **can** talk him into coming, and it is a bad idea rather
 than a locked door; he resists as much as is reasonable, and intends to be at his
 workbench when Vrask arrives regardless. He will leave the *site* — to hide out or
-to walk east — but not the *plane*. **He sold the coin himself, and not for
+to walk east — but not the *plane*. **He sold his soul himself, and not for
 himself:** his sister was going to die at the hands of something in the
 Undermountain. **She is alive**, deliberately open-ended as a future thread;
 whether Vrenn knows is undecided. He does not tell this story and should not be
-made to. Two knock-ons: `history.bought_and_sold` stops being metaphor — the coin
+made to. Two knock-ons: `history.bought_and_sold` stops being metaphor — the Token
 changed hands and he went with it every time, so he was never a person being
 traded, he was a receipt — and **"why he never used the scroll" is now answered**,
 retiring the deliberately-dual reading in `what_the_drow_owes.html`. He is not too
@@ -86,9 +89,9 @@ forward patrol arriving ahead of the main body is the most useful shape, and
 whatever arrives, the answer is a chase, not a stand.
 
 **Live data touched:** `content/npcs/the_captive_drow.html` (new Session 3 dm-only
-block — the ~18-second monologue, the follow-up bank, the true hand, the coin,
+block — the ~18-second monologue, the follow-up bank, the true hand, the Grave Token,
 where he will and will not go; the old "could even leave with them" line marked
-superseded), `content/mysteries/what_the_drow_owes.html` (the coin answers the
+superseded), `content/mysteries/what_the_drow_owes.html` (the Token answers the
 scroll question), `content/locations/ritual_platform.html` (circle is the altar,
 dais exit retired, fork replaces the rod). All three are `visibility: player`, so
 every word of this sits inside `dm-only` blocks; player-facing prose is unchanged.
