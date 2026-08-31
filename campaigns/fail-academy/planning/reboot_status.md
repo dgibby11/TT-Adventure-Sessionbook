@@ -1,5 +1,84 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Session 3 Route B designed; the Bonehold, the landlord, and a name budget
+(2026-08-31, planning + live data). `planning/session3_draft.html` now has both
+routes end to end and is marked RUNNABLE.
+
+**The demon lord is a landlord, not a rung.** The DM flagged the hierarchy as
+"getting too heavy in middle management" — Vrenn > minor demon lord > Vrask >
+Harthoon > Orcus. The fix is that the demon lord is **lateral**: he holds the
+building, Vrask is billeted on him by Orcus's writ through Harthoon, and he
+cannot refuse. He is roughly Vrask's equal, slightly under, which is what makes
+it a humiliation rather than an arrangement. The chain stays **Vrenn → Vrask →
+Harthoon → Orcus**, and what the party can perceive this session is two rungs and
+one name. **He dislikes his tenant, and that is deliberately banked as a future
+diplomatic option** (DM, 2026-08-31) — he would be pleased if something
+inconvenient happened to Vrask, not enough to act, enough to look away. He is
+unnamed, does not appear, and needs nothing this session. Three things he buys
+free: the building's split personality on the map, why the glabrezu is *bound*
+rather than commanded, and why the thing behind the north gate is **his**
+insurance rather than Vrask's.
+
+**Route B, against the DM's own battle map.** ~75×130 ft, a 35–40 ft ritual
+circle centred, four braziers at its corners, stairs up at the south, barred gate
+under a skull crest at the north. Key design calls: **the braziers are the
+mechanism, not decoration**, so the circle has to be *started* rather than
+stepped onto — which makes Route B's climax a defence with a timer around an
+objective, **structurally the same shape as Route A's hold-the-platform hour**.
+Escalation comes **up the stairs behind them** (whatever they failed to deal with
+in the sneak sets the difficulty of the ending, unannounced). **The party can use
+the circle but not aim it**, same limitation as Vrenn's scroll, so **both routes
+land in Neverwinter Wood and only one arrival needs prepping** — this reverses an
+earlier note in the thread that argued Route B should land elsewhere; the
+consequence budget is better spent on the glabrezu. The SE crates hold **an empty
+unmarked crate matching the Provisions Annex one**, which is the Session 2
+load-bearing clue finally made available in a corner the map already drew.
+
+**The north gate is a loaded gun.** Behind it, a beast too dangerous even for
+this realm — an emergency measure, the landlord's, and pressure rather than an
+encounter. **It cannot leave the basement**, so releasing it does not add a
+monster, it makes the only exit unreachable, and that quietly tells the party
+what the circle is worth. It is **one of the screaming things from Session 2's
+arrival description**, caught and kept — free continuity on a line that was never
+paid off. The glabrezu **cannot** open it but will threaten to, a lie the party
+cannot check; and the party **can** open it themselves, which is a genuinely
+terrible option available at all times. **Do not stat it**; if it comes out the
+scene is a flight, not a fight (Nightwalker in the back pocket if a block is
+needed).
+
+**The guard: a planar bound glabrezu (CR 9), quarantined in its own block** so it
+swaps for a Boneclaw (CR 12) in one paragraph. The hook is that **the binding
+sigil is part of the same floor-work as the circle**, so lighting the braziers
+slackens the binding and the demon's escape is the party's escape — it is
+helpful, informative and charming, and its help is the trap, with the fight
+arriving at the end, on the circle, as they leave. **Balance fix that matters:
+Route B contains no long rest**, so the hour's walk is ruled a **short rest** —
+Hit Dice, Tito's Bardic back, Silas's Arcane Recovery, Tavian's Channel Divinity.
+Guntrah's Flash of Genius stays spent, because that is Route A's reward.
+
+**A quiet moral difference between the routes, which the party may not notice:**
+Route A takes Vrenn's one scroll and leaves him facing Vrask empty-handed. **Route
+B costs him nothing** — he has all night to make Vrask's scroll as normal. He
+states it once, flatly, without pleading: *"If you go to the house, I still have
+tomorrow's work to give him. If you take the scroll, I don't."*
+
+**NAME BUDGET — new standing block at the top of the draft, and worth applying to
+every future session.** The DM's flag: too many proper nouns will confuse the
+table, who have not heard of Corvin Ashworth and are still working out Thatch's
+role. Session 3 as drafted could have thrown a dozen new names in one sitting.
+Trimmed to four spoken: **Vrenn · Vrask · Neverwinter · Anselm Ferreck** (the last
+only if the contact list comes up). Explicitly **not** said: "the Bonehold" (a
+filing label only — Vrenn calls it *"the house"*), **"Grave Token"** (DM-side
+term; Vrenn now says *"He's got my soul. He wears it on his belt"*, updated on his
+live entity), **Thanatos** (deferred — this reverses the earlier "decide
+deliberately" flag), Harthoon, and the demon lord. **Voss's contact list is six
+more names and is the worst single overload risk: hand the prop over and do not
+read it aloud.** One inversion worth keeping: if anyone tries **Thatch** on the
+glabrezu, it has never heard of him either — a second independent source at the
+far end of the chain, which *rewards* the puzzle the party is already working
+rather than burying it.
+
+
 Silas's spell list received; Session 3 Route A designed end to end (2026-08-30,
 live data + planning). The character-sheet PDF arrived and resolved the biggest
 blocker on the file. **Silas has *Leomund's Tiny Hut*, and it is a ritual** — no
