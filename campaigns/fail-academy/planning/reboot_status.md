@@ -1,5 +1,45 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Vrenn character sheet received (2026-09-01, planning + live data). The DM built
+one “in case it is needed — not 100% accurate, will serve in a pinch.” It is
+more consequential than that. **Vrenn is a Drow Wizard 13, Order of Scribes**,
+INT 20, DC 18, HP 67, AC 11, **Arcana +15**, Calligrapher’s Supplies, darkvision
+120 ft, Trance, Alert, Lucky, passive Perception 18 — and **slots to 7th level
+with *plane shift* in his book**. Full breakdown in
+ → .
+
+**What it fixes.** The dawn scroll is now justified by the rules rather than by
+homebrew: scribing needs Arcana proficiency, the spell prepared, and components,
+and he has all three plus the scroll-making subclass. **The only house rule left
+is the compressed timeline**, which the “prepared vellum, sixty-three of the
+sixty-four days already spent” framing already covers. **“A true hand” is
+retired** — the invented knack was solving a problem Order of Scribes solves
+properly, and no replacement name should be invented, because naming a knack
+invites players to ask for its mechanics and now there are real ones.
+
+**Why Silas still has to be the caster, now airtight:** *plane shift* transports
+the caster. There is no version where Vrenn sends them and stays, and he cannot
+leave the plane while Vrok holds the Grave Token. If a player works out that
+Vrenn could cast it, that should land as *worse*, not as a loophole — he has had
+the power to leave this entire time.
+
+**Tactical warning logged:** a Wizard 13 walking with a level-10 party outclasses
+all four of them. Counterspell, haste, hold monster, summon fiend. Somebody will
+say “Vrenn, counterspell that.” He does not fight unless cornered; have the
+refusal ready as character rather than fiat, and lean on AC 11.
+
+**MAJOR CONFLICT, presented rather than resolved.** The sheet contradicts the
+locked  — that he has no spellcasting and
+is *deliberately kept just short* of enchantment so he stays dependent, described
+in the design as “the cruellest, quietest part of his captivity.” A Wizard 13 is
+not kept short of anything. Three options recorded in
+; **recommended is (2): the Grave Token does
+all the work and he is *checkmated* rather than incapable** — he has always had
+the power to leave and has never once been able to use it, which re-reads his
+cowering under the bench in Session 2 as resignation rather than helplessness.
+Not applied without a decision.
+
+
 **VRASK RENAMED TO VROK (2026-09-01, DM instruction, all docs and live data).**
 The DM placed where he had heard "Vrask" before, realised every player at the
 table had heard it too, and did not want the association. **137 occurrences
