@@ -86,6 +86,8 @@
     "reconciliation_options": [
       "SUPERSEDED 2026-09-01 by the DM's own reading, recorded in conflicts_with_locked_design. Kept for the record: (1) sheet is combat-only; (2) the Token does all the work and he is checkmated rather than incapable; (3) he hides his capability from Morvek. The adopted answer is closest to (2) but better, because it makes the incapacity a real past state that Morvek himself ended."
     ],
-    "open_question_for_the_DM": "CLOSED 2026-09-01. See conflicts_with_locked_design."
+    "open_question_for_the_DM": "CLOSED 2026-09-01. See conflicts_with_locked_design.",
+    "edition_note": "The supplied sheet was built on the 2024 PHB by mistake. The DM is running 2014 rules for the whole campaign and is rebuilding it (2026-09-02). Nothing in the design depends on the 2024 version: what matters is that he is an Order of Scribes wizard with Arcana expertise, Calligrapher's Supplies and plane shift in his book, all of which exist in 2014 (Order of Scribes is Tasha's). Re-check the feats when it is rebuilt - Alert and Lucky differ between editions, and Magic Initiate's 2014 version does not grant the free daily 1st-level casting.",
+    "exhaustion_note": "2014 exhaustion track campaign-wide. Level 1 is disadvantage on ability checks, which matters here because casting plane shift from the scroll is an ability check - an exhausted Silas rolls the escape at disadvantage. See session_3's 'The Heat' section."
   }
 }
