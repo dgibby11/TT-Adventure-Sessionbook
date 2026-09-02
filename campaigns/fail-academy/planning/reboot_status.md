@@ -15,15 +15,15 @@ and flaws are usable later.
 
 **Only two sentences actually needed changing**, which is less than the MAJOR
 flag implied:
--  ended “he has no spellcasting of his own” — flatly wrong
+- `history.the_knack` ended “he has no spellcasting of his own” — flatly wrong
   against a Wizard 13, now corrected. The priming remains a separate,
   non-magical knack; it is just not the whole of what he can do.
--  said his incomplete craft was **why** he could never
+- `table_use_reminders[2]` said his incomplete craft was **why** he could never
   escape — that reason is retired and replaced by the Grave Token, which was
   already carrying the weight.
 
 The tragedy is untouched and sharper: he has the means to leave, and every day
-he stays is now **a decision rather than an incapacity**. 's conflict
+he stays is now **a decision rather than an incapacity**. `stat_block`'s conflict
 and open-question fields are closed; the three reconciliation options are kept
 for the record, superseded.
 
