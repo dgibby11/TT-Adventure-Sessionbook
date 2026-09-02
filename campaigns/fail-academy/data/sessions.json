@@ -8,9 +8,47 @@
     "contentFile": "content/sessions/session_1.html",
     "visibility": "player",
     "startLocation": "main_complex",
-    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "torvald_thatch", "commander_orvyn", "oswald_crumb", "viola_gossamer", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "thornwick_consortium", "old_library", "high_forest", "academy_provisions", "osric_morne", "voss_notes_handout"],
-    "reveals": ["session_1", "witness", "standing_ovation", "quick_components_pouch", "ninth_thesis", "the_sabotage_pattern", "the_bulette_that_didnt_fit", "the_figure_at_the_treeline"],
-    "tags": ["session", "completed", "played", "parting-gifts", "ninth-thesis", "recruitment", "bulette", "graduation-hook"]
+    "related": [
+      "silas",
+      "guntrah",
+      "tito",
+      "tavian_stormnet",
+      "ellery_voss",
+      "torvald_thatch",
+      "commander_orvyn",
+      "oswald_crumb",
+      "viola_gossamer",
+      "witness",
+      "standing_ovation",
+      "quick_components_pouch",
+      "ninth_thesis",
+      "thornwick_consortium",
+      "old_library",
+      "high_forest",
+      "academy_provisions",
+      "osric_morne",
+      "voss_notes_handout"
+    ],
+    "reveals": [
+      "session_1",
+      "witness",
+      "standing_ovation",
+      "quick_components_pouch",
+      "ninth_thesis",
+      "the_sabotage_pattern",
+      "the_bulette_that_didnt_fit",
+      "the_figure_at_the_treeline"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "played",
+      "parting-gifts",
+      "ninth-thesis",
+      "recruitment",
+      "bulette",
+      "graduation-hook"
+    ]
   },
   {
     "id": "session_2",
@@ -21,9 +59,114 @@
     "contentFile": "content/sessions/session_2.html",
     "visibility": "dm-only",
     "startLocation": "founders_statue",
-    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "ellery_voss", "headmistress_dowe", "osric_morne", "torvald_thatch", "oswald_crumb", "commander_orvyn", "prof_bram_holdar", "prof_tavel", "archcleric_senna", "viola_gossamer", "bertram_hollis", "hask_undermoor", "silas_and_breena", "the_captive_drow", "hooved_demons", "ritual_platform", "torvald_package", "speaking_stone", "ollie", "ninth_thesis", "nyella_sarreth", "anselm_ferreck", "ledger", "huri_sibreldo", "lysandra_belaine", "emeric_vantt", "founders_statue", "academy_provisions", "session_1"],
-    "reveals": ["session_2", "bertram_hollis", "speaking_stone", "torvald_package", "ritual_platform", "hooved_demons", "the_captive_drow", "the_groundskeepers_package", "what_the_drow_owes"],
-    "tags": ["session", "completed", "played", "graduation", "ring-selection", "provisions", "planar", "abyss", "stranded", "cliffhanger"]
+    "related": [
+      "silas",
+      "guntrah",
+      "tito",
+      "tavian_stormnet",
+      "ellery_voss",
+      "headmistress_dowe",
+      "osric_morne",
+      "torvald_thatch",
+      "oswald_crumb",
+      "commander_orvyn",
+      "prof_bram_holdar",
+      "prof_tavel",
+      "archcleric_senna",
+      "viola_gossamer",
+      "bertram_hollis",
+      "hask_undermoor",
+      "silas_and_breena",
+      "the_captive_drow",
+      "hooved_demons",
+      "ritual_platform",
+      "torvald_package",
+      "speaking_stone",
+      "ollie",
+      "ninth_thesis",
+      "nyella_sarreth",
+      "anselm_ferreck",
+      "ledger",
+      "huri_sibreldo",
+      "lysandra_belaine",
+      "emeric_vantt",
+      "founders_statue",
+      "academy_provisions",
+      "session_1"
+    ],
+    "reveals": [
+      "session_2",
+      "bertram_hollis",
+      "speaking_stone",
+      "torvald_package",
+      "ritual_platform",
+      "hooved_demons",
+      "the_captive_drow",
+      "the_groundskeepers_package",
+      "what_the_drow_owes"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "played",
+      "graduation",
+      "ring-selection",
+      "provisions",
+      "planar",
+      "abyss",
+      "stranded",
+      "cliffhanger"
+    ]
+  },
+  {
+    "id": "session_3",
+    "name": "Session 3 — Before Dawn",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_3.html",
+    "visibility": "dm-only",
+    "startLocation": "ritual_platform",
+    "related": [
+      "silas",
+      "guntrah",
+      "tito",
+      "tavian_stormnet",
+      "the_captive_drow",
+      "ritual_platform",
+      "hooved_demons",
+      "ellery_voss",
+      "torvald_thatch",
+      "osric_morne",
+      "ninth_thesis",
+      "nyella_sarreth",
+      "anselm_ferreck",
+      "ledger",
+      "huri_sibreldo",
+      "lysandra_belaine",
+      "emeric_vantt",
+      "torvald_package",
+      "speaking_stone",
+      "ollie",
+      "what_the_drow_owes",
+      "the_groundskeepers_package",
+      "the_sabotage_pattern",
+      "session_2"
+    ],
+    "reveals": [
+      "session_3"
+    ],
+    "tags": [
+      "session",
+      "planning",
+      "unplayed",
+      "abyss",
+      "stranded",
+      "escape",
+      "vrenn",
+      "infiltration",
+      "cliffhanger-resolution"
+    ]
   },
   {
     "id": "one_shot_1",
@@ -33,8 +176,22 @@
     "contentType": "html",
     "contentFile": "content/sessions/one_shot_1.html",
     "visibility": "player",
-    "related": ["underground_storage", "bodak", "mimics", "magical_gauntlet", "lenny_goldvein"],
-    "tags": ["session", "completed", "underground", "combat", "bodak", "gauntlet", "archived"]
+    "related": [
+      "underground_storage",
+      "bodak",
+      "mimics",
+      "magical_gauntlet",
+      "lenny_goldvein"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "underground",
+      "combat",
+      "bodak",
+      "gauntlet",
+      "archived"
+    ]
   },
   {
     "id": "one_shot_2",
@@ -44,8 +201,19 @@
     "contentType": "html",
     "contentFile": "content/sessions/one_shot_2.html",
     "visibility": "player",
-    "related": ["founders_statue", "secret_society", "ninth_thesis"],
-    "tags": ["session", "completed", "founders-statue", "secret-society", "mystery", "archived"]
+    "related": [
+      "founders_statue",
+      "secret_society",
+      "ninth_thesis"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "founders-statue",
+      "secret-society",
+      "mystery",
+      "archived"
+    ]
   },
   {
     "id": "one_shot_3",
@@ -55,8 +223,22 @@
     "contentType": "html",
     "contentFile": "content/sessions/one_shot_3.html",
     "visibility": "player",
-    "related": ["fail_chamber", "jungle_site", "sunken_fang_spear", "dinosaurs", "ellery_voss"],
-    "tags": ["session", "completed", "fail-chamber", "jungle", "dinosaurs", "teleportation", "archived"]
+    "related": [
+      "fail_chamber",
+      "jungle_site",
+      "sunken_fang_spear",
+      "dinosaurs",
+      "ellery_voss"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "fail-chamber",
+      "jungle",
+      "dinosaurs",
+      "teleportation",
+      "archived"
+    ]
   },
   {
     "id": "one_shot_4",
@@ -66,8 +248,21 @@
     "contentType": "html",
     "contentFile": "content/sessions/one_shot_4.html",
     "visibility": "player",
-    "related": ["owlbear_cave", "kass", "rangers", "the_upperclassmen"],
-    "tags": ["session", "completed", "owlbear", "prank", "upperclassmen", "intervention", "archived"]
+    "related": [
+      "owlbear_cave",
+      "kass",
+      "rangers",
+      "the_upperclassmen"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "owlbear",
+      "prank",
+      "upperclassmen",
+      "intervention",
+      "archived"
+    ]
   },
   {
     "id": "one_shot_5",
@@ -78,7 +273,31 @@
     "contentFile": "content/sessions/one_shot_5.html",
     "visibility": "player",
     "startLocation": "main_complex",
-    "related": ["nether_mountains", "oswald_crumb", "ellery_voss", "thornwick_consortium", "orc_warband", "river_rauvin", "expedition_club", "earth_elemental", "dust_mephit", "mud_mephit", "academy_provisions", "boots_of_elvenkind", "shield_of_missile_attraction", "osric_morne"],
-    "tags": ["session", "completed", "mountains", "crumb", "elemental", "thornwick", "expedition", "archived"]
+    "related": [
+      "nether_mountains",
+      "oswald_crumb",
+      "ellery_voss",
+      "thornwick_consortium",
+      "orc_warband",
+      "river_rauvin",
+      "expedition_club",
+      "earth_elemental",
+      "dust_mephit",
+      "mud_mephit",
+      "academy_provisions",
+      "boots_of_elvenkind",
+      "shield_of_missile_attraction",
+      "osric_morne"
+    ],
+    "tags": [
+      "session",
+      "completed",
+      "mountains",
+      "crumb",
+      "elemental",
+      "thornwick",
+      "expedition",
+      "archived"
+    ]
   }
 ]
