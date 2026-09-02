@@ -6,7 +6,7 @@ more consequential than that. **Vrenn is a Drow Wizard 13, Order of Scribes**,
 INT 20, DC 18, HP 67, AC 11, **Arcana +15**, Calligrapher’s Supplies, darkvision
 120 ft, Trance, Alert, Lucky, passive Perception 18 — and **slots to 7th level
 with *plane shift* in his book**. Full breakdown in
- → .
+`vrenn_the_captive.json` → `stat_block`.
 
 **What it fixes.** The dawn scroll is now justified by the rules rather than by
 homebrew: scribing needs Arcana proficiency, the spell prepared, and components,
@@ -29,11 +29,11 @@ say “Vrenn, counterspell that.” He does not fight unless cornered; have the
 refusal ready as character rather than fiat, and lean on AC 11.
 
 **MAJOR CONFLICT, presented rather than resolved.** The sheet contradicts the
-locked  — that he has no spellcasting and
+locked `history.why_he_never_finishes_the_job` — that he has no spellcasting and
 is *deliberately kept just short* of enchantment so he stays dependent, described
 in the design as “the cruellest, quietest part of his captivity.” A Wizard 13 is
 not kept short of anything. Three options recorded in
-; **recommended is (2): the Grave Token does
+`stat_block.reconciliation_options`; **recommended is (2): the Grave Token does
 all the work and he is *checkmated* rather than incapable** — he has always had
 the power to leave and has never once been able to use it, which re-reads his
 cowering under the bench in Session 2 as resignation rather than helplessness.
