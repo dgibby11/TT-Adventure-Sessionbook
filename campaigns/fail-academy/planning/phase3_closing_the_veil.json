@@ -4,7 +4,6 @@
   "name": "Closing the Veil",
   "goal": "The party stops the former student from gaining enough power to return and rip the veil open.",
   "status": "Engine confirmed (2026-08-02) — Corvin's plan, Harthoon's identity, and the veil's true location are locked. Scene-level session content is intentionally loose beyond Session 5 — see session_plan.json's loose_sequence_post_session_5 for the current shape.",
-
   "details": {
     "corvins_pitch_to_thornwick": {
       "decision": "CONFIRMED (2026-08-02) — Corvin isn't selling the reluctant inner circle a standalone scheme. He's buying into Thornwick's larger, ongoing effort to bring Orcus through to the material plane somewhere — the Academy's veil is just the specific opportunity he's pitching as their best current shot.",
@@ -12,39 +11,33 @@
       "the_hedge": "If Corvin's approach fails, Thornwick has other plans/targets in motion elsewhere. This is existential for the party and the Academy, but not existential for Thornwick as an organization — keeps them appropriately dangerous without needing to be a monolithic all-in threat.",
       "implication_for_thornwick_leadership": "Consistent with keeping the inner circle faceless (see thornwick_inner_circle_and_the_sanctum below) — they're a means to Corvin's specific plan, not individually plot-critical."
     },
-
     "the_spirit_harthoon": {
-      "name": "Harthoon — CONFIRMED (2026-08-02). NOTE (2026-08-14): the name 'Vrask' was originally an early-draft placeholder for Harthoon himself before this entry got confirmed, but has since been repurposed (vrenn_the_captive.json) as a distinct, separate character — a lesser lich one tier below Harthoon, subordinate to him. Don't read 'Vrask' elsewhere in this campaign's docs as just an old synonym for Harthoon; as of 2026-08-14 they're two different entities.",
+      "name": "Harthoon - CONFIRMED (2026-08-02). NOTE (2026-08-14, updated 2026-09-01): an early-draft placeholder name for Harthoon himself was later repurposed as a distinct, separate character - a lesser lich one tier below Harthoon, subordinate to him. That character is now named VROK. HISTORICAL DETAIL, preserved deliberately because a blanket rename would falsify it: both the placeholder and the repurposed character were originally called 'Vrask'. That name was retired on 2026-09-01 at the DM's instruction - see reboot_status.md - because the players had all heard it elsewhere and the association was unwanted. It had never been spoken at the table, so nothing needed retconning. Don't read 'Vrok' anywhere in this campaign's docs as an old synonym for Harthoon; they are two different entities.",
       "canon_source": "Real D&D lore (Fiendish Codex I / Book of Vile Darkness): a lich sorcerer who serves as Orcus's vizier, chief diplomat, and castellan — 'a capable administrator who moonlights as a master embalmer.' Known for preserving corpses on metal slabs as sleeper agents, animated later to blend in as spies in mortal kingdoms. Also on record (Forgotten Realms lore) as one of Orcus's lieutenants in the Zhentil Keep assault, alongside Quah-Nomag the Skull-King and the vampire lord Kauvra.",
       "why_it_fits": "Harthoon's signature MO — planting an unremarkable, overlooked asset as a long-term sleeper agent — mirrors Corvin's own established background_flavor (phase2_the_one_who_got_away.json's former_student.background_flavor: no pedigree, deliberately quiet, middling at everything, easy to overlook). Corvin isn't just a random vessel; he's exactly the kind of asset Harthoon's whole career is built around finding.",
-      "open_flag": "NOT YET CONFIRMED, and back to fully open (2026-08-14) — a same-day proposal to resolve this by anchoring the genuine Harthoon to session2_draft.html's Thanatos altar was floated and then reverted by the DM: that site now belongs to Vrask, a separate subordinate lich, with Harthoon explicitly uninvolved at that level. So the underlying question is untouched by session2_draft.html's content: whether what possesses Corvin is the genuine, undiminished Harthoon, or a bound fragment/aspect of his essence sent through the thinning veil as a pilot/probe (still the recommended default, since canon Harthoon is an extremely heavy-hitting lich-vizier and a fragment keeps the final fight scoped to Corvin's level while still being meaningfully 'him'). DM's call, revisit before the final showdown needs stats. Vrask's own supply chain (see vrenn_the_captive.json) does still connect to Harthoon's broader network one level up, if a future thread ever wants to draw that line explicitly."
+      "open_flag": "NOT YET CONFIRMED, and back to fully open (2026-08-14) — a same-day proposal to resolve this by anchoring the genuine Harthoon to session2_draft.html's Thanatos altar was floated and then reverted by the DM: that site now belongs to Vrok, a separate subordinate lich, with Harthoon explicitly uninvolved at that level. So the underlying question is untouched by session2_draft.html's content: whether what possesses Corvin is the genuine, undiminished Harthoon, or a bound fragment/aspect of his essence sent through the thinning veil as a pilot/probe (still the recommended default, since canon Harthoon is an extremely heavy-hitting lich-vizier and a fragment keeps the final fight scoped to Corvin's level while still being meaningfully 'him'). DM's call, revisit before the final showdown needs stats. Vrok's own supply chain (see vrenn_the_captive.json) does still connect to Harthoon's broader network one level up, if a future thread ever wants to draw that line explicitly."
     },
-
     "veil_location": {
       "decision": "CONFIRMED (2026-08-02) — NOT the Eastern Wing (superseded; see the_dwarven_ruins.json's updated relationship_to_eastern_wing note). The veil sits beneath the Academy, in the Underdark, reached via long-forgotten passages that have since been sealed/covered up.",
       "who_knows": "CONFIRMED — only Torvald Thatch knows the passages exist, from decades of grounds-keeping. Dr. Ellery Voss, despite running the entire Ninth Thesis investigation, has NO knowledge of them — she can identify Corvin and the Thornwick connection, but Torvald is the only one who can actually get the party down there. This makes Torvald's Phase 2/3 arc doubly load-bearing: he's both the corrupted insider AND the sole living key to the endgame's geography. See torvald_the_insider.json's added note.",
       "connection_to_the_dwarven_ruins": "Proposed and accepted (2026-08-01) — the sealed campus passages plausibly connect to the same underdark network the dwarven ruins sit in (dwarven cities are naturally underdark-adjacent), giving one continuous underground geography instead of two unrelated threads. See the_dwarven_ruins.json.",
       "connection_to_occult_systems": "Proposed and accepted (2026-08-01) — the sealed passage entrance plausibly sits at/near the existing Restricted Floor / Underground Storage locations, reframing occult_systems.html's 'sealed horrors' ritual-space lore as the founders' old containment work around the entrance, not villainy. Not yet executed against live data; see founders_persona_audit.json's updated conflict_2 note."
     },
-
     "the_sanctum": {
       "location": "North of Mirabar, in the Spine of the World — see session_plan.json's geography section for the full route/map context.",
       "clarification": "Not a Thornwick corporate headquarters (that 'no known headquarters' detail stays true) — this is the cult inner circle's own private meeting/ritual site.",
       "role_in_the_story": "Where Phase 2 closes: the party locates Corvin here, but per session_plan.json's loose_sequence_post_session_5 shape, first contact likely ends in his escape or an accelerated timeline rather than a clean resolution — driving the race back to the Academy that opens Phase 3 proper."
     },
-
     "thornwick_inner_circle_and_the_sanctum": {
       "decision": "CONFIRMED (2026-08-02) — kept faceless. The party never meets named Thornwick/cult leadership, only Corvin himself and hired muscle, including at the Sanctum. Composition is TBD/internal-only if the DM ever wants it for flavor, but it's not required for play.",
       "supersedes": "phase2_the_one_who_got_away.json's open_questions.thornwick_inner_circle."
     },
-
     "the_underdark_descent": {
       "status": "CONFIRMED (2026-08-02) as wanted content — the DM specifically wants meaningful time spent fighting through the Underdark before the Harthoon showdown, not a straight walk to the veil.",
       "placement": "Definitely after Session 5; exact session TBD, intentionally left loose — see session_plan.json's loose_sequence_post_session_5.",
       "content_TBD": "Encounter design, whether native Underdark factions/monsters are involved, and whether the dwarven ruins get used as part of this leg are all open."
     }
   },
-
   "open_questions": {
     "harthoon_fragment_or_whole": "See details.the_spirit_harthoon.open_flag above.",
     "sanctum_inner_circle_composition": "Not required (kept faceless to players) but open if the DM wants internal reference.",
