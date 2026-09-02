@@ -1,5 +1,33 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+Vrenn/Wizard-13 conflict RESOLVED (2026-09-01, DM's reading, live data +
+planning). The character sheet appeared to contradict the locked “kept just
+short of the final step so he stays dependent” line. The DM's answer dissolves
+it: **Vrenn learned *plane shift* recently**, because Morvek needed a
+scroll-maker on site. He used it to make the scroll the party wasted in Session
+2, and was part-way through a second one to Morvek's order when they arrived.
+
+So the locked line **was true and recently stopped being true** — a state that
+ended, not a fact to delete. That keeps all the authored history and adds
+something better: **Morvek handed a captive the means to leave because he was
+certain the Grave Token made it irrelevant.** That is arrogance, it is a flaw,
+and flaws are usable later.
+
+**Only two sentences actually needed changing**, which is less than the MAJOR
+flag implied:
+-  ended “he has no spellcasting of his own” — flatly wrong
+  against a Wizard 13, now corrected. The priming remains a separate,
+  non-magical knack; it is just not the whole of what he can do.
+-  said his incomplete craft was **why** he could never
+  escape — that reason is retired and replaced by the Grave Token, which was
+  already carrying the weight.
+
+The tragedy is untouched and sharper: he has the means to leave, and every day
+he stays is now **a decision rather than an incapacity**. 's conflict
+and open-question fields are closed; the three reconciliation options are kept
+for the record, superseded.
+
+
 **RENAMED AGAIN, AND SETTLED: VROK → MORVEK (2026-09-01, DM's choice).** The
 first rename swapped Vrask out for an unwanted outside association; the
 replacement was then flagged here as trading it for a worse in-game one, since
