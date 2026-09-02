@@ -89,7 +89,7 @@ and the four PCs in `content/players/`.
 - **Player-facing prose must stay clean.** The pattern this campaign uses is
   `visibility: "player"` on the entity with secrets in `<div class="dm-only">`
   blocks inside the file. Names that must never appear outside a dm-only block:
-  Thanatos, Orcus, Vrok, Harthoon, "armanite", Vrenn, Corvin, Thornwick,
+  Thanatos, Orcus, Morvek, Harthoon, "armanite", Vrenn, Corvin, Thornwick,
   Nerissa Voss, Wren Halloway, and Neverwinter Wood as a destination.
 
 ## When you're done reading, give me

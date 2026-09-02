@@ -1,5 +1,37 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+**RENAMED AGAIN, AND SETTLED: VROK → MORVEK (2026-09-01, DM's choice).** The
+first rename swapped Vrask out for an unwanted outside association; the
+replacement was then flagged here as trading it for a worse in-game one, since
+**Vrok is a near-homophone of *vrock***, the Abyssal vulture demon — which is not
+hypothetical, as vrocks already appear in two other campaigns in this repo and in
+`shared/data/monsters-*.json`, and were on the table as possible Bonehold door
+guards. The DM took the flag and picked **Morvek** from a shortlist. **152
+occurrences across the same 11 files**, verified clean.
+
+**Morvek is the settled name.** It resolves both problems at once: no outside
+association, and no collision with *vrock* or with **Vrenn** — different initial
+consonant, different vowel, different syllable count, which retires the Vr-/Vr-
+merge hazard entirely. Zero player-facing cost either time: **none of the three
+names has ever been spoken at the table**, which `session_2.html` records
+explicitly.
+
+**Three places were hand-edited rather than blanket-replaced**, because a
+find-and-replace would have made each of them state something false:
+
+- `phase3_closing_the_veil.json` → `details.the_spirit_harthoon.name` now carries
+  the full chain (early-draft placeholder for Harthoon → repurposed → Vrask →
+  Vrok → Morvek) with the reason for each step.
+- `transcript_glossary.md`'s three name-hazard rows are collapsed into two
+  accurate ones: the rename history with the old spellings preserved so a future
+  transcript pass recognises them, and a Morvek-vs-Vrenn row noting the merge
+  risk is now resolved rather than live. Expect STT to render Morvek as
+  "Morvec / Marvek / more vek".
+- The earlier "VRASK RENAMED TO VROK" entry below would have been rewritten into
+  a claim it never made. It now reads as the record of the first pass and points
+  forward to this one, and its vrock hazard is marked retired.
+
+
 Vrenn character sheet received (2026-09-01, planning + live data). The DM built
 one “in case it is needed — not 100% accurate, will serve in a pinch.” It is
 more consequential than that. **Vrenn is a Drow Wizard 13, Order of Scribes**,
@@ -19,7 +51,7 @@ invites players to ask for its mechanics and now there are real ones.
 
 **Why Silas still has to be the caster, now airtight:** *plane shift* transports
 the caster. There is no version where Vrenn sends them and stays, and he cannot
-leave the plane while Vrok holds the Grave Token. If a player works out that
+leave the plane while Morvek holds the Grave Token. If a player works out that
 Vrenn could cast it, that should land as *worse*, not as a loophole — he has had
 the power to leave this entire time.
 
@@ -40,7 +72,7 @@ cowering under the bench in Session 2 as resignation rather than helplessness.
 Not applied without a decision.
 
 
-**VRASK RENAMED TO VROK (2026-09-01, DM instruction, all docs and live data).**
+**VRASK RENAMED (2026-09-01, DM instruction, all docs and live data).** First to **Vrok**, and then, later the same day, to **MORVEK** — see the entry above for the second pass and why it happened. This entry records the first.
 The DM placed where he had heard "Vrask" before, realised every player at the
 table had heard it too, and did not want the association. **137 occurrences
 across 11 files** — `ritual_platform.html`, `what_the_drow_owes.html`,
@@ -53,7 +85,7 @@ clean afterwards.
 was one of the five intended Session 2 takeaways that did not land, and
 `session_2.html` records that "the name has still never been spoken in this
 campaign." So this is a pure documentation rename with no player-facing
-continuity cost. Any pre-2026-09-01 doc using "Vrask" means Vrok.
+continuity cost. Any pre-2026-09-01 doc using "Vrask" means Morvek.
 
 **Two places were deliberately NOT blanket-renamed**, because a global
 find-and-replace would have made them state something false:
@@ -61,22 +93,22 @@ find-and-replace would have made them state something false:
 - `phase3_closing_the_veil.json` → `details.the_spirit_harthoon.name` records
   that the character's name began life as an early-draft placeholder for
   Harthoon himself before being repurposed. That history is about the string
-  "Vrask" specifically, so the entry now names Vrok as the character, preserves
+  "Vrask" specifically, so the entry now names Morvek as the character, preserves
   "Vrask" as the historical placeholder, and logs why it changed.
 - `transcript_glossary.md`'s name-hazard row keeps the old spelling so a future
   transcript pass can recognise it.
 
 **Two new name hazards logged in the glossary**, both worth watching:
 
-- **Vrok vs. vrock.** Near-homophones, and vrocks are Abyssal demons who could
+- **Morvek vs. vrock.** Near-homophones, and vrocks are Abyssal demons who could
   plausibly appear in exactly these scenes — the repo already has vrocks in two
   other campaigns and in `shared/data/monsters-*.json`. **Do not put a vrock
-  anywhere near Vrok**; reflavour or rename if a vulture demon is ever wanted.
-  Flagged for the DM: the new name trades one outside association for a
-  different in-game collision, and it is his call whether that is a better
-  trade.
-- **Vrok vs. Vrenn.** Both start Vr-, both belong to the same scene, and STT
-  will merge them. The captive drow is Vrenn; the lich who owns him is Vrok.
+  anywhere near it**; reflavour or rename if a vulture demon is ever wanted.
+  Flagged for the DM at the time: the new name traded one outside association
+  for a different in-game collision. **He took the flag and renamed again the
+  same day** — the settled name is Morvek, and this hazard is retired.
+- **Morvek vs. Vrenn.** Both start Vr-, both belong to the same scene, and STT
+  will merge them. The captive drow is Vrenn; the lich who owns him is Morvek.
 
 
 Session 3 Route B designed; the Bonehold, the landlord, and a name budget
@@ -84,19 +116,19 @@ Session 3 Route B designed; the Bonehold, the landlord, and a name budget
 routes end to end and is marked RUNNABLE.
 
 **The demon lord is a landlord, not a rung.** The DM flagged the hierarchy as
-"getting too heavy in middle management" — Vrenn > minor demon lord > Vrok >
+"getting too heavy in middle management" — Vrenn > minor demon lord > Morvek >
 Harthoon > Orcus. The fix is that the demon lord is **lateral**: he holds the
-building, Vrok is billeted on him by Orcus's writ through Harthoon, and he
-cannot refuse. He is roughly Vrok's equal, slightly under, which is what makes
-it a humiliation rather than an arrangement. The chain stays **Vrenn → Vrok →
+building, Morvek is billeted on him by Orcus's writ through Harthoon, and he
+cannot refuse. He is roughly Morvek's equal, slightly under, which is what makes
+it a humiliation rather than an arrangement. The chain stays **Vrenn → Morvek →
 Harthoon → Orcus**, and what the party can perceive this session is two rungs and
 one name. **He dislikes his tenant, and that is deliberately banked as a future
 diplomatic option** (DM, 2026-08-31) — he would be pleased if something
-inconvenient happened to Vrok, not enough to act, enough to look away. He is
+inconvenient happened to Morvek, not enough to act, enough to look away. He is
 unnamed, does not appear, and needs nothing this session. Three things he buys
 free: the building's split personality on the map, why the glabrezu is *bound*
 rather than commanded, and why the thing behind the north gate is **his**
-insurance rather than Vrok's.
+insurance rather than Morvek's.
 
 **Route B, against the DM's own battle map.** ~75×130 ft, a 35–40 ft ritual
 circle centred, four braziers at its corners, stairs up at the south, barred gate
@@ -136,8 +168,8 @@ Hit Dice, Tito's Bardic back, Silas's Arcane Recovery, Tavian's Channel Divinity
 Guntrah's Flash of Genius stays spent, because that is Route A's reward.
 
 **A quiet moral difference between the routes, which the party may not notice:**
-Route A takes Vrenn's one scroll and leaves him facing Vrok empty-handed. **Route
-B costs him nothing** — he has all night to make Vrok's scroll as normal. He
+Route A takes Vrenn's one scroll and leaves him facing Morvek empty-handed. **Route
+B costs him nothing** — he has all night to make Morvek's scroll as normal. He
 states it once, flatly, without pleading: *"If you go to the house, I still have
 tomorrow's work to give him. If you take the scroll, I don't."*
 
@@ -145,7 +177,7 @@ tomorrow's work to give him. If you take the scroll, I don't."*
 every future session.** The DM's flag: too many proper nouns will confuse the
 table, who have not heard of Corvin Ashworth and are still working out Thatch's
 role. Session 3 as drafted could have thrown a dozen new names in one sitting.
-Trimmed to four spoken: **Vrenn · Vrok · Neverwinter · Anselm Ferreck** (the last
+Trimmed to four spoken: **Vrenn · Morvek · Neverwinter · Anselm Ferreck** (the last
 only if the contact list comes up). Explicitly **not** said: "the Bonehold" (a
 filing label only — Vrenn calls it *"the house"*), **"Grave Token"** (DM-side
 term; Vrenn now says *"He's got my soul. He wears it on his belt"*, updated on his
@@ -235,12 +267,12 @@ DM's instruction.
 the central dais, forced open under an Arcana check, set to a "delivery lane")
 is **retired in part** — preserved intact in `session_2.html`'s Carried Forward
 block, and superseded on the live entities. The runic circle the party can see is
-now **the altar and the receiving end** — how Vrok reaches in, how finished goods
+now **the altar and the receiving end** — how Morvek reaches in, how finished goods
 are collected. It does not fire on demand and it was never Vrenn's to work:
 *"That's not for going. That's for him."* Note the circle itself **stays** — it is
 on the Session 2 recording and in the player-facing prose; it simply is not an
 exit. What replaces it: Vrenn transcribes a fresh *plane shift* scroll at dawn,
-about an hour's work, **one scroll only, and Vrok comes for it.**
+about an hour's work, **one scroll only, and Morvek comes for it.**
 
 **The tuning fork is the *plane shift* material component** — the spell's own text
 calls it "a forked, metal rod... attuned to a particular plane of existence," so
@@ -250,7 +282,7 @@ operation's capital value — which is where the scroll's 25,000 gp actually sit
 so nothing has to evaporate per scroll (vellum and inks are the consumables).
 Consequence the DM should not signpost: **the fork leaves with whoever is holding
 it**, making that a real choice at the moment of exit — proof and a future asset,
-against the one object standing between Vrenn and Vrok's temper. It is still not
+against the one object standing between Vrenn and Morvek's temper. It is still not
 a hatch: *plane shift* is 7th level, the party's ceiling is 5th.
 
 **"A true hand" (name provisional).** Vrenn finishes a 7th-level scroll without
@@ -259,22 +291,22 @@ and the fork he reproduces an existing scroll's text exactly, and the copy works
 No slot, no spellcasting, no comprehension. It is the same faculty as his priming
 pointed at ink instead of metal — **exactness without comprehension**, which is
 specifically *not* enchantment, so the locked cruelty in `vrenn_the_captive.json`
-survives narrowed rather than overwritten: Vrok still keeps him short of the
+survives narrowed rather than overwritten: Morvek still keeps him short of the
 final step on everything that matters, and tolerates this one exception because a
 site that ships needs somebody who can post the parcel. It saps him — once a day,
 and he is worse company afterwards. He will likely press his spare supplies on
 Silas, which hands Silas **materials, not the knack**.
 
-**The Grave Token — BEACON, not anchor, and Vrok wears it.** A Grave Token is
+**The Grave Token — BEACON, not anchor, and Morvek wears it.** A Grave Token is
 an **Abyssal** soul-binding invented for this campaign and is deliberately **not**
 an infernal soul coin — nothing in this campaign touches the Nine Hells, and it
 should never be written in a way that implies devils. Nothing physically stops
-Vrenn crossing planes; the Token tells Vrok where its soul is, always, so
+Vrenn crossing planes; the Token tells Morvek where its soul is, always, so
 leaving is not futile for him so much as **lethal for whoever is standing next to
 him**. That is the reason he gives, and it is an argument about protecting *them*.
 So the party genuinely **can** talk him into coming, and it is a bad idea rather
 than a locked door; he resists as much as is reasonable, and intends to be at his
-workbench when Vrok arrives regardless. He will leave the *site* — to hide out or
+workbench when Morvek arrives regardless. He will leave the *site* — to hide out or
 to walk east — but not the *plane*. **He sold his soul himself, and not for
 himself:** his sister was going to die at the hands of something in the
 Undermountain. **She is alive**, deliberately open-ended as a future thread;
@@ -284,7 +316,7 @@ changed hands and he went with it every time, so he was never a person being
 traded, he was a receipt — and **"why he never used the scroll" is now answered**,
 retiring the deliberately-dual reading in `what_the_drow_owes.html`. He is not too
 broken to act. He is leashed. That also re-aims the Session 2 handoff: he did not
-give away his one chance, he gave away **Vrok's property the day before Vrok
+give away his one chance, he gave away **Morvek's property the day before Morvek
 came to collect it**, which is braver rather than smaller.
 
 **The destination "oopsie."** Vrenn can make the scroll and cannot aim it — he
@@ -293,7 +325,7 @@ is **"Neverwinter."** Which is a region as well as a city. They name Neverwinter
 they arrive in **Neverwinter Wood**. Nobody at the table is told this was an error.
 This preserves the locked landing, the Thundertree seed and Session 4's
 four-direction fork, and delivers all of it through a person instead of an
-inspection roll nobody made. Background, no urgency: **Vrok personally casts
+inspection roll nobody made. Background, no urgency: **Morvek personally casts
 *plane shift* for the FAIL Academy consignments** — that end of the lane is his.
 
 **The dawn casting, and the real dial.** Silas is the only one who can do it —
@@ -375,7 +407,7 @@ sits inside the file. New: `hooved_demons` (the party has no name for armanites
 — the DM declined to give one at the table, so the entity is named from their
 perception and the stat block/CR/D&D Beyond link are dm-only), `ritual_platform`
 (player-facing description says only "somewhere in **the Abyss**" per DM ruling
-that the lava moat and idol-busts were enough; Thanatos, Orcus, Vrok, the
+that the lava moat and idol-busts were enough; Thanatos, Orcus, Morvek, the
 forked rod and the Neverwinter Wood delivery lane are all dm-only),
 `the_captive_drow` (**Vrenn's name is dm-only** — he never introduced himself
 and is expected to in Session 3), `silas_and_breena` (one entity, not two —
@@ -476,11 +508,11 @@ of Augury**, so the Savras/Senna thread is entirely unspent.
 **Four of the five intended takeaways did not land.** The party arrived, was
 charged within seconds, and left the moment the fight ended — nobody examined
 the workbench, the altar, the tools, or the matching crate. They do not know the
-artifacts are made there, do not know it is the Abyss, have never heard "Vrok",
+artifacts are made there, do not know it is the Abyss, have never heard "Morvek",
 and got no sense of increasing traffic. This is recoverable rather than lost:
 they are still standing on top of every one of those clues. Nothing leaked in
 the other direction either — Vrenn was never named (he simply never introduced
-himself), and Vrok, Harthoon, Orcus, Thanatos and "armanite" were never spoken.
+himself), and Morvek, Harthoon, Orcus, Thanatos and "armanite" were never spoken.
 **Torvald's name entered the scene from a player's mouth** (Tito tried "Thatch
 sent us") and the drow's honest "I don't know who that is" gave nothing back.
 
@@ -712,14 +744,14 @@ any live data for this campaign:
   sold multiple times before ending up here, and his craft (primes raw
   material for enchantment but never performs the enchantment itself,
   deliberately kept just short of that final step so he stays dependent).
-  His master is **Vrok**, a lesser lich subordinate to Harthoon (Orcus's
+  His master is **Morvek**, a lesser lich subordinate to Harthoon (Orcus's
   already-confirmed lich-vizier from phase3_closing_the_veil.json) — an
   initial same-day proposal to make the site belong to the genuine Harthoon
   directly was floated and then reverted; Harthoon is explicitly one tier
-  up and not involved at this level. 'Vrok' was previously an abandoned
+  up and not involved at this level. 'Morvek' was previously an abandoned
   early-draft placeholder name for Harthoon himself — it's now repurposed as
   this distinct, separate character, and phase3_closing_the_veil.json has
-  been updated to flag the reuse. Hard constraint either way: neither Vrok
+  been updated to flag the reuse. Hard constraint either way: neither Morvek
   nor Harthoon appears in person in session2_draft.html's scene.
 - `session_plan.json` — NEW (2026-08-02). The master session-by-session
   tracker for the whole campaign: the 10-sessions-per-phase pacing target,
