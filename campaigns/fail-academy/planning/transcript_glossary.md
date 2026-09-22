@@ -3,13 +3,15 @@
 Speech-to-text correction reference for reconciling recorded session transcripts
 against live campaign data. Built during the **Session 2 ("Commencement",
 played 2026-08-20)** reconciliation pass on 2026-08-23, and agreed with the DM
-line by line before anything was written to live data.
+line by line before anything was written to live data. **Extended by the Session 3
+("Before Dawn") pass on 2026-09-03** — see §6.
 
 Reuse this for every future transcript pass. Add to it rather than rewriting it —
 each session's recording tends to mangle the same names the same way.
 
 **Transcripts on file:** `planning/session_1_transcript.txt` (Session 1, played
-2026-08-09) · `planning/session_2_transcript.txt` (Session 2, played 2026-08-20).
+2026-08-09) · `planning/session_2_transcript.txt` (Session 2, played 2026-08-20)
+· `planning/session_3_transcript.txt` (Session 3, played 2026-09-02).
 
 **Standing rules for any transcript pass (DM's, carried forward):**
 
@@ -71,7 +73,7 @@ lightning lance.
 | | |
 |---|---|
 | **Silas** | Both a **PC** (half-orc wizard) *and* the name of **Guntrah's adoptive gnome father**. `guntrah.html` has had this since Session 0. The Session 2 transcript's worst confusion zone is the graduation scene with Guntrah's parents, where DM-as-Silas-the-father, player-Silas, and a `Silas:` speaker label are all live at once. Guntrah calls the PC **"Sil"** specifically to avoid using his father's name — established at the table 2026-08-20. |
-| **Vrenn** (captive drow) vs. **Wren Halloway** | Renders as "wren / Bren / friend". **Never merge them.** Wren Halloway is the founding-era student whose suppressed thesis the Ninth Thesis is built on. Neither name appeared in the Session 2 transcript. |
+| **Vrenn** (captive drow) vs. **Wren Halloway** | **NOW LIVE AND SEVERE.** Vrenn was spoken aloud constantly in Session 3 and the recording renders him as **Vren / Wren / Wrenn / Bren / Brenn / Brenna / Brennan / Brian / Dren / Renz / Run** — at least eleven spellings, several of them in the same paragraph. Correct every one of them to **Vrenn**. **Never merge him with Wren Halloway**, the founding-era student whose suppressed thesis the Ninth Thesis is built on; Halloway did not appear in Session 3 and any "Wren" in that transcript is the drow. |
 | **Ledger** (Ninth Thesis operative, Mirabar) vs. actual ledgers | Osric Morne keeps real ledgers. Disambiguate every instance. *Did not arise in Session 2* — the transcript uses "audits", "his books", "a logbook", and never the bare word. |
 | **Morvek** (lesser lich, runs the Thanatos site) vs. **Harthoon** (Orcus's vizier, one tier up) | **RENAMED TWICE on 2026-09-01, and MORVEK is settled.** Originally **Vrask** — retired because the old name carried an outside association every player at the table recognised. Briefly **Vrok** — retired the same day because it is a near-homophone of *vrock*, the Abyssal vulture demon, which could plausibly turn up in these very scenes. **None of the three was ever spoken in play**, so nothing needed retconning; any older doc using Vrask or Vrok means Morvek. Expect STT to render Morvek as "Morvec / Marvek / more vek". **Harthoon must not appear at all** — if he does, it is an error. Neither appeared in Session 2. |
 | **Morvek** vs. **Vrenn** | Both belong to the same scene, so keep them straight: the captive drow is **Vrenn**, the lich who owns him is **Morvek**. The merge risk that existed under the Vr- names is resolved by this rename — different initial consonant, different vowel, different syllable count. |
@@ -101,7 +103,7 @@ Emeric Vantt. Expect all six to be badly mangled on first utterance.
 | Ring Conferral staging | **The one place the authored data overrules the recording** (DM, 2026-08-24). The transcript shows an on-stage pick from a mixed-metal case; that was never the intent. Canon: selection is **private, before Commencement** (so nobody reads item text on a stage), the choice is **announced publicly at the conferral**, and bands stay **struck identical in gold**. What the transcript *does* settle: separate diplomas exist, conferred by a clerk. A worked example of the "present major conflicts for approval" rule paying off. |
 | Holdar at the Conferral | He turned away **partly from embarrassment and partly from disgust** (DM, 2026-08-24) — not simple shame. Recorded in `prof_bram_holdar.html`, `guntrah.html`, and `session_2.html`. The target of the disgust is deliberately unpinned. |
 | The Celestial trigger word | **Scrapped.** The DM changed the design at the table: the glyph fires on the package being **opened**, not on a spoken word. No trigger word is owed. `session_plan.json`'s open item is closed. |
-| Voss's six-name contact list | **Not given.** The DM forgot it; it will be handed over **retroactively at the top of Session 3**. Do not treat the operatives as revealed. |
+| Voss's six-name contact list | **DELIVERED** — handed over with an explanation before the Session 3 recording started (DM, 2026-09-03). The party holds the prop. **It has still never been read out at the table**, and the six operatives stay `dm-only`, because a name and a city is all the party has. |
 | Ollie | **Steel Defender** (Battle Smith subclass feature). |
 | The drow's name | **Vrenn** — he simply never introduced himself. Expected to land in Session 3. Player-facing prose must say "the drow", not "Vrenn". |
 | "blight" | **Not a garble.** Tito's own improvised word for one of the armanites, because the party never learned what they were. |
@@ -143,3 +145,96 @@ Van Wilder, Tony Soprano, Shaq, Rob Gronkowski, Scooby-Doo, Wonder Twins,
 The Matrix, Bill Gates, Leia buns, Tarzan · "Phi Kappa Gamma Radiation Vape
 Pride" (joke setup; Tito's straight answer was **Phi Beta Kappa**, status
 undecided) · the DM's aside about a remote Claude Code session.
+
+---
+
+## 6. Session 3 ("Before Dawn") — pass of 2026-09-03
+
+Route B was taken. The party left the plane the same night, and **Vrenn left with
+them**. Full reconciliation in `content/sessions/session_3.html`.
+
+### 6a. Proper-noun corrections — apply on sight
+
+| Transcript renders it | Correct | Notes |
+|---|---|---|
+| Vren, Wren, Wrenn, Bren, Brenn, Brenna, Brennan, Brian, Dren, Renz, Run | **Vrenn** | Eleven-plus spellings, sometimes three in one exchange. See the hazard row in §2. |
+| Morvec, Marvek, "more of X", "more vek" | **Morvek** | The DM spelled it out at the table (M-O-R-V-E-K), which is why it is right roughly half the time. |
+| Bhaal Academy | **FAIL Academy** | Guntrah naming his own school. Not a Bhaalspawn reference and not canon. |
+| COVID | **cover** | Twice: "we can't have this sort of COVID everywhere" and "a patch where there wasn't particularly a lot of COVID". |
+| water costume, "3 costumes" | **waterskin** | Tito has three. The word "costume" also appears legitimately in his equipment list — disambiguate by context. |
+| "he turned and left the office" | **left** | The armanite ran off across a plain. There is no office. |
+| tailing fork | **tuning fork** | |
+| Arcane Bolt | **Arcane Jolt** | Guntrah's Battle Smith feature. Self-corrected on the recording. |
+| the Archangel | **Arcane Jolt** (again) | Same feature, worse garble, mid-damage-roll. |
+| Cat Screen | **Cat's Grace** | Which is itself Tavian's shorthand for *enhance ability*. |
+| Divine or Smite | **Divine Smite** | |
+| Ring of Ram | **Ring of the Ram** | Tavian's graduation ring. |
+| steel defendant | **Steel Defender** | Carried over from §1; still happening. |
+| "Gun, Yuanti, and Ollie's turn" | **Guntrah** | There are no yuan-ti in this campaign. |
+| Sliver | **Silas** | Once, during the miniatures scramble. |
+| plain shift | **plane shift** | Carried over from §1. |
+| "an elephant line" | *single file* | Colloquial, not an error. Leave it. |
+| Mirthful Leaps | Correct as written | Genuine satyr trait. Not a garble. |
+| Skill Empowerment | Correct as written | Vrenn offered it and it did not apply. Not a garble. |
+
+### 6b. Rulings made during the Session 3 pass
+
+| Question | Ruling |
+|---|---|
+| Vrenn leaving the plane | **The transcript wins and the locked design is superseded.** "He will not leave the plane" was authored; the DM ruled the opposite at the table, on the fiction. This is now canon and the consequence is the largest live thread in the campaign — see `mysteries/what_follows_vrenn.html`. |
+| Why the Session 2 scroll failed | **Retconned in-fiction, deliberately.** Vrenn scribed it with his own magic quill, so only he could ever cast from it. Silas's natural 1 still happened mechanically; in-world it was never his fault. Keep the retcon — the player had been carrying it. |
+| The heat rule | **Played version wins.** One waterskin drink per hour or a level of exhaustion; a waterskin is five hours' worth. No CON save, no DC. Simpler than the designed DC 7 and better at the table. |
+| Artificer infusions | **Cap 4 active.** Guntrah was running seven; corrected mid-session. |
+| Lending an attuned All-Purpose Tool | **Allowed.** Attunement stays with Guntrah; the tool holds its shape. |
+| Flash of Genius and invisibility | **Does not break it.** Class feature, not a spell (2014). Must reach the target somehow — a whisper suffices. |
+| *Enhance Ability* (Cat's Grace) and Stealth | **Grants advantage**, on the reading that Stealth is a Dexterity check. |
+| Partial *invisibility* drop | **Not allowed.** A caster concentrating on one *invisibility* covering several targets drops it for the group or not at all. |
+| Oni | **Run with truesight and necrotic claws**, neither of which is on the printed block. Both were witnessed by the party and are therefore canon for this campaign. |
+| Guntrah's species | **Full orc, not half-orc.** Confirmed at the table. Carrying capacity 390 / 780. |
+| Guntrah's languages | **Common and Abyssal.** Established as always having been true. |
+| Guntrah's subclass | **RESOLVED (DM, 2026-09-03).** The player changed subclass early in the campaign and supplied a new export: **Artificer 10, Battle Smith.** Arcane Jolt, Battle Ready and the Steel Defender are all his by the book. `guntrah.html` rebuilt from the 2026-09-02 sheet; the Armorer/Guardian labelling is retired. Two knock-ons worth knowing: **Investigation is no longer proficient** (+5, passive 15, down from +9/19), **Insight is**, and his spell DC is **18** with attack **+10**. |
+| Silas's familiar | **A hawk named Wind.** Ritual-only on his sheet; ruled precast at the start of each day from now on. |
+| Literacy and Intelligence | **No minimum.** Tavian can read. |
+| Vrenn's spell ceiling | **RESOLVED (DM, 2026-09-03).** No conflict: he normally holds **one 6th-level and one 7th-level slot**, and the 7th was **already spent** that day. 6th was his ceiling in that moment, not in general. |
+
+### 6c. Speaker-attribution corrections (Session 3)
+
+Every NPC is the DM, and in this session **the DM is Vrenn for most of the
+running time** — a `DM:` label in the briefing scenes is dialogue, not narration.
+Beyond that, these specific labels are wrong in ways that change meaning:
+
+| Labelled | Actually | Why it matters |
+|---|---|---|
+| `Tito: Morvek.` / `Tito: he owns me.` | **DM, as Vrenn** | The lich's name and the ownership both come out of Vrenn's mouth, not a player's. Attributing them to Tito makes it look like the party already knew. |
+| `Tavian: I do.` (re: reading Abyssal) | **Guntrah** | Guntrah is the Abyssal reader. Tavian's languages are Common, Common Sign Language and Orc. The whole following exchange is about Guntrah being a full orc who picked Abyssal. |
+| `DM: Yes, I'm just wearing gear.` | **Guntrah** | The no-backpack discovery, which drives the whole water problem. |
+| `DM: I got my boots, so if I need to, I can just fly across.` | **Guntrah** | |
+| `DM: Perfect, I have disadvantage on stealth.` | **Tavian** | Plate mail. It is the reason Vrenn upcast *invisibility*. |
+| `Tito: I have a dirty 20.` (basement stealth) | **Silas** | Silas rolled 20; Tito's own roll is separate. |
+| `Tito: 6.` (Vrenn's Intelligence check on the circle) | **DM's roll** | Vrenn failing to understand his owner's teleporter is a characterisation beat, not a player roll. |
+| `Tito: Um, he says, uh, what are you doing here?` | **DM, as the first oni** | The line that starts the basement scene. |
+| `Tito: 10.` (death save) | **Silas** | Silas's second successful death save. |
+| `Tavian: You got a 9.` | **Tavian**, reporting his own initiative | Reads as the DM addressing him. |
+| `DM: I don't have any heals. I'm sorry.` | **DM, as Vrenn** | First thing he says to the party after the fight. |
+| `DM: I'm gonna look up and go What is this place?` region | **Guntrah** | Several player actions in the ash-plain stretch are absorbed into `DM:` blocks. Attribute by scene. |
+
+**Confirmed correct and load-bearing:** `Guntrah: Do you remember who the box was
+meant for?` — the Thatch cross-check came from a **player's** mouth for the second
+session running, and Vrenn's honest "I just wrote down the words I was given"
+gave nothing away while handing the party a real data point.
+
+### 6d. Out-of-character noise — never treat as canon
+
+Derek, Miles, Russ (real players) · "Sarah and Malcolm" (podcasters, again) ·
+ChatGPT and D&D Beyond consultations · the encumbrance and pint-volume arguments ·
+Bud Light seltzers · Tito Jackson and the Jackson 5 · Winona Windhawks (a real
+high-school mascot, and the source of the familiar's name — **"Wind" is canon,
+"Winona" is not**) · the miniatures scramble · "Don't railroad us, Derek" ·
+DCC unlimited inventory · Strahdcast and the Curse of Strahd familiar anecdote ·
+"Primeval" (a bar) · the cat in the window reflection.
+
+**Retired-party knowledge, flagged:** `Silas: I felt like I remember got potions
+from Genie... because our other ones, that's when we had the thing.` This is the
+**player** remembering a One Shots 1–5 character, not Silas. It is not ambient
+fact and the new party has no potions. See the standing rule at the head of this
+file.

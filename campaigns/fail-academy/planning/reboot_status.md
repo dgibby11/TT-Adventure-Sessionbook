@@ -1,5 +1,110 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
+## SESSION 3 PLAYED AND RECONCILED (2026-09-03). Read this first.
+
+**The party took Route B, and got off the plane the same night.** No dawn, no
+second scroll, no return to the platform. They walked an hour east to
+the House, went in the back door, went straight down the stairs, killed two
+oni around a live planar circle, charged its four bowls under fire, and left
+through the floor with one round on the clock.
+
+**Transcript on file:** `planning/session_3_transcript.txt`. Full reconciliation
+in `content/sessions/session_3.html`, which is now a record of play rather than
+prep. Glossary extended with a Session 3 section (§6): eleven spellings of
+Vrenn, twelve rulings, twelve speaker-attribution fixes.
+
+**Played 2026-09-02.** Reconciled the following day, and the DM answered all six
+open questions from the pass on 2026-09-03. Two things are still live: the beacon
+(below), and what Vrenn's satchel is actually worth.
+
+### The one thing that has to be decided before Session 4 opens
+
+**VRENN LEFT THE PLANE.** The locked design said he would leave the site and not
+the plane, and the DM ruled the opposite at the table on the fiction — his
+bridges burned the moment he took a side in that basement, and with one round
+left he had no choice. **The transcript wins; this is canon.**
+
+He had already told the party, twice, out loud, what that means: *"If I were to
+leave the plane he would know immediately, and he would follow me, and he would
+kill all of you."* The Grave Token is a **beacon**. So the question is not
+whether it fires, it is how fast. Three shapes, fully written up in
+`content/mysteries/what_follows_vrenn.html` and in `session_3.html`:
+
+- **Slow — recommended.** Morvek knows and cannot easily act. Crossing planes is
+  constrained by exactly the thin-place rule Vrenn spent the evening explaining,
+  and the party has taken the fork and stripped one end of the lane. He has to
+  *arrange* it. Weeks. Preserves "Morvek never appears in person", makes the
+  party's own theft the thing buying them time, and lets Vrenn become a
+  character rather than a countdown.
+- **Fast.** Something sent, within a session or two.
+- **Vrenn's read is wrong.** Legitimate — he is repeating what his owner told
+  him — but it retires the best consequence the campaign has produced.
+
+**Second-order:** the party has acquired a Wizard 13 with *plane shift*, Arcana
++15 and a satchel of very expensive components. He needs a stated combat policy.
+Session 3 gave the honest dial: **he acts once, decisively, out of despair
+rather than tactics, and then does something practical and non-combat.**
+
+### What else changed
+
+- **The name budget held perfectly.** Three of four planned names were spoken
+  (Vrenn, Morvek, Neverwinter); Ferreck never came up because the contact list
+  never came out. **Thanatos, Orcus, Harthoon, "Grave Token", "the Bonehold" and
+  "armanite" were all still never said.** Vrenn named the soul-object *around* it
+  — *"basically the Abyssal equivalent to a soul coin, but he has another name
+  for it"* — which is the ideal state and should be preserved.
+- **Six new live entities**, all player-visible with secrets in `dm-only` blocks:
+  `morvek`, `the_house`, `basement_oni`, `steel_tuning_fork`,
+  `what_follows_vrenn`, `behind_the_grate`. `the_captive_drow` is renamed
+  **Vrenn** in the menu, since the name is spent.
+- **The Session 2 scroll failure was retconned in-fiction and it is a good
+  retcon.** Vrenn used his own magic quill, so only he could ever have cast from
+  it. Silas had been carrying the blame out loud.
+- **Route A is entirely unspent** and carried forward intact, including the
+  transcription scene, the night, the hut, and **the two prepared vellums**
+  (part-finished *hold monster* and *skill empowerment*) which Vrenn still has
+  in his satchel and never handed over.
+- **The whole House ground floor is unspent** — the glyph, the shriek-ward,
+  Morvek's sealed door, the three skeletons, the gaps. The party bypassed all of
+  it. The building still stands and they closed nothing behind them.
+- **The north gate is still loaded, and now awake.** It was one round from
+  breaking out when they left.
+- **The Session 2 make-up clue died a second time.** Primed goods, consignment
+  record, matching crate — all sited in rooms the party walked through without
+  looking. **Do not site it in a third room.** Vrenn made the contents and is now
+  travelling with them; put it in his mouth.
+- **Voss's contact list WAS handed over** — before the recording started, with
+  an explanation to the table (DM, 2026-09-03). The party holds the prop. It has
+  still never been read out at the table; Tavian asked twice and there was never
+  a quiet minute. **The six operatives stay `dm-only`** — a name and a city is
+  all the party has, and their entity pages describe people they have not met.
+  The list itself is now player-facing prose in `session_2.html`.
+- **The heat rule changed at the table** to one drink per hour or a level of
+  exhaustion, five hours to a waterskin, no save. Use the played version.
+- **Guntrah's sheet was corrected mid-session** — seven active infusions down to
+  four — and **his subclass question is closed**: he changed to **Battle Smith**
+  early in the campaign and supplied a new export (2026-09-02). `guntrah.html`
+  is rebuilt from it. Knock-ons: spell DC **18** / attack **+10**, **Investigation
+  is no longer proficient** (+5, passive 15, down from +9/19) and **Insight is**,
+  and every "sheet drift" item flagged after Session 2 turns out to be a
+  legitimate Battle Smith or orc feature rather than an error.
+
+- **Sessions 2 and 3 are both `visibility: player` as of 2026-09-03.** They were
+  held back together, pending Session 3 closing the cliffhanger, and released
+  together on the DM's call. A second leak scan caught one real problem: the word
+  **"armanite"** had crept into player-facing prose seven times across three
+  files. The party has never heard that word — the DM was asked directly in
+  Session 2 and deliberately declined to give it — and all of them now read "the
+  hooved things". Also moved behind a DM block: the note that Morvek reached the
+  platform at dawn and found it empty, which nobody in the party witnessed.
+  **And one pre-existing leak, unrelated to Session 3:** `campaign_overview.html`
+  had been telling players in plain sight that the current arc is called
+  **"The Veil of Thanatos"** — naming the layer of the Abyss the whole operation
+  runs from, in a player-visible reference entity, since before Session 1. The
+  arc is now unnamed there and the hazard is gated. **Player View is at 112
+  entities**, up from 104.
+
+
 Vrenn/Wizard-13 conflict RESOLVED (2026-09-01, DM's reading, live data +
 planning). The character sheet appeared to contradict the locked “kept just
 short of the final step so he stays dependent” line. The DM's answer dissolves

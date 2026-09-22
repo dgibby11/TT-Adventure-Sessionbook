@@ -981,7 +981,18 @@
     "contentType": "html",
     "contentFile": "content/locations/ritual_platform.html",
     "visibility": "player",
-    "related": ["the_captive_drow", "hooved_demons", "torvald_package", "academy_provisions", "session_2"],
-    "tags": ["planar", "abyss", "ritual", "session-2", "current-location"]
+    "related": ["the_captive_drow", "morvek", "the_house", "hooved_demons", "steel_tuning_fork", "torvald_package", "academy_provisions", "session_2", "session_3"],
+    "tags": ["planar", "abyss", "ritual", "thin-place", "session-2", "session-3", "abandoned"]
+  },
+  {
+    "id": "the_house",
+    "name": "The House",
+    "type": "location",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/locations/the_house.html",
+    "visibility": "player",
+    "related": ["morvek", "the_captive_drow", "ritual_platform", "basement_oni", "behind_the_grate", "steel_tuning_fork", "session_3"],
+    "tags": ["abyss", "planar", "outpost", "basement", "teleportation-circle", "session-3", "infiltration"]
   }
 ]

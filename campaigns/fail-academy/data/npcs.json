@@ -596,14 +596,14 @@
   },
   {
     "id": "the_captive_drow",
-    "name": "The Captive Drow",
+    "name": "Vrenn",
     "type": "npc",
     "category": "Beyond the Veil",
     "contentType": "html",
     "contentFile": "content/npcs/the_captive_drow.html",
     "visibility": "player",
-    "related": ["ritual_platform", "hooved_demons", "session_2", "torvald_thatch", "tavian_stormnet", "silas", "tito"],
-    "tags": ["drow", "captive", "planar", "abyss", "session-2", "unresolved"]
+    "related": ["morvek", "ritual_platform", "the_house", "hooved_demons", "basement_oni", "steel_tuning_fork", "what_follows_vrenn", "what_the_drow_owes", "session_2", "session_3", "torvald_thatch", "tavian_stormnet", "silas", "tito", "guntrah"],
+    "tags": ["drow", "wizard", "captive", "planar", "abyss", "session-2", "session-3", "named", "travelling-with-the-party"]
   },
   {
     "id": "silas_and_breena",
@@ -637,5 +637,16 @@
     "visibility": "player",
     "related": ["guntrah", "barbarians", "prof_bram_holdar", "session_2"],
     "tags": ["student", "barbarian", "half-orc", "session-2"]
+  },
+  {
+    "id": "morvek",
+    "name": "Morvek",
+    "type": "npc",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/npcs/morvek.html",
+    "visibility": "player",
+    "related": ["the_captive_drow", "the_house", "ritual_platform", "steel_tuning_fork", "basement_oni", "what_follows_vrenn", "behind_the_grate", "torvald_thatch", "torvald_package", "session_3"],
+    "tags": ["lich", "abyss", "antagonist", "planar", "session-3", "unseen", "owner"]
   }
 ]

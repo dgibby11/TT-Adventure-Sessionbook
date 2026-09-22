@@ -29,8 +29,8 @@
     "contentType": "html",
     "contentFile": "content/mysteries/what_the_drow_owes.html",
     "visibility": "player",
-    "related": ["the_captive_drow", "ritual_platform", "hooved_demons", "session_2"],
-    "tags": ["mystery", "open", "planar", "abyss", "session-2", "captive"]
+    "related": ["the_captive_drow", "morvek", "ritual_platform", "the_house", "what_follows_vrenn", "hooved_demons", "session_2", "session_3"],
+    "tags": ["mystery", "open", "planar", "abyss", "session-2", "session-3", "captive", "part-answered"]
   },
   {
     "id": "the_figure_at_the_treeline",
@@ -64,5 +64,27 @@
     "visibility": "player",
     "related": ["ellery_voss", "headmistress_dowe", "ninth_thesis", "fail_chamber"],
     "tags": ["mystery", "open", "voss", "faculty", "ninth-thesis"]
+  },
+  {
+    "id": "what_follows_vrenn",
+    "name": "What Follows Vrenn",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/what_follows_vrenn.html",
+    "visibility": "player",
+    "related": ["the_captive_drow", "morvek", "the_house", "what_the_drow_owes", "session_3"],
+    "tags": ["mystery", "open", "vrenn", "morvek", "planar", "session-3", "pursuit"]
+  },
+  {
+    "id": "behind_the_grate",
+    "name": "What Is Behind the Grate",
+    "type": "mystery",
+    "category": "Open",
+    "contentType": "html",
+    "contentFile": "content/mysteries/behind_the_grate.html",
+    "visibility": "player",
+    "related": ["the_house", "basement_oni", "morvek", "ritual_platform", "session_3"],
+    "tags": ["mystery", "open", "abyss", "caged", "session-3", "unresolved"]
   }
 ]

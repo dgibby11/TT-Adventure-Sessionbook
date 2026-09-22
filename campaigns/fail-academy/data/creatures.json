@@ -221,8 +221,20 @@
     "contentType": "html",
     "contentFile": "content/creatures/hooved_demons.html",
     "visibility": "player",
-    "related": ["ritual_platform", "the_captive_drow", "session_2"],
+    "related": ["ritual_platform", "the_captive_drow", "the_house", "session_2", "session_3"],
     "links": [{ "label": "Armanite (Mordenkainen's Tome of Foes) — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/armanite" }],
-    "tags": ["demon", "abyss", "planar", "lightning", "session-2", "dangerous"]
+    "tags": ["demon", "abyss", "planar", "lightning", "session-2", "session-3", "dangerous"]
+  },
+  {
+    "id": "basement_oni",
+    "name": "The Two at the Benches",
+    "type": "creature",
+    "category": "Beyond the Veil",
+    "contentType": "html",
+    "contentFile": "content/creatures/basement_oni.html",
+    "visibility": "player",
+    "related": ["the_house", "morvek", "the_captive_drow", "behind_the_grate", "session_3"],
+    "links": [{ "label": "Oni — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16955-oni" }],
+    "tags": ["oni", "abyss", "shapechanger", "guard", "session-3", "deadly", "CR-7"]
   }
 ]

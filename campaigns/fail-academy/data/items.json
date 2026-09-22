@@ -7,7 +7,7 @@
     "contentType": "html",
     "contentFile": "content/items/witness.html",
     "visibility": "player",
-    "related": ["tavian_stormnet", "commander_orvyn", "paladins", "memorial_garden", "session_1"],
+    "related": ["tavian_stormnet", "commander_orvyn", "paladins", "memorial_garden", "session_1", "session_3"],
     "tags": ["magic-item", "weapon", "longsword", "legendary", "sentient", "paladin", "oath-of-glory", "pc-item"]
   },
   {
@@ -319,8 +319,8 @@
     "contentType": "html",
     "contentFile": "content/items/ollie.html",
     "visibility": "player",
-    "related": ["guntrah", "silas_and_breena", "prof_tavel"],
-    "tags": ["construct", "steel-defender", "artificer", "self-made"]
+    "related": ["guntrah", "silas_and_breena", "prof_tavel", "session_2", "session_3"],
+    "tags": ["construct", "steel-defender", "artificer", "self-made", "session-3", "backpack"]
   },
   {
     "id": "torvald_package",
@@ -332,5 +332,16 @@
     "visibility": "player",
     "related": ["torvald_thatch", "osric_morne", "ellery_voss", "academy_provisions", "ritual_platform", "session_2"],
     "tags": ["evidence", "celestial", "planar", "session-2", "groundskeeper"]
+  },
+  {
+    "id": "steel_tuning_fork",
+    "name": "The Steel Tuning Fork",
+    "type": "item",
+    "category": "Special Acquisitions",
+    "contentType": "html",
+    "contentFile": "content/items/steel_tuning_fork.html",
+    "visibility": "player",
+    "related": ["silas", "the_captive_drow", "morvek", "ritual_platform", "the_house", "session_3"],
+    "tags": ["planar", "plane-shift", "component", "session-3", "material-plane", "long-fuse"]
   }
 ]
