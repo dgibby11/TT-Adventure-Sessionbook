@@ -308,5 +308,18 @@
       "expedition",
       "archived"
     ]
+  },
+  {
+    "id": "session_4",
+    "name": "Session 4 \u2014 The Green Country",
+    "type": "session",
+    "category": "Planning",
+    "contentType": "html",
+    "contentFile": "content/sessions/session_4.html",
+    "visibility": "dm-only",
+    "startLocation": "neverwinter_wood",
+    "related": ["silas", "guntrah", "tito", "tavian_stormnet", "the_captive_drow", "morvek", "tedrovaxilliath", "neverwinter_wood", "underdark_breach", "fomorians", "teds_lair", "the_standing_treant", "steel_tuning_fork", "what_follows_vrenn", "ellery_voss", "anselm_ferreck", "torvald_thatch", "ninth_thesis", "session_3"],
+    "reveals": ["session_4", "neverwinter_wood", "tedrovaxilliath", "underdark_breach", "fomorians"],
+    "tags": ["session", "planning", "unplayed", "neverwinter-wood", "dragon", "arrival", "side-quest", "session-4"]
   }
 ]

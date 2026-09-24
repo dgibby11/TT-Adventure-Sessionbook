@@ -236,5 +236,17 @@
     "related": ["the_house", "morvek", "the_captive_drow", "behind_the_grate", "session_3"],
     "links": [{ "label": "Oni — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16955-oni" }],
     "tags": ["oni", "abyss", "shapechanger", "guard", "session-3", "deadly", "CR-7"]
+  },
+  {
+    "id": "fomorians",
+    "name": "The Fomorians",
+    "type": "creature",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/creatures/fomorians.html",
+    "visibility": "player",
+    "related": ["underdark_breach", "tedrovaxilliath", "neverwinter_wood", "session_4"],
+    "links": [{ "label": "Fomorian \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/fomorian" }],
+    "tags": ["giant", "underdark", "fomorian", "session-4", "deadly", "CR-8", "evil-eye"]
   }
 ]

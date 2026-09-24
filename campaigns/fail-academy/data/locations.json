@@ -994,5 +994,38 @@
     "visibility": "player",
     "related": ["morvek", "the_captive_drow", "ritual_platform", "basement_oni", "behind_the_grate", "steel_tuning_fork", "session_3"],
     "tags": ["abyss", "planar", "outpost", "basement", "teleportation-circle", "session-3", "infiltration"]
+  },
+  {
+    "id": "neverwinter_wood",
+    "name": "Neverwinter Wood",
+    "type": "location",
+    "category": "Nearby World",
+    "contentType": "html",
+    "contentFile": "content/locations/neverwinter_wood.html",
+    "visibility": "player",
+    "related": ["tedrovaxilliath", "underdark_breach", "teds_lair", "fomorians", "the_standing_treant", "session_4"],
+    "tags": ["forest", "sword-coast", "dragon-territory", "session-4", "arrival"]
+  },
+  {
+    "id": "underdark_breach",
+    "name": "The Breach",
+    "type": "location",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/locations/underdark_breach.html",
+    "visibility": "player",
+    "related": ["fomorians", "tedrovaxilliath", "neverwinter_wood", "the_captive_drow", "session_4"],
+    "tags": ["cave", "underdark", "fomorians", "session-4", "side-quest"]
+  },
+  {
+    "id": "teds_lair",
+    "name": "The Sinkhole",
+    "type": "location",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/locations/teds_lair.html",
+    "visibility": "dm-only",
+    "related": ["tedrovaxilliath", "neverwinter_wood", "the_standing_treant"],
+    "tags": ["lair", "hoard", "dm-only", "neverwinter-wood", "session-4"]
   }
 ]

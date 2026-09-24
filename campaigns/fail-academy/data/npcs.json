@@ -648,5 +648,29 @@
     "visibility": "player",
     "related": ["the_captive_drow", "the_house", "ritual_platform", "steel_tuning_fork", "basement_oni", "what_follows_vrenn", "behind_the_grate", "torvald_thatch", "torvald_package", "session_3"],
     "tags": ["lich", "abyss", "antagonist", "planar", "session-3", "unseen", "owner"]
+  },
+  {
+    "id": "tedrovaxilliath",
+    "name": "Tedrovaxilliath",
+    "type": "npc",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/npcs/tedrovaxilliath.html",
+    "visibility": "player",
+    "related": ["neverwinter_wood", "teds_lair", "fomorians", "underdark_breach", "the_standing_treant", "session_4"],
+    "links": [{ "label": "Adult Green Dragon \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/adult-green-dragon" }],
+    "tags": ["dragon", "green-dragon", "neverwinter-wood", "session-4", "territorial", "CR-15", "quest-giver"]
+  },
+  {
+    "id": "the_standing_treant",
+    "name": "The Standing Treant",
+    "type": "npc",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/npcs/the_standing_treant.html",
+    "visibility": "dm-only",
+    "related": ["tedrovaxilliath", "neverwinter_wood", "teds_lair"],
+    "links": [{ "label": "Treant \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/treant" }],
+    "tags": ["treant", "neverwinter-wood", "dm-only", "thread", "unresolved", "CR-9"]
   }
 ]
