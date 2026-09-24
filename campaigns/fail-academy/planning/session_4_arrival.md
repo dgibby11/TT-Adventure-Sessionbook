@@ -499,3 +499,86 @@ deliberately or not at all.
 The records of who has been sent after him. The maps. The few beautiful things.
 And **any information about his lair's location** — including, pointedly, the
 state of the water upstream, which he will change the subject away from.
+
+---
+
+# THE REGIONAL MAP (DM, 2026-09-24)
+
+Saved to `assets/neverwinter_wood_map.png` and registered as the dm-only entity
+**`neverwinter_wood_map`**, so it opens inside the app during the session.
+
+## The two fixed points
+
+- **The party landed at the dot of the "i" in *Neverwinter***, on the map's
+  "Neverwinter Wood" label — near the centre of the forest, south of the river
+  system, north of Falcon's Hunting Lodge, west of the Circle of Thunder.
+- **[[underdark_breach]] is about five miles north, ACROSS THE RIVER.**
+
+**The river crossing is new** and was not in the original five-mile walk. Noted in
+the session file: Tavian is in plate at DEX &minus;2, Silas has STR 7 and Athletics
+&minus;2. It is a crossing, a delay, and a good place for something to be watching
+from the far bank — or for nothing to happen at all, which after two sessions of
+relentless pressure is its own kind of beat.
+
+*Scale looks like roughly ten miles to a grid square, judging by Neverwinter to
+Thundertree, so five miles is about half a square. Worth confirming against
+whatever the source map states.*
+
+## What else is on it — and the four connections that matter
+
+**ALL FOUR of the post-Session-2 directions are on this map**, which makes it the
+single most useful prop for the moment the fork finally opens:
+
+| Direction | On the map |
+|---|---|
+| West | **Thundertree** |
+| Northwest | **Mount Hotenow** (and **Gauntlgrym** beyond it) |
+| South | **the Triboar Trail**, lower right |
+| East | **Agatha's Lair** — the plan's "Agatha's Grove" |
+
+### 1. The Shrine of Savras — the best find on the map
+
+Lower right, south-east of Conyberry. **The campaign already has a live, planted
+Savras thread and nobody has connected it to a place yet:** [[archcleric_senna]]
+makes the Rings of Augury herself, nobody took one at the Conferral, and
+`session_2.html` records the Savras question as explicitly open. [[silas]] also
+carries *augury* as a ritual in his spellbook.
+
+**That thread now has a physical destination** roughly a week's travel from where
+the party are standing. Free, and it costs nothing to leave on the map until it
+is wanted.
+
+### 2. The Dread Ring — a Thayan necromancy site, and this campaign has a lich
+
+Centre-south of the Wood, close to the party. Undeveloped here and **not connected
+to [[morvek]] by anything at all** — but a ring of Thayan necromancy sitting a
+few miles from a party currently being hunted across planes by a lich is the kind
+of coincidence a campaign can choose to stop being a coincidence. **Flagged, not
+proposed.**
+
+### 3. Lost Mine geography, already built in this repo
+
+**Thundertree, Cragmaw Castle, Conyberry, Old Owl Well and the Triboar Trail** are
+all Lost Mine of Phandelver locations, and `campaigns/lost-mine/` already contains
+built entities for several of them — including `ruins_of_thundertree` and
+`venomfang`, the young green dragon squatting there. If [[tedrovaxilliath]] holds
+this wood, that relationship is free plot: parent, rival, predecessor, or the
+reason a younger green had to settle for a ruin on the edge.
+
+### 4. Neverwinter itself
+
+Far west on the coast, past the western verge of the Wood. **This is where
+[[anselm_ferreck]] is**, and it is the DM's expected destination once the
+fomorians are dealt with. Helm's Hold sits south of it on the High Road.
+
+## The rest, unclaimed and unconnected
+
+Sharandar (north-west, in the Wood) · Logger's Camp · Falcon's Hunting Lodge ·
+Circle of Thunder · Woodland Manse · Xinlenal (a fallen Netherese enclave) ·
+Vellosk · Tower of Twilight · Berun's Hill · Starmetal Hills · Butterskull Ranch ·
+Dragon Barrow.
+
+**None of these are claimed by anything in the campaign.** They are a menu, not a
+commitment — and several sit inside or on the edge of Ted's six-mile radius,
+which means he can name and describe any of them accurately when the party ask
+him where they are.

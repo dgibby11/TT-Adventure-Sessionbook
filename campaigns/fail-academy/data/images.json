@@ -9,5 +9,16 @@
     "visibility": "dm-only",
     "related": ["session_1", "ellery_voss"],
     "tags": ["handout", "printable", "session-1", "voss-notes"]
+  },
+  {
+    "id": "neverwinter_wood_map",
+    "name": "Neverwinter Wood — Regional Map",
+    "type": "image",
+    "category": "Maps",
+    "contentType": "image",
+    "contentFile": "assets/neverwinter_wood_map.png",
+    "visibility": "dm-only",
+    "related": ["neverwinter_wood", "session_4", "tedrovaxilliath", "underdark_breach", "teds_lair"],
+    "tags": ["map", "dm-only", "neverwinter-wood", "session-4", "geography", "reference"]
   }
 ]
