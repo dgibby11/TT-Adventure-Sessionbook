@@ -1,5 +1,25 @@
 # FAIL Academy — Session 4: The Arrival (DM input, 2026-09-23)
 
+> **PLAYED 2026-09-24. THIS DOCUMENT IS NOW HISTORICAL PREP.**
+>
+> Reconciled against the recording on 2026-09-25. **Where this file and
+> `planning/session_4_transcript.txt` disagree, the transcript wins.** The record
+> of play is `content/sessions/session_4.html`; the summary of what changed is at
+> the top of `planning/reboot_status.md`.
+>
+> **Three things in here were overturned at the table — and item 2 is NOT one of
+> them.** The *sending* happened exactly as designed; the DM simply never read the
+> words out, which is what this document asked for. In brief: **Vrenn
+> recognised the country and the Breach is his own escape route**, so the
+> "*plane shift* is inaccurate, Vrenn is lost too" ruling only half held; **the
+> party identified Neverwinter Wood themselves** in the first twenty minutes; and
+> **the Nine Hells are now in the campaign**, because Vrenn explained that Morvek
+> went there to learn how soul coins work. **No reward item was ever handed over.**
+>
+> Everything below is left exactly as written on 2026-09-23/24, including the
+> parts that did not happen — several of them are still good and are catalogued as
+> unspent in the session file.
+
 Established by the DM on 2026-09-23 as the opening of Session 4. Recorded here
 before anything is written to live data. **Item 1 overturns a locked design
 decision** — see the supersession block at the foot of this file.
@@ -21,6 +41,11 @@ do with where the artifact shipments go.** More of his backstory is available
 later if it is wanted; it is not needed to run this.
 
 ## 2. Morvek's Sending — arrives immediately
+
+> **PLAYED AS WRITTEN (2026-09-24).** He cast it on arrival, Vrenn did not reply,
+> and **the words were never read out to the table** — all three as specified
+> here. The only thing that did not happen is the instruction further down to
+> *tell the party he could have answered and didn't*; **that is still unspent.**
 
 **On arrival, Vrenn receives a *sending* from Morvek.** Twenty-five words or
 fewer, exact text TBD. **Vrenn does not reply, out of fear** — and *sending*

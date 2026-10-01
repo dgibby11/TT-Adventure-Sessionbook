@@ -4,14 +4,16 @@ Speech-to-text correction reference for reconciling recorded session transcripts
 against live campaign data. Built during the **Session 2 ("Commencement",
 played 2026-08-20)** reconciliation pass on 2026-08-23, and agreed with the DM
 line by line before anything was written to live data. **Extended by the Session 3
-("Before Dawn") pass on 2026-09-03** — see §6.
+("Before Dawn") pass on 2026-09-03** — see §6. **Extended again by the Session 4
+("The Green Country") pass on 2026-09-25** — see §7.
 
 Reuse this for every future transcript pass. Add to it rather than rewriting it —
 each session's recording tends to mangle the same names the same way.
 
 **Transcripts on file:** `planning/session_1_transcript.txt` (Session 1, played
 2026-08-09) · `planning/session_2_transcript.txt` (Session 2, played 2026-08-20)
-· `planning/session_3_transcript.txt` (Session 3, played 2026-09-02).
+· `planning/session_3_transcript.txt` (Session 3, played 2026-09-02)
+· `planning/session_4_transcript.txt` (Session 4, played 2026-09-24).
 
 **Standing rules for any transcript pass (DM's, carried forward):**
 
@@ -238,3 +240,137 @@ from Genie... because our other ones, that's when we had the thing.` This is the
 **player** remembering a One Shots 1–5 character, not Silas. It is not ambient
 fact and the new party has no potions. See the standing rule at the head of this
 file.
+
+---
+
+## 7. Session 4 ("The Green Country") — pass of 2026-09-25
+
+They arrived in Neverwinter Wood, worked out where they were without being told,
+negotiated with an adult green dragon, killed two fomorians without taking a
+scratch, and left with passage, a guide and no loot. **Vrenn is still with them
+and is now cursed.** Full reconciliation in `content/sessions/session_4.html`.
+
+### 7a. Proper-noun corrections — apply on sight
+
+| Transcript renders it | Correct | Notes |
+|---|---|---|
+| Tendrovaxiliath | **Tedrovaxilliath** | One occurrence, and it is the only time the full name is said. The DM was reading his own prep, so treat as STT. *Flagged for confirmation — if the DM genuinely said "Tendrovaxiliath" at the table, that is what the players heard.* Irrelevant in practice: everyone calls him **Ted**. |
+| Thax | Correct as written | **Not a garble.** A second short form the DM invented at the table and offered alongside "Ted". Canon. |
+| Wrenn, Bren, Brenn, Vren, Prince | **Vrenn** | Same hazard as §6a, fewer variants this time. *"Prince"* appears once mid-argument ("At this point, Prince, he's our friend") and is a garble of his name, not a title. |
+| Vrenn and Stimpy / Vren and stubby | — | In-joke, not a name. See §7d. |
+| Fomorian Maxi / "they call him a Maxi" | — | Table joke about the mini's size. The creature is a **fomorian**. |
+| Bhaal's Academy | **FAIL Academy** | Tavian naming his own school to a dragon. Same garble as §6a; still not a Bhaalspawn reference. |
+| Miles, Russ, Derek, Christian | real players | Never canon. See §7d. |
+| Blue Dream / Blue Pink | — | Out-of-character, not a place or item. See §7d. |
+| Efficiency bonus | **proficiency bonus** | |
+| Ring of Ram | **Ring of the Ram** | Carried over from §6a. |
+| steel defendant | **Steel Defender** | Carried over from §1 and §6a. Still happening. |
+| Holly, Bally, Wally, Bully | **Ollie** | Carried over. "Bully" is new this session. |
+| Arcane Bolt | **Arcane Jolt** | Carried over from §6a. |
+| plain shift / planar shift | **plane shift** | Carried over from §1. |
+| "Guiding Light" | **Guiding Bolt** | Tavian's own slip, self-corrected. |
+| "Psycho killer" | **Phantasmal Killer** | A joke, said immediately after the correct name. |
+| "the box" (re: the fox) | **the fox** | Recurs several times during the Universal Speech scene. There is no box. |
+| "Expecto Patronum" | ***light*** | Tito casting *light* on the steed. Joke, not a spell. |
+| "Mr. Ed" / "Roach has 2 heads" | **Roach** | Mini-substitution jokes during the miniature scramble. The steed's name is **Roach**. |
+| Clubby, Hunch, Hunty, Punch | — | **DM bookkeeping names for the two fomorians.** Never said in the fiction; the party never heard them. "Hunty"/"Punch" are garbles of Hunch. |
+| Universal Speech | Correct as written | A genuine College of Eloquence feature. Not a garble. |
+| Mirthful Leaps, Silver Tongue, Unsettling Words | Correct as written | All genuine Tito features. |
+| Menzoberranzan | Correct as written | Came through cleanly all five times. |
+| Drizzt Do'Urden, R.A. Salvatore, *Homeland* | real books | Out-of-character. See §7d. |
+
+### 7b. Rulings made during the Session 4 pass
+
+| Question | Ruling |
+|---|---|
+| **Morvek's *sending*** | **IT HAPPENED — it was simply never narrated (DM, confirmed 2026-09-25).** The 2026-09-23 design and the "option A" text both stand. Morvek cast *sending*; the table saw only Vrenn on his knees holding his head for 15–20 seconds, then *"Morvek knows."* Withholding the words is exactly what the prep called for, and the DM judged the conversation afterwards would make it evident. **A transcript-only reading gets this wrong** — nothing on the recording says "spell." **Corollary: Vrenn declining his right of reply is STILL UNSPENT**, because the party were never told he had one. |
+| **Vrenn recognised the country and the cave** | **The transcript wins and the 2026-09-24 "plane shift is inaccurate, Vrenn is lost too" ruling is superseded in its second half.** He arrived not knowing where he was, then recognised the landscape on the walk north, and the Breach is the exact cave he escaped through. He is no longer a blank on local geography. |
+| **The party identified Neverwinter Wood themselves** | **Allowed, and the prep instruction "do not let anyone identify it without being told" is retired.** Guntrah's flight above the canopy plus Silas's History 16, off the rivers and the mixed conifers. |
+| **"Grave token" said out loud** | **Player knowledge now.** The standing instruction was not to use the words until somebody saw one. Vrenn used them unprompted. Nothing needs undoing. |
+| **The Nine Hells are in the campaign** | **The transcript wins, and this reverses a locked decision (DM, 2026-08-29).** Vrenn explained that soul coins are real, are currency in the Hells, and that **Morvek went there personally, learned how they work, and invented grave tokens on that model.** The old rule was that nothing in this campaign touches the Nine Hells. **Flagged for a deliberate decision about how far that door now swings.** |
+| **Nat 1s and nat 20s on ability checks** | **House rule adopted this session, both directions.** The DM already played it that way; Tavian and Tito agreed, Silas objected, it went in. |
+| Silver Tongue vs. natural 1 | **Silver Tongue wins.** Any Persuasion or Deception d20 of 9 or lower counts as 10, so Tito cannot roll a natural 1 on either. Tito argued against his own feature for fun and lost on the rules. *It was never actually applied — his nat 1 would have succeeded on the modifier alone.* |
+| *Leomund's Tiny Hut* and sound | **One-way: the party hear out, nothing hears in.** Ruled on the sneaky-purpose argument. **Note this is the opposite direction from the prep**, which was built on Ted negotiating *through* the dome. It never came up. |
+| Tiny Hut size | **20 ft across (10 ft radius).** The table had it filed as much smaller. 11 minutes to cast as a ritual, everyone must be inside at the moment of casting, and others may come and go afterwards but not the caster. |
+| All-Purpose Tool → telescope | **No.** Artisan's tools only; a telescope is adventuring gear. |
+| Paralysed auto-crit | **Melee only.** Advantage for all attackers, auto-crit only within 5 ft. Caught and applied correctly mid-fight. |
+| Frightened | **Disadvantage on attacks and ability checks, not saving throws**, and movement restricted only toward the source. Hunch could still hit whatever was in front of him. |
+| Evil Eye's curse outliving its caster | **It persists.** Magical curse; killing the fomorian did not free Vrenn. Repeats the save only on finishing a long rest. |
+| *Find steed* initiative | **Shares the paladin's count and may act at the same time as him**, not strictly after — explicitly contrasted with the Steel Defender, which does go after Guntrah. |
+| Visibility from altitude | **About twelve miles from a hundred feet up.** Settled by table argument about the curvature of the earth. |
+| Water after the long rest | **They are out, and must find fresh water.** A deliberate one-off carried over from the Abyss, resolved at the stream crossing. |
+| Ring of the Ram recharge | **Rolled 1d6, got 1.** RAW is 1d3 at dawn, so the result stands either way. **Tavian's ring holds 1 charge.** |
+| Proficiency bonus at level 11 | **Called at the table as +3 → +4. It was already +4 at level 10.** The sheets are correct and unchanged. Recorded only so nobody "fixes" them. |
+| Two left ears = two creatures | **Allowed.** A left ear is distinguishable from a right one, so two lefts is proof of two kills. They then dropped them, because Ted had said he would know. |
+| Distance to the Breach | **Six miles, per Ted at the table** — not the five in the prep — and the same figure as his stated territorial radius. The crossing was a stream rather than a river. |
+
+### 7c. Speaker-attribution corrections (Session 4)
+
+**This transcript is the worst of the four for attribution.** `Tito:` is used for
+the DM's NPC voice throughout — *almost every line Tedrovaxilliath speaks is
+labelled `Tito:`* — and several of the DM's narration lines are labelled with
+player names. **Attribute by scene, never by label.**
+
+| Labelled | Actually | Why it matters |
+|---|---|---|
+| `Tito:` for nearly all of Ted's dialogue | **DM, as Tedrovaxilliath** | Including *"Everything has a price"*, *"Tendrovaxiliath"*, *"Thax. You can call me Ted"*, *"I don't have patience for pleasantries"*, *"I owe nothing to you except to allow you to leave my forest alive"*, *"Because I can't fit in the hole"*, and *"Probably not."* **Every memorable line in the session is mislabelled this way.** |
+| `DM:` through the whole Vrenn briefing, the dome conversation and the Grave Token story | **DM, as Vrenn** | Same hazard as §6c. A `DM:` label in those scenes is dialogue, not narration. |
+| `DM: Uh, you know, I, I don't quite know…` (arrival) | **DM, as Vrenn** | The first thing Vrenn says on the new plane. |
+| `DM: I, like I said, I came out of a cave.` | **DM, as Vrenn** | The Menzoberranzan escape. Load-bearing and easy to mistake for DM narration. |
+| `DM: He had my sister.` / `DM: I traded myself for her, yes.` | **DM, as Vrenn** | The soul-sale. Attributing these to the DM makes them read as backstory exposition rather than a confession. |
+| `Tito: Where am I from? I don't know.` | **Guntrah** | The unanswered question about where his character came from. |
+| `Tito: 16.` (the Neverwinter Wood deduction) | **Silas** | Silas made the History check and told the party. Tito's roll (11) is separate and earlier. |
+| `Silas: I mean, mine says Baldur's Gate for Acolyte.` | **Silas**, correctly | And it *is* on his sheet. The adjacent `Tito: Like I'm from Baldur's Gate` is a separate player musing aloud; **Tito's origin is undetermined.** |
+| `Tito: Mountains, mountains, mountains.` and the map exchange | **mixed players + DM** | The whole map scene is attributionally scrambled and none of it is load-bearing. |
+| `Tito: Hold the line, Spartans.` | **a player, out of character** | Table noise during the miniature scramble. |
+| `Tavian: Gosh, there's countless demiplanes, but 27 major planes.` | **Tavian**, out of character | A player looking it up. **"27 major planes" is not a campaign fact.** The in-fiction answer the DM gave was *"at least a dozen"*, deliberately vague. |
+| `Tito: I'm gonna be like, uh, I think we might have been there, but we're back now.` | **Guntrah** | The first answer to *"Who sent you?"* |
+| `Tito: Correct.` / `Tito: Yes.` scattered through NPC dialogue | **whoever is in the scene** | Ubiquitous and harmless, but do not read them as Tito agreeing to things. |
+| `Tito: Tito, we gotta talk our way out of this.` | **another player, addressing Tito** | Not Tito talking about himself in the third person. |
+| `Guntrah: You guys don't think this game's kind of gay?` | **table noise** | Out of character, mid-miniature-scramble. Not a character line. |
+
+**Confirmed correct and load-bearing:**
+
+- `Guntrah: Mr. Dragon? What's your name, sir?` — **the politeness came from a
+  player's mouth and it earned everything the party got.** Also his: the firewood
+  request, the wing-brace offer, and every question that produced a straight
+  answer out of Ted.
+- `Tavian: We gotta, we gotta touch base with Dr. Voss.` — **the only time in four
+  sessions a player has raised the Academy unprompted mid-adventure.**
+- `Tavian: I'm not a smart man, but I'm pretty sure this is Milestone.` — the
+  player correctly reading the campaign's own reward structure.
+- `Tito: I will accept that deal for two beasts. However, if there is more than
+  two, this deal will need to be renegotiated.` — **a player writing a contract
+  clause, unprompted, and the dragon agreeing to it.**
+
+### 7d. Out-of-character noise — never treat as canon
+
+Derek, Miles, Russ, Christian (real players) · *Homeland* and the Legends of
+Drizzt novels, R.A. Salvatore, and the flight to Portugal · the Eiffel bridge in
+Porto and kids jumping off it · the Strait of Gibraltar / Morocco / curvature-of-
+the-earth argument (it *produced* a ruling — twelve miles — but the geography is
+real-world) · "Blue Pink" and tasting colours · D&D Beyond, Google and ChatGPT
+consultations on Silver Tongue, telescopes and the paralysed condition · the
+laminator and the eBay mini shopping ("I just searched for the word *huge*") ·
+"this is AI slop and it did the grid not perfect squares" (the battle map) ·
+plastic risers costing $8 · the entire miniature scramble, including "Expecto
+Patronum", "Mr. Ed", "Roach has 2 heads", "Fomorian Maxi" and the GI Joe
+comparison · "Vrenn and Stimpy" / "Vren and stubby" · Bijan Robinson's rushing
+yards · iOS 27 and MacBook fan noise · the DM's wife and son in the background ·
+"Alexa" as the dragon's name (a joke about the smart speaker listening) · "This
+is not a smucker situation" (a passphrase in-joke, see CLAUDE.md) · "our next
+party member is gonna be Ted" · Captain Planet rings · David cutting off body
+parts (a retired-party in-joke) · "XP grinding" as a meta-discussion.
+
+**Retired-party knowledge, flagged:** the DM's aside *"oh no, it was your other
+characters that did the owlbear thing, wasn't it? So these characters wouldn't
+know that then"* — caught and corrected in real time, which is exactly right.
+**The owlbear cave is One Shot 4 and this party has never seen it.**
+
+**A real open question surfaced and left unanswered:** *where the party members
+are originally from.* Guntrah asked, the DM said the school is up in the High
+Forest and *"I want to say you were down south somewhere"*, floated Triboar,
+Guntrah said *"it was wherever the gnome shop was"*, and the DM concluded: *"if
+it's not in any of the documentation, we probably don't have that."* **Silas is
+Baldur's Gate via his Acolyte background. Guntrah, Tito and Tavian have no
+recorded origin.** Worth one line each when their sheets are next touched.

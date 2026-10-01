@@ -245,8 +245,19 @@
     "contentType": "html",
     "contentFile": "content/creatures/fomorians.html",
     "visibility": "player",
-    "related": ["underdark_breach", "tedrovaxilliath", "neverwinter_wood", "session_4"],
+    "related": ["underdark_breach", "tedrovaxilliath", "neverwinter_wood", "the_captive_drow", "teds_fox", "session_4"],
     "links": [{ "label": "Fomorian \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/fomorian" }],
-    "tags": ["giant", "underdark", "fomorian", "session-4", "deadly", "CR-8", "evil-eye"]
+    "tags": ["giant", "underdark", "fomorian", "session-4", "played", "killed", "more-below", "deadly", "CR-8", "evil-eye"]
+  },
+  {
+    "id": "teds_fox",
+    "name": "Ted's Fox",
+    "type": "creature",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/creatures/teds_fox.html",
+    "visibility": "player",
+    "related": ["tedrovaxilliath", "neverwinter_wood", "underdark_breach", "witchs_pond", "tito", "session_4"],
+    "tags": ["fox", "guide", "spy", "neverwinter-wood", "session-4", "played", "universal-speech"]
   }
 ]

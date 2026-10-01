@@ -112,7 +112,19 @@
 
     const list = mkEl('div', 'sr-chooser-list');
     if (!sessions.length) {
-      list.appendChild(mkEl('p', 'sr-chooser-empty', 'No sessions with category "Planning" found.'));
+      // Every session in this campaign has been played (or none is prepped yet).
+      // Say so plainly and give an explicit Close, rather than leaving the user
+      // staring at an empty box with only the corner "×".
+      list.appendChild(mkEl('p', 'sr-chooser-empty', 'There are no sessions available to run.'));
+      list.appendChild(mkEl(
+        'p',
+        'sr-chooser-empty',
+        'A session appears here once it has a category of "Planning".'
+      ));
+      const okBtn = mkEl('button', 'sr-chooser-item sr-chooser-ok', 'Close');
+      okBtn.type = 'button';
+      okBtn.addEventListener('click', () => overlay.remove());
+      list.appendChild(okBtn);
     } else {
       sessions.forEach((s) => {
         const item = mkEl('button', 'sr-chooser-item');

@@ -1,6 +1,168 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
-## SESSION 3 PLAYED AND RECONCILED (2026-09-03). Read this first.
+## SESSION 4 PLAYED AND RECONCILED (2026-09-25). Read this first.
+
+**They landed in Neverwinter Wood, worked out where they were without being told,
+made a deal with an adult green dragon, killed two fomorians without taking a
+scratch, and left with passage, a fox and no loot.** Vrenn is still with them,
+the party chose to keep him, and he is now cursed. Everyone is level 11.
+
+**Transcript on file:** `planning/session_4_transcript.txt`. Full reconciliation
+in `content/sessions/session_4.html`, which is now a record of play rather than
+prep. Glossary extended with a Session 4 section (§7): the worst
+speaker-attribution problems of any transcript so far — *nearly every line
+Tedrovaxilliath speaks is labelled `Tito:`* — plus twenty-two rulings.
+
+`session_4_arrival.md` is the design document and is now historical. Where it and
+the transcript disagree, **the transcript wins.**
+
+### Three locked decisions were overturned at the table
+
+*(A fourth — "there was no *sending*" — was retracted on 2026-09-25; see item 1.)*
+
+1. **THE *SENDING* HAPPENED — IT WAS JUST NEVER NARRATED.** *(Corrected
+   2026-09-25 on the DM's own account; the first version of this pass got it
+   wrong from the transcript alone.)* The 2026-09-23 design and the "option A"
+   text **both stand.** Morvek cast *sending*; what the table saw was Vrenn on
+   his knees holding his head for fifteen or twenty seconds, then **"Morvek
+   knows."** Withholding the words is exactly what the prep asked for, and the
+   conversation immediately afterwards carried the content.
+   **Corollary, and it matters: Vrenn's refusal to reply is STILL UNSPENT.**
+   *Sending* permits an immediate twenty-five-word answer and he did not take it,
+   out of fear. The prep said to tell the party he could have answered and
+   didn't. **That has not been said.** It is the most revealing single fact about
+   him and it is still sitting there.
+
+2. **VRENN RECOGNISED THE COUNTRY, AND THE CAVE IS HIS.** The 2026-09-24 ruling
+   was that *plane shift* is inaccurate and Vrenn is as lost as the party. The
+   arrival half held; the rest did not. On the walk north the landscape came back
+   to him and **the Breach turned out to be the exact hole he escaped
+   Menzoberranzan through, about ten years ago.** He is no longer a blank on local
+   geography and should not be played as one. It bought the best beat of the
+   session: an escaped slave walking back to his own escape route as somebody
+   else's property again, and going down it anyway.
+
+3. **THE PARTY NAMED NEVERWINTER WOOD THEMSELVES,** inside twenty minutes.
+   Guntrah flew above the canopy on Winged Boots; Silas made History 16 off the
+   unusual number of rivers and the fir mixed into a deciduous forest. The
+   instruction "do not let anyone identify it without being told" is retired, and
+   nothing was lost — knowing the name and knowing anything useful turned out to
+   be entirely different problems.
+
+4. **THE NINE HELLS ARE IN THE CAMPAIGN.** The locked decision (DM, 2026-08-29)
+   was that a Grave Token is *"deliberately NOT an infernal soul coin — nothing in
+   this campaign touches the Nine Hells."* Vrenn's explanation did exactly that,
+   deliberately and at length: soul coins are real and are currency in the Hells,
+   **Morvek went down there personally, learned how they work, and invented grave
+   tokens on that model.** He also said the words *"grave token"* out loud, which
+   the standing note said not to do until somebody saw one. **Both are canon now.**
+   The first is a genuine reversal and is flagged for a deliberate decision about
+   how far that door swings; the second costs nothing.
+
+### The one thing that needs deciding before Session 5 opens
+
+**THE PARTY IS LEVEL 11, CARRYING 80 GOLD PIECES, AND HAS NO HEALING POTIONS.**
+
+They did the job and **no reward item changed hands.** All five prepped options —
+four potions in a rotted pack, a *bag of holding*, a *cloak of elvenkind*, an
+elven +1 blade, and the *scroll of sending* — are untouched. What Ted actually
+paid was the thinnest version of option 5: free passage out of the wood wherever
+they chose, confirmation that there is a town to the south-west, and a fox to walk
+them there. Nobody asked him for anything else, and he volunteered nothing:
+*"I owe nothing to you except to allow you to leave my forest alive."*
+
+This is not a mistake — it is a consequence, and it is in character. But the party
+has now had no healing consumables since Commencement, and they are walking out of
+a forest into a settlement. **Either the potions arrive somewhere else, or this
+becomes a pressure the next session honours on purpose. Decide it rather than let
+it drift.** The unpaid wing brace Guntrah offered is a better occasion for them
+than the job was.
+
+### Where they are and where they are going
+
+Session 4 stopped with the party following the fox back to the arrival clearing
+for a **second long rest Ted granted for the asking**, intending to leave
+**south-west in the morning** for the settlement whose fire Guntrah saw from above
+the canopy, twelve miles off.
+
+**That is almost certainly Logger's Camp** — the fire was west-south-west at the
+limit of vision, Ted confirmed a town in that direction, and the regional map puts
+Logger's Camp west-south-west of the clearing. *The DM has not named it, so treat
+it as very likely rather than settled.* **It is the next prep target**, and it
+moves **Anselm Ferreck one step down the queue** rather than being next: Neverwinter
+is further west, past it.
+
+### The live list for Session 5
+
+1. **The clock is 2–4 days and one day is gone.** Vrenn's own arithmetic: Morvek
+   knows the plane but not the place, cannot *scry* across planes, and **probably
+   has no tuning fork, because the party took the one from his basement.** The
+   party's own theft is the brake, and **nobody at the table has joined that up
+   yet.** That realisation is a scene waiting to happen.
+2. **Vrenn is cursed and will try to shake it at the next long rest.** Evil Eye:
+   magical deformities, speed halved, disadvantage on STR/DEX checks, saves and
+   attacks. He repeats the save on finishing a long rest and there is one
+   scheduled. **Roll it — and consider failing it once**, because a visibly
+   deformed drow walking into a logging camp is a scene this campaign has not had.
+3. **Something is coming up the back of the Breach.** Grinding and stomping,
+   getting closer, and the party knowingly walked away from it. **Tito wrote a
+   renegotiation clause into the deal for more than two fomorians and Ted agreed
+   to it**, so there is a contract with a trigger in it.
+4. **The party like Ted and want him travelling with them.** Sincere and repeated.
+   He has told them exactly where they stand and said *"probably not"* when asked
+   for help. **Do not soften him to meet them.** The gap between what they feel and
+   what he actually said is the best thing this session produced.
+5. **Guntrah owes him a wing brace.** He offered, rolled a 6, and got *"I'll
+   consider it."* If he ever comes back with the thing built, that is a
+   relationship rather than a favour, and it goes straight at the blind spot —
+   nobody has ever tried to repair Ted.
+6. **Voss's contact list has still never been read aloud.** Four sessions. Tavian
+   has it, has asked repeatedly, and this session asked *a green dragon* whether it
+   had heard of the Academy instead. He also said the thing the campaign needed
+   somebody to say: *"We've got to touch base with Dr. Voss."*
+7. **Vrenn's two prepared vellums** are still unhanded-over after two more long
+   rests — and he cast *hold monster* out of his own head in the cave, which is
+   the obvious cue.
+8. **The Session 2 supply-chain clue** has now failed to land three sessions
+   running. Vrenn was available for two long rests and nobody asked him about the
+   crates.
+9. **The fox is still with them** and is a two-way channel to Ted. It watched the
+   entire fomorian fight from cover and reported back. Assume he knows.
+10. **Vrenn's Menzoberranzan timeline needs one DM answer.** He put the escape at
+    *about ten years ago*, which does not sit easily with the 2026-09-23 note that
+    Menzoberranzan is *"from his youth"* and *"decades apart"* from the sister and
+    the Token. Both episodes are canon; neither is dated against the other, and
+    "from his youth" is retired. The two Underdark geographies stay separate.
+
+### What was prepped and never spent — all still good
+
+The whole reward table · the treant, and the fact that it is alive (**Ted never
+told the story and the party have no idea there is one — they have seen the scar
+and two of them tried to fix it**) · the lair, the hoard, the underwater entrance,
+and the records of who has been sent to kill him · the fomorian-alliance branch
+and its language problem (**nobody spoke a word to them**) · the Silent Spies
+set-piece, now superseded in practice by the fox · Tito's Magic Resistance ruling
+against Evil Eye, never tested.
+
+**One thing was half-given away without the party noticing:** the *vegetation* arm
+of the corruption gradient was described in full on the walk north, **including
+that it weakens with distance from the lair** — which is the same sentence as
+*it is worst at the lair*. They can now find the sinkhole by walking uphill into
+the worst growth, and it has not occurred to them. Leave it.
+
+### Two new entities
+
+- **`teds_fox`** — Ted's guide, escort and eyes. It did the Silent Spies' entire
+  job in one body and became the best NPC in the session, mostly because Tito
+  spent Universal Speech on it.
+- **`witchs_pond`** — a swampy pond with straight lines of old timber in it, where
+  Ted chose to wait for them and where the deal was settled. **Not his lair.**
+  Flagged by the DM in the moment as possibly a former witch's hut; entirely
+  unclaimed and unconnected to anything.
+
+---
+
+## SESSION 3 PLAYED AND RECONCILED (2026-09-03). Historical — Session 4 above supersedes anything here about "before Session 4 opens".
 
 **The party took Route B, and got off the plane the same night.** No dawn, no
 second scroll, no return to the platform. They walked an hour east to

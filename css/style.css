@@ -3944,6 +3944,15 @@ h3.ring-name {
 .sr-chooser-item:hover { border-color: var(--gold-soft); background: var(--panel-2); }
 .sr-chooser-item-name { font-family: var(--body); font-size: 0.88rem; color: var(--ink); }
 .sr-chooser-item-meta { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
+/* "Close" in the empty-state chooser: same chrome as an item, centred like a button. */
+.sr-chooser-ok {
+  align-items: center;
+  font-family: var(--body);
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-align: center;
+  margin-top: 0.4rem;
+}
 
 
 /* Stat table — used in character sheet content files */
