@@ -1128,9 +1128,9 @@
     "category": "Neverwinter Wood",
     "contentType": "html",
     "contentFile": "content/locations/logging_camp.html",
-    "visibility": "dm-only",
-    "related": ["neverwinter_wood", "tedrovaxilliath", "neverwinter_wood_map"],
-    "tags": ["logging-camp", "loggers-camp", "kettle-bend", "thundertree", "settlement", "neverwinter-wood", "session-5", "unplayed", "dm-only", "resupply"],
+    "visibility": "player",
+    "related": ["neverwinter_wood", "tedrovaxilliath", "logging_crew", "thundertree_road", "neverwinter_wood_map", "session_5"],
+    "tags": ["logging-camp", "loggers-camp", "kettle-bend", "thundertree", "settlement", "neverwinter-wood", "session-5", "unplayed", "resupply"],
     "environment": {
       "architecture": "A company logging camp beside the ruins of Thundertree, at the western edge of the Wood. A dozen canvas wall tents in two rows, plus one spare. The cook tent is a big fly over plank tables at the centre. The boss's tent has the tool wagon and strongbox beside it. An ox line and carts, a filing bench and saw pit, and a landing on the bank where fir logs are bound into loads and a barge is being made up.",
       "activity": "About thirty people, up before dawn and asleep at dark. Nobody talks at meals: you eat, you leave, and the talk happens at the fire afterwards. No drink except on the rest day. The burn pile is kept going day and night.",
@@ -1146,6 +1146,31 @@
       { "detail": "Ask why the firs are worth it and a faller will show you: a green plank laid between two stumps, and a man bouncing on the middle of it." },
       { "detail": "The camp is working before the sun is up. The first sound of the day is the saw-filer's bench.", "time": ["dawn"] },
       { "detail": "Somebody always sits up with the burn pile. Tonight's watcher is whittling spoons, and has a row of finished ones beside him.", "time": ["night"] }
+    ]
+  },
+  {
+    "id": "thundertree_road",
+    "name": "The Old Thundertree Road",
+    "type": "location",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/locations/thundertree_road.html",
+    "visibility": "player",
+    "related": ["logging_camp", "tac_credit_note", "session_5"],
+    "tags": ["road", "thundertree", "neverwinter", "open-country", "session-5", "unplayed"],
+    "environment": {
+      "architecture": "An old road, older than the camp and older than the ruin: packed earth over cobbles nobody has reset in fifty years, wide enough for a cart. It runs west from the ruins of Thundertree toward the coast road and Neverwinter.",
+      "activity": "The camp's supply cart, now and then, and nobody else. The timber takes the river.",
+      "sensory": "Wind, for the first time in days. Dry grass, and woodsmoke fading behind.",
+      "flora": "Scrub, rough grass and bramble. The Wood is a dark line to the east, and ahead there is nothing taller than a thorn bush.",
+      "lighting": "Open sky, with no canopy at all. After days under the trees it is a great deal of light.",
+      "weather": "Late autumn. Bright, cold days, and frost on the verges by morning."
+    },
+    "curiosities": [
+      { "detail": "The old milestones still stand. Under each carved number the loggers have chalked a second one: how far it is to supper." },
+      { "roll": "Nature DC 10", "detail": "Brambles have taken both verges. The last of the year's berries are still on them, and they are terrible." },
+      { "detail": "One wheel rut is far deeper than the other, the whole way along. Whoever loads the supply cart has been loading it badly for years." },
+      { "detail": "With the trees behind you the night sky is enormous. After days under the canopy, the stars are almost too much.", "time": ["night"] }
     ]
   }
 ]

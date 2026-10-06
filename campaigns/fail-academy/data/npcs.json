@@ -672,5 +672,16 @@
     "related": ["tedrovaxilliath", "neverwinter_wood", "teds_lair"],
     "links": [{ "label": "Treant \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/treant" }],
     "tags": ["treant", "neverwinter-wood", "dm-only", "thread", "unresolved", "CR-9"]
+  },
+  {
+    "id": "logging_crew",
+    "name": "The Logging Crew",
+    "type": "npc",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/npcs/logging_crew.html",
+    "visibility": "player",
+    "related": ["logging_camp", "tedrovaxilliath", "session_5"],
+    "tags": ["loggers", "logging-camp", "kettle-bend", "thundertree", "agda-stroud", "cook", "colm", "pip", "session-5", "unplayed"]
   }
 ]

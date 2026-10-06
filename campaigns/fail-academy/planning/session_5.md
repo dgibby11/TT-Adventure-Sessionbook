@@ -1,15 +1,14 @@
 # FAIL Academy — Session 5 (planning)
 
-> **PLAN IN PROGRESS (2026-10-05).** The four-beat spine and the decisions in
-> the next section are the DM's. Everything marked *proposal* is the assistant's
-> suggestion and can be overruled freely.
+> **PROMOTED 2026-10-06 — NOT YET PLAYED.** This plan is now the live session
+> `session_5`: `content/sessions/session_5.html`, a `Planning` session that runs
+> in the Session Runner. **The live page is what gets run; this file is kept as
+> the design record** — the dated decisions and the reasons behind them. If the
+> two ever disagree, fix the live page and note the change here.
 >
-> What is already on live entities, all DM-only: Voss's abilities
-> (`ellery_voss`), the logging camp's history (`neverwinter_wood`), and a thin
-> dashboard stub for the camp itself (`logging_camp`, built with the
-> party-location work of 2026-10-05). **This file stays the source for the
-> camp's working detail** until Session 5 is promoted. No `session_5` entity
-> exists yet.
+> The four-beat spine and the decisions in the next section are the DM's.
+> Everything marked *proposal* is the assistant's suggestion and can be
+> overruled freely.
 >
 > Sources: `content/sessions/session_4.html` (record of play), the Session 4
 > header in `reboot_status.md`, and `session_5_prep_prompt.md`.
@@ -578,30 +577,33 @@ opening and days of digging. No fight is available.
 
 ---
 
-## Promoting this to a live session
+## Promoted — what was built (2026-10-06)
 
-Not promoted yet. The app changed on 2026-10-05 — the dashboard now follows the
-party — so promotion needs more than it used to. See CLAUDE.md, "Where the party
-is". The parts that matter here:
+- **The session:** `session_5`, "Session 5 — A Lie for a Lie" (working title).
+  `category: "Planning"`, `visibility: "dm-only"`,
+  `startLocation: "neverwinter_wood"`, nineteen prompt cards, five `reveals[]`.
+- **Each beat's location chip:**
 
-- **The session entity:** `category: "Planning"`, `visibility: "dm-only"` until
-  played, a `reveals[]` list, and `.session-prompt` / `.prompt-label` markup.
-- **`startLocation: "neverwinter_wood"`.** Launching the session moves the party
-  there. The arrival clearing has no entity of its own; the Wood stands for it.
-- **A `data-location` on each beat that happens somewhere new:**
+  | Beat | `data-location` |
+  |---|---|
+  | 1. The evening | `neverwinter_wood` |
+  | 2. Dawn | `neverwinter_wood` |
+  | 3. The camp | `logging_camp` |
+  | 4. The road | `thundertree_road` |
 
-  | Beat | `data-location` | State |
-  |---|---|---|
-  | 1. The evening | `neverwinter_wood` | exists |
-  | 2. Dawn | `neverwinter_wood` | exists |
-  | 3. The camp | `logging_camp` | stub exists, with environment and curiosities |
-  | 4. The road | *none yet* | needs a location entity, or the dashboard stays on the camp |
+- **New entities,** all unplayed, player-visible but unrevealed, with everything
+  the party has not earned in DM-only blocks:
+  - `thundertree_road` — the old road west, where the ambush happens.
+  - `logging_crew` — the camp's people, their small talk and their lines.
+  - `tac_credit_note` — the note and its mark. The image is a copy of the
+    Consortium's emblem under a plain file name (`assets/tac_monogram.png`), so
+    nothing a player can see names it.
+- **`logging_camp`** was a thin dashboard stub. It now carries the camp's
+  working detail from this file, and is player-visible but unrevealed like the
+  others.
+- **Every line of dialogue and read-aloud on the live page is a proposal.** The
+  decisions are not.
 
-- **Any new location** needs an `environment` object and a `curiosities` array,
-  and a `related[]` link to something already in the Neverwinter Wood region so
-  it is not stranded under "Elsewhere". Curiosities are colour, not hooks.
-- **Bring the camp's working detail across** from this file to `logging_camp`.
-  The stub says so itself.
-- **After the session is played and reconciled,** set `campaign.json` →
-  `partyLocation` to wherever they ended.
-- **Keep this file.** Mark it promoted with a pointer; do not delete it.
+**Still to do once it has been played:** reconcile against the transcript, flip
+the session to `visibility: "player"` and `category: "Completed"`, and set
+`campaign.json` → `partyLocation` to wherever they ended. Keep this file.

@@ -36,11 +36,12 @@ All paths below are relative to the repo root.
    That is UI position, not campaign data, and it is discarded with the
    context.)
 
-3. **Use `test-fixture` for full-coverage runs.** `fail-academy`'s only
-   Planning session has an empty `reveals[]`, so its Complete-Session dialog is
-   unreachable and the default run reports `STAGES SKIPPED: complete_dialog,
-   complete_reveal` (nothing is silently skipped). `campaigns/test-fixture/` is
-   a purpose-built, hidden, non-disruptive campaign that covers everything:
+3. **Use `test-fixture` for full-coverage runs.** `fail-academy` has a
+   `Planning` session only between one being promoted and it being played. The
+   rest of the time its default run reports `INCOMPLETE` and skips the session,
+   Runner and reveal stages (nothing is silently skipped).
+   `campaigns/test-fixture/` is a purpose-built, hidden, non-disruptive campaign
+   that always covers everything:
 
    ```bash
    py -X utf8 .claude/skills/.../driver.py smoke                              # fail-academy: real content
@@ -124,15 +125,17 @@ All five campaigns, verified against the smoke test:
 
 | campaign | passphrase | Planning sessions | exercises reveal flow? |
 |---|---|---|---|
-| `fail-academy` | `Smuckers` | 1 (`session_2`) | **No** — its only Planning session has `reveals: []` |
+| `fail-academy` | `Smuckers` | 1 (`session_5`) as of 2026-10-06, until it is played; otherwise **0** | **Yes** while that session is unplayed (5 reveals); otherwise no |
 | `lost-mine` | `Demo` | 4 | **Yes** (8–26 reveals each) — best full-flow target |
 | `salt-below` | `Demo` | 3 | **Yes** (5–9 reveals each) |
 | `curse-of-strahd` | `Demo` | **0** — categories are `Chapter 1..15` | No — Session Runner unreachable |
 | `descent-into-avernus` | `Demo` | **0** — category is `Sessions` | No — Session Runner unreachable |
 | `test-fixture` | `Demo` | 1 (`tf_session_1`) | **Yes** — purpose-built; hidden from the picker |
 
-`fail-academy` cannot exercise the Complete-Session reveal flow at all (empty
-`reveals[]`) — use `test-fixture` for that, not a real campaign. The last
+`fail-academy` can exercise the full flow only while it has an unplayed
+`Planning` session; once the DM plays it and it is marked `Completed`, the run
+goes back to `INCOMPLETE`. Use `test-fixture` for anything that must always be
+covered, not a real campaign. The last
 two campaigns' sessions never appear in the "▶ Run Session" chooser at all,
 because it filters on `category == "Planning"` exactly (see Gotchas); that's a
 data-authoring gap in those campaigns, not a driver bug.
@@ -297,9 +300,9 @@ assuming you broke something, and treat any 4th warning as yours.
   campaign with no `Planning` session skips the session modal, Session Runner
   and reveal flow entirely; that now reports `INCOMPLETE` / exit 2, but the
   console/page error lists will still be empty and look reassuring.
-- **The reveal flow can't be tested on `fail-academy`** — its only Planning
-  session has an empty `reveals[]`, so `.sr-complete-btn` never renders and
-  the run reports `PASS (reveal flow not exercised)`. Use `lost-mine` or
+- **Don't rely on `fail-academy` for the reveal flow.** It has a `Planning`
+  session only until the DM plays it; after that there is no `.sr-complete-btn`
+  to find and the run reports `INCOMPLETE`. Use `test-fixture`, `lost-mine` or
   `salt-below` for anything touching Complete-Session.
 
 - **The map view is commented out of `index.html`.** `#campus-map` /

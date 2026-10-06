@@ -343,5 +343,16 @@
     "visibility": "player",
     "related": ["silas", "the_captive_drow", "morvek", "ritual_platform", "the_house", "session_3"],
     "tags": ["planar", "plane-shift", "component", "session-3", "material-plane", "long-fuse"]
+  },
+  {
+    "id": "tac_credit_note",
+    "name": "The Credit Note",
+    "type": "item",
+    "category": "Evidence",
+    "contentType": "html",
+    "contentFile": "content/items/tac_credit_note.html",
+    "visibility": "player",
+    "related": ["thundertree_road", "session_5"],
+    "tags": ["evidence", "credit-note", "monogram", "t-a-c", "drow", "session-5", "unplayed"]
   }
 ]

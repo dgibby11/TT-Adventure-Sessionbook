@@ -1,6 +1,74 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
-## SESSION 4 PLAYED AND RECONCILED (2026-09-25). Read this first.
+## SESSION 5 BUILT AND PROMOTED (2026-10-06). NOT YET PLAYED. Read this first.
+
+**Session 5 — "A Lie for a Lie" (working title) is live as a `Planning` session
+and runs in the Session Runner:** `content/sessions/session_5.html`, entity
+`session_5` (`dm-only`, `startLocation: neverwinter_wood`). The design record —
+twenty-eight dated DM decisions and the reasons behind them — is
+`planning/session_5.md`. It may be played as early as the evening of 2026-10-06.
+
+**The spine:** three voices in the evening (Voss by *sending*, Guntrah's father
+on the speaking stone, Morvek's scry) → rest → Ted will not let them leave, "a
+lie for a lie" → Vrenn stays with him of his own accord, or a fight → the
+logging camp beside the ruins of Thundertree → the road, three elite drow
+assassins after the tuning fork, and a credit note bearing the T.A.C. mark. It
+ends short of Neverwinter. **Every line of dialogue on the live page is a
+proposal; the decisions are the DM's.**
+
+### What the Session 4 block below now gets wrong
+
+DM decisions of 2026-10-05 and 2026-10-06. They supersede the matching lines
+under "SESSION 4 PLAYED AND RECONCILED".
+
+1. **Session 5 opens on the evening walk back to the clearing, not at dawn.** The
+   Session 4 recording stops before the second hut is cast. About a day and a
+   half has passed since they vanished; two days by morning, not three.
+2. **Funds are about 330 gp** by the 2026-09-25 sheets. "80 gp" was only the
+   fomorian loot.
+3. **The party know Voss's contact list.** They discussed it with the DM
+   off-microphone. "Never read aloud" only ever meant "not on a recording", and
+   the list is not an unspent reveal.
+4. **Nobody goes back into the Breach.** A second fomorian fight would not be
+   fun. The "contract with a trigger" in live-list item 3 is retired with the
+   deal it belonged to.
+5. **Vrenn does not travel on with the party.** He stays in the Wood either way.
+   The Evil Eye save most likely passes; "consider failing it once" in live-list
+   item 2 is withdrawn.
+6. **The settlement is a logging camp beside the ruins of Thundertree.** It used
+   to stand in the wood proper until the dragon killed a dozen men. The ruins
+   are quiet: the Lost Mine material is about twenty years in the past, and its
+   dragon and zombies were killed by earlier adventurers.
+7. **Morvek's reach this session is three elite drow assassins.** He still never
+   appears. The fork brings them to the edge of the Wood; after that they track
+   the party.
+8. **Voss is competent, not powerful** — see her entity. She will not bring them
+   home, she cannot cast her own teleportation, and the teleport ring's sigil
+   sequence stays with her for now.
+9. ***Tiny Hut* blocks *sending*,** which is why her first attempt failed.
+   Scrying is run as a telephoto lens that takes in far more than the subject.
+
+### New since Session 4
+
+- **The app's dashboard now follows the party** — see root `CLAUDE.md`, "Where
+  the party is". fail-academy has three regions and `partyLocation:
+  neverwinter_wood`. **Set `partyLocation` again when Session 5 is reconciled.**
+- **Entities:** `session_5` · `logging_camp` · `logging_crew` ·
+  `thundertree_road` · `tac_credit_note`. All unplayed. The last four are
+  player-visible but unrevealed, with everything the party has not earned in
+  `dm-only` blocks; the session's `reveals[]` lists them.
+- **`ellery_voss` and `neverwinter_wood`** each carry a new DM-only block: her
+  abilities, and the logging camp's history.
+
+### Still the DM's to decide
+
+How far the camp is (fifteen miles by his figure, about twenty-nine by the map)
+· whether a barge is leaving · who brings Voss if she visits (proposed:
+Ironquill) · the sum on the credit note (proposed: 500 gp).
+
+---
+
+## SESSION 4 PLAYED AND RECONCILED (2026-09-25). The record of play — but read the Session 5 block above first.
 
 **They landed in Neverwinter Wood, worked out where they were without being told,
 made a deal with an adult green dragon, killed two fomorians without taking a
