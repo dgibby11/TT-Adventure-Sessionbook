@@ -2,8 +2,12 @@
 
 > **PLAN IN PROGRESS (2026-10-05).** The four-beat spine and the decisions in
 > the next section are the DM's. Everything marked *proposal* is the assistant's
-> suggestion and can be overruled freely. Nothing here has been applied to live
-> data, and no `session_5` entity exists yet.
+> suggestion and can be overruled freely.
+>
+> Two pieces of this are also on live entities, as DM-only notes: Voss's
+> abilities (`ellery_voss`) and the logging camp's history (`neverwinter_wood`).
+> Nothing else has been applied to live data, and no `session_5` entity exists
+> yet.
 >
 > Sources: `content/sessions/session_4.html` (record of play), the Session 4
 > header in `reboot_status.md`, and `session_5_prep_prompt.md`.
@@ -35,14 +39,15 @@ second hut. **The whole evening is still to play.**
 2. ***Leomund's Tiny Hut* blocks *sending*.** That is why Voss's first attempt
    failed, and she will ask about it.
 3. **Neverwinter is not reached in Session 5.** Too much progression too quickly.
-4. **The settlement is Logger's Camp on the DM's map** — the crew's own name
-   for it is **Kettle Bend**, which is on no map. A plain logging camp, a
-   pass-through for regional information. Suspicious but not bad; somewhat
-   helpful.
+4. **The settlement is a logging camp** — a plain one, a pass-through for
+   regional information. Suspicious but not bad; somewhat helpful. *(Where it
+   stands: decision 25. The name "Kettle Bend" is the assistant's proposal.)*
 5. **The camp is 15 miles from the clearing.** Guntrah's twelve was an estimate.
    The loggers keep what they think is a safe distance after two disastrous
    encounters with the dragon, **and are closer to his range than they know.**
-   Not important; do not build on it.
+   Not important; do not build on it. *(Open since decision 25 put the camp
+   beside Thundertree, which the map shows about twice as far — see "Still
+   open".)*
 6. **Two-hop *plane shift* is allowed** if the party ever obtains a fork for a
    second plane. Vrenn will mention it, to put it on the table. Not expected to
    be pursued.
@@ -114,6 +119,17 @@ second hut. **The whole evening is still to play.**
     It is closely held, the ring is logged, and Voss would almost certainly lose
     her job if the party's use of it were traced back to her. **She may give it
     out eventually.**
+24. **The logging camp used to stand in the wood proper.** Many years ago the
+    dragon killed a dozen good men, and the camp withdrew.
+25. **It now stands just beside the ruins of Thundertree** — the town destroyed
+    when Mount Hotenow erupted several decades ago.
+26. **They cannot afford to pay adventurers in Neverwinter enough to come and
+    deal with the dragon.** They joke that once the party is stronger, perhaps
+    they will come back and do it.
+27. **They are here for particular firs** that grow no nearer the city and are
+    prized for their suppleness, which makes them excellent for shipbuilding.
+    **The logs are bound onto barges and escorted down the Neverwinter River to
+    the city.** The carts are for tents, tools and the like, not the logs.
 
 ---
 
@@ -171,8 +187,9 @@ Either way they leave the Wood or die trying.
 
 ### 3. The logging camp (Kettle Bend)
 
-Fifteen miles south-west — most of a day through forest, arriving around supper.
-Resupply, regional information, on toward Neverwinter. Framework below.
+Beside the ruins of Thundertree, at the wood's western edge. *Fifteen miles by
+the DM's figure; about twice that by the map — open.* Resupply, regional
+information, small talk, on toward Neverwinter. Framework below.
 
 ### 4. The road — the drow
 
@@ -188,65 +205,83 @@ party has given up its own way home.
 
 ## The logging camp — Kettle Bend
 
-**DM brief (2026-10-05):** about thirty people, with tents, tools and carts. It
-may have a name, but not one that is on any map or that the party would
-recognise. No secrets — enough to answer questions and carry some short
-dialogue. Everything below that brief is the assistant's *proposal*.
+**Canon (DM, 2026-10-05).** Everything in this list is the DM's.
 
-**What it is.** A company cutting camp on a shelf of cleared ground above a bend
-in the river. The crew call it **Kettle Bend**. It is a workplace under canvas,
-not a village: no inn, no shop, no temple, no families. The whole camp can be
-struck and loaded in a day, because it has had to move before.
+- **About thirty people**, with tents, tools and carts. Suspicious of strangers
+  but decent, and somewhat helpful. No secrets — a pass-through.
+- **It may have a name**, but not one that is on any map or that the party would
+  recognise.
+- **It used to stand in the wood proper.** Many years ago the dragon killed a
+  dozen good men, and the camp withdrew.
+- **It now stands just beside the ruins of Thundertree**, the town destroyed
+  when Mount Hotenow erupted several decades ago.
+- **They cannot afford adventurers.** Neverwinter's would cost more than they
+  can pay to come and deal with the dragon. They joke that once the party is
+  stronger, perhaps they will come back and do it.
+- **They are here for the firs.** A particular fir that grows no nearer the
+  city, prized for its suppleness — excellent shipbuilding timber.
+- **The logs go by barge:** bound onto barges and escorted down the Neverwinter
+  River to the city.
+- **The carts carry the camp** — tents, tools and the like — not the logs.
+
+Everything below is the assistant's *proposal*, built to fit that.
+
+**Name.** The crew call it **Kettle Bend**.
+
+**Why beside a dead town.** Thundertree's ground is already cleared, its old
+road runs to Neverwinter, and the river is close. Nobody had to cut a new
+landing.
 
 **Who is there — about thirty.**
 - The camp boss.
 - The cook and a chore boy.
 - Two teamsters, who handle the oxen and carts.
 - A saw-filer who doubles as smith.
-- Roughly two dozen fallers and haulers. Mostly human, a few dwarves, two
-  half-orcs.
+- Roughly two dozen fallers, haulers and bargemen. Mostly human, a few dwarves,
+  two half-orcs.
 
 **What the party sees walking in.**
+- **The ruins of Thundertree,** in plain sight beside the camp.
 - **Tents:** a dozen canvas wall tents in two rows, plus one spare.
 - **The cook tent:** a big fly over plank tables, the centre of camp life.
 - **The boss's tent,** with the tool wagon and strongbox beside it.
-- **The ox line** and four carts: two heavy timber carts, a supply cart and a
-  water cart.
+- **The ox line and the carts.** The carts move the camp, not the timber.
 - **A filing bench and saw pit.**
-- **The landing:** log stacks along the bank, waiting for the spring flood.
+- **The landing:** fir logs bound into loads on the bank, and a barge being
+  made up.
 - **The burn pile,** kept going day and night to clear brush. *That is the smoke
   Guntrah saw.*
 
 **Geography.**
-- **The line** — a creek east of camp with blazed trees along it. Nobody cuts or
-  walks past it.
-- **The old camp** — further east, abandoned after the second disaster.
-- **The cart track** — west along the river toward the coast road, swinging wide
-  of an old ruin on the way.
-- **No boats.** Timber goes downriver on the spring flood; in late autumn the
-  water is low and nothing is moving.
+- **The wood proper** — east. They cut the edge and go no further in.
+- **The old camp** — in the wood proper, abandoned since the dozen died. *On the
+  DM's map the "Logger's Camp" marker sits there (assistant's reading — see
+  "Still open").*
+- **The ruins of Thundertree** — beside the camp.
+- **The river** — the barges' road to the city.
+- **The track** — Thundertree's old road, west to Neverwinter.
 
 **Culture.**
 - Up before dawn, asleep at dark.
-- **No talking at meals.** You eat, you leave.
+- **No talking at meals.** You eat, you leave. The talk happens at the fire
+  afterwards.
 - No drink except on the rest day.
 - **Hardly any coin in camp.** The crew are paid at season's end with a company
   note cashed in Neverwinter. *(Deliberate: it shows the party what a credit
   note is before they find one on a dead drow.)*
-- They call the dragon **"the Green"**, say as little about him as they can, and
-  have no idea he has a name.
+- They call the dragon **"the Green"** and have no idea he has a name.
 
 **Named people.** Four is enough.
 - **Agda Stroud**, camp boss. Fifties, blunt, fair. She decides whether the party
   stays.
 - **Cook.** Nobody uses another name. Runs the cook tent, hears everything.
-- **Colm**, head teamster. Drives the supply cart and knows the road west.
+- **Colm**, head teamster. Knows the road west.
 - **Pip**, chore boy. Fifteen, and the only one openly thrilled to see
   adventurers.
 
-**Why they are suspicious.** The party walks in from the east — the one direction
-nobody comes from — armed, with a steel construct. An orc and a half-orc raise no
-eyebrows; the crew has both.
+**Why they are suspicious.** The party walks out of the wood proper — the one
+direction nobody comes from — armed, with a steel construct. An orc and a
+half-orc raise no eyebrows; the crew has both.
 
 **What the party can get.**
 - **Supper and the spare tent:** about 5 sp a head, paid up front, gone by first
@@ -257,31 +292,44 @@ eyebrows; the crew has both.
   in Voss's basket, if she visits — decision 18.)*
 - **Directions,** freely, once Agda has decided they are not trouble.
 
-**The two disasters** (*placeholders — replace freely*).
-- A generation ago, a crew cut too far east. Neither men nor oxen came back.
-- About fifteen years ago the company paid sellswords to kill him. None
-  returned, and then he visited the old camp.
+**Small talk** — what the crew will chat about at the fire, all of it from the
+canon above.
+
+- **The firs.** Why anybody works this close to that forest. "Bends before it
+  breaks. Grows nowhere nearer the city, and the shipwrights pay for every
+  stick."
+- **The old camp.** "We were in the wood proper once. He killed twelve good men.
+  That was years back, and we've been out here since."
+- **The price of a dragon.** "We asked in Neverwinter what it would cost to be
+  rid of him. We stopped asking."
+- **The joke.** "You lot come back when you've grown a bit. We'll pass a hat."
+- **The barges.** "Bound up and floated down to the city. Nothing goes down
+  that river without an escort."
+- **The carts.** "Those? Those are for us. Tents and tools. The timber swims."
+- **Thundertree.** "The mountain did that. Decades back, before my time."
 
 **What they can answer.**
 
 | Asked about | Answer |
 |---|---|
-| Where are we? | Kettle Bend, the company's west cut, in Neverwinter Wood. |
-| Nearest town? | Neverwinter, west along the track. *Two long days on foot at the map's assumed scale — unconfirmed.* |
-| The Green? | "We stay our side of the creek and he stays his." |
-| The ruin on the road? | "Nobody goes in. Track goes round." |
-| The smoking mountain? | "Always smokes. Hasn't done more in my time." |
-| News from the city? | Weeks old. The supply cart last came in three weeks ago. |
+| Where are we? | "Kettle Bend. That's old Thundertree behind you, and that's Neverwinter Wood you just walked out of." |
+| Nearest town? | Neverwinter, west by the old road or the river. *About a day and a half on foot from Thundertree by the map.* |
+| The Green? | "He killed twelve of ours, years back. We keep to the edge now." |
+| The ruins? | Thundertree. "The mountain did that." *What is in them now is open.* |
+| The smoking mountain? | Mount Hotenow. "Always smokes. It's what did for Thundertree." |
+| Why work here? | The firs. |
+| A barge to the city? | *Proposal:* "Next one's days off. You'd walk it quicker." |
+| News from the city? | As old as the last barge crew's return. |
 | Other strangers lately? | None. |
 | The Academy, liches, drow business, giants in a cave, anything else | "Can't say I'm familiar." |
 
 **Sample lines.**
-- Agda: "You came from *that* way. On foot. And you're all still here."
+- Agda: "You came out of *there*. On foot. And you're all still here."
 - Agda: "Supper and the spare tent, paid up front, gone by first light."
 - Agda, if they mention the dragon by name: "He has a *name*?"
 - Cook: "Eat. Talk outside."
-- Colm: "Keep the river on your right till the track leaves it. Don't follow the
-  river past that."
+- Colm: "Old road runs west from the ruins. Stay on it and you'll see the city
+  walls."
 - Pip: "Did you see him? Is he really as big as they say?"
 
 ---
@@ -443,10 +491,22 @@ opening and days of digging. No fight is available.
 
 ### The camp
 - **They skip it** and follow the river west.
-- **They ask Colm for a ride.** A cart shortens the road and puts a bystander in
-  the ambush.
-- **They report that the Green is dead, or is their friend.** Either lands hard
-  on people who have lost two crews to him.
+- **They ask about a barge.** A barge is a fast, escorted ride to Neverwinter,
+  which this session is not meant to reach (decision 3). *Proposal:* no load is
+  ready. The next barge goes when the load is bound and the escort has come up
+  from the city, several days off. Walking is quicker.
+- **They take escort work on the next barge.** A natural offer from people who
+  cannot afford adventurers. If the party wait for it, the ambush moves to a
+  night mooring on the river, and the session still ends short of the city.
+- **They go into the ruins of Thundertree.** The ruins are right there. *Needs a
+  DM answer: what is in them now?* The Lost Mine material in this repo puts ash
+  zombies and a young green dragon in Thundertree; a working camp next door
+  implies the ruins are quiet.
+- **They ask for a ride.** The carts are the camp's own and are going nowhere.
+- **The joke about killing the Green** lands on a party that may have just
+  fought him, or just left Vrenn in his keeping. Somebody will answer it. They
+  may say he is dead, or that he is their friend; either lands hard on people
+  who lost twelve men to him.
 - **Vrenn is still with them.** Agda's terms tighten: he stays where she can see
   him.
 - **Potions.** None at the camp. They arrive only in Voss's basket, if she
@@ -479,7 +539,8 @@ opening and days of digging. No fight is available.
 - Four acts plus the contact scene is a long night, and a dragon fight alone is
   an hour or more. **Cut line (*proposal*):** if it is late when they reach the
   camp, end there and open Session 6 with the ambush.
-- **Neverwinter stays out of reach** as long as nobody has a boat or a fast cart.
+- **Neverwinter stays out of reach** as long as no barge is leaving. See the
+  barge contingency under "The camp".
 
 ---
 
@@ -487,7 +548,18 @@ opening and days of digging. No fight is available.
 
 1. The exact words of Voss's *sending*, and of Guntrah's father's message.
 2. If Voss visits: who the escort is. *Proposed: Ironquill.*
-3. How Tito would ever learn where to cash the note. *(DM: a fun future
+3. **How far the camp is.** Decision 5 says fifteen miles; decision 25 puts it
+   beside Thundertree. On the DM's map Thundertree is 5.2 grid squares from the
+   arrival clearing and the "Logger's Camp" marker is 2.7 — about twice as far,
+   roughly twenty-nine miles if the marker is the DM's fifteen. *Suggested:* use
+   the map. A day and a half's walk, passing the abandoned old camp about
+   halfway, which is where the marker sits. That also fits the DM's first
+   figure of twenty miles from the dragon's ground.
+4. **What is in the ruins of Thundertree now.**
+5. **The barges.** Whether one is leaving, and whether the party can ride it.
+6. An earlier note said the camp had *two* bad encounters with the dragon. Only
+   one is described so far: the dozen men.
+7. How Tito would ever learn where to cash the note. *(DM: a fun future
    conversation.)*
 
 *Not promoted. When this becomes a live `session_5` entity it needs
