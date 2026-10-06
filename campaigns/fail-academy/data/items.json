@@ -19,7 +19,7 @@
     "contentFile": "content/items/quick_components_pouch.html",
     "visibility": "player",
     "related": ["silas", "oswald_crumb", "thornwick_consortium", "session_1"],
-    "tags": ["magic-item", "wondrous", "pouch", "wizard", "spellcasting-focus", "pc-item", "thornwick"]
+    "tags": ["magic-item", "wondrous", "pouch", "wizard", "spellcasting-focus", "pc-item"]
   },
   {
     "id": "standing_ovation",
@@ -342,7 +342,7 @@
     "contentFile": "content/items/steel_tuning_fork.html",
     "visibility": "player",
     "related": ["silas", "the_captive_drow", "morvek", "ritual_platform", "the_house", "session_3"],
-    "tags": ["planar", "plane-shift", "component", "session-3", "material-plane", "long-fuse"]
+    "tags": ["planar", "plane-shift", "component", "session-3", "material-plane"]
   },
   {
     "id": "tac_credit_note",

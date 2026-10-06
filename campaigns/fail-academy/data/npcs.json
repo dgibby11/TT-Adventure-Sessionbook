@@ -108,7 +108,7 @@
     "contentFile": "content/npcs/osric_morne.html",
     "visibility": "player",
     "related": ["academy_provisions", "academy_credits", "lenny_goldvein", "thornwick_consortium", "one_shot_5"],
-    "tags": ["staff", "store", "provisions", "suspicious", "merchant"]
+    "tags": ["staff", "store", "provisions", "merchant"]
   },
   {
     "id": "torvald_thatch",
@@ -196,7 +196,7 @@
     "contentFile": "content/npcs/oswald_crumb.html",
     "visibility": "player",
     "related": ["wizards", "nether_mountains", "thornwick_consortium", "main_complex", "earth_elemental", "dust_mephit", "one_shot_5", "prof_brasca_ironquill", "oswald_crumb_statblock", "session_1", "garrick_nash"],
-    "tags": ["faculty", "arcane", "thornwick", "suspicious", "consortium"]
+    "tags": ["faculty", "arcane"]
   },
   {
     "id": "oswald_crumb_statblock",
@@ -383,7 +383,7 @@
     "contentFile": "content/npcs/reva_kettner.html",
     "visibility": "player",
     "related": ["food_court", "underground_storage", "lenny_goldvein"],
-    "tags": ["staff", "food-court", "gnome", "kitchen", "knows-something"]
+    "tags": ["staff", "food-court", "gnome", "kitchen"]
   },
   {
     "id": "fennick_mosswood",
@@ -405,7 +405,7 @@
     "contentFile": "content/npcs/captain_hadra.html",
     "visibility": "player",
     "related": ["campus_root", "headmistress_dowe", "main_complex", "contraband_log"],
-    "tags": ["staff", "security", "human", "watch", "institutional", "trustworthy"]
+    "tags": ["staff", "security", "human", "watch", "institutional"]
   },
   {
     "id": "ambrose_quill",
@@ -658,8 +658,7 @@
     "contentFile": "content/npcs/tedrovaxilliath.html",
     "visibility": "player",
     "related": ["neverwinter_wood", "teds_lair", "fomorians", "underdark_breach", "the_standing_treant", "teds_fox", "witchs_pond", "the_captive_drow", "guntrah", "tito", "tavian_stormnet", "session_4"],
-    "links": [{ "label": "Adult Green Dragon \u2014 D&D Beyond", "url": "https://www.dndbeyond.com/monsters/adult-green-dragon" }],
-    "tags": ["dragon", "green-dragon", "neverwinter-wood", "session-4", "played", "ted", "thax", "territorial", "CR-15", "quest-giver", "ally-of-convenience"]
+    "tags": ["dragon", "green-dragon", "neverwinter-wood", "session-4", "played", "ted", "thax", "territorial", "quest-giver"]
   },
   {
     "id": "the_standing_treant",

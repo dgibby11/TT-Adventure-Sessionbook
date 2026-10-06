@@ -25,7 +25,7 @@
     "links": [
       { "label": "Owlbear — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/owlbear" }
     ],
-    "tags": ["owlbear", "campus", "contained", "mascot", "founding-era", "docile"]
+    "tags": ["owlbear", "campus", "contained", "mascot", "docile"]
   },
   {
     "id": "campus_ravens",
@@ -178,7 +178,7 @@
     "contentFile": "content/creatures/high_forest_elk.html",
     "visibility": "player",
     "related": ["rangers", "druids", "high_forest", "druids_grove"],
-    "tags": ["elk", "herd", "seasonal", "campus", "autumn", "migratory", "grove-spirit"]
+    "tags": ["elk", "herd", "seasonal", "campus", "autumn", "migratory"]
   },
   {
     "id": "earth_elemental",
@@ -222,7 +222,6 @@
     "contentFile": "content/creatures/hooved_demons.html",
     "visibility": "player",
     "related": ["ritual_platform", "the_captive_drow", "the_house", "session_2", "session_3"],
-    "links": [{ "label": "Armanite (Mordenkainen's Tome of Foes) — D&D Beyond", "url": "https://www.dndbeyond.com/monsters/armanite" }],
     "tags": ["demon", "abyss", "planar", "lightning", "session-2", "session-3", "dangerous"]
   },
   {

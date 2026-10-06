@@ -246,8 +246,9 @@ file.
 ## 7. Session 4 ("The Green Country") — pass of 2026-09-25
 
 They arrived in Neverwinter Wood, worked out where they were without being told,
-negotiated with an adult green dragon, killed two fomorians without taking a
-scratch, and left with passage, a guide and no loot. **Vrenn is still with them
+negotiated with an adult green dragon, killed two fomorians for 13 points of
+damage to Tavian and nothing more (Evil Eye, natural 20, half of 27 — line
+1451), and left with passage, a guide and no loot. **Vrenn is still with them
 and is now cursed.** Full reconciliation in `content/sessions/session_4.html`.
 
 ### 7a. Proper-noun corrections — apply on sight

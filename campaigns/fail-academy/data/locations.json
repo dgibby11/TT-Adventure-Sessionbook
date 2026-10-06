@@ -320,7 +320,7 @@
     "contentFile": "content/locations/founders_statue.html",
     "visibility": "player",
     "related": ["secret_society", "ninth_thesis", "aldric_voss", "one_shot_2", "memorial_garden", "occult_systems"],
-    "tags": ["landmark", "founders", "mystery", "ritual-site", "lore"],
+    "tags": ["landmark", "founders", "mystery", "lore"],
     "environment": {
       "architecture": "A tall stone figure on a raised plinth at the junction of three campus paths. Older than everything immediately around it — stone worn smooth, features slightly indistinct.",
       "activity": "Students pass through without stopping. The ones who do stop tend to do so at odd hours.",
@@ -390,7 +390,7 @@
     "contentFile": "content/locations/memorial_garden.html",
     "visibility": "player",
     "related": ["aldric_voss", "founders_statue", "old_library", "academy_traditions", "torvald_thatch"],
-    "tags": ["memorial", "founders", "garden", "lore", "tomb", "mystery"],
+    "tags": ["memorial", "founders", "garden", "lore", "mystery"],
     "environment": {
       "architecture": "A formal garden enclosed by low stone walls, with a central path leading to three memorial stones. The stones are tall, unadorned, and demonstrably older than everything around them.",
       "activity": "Almost never visited outside of the Founder's Remembrance ceremony. Grounds staff maintain it weekly. The maintenance log shows someone visits every Wednesday at dusk — listed only as 'authorized grounds access.'",
@@ -437,7 +437,7 @@
     "contentFile": "content/locations/fail_chamber.html",
     "visibility": "player",
     "related": ["ellery_voss", "jungle_site", "teleportation_network", "one_shot_3", "expedition_club"],
-    "tags": ["examination", "teleportation", "secret", "sigil", "dr-voss", "fieldwork"],
+    "tags": ["examination", "sigil", "dr-voss", "fieldwork"],
     "environment": {
       "architecture": "A high-ceilinged stone chamber with a permanent magical sigil inlaid in the floor. Observation balconies on three sides. The sigil is presented to students as testing infrastructure.",
       "activity": "Tightly scheduled — examination groups rotate through under faculty supervision. No unauthorized access permitted.",
@@ -918,7 +918,7 @@
     "contentFile": "content/locations/druids_grove.html",
     "visibility": "player",
     "related": ["druids", "archdruid_sevra", "grove_spirit", "high_forest_elk", "campus_cats"],
-    "tags": ["druids", "grove", "courtyard", "nature-spirit", "sub-location", "open-sky"],
+    "tags": ["druids", "grove", "courtyard", "sub-location", "open-sky"],
     "environment": {
       "architecture": "Interior courtyard of the Druids building, open to the sky. The central tree predates the building and was built around. Root systems from outside the building penetrate the courtyard walls. Planters and cultivated areas throughout.",
       "activity": "Sevra works here more than her office. Students practice here. The space is attentive in a way that takes time to identify.",
@@ -1110,7 +1110,7 @@
     "contentFile": "content/locations/witchs_pond.html",
     "visibility": "player",
     "related": ["tedrovaxilliath", "neverwinter_wood", "teds_fox", "underdark_breach", "session_4"],
-    "tags": ["pond", "swamp", "ruin", "neverwinter-wood", "session-4", "played", "unclaimed-seed"],
+    "tags": ["pond", "swamp", "ruin", "neverwinter-wood", "session-4", "played"],
     "environment": {
       "architecture": "A small, very swampy pond ringed with thorny brush. Here and there are straight lines of old timber, as if something was built here once.",
       "activity": "Nobody. This is where the dragon chose to wait for the party, and where the deal was settled.",

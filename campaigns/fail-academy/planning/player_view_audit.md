@@ -346,3 +346,95 @@ authored intent stands.
   `related[]` that does not exist. Possibly superseded by `campus_cats` / `campus_ravens`.
 - `party_overview` (player) exposes every PC's exact HP/AC/modifiers — fine for a DM dashboard,
   a deliberate choice for Player View.
+
+---
+
+## I. Second pass — the Session 4 reveal (2026-10-06)
+
+Session 4's seven entities (`session_4`, `neverwinter_wood`, `tedrovaxilliath`,
+`underdark_breach`, `fomorians`, `teds_fox`, `witchs_pond`) were added to
+`campaign.json` → `baselineRevealed` after a pass against
+`planning/session_4_transcript.txt`. Rule applied: player-facing text carries
+what was said or seen at the table; DM commentary, prep that never ran and facts
+the party have not been given go behind `dm-only`. **Nothing was deleted** —
+every sentence taken out of the player layer is in a DM block on the same page.
+
+### How Player View leaks — check all five, not only the `dm-only` blocks
+
+1. **Prose outside a `dm-only` block.** Including bracketed "[Note: …]" asides,
+   commentary in a fact sheet, and prompt labels ("— and this is not his lair").
+2. **`links[]`.** The modal shows them to everybody. A stat-block link names the
+   creature and hands over its numbers. DM links go inline, inside a DM block.
+3. **`tags`.** Never displayed, but search matches them, and `category`, by
+   substring for every visible entity. A tag that states a secret is a leak:
+   searching "thornwick" used to return Crumb.
+4. **Link text to a hidden entity.** `[[id|label]]` pointing at something the
+   player cannot see renders as plain text — the label, or the target's *name*
+   when there is no label. `[[teds_lair|the sinkhole]]` printed "the sinkhole".
+5. **`environment`.** Shown to players on the dashboard.
+
+**Not leaks:** `curiosities` (the panel is hidden unless DM view is on — css,
+commit `47d73ea`) and anything on a `dm-only` entity. **`.dm-restricted` is only
+a text style**: it hides nothing unless it sits inside a `dm-only` block.
+
+### What changed
+
+**The seven Session 4 pages.** `session_4`: the *sending* paragraph and "he never
+wanted Vrenn" moved to DM blocks, Vrenn's tuning-fork reasoning restored to his
+own words, prep commentary trimmed. `neverwinter_wood`: the Three Omens
+read-alouds (about a third played) moved to a DM block, with a short as-played
+section in front. `tedrovaxilliath`: fact sheet cut back to what the party
+perceived; his age, "what he cares about", the scar and the treant, and the
+playing notes are DM-only; the stat-block link left `links[]`. `fomorians`: the
+prepped description and "since the spring" moved to the DM block, replaced by the
+description read at the table. `underdark_breach`, `witchs_pond`: lair references
+out of the player layer.
+
+**Already-revealed pages Session 4 had rewritten — these were live.**
+`the_captive_drow`, `morvek`, `what_follows_vrenn`: all three said outright that
+the episode was a *sending*, that Vrenn had a right of reply and did not use it,
+and that the party's own theft of the fork is what delays Morvek.
+`tavian_stormnet`: "adult" dragon, "decade-old" scar, and a "Flag for the DM".
+
+**Older leaks found on the way through.** `session_1`: four bracketed DM notes
+in player prose, one of them the campaign's premise ("ordinary veil-bleed …
+the fissure or the ruins it came from"). `guntrah`: Holdar's *disgust*, a DM
+ruling that is gated on Holdar's own page and on Session 2's. `memorial_garden`:
+"one empty tomb" in the fact sheet, against the page's own "do not surface".
+`hooved_demons`: a `links[]` label naming the creature the DM declined to name.
+`the_figure_at_the_treeline`: "unscripted, no obligation to pay off".
+
+**Tags removed** (each stated something its own page keeps DM-only):
+`oswald_crumb` thornwick, suspicious, consortium · `osric_morne` suspicious ·
+`quick_components_pouch` thornwick · `the_bulette_that_didnt_fit` veil ·
+`ninth_thesis` hidden-evil, wren-halloway · `founders_statue` ritual-site ·
+`memorial_garden` tomb · `kass` founding-era · `high_forest_elk` grove-spirit ·
+`druids_grove` nature-spirit · `reva_kettner` knows-something · `captain_hadra`
+trustworthy · `fail_chamber` teleportation, secret · `steel_tuning_fork`
+long-fuse · `witchs_pond` unclaimed-seed · `tedrovaxilliath` CR-15,
+ally-of-convenience. *Cost:* DM search no longer finds those entities by those
+words. `thornwick_consortium.related` gained `quick_components_pouch` so the
+pouch is still one click from the Consortium's page.
+
+**One factual correction.** Tavian took 13 psychic damage in the fomorian fight.
+Five places on the live pages said nobody took any, and two planning docs
+said "without taking a scratch".
+
+### Left alone, for the DM
+
+- **The Fomorian and Oni D&D Beyond links** are still shown to players. The
+  names are known and both pairs are dead, but something was coming up the back
+  of the Breach.
+- **Tags that are a judgment about a person rather than a gated fact:**
+  `dangerous` on Headmistress Dowe, `cutting-corners` on Goldvein, `mystery` on
+  the statue and the garden.
+- **`memorial_garden`:** "a Wednesday dusk access logged as 'authorized grounds'
+  — name unlisted" is in the player-visible fact sheet and Environment panel.
+- **Session pages' Status lines** tell players that DM-only blocks exist and name
+  the planning files. Sessions 2 and 3 have read the same way since they were
+  flipped.
+- **Scope.** Session 4's pages and the pages it rewrote were read line by line
+  against the transcript. Everything else a player can open (119 entities) was
+  scanned for the names that must never appear, for DM-voice phrasing, and
+  across tags, `links[]`, link labels and `environment` — not re-read against
+  the Session 1–3 transcripts.

@@ -59,6 +59,19 @@ under "SESSION 4 PLAYED AND RECONCILED".
   `dm-only` blocks; the session's `reveals[]` lists them.
 - **`ellery_voss` and `neverwinter_wood`** each carry a new DM-only block: her
   abilities, and the logging camp's history.
+- **Session 4's seven entities are revealed to players (2026-10-06):**
+  `session_4` · `neverwinter_wood` · `tedrovaxilliath` · `underdark_breach` ·
+  `fomorians` · `teds_fox` · `witchs_pond`, mirrored into `campaign.json` →
+  `baselineRevealed`. A leak pass against the transcript ran first. **Still
+  behind `dm-only` on every page a player can open:** that Vrenn's episode was
+  a *sending* and that he could have replied · the treant, and how the wing was
+  torn · the lair · the reward table · Ted's age and stat block · that the fork
+  in Silas's pack is what is delaying Morvek. The change log, and the five ways
+  Player View leaks, are in `planning/player_view_audit.md` §I.
+- **Correction to the Session 4 record: Tavian took 13 psychic damage.** A
+  fomorian's Evil Eye, natural 20 on the save, half of 27. "Nobody took a point
+  of damage" was wrong wherever it appeared and has been fixed. Nobody else was
+  hurt.
 
 ### Still the DM's to decide
 
@@ -71,8 +84,9 @@ Ironquill) · the sum on the credit note (proposed: 500 gp).
 ## SESSION 4 PLAYED AND RECONCILED (2026-09-25). The record of play — but read the Session 5 block above first.
 
 **They landed in Neverwinter Wood, worked out where they were without being told,
-made a deal with an adult green dragon, killed two fomorians without taking a
-scratch, and left with passage, a fox and no loot.** Vrenn is still with them,
+made a deal with an adult green dragon, killed two fomorians for 13 points of
+damage to Tavian and nothing more, and left with passage, a fox and no loot.**
+Vrenn is still with them,
 the party chose to keep him, and he is now cursed. Everyone is level 11.
 
 **Transcript on file:** `planning/session_4_transcript.txt`. Full reconciliation

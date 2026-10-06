@@ -52,7 +52,7 @@
     "contentFile": "content/mysteries/the_bulette_that_didnt_fit.html",
     "visibility": "player",
     "related": ["ellery_voss", "high_forest", "session_1", "tito"],
-    "tags": ["mystery", "open", "bulette", "session-1", "veil"]
+    "tags": ["mystery", "open", "bulette", "session-1"]
   },
   {
     "id": "why_voss_has_latitude",
