@@ -4,10 +4,12 @@
 > the next section are the DM's. Everything marked *proposal* is the assistant's
 > suggestion and can be overruled freely.
 >
-> Two pieces of this are also on live entities, as DM-only notes: Voss's
-> abilities (`ellery_voss`) and the logging camp's history (`neverwinter_wood`).
-> Nothing else has been applied to live data, and no `session_5` entity exists
-> yet.
+> What is already on live entities, all DM-only: Voss's abilities
+> (`ellery_voss`), the logging camp's history (`neverwinter_wood`), and a thin
+> dashboard stub for the camp itself (`logging_camp`, built with the
+> party-location work of 2026-10-05). **This file stays the source for the
+> camp's working detail** until Session 5 is promoted. No `session_5` entity
+> exists yet.
 >
 > Sources: `content/sessions/session_4.html` (record of play), the Session 4
 > header in `reboot_status.md`, and `session_5_prep_prompt.md`.
@@ -130,6 +132,9 @@ second hut. **The whole evening is still to play.**
     prized for their suppleness, which makes them excellent for shipbuilding.
     **The logs are bound onto barges and escorted down the Neverwinter River to
     the city.** The carts are for tents, tools and the like, not the logs.
+28. **The ruins of Thundertree are quiet.** The Lost Mine material in this repo
+    is set about twenty years before these events. The young green dragon and
+    the zombies it puts in the ruins were slain by earlier adventurers.
 
 ---
 
@@ -215,6 +220,11 @@ party has given up its own way home.
   dozen good men, and the camp withdrew.
 - **It now stands just beside the ruins of Thundertree**, the town destroyed
   when Mount Hotenow erupted several decades ago.
+- **The ruins are quiet.** A young green dragon and zombies held them about
+  twenty years ago; earlier adventurers killed them. *(Consistency note,
+  assistant: the camp can only have settled beside the ruins once they were
+  cleared, so the dozen men died within the last twenty years, or the camp
+  stood somewhere else in between.)*
 - **They cannot afford adventurers.** Neverwinter's would cost more than they
   can pay to come and deal with the dragon. They joke that once the party is
   stronger, perhaps they will come back and do it.
@@ -226,7 +236,9 @@ party has given up its own way home.
 
 Everything below is the assistant's *proposal*, built to fit that.
 
-**Name.** The crew call it **Kettle Bend**.
+**Name.** The crew call it **Kettle Bend**. *The live stub's id is
+`logging_camp` and its display name is "The Logging Camp", so the name can
+still change without breaking a link.*
 
 **Why beside a dead town.** Thundertree's ground is already cleared, its old
 road runs to Neverwinter, and the river is close. Nobody had to cut a new
@@ -302,7 +314,10 @@ canon above.
   That was years back, and we've been out here since."
 - **The price of a dragon.** "We asked in Neverwinter what it would cost to be
   rid of him. We stopped asking."
-- **The joke.** "You lot come back when you've grown a bit. We'll pass a hat."
+- **The ruins.** "There was a dragon in there once. A young one. Adventurers
+  killed it twenty years back, and the dead things with it. Been quiet since."
+- **The joke.** "That lot did for the little one. Come back when you've grown a
+  bit and try the big one. We'll pass a hat."
 - **The barges.** "Bound up and floated down to the city. Nothing goes down
   that river without an escort."
 - **The carts.** "Those? Those are for us. Tents and tools. The timber swims."
@@ -315,7 +330,7 @@ canon above.
 | Where are we? | "Kettle Bend. That's old Thundertree behind you, and that's Neverwinter Wood you just walked out of." |
 | Nearest town? | Neverwinter, west by the old road or the river. *About a day and a half on foot from Thundertree by the map.* |
 | The Green? | "He killed twelve of ours, years back. We keep to the edge now." |
-| The ruins? | Thundertree. "The mountain did that." *What is in them now is open.* |
+| The ruins? | Thundertree. "The mountain did that." Quiet for twenty years, since adventurers killed the young dragon and the dead things in them. |
 | The smoking mountain? | Mount Hotenow. "Always smokes. It's what did for Thundertree." |
 | Why work here? | The firs. |
 | A barge to the city? | *Proposal:* "Next one's days off. You'd walk it quicker." |
@@ -498,10 +513,10 @@ opening and days of digging. No fight is available.
 - **They take escort work on the next barge.** A natural offer from people who
   cannot afford adventurers. If the party wait for it, the ambush moves to a
   night mooring on the river, and the session still ends short of the city.
-- **They go into the ruins of Thundertree.** The ruins are right there. *Needs a
-  DM answer: what is in them now?* The Lost Mine material in this repo puts ash
-  zombies and a young green dragon in Thundertree; a working camp next door
-  implies the ruins are quiet.
+- **They go into the ruins of Thundertree.** The ruins are right there.
+  *Answered (decision 28):* they are quiet. The young green dragon and the
+  zombies were killed about twenty years ago, and nothing is waiting in them.
+  An empty walk before supper, unless the DM wants something found there.
 - **They ask for a ride.** The carts are the camp's own and are going nowhere.
 - **The joke about killing the Green** lands on a party that may have just
   fought him, or just left Vrenn in his keeping. Somebody will answer it. They
@@ -555,12 +570,38 @@ opening and days of digging. No fight is available.
    the map. A day and a half's walk, passing the abandoned old camp about
    halfway, which is where the marker sits. That also fits the DM's first
    figure of twenty miles from the dragon's ground.
-4. **What is in the ruins of Thundertree now.**
-5. **The barges.** Whether one is leaving, and whether the party can ride it.
-6. An earlier note said the camp had *two* bad encounters with the dragon. Only
+4. **The barges.** Whether one is leaving, and whether the party can ride it.
+5. An earlier note said the camp had *two* bad encounters with the dragon. Only
    one is described so far: the dozen men.
-7. How Tito would ever learn where to cash the note. *(DM: a fun future
+6. How Tito would ever learn where to cash the note. *(DM: a fun future
    conversation.)*
 
-*Not promoted. When this becomes a live `session_5` entity it needs
-`category: "Planning"`, a `reveals[]` list and `.session-prompt` markup.*
+---
+
+## Promoting this to a live session
+
+Not promoted yet. The app changed on 2026-10-05 — the dashboard now follows the
+party — so promotion needs more than it used to. See CLAUDE.md, "Where the party
+is". The parts that matter here:
+
+- **The session entity:** `category: "Planning"`, `visibility: "dm-only"` until
+  played, a `reveals[]` list, and `.session-prompt` / `.prompt-label` markup.
+- **`startLocation: "neverwinter_wood"`.** Launching the session moves the party
+  there. The arrival clearing has no entity of its own; the Wood stands for it.
+- **A `data-location` on each beat that happens somewhere new:**
+
+  | Beat | `data-location` | State |
+  |---|---|---|
+  | 1. The evening | `neverwinter_wood` | exists |
+  | 2. Dawn | `neverwinter_wood` | exists |
+  | 3. The camp | `logging_camp` | stub exists, with environment and curiosities |
+  | 4. The road | *none yet* | needs a location entity, or the dashboard stays on the camp |
+
+- **Any new location** needs an `environment` object and a `curiosities` array,
+  and a `related[]` link to something already in the Neverwinter Wood region so
+  it is not stranded under "Elsewhere". Curiosities are colour, not hooks.
+- **Bring the camp's working detail across** from this file to `logging_camp`.
+  The stub says so itself.
+- **After the session is played and reconciled,** set `campaign.json` →
+  `partyLocation` to wherever they ended.
+- **Keep this file.** Mark it promoted with a pointer; do not delete it.
