@@ -37,13 +37,23 @@
       setRevealed: () => {},
     };
 
-    // Mock entity registry for modal cross-link tests
+    // Mock entity registry for modal cross-link tests (and, for state.js, two
+    // locations the party can be moved between)
     const _mockEntities = {
       known_npc: { id: 'known_npc', name: 'Tara Brightstone', type: 'npc', visibility: 'player' },
+      loc_a:     { id: 'loc_a', name: 'Alpha Hall',  type: 'location', visibility: 'player' },
+      loc_b:     { id: 'loc_b', name: 'Bravo Field', type: 'location', visibility: 'player' },
     };
+
+    // state.js reads its saved state once, at script load — start it empty so
+    // a previous run of this page cannot leak into this one.
+    localStorage.removeItem(window.CAMPAIGN.storageKey);
   </script>
   <script src="/js/generator.js"></script>
   <script src="/js/modal.js"></script>
+  <!-- state.js adds the real party/location functions onto the mock App above -->
+  <script src="/js/state.js"></script>
+  <script src="/js/dashboard.js"></script>
 
   <script>
     // ── Framework ─────────────────────────────────────────────────────────────
@@ -442,6 +452,239 @@
       assert(document.getElementById('img-btn-out')   !== null, '#img-btn-out missing');
       assert(document.getElementById('img-btn-reset') !== null, '#img-btn-reset missing');
     });
+
+    // ── dashboard.js — region model ───────────────────────────────────────────
+    const D = window._dashTest;
+
+    if (!D) {
+      failures++;
+      log(false, 'window._dashTest export', 'not found — check dashboard.js for errors');
+    } else {
+      const loc = (id, related, extra) =>
+        Object.assign({ id, name: id.toUpperCase(), type: 'location', related: related || [] }, extra);
+      const npc = (id, related) => ({ id, name: id, type: 'npc', related: related || [] });
+      const regionOf = (model, id) => model.regionOf.get(id);
+
+      section('buildRegionModel() — region list');
+
+      test('regions come back in config order', () => {
+        const m = D.buildRegionModel([loc('a'), loc('b'), loc('c')], ['c', 'a', 'b']);
+        assertEqual(m.regions.map((r) => r.id).join(','), 'c,a,b');
+      });
+
+      test('a region may be a bare id or { id, label }', () => {
+        const m = D.buildRegionModel([loc('a'), loc('b')], ['a', { id: 'b', label: 'The Far Side' }]);
+        assertEqual(m.regions[0].label, 'A', 'bare id takes the hub entity name');
+        assertEqual(m.regions[1].label, 'The Far Side', 'label overrides the hub name');
+      });
+
+      test('{ id } with no label falls back to the hub name', () => {
+        const m = D.buildRegionModel([loc('a')], [{ id: 'a' }]);
+        assertEqual(m.regions[0].label, 'A');
+      });
+
+      test('unknown hub ids are dropped, not thrown on', () => {
+        const m = D.buildRegionModel([loc('a')], ['nope', 'a', null, {}]);
+        assertEqual(m.regions.length, 1);
+        assertEqual(m.regions[0].id, 'a');
+      });
+
+      test('a hub that is not a location is dropped', () => {
+        const m = D.buildRegionModel([loc('a'), npc('n')], ['n', 'a']);
+        assertEqual(m.regions.map((r) => r.id).join(','), 'a');
+      });
+
+      test('a hub listed twice makes one region', () => {
+        const m = D.buildRegionModel([loc('a')], ['a', { id: 'a', label: 'Again' }]);
+        assertEqual(m.regions.length, 1);
+        assertEqual(m.regions[0].label, 'A', 'the first mention wins');
+      });
+
+      test('no regions configured → empty list, nothing thrown', () => {
+        for (const cfg of [undefined, null, []]) {
+          const m = D.buildRegionModel([loc('a')], cfg);
+          assertEqual(m.regions.length, 0);
+          assertEqual(m.orphans.length, 1, 'with no hubs every location is unplaced');
+        }
+      });
+
+      section('buildRegionModel() — membership');
+
+      test('a hub belongs to its own region', () => {
+        const m = D.buildRegionModel([loc('a')], ['a']);
+        assertEqual(regionOf(m, 'a'), 'a');
+      });
+
+      test('a location the hub links to joins that region', () => {
+        const m = D.buildRegionModel([loc('a', ['x']), loc('x')], ['a']);
+        assertEqual(regionOf(m, 'x'), 'a');
+      });
+
+      test('a location that links TO the hub joins too (links count both ways)', () => {
+        const m = D.buildRegionModel([loc('a'), loc('x', ['a'])], ['a']);
+        assertEqual(regionOf(m, 'x'), 'a');
+      });
+
+      test('membership follows chains: hub → x → y → z', () => {
+        const m = D.buildRegionModel([loc('a', ['x']), loc('x', ['y']), loc('y'), loc('z', ['y'])], ['a']);
+        assertEqual(regionOf(m, 'z'), 'a');
+      });
+
+      test('the nearer hub wins, even when it is listed later', () => {
+        // a → p → q → x   (3 links)        b → x   (1 link)
+        const ents = [loc('a', ['p']), loc('p', ['q']), loc('q', ['x']), loc('x'), loc('b', ['x'])];
+        const m = D.buildRegionModel(ents, ['a', 'b']);
+        assertEqual(regionOf(m, 'x'), 'b');
+        assertEqual(regionOf(m, 'q'), 'a', 'q is 2 from a and 2 from b — tie, earlier region');
+      });
+
+      test('equally near two hubs → the earlier region', () => {
+        const ents = [loc('a', ['x']), loc('b', ['x']), loc('x')];
+        assertEqual(regionOf(D.buildRegionModel(ents, ['a', 'b']), 'x'), 'a');
+        assertEqual(regionOf(D.buildRegionModel(ents, ['b', 'a']), 'x'), 'b');
+      });
+
+      test('two hubs linked directly each keep their own region', () => {
+        const m = D.buildRegionModel([loc('a', ['b']), loc('b')], ['a', 'b']);
+        assertEqual(regionOf(m, 'a'), 'a');
+        assertEqual(regionOf(m, 'b'), 'b');
+      });
+
+      test('a link through an NPC does not connect two locations', () => {
+        const ents = [loc('a', ['n']), npc('n', ['x']), loc('x', ['n'])];
+        const m = D.buildRegionModel(ents, ['a']);
+        assertEqual(regionOf(m, 'x'), undefined);
+        assertEqual(m.orphans.map((e) => e.id).join(','), 'x');
+      });
+
+      test('a location nothing links to is an orphan, not lost', () => {
+        const m = D.buildRegionModel([loc('a', ['x']), loc('x'), loc('island')], ['a']);
+        assertEqual(m.orphans.length, 1);
+        assertEqual(m.orphans[0].id, 'island');
+      });
+
+      test('related ids that do not exist are ignored', () => {
+        const m = D.buildRegionModel([loc('a', ['ghost', 'x']), loc('x')], ['a']);
+        assertEqual(regionOf(m, 'x'), 'a');
+        assertEqual(m.orphans.length, 0);
+      });
+
+      test('a location that lists itself is harmless', () => {
+        const m = D.buildRegionModel([loc('a', ['a', 'x']), loc('x', ['x'])], ['a']);
+        assertEqual(regionOf(m, 'x'), 'a');
+      });
+
+      test('an entity with no related[] at all is handled', () => {
+        const bare = { id: 'bare', name: 'Bare', type: 'location' };
+        const m = D.buildRegionModel([loc('a'), bare], ['a']);
+        assertEqual(m.orphans[0].id, 'bare');
+      });
+
+      test('visibility is ignored — a dm-only location still gets a region', () => {
+        const ents = [loc('a', ['secret']), loc('secret', [], { visibility: 'dm-only' })];
+        assertEqual(regionOf(D.buildRegionModel(ents, ['a']), 'secret'), 'a');
+      });
+
+      test('every location is either in a region or an orphan, never both', () => {
+        const ents = [loc('a', ['x']), loc('x', ['y']), loc('y'), loc('b'), loc('i1'), loc('i2', ['i1']), npc('n', ['a'])];
+        const m = D.buildRegionModel(ents, ['a', 'b']);
+        const locs = ents.filter((e) => e.type === 'location');
+        for (const e of locs) {
+          const placed = m.regionOf.has(e.id), orphan = m.orphans.includes(e);
+          assert(placed !== orphan, `${e.id}: placed=${placed} orphan=${orphan}`);
+        }
+        assertEqual(m.orphans.length, 2);
+      });
+    } // end D tests
+
+    // ── state.js — party location ─────────────────────────────────────────────
+    // state.js has replaced the mock App's state functions with the real ones.
+    section('party location (state.js)');
+
+    (function () {
+      const A = window.App;
+      const stored = () => JSON.parse(localStorage.getItem(window.CAMPAIGN.storageKey) || '{}');
+
+      test('state.js loaded its functions onto App', () => {
+        for (const fn of ['getPartyLocationId', 'getPartyLocation', 'setPartyLocation', 'setCurrentLocation']) {
+          assert(typeof A[fn] === 'function', fn + ' missing');
+        }
+      });
+
+      test('nothing set and nothing authored → no party location', () => {
+        delete window.CAMPAIGN.partyLocation;
+        assertEqual(A.getPartyLocationId(), null);
+        assertEqual(A.getPartyLocation(), null);
+      });
+
+      test('campaign.json partyLocation is the default', () => {
+        window.CAMPAIGN.partyLocation = 'loc_a';
+        assertEqual(A.getPartyLocationId(), 'loc_a');
+        assertEqual(A.getPartyLocation().name, 'Alpha Hall');
+      });
+
+      test('an authored default that is not a location resolves to nothing', () => {
+        window.CAMPAIGN.partyLocation = 'known_npc';
+        assertEqual(A.getPartyLocation(), null);
+        window.CAMPAIGN.partyLocation = 'no_such_place';
+        assertEqual(A.getPartyLocation(), null);
+        window.CAMPAIGN.partyLocation = 'loc_a';
+      });
+
+      test('setPartyLocation moves the party AND the view, and persists both', () => {
+        A.setPartyLocation('loc_b');
+        assertEqual(A.getPartyLocationId(), 'loc_b', 'runtime value beats the authored default');
+        assertEqual(A.getCurrentLocationId(), 'loc_b', 'the view follows the party');
+        assertEqual(stored().partyLocationId, 'loc_b');
+        assertEqual(stored().currentLocationId, 'loc_b');
+      });
+
+      test('setPartyLocation fires party:changed, then location:changed', () => {
+        const seen = [];
+        const onParty = (e) => seen.push('party:' + e.detail.id);
+        const onLoc   = (e) => seen.push('location:' + e.detail.id);
+        document.addEventListener('party:changed', onParty);
+        document.addEventListener('location:changed', onLoc);
+        A.setPartyLocation('loc_a');
+        document.removeEventListener('party:changed', onParty);
+        document.removeEventListener('location:changed', onLoc);
+        assertEqual(seen.join(' '), 'party:loc_a location:loc_a');
+      });
+
+      test('looking elsewhere does not move the party', () => {
+        A.setPartyLocation('loc_a');
+        A.setCurrentLocation('loc_b');
+        assertEqual(A.getCurrentLocationId(), 'loc_b');
+        assertEqual(A.getPartyLocationId(), 'loc_a');
+      });
+
+      test('clearLocation (Home) leaves the party where it was', () => {
+        A.clearLocation();
+        assertEqual(A.getCurrentLocationId(), null);
+        assertEqual(A.getPartyLocationId(), 'loc_a');
+      });
+
+      test('setPartyLocation with no id is ignored', () => {
+        A.setPartyLocation('loc_b');
+        A.setPartyLocation(null);
+        A.setPartyLocation('');
+        assertEqual(A.getPartyLocationId(), 'loc_b');
+      });
+
+      test('a stored id that no longer resolves falls back to the authored default', () => {
+        window.CAMPAIGN.partyLocation = 'loc_a';
+        A.setPartyLocation('renamed_since');
+        assertEqual(A.getPartyLocation().id, 'loc_a');
+      });
+
+      test('a stored id that is not a location falls back too', () => {
+        A.setPartyLocation('known_npc');
+        assertEqual(A.getPartyLocation().id, 'loc_a');
+        A.setPartyLocation('loc_b');
+      });
+
+      localStorage.removeItem(window.CAMPAIGN.storageKey);
+    })();
 
     // ── Summary ───────────────────────────────────────────────────────────────
     const total = passes + failures;

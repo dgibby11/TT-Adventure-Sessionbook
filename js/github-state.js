@@ -125,6 +125,7 @@
   // Pull remote state and merge into localStorage, then re-render.
   // revealed + notes: remote wins (authoritative campaign record).
   // timeOfDay + currentLocationId: local wins (ephemeral UI state).
+  // partyLocationId: local too — it rides along in the `...local` spread below.
   async function load() {
     const cfg = window.CAMPAIGN?.github;
     if (!getToken() || !cfg?.owner) { setStatus('no-token'); return; }

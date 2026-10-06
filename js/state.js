@@ -3,16 +3,29 @@
 // Shape (key determined by campaign.json → storageKey, e.g. "lost-mine.v1"):
 //   { revealed: { "<id>": true }, notes: { "<id>": "..." },
 //     baselineSeeded: { "<id>": true },
-//     currentLocationId: string|null, timeOfDay: "dawn"|"day"|"dusk"|"night" }
+//     currentLocationId: string|null, partyLocationId: string|null,
+//     timeOfDay: "dawn"|"day"|"dusk"|"night" }
 //
 // `baselineSeeded` tracks which campaign.json → baselineRevealed ids have
 // already been applied, so baseline seeding stays one-shot per id.
+//
+// Two locations are tracked, and they are deliberately separate:
+//   currentLocationId — what the dashboard is LOOKING at (null = home view)
+//   partyLocationId   — where the party IS. Falls back to campaign.json's
+//                       authored `partyLocation` in a browser that never set one.
+// The DM can look away from the party (peek at another location) and snap back.
 //
 // Extends window.App (already created by data.js) with:
 //   App.isRevealed(id)        → boolean
 //   App.setRevealed(id, bool) → persist + fire campaign:changed
 //   App.getNote(id)           → string (empty string if none)
 //   App.setNote(id, text)     → persist (no event — notes are DM-private)
+//   App.getCurrentLocationId()→ string|null
+//   App.setCurrentLocation(id)→ persist + fire location:changed
+//   App.getPartyLocationId()  → string|null (runtime value, else authored default)
+//   App.getPartyLocation()    → the party's location entity, or null
+//   App.setPartyLocation(id)  → move the party AND the view; fires party:changed
+//                               then location:changed
 //   App.getTimeOfDay()        → "dawn"|"day"|"dusk"|"night"
 //   App.setTimeOfDay(t)       → persist + fire time:changed
 
@@ -37,6 +50,7 @@
   if (!_state.notes)              _state.notes              = {};
   if (!_state.baselineSeeded)     _state.baselineSeeded     = {};
   if (!('currentLocationId' in _state)) _state.currentLocationId = null;
+  if (!('partyLocationId' in _state))   _state.partyLocationId   = null;
   if (!_state.timeOfDay)          _state.timeOfDay          = 'day';
 
 
@@ -115,6 +129,33 @@
     },
     clearLocation() {
       this.setCurrentLocation(null);
+    },
+
+    getPartyLocationId() {
+      return _state.partyLocationId
+        || (window.CAMPAIGN && window.CAMPAIGN.partyLocation)
+        || null;
+    },
+    // Resolved entity. A stored id that no longer resolves (entity renamed or
+    // removed since) falls through to the authored default rather than
+    // leaving the party nowhere.
+    getPartyLocation() {
+      const authored = window.CAMPAIGN && window.CAMPAIGN.partyLocation;
+      for (const id of [_state.partyLocationId, authored]) {
+        const e = id && this.byId(id);
+        if (e && e.type === 'location') return e;
+      }
+      return null;
+    },
+    // The view follows the party: the reason to say where the party is, is to
+    // look at it. To look elsewhere without moving them, use setCurrentLocation.
+    setPartyLocation(id) {
+      if (!id) return;
+      _state.partyLocationId   = id;
+      _state.currentLocationId = id;
+      save();
+      document.dispatchEvent(new CustomEvent('party:changed',    { detail: { id } }));
+      document.dispatchEvent(new CustomEvent('location:changed', { detail: { id } }));
     },
 
     getTimeOfDay() {

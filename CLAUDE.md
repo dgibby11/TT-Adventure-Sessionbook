@@ -102,8 +102,43 @@ Authored content is static; campaign progress is runtime state, stored under key
 {
   "view": "dm" | "player",
   "revealed": { "<entityId>": true },   // what the party has discovered
-  "notes":    { "<entityId>": "..." }   // DM scratch notes per entity
+  "notes":    { "<entityId>": "..." },  // DM scratch notes per entity
+  "currentLocationId": "<id>" | null,   // what the dashboard is LOOKING at (null = home)
+  "partyLocationId":   "<id>" | null    // where the party IS (see below)
 }
+
+## Where the party is (party location, regions, session beats)
+The app follows the party rather than staying on the campaign's home base. Three
+optional pieces, all backwards compatible — a campaign that sets none of them
+behaves as before.
+
+- **Party location.** Where the party is, kept separately from the location on
+  screen, so the DM can look somewhere else and snap back. Runtime value is
+  `partyLocationId`; `campaign.json` → `"partyLocation": "<location id>"` is the
+  authored default for a browser that never set one (players, a fresh machine).
+  **Update `partyLocation` when a session is reconciled.** Moving the party always
+  moves the view (`App.setPartyLocation(id)`); `App.setCurrentLocation(id)` only
+  looks. In Player View the marker shows only if that location is visible to
+  players.
+- **Regions.** `campaign.json` → `"regions": ["<hub id>", { "id": "<hub id>",
+  "label": "…" }]` makes the dashboard's home view one column per region. A region
+  is a **hub location**; every other location belongs to the region whose hub is
+  the fewest location-to-location `related[]` links away (ties → the earlier
+  region). So a new location only needs relating to something already in the
+  region; a new region needs its hub's id added to `regions`. A location no hub
+  reaches is listed under "Elsewhere", never hidden. Without `regions`, home is
+  `rootLocation`'s own dashboard.
+- **Session beats.** Launching a session in the Runner moves the party to its
+  `startLocation`. A beat written as
+  `<div class="session-prompt" data-location="<location id>">` gets a chip in the
+  Prompts panel that moves the party — and the dashboard under the Runner — to
+  that location. An id that is not a location renders struck through, like a
+  broken `[[ ]]` link.
+
+Give every location the party can stand in an `environment` object and a
+`curiosities` array, or the dashboard's lower panels show placeholders there.
+**Curiosities are colour, not hooks**: small, fun or meaningless details that do
+not read as a mystery to solve and do not pull the party off the story.
 
 ## View rules (three independent axes)
 - `visibility` (authored): player vs dm-only.
@@ -119,7 +154,9 @@ Resolution:
 Built: static shell, hotspot regions, type-grouped Index menu (collapsible by
 type → category), modal (html/image/pdf), DM-mode toggle + dm-only blocks,
 dossier theme, coordinate picker, per-type entity data model, `[[ ]]` cross-link
-rendering + "Related" footer, external "References" section from `links[]`.
+rendering + "Related" footer, external "References" section from `links[]`,
+party location + Regions home + Session Runner location chips (see "Where the
+party is").
 Planned (in priority order, agreed with the DM):
 1. Live search — instant filter/jump across all entities.
 2. Persistent DM state — notes, revealed flags, session log (localStorage).

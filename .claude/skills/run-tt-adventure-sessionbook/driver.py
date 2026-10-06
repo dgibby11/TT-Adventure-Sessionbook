@@ -223,7 +223,11 @@ def run_smoke(args):
     # Which stages actually executed. A run that silently skips the session
     # flow must NOT report a clean PASS -- see the exit-code note in main().
     stages = {"dashboard": False, "dm_login": False, "session_modal": False,
-              "session_runner": False, "complete_dialog": False, "complete_reveal": False}
+              "session_runner": False, "dashboard_follows": False,
+              "complete_dialog": False, "complete_reveal": False}
+    # Behaviour the run checked and found wrong (as opposed to an error the
+    # page itself raised). Any entry fails the run.
+    flow_errors = []
 
     def shot(page, name):
         path = os.path.join(SCREEN_DIR, name)
@@ -295,6 +299,29 @@ def run_smoke(args):
                 pins = page.query_selector_all(".sr-pin-card")
                 print(f"prompt cards extracted: {len(prompts)}  pinboard entries: {len(pins)}")
 
+                # The dashboard stays on screen under the Runner. Launching must
+                # move the party -- and so that dashboard -- to the session's
+                # startLocation, when it names a real location. (location_test.py
+                # covers the rest of this flow; this is the every-campaign check.)
+                follow = page.evaluate(
+                    """() => {
+                        const name = document.querySelector('.sr-session-name')?.textContent;
+                        const s = window.ENTITIES.find(e => e.type === 'session' && e.name === name);
+                        const loc = s && s.startLocation && window.App.byId(s.startLocation);
+                        if (!loc || loc.type !== 'location') return { expected: null };
+                        return { expected: loc.id,
+                                 party: window.App.getPartyLocationId(),
+                                 view: window.App.getCurrentLocationId() };
+                    }"""
+                )
+                if follow["expected"] is None:
+                    print("startLocation: none usable -- dashboard left where it was")
+                elif follow["party"] == follow["expected"] == follow["view"]:
+                    print("dashboard follows startLocation:", follow["expected"])
+                    stages["dashboard_follows"] = True
+                else:
+                    flow_errors.append("dashboard did not follow startLocation: %r" % (follow,))
+
                 complete_btn = page.query_selector(".sr-complete-btn")
                 if complete_btn is not None and not complete_btn.is_disabled():
                     complete_btn.click()
@@ -334,9 +361,11 @@ def run_smoke(args):
             print("CONSOLE ERRORS:", console_errors)
             print("PAGE ERRORS:", page_errors)
             print("HTTP ERRORS:", http_errors)
+            if flow_errors:
+                print("FLOW ERRORS:", flow_errors)
             browser.close()
 
-    clean = not console_errors and not page_errors
+    clean = not console_errors and not page_errors and not flow_errors
     skipped = [k for k, v in stages.items() if not v]
     print("STAGES RUN:", ", ".join(k for k, v in stages.items() if v) or "(none)")
     if skipped:
@@ -347,7 +376,8 @@ def run_smoke(args):
         print("RESULT: FAIL -- the app attempted to mutate remote state during a test run")
         return 1
     if not clean:
-        print("RESULT: FAIL (errors on page)")
+        print("RESULT: FAIL (%s)" % ("flow check failed" if flow_errors and not (console_errors or page_errors)
+                                     else "errors on page"))
         return 1
     # A run that never reached the session flow proves almost nothing -- report it
     # as INCOMPLETE (exit 2) rather than letting it masquerade as a clean PASS.

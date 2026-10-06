@@ -83,3 +83,26 @@ jobs:
           name: screenshots-${{ matrix.campaign.id }}
           path: .claude/skills/run-tt-adventure-sessionbook/screenshots/
           if-no-files-found: ignore
+
+  location-flow:
+    name: Party location, regions, Runner location chips
+    runs-on: ubuntu-latest
+    needs: data-integrity
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install Playwright + Chromium
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      # location_test.py: where the party is and how the UI follows it -- the
+      # Regions home view, the party marker and its controls, and the Session
+      # Runner moving the dashboard via startLocation / data-location beats.
+      # Every flow runs against test-fixture; fail-academy gets a read-only
+      # navigation pass whose expectations are read from its own data files, so
+      # authoring content cannot fail this job. Also runs tools/tests.html.
+      # Exit 0 = every check passed, 1 = at least one failed.
+      - name: Run location tests
+        run: python .claude/skills/run-tt-adventure-sessionbook/location_test.py

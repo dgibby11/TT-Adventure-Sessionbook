@@ -44,6 +44,7 @@ Shared functionality available to every campaign:
 - Persistent DM state — per-entity notes and "revealed to players" flags (localStorage)
 - Party overview page — side-by-side PC cards with stats, key features, D&D Beyond links, DM tactical notes
 - Session Runner — three-panel adaptive DM view (read-aloud prompts, session plan/entity detail, pinboard + notes) launched from "▶ Run Session"
+- The dashboard follows the party — a party-location marker (`⚑`) separate from the location on screen; a Regions home view (`campaign.json` → `regions`); and the Session Runner moves the dashboard under it to the session's `startLocation`, then to any beat marked `data-location="<location id>"`
 - NPC / item / weather / encounter generator (`js/generator.js`) — generated entities persist in localStorage and merge into the live entity graph; table data can be extended via `generator/npc-tables.json`
 - Dice roller (topbar) with roll history
 - Multi-campaign launcher + registry (`campaigns/index.json`)

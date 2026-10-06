@@ -7,10 +7,11 @@
 //
 // In DM mode a footer is shown with:
 //   • Revealed to Players toggle (persisted via state.js / localStorage)
+//   • For locations: Move party here, and Show on dashboard
 //   • DM Notes textarea (auto-saved, DM-private)
 
 (function () {
-  let overlay, titleEl, linksEl, bodyEl, revealBtn, notesArea, noteTimer;
+  let overlay, titleEl, linksEl, bodyEl, revealBtn, partyBtn, viewBtn, notesArea, noteTimer;
   let lastFocus, currentEntity;
 
   function build() {
@@ -28,6 +29,8 @@
         <footer id="modal-dm-footer">
           <div class="dm-footer-row">
             <button id="modal-reveal-btn" type="button" class="reveal-btn"></button>
+            <button id="modal-party-btn" type="button" class="reveal-btn" hidden></button>
+            <button id="modal-view-btn" type="button" class="reveal-btn" hidden>◎ Show on dashboard</button>
           </div>
           <div class="dm-footer-notes">
             <label class="dm-footer-label" for="modal-notes-area">DM Notes</label>
@@ -41,6 +44,8 @@
     linksEl   = overlay.querySelector('#modal-links');
     bodyEl    = overlay.querySelector('#modal-body');
     revealBtn = overlay.querySelector('#modal-reveal-btn');
+    partyBtn  = overlay.querySelector('#modal-party-btn');
+    viewBtn   = overlay.querySelector('#modal-view-btn');
     notesArea = overlay.querySelector('#modal-notes-area');
 
     overlay.querySelector('#modal-close').addEventListener('click', close);
@@ -63,6 +68,22 @@
       syncRevealBtn(currentEntity.id);
     });
 
+    // Location actions. Moving the party leaves the modal open and reports
+    // the new state in place, like the reveal toggle; "Show on dashboard" is
+    // a request to look at something else, so it closes.
+    partyBtn.addEventListener('click', () => {
+      if (currentEntity) window.App.setPartyLocation(currentEntity.id);
+    });
+    viewBtn.addEventListener('click', () => {
+      if (!currentEntity) return;
+      const id = currentEntity.id;
+      close();
+      window.App.setCurrentLocation(id);
+    });
+    document.addEventListener('party:changed', () => {
+      if (currentEntity) syncLocationBtns(currentEntity);
+    });
+
     // Notes — debounced auto-save.
     notesArea.addEventListener('input', () => {
       clearTimeout(noteTimer);
@@ -76,6 +97,16 @@
     const revealed = window.App.isRevealed(id);
     revealBtn.textContent  = revealed ? '◉ Revealed to players' : '◯ Hidden from players';
     revealBtn.classList.toggle('reveal-btn-on', revealed);
+  }
+
+  function syncLocationBtns(entity) {
+    const isLoc = entity.type === 'location';
+    partyBtn.hidden = viewBtn.hidden = !isLoc;
+    if (!isLoc) return;
+    const here = window.App.getPartyLocation()?.id === entity.id;
+    partyBtn.textContent = here ? '⚑ Party is here' : '⚑ Move party here';
+    partyBtn.disabled    = here;
+    partyBtn.classList.toggle('reveal-btn-on', here);
   }
 
   function updateLinksBar(loc) {
@@ -96,6 +127,7 @@
 
   function updateDmFooter(entity) {
     syncRevealBtn(entity.id);
+    syncLocationBtns(entity);
     notesArea.value = window.App.getNote(entity.id);
   }
 

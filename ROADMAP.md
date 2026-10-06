@@ -238,6 +238,11 @@ draggable tokens for PCs, NPCs and monsters.
 
 ## Completed
 
+- **The UI follows the party** — a campaign is no longer pinned to its home base:
+  - *Party location* — where the party is, kept separately from the location on screen. `⚑` marker in the dashboard header (jump back to the party / "Set party here"), on location cards, in search results and in a location's entry modal. Authored default in `campaign.json` → `partyLocation`.
+  - *Regions home* — `campaign.json` → `regions` turns the home view into one column per region (a region is a hub location); unlinked locations fall under "Elsewhere" instead of becoming unreachable. Campaigns without `regions` keep the root-location home.
+  - *Session Runner* — launching a session moves the dashboard under it to `startLocation`; a beat authored with `data-location="<location id>"` gets a chip that moves it again. A relaunch resumes where the party was left.
+  - Tests: `.claude/skills/run-tt-adventure-sessionbook/location_test.py` (browser), 32 unit tests in `tools/tests.html`, and `tools/test.py` now checks `regions`, `partyLocation`, `startLocation` and `data-location` references.
 - **Quick NPC** — topbar `⚡ Quick NPC` button; one-click compact card: name, race/occupation, appearance, trait; Re-roll + Save
 - **Dice roller multi-d20** — 2+ d20s show individual values (advantage/disadvantage); other dice still sum
 - **JS unit tests** (`tools/tests.html`) — 22 browser tests: generator logic, modal cross-link rendering

@@ -11,6 +11,7 @@
     "related": [
       "tf_root",
       "tf_hall",
+      "tf_camp",
       "tf_npc",
       "tf_faction",
       "tf_item",

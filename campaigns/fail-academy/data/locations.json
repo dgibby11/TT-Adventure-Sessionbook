@@ -620,7 +620,11 @@
     "links": [
       { "label": "Silverymoon — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Silverymoon" }
     ],
-    "tags": ["city", "nearby", "north", "trade", "magic", "civilization"]
+    "tags": ["city", "nearby", "north", "trade", "magic", "civilization"],
+    "environment": {
+      "architecture": "A city of about 37,000 on the River Rauvin, crossed by the Moonbridge — a permanent magical bridge. The Market District, the Vault of Stars, and temples to Mielikki and Selûne.",
+      "activity": "The most cosmopolitan settlement in the North: scholars, artists, traders, and a large elf and half-elf population. The Spellguard keep order. Three taverns within sight of the Moonbridge are informal Academy alumni hangouts."
+    }
   },
   {
     "id": "river_rauvin",
@@ -659,7 +663,12 @@
     "links": [
       { "label": "High Forest — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/High_Forest" }
     ],
-    "tags": ["forest", "nearby", "wilderness", "elves", "ancient", "fey"]
+    "tags": ["forest", "nearby", "wilderness", "elves", "ancient", "fey"],
+    "environment": {
+      "architecture": "Ancient woodland, the largest forest in Faerûn. At the Academy the treeline is a hard, artificial edge in every direction: the grounds were cut out of it.",
+      "activity": "There are trails, but not everywhere. Walk in at an arbitrary point and you are making your own path, breaking branches and going around things.",
+      "flora": "Enormous, old trees at the edge, and larger ones further in. The outskirts are ordinary woodland, dense enough to slow travel to a crawl."
+    }
   },
   {
     "id": "evermoors",
@@ -673,7 +682,13 @@
     "links": [
       { "label": "The Evermoors — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Evermoors" }
     ],
-    "tags": ["wilderness", "moor", "trolls", "boundary", "off-limits", "nearby"]
+    "tags": ["wilderness", "moor", "trolls", "boundary", "off-limits", "nearby"],
+    "environment": {
+      "architecture": "Rolling heath, bog, standing water and broken rock. Almost no cover and almost no landmarks.",
+      "activity": "Off-limits to students, with no exceptions. The road to Silverymoon keeps to the near side of the river because of it.",
+      "sensory": "Grey, wet and treeless to the edge of sight. On a clear day a great deal of it is visible from the Rauvin's north bank, and nothing in that view holds the eye.",
+      "weather": "Exposed. A fog can arrive in the time it takes to notice it arriving."
+    }
   },
   {
     "id": "everlund",
@@ -687,7 +702,11 @@
     "links": [
       { "label": "Everlund — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Everlund" }
     ],
-    "tags": ["city", "nearby", "trade", "north", "merchant"]
+    "tags": ["city", "nearby", "trade", "north", "merchant"],
+    "environment": {
+      "architecture": "A trade city of about 21,000 at a key crossing of the River Rauvin. The Everlund Bridge is reinforced stone, guarded, and charges a toll.",
+      "activity": "Caravans, merchants and mercenaries. The Caravan Quarter hears news from the east days before Silverymoon does."
+    }
   },
   {
     "id": "campus_root",
@@ -982,7 +1001,18 @@
     "contentFile": "content/locations/ritual_platform.html",
     "visibility": "player",
     "related": ["the_captive_drow", "morvek", "the_house", "hooved_demons", "steel_tuning_fork", "torvald_package", "academy_provisions", "session_2", "session_3"],
-    "tags": ["planar", "abyss", "ritual", "thin-place", "session-2", "session-3", "abandoned"]
+    "tags": ["planar", "abyss", "ritual", "thin-place", "session-2", "session-3", "abandoned"],
+    "environment": {
+      "architecture": "An open-air ritual platform, ancient and weathered, on a rock outcrop like an island. A large runic circle at the centre, two worn idol-busts to one side, and covered colonnades running off the centre to small round alcoves. One stone bridge crosses the moat to a causeway running south.",
+      "activity": "Abandoned. Two of the hooved things lie dead on the stone, beside most of a stone wall with a hole knocked through it.",
+      "sensory": "Heat, and orange light thrown up from a moat of open lava. Rumbling underfoot at intervals, and screaming: distant, large, and more than one thing.",
+      "lighting": "Dark red sky under heavy cloud. Smoke in every direction, with mountains barely visible through it.",
+      "weather": "The heat off the outcrop is punishing, and there is no water anywhere on the plain."
+    },
+    "curiosities": [
+      { "detail": "Behind the two idol-busts the moat narrows from fifteen feet to about twelve, and the stone on both sides is scuffed from earlier crossings." },
+      { "detail": "There is a covered cistern under the workbench. It is the only water the party has seen on this plane." }
+    ]
   },
   {
     "id": "the_house",
@@ -993,7 +1023,17 @@
     "contentFile": "content/locations/the_house.html",
     "visibility": "player",
     "related": ["morvek", "the_captive_drow", "ritual_platform", "basement_oni", "behind_the_grate", "steel_tuning_fork", "session_3"],
-    "tags": ["abyss", "planar", "outpost", "basement", "teleportation-circle", "session-3", "infiltration"]
+    "tags": ["abyss", "planar", "outpost", "basement", "teleportation-circle", "session-3", "infiltration"],
+    "environment": {
+      "architecture": "An outpost, or a very small fortress: squat black stone, two floors, perhaps a dozen rooms, cracked all over. No watchtower, and no windows on the side the party approached. The basement is one room under the whole building, with a fifteen-foot ceiling on four pillars.",
+      "activity": "Skeleton servants wander the ground floor doing chores. They do not look at anybody and they do not attack. Nobody is looking out.",
+      "sensory": "Crumbling masonry and stale air. In the basement, something behind a grate snarls in the dark.",
+      "lighting": "No lights showing from outside. The basement is torchlit, and the circle in its floor glows faintly and steadily."
+    },
+    "curiosities": [
+      { "detail": "The kitchen barely qualifies as one. A skeleton is in it anyway, carrying something from one side to the other on an errand it was given." },
+      { "detail": "Some of the cracks in the outer wall are wide enough for a small person to squeeze through. They were pointed out and never used." }
+    ]
   },
   {
     "id": "neverwinter_wood",
@@ -1003,8 +1043,22 @@
     "contentType": "html",
     "contentFile": "content/locations/neverwinter_wood.html",
     "visibility": "player",
-    "related": ["tedrovaxilliath", "underdark_breach", "teds_lair", "fomorians", "the_standing_treant", "teds_fox", "witchs_pond", "the_captive_drow", "neverwinter_wood_map", "session_4"],
-    "tags": ["forest", "sword-coast", "dragon-territory", "session-4", "played", "arrival", "autumn"]
+    "related": ["tedrovaxilliath", "underdark_breach", "teds_lair", "fomorians", "the_standing_treant", "teds_fox", "witchs_pond", "logging_camp", "the_captive_drow", "neverwinter_wood_map", "session_4"],
+    "tags": ["forest", "sword-coast", "dragon-territory", "session-4", "played", "arrival", "autumn"],
+    "environment": {
+      "architecture": "Old-growth forest under a closed canopy sixty to seventy feet up. Clearings are rare and small. Away from them the undergrowth is heavy, threaded with game trails too low and narrow for a person to use.",
+      "activity": "No roads and no people. Getting anywhere means following a guide or making your own path.",
+      "sensory": "Wet, cold and alive. Running water is audible from almost anywhere. It does not smell like a healthy forest — not quite rotten, a little bit funky — and a very faint fog with a greenish tinge lies low in the taller grass, coming from no particular direction.",
+      "flora": "Mostly deciduous, with a little fir mixed in. Vines and thorn through all of it.",
+      "lighting": "A filtered half-light that gives no clue about the hour, or even which way the sun is. To see the sky you have to climb through the canopy.",
+      "weather": "Late autumn. Cold and damp, and still under the trees."
+    },
+    "curiosities": [
+      { "roll": "Nature DC 10", "detail": "The firs are losing. Every one of them is tall, thin and leaning, reaching for a gap in the canopy that an oak got to first." },
+      { "detail": "Shelf mushrooms the size of dinner plates grow up the wet side of the bigger trunks. They hold a mug perfectly well." },
+      { "detail": "Somewhere overhead a woodpecker has found a hollow trunk and is enjoying itself enormously." },
+      { "detail": "Under the canopy there are no stars and no moon. Past the edge of the firelight it is simply black.", "time": ["night"] }
+    ]
   },
   {
     "id": "underdark_breach",
@@ -1015,7 +1069,17 @@
     "contentFile": "content/locations/underdark_breach.html",
     "visibility": "player",
     "related": ["fomorians", "tedrovaxilliath", "neverwinter_wood", "the_captive_drow", "teds_fox", "witchs_pond", "session_4"],
-    "tags": ["cave", "underdark", "fomorians", "session-4", "played", "vrenns-cave", "more-below", "side-quest"]
+    "tags": ["cave", "underdark", "fomorians", "session-4", "played", "vrenns-cave", "more-below", "side-quest"],
+    "environment": {
+      "architecture": "A cave mouth in a forested rise, fifteen to twenty feet high and coming to a point at the top. A passage about ten feet wide drops forty feet into a very large cavern: forty-to-fifty-foot ceilings, an underground river, and stalagmites up to ten feet high. At the back, a narrow gap goes deeper.",
+      "activity": "Two fomorians lived here, and both are dead. Something further down was heard moving after the fight.",
+      "sensory": "Bones on the ground outside and more within, and reddish splatter on the stone. Inside it is cold and wet, and every sound comes back several times.",
+      "lighting": "Dark, apart from pockets of glowing mushrooms."
+    },
+    "curiosities": [
+      { "detail": "The cavern has a long echo. A dropped pan comes back four or five times, the last one late enough to make somebody laugh." },
+      { "roll": "Nature DC 12", "detail": "The glowing mushrooms are brightest where water drips on them. Picked, they go dark inside a minute." }
+    ]
   },
   {
     "id": "teds_lair",
@@ -1026,7 +1090,16 @@
     "contentFile": "content/locations/teds_lair.html",
     "visibility": "dm-only",
     "related": ["tedrovaxilliath", "neverwinter_wood", "the_standing_treant", "witchs_pond"],
-    "tags": ["lair", "hoard", "dm-only", "neverwinter-wood", "session-4", "unspent"]
+    "tags": ["lair", "hoard", "dm-only", "neverwinter-wood", "session-4", "unspent"],
+    "environment": {
+      "architecture": "A collapsed limestone sinkhole. From above it reads as nothing at all: a tangle of thorn and vine a hundred yards across that nothing walks through. The way in is under water, along a feeder channel of the creek, into a drowned antechamber. The main chamber's floor is a shallow standing pool, with dry ledges above the waterline.",
+      "sensory": "Still water, silt and wet stone.",
+      "flora": "Above ground, a single species of thorn and nothing else. Below, roots have come through the ceiling and grown down into the hoard. He has never cut them."
+    },
+    "curiosities": [
+      { "detail": "The trophies on the dry ledges are evenly spaced and kept clean. The coin under the water has plainly never been counted." },
+      { "detail": "Getting in means going under water, and he has to fold the bad wing to do it. He hates that, and it shows in how he arrives." }
+    ]
   },
   {
     "id": "witchs_pond",
@@ -1037,6 +1110,42 @@
     "contentFile": "content/locations/witchs_pond.html",
     "visibility": "player",
     "related": ["tedrovaxilliath", "neverwinter_wood", "teds_fox", "underdark_breach", "session_4"],
-    "tags": ["pond", "swamp", "ruin", "neverwinter-wood", "session-4", "played", "unclaimed-seed"]
+    "tags": ["pond", "swamp", "ruin", "neverwinter-wood", "session-4", "played", "unclaimed-seed"],
+    "environment": {
+      "architecture": "A small, very swampy pond ringed with thorny brush. Here and there are straight lines of old timber, as if something was built here once.",
+      "activity": "Nobody. This is where the dragon chose to wait for the party, and where the deal was settled.",
+      "sensory": "Standing water, mud and wet rot. Not a pleasant place to stand for long."
+    },
+    "curiosities": [
+      { "detail": "The mud takes a boot to the ankle and gives it back slowly, with a noise nobody enjoys." },
+      { "roll": "Perception DC 10", "detail": "Duckweed covers one end of the pond so evenly that it looks like a lawn. It is not a lawn." }
+    ]
+  },
+  {
+    "id": "logging_camp",
+    "name": "The Logging Camp",
+    "type": "location",
+    "category": "Neverwinter Wood",
+    "contentType": "html",
+    "contentFile": "content/locations/logging_camp.html",
+    "visibility": "dm-only",
+    "related": ["neverwinter_wood", "tedrovaxilliath", "neverwinter_wood_map"],
+    "tags": ["logging-camp", "loggers-camp", "kettle-bend", "thundertree", "settlement", "neverwinter-wood", "session-5", "unplayed", "dm-only", "resupply"],
+    "environment": {
+      "architecture": "A company logging camp beside the ruins of Thundertree, at the western edge of the Wood. A dozen canvas wall tents in two rows, plus one spare. The cook tent is a big fly over plank tables at the centre. The boss's tent has the tool wagon and strongbox beside it. An ox line and carts, a filing bench and saw pit, and a landing on the bank where fir logs are bound into loads and a barge is being made up.",
+      "activity": "About thirty people, up before dawn and asleep at dark. Nobody talks at meals: you eat, you leave, and the talk happens at the fire afterwards. No drink except on the rest day. The burn pile is kept going day and night.",
+      "sensory": "Woodsmoke from the burn pile, fresh-cut fir, oxen, and whatever is in the pot. A file on a saw from first light.",
+      "flora": "Cleared ground: stumps, slash and brush. The wood proper stands to the east. They cut its edge for the firs and go no further in.",
+      "lighting": "Open sky. After dark, the burn pile and the lamps under the cook fly are the only lights.",
+      "weather": "Late autumn. Cold mornings."
+    },
+    "curiosities": [
+      { "roll": "Perception DC 10", "detail": "The tents are numbered in chalk, one to twelve, and there is no seven. Seven went into the river in a storm and nobody saw the point of renumbering." },
+      { "detail": "The cook's ladle is a dented helmet on a stick. It has been the ladle for longer than most of the crew have been here." },
+      { "roll": "Animal Handling DC 10", "detail": "The lead ox is called Magistrate. He will not move for anyone who does not use his name." },
+      { "detail": "Ask why the firs are worth it and a faller will show you: a green plank laid between two stumps, and a man bouncing on the middle of it." },
+      { "detail": "The camp is working before the sun is up. The first sound of the day is the saw-filer's bench.", "time": ["dawn"] },
+      { "detail": "Somebody always sits up with the burn pile. Tonight's watcher is whittling spoons, and has a row of finished ones beside him.", "time": ["night"] }
+    ]
   }
 ]

@@ -4,6 +4,17 @@
   "subtitle": "Faculty of Arms, Inquiry & Lore",
   "mapImage": "assets/FUCKS_map.png",
   "rootLocation": "campus_root",
+
+  "_regions_note": "The dashboard's home view: one column per region. Each id is a HUB LOCATION; every other location joins the region whose hub is the fewest location-to-location links away, so a new location only needs relating to something already in the region. To open a new region (the coast, Neverwinter), add its hub location's id here. 'label' overrides the hub's own name. A location no hub can reach is listed under 'Elsewhere' rather than hidden.",
+  "regions": [
+    { "id": "campus_root",      "label": "FAIL Academy" },
+    { "id": "ritual_platform",  "label": "Beyond the Veil" },
+    { "id": "neverwinter_wood", "label": "Neverwinter Wood" }
+  ],
+
+  "_partyLocation_note": "Where the party is, as the AUTHORED default for any browser that has not set its own (the players' browsers, a fresh machine). The DM's own moves at the table are runtime state and override it locally. Update it when a session is reconciled. As of the end of Session 4 they are walking back to the arrival clearing.",
+  "partyLocation": "neverwinter_wood",
+
   "storageKey": "fail-academy.v1",
   "dmPassHash": "00afe2303c7382f4c9d96401f5bce99c027c75ba993fada538e039e7c048823f",
 

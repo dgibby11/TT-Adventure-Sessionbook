@@ -27,7 +27,8 @@
     },
     "tags": [
       "fixture",
-      "root"
+      "root",
+      "region-hub"
     ]
   },
   {
@@ -45,6 +46,99 @@
     ],
     "tags": [
       "fixture"
+    ]
+  },
+  {
+    "id": "tf_outpost",
+    "name": "The Far Outpost",
+    "type": "location",
+    "category": "Fixture Outlands",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_outpost.html",
+    "visibility": "player",
+    "related": [
+      "tf_camp",
+      "tf_vault",
+      "tf_hall"
+    ],
+    "environment": {
+      "architecture": "A square timber stockade, drawn to the same ruled grid as everything else.",
+      "sensory": "Woodsmoke, measured out in equal puffs."
+    },
+    "curiosities": [
+      {
+        "roll": "Perception DC 10",
+        "detail": "Every plank in the stockade is the same length. Somebody counted."
+      },
+      {
+        "detail": "The lantern over the gate is lit. This entry only shows at night.",
+        "time": [
+          "night"
+        ]
+      }
+    ],
+    "tags": [
+      "fixture",
+      "region-hub"
+    ]
+  },
+  {
+    "id": "tf_camp",
+    "name": "Checkpoint Camp",
+    "type": "location",
+    "category": "Fixture Outlands",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_camp.html",
+    "visibility": "player",
+    "related": [
+      "tf_outpost",
+      "tf_npc"
+    ],
+    "environment": {
+      "architecture": "Six identical tents in a row, numbered one to six.",
+      "activity": "A kettle that is always just about to boil."
+    },
+    "curiosities": [
+      {
+        "roll": "Nature DC 8",
+        "detail": "The grass has been combed."
+      }
+    ],
+    "tags": [
+      "fixture",
+      "sub-location"
+    ]
+  },
+  {
+    "id": "tf_vault",
+    "name": "The Sealed Vault",
+    "type": "location",
+    "category": "Fixture Outlands",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_vault.html",
+    "visibility": "dm-only",
+    "related": [
+      "tf_outpost"
+    ],
+    "tags": [
+      "fixture",
+      "dm-only"
+    ]
+  },
+  {
+    "id": "tf_island",
+    "name": "Unlinked Island",
+    "type": "location",
+    "category": "Fixture Strays",
+    "contentType": "html",
+    "contentFile": "content/locations/tf_island.html",
+    "visibility": "player",
+    "related": [
+      "tf_item"
+    ],
+    "tags": [
+      "fixture",
+      "orphan"
     ]
   }
 ]

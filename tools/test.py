@@ -18,6 +18,9 @@ ROOT = Path(__file__).parent.parent  # project root
 
 REQUIRED_FIELDS = ['id', 'name', 'type', 'contentType', 'visibility']
 CROSSLINK_RE    = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]')
+# <div class="session-prompt" data-location="<location id>"> — a Session Runner
+# beat that moves the party (and the dashboard) to that location.
+DATA_LOCATION_RE = re.compile(r'data-location\s*=\s*"([^"]*)"')
 
 
 def main():
@@ -48,6 +51,7 @@ def check_campaign(root, cid, passes, failures, warnings):
     tag  = f'[{cid}]'
 
     # campaign.json --dmPassHash required
+    cfg      = {}
     cfg_path = base / 'campaign.json'
     if not cfg_path.exists():
         warnings.append(f'{tag} campaign.json not found --dmPassHash not verified')
@@ -59,6 +63,7 @@ def check_campaign(root, cid, passes, failures, warnings):
             else:
                 failures.append(f'{tag} campaign.json: dmPassHash is empty --DM view unprotected')
         except Exception as e:
+            cfg = {}
             failures.append(f'{tag} campaign.json: parse error --{e}')
 
     # data/index.json
@@ -110,11 +115,42 @@ def check_campaign(root, cid, passes, failures, warnings):
     else:
         passes.append(f'{tag} ids: {len(all_ids)} unique across all files')
 
+    # campaign.json location references. A typo here silently drops a region
+    # from the dashboard's home view or leaves the party nowhere, so these FAIL.
+    loc_ids = {ent.get('id') for _, ent in all_entities if ent.get('type') == 'location'}
+
+    if 'regions' in cfg:
+        regions = cfg['regions']
+        if not isinstance(regions, list):
+            failures.append(f'{tag} campaign.json: regions must be an array')
+        else:
+            bad = []
+            for r in regions:
+                rid = r if isinstance(r, str) else (r.get('id') if isinstance(r, dict) else None)
+                if rid not in loc_ids:
+                    bad.append(str(rid))
+            if bad:
+                for rid in bad:
+                    failures.append(f'{tag} campaign.json: regions hub "{rid}" is not a location entity')
+            else:
+                passes.append(f'{tag} campaign.json: {len(regions)} region hubs resolve')
+
+    party = cfg.get('partyLocation')
+    if party:
+        if party in loc_ids:
+            passes.append(f'{tag} campaign.json: partyLocation resolves')
+        else:
+            failures.append(f'{tag} campaign.json: partyLocation "{party}" is not a location entity')
+
     # Per-entity checks
     schema_errors  = 0
     missing_files  = 0
     broken_related = []
     broken_links   = []
+    start_locs     = 0     # sessions that declare a startLocation
+    broken_starts  = []
+    data_locs      = 0     # data-location attributes found in content
+    broken_data_locs = []
 
     for fn, ent in all_entities:
         eid = ent.get('id', f'<no id in {fn}>')
@@ -129,6 +165,13 @@ def check_campaign(root, cid, passes, failures, warnings):
         for ref in ent.get('related', []):
             if ref not in all_ids:
                 broken_related.append(f'{eid} ->"{ref}"')
+
+        # startLocation is where the Session Runner puts the party on launch
+        start = ent.get('startLocation')
+        if start:
+            start_locs += 1
+            if start not in loc_ids:
+                broken_starts.append(f'{eid} ->"{start}"')
 
         # image contentType requires contentFile
         cf = ent.get('contentFile', '')
@@ -151,6 +194,11 @@ def check_campaign(root, cid, passes, failures, warnings):
                         ref_id = m.group(1).strip()
                         if ref_id not in all_ids:
                             broken_links.append(f'{eid} ->[[{ref_id}]]')
+                    for m in DATA_LOCATION_RE.finditer(html):
+                        data_locs += 1
+                        ref_id = m.group(1).strip()
+                        if ref_id not in loc_ids:
+                            broken_data_locs.append(f'{eid} ->data-location="{ref_id}"')
                 except Exception:
                     pass
 
@@ -172,6 +220,20 @@ def check_campaign(root, cid, passes, failures, warnings):
             warnings.append(f'{tag} [[links]]: unresolved --{bl}')
     else:
         passes.append(f'{tag} [[links]]: all cross-links resolve')
+
+    # Broken location references ->warning (the Runner ignores a bad
+    # startLocation and draws a bad data-location chip struck through)
+    if broken_starts:
+        for bs in broken_starts:
+            warnings.append(f'{tag} startLocation: not a location --{bs}')
+    elif start_locs:
+        passes.append(f'{tag} startLocation: all {start_locs} resolve to locations')
+
+    if broken_data_locs:
+        for bd in broken_data_locs:
+            warnings.append(f'{tag} data-location: not a location --{bd}')
+    elif data_locs:
+        passes.append(f'{tag} data-location: all {data_locs} resolve to locations')
 
 
 def report(passes, failures, warnings):

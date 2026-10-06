@@ -19,8 +19,26 @@ with driver.static_server(8822):
             p=b.new_page(viewport=driver.VIEWPORT)
             p.goto(f'http://localhost:8822/index.html?campaign=fail-academy')
             driver.wait_for_dashboard(p); driver.dm_login(p,'Smuckers')
+            # The home view may be the Regions list, which has location cards
+            # only. Open the root location so entity cards and the full header
+            # (Home, party marker, Full Entry) are on screen to be measured.
+            p.evaluate("window.App.setCurrentLocation(window.CAMPAIGN.rootLocation)")
             p.evaluate("t=>{if(t!=='default')document.documentElement.setAttribute('data-theme',t)}", tid)
             p.wait_for_timeout(250)
+            # Header controls sit on the dashboard ground. The party marker and
+            # the Home/region buttons must read no worse there than the
+            # "Full Entry" button beside them does. (Measured before the
+            # Settings dialog opens over the page.)
+            ground=p.eval_on_selector('#dashboard',"e=>getComputedStyle(e)['background-color']")
+            ref=p.eval_on_selector('.dash-detail-btn',"e=>getComputedStyle(e)['color']")
+            for sel,what in (('.loc-bar-back','Home button'),('.dash-party-chip','party marker')):
+                if not p.query_selector(sel):
+                    print(f'  NOTE  {tid:13} no {what} on this view -- not measured'); continue
+                rc=ratio(p.eval_on_selector(sel,"e=>getComputedStyle(e)['color']"),ground)
+                rr=ratio(ref,ground)
+                okh = rc >= rr - 0.01
+                print(('  PASS  ' if okh else '  FAIL  ')+f'{tid:13} {what} on ground  {rc:.2f}:1  (Full Entry button: {rr:.2f}:1)')
+                if not okh: fails.append(tid+'-'+sel)
             p.click('#settings-btn'); p.wait_for_timeout(350)
             fg=p.eval_on_selector('#settings-save',"e=>getComputedStyle(e)['color']")
             bg=p.eval_on_selector('#settings-save',"e=>getComputedStyle(e)['background-color']")

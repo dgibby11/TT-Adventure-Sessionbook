@@ -44,6 +44,11 @@
     subtitle:     '',
     regionMapEntity: '',
     rootLocation: 'campus_root',
+    // Optional. regions: hub location ids (or { id, label }) — when present the
+    // dashboard's home view lists these instead of opening on rootLocation.
+    // partyLocation: authored default for where the party is.
+    regions:       [],
+    partyLocation: '',
     storageKey:   campaignId + '.v1',
     dmPassHash:   '',
     github: { owner: '', repo: '', stateFile: 'campaign-state.json' },

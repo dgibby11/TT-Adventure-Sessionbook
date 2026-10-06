@@ -60,6 +60,27 @@
         `<span class="sr-name">${e.name}</span>` +
         `<span class="sr-badge">${label}</span>`;
 
+      // DM shortcut: move the party to a location straight from the results,
+      // without opening its entry first.
+      if (e.type === 'location' && window.App.isDM()) {
+        const here = window.App.getPartyLocation()?.id === e.id;
+        // Already there: a plain marker, so a click still opens the entry.
+        const flag = document.createElement(here ? 'span' : 'button');
+        flag.className   = 'search-party-btn' + (here ? ' search-party-here' : '');
+        flag.textContent = '⚑';
+        flag.title       = here ? 'The party is here' : 'Move the party here';
+        if (!here) {
+          flag.type = 'button';
+          flag.addEventListener('mousedown', ev => {
+            ev.preventDefault();
+            ev.stopPropagation();
+            window.App.setPartyLocation(e.id);
+            clearSearch();
+          });
+        }
+        li.appendChild(flag);
+      }
+
       li.addEventListener('mousedown', ev => {
         ev.preventDefault();
         selectResult(i);

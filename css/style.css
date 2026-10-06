@@ -1186,6 +1186,23 @@ button { font-family: inherit; cursor: pointer; }
 }
 .loc-bar-back:hover { color: var(--ink); border-color: var(--line); }
 
+/* Party marker — where the party is, as opposed to the location on screen.
+   A span when it only reports ("Party is here"), a button when it acts. */
+.dash-party-chip {
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--display);
+  white-space: nowrap;
+  background: none;
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  color: var(--muted);
+  padding: 0.15rem 0.5rem;
+  transition: color 0.12s, border-color 0.12s;
+}
+button.dash-party-chip:hover { color: var(--ink); border-color: var(--line); }
+
 /* Time-of-day toggle — right side of dashboard header */
 .loc-bar-time {
   display: flex;
@@ -1236,13 +1253,22 @@ button { font-family: inherit; cursor: pointer; }
 #dashboard .dash-location-title  { color: var(--sepia); }
 #dashboard .dash-location-meta   { color: var(--sepia-mut); }
 
-#dashboard .dash-detail-btn {
+#dashboard .dash-detail-btn,
+#dashboard .loc-bar-back,
+#dashboard .dash-party-chip {
   color: var(--sepia-mut);
   border-color: var(--paper-edge);
 }
-#dashboard .dash-detail-btn:hover {
+#dashboard .dash-detail-btn:hover,
+#dashboard .loc-bar-back:hover,
+#dashboard button.dash-party-chip:hover {
   color: var(--sepia);
   border-color: var(--sepia-mut);
+}
+#dashboard .dash-party-here {
+  color: var(--sepia);
+  border-color: var(--sepia-mut);
+  background: rgba(46, 37, 26, 0.10);
 }
 
 #dashboard .loc-time-btn {
@@ -1422,6 +1448,28 @@ body.runner-active .dash-row { display: contents; }
 .dash-loc-card-name { font-size: 0.88rem; color: var(--ink); flex: 1; }
 .dash-loc-card-cat  { font-size: 0.66rem; color: var(--muted); font-style: italic; white-space: nowrap; }
 .dash-loc-card-hint { font-size: 0.63rem; color: var(--gold-soft); white-space: nowrap; }
+
+/* "⚑ Party" tag — on the party's own location card, and on the header of the
+   region they are in. */
+.dash-party-flag {
+  font-family: var(--display);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.dash-loc-card-party { box-shadow: inset 2px 0 0 var(--gold-soft); }
+
+/* Regions home — one column per region. The first card enters the hub. */
+.quad-region .dash-quad-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.dash-region-enter { background: rgba(var(--gold-rgb),0.06); }
+.dash-region-enter .dash-loc-card-name { color: var(--gold-soft); }
 
 /* Environment quadrant blocks */
 .env-block {
@@ -2329,6 +2377,20 @@ body:not(.dm-on) #modal-dm-footer { display: none; }
   padding: 0.1rem 0.35rem;
   background: rgba(var(--well-rgb),0.2);
 }
+/* DM only, location results: move the party there without opening the entry */
+.search-party-btn {
+  flex: 0 0 auto;
+  background: none;
+  border: 1px solid var(--line-soft);
+  border-radius: 2px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 0.14rem 0.34rem;
+}
+button.search-party-btn { cursor: pointer; }
+button.search-party-btn:hover { color: var(--gold); border-color: var(--gold-soft); }
+.search-party-here { color: var(--gold); border-color: var(--gold-soft); }
 
 /* ---------- Settings modal ---------- */
 /* Parchment dialog, matching the session-confirm dialog's shape so the two
@@ -3600,7 +3662,20 @@ h3.ring-name {
   color: var(--gold);
   white-space: nowrap;
 }
-.sr-start-loc { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; }
+/* Where the party is; click to bring the dashboard below back to them. */
+.sr-party-loc {
+  background: none;
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0.12rem 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.sr-party-loc:hover { color: var(--ink); border-color: var(--gold-soft); }
 .sr-exit-btn {
   background: none;
   border: 1px solid var(--oxblood);
@@ -3676,6 +3751,46 @@ h3.ring-name {
   color: var(--gold-soft);
   margin-bottom: 0.35rem;
 }
+/* Label + (optional) location chip share one row at the top of a card. */
+.sr-prompt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.sr-prompt-head .sr-prompt-label { margin-bottom: 0; }
+/* Location chip — moves the party (and the dashboard below) to that beat's
+   location. Gold once the party is there. */
+.sr-loc-chip {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-family: var(--display);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--muted);
+  padding: 0.1rem 0.4rem;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.sr-loc-chip:hover { color: var(--ink); border-color: var(--gold-soft); }
+.sr-loc-chip-active {
+  color: var(--gold);
+  border-color: var(--gold-soft);
+  background: rgba(var(--gold-rgb),0.1);
+}
+/* data-location that doesn't resolve to a location — flagged like a broken [[ ]] link */
+.sr-loc-chip-broken {
+  border-style: dashed;
+  text-decoration: line-through;
+  opacity: 0.7;
+  cursor: help;
+}
 .sr-prompt-content { font-size: 0.83rem; line-height: 1.5; color: var(--ink); }
 .sr-prompt-content p { margin: 0 0 0.4rem; }
 .sr-prompt-content p:last-child { margin-bottom: 0; }
@@ -3704,6 +3819,7 @@ h3.ring-name {
   transition: color 0.12s, border-color 0.12s;
 }
 .sr-detail-back:hover { color: var(--ink); border-color: var(--line); }
+.sr-detail-party:disabled { color: var(--gold); border-color: var(--gold-soft); cursor: default; }
 
 .sr-detail-body {
   flex: 1 1 auto;

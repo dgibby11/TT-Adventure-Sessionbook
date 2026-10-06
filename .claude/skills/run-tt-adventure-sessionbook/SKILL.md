@@ -29,8 +29,12 @@ All paths below are relative to the repo root.
      empty and is discarded at close — the DM's own Chrome profile and its
      saved notes/reveals are never touched.
 
-   Verified: opening the reveal dialog and cancelling leaves `localStorage`
-   byte-identical with 0 flags written.
+   Verified: opening the reveal dialog and cancelling writes 0 `revealed`
+   flags. (Launching the Session Runner does write one thing to that throwaway
+   `localStorage` — the party/view location it moves to the session's
+   `startLocation` — so the store is no longer byte-identical after a run.
+   That is UI position, not campaign data, and it is discarded with the
+   context.)
 
 3. **Use `test-fixture` for full-coverage runs.** `fail-academy`'s only
    Planning session has an empty `reveals[]`, so its Complete-Session dialog is
@@ -48,13 +52,30 @@ All paths below are relative to the repo root.
 
 ### The `test-fixture` campaign
 
-Holds exactly one entity of every type (location ×2, npc, faction, item,
+Holds at least one entity of every type (location ×6, npc, faction, item,
 creature, mystery, session, reference), cross-linked, with a `Planning`
 session whose `reveals[]` is populated — so Prompts, Plan, Pinboard and the
 Complete-Session dialog all render. It also deliberately includes a `dm-only`
 entity (`tf_mystery`), `.dm-only` / `.dm-restricted` blocks, external `links[]`
 (`tf_creature`), and an `environment` object on the root, so the view toggle
 and the modal's References section are covered too.
+
+Its six locations are laid out to exercise the "where is the party" features
+(`campaign.json` → `regions`, `partyLocation`):
+
+| location | role |
+|---|---|
+| `tf_root` | hub of region 1, and the authored `partyLocation` |
+| `tf_hall` | in region 1 — but linked from both hubs, so it proves ties go to the earlier region |
+| `tf_outpost` | hub of region 2, labelled "The Far Side" in `campaign.json`; has a night-only curiosity |
+| `tf_camp` | sub-location in region 2, with `environment` + `curiosities` |
+| `tf_vault` | `dm-only`, in region 2 — must never surface in Player View |
+| `tf_island` | linked to no other location, so it lands under "Elsewhere" |
+
+`tf_session_1` starts at `tf_root` and three of its five beats carry
+`data-location` (`tf_root`, `tf_hall`, `tf_camp`). Keep the fixture's own files
+free of broken references — `location_test.py` produces the negative cases by
+intercepting requests, so `tools/test.py` stays clean.
 
 **It is hidden from the campaign picker.** Its `campaigns/index.json` entry
 carries `"hidden": true`, and `launcher.html` filters those out — so neither
@@ -145,7 +166,7 @@ regenerate, don't expect them to exist in a fresh clone).
 
 | command | what it does |
 |---|---|
-| `smoke --campaign X --passphrase P [--port N]` | Full flow: load campaign dashboard → DM login → open the Index menu → find a session in the "Planning" category → open its entity modal (checks for broken `[[ ]]` cross-links) → launch the Session Runner → verify Prompts/Plan/Pinboard populated → run the Complete-Session reveal dialog → confirm zero console/page errors. See exit codes below. |
+| `smoke --campaign X --passphrase P [--port N]` | Full flow: load campaign dashboard → DM login → open the Index menu → find a session in the "Planning" category → open its entity modal (checks for broken `[[ ]]` cross-links) → launch the Session Runner → verify Prompts/Plan/Pinboard populated → verify the dashboard under the Runner moved to the session's `startLocation` (stage `dashboard_follows`; a mismatch prints `FLOW ERRORS:` and fails) → run the Complete-Session reveal dialog → confirm zero console/page errors. See exit codes below. |
 | `perf [--campaign X] [--dm] [--runs N]` | Load/performance pass. Defaults to `fail-academy` — the largest real dataset, which is the point. Cold-loads the campaign `--runs` times (default 3, fresh context each time), takes medians for dashboard-ready / DOMContentLoaded / load / Index-menu-open / search, and prints scale figures. Read-only: never opens the reveal dialog, never writes state. Pass `--dm` to render the FULL authored dataset (without it only the player-visible subset loads and the numbers understate real load). |
 | `open --entity "<name>" [--dm] [--campaign X] [--passphrase P]` | Opens one entity by partial name match and screenshots its modal. Pass `--dm` almost always (see Gotchas) or `--campaign`'s passphrase won't matter and the entity likely won't be findable at all. |
 
@@ -191,6 +212,44 @@ ready **143 ms**, DOMContentLoaded 86 ms, menu open 18 ms, search 15 ms,
 94 KB over 28 requests. Treat these as an order-of-magnitude reference, not a
 regression threshold — hardware and content both move.
 
+### Party location, regions and Runner location chips
+
+```bash
+py -X utf8 .claude/skills/run-tt-adventure-sessionbook/location_test.py
+py -X utf8 .claude/skills/run-tt-adventure-sessionbook/location_test.py --only runner --headed
+```
+
+`location_test.py` is the suite for everything that moves the app's focus to
+where the party is. About 170 checks in six groups (`--only`, repeatable):
+
+| group | target | covers |
+|---|---|---|
+| `unit` | `tools/tests.html` | the region model and the party-location state functions |
+| `dashboard` | test-fixture | Regions home, entering regions/locations, the region crumb, moving the party from the header, search and the entry modal, persistence across a reload |
+| `runner` | test-fixture | launch → `startLocation`, location chips, peeking away and snapping back, the detail-panel button, exit/resume, broken `data-location`, bad or missing `startLocation` |
+| `player` | test-fixture | Player View never shows a dm-only or unrevealed location, the party marker for one, or any party-moving control |
+| `legacy` | test-fixture | a campaign with no `regions` (served altered), unresolvable `regions`, stale saved ids |
+| `real` | fail-academy | read-only: every region opens, the party marker matches `campaign.json`, **every location entity renders**, no dm-only location on the player home view |
+
+Exit `0` = all passed, `1` = at least one failed. A group that cannot continue
+(a control it needs never appeared) is recorded as one failure and the other
+groups still run.
+
+Things to know:
+
+- **The `real` group never hard-codes content.** Expectations are read from
+  `campaign.json` and `data/*.json` at run time, and content gaps (e.g. the
+  party's location has no `environment` yet) print as `NOTE`, not `FAIL`.
+- **Negative cases are served, not stored.** `serve_altered()` intercepts one
+  request and returns a modified copy, which is how the suite tests a campaign
+  with no regions or a beat with a bad `data-location` without putting broken
+  data in the fixture.
+- **It gates only on the unit-test sections it owns.** `tools/tests.html` has
+  three generator tests that were already failing before this suite existed
+  (72/75); they print as `NOTE  unrelated unit test failing…`.
+- The fixture flows *do* move the party and reveal entities — in a throwaway
+  browser context only. Nothing is written to any file or remote.
+
 ## Run (human path)
 
 `start-map.bat` (double-click) or manually:
@@ -210,9 +269,13 @@ py tools/test.py
 ```
 
 Data-integrity suite over every campaign's `data/*.json` + `content/`
-(unresolved `related[]` ids, broken `[[ ]]` links). As of this writing:
-**71/74 pass, 3 pre-existing warnings** (re-verified 2026-08-15; the older
-"69/74, 5 warnings" note was stale). All 3 are the same unresolved
+(unresolved `related[]` ids, broken `[[ ]]` links, and location references:
+`campaign.json` `regions` / `partyLocation` **fail** if they do not name a
+location entity; a session `startLocation` or a `data-location` attribute that
+does not **warns**). As of this writing:
+**95/98 pass, 3 pre-existing warnings** (re-verified 2026-10-05; the pass count
+grows as campaigns and checks are added, so watch the warnings, not the total).
+All 3 are the same unresolved
 `related[]` id in `fail-academy` — `campus_wildlife`, referenced by
 `--barbarians`, `--druids`, and `--maren_duskhollow` but never defined.
 That's the clean baseline: `grep` the warning list against your diff before
@@ -245,6 +308,16 @@ assuming you broke something, and treat any 4th warning as yours.
   wait for `#dashboard` to have content instead. (Grepping `index.html`
   for `id="campus-map"` still finds it — it's sitting inside an HTML
   comment, `grep` doesn't know that.)
+- **The home view is not always a location.** A campaign whose `campaign.json`
+  lists `regions` (fail-academy, test-fixture) opens on the Regions home: region
+  columns of `.dash-loc-card`s, with **no** `.dash-entity-card`, no Environment
+  and no Curiosities quad. A test that needs those must enter a location first
+  (`window.App.setCurrentLocation(window.CAMPAIGN.rootLocation)` works for every
+  campaign). Campaigns without `regions` still open on the root location.
+- **Looking is not moving.** `App.setCurrentLocation(id)` changes what the
+  dashboard shows; `App.setPartyLocation(id)` moves the party *and* the view.
+  Launching the Session Runner calls the second one, so the dashboard's location
+  changes under any test that opens the Runner.
 - **DM login is a native `prompt()` dialog**, not a form field. Register
   `page.on("dialog", ...)` (or `.once`) **before** clicking `#dm-toggle` —
   Playwright auto-dismisses unhandled dialogs, which silently reads as

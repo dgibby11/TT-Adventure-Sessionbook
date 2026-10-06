@@ -6,8 +6,13 @@
 //   Center (.sr-detail):     Session plan (default) or entity content on pin/link click
 //   Right  (.sr-sidebar):    Pinboard (seeded from session.related[]) + session notes
 //
+// The dashboard stays visible underneath and follows the party. Launching a
+// session moves the party to session.startLocation; after that, a beat authored
+// as <div class="session-prompt" data-location="<location id>"> carries a chip
+// that moves the party (and so the dashboard) to that location when clicked.
+//
 // Per-session state in localStorage key: session-runner.<id>
-//   { pinnedIds: [...], notes: "..." }
+//   { pinnedIds: [...], notes: "...", locationId: "<where the party was last>" }
 
 (function () {
 
@@ -17,9 +22,15 @@
   let _pins      = [];
   let _planHtml  = '';
   let _promptEls = [];
+  // Where this run last put the party, so a relaunch resumes there instead of
+  // snapping back to the session's startLocation.
+  let _locationId = null;
 
   // Detail panel DOM refs (set during render, cleared on exit)
   let _detailTitle, _detailBack, _detailBody, _pinsEl;
+  // Party-location controls: the bar indicator, and the detail panel's
+  // "Party is here" button (shown while a location is open in the panel).
+  let _barParty, _detailParty, _detailEntityId = null;
 
   function storageKey(id) { return 'session-runner.' + id; }
 
@@ -32,9 +43,65 @@
     if (!_session) return;
     const ta = document.getElementById('sr-notes');
     localStorage.setItem(storageKey(_session.id), JSON.stringify({
-      pinnedIds : _pins,
-      notes     : ta ? ta.value : '',
+      pinnedIds  : _pins,
+      notes      : ta ? ta.value : '',
+      locationId : _locationId,
     }));
+  }
+
+  // ── Party location ─────────────────────────────────────────────────────────
+
+  function isLocation(id) {
+    return !!id && window.App.byId(id)?.type === 'location';
+  }
+
+  // A chip that moves the party to `locId`. An id that is unknown, or is not a
+  // location, renders visibly broken — same convention as a bad [[ ]] link.
+  function makeLocChip(locId) {
+    if (!isLocation(locId)) {
+      const span = mkEl('span', 'sr-loc-chip sr-loc-chip-broken', locId);
+      span.title = window.App.byId(locId) ? `Not a location: ${locId}` : `Unknown location: ${locId}`;
+      return span;
+    }
+    const btn = mkEl('button', 'sr-loc-chip');
+    btn.type = 'button';
+    btn.dataset.loc = locId;
+    btn.addEventListener('click', () => window.App.setPartyLocation(locId));
+    return btn;
+  }
+
+  // Repaint everything that shows where the party is. Called on render and on
+  // every party:changed, whichever control caused it.
+  function syncPartyUI() {
+    const mount = document.getElementById('session-runner');
+    const party = window.App.getPartyLocation();
+
+    mount.querySelectorAll('.sr-loc-chip[data-loc]').forEach((btn) => {
+      const here = !!party && party.id === btn.dataset.loc;
+      btn.textContent = (here ? '⚑ ' : '▸ ') + window.App.byId(btn.dataset.loc).name;
+      btn.title = here ? 'The party is here' : 'Move the party here';
+      btn.classList.toggle('sr-loc-chip-active', here);
+    });
+
+    if (_barParty) {
+      _barParty.hidden = !party;
+      if (party) _barParty.textContent = '⚑ ' + party.name;
+    }
+
+    if (_detailParty) {
+      const showing = isLocation(_detailEntityId);
+      const here    = showing && !!party && party.id === _detailEntityId;
+      _detailParty.hidden      = !showing;
+      _detailParty.disabled    = here;
+      _detailParty.textContent = here ? '⚑ Party is here' : '⚑ Move party here';
+    }
+  }
+
+  function onPartyChanged(e) {
+    if (!_session) return;
+    _locationId = e.detail.id;
+    saveState();
+    syncPartyUI();
   }
 
   // ── Cross-link resolution (mirrors modal.js, opens in detail pane) ─────────
@@ -158,6 +225,9 @@
     _pins = (saved && saved.pinnedIds && saved.pinnedIds.length)
       ? [...saved.pinnedIds]
       : [...(session.related || [])];
+    // Resuming picks up where the party was left; a first launch starts them
+    // at the session's startLocation.
+    _locationId = [saved && saved.locationId, session.startLocation].find(isLocation) || null;
 
     try {
       const base = window.CAMPAIGN_BASE ? window.CAMPAIGN_BASE + '/' : '';
@@ -172,6 +242,8 @@
     } catch { /* no content — handled gracefully */ }
 
     renderRunner(saved?.notes || '');
+    // After the render, so the notes textarea exists when this triggers a save.
+    if (_locationId) window.App.setPartyLocation(_locationId);
   }
 
   // ── Render ─────────────────────────────────────────────────────────────────
@@ -186,10 +258,16 @@
     const bar     = mkEl('div', 'sr-bar');
     const barLeft = mkEl('div', 'sr-bar-left');
     barLeft.appendChild(mkEl('span', 'sr-session-name', _session.name));
-    if (_session.startLocation) {
-      const locName = window.App.byId(_session.startLocation)?.name || _session.startLocation;
-      barLeft.appendChild(mkEl('span', 'sr-start-loc', `▸ ${locName}`));
-    }
+    // Where the party is now. Clicking it snaps the dashboard below back to
+    // them after the DM has looked at somewhere else.
+    _barParty = mkEl('button', 'sr-party-loc');
+    _barParty.type  = 'button';
+    _barParty.title = 'Show the party’s location below';
+    _barParty.addEventListener('click', () => {
+      const party = window.App.getPartyLocation();
+      if (party) window.App.setCurrentLocation(party.id);
+    });
+    barLeft.appendChild(_barParty);
     bar.appendChild(barLeft);
     const barRight = mkEl('div', 'sr-bar-right');
 
@@ -223,6 +301,7 @@
     body.appendChild(buildDetailPanel());
     body.appendChild(buildSidebarPanel(savedNotes));
     mount.appendChild(body);
+    syncPartyUI();
   }
 
   // ── Prompts panel ──────────────────────────────────────────────────────────
@@ -238,9 +317,15 @@
       _promptEls.forEach((src) => {
         const card    = mkEl('div', 'sr-prompt-card');
         const labelEl = src.querySelector('.prompt-label');
-        if (labelEl) {
-          card.appendChild(mkEl('div', 'sr-prompt-label', labelEl.textContent));
-          labelEl.remove();
+        const locId   = (src.getAttribute('data-location') || '').trim();
+        if (labelEl || locId) {
+          const head = mkEl('div', 'sr-prompt-head');
+          if (labelEl) {
+            head.appendChild(mkEl('div', 'sr-prompt-label', labelEl.textContent));
+            labelEl.remove();
+          }
+          if (locId) head.appendChild(makeLocChip(locId));
+          card.appendChild(head);
         }
         const content = mkEl('div', 'sr-prompt-content');
         content.innerHTML = src.innerHTML;
@@ -266,7 +351,14 @@
     _detailBack.type = 'button';
     _detailBack.hidden = true;
     _detailBack.addEventListener('click', () => showPlanInDetail());
+    _detailParty = mkEl('button', 'sr-detail-back sr-detail-party');
+    _detailParty.type   = 'button';
+    _detailParty.hidden = true;
+    _detailParty.addEventListener('click', () => {
+      if (isLocation(_detailEntityId)) window.App.setPartyLocation(_detailEntityId);
+    });
     hdr.appendChild(_detailTitle);
+    hdr.appendChild(_detailParty);
     hdr.appendChild(_detailBack);
     panel.appendChild(hdr);
 
@@ -280,6 +372,8 @@
   function showPlanInDetail() {
     _detailTitle.textContent = _session.name;
     _detailBack.hidden = true;
+    _detailEntityId = null;
+    syncPartyUI();
     _detailBody.innerHTML = _planHtml || '<p class="sr-empty">No plan content loaded.</p>';
     resolveCrossLinks(_detailBody);
     wireCrossLinks(_detailBody);
@@ -291,6 +385,8 @@
     if (!entity) return;
     _detailTitle.textContent = entity.name;
     _detailBack.hidden = false;
+    _detailEntityId = entityId;
+    syncPartyUI();
     _detailBody.innerHTML = '<p class="sr-loading">Loading…</p>';
     _detailBody.scrollTop = 0;
 
@@ -436,7 +532,9 @@
   function exitRunner() {
     saveState();
     _session = null; _pins = []; _planHtml = ''; _promptEls = [];
+    _locationId = null; _detailEntityId = null;
     _detailTitle = _detailBack = _detailBody = _pinsEl = null;
+    _barParty = _detailParty = null;
 
     document.body.classList.remove('runner-active');
     document.getElementById('session-runner').hidden = true;
@@ -454,6 +552,8 @@
   // ── Init ───────────────────────────────────────────────────────────────────
 
   function wire() {
+    document.addEventListener('party:changed', onPartyChanged);
+
     const btn = document.getElementById('run-session-btn');
     if (!btn) return;
     function syncBtn() { btn.hidden = !window.App.isDM(); }
