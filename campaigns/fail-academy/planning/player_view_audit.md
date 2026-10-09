@@ -438,3 +438,82 @@ said "without taking a scratch".
   scanned for the names that must never appear, for DM-voice phrasing, and
   across tags, `links[]`, link labels and `environment` — not re-read against
   the Session 1–3 transcripts.
+
+---
+
+## J. Third pass — Session 5 (2026-10-07)
+
+Session 5 (played 2026-10-06) was reconciled and made visible to players in one
+pass, at the DM's request: *"mark the correct things belonging in the Player
+View."* The transcript is `planning/session_5_transcript.txt`.
+
+### What players can now see
+
+- **`session_5`** — `visibility: player`, `category: Completed`, and listed in
+  `campaign.json` → `baselineRevealed`. **It is the only entity revealed by this
+  session.** The party met nobody new and never left the clearing.
+- **Not revealed, on purpose:** `logging_camp`, `logging_crew`,
+  `thundertree_road`, `tac_credit_note`. They were in `session_5.reveals[]` as
+  prep and have been taken out; none was reached.
+- **Player View is at 120 of 205 entities**, up from 119.
+
+### The session entity's own leaks, fixed
+
+Before this pass the `session_5` entity carried three things a player could have
+reached the moment it was flipped:
+
+- **Tags** `logging-camp`, `thundertree` and `drow` — searchable in Player View,
+  and all three describe scenes that have not happened. Replaced.
+- **`reveals[]`** naming four unreached entities (above).
+- **The whole page**, which was the prep. It is now a record of play, with the
+  prep kept inside one collapsed `dm-only` block at the foot.
+
+### Pages a player can open that were rewritten, and what stayed hidden
+
+`tedrovaxilliath` · `the_captive_drow` · `neverwinter_wood` · `teds_fox` ·
+`morvek` · `what_follows_vrenn` · `ellery_voss` · `silas_and_breena` ·
+`speaking_stone` · `ollie` · `witness` · `standing_ovation` ·
+`quick_components_pouch` · `underdark_breach` · the four player sheets ·
+`session_5`. Each new player-facing passage was checked line by line against
+what was said aloud at the table. **Kept behind `dm-only` on every one of them:**
+
+- **Why Voss's first *sending* failed.** The dome. The party believe it was the
+  plane.
+- **That Morvek's message to Vrenn was a *sending*, and that Vrenn could have
+  answered.** Vrenn told them this session that there was a message and that it
+  said he was coming, so *that much* moved out into player-facing text on
+  `morvek`, `the_captive_drow` and `what_follows_vrenn`. The right of reply did
+  not.
+- **The scry**, which was prepped and not run.
+- **That the fork in Silas's pack is what is followed.**
+- **The treant, the lair, and how the wing was torn.** Ted died without telling.
+- **Ted's numbers** — hit points, saves, armour class, legendary actions.
+- **What Vrenn was thinking in the fight.** The DM said it aloud to the players
+  and told them their characters do not know it; it is recorded as DM-only.
+- **The two rulings missed at the table** (*enhance ability* on a save; Bardic
+  Inspiration on the bard's own rolls). They are on Tavian's and Tito's sheets in
+  DM-only blocks headed "one to tell the player".
+- **Everything about the camp, the road, the drow and the credit note.**
+
+### Checked mechanically
+
+Every changed page was parsed with its `dm-only` elements removed, and what was
+left was checked two ways: every `[[id]]` in it resolves to an entity that is
+both `visibility: player` and revealed, and none of the words that must not
+appear does (Thundertree, Thornwick, Ferreck, treant, credit note and the usual
+list). **Clean.** The only hits were "lair" as an ordinary noun in two places
+where the party were told it, and inside the word *Clairvoyance*.
+
+New tags added this pass, all of them things the party know: `dead` and `slain`
+on `tedrovaxilliath`, `cured` on `the_captive_drow` (replacing `cursed`), and
+`dragon-slain` and `hold-monster` on `session_5`.
+
+### Left alone, for the DM
+
+- **`session_5`'s Status line** names the planning files and says DM-only blocks
+  exist, as Sessions 2 to 4 do.
+- **The hit-point and damage figures in the fight table are player-facing.**
+  They were all said aloud, including the running total of 195.
+- **`logging_camp` and `logging_crew` are `visibility: player` and unrevealed**,
+  and their player-facing text names Thundertree. That is correct for an entity
+  the party has not reached, and worth a look on the day it is revealed.

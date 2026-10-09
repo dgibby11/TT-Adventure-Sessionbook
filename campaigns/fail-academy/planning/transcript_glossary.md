@@ -5,7 +5,8 @@ against live campaign data. Built during the **Session 2 ("Commencement",
 played 2026-08-20)** reconciliation pass on 2026-08-23, and agreed with the DM
 line by line before anything was written to live data. **Extended by the Session 3
 ("Before Dawn") pass on 2026-09-03** — see §6. **Extended again by the Session 4
-("The Green Country") pass on 2026-09-25** — see §7.
+("The Green Country") pass on 2026-09-25** — see §7. **Extended again by the
+Session 5 ("A Lie for a Lie") pass on 2026-10-07** — see §8.
 
 Reuse this for every future transcript pass. Add to it rather than rewriting it —
 each session's recording tends to mangle the same names the same way.
@@ -13,7 +14,8 @@ each session's recording tends to mangle the same names the same way.
 **Transcripts on file:** `planning/session_1_transcript.txt` (Session 1, played
 2026-08-09) · `planning/session_2_transcript.txt` (Session 2, played 2026-08-20)
 · `planning/session_3_transcript.txt` (Session 3, played 2026-09-02)
-· `planning/session_4_transcript.txt` (Session 4, played 2026-09-24).
+· `planning/session_4_transcript.txt` (Session 4, played 2026-09-24)
+· `planning/session_5_transcript.txt` (Session 5, played 2026-10-06).
 
 **Standing rules for any transcript pass (DM's, carried forward):**
 
@@ -375,3 +377,209 @@ Guntrah said *"it was wherever the gnome shop was"*, and the DM concluded: *"if
 it's not in any of the documentation, we probably don't have that."* **Silas is
 Baldur's Gate via his Acolyte background. Guntrah, Tito and Tavian have no
 recorded origin.** Worth one line each when their sheets are next touched.
+
+---
+
+## 8. Session 5 ("A Lie for a Lie") — pass of 2026-10-07
+
+Played **2026-10-06** (DM, confirmed 2026-10-07). **They killed the dragon.** Ted
+refused to let them leave, refused Vrenn's offer to stay in their place, and
+breathed on them at the tree line. Vrenn caught him with *hold monster*, the
+party turned round and fought against the DM's open warning, and five rounds
+later Tito talked him to death with *phantasmal killer* while standing on 1 hit
+point (line 2048). **Vrenn is cured, alive and still with them.** Tavian went
+down and was brought back; nobody died. **The session ended in the clearing** —
+the camp, the road, the drow and the credit note were never reached. Full
+reconciliation in `content/sessions/session_5.html`.
+
+*This pass began from a paste that was cut off at 50,000 characters, a third of
+the way in, and a partial version of this section was written from that. This
+one replaces it and was made from the whole file.*
+
+### 8a. Proper-noun corrections — apply on sight
+
+| Transcript renders it | Correct | Notes |
+|---|---|---|
+| Tedrovaxiliath | **Tedrovaxilliath** | Opening narration. Single-l garble, as in §7a. |
+| Brenn, Bren, Wrenn, "friend" | **Vrenn** | Same hazard as §6a. *"Oh, friend did Hold Monster"* (line 669) is his name. **The DM corrected the table on the recording** — *"there's a V in his name, by the way"* (line 812). |
+| "Vrenn or something like that" / "Vrenn?" | a guess at **Breena** | **NEW HAZARD, the reverse of §2's.** In the exchange about Guntrah's mother's name the recording wrote the drow's name over a misremembered "Brenna". It is not the drow. The table landed on **Silas and Breena**, which is what the data already says. |
+| "Breena or Breena?" | *Breena or Brenna?* | The two candidates, rendered identically. |
+| Gunn, Gun | **Guntrah** | His father's short form, and the table's. Not an error; leave it. |
+| "I'll roll in front of Tavel" | in front of the **table** | **Not Professor Tavel.** He is nowhere near this session. |
+| "which she gets +7", "She automatically fails" | **he** | The dragon. Ted is *he* throughout. |
+| whole monster, whole monsters, whole person, told monster, Hold Dragon | ***hold monster*** | A dozen renderings. *Hold person* also appears correctly — Tito has it and it does not work on a dragon. |
+| "you're weak of the Abyss" | **reek** of the Abyss | Ted. |
+| "Luke, to your knowledge" | **Look**, to your knowledge | Not a player's name. |
+| Ross | **Russ** | Silas's player. |
+| Trolley, Aldi | **Ollie** | Two new ones for §1's list. |
+| Mind Censor, Mind Smite, Divine Strikes | **Divine Smite** | Tavian hunting for it on his sheet. |
+| "an auto divine hit" | **Improved Divine Smite** | The level-11 radiant d8 on every hit. |
+| "Kenzie, 6 plus 40" | **10d6 plus 40** | *Disintegrate*. |
+| "I had that rain" | I have that **ring** | Silas's Ring of Regeneration — 1d6 every ten minutes, far too slow to matter in a fight. |
+| "wisdom save from SB17" | Wisdom save, **DC 17** | |
+| "pony this", "pony him" | *pwn* | Guntrah. |
+| "no transfers" | no **trancers** | Elves. |
+| "Cards are so fun" | **Bards** are so fun | |
+| "the dopest dragon" | the **dumbest** dragon | Tito, rehearsing the line he then shouted. |
+| Eagle Eye | **Evil Eye** | Corrected by Tito on the recording. *"Eagle's Splendor"* immediately after is correct — it is the Charisma option of *enhance ability*. |
+| "No, he has a sending stone" | he has the ***sending* spell** | About Silas, who answers Voss with his own head, not a stone. |
+| "on his map" | on his **behalf** | Tavian, on killing a lich for Vrenn. Probable, not certain. |
+| "Well, not half damage" | "Well, **no** — half damage" | Everybody had saved. |
+| Ring of Ram | **Ring of the Ram** | Carried over from §6a. |
+| Neverwinter Woods, Neverwinter Forest | **Neverwinter Wood** | The players' own wording; correct it outside direct quotes. |
+| "Voss the boss" | Correct as written | A joke, not §2's Voss → "boss" hazard: Silas asked whether he knew Voss and was told *"Yeah, she's your boss."* |
+| "Yeah, Witness, uh, you've done 195" | *unclear* | Line 1410. Probably "with this"; the sword is not being addressed. Elsewhere **Witness** is correct. |
+| "a race of giant elves" | *unconfirmed* | The DM's on-the-spot gloss of where fomorians come from. Possibly a garble. **Do not promote it to lore without asking.** |
+| Warlin | — | A miniature borrowed for Guntrah. Not a name in the fiction. |
+| Unsettling Words, Harness Divine Power, Heroic Inspiration, Regain Bardic Inspiration | Correct as written | Genuine features. |
+
+### 8b. Rulings made during the Session 5 pass
+
+**Before the fight**
+
+| Question | Ruling |
+|---|---|
+| Who Voss's *sending* reached | **Silas**, picked by a d4. Version A of the prep, read as written. The DM did not hold them to a count on the reply. |
+| Why her first *sending* failed | **Still not known to the party.** Guntrah guessed *"because we weren't on the same plane"* and nobody corrected him. That *Tiny Hut* blocks *sending* stays DM-only. |
+| The speaking stone | **Twenty-five words each way, once, then dead until the next dawn.** The back-and-forth the players remembered was a custom rule from the previous campaign and does not apply. |
+| What the stone looks like | **Not a rock.** A rounded bronze ball with swirled engraving, steampunk, with a piece that extends and retracts — Guntrah's player's design, at the DM's invitation. An earlier line in the same exchange has it "go back to a rock"; the design a minute later supersedes it. |
+| Magical Tinkering, fired from Ollie | **Allowed.** Three tinkered stones — **two light, one odour** — in a spring launcher fitted to the Steel Defender. The effect is fixed when the stone is made, not when it is fired. |
+| Trance and keeping watch | *"When you're trancing, you're oblivious."* The DM's position, stated half in jest; nobody in the party trances. Vrenn does. |
+| Ring of the Ram recharge | **All three charges back.** It held one. |
+| Vrenn's Evil Eye save | **Passed: he is cured.** DC 14 Charisma (called as Constitution, then corrected). Dice 13 and 7, +3 from Tavian's aura, 16. Flash of Genius was not spent. |
+| ***Enhance ability* on a saving throw** | **NOT ALLOWED — missed at the table (DM, 2026-10-07).** The spell gives advantage on ability *checks* only. Tavian's player said it covered the save and it was taken on trust. **The result stands; it is not a precedent.** The recording does not say which die came first, so whether it changed the outcome is unknown. |
+| How Tavian knew what the curse was | **History 16 against DC 13.** A FAIL Academy lesson on common curses and maladies. |
+| **Tito's Bardic Inspiration on his own rolls** | **NOT ALLOWED — missed at the table (DM, 2026-10-07).** The Deception against Ted and the save against the first breath, and offered again on the vine save. **All results stand.** For the record, the Deception was 24 without the die against roughly 29, and the breath save was carried by a Luck Point natural 20 regardless. |
+| Tito's Deception of 33 | **He won the roll and not the argument.** The DM's reading at the table: it worked on Ted's vanity, not his belief. *"Perhaps I did. Regardless, you're not leaving this forest."* |
+| Vrenn's offer to stay | **Refused.** Persuasion +0, rolled 3: *"That offer is no longer on the table."* The DM's aside: this was always the way out, the odds alone were poor, and nobody helped the roll. **This is where the prep's "Vrenn stays either way" stopped being true.** |
+| *Vicious mockery* at a dragon nobody can see | **He may shout it; whether it lands is unknown to him.** Ted saved on a 17 and did not answer. **The words were a confession**: *"We did deceive you."* |
+| Reading the situation | Insight 22 (natural 20), 22 and 18: **flee, do not fight.** Doubly so in his lair. Dragons have no inherent way to see the invisible, "to your knowledge". |
+| The first breath | DC 18, sixteen dice rolled as 4d6 × 4 = 80. **Everyone saved, Vrenn included: 40 poison each.** It did not recharge on the next roll, "but you don't know that". |
+| *Fireball* in the Wood | **No wildfire.** It clears a path about thirty feet wide and the going beyond it is still slow. |
+| After the breath | **One action each.** Whoever cast *fireball* did not also get *cure wounds*. |
+| *Haste* and difficult terrain | ***Haste* does not ignore it.** Tito's Ring of Free Action does. |
+| Frightful Presence | **Nobody was frightened.** Tavian's aura makes everyone within ten feet immune, and the DM extended it to the group for the turn. Moot anyway: they were moving away from him. |
+
+**The fight**
+
+| Question | Ruling |
+|---|---|
+| **Vrenn's *hold monster*, and the die** | **It landed: 4 + 7 = 11 against DC 18.** Silas's player read the die as 18; the DM read 4 and said it must have shifted when he reached over (line 657). **It stands as a 4**, and the whole fight hangs on it. He rolled the second one in the open. |
+| Whether to fight at all | **The players' decision, against a stated warning.** *"I don't want to kill everybody, I'm just putting that on the table"* (line 699). |
+| Paralysed | Auto-fail on Strength and Dexterity saves; advantage for every attacker; **automatic crit within 5 feet only**, as in §7b. Constitution saves are not auto-failed. |
+| Stacking *hold monster* | **No.** One paralysis, one save. The DM took D&D Beyond's answer as canon. |
+| Readying a second *hold monster* | **Not the same caster against his own spell failing; a different caster may.** Silas could have held his action for the moment Vrenn's broke. If it never breaks, he has lost his turn. He did not take it. |
+| Luck Points | **Decide after seeing the roll**, and they may be spent one after another on the same roll. Tito used three of his four. |
+| Vrenn's top slot | **He will not spend the 7th.** *"That's his ticket out."* It is still unspent. |
+| The lair's thorn vines | **Everyone standing in the trees: Dexterity save.** Fail, 9 damage and restrained; pass, 4 and free. **Breaking free costs an action and no roll**, and Tavian's extra *haste* action counts. They stopped once everybody was in the clearing. |
+| The Steel Defender | **Its own saves, none of Guntrah's bonuses, and no bonus-action Dash.** The tracker gave it its own initiative by mistake; it shares Guntrah's. |
+| Flash of Genius, late | **No.** Asked for after the table had moved on. Its range is 30 feet, and Guntrah was 45 up when Tavian needed it. |
+| Unsettling Words | **Set as a bonus action before the save, and it applies to the creature's next save whatever that is.** The first one went on an auto-failed *fireball* save and was wasted. |
+| A *fireball* past a dragon, through thirty feet of trees | **d20, 9 or better to land it clean**; otherwise it clips an ally. Silas's Sculpt Spells makes the roll unnecessary. |
+| Two spells in one turn | **HOUSE RULE, stated as the DM's own: allowed, so long as one of them is 1st level or a cantrip.** Silas cast a 5th-level *fireball* and *false life* through Crumb's pouch. **This supersedes the note on the pouch's page**, which had it as cantrip only. |
+| Ted's legendary actions | **After any turn, his own included.** The DM said outright that he is not on a standard block. Tail at +11 with a 15-foot reach; the wing attack costs two. The DM's own count afterwards: he used far fewer than he was owed. |
+| The breath cone | **Sixty feet long and sixty across at the far end.** Who it caught the second time was a d6. |
+| The second breath | **36.** Tavian (11) and Tito (4) failed; Ollie (22) saved for 18. **Tavian dropped. Tito's cape kept him at 1.** |
+| *Phantasmal killer* | **Run with half damage on a successful save** (8 on Ted's natural 20). Its end-of-turn save was missed once and rolled late; Ted made it. |
+| Disadvantage on the save against Silas's *hold monster* | **Claimed by the table and not owed** — *phantasmal killer* gives disadvantage on attacks and ability checks, not saves. Moot: both dice saved. |
+| *Invisibility*, upcast | Touch, so **Vrenn and Silas only**. Silas's ended when he cast. |
+| The *message* cantrip and invisibility | **It ended Vrenn's, but the dragon did not know where he was.** A cantrip is a spell; the table argued otherwise and the DM split the difference. |
+| Healing in a fight | Worth it to bring somebody up from 0, not to go from 10 to 20. Nobody healed until it was over. |
+| Taking the dragon apart | **Three minutes a wing**, and a few points of poison from the blood. |
+| The glyph on Witness | **Lit as Tavian was brought round** — at once, not at the next dawn as the item reads. **The DM has not yet decided what it does**: *"I haven't programmed that yet."* What lit it is settled below. |
+| The mist | **Gone from the clearing about ten minutes after he died.** The DM's next words, *"it's not from the dragon's death"* (line 2090), are ambiguous on the recording — see below. |
+
+**Settled afterwards (DM, 2026-10-08)**
+
+| Question | Ruling |
+|---|---|
+| *"It's not from the dragon's death"* (line 2090) | **Unknown and not important.** The DM reviewed the line and everything round it and could not place it. Dropped. |
+| What lights a rune on Witness | **Each rune answers a particular paladin trait** — decided in the moment at the table. **The second was sacrifice.** Its effect is still undecided, and Tavian being Oath of Glory is to be kept in mind for the rest. |
+| Is the dragon a level | **Yes. All four go to 12 at their next long rest.** Not yet said at the table. |
+| Who sent Thatch's package | **Vrenn, both halves, on Morvek's instructions: he addressed it and he cast the spell that sent it.** *"Mailed that package"* (176) is exact and does not conflict with Session 3's "I just wrote down the words I was given". |
+
+**Ted as he was actually run** — the DM's own block, *"a little bit of each"* of the
+adult and the ancient: fly 40 (halved from 80 by the wing), 40 on foot, full
+speed through his own undergrowth; eyes throughout the forest within six miles;
+Wisdom save +7, Dexterity save +6, attacks +11; **AC 20 to 22** (a 19 missed, a
+22 hit); breath DC 18, recharge 5–6; Frightful Presence at 120 feet. **He took
+397 points of damage in five rounds and had between 366 and 390 hit points** —
+not bloodied at 160, bloodied at 195, alive at 365. The ancient's 385 fits.
+
+### 8c. Speaker-attribution corrections (Session 5)
+
+**Ted's lines are labelled `Tito:` again**, as in §7c, and Vrenn is `DM:` throughout.
+Attribute by scene.
+
+| Labelled | Actually | Why it matters |
+|---|---|---|
+| `Tito: You said so. Several of you said so.` / `Tito: A lie for a lie.` | **DM, as Ted** | The line the session is named for (313). |
+| `Tito: …the green dragon says, uh, that offer is no longer on the table.` | **DM, as Ted** | The refusal of Vrenn's offer (367). |
+| `DM: You don't persist in this lie, do you?` and the Abyss questions after it | **DM, as Ted** | Dialogue, not narration. |
+| `DM:` on the walk back, in Tavian's sidebar, and from "wait, wait, wait" | **DM, as Vrenn** | Includes *"I didn't have a choice… the caster has to go"*, *"I can't say I've ever had friends in my life"*, and ***"if I hadn't done what Morvek asked me to do and mailed that package"*** (176) — confirmed by the DM on 2026-10-08, see §8b. |
+| `DM: This was always going to be the way out.` | **DM, out of character** | A design aside, not Ted and not Vrenn. |
+| `Tavian: Yeah.` (after *"Do you say that out loud?"*) | **Tito** | Tito is the one who proposed leaving Vrenn with the dragon, aloud. Vrenn nodded. |
+| `DM: Yeah, I never leave anyone behind.` / `DM: It would be glorious to kill a lich…` | **Tavian** | The Oath of Glory talking. |
+| `DM: And also, I just said he's part of our crew…` | **Tavian**, then the DM out of character | Tavian's defence to Ted; the second half (*"I don't have the exact verbiage"*) is the DM. |
+| `Silas: Yep, that's a 9.` | **Tavian's** Persuasion on Vrenn | Vrenn's answer was *"I'll think about it."* |
+| `Tito: Um, you also get a message…` | **DM** | Introducing Guntrah's father on the stone. |
+| `Silas: I'm assuming your tiny, tiny hut.` / `Silas: Again, do you want to?` | **DM**, asking Silas | |
+| `DM: I mean, yeah, you guys heard of those?` | **Guntrah** | About sending stones. |
+| `DM: What are you all doing?` / `Silas: Leave!` | **DM, as Vrenn**, both halves | Shouted at the party as they came back for him (1290). |
+| `DM: …Tito, you're up. Okay, I'm gonna yell, spread out!` | second half is **Tito** | |
+| `DM: Yeah, I have 29 hit points.` | **Tito** | Vrenn was on 23. |
+| `Silas: 11.` / `Tito: 11 for Tavian.` (initiative) | **Tavian 11, Silas 15** | Order: Vrenn 20, Tito 18, Silas 15, Ted, Tavian 11, Guntrah and Ollie 7. |
+| `DM: …the dragon falls over lifeless, and I instantly go over and do Cure Wounds on him.` | second half is **Guntrah** | On Tavian, for 17. |
+| `DM:` through the last scene | **DM, as Vrenn** | *"I've spent my whole life running away from people to protect them"*, *"I have nothing left. Well, I have one thing left"*, *"he sent me a message the other day… He told me he was coming"* (2131), *"I stole a lot of components from that basement"*. |
+| `DM: Still feel you're part of our crew.` | **Tavian** | |
+| `DM: And your credit card. And he stole my identity.` | **players**, joking | Not Vrenn. |
+| `DM: I don't know who that is.` | **DM, as Vrenn** | Answering a joke; see §8d. |
+
+**Confirmed correct and load-bearing:**
+
+- `Tito: No, but we can leave Vrenn here with the dragon.` — **the idea came from a
+  player before it came from Vrenn.**
+- `Tito: It was me that said it.` — Tito owning the "prisoner" lie in front of Ted,
+  thirty seconds before lying to him again.
+- `Tito: I will attempt to deceive this green dragon.`
+- `Guntrah: Oh, right, because yesterday it failed because we weren't on the same
+  plane, right?` — the party's working theory, and it is wrong.
+- `Guntrah: Over here, you green bastard!` — said from the air, as bait.
+- `Tito: Oh, we're staying and fighting.` · `Tavian: This sounds like a glorious
+  moment.` · `Guntrah: If they go, I go.` — **turning back was the players' call**,
+  all four of them, inside a minute.
+- `Guntrah: I'll say, almost dead, we got this.` — **Vrenn offered to take them all
+  out of the fight** (*"I have a way out… I'll get us out of here"*, line 1866)
+  **and Guntrah turned him down** without telling the others.
+- `Guntrah: So we're part of an order and there's people that can assist us.` —
+  said to Vrenn. **His word, not the Academy's.**
+
+### 8d. Out-of-character noise — never treat as canon
+
+Derek, Miles, Russ, Christian and **Ben** (real players; Ben is new to these
+recordings) · **"Derek Gibson… kind of an elder god, kind of controls this plane"**
+— Guntrah's player naming the DM to Vrenn, who had not heard of him · the
+Obi-Wan-and-Maul hut clip (*"Not exactly Leomund's Tiny Hut, but hey, same
+energy"*) and "Isaac and Laskel", unidentified and part of the same joke · carbon
+monoxide in the dome · Axe body spray as the odour stone · Australia · Stockholm
+syndrome · Homer Simpson backing into the hedge · *"I'm the captain now"* ·
+"bananas" seven times, padding out the twenty-five words · the miniature
+scramble, "Warlin", and the missing risers (the 3D printers are at a nephew's;
+sixteen dollars on Amazon) · the dragon-turtle mini · a trip to Michigan · a
+"Dragon League" · ChatGPT and D&D Beyond consulted on stacking and concentration ·
+Ant-Man in the dragon's stomach · Hogwarts and its animal teacher · *"I should
+have just made you fight the ancient one"* · **"if we get a party wipe, we have a
+backup campaign… we can just go right back to fucks"** — the One Shots campaign.
+
+**Who is who, from being addressed by name on this recording:** Russ is Silas
+(many times). Ben is Tavian and Christian is Tito, from the vine exchange at
+lines 1148–1150, where the DM names who was caught. Miles is Guntrah by
+elimination. *Treat the last three as probable.*
+
+**Previous-campaign knowledge, flagged:**
+
+- *"That was our old— my own custom Sending Stones from the previous campaign."*
+  The DM catching a rule from another table before it became this one's.
+- *"Dang, that's my first dragon."* / *"Dude, we had our first dragon a while back.
+  First campaign. But that was a young one."* **The players, not the characters.**
+  This party had never fought a dragon before this morning.

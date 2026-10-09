@@ -371,10 +371,10 @@
     "id": "session_5",
     "name": "Session 5 — A Lie for a Lie",
     "type": "session",
-    "category": "Planning",
+    "category": "Completed",
     "contentType": "html",
     "contentFile": "content/sessions/session_5.html",
-    "visibility": "dm-only",
+    "visibility": "player",
     "startLocation": "neverwinter_wood",
     "related": [
       "silas",
@@ -388,6 +388,10 @@
       "ellery_voss",
       "silas_and_breena",
       "speaking_stone",
+      "ollie",
+      "witness",
+      "standing_ovation",
+      "quick_components_pouch",
       "steel_tuning_fork",
       "neverwinter_wood",
       "logging_camp",
@@ -396,7 +400,6 @@
       "tac_credit_note",
       "thornwick_consortium",
       "anselm_ferreck",
-      "prof_brasca_ironquill",
       "the_standing_treant",
       "teds_lair",
       "underdark_breach",
@@ -405,22 +408,18 @@
       "session_4"
     ],
     "reveals": [
-      "session_5",
-      "logging_camp",
-      "logging_crew",
-      "thundertree_road",
-      "tac_credit_note"
+      "session_5"
     ],
     "tags": [
       "session",
-      "planning",
-      "unplayed",
+      "completed",
+      "played",
       "neverwinter-wood",
       "dragon",
+      "dragon-slain",
       "vrenn",
-      "logging-camp",
-      "thundertree",
-      "drow",
+      "hold-monster",
+      "player-visible",
       "session-5"
     ]
   }

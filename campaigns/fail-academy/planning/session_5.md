@@ -1,5 +1,15 @@
 # FAIL Academy — Session 5 (planning)
 
+> **PLAYED 2026-10-06, RECONCILED 2026-10-07 — THIS FILE IS NOW HISTORICAL.**
+> The session went one beat and stopped: the party killed the dragon in the
+> clearing, Vrenn is travelling on with them, and the camp and the road were
+> never reached. The record of play is `content/sessions/session_5.html`, the
+> transcript is `session_5_transcript.txt`, and the summary is at the head of
+> `reboot_status.md`. **Where this file and the transcript disagree, the
+> transcript wins** — most of all decision 5 ("Vrenn does not travel on") and
+> anything that assumes Ted is alive. Beats 3 and 4 below are still good
+> material for Session 6, read against those two facts.
+
 > **PROMOTED 2026-10-06 — NOT YET PLAYED.** This plan is now the live session
 > `session_5`: `content/sessions/session_5.html`, a `Planning` session that runs
 > in the Session Runner. **The live page is what gets run; this file is kept as

@@ -1,6 +1,128 @@
 # FAIL Academy — Session 0 Reboot (In Progress)
 
-## SESSION 5 BUILT AND PROMOTED (2026-10-06). NOT YET PLAYED. Read this first.
+## SESSION 5 PLAYED AND RECONCILED (2026-10-07). Read this first.
+
+**They killed the dragon.** Played 2026-10-06. Ted told them at dawn that they
+were not leaving — *"a lie for a lie"* — turned down Vrenn's offer to stay in
+their place, and breathed on them as they ran. Vrenn caught him with *hold
+monster*, the party turned back against an open warning from the DM, and five
+rounds later Tito killed him with *phantasmal killer* while standing on 1 hit
+point. **Vrenn is cured, alive, and travelling on with them.** Tavian went down
+and was brought back; Tito and Silas finished on 1. **The session never left the
+arrival clearing.**
+
+**Transcript on file:** `planning/session_5_transcript.txt`. Full reconciliation
+in `content/sessions/session_5.html`, which is now a record of play; the plan as
+prepped is kept whole in a DM-only block at its foot. Glossary extended with a
+Session 5 section (§8): forty-four rulings, and Ted's lines labelled `Tito:` once
+again. `session_5.md` is the design document and is now historical. Where it and
+the transcript disagree, **the transcript wins.**
+
+### Two decisions of 2026-10-05 were overturned at the table
+
+1. **VRENN TRAVELS ON WITH THE PARTY.** Item 5 in the block below says he stays in
+   the Wood either way. He offered himself to Ted, rolled a 3 on Persuasion with
+   nobody backing him, and was refused: *"That offer is no longer on the table."*
+   The dragon he meant to hide behind is dead, and he ended the session agreeing
+   to go to "the school". **Everything prepped for the camp and the road was
+   written for four travellers.** He has a 7th-level slot left — *plane shift*,
+   his "one thing left" — 23 hit points, and a shortage of components.
+
+2. **TED IS DEAD.** The prep said he could die and most likely would not, and
+   that he would retreat to his lair. He was held in place twice and never got
+   the chance. He was the DM's own block, between the adult and the ancient, with
+   366 to 390 hit points. **Guntrah, who had asked his name and offered to mend
+   his wing, cut him into pieces afterwards.**
+
+*Also not as written:* Tito lied to him a second time, for a 33, and he let it
+go — the prep had "he will not be lied to twice". Tito then confessed by
+shouting it into the trees.
+
+### Missed at the table, ruled afterwards (DM, 2026-10-07)
+
+- ***Enhance ability* does not give advantage on saving throws.** It was applied
+  to Vrenn's Evil Eye save on the player's say-so. **The cure stands; not a
+  precedent.**
+- **Tito may not put Bardic Inspiration on his own rolls.** He did, twice.
+  **Both results stand.**
+
+Both are on the players' pages in DM-only blocks marked "one to tell the player".
+
+### What was not reached — Session 6 starts here
+
+- **All of beat 3 (the camp) and beat 4 (the road, the three drow, the credit
+  note).** The text is preserved at the foot of `session_5.html`.
+- **`logging_camp` · `logging_crew` · `thundertree_road` · `tac_credit_note` are
+  still unplayed and unrevealed.** They were taken out of `session_5.reveals[]`
+  and belong to whichever session gets there.
+- **Unspent from the first two beats:** the scry (the DM called the stone "the
+  last event I have for the evening") · Vrenn's long way home by a second fork ·
+  the two vellums · that Vrenn could have answered Morvek's *sending* (he has now
+  told them there was a message, and that it said he was coming) · "the crack is
+  closed".
+- **Voss's second *sending*** — Neverwinter, Anselm Ferreck — was written for the
+  following evening, which is now tonight.
+
+### Yours to decide before Session 6
+
+The fight opened all of these and settled none. They are listed on the session
+page under "Yours to decide", and on the entities they belong to.
+
+1. **Ted's lair is unguarded.** The hoard, the unpaid reward table, the records.
+   The party do not know where it is.
+2. **What the mist lifting means.** It left the clearing in ten minutes. How far
+   and how fast the rest of the Wood follows is open.
+3. **The fox** is not on the recording after the opening.
+4. **The treant** has outlived him. The wing story can no longer come from Ted.
+5. **The camp** lost twelve men to the dragon these people just killed.
+6. **Morvek.** Vrenn's whole plan was a dragon.
+7. **The second rune on Witness** lit at once; its effect is not decided. *What
+   lit it is: see below.*
+8. ~~**Whether this is a level.**~~ **Settled: yes** — see below.
+9. **Dragon parts.** Guntrah has a head, two wings, four legs and a tail.
+10. **The Breach** — nothing was said about it. Is "nobody goes back in" still
+    needed, and what enforces it now?
+
+### Settled after the session (DM, 2026-10-08)
+
+- **Level 12 at the next long rest**, all four. Not yet said at the table.
+- **The runes on Witness each answer a particular paladin trait**, decided in the
+  moment: the second lit for **sacrifice**. What it does is still open, and
+  Tavian being Oath of Glory is to be kept in mind for the other three.
+- **Vrenn sent Thatch's package himself, both halves**, on Morvek's instructions:
+  he addressed it and he cast the spell that sent it. "Mailed that package" is
+  exact. Recorded on `torvald_package`, `the_captive_drow` and `morvek`.
+- **"It's not from the dragon's death"** (line 2090) was reviewed and could not
+  be placed. Not important; dropped.
+
+### Where they are
+
+In the arrival clearing, about eight in the morning, with a full day ahead and
+almost nothing left: Silas 1 hit point, Tavian 17, Tito 1 plus his own healing,
+Guntrah about 90, Vrenn 23. Top slots gone all round. Still no healing potions.
+`partyLocation` stays `neverwinter_wood`. **Nobody has chosen a direction**;
+south-west toward the fire is still the stated plan.
+
+### Player View
+
+- **`session_5` is `visibility: player`, `Completed`, and revealed** through
+  `campaign.json` → `baselineRevealed`. It is the only new entity: the party met
+  nobody and went nowhere new. **120 of 205 entities are now visible to players.**
+- **A leak pass ran against the transcript first** — `player_view_audit.md` §J.
+  Nineteen pages a player can open were updated. Still behind `dm-only` on all of
+  them: that the dome is why Voss's first *sending* failed · that Morvek's
+  message was a *sending* and Vrenn could have replied · the scry · the fork ·
+  the treant and the lair · Ted's numbers · what Vrenn was thinking during the
+  fight · everything about the camp and the road.
+
+### Also new
+
+- **A Campaign Summary page** — a session-by-session journal — is at the top of
+  the app backlog (`ROADMAP.md`, Priority Queue), at the DM's request.
+
+---
+
+## SESSION 5 BUILT AND PROMOTED (2026-10-06). Historical — this is the plan. The block above is what happened.
 
 **Session 5 — "A Lie for a Lie" (working title) is live as a `Planning` session
 and runs in the Session Runner:** `content/sessions/session_5.html`, entity
@@ -81,7 +203,7 @@ Ironquill) · the sum on the credit note (proposed: 500 gp).
 
 ---
 
-## SESSION 4 PLAYED AND RECONCILED (2026-09-25). The record of play — but read the Session 5 block above first.
+## SESSION 4 PLAYED AND RECONCILED (2026-09-25). The record of play — but read the two Session 5 blocks above first.
 
 **They landed in Neverwinter Wood, worked out where they were without being told,
 made a deal with an adult green dragon, killed two fomorians for 13 points of

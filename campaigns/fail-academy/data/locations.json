@@ -1043,12 +1043,12 @@
     "contentType": "html",
     "contentFile": "content/locations/neverwinter_wood.html",
     "visibility": "player",
-    "related": ["tedrovaxilliath", "underdark_breach", "teds_lair", "fomorians", "the_standing_treant", "teds_fox", "witchs_pond", "logging_camp", "the_captive_drow", "neverwinter_wood_map", "session_4"],
-    "tags": ["forest", "sword-coast", "dragon-territory", "session-4", "played", "arrival", "autumn"],
+    "related": ["tedrovaxilliath", "underdark_breach", "teds_lair", "fomorians", "the_standing_treant", "teds_fox", "witchs_pond", "logging_camp", "the_captive_drow", "neverwinter_wood_map", "session_4", "session_5"],
+    "tags": ["forest", "sword-coast", "dragon-territory", "session-4", "session-5", "played", "arrival", "autumn"],
     "environment": {
       "architecture": "Old-growth forest under a closed canopy sixty to seventy feet up. Clearings are rare and small. Away from them the undergrowth is heavy, threaded with game trails too low and narrow for a person to use.",
       "activity": "No roads and no people. Getting anywhere means following a guide or making your own path.",
-      "sensory": "Wet, cold and alive. Running water is audible from almost anywhere. It does not smell like a healthy forest — not quite rotten, a little bit funky — and a very faint fog with a greenish tinge lies low in the taller grass, coming from no particular direction.",
+      "sensory": "Wet, cold and alive. Running water is audible from almost anywhere. It does not smell like a healthy forest — not quite rotten, a little bit funky — and a very faint fog with a greenish tinge lies low in the taller grass, coming from no particular direction. In the arrival clearing it lifted within minutes of the dragon's death.",
       "flora": "Mostly deciduous, with a little fir mixed in. Vines and thorn through all of it.",
       "lighting": "A filtered half-light that gives no clue about the hour, or even which way the sun is. To see the sky you have to climb through the canopy.",
       "weather": "Late autumn. Cold and damp, and still under the trees."

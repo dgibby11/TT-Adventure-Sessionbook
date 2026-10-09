@@ -6,6 +6,29 @@ Living document. Reprioritize freely. Add notes under each item as thinking evol
 
 ## Priority Queue
 
+### 3. Campaign Summary — a session-by-session journal  ⬅ top of the backlog (DM, 2026-10-07)
+
+A page in the app that tells the story so far: one short synopsis per session, in
+order. The DM's words: *"sort of like a diary or journal."*
+
+**What exists to build on:** every campaign already has `type:"session"` entities,
+and a played one (`category: "Completed"`) is a full record of play. The journal is
+the short version of those, in sequence — so the natural source is one synopsis per
+session (a `summary` field on the session entity, or a marked block in its content
+file), collected by a single page. Nothing new to store at runtime.
+
+**Open questions before building:**
+- Where it lives — a topbar button, a reference entity beside Campaign Overview, or
+  a dashboard panel. The DM said only "somewhere in the application".
+- Who reads it. If players do, every synopsis has to obey the view rules (the
+  session's `visibility` and `revealed`, no `dm-only` content), which argues for a
+  player-safe text kept apart from any DM line.
+- Hand-written at reconciliation, or assembled from the session page. Hand-written
+  is simpler and much safer against leaks.
+- Whether unplayed (`Planning`) sessions appear at all.
+
+---
+
 ### ~~0a. Tests — Part 1: Data Integrity (Python)~~ ✅ Done
 **Command:** `python tools/test.py` — also runs automatically from `start-map.bat`
 
