@@ -261,7 +261,7 @@
     "contentType": "html",
     "contentFile": "content/npcs/maren_duskhollow.html",
     "visibility": "dm-only",
-    "related": ["owlbear_cave", "kass", "rangers", "campus_wildlife"],
+    "related": ["owlbear_cave", "kass", "rangers", "messenger_falcons"],
     "tags": ["founder", "dm-only", "rangers", "owlbear", "nature", "companion"]
   },
   {

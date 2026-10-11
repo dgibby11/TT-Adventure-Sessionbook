@@ -32,7 +32,7 @@
     "contentType": "html",
     "contentFile": "content/locations/barbarians.html",
     "visibility": "player",
-    "related": ["main_complex", "campus_wildlife"],
+    "related": ["main_complex"],
     "tags": ["department", "martial", "primal", "rage", "unarmored"],
     "environment": {
       "architecture": "A low-ceilinged great hall with exposed timber beams, hide tapestries along the walls, and open fire channels running down the center. An outdoor sparring ring of packed earth and river stones sits adjacent, open to the sky.",
@@ -224,7 +224,7 @@
     "contentType": "html",
     "contentFile": "content/locations/druids.html",
     "visibility": "player",
-    "related": ["rangers", "main_complex", "high_forest", "campus_wildlife"],
+    "related": ["rangers", "main_complex", "high_forest", "high_forest_elk", "campus_ravens", "grove_spirit"],
     "tags": ["department", "nature", "primal", "wildshape", "druidic-circle", "plants", "moon"],
     "environment": {
       "architecture": "The least architectural of the departments — a cluster of structures that seem to have grown rather than been built. Stone-and-timber halls with living root systems integrated into the walls.",

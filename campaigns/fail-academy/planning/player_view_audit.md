@@ -342,8 +342,12 @@ authored intent stands.
   `captain_hadra` → `contraband_log`. The root question is whether One-Shot-era creatures and
   locations should be `dm-only` at all when the sessions describing them are `player` — a design
   call, not a bug.
-- `barbarians`, `druids`, and `maren_duskhollow` all list a `campus_wildlife` entity in
-  `related[]` that does not exist. Possibly superseded by `campus_cats` / `campus_ravens`.
+- ~~`barbarians`, `druids`, and `maren_duskhollow` all list a `campus_wildlife` entity in
+  `related[]` that does not exist.~~ **FIXED 2026-10-11.** It never existed as an entity;
+  the "Campus Creatures" category is what it was meant to be. `druids` now relates to
+  `high_forest_elk`, `campus_ravens` and `grove_spirit`, and `maren_duskhollow` to
+  `messenger_falcons` — each of which already pointed back. `barbarians` simply lost the
+  dead link; no creature is tied to that department.
 - `party_overview` (player) exposes every PC's exact HP/AC/modifiers — fine for a DM dashboard,
   a deliberate choice for Player View.
 

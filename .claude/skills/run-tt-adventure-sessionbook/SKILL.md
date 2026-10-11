@@ -276,13 +276,12 @@ Data-integrity suite over every campaign's `data/*.json` + `content/`
 `campaign.json` `regions` / `partyLocation` **fail** if they do not name a
 location entity; a session `startLocation` or a `data-location` attribute that
 does not **warns**). As of this writing:
-**95/98 pass, 3 pre-existing warnings** (re-verified 2026-10-05; the pass count
-grows as campaigns and checks are added, so watch the warnings, not the total).
-All 3 are the same unresolved
-`related[]` id in `fail-academy` — `campus_wildlife`, referenced by
-`--barbarians`, `--druids`, and `--maren_duskhollow` but never defined.
-That's the clean baseline: `grep` the warning list against your diff before
-assuming you broke something, and treat any 4th warning as yours.
+**97/97 pass, 0 warnings** (2026-10-11; the pass count grows as campaigns and
+checks are added, so watch the warnings, not the total). **The clean baseline
+is zero warnings — treat any warning as yours.** The three long-standing ones
+(`campus_wildlife`, an id referenced by `barbarians`, `druids` and
+`maren_duskhollow` but never defined) were fixed on 2026-10-11 by pointing
+those links at the real Campus Creatures entities.
 
 ---
 
