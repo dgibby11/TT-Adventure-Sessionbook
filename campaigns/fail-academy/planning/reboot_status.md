@@ -76,8 +76,8 @@ page under "Yours to decide", and on the entities they belong to.
 4. **The treant** has outlived him. The wing story can no longer come from Ted.
 5. **The camp** lost twelve men to the dragon these people just killed.
 6. **Morvek.** Vrenn's whole plan was a dragon.
-7. **The second rune on Witness** lit at once; its effect is not decided. *What
-   lit it is: see below.*
+7. ~~**The second rune on Witness.**~~ **Settled** — the Rune of Sacrifice, see
+   below.
 8. ~~**Whether this is a level.**~~ **Settled: yes** — see below.
 9. **Dragon parts.** Guntrah has a head, two wings, four legs and a tail.
 10. **The Breach** — nothing was said about it. Is "nobody goes back in" still
@@ -87,8 +87,13 @@ page under "Yours to decide", and on the entities they belong to.
 
 - **Level 12 at the next long rest**, all four. Not yet said at the table.
 - **The runes on Witness each answer a particular paladin trait**, decided in the
-  moment: the second lit for **sacrifice**. What it does is still open, and
-  Tavian being Oath of Glory is to be kept in mind for the other three.
+  moment: the second lit for **sacrifice**. Tavian being Oath of Glory is to be
+  kept in mind for the other three.
+- **The second rune is the Rune of Sacrifice** (DM, 2026-10-11): once a day, as a
+  reaction, Tavian teleports beside a creature within 30 feet that has just been
+  hit by a melee attack and takes the hit himself, reduced by 1d10 + his paladin
+  level. Witness goes to +2. Full text, and a D&D Beyond note, on `witness`.
+  Not yet in the item's player-facing text.
 - **Vrenn sent Thatch's package himself, both halves**, on Morvek's instructions:
   he addressed it and he cast the spell that sent it. "Mailed that package" is
   exact. Recorded on `torvald_package`, `the_captive_drow` and `morvek`.

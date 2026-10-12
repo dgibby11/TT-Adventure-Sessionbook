@@ -494,7 +494,7 @@ one replaces it and was made from the whole file.*
 | Question | Ruling |
 |---|---|
 | *"It's not from the dragon's death"* (line 2090) | **Unknown and not important.** The DM reviewed the line and everything round it and could not place it. Dropped. |
-| What lights a rune on Witness | **Each rune answers a particular paladin trait** — decided in the moment at the table. **The second was sacrifice.** Its effect is still undecided, and Tavian being Oath of Glory is to be kept in mind for the rest. |
+| What lights a rune on Witness | **Each rune answers a particular paladin trait** — decided in the moment at the table. **The second was sacrifice.** Tavian being Oath of Glory is to be kept in mind for the rest. *Its effect was settled on 2026-10-11: the Rune of Sacrifice — take an ally's hit, less 1d10 + paladin level, once a day (see `witness`).* |
 | Is the dragon a level | **Yes. All four go to 12 at their next long rest.** Not yet said at the table. |
 | Who sent Thatch's package | **Vrenn, both halves, on Morvek's instructions: he addressed it and he cast the spell that sent it.** *"Mailed that package"* (176) is exact and does not conflict with Session 3's "I just wrote down the words I was given". |
 
